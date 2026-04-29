@@ -1,7 +1,7 @@
 {
   "name": "andy87/php-client-avito",
   "description": "Typed PHP client for Avito Public API.",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "type": "library",
   "license": "MIT",
   "autoload": {
@@ -9,18 +9,9 @@
       "Andy87\\ClientsAvito\\": "src/"
     }
   },
-  "repositories": [
-    {
-      "type": "path",
-      "url": "../base-client",
-      "options": {
-        "symlink": true
-      }
-    }
-  ],
   "require": {
     "php": ">=8.1",
-    "andy87/clients-base": "*"
+    "andy87/clients-sdk": "^0.1"
   },
   "scripts": {
     "generate": "node tools/generate-avito-openapi.mjs"
