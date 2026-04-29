@@ -124,6 +124,125 @@ $config = AvitoConfig::fromEnv(suffix: 'CURIES');
 
 This reads `AVITO_CLIENT_ID_CURIES` and `AVITO_CLIENT_SECRET_CURIES`.
 
+## Events and Headers
+
+`ApiClientAvito` supports shared runtime options from `andy87/clients-sdk`: default request headers and event listeners. Runtime state is stored once on the client and is shared with all provider sections, including providers that were already created lazily.
+
+If you use the default HTTP transport, pass runtime options as the second constructor argument:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Andy87\ClientsBase\Event\BeforeRequestEvent;
+use Andy87\ClientsBase\Event\AfterRequestEvent;
+use Andy87\ClientsBase\Event\RequestExceptionEvent;
+use Andy87\ClientsAvito\ApiClientAvito;
+
+$client = new ApiClientAvito([
+    'clientId' => 'your-client-id',
+    'clientSecret' => 'your-client-secret',
+], [
+    ApiClientAvito::HEADERS => [
+        'X-Client' => 'crm',
+    ],
+    ApiClientAvito::EVENTS => [
+        ApiClientAvito::EVENT_BEFORE_REQUEST => static function (BeforeRequestEvent $event): void {
+            $event->request->headers['X-Trace-Id'] = bin2hex(random_bytes(8));
+        },
+        ApiClientAvito::EVENT_AFTER_REQUEST => static function (AfterRequestEvent $event): void {
+            error_log((string) $event->httpResponse->statusCode);
+        },
+        ApiClientAvito::EVENT_REQUEST_EXCEPTION => static function (RequestExceptionEvent $event): void {
+            error_log($event->exception->getMessage());
+        },
+    ],
+]);
+```
+
+If you pass a custom transport as the second argument, pass runtime options as the fourth argument:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Andy87\ClientsAvito\ApiClientAvito;
+use Andy87\ClientsBase\Contracts\HttpTransportInterface;
+
+/** @var HttpTransportInterface $transport */
+$client = new ApiClientAvito(
+    [
+        'clientId' => 'your-client-id',
+        'clientSecret' => 'your-client-secret',
+    ],
+    $transport,
+    null,
+    [
+        ApiClientAvito::HEADERS => [
+            'X-Client' => 'crm',
+        ],
+    ],
+);
+```
+
+You can also change headers and attach listeners after client creation:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Andy87\ClientsBase\Event\BeforeRequestEvent;
+use Andy87\ClientsAvito\ApiClientAvito;
+
+/** @var ApiClientAvito $client */
+$client
+    ->addHeaders(['X-Account' => 'main'])
+    ->on(ApiClientAvito::EVENT_BEFORE_REQUEST, static function (BeforeRequestEvent $event): void {
+        $event->request->headers['X-Request-Source'] = 'worker';
+    });
+
+$headers = $client->getHeaders();
+$client->setHeaders(['X-Account' => 'secondary']);
+```
+
+Available events:
+
+- `ApiClientAvito::EVENT_AFTER_INIT` - fires after client initialization. Event object: `AfterInitEvent` with `$client`.
+- `ApiClientAvito::EVENT_BEFORE_REQUEST` - fires before transport sends the request. Event object: `BeforeRequestEvent` with `$provider`, `$prompt`, and mutable `$request`.
+- `ApiClientAvito::EVENT_AFTER_REQUEST` - fires after the raw HTTP response is converted to the typed response DTO. Event object: `AfterRequestEvent` with `$provider`, `$prompt`, `$request`, `$httpResponse`, and `$response`.
+- `ApiClientAvito::EVENT_REQUEST_EXCEPTION` - fires when transport, response JSON parsing, or response DTO construction throws. Event object: `RequestExceptionEvent` with `$provider`, `$prompt`, nullable `$request`, and `$exception`.
+
+Each event option accepts either one callable or a list of callables:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Andy87\ClientsBase\Event\BeforeRequestEvent;
+use Andy87\ClientsAvito\ApiClientAvito;
+
+$client = new ApiClientAvito($config, [
+    ApiClientAvito::EVENTS => [
+        ApiClientAvito::EVENT_BEFORE_REQUEST => [
+            static function (BeforeRequestEvent $event): void {
+                $event->request->headers['X-Trace-Id'] = bin2hex(random_bytes(8));
+            },
+            static function (BeforeRequestEvent $event): void {
+                $event->request->query['debug'] = '1';
+            },
+        ],
+    ],
+]);
+```
+
+Header names are merged case-insensitively. The request starts with `Accept: application/json`, then client headers are applied, then authorization headers are applied. Authorization headers override default client headers, and `EVENT_BEFORE_REQUEST` listeners can mutate the final `HttpRequest` before it is sent.
+
+HTTP responses with status `400` or higher are still converted into response DTOs and dispatch `EVENT_AFTER_REQUEST`. `EVENT_REQUEST_EXCEPTION` is only for thrown exceptions.
+
 ## Providers and Generated API
 
 The root namespace is:
@@ -168,22 +287,6 @@ You can access a provider either by property or by name:
 $userProvider = $client->user;
 $sameProvider = $client->provider('user');
 ```
-
-## OpenAPI Generation
-
-Generated API classes are produced by the project generator:
-
-```bash
-composer generate
-```
-
-The Composer script runs:
-
-```bash
-node tools/generate-avito-openapi.mjs
-```
-
-The generator loads Avito OpenAPI metadata and writes generated providers, prompts, responses, schemas, and the provider registry into `src/Generated`.
 
 ## Errors and Exceptions
 

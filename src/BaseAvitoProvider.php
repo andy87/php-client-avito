@@ -69,6 +69,7 @@ abstract class BaseAvitoProvider extends AbstractProvider
             authorizationStrategy: $this->authorizationStrategy,
             transport: $this->transport,
             timeout: $this->timeout,
+            runtime: $this->runtime,
         );
     }
 
