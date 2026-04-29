@@ -41,13 +41,42 @@ $client = new ApiClientAvito([
     'clientSecret' => 'your-client-secret',
 ]);
 
-$response = $client->user->getUserInfoSelf(new GetUserInfoSelfPrompt());
+$prompt = new GetUserInfoSelfPrompt();
+$response = $client->user->getUserInfoSelf($prompt);
 
 echo $response->id . PHP_EOL;
 echo $response->name . PHP_EOL;
 ```
 
 `ApiClientAvito` лениво открывает provider-разделы через свойства: `user`, `item`, `messenger`, `autoload`, `deliverySandbox` и другие разделы, сгенерированные из OpenAPI-спецификаций Avito.
+
+## Работа с prompts
+
+Сгенерированные prompt DTO заполняются через публичные свойства. Сначала создайте объект prompt, затем присвойте значения нужным полям напрямую.
+
+Не передавайте данные запроса массивом в конструктор:
+
+```php
+<?php
+
+use Andy87\ClientsAvito\Generated\Prompt\VasPricesPrompt;
+
+$prompt = new VasPricesPrompt();
+$prompt->itemIds = [123456789, 987654321];
+
+$response = $client->item->vasPrices($prompt);
+```
+
+Для методов API без параметров создайте пустой prompt и передайте его в метод provider-раздела:
+
+```php
+<?php
+
+use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+
+$prompt = new GetUserInfoSelfPrompt();
+$response = $client->user->getUserInfoSelf($prompt);
+```
 
 ## Конфигурация
 

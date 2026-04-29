@@ -41,13 +41,42 @@ $client = new ApiClientAvito([
     'clientSecret' => 'your-client-secret',
 ]);
 
-$response = $client->user->getUserInfoSelf(new GetUserInfoSelfPrompt());
+$prompt = new GetUserInfoSelfPrompt();
+$response = $client->user->getUserInfoSelf($prompt);
 
 echo $response->id . PHP_EOL;
 echo $response->name . PHP_EOL;
 ```
 
 `ApiClientAvito` exposes provider sections lazily through properties such as `user`, `item`, `messenger`, `autoload`, `deliverySandbox`, and others generated from the Avito OpenAPI specifications.
+
+## Working with Prompts
+
+Generated prompt DTOs are filled through public properties. Create a prompt object first, then assign request values directly to its fields.
+
+Do not pass request data as a constructor array:
+
+```php
+<?php
+
+use Andy87\ClientsAvito\Generated\Prompt\VasPricesPrompt;
+
+$prompt = new VasPricesPrompt();
+$prompt->itemIds = [123456789, 987654321];
+
+$response = $client->item->vasPrices($prompt);
+```
+
+For API methods without parameters, create an empty prompt and pass it to the provider method:
+
+```php
+<?php
+
+use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+
+$prompt = new GetUserInfoSelfPrompt();
+$response = $client->user->getUserInfoSelf($prompt);
+```
 
 ## Configuration
 
