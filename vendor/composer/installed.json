@@ -1,0 +1,35 @@
+{
+    "packages": [
+        {
+            "name": "andy87/clients-base",
+            "version": "1.0.0",
+            "version_normalized": "1.0.0.0",
+            "dist": {
+                "type": "path",
+                "url": "../base-client",
+                "reference": "24849cdc2664f769e540f9b725957daa57743e50"
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Andy87\\ClientsBase\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Base abstractions for typed PHP API clients.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            },
+            "install-path": "../andy87/clients-base"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
