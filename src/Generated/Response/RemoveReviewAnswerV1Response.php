@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API removeReviewAnswerV1.
+ * Ответ Avito API [DELETE] /ratings/v1/answers/{answer_id}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/removeReviewAnswerV1
  */
 class RemoveReviewAnswerV1Response extends AbstractResponse
 {

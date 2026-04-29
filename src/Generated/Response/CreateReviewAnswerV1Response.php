@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API createReviewAnswerV1.
+ * Ответ Avito API [POST] /ratings/v1/answers.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/createReviewAnswerV1
  */
 class CreateReviewAnswerV1Response extends AbstractResponse
 {

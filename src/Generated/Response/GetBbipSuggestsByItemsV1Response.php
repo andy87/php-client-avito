@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API get_bbip_suggests_by_items_v1.
+ * Ответ Avito API [POST] /promotion/v1/items/services/bbip/suggests/get.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/promotion/documentation#operation/get_bbip_suggests_by_items_v1
  */
 class GetBbipSuggestsByItemsV1Response extends AbstractResponse
 {

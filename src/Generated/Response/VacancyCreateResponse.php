@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API vacancyCreate.
+ * Ответ Avito API [POST] /job/v1/vacancies.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyCreate
  */
 class VacancyCreateResponse extends AbstractResponse
 {

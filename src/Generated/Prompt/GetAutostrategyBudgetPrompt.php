@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getAutostrategyBudget.
+ * Класс данных запроса Avito API [POST] /autostrategy/v1/budget.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/getAutostrategyBudget
  */
 class GetAutostrategyBudgetPrompt extends AbstractPrompt
 {

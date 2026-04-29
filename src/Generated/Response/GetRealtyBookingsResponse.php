@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API getRealtyBookings.
+ * Ответ Avito API [GET] /realty/v1/accounts/{user_id}/items/{item_id}/bookings.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/getRealtyBookings
  */
 class GetRealtyBookingsResponse extends AbstractResponse
 {

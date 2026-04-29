@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response\Job\Vacancy;
 use Andy87\ClientsAvito\Generated\Response\VacancyAutoRenewalResponse as BaseVacancyAutoRenewalResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API vacancyAutoRenewal.
+ * Ответ Avito API [PUT] /job/v2/vacancies/{vacancy_uuid}/auto_renewal.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyAutoRenewal
  */
 class AutoRenewalResponse extends BaseVacancyAutoRenewalResponse
 {

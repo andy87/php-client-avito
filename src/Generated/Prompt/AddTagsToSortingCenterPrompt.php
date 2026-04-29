@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API AddTagsToSortingCenter.
+ * Класс данных запроса Avito API [POST] /delivery-sandbox/tariffs/{tariff_id}/tagged-sorting-centers.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddTagsToSortingCenter
  */
 class AddTagsToSortingCenterPrompt extends AbstractPrompt
 {

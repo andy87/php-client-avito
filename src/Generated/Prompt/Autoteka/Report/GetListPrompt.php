@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Report;
 use Andy87\ClientsAvito\Generated\Prompt\GetReportListPrompt as BaseGetReportListPrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API getReportList.
+ * Класс данных запроса Avito API [GET] /autoteka/v1/reports/list/.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/getReportList
  */
 class GetListPrompt extends BaseGetReportListPrompt
 {

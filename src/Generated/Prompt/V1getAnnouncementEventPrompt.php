@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API v1getAnnouncementEvent.
+ * Класс данных запроса Avito API [POST] /delivery-sandbox/v1/getAnnouncementEvent.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/v1getAnnouncementEvent
  */
 class V1getAnnouncementEventPrompt extends AbstractPrompt
 {

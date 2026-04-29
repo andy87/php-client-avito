@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API applicationsSetIsViewed.
+ * Ответ Avito API [POST] /job/v1/applications/set_is_viewed.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsSetIsViewed
  */
 class ApplicationsSetIsViewedResponse extends AbstractResponse
 {

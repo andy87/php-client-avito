@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response\Job\Vacancy;
 use Andy87\ClientsAvito\Generated\Response\VacancyProlongateResponse as BaseVacancyProlongateResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API vacancyProlongate.
+ * Ответ Avito API [POST] /job/v1/vacancies/{vacancy_id}/prolongate.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyProlongate
  */
 class ProlongateResponse extends BaseVacancyProlongateResponse
 {

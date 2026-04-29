@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response\Calltracking\Calls;
 use Andy87\ClientsAvito\Generated\Response\GetCallsResponse as BaseGetCallsResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API get_calls.
+ * Ответ Avito API [POST] /calltracking/v1/getCalls/.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/calltracking/documentation#operation/get_calls
  */
 class GetResponse extends BaseGetCallsResponse
 {

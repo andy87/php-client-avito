@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API postBlacklistV2.
+ * Класс данных запроса Avito API [POST] /messenger/v2/accounts/{user_id}/blacklist.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/postBlacklistV2
  */
 class PostBlacklistV2Prompt extends AbstractPrompt
 {

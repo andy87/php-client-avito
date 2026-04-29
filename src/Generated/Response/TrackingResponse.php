@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API tracking.
+ * Ответ Avito API [POST] /delivery-sandbox/order/tracking.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/tracking
  */
 class TrackingResponse extends AbstractResponse
 {

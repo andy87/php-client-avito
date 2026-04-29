@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API AddTariffSandboxV2.
+ * Ответ Avito API [POST] /delivery-sandbox/tariffsV2.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddTariffSandboxV2
  */
 class AddTariffSandboxV2Response extends AbstractResponse
 {

@@ -7,7 +7,11 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Job\Vacancy;
 use Andy87\ClientsAvito\Generated\Prompt\VacancyAutoRenewalPrompt as BaseVacancyAutoRenewalPrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API vacancyAutoRenewal.
+ * Класс данных запроса Avito API [PUT] /job/v2/vacancies/{vacancy_uuid}/auto_renewal.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyAutoRenewal
+ * 
+ * @property bool $auto_renewal Body field auto_renewal
  */
 class AutoRenewalPrompt extends BaseVacancyAutoRenewalPrompt
 {

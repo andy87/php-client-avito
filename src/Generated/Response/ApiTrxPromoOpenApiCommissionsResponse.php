@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API api_trx_promo_open_api_commissions.
+ * Ответ Avito API [GET] /trx-promo/1/commissions.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/trxpromo/documentation#operation/api_trx_promo_open_api_commissions
  */
 class ApiTrxPromoOpenApiCommissionsResponse extends AbstractResponse
 {

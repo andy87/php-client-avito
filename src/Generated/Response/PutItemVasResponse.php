@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API putItemVas.
+ * Ответ Avito API [PUT] /core/v1/accounts/{user_id}/items/{item_id}/vas.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/putItemVas
  */
 class PutItemVasResponse extends AbstractResponse
 {

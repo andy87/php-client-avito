@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getReport.
+ * Класс данных запроса Avito API [GET] /autoteka/v1/reports/{report_id}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/getReport
  */
 class GetReportPrompt extends AbstractPrompt
 {

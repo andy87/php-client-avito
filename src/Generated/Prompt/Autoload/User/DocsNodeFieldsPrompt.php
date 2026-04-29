@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Autoload\User;
 use Andy87\ClientsAvito\Generated\Prompt\UserDocsNodeFieldsPrompt as BaseUserDocsNodeFieldsPrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API userDocsNodeFields.
+ * Класс данных запроса Avito API [GET] /autoload/v1/user-docs/node/{node_slug}/fields.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/userDocsNodeFields
  */
 class DocsNodeFieldsPrompt extends BaseUserDocsNodeFieldsPrompt
 {

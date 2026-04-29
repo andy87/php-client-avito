@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API postPreviewByExternalItem.
+ * Класс данных запроса Avito API [POST] /autoteka/v1/request-preview-by-external-item.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/postPreviewByExternalItem
  */
 class PostPreviewByExternalItemPrompt extends AbstractPrompt
 {

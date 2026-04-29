@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API setCourierDeliveryRange.
+ * Ответ Avito API [POST] /order-management/1/order/setCourierDeliveryRange.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/setCourierDeliveryRange
  */
 class SetCourierDeliveryRangeResponse extends AbstractResponse
 {

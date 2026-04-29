@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API applicationsWebhookPut.
+ * Класс данных запроса Avito API [PUT] /job/v1/applications/webhook.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhookPut
  */
 class ApplicationsWebhookPutPrompt extends AbstractPrompt
 {

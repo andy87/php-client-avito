@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API accountSpendings.
+ * Класс данных запроса Avito API [POST] /stats/v2/accounts/{user_id}/spendings.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/accountSpendings
  */
 class AccountSpendingsPrompt extends AbstractPrompt
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API v1CancelParcel.
+ * Класс данных запроса Avito API [POST] /delivery-sandbox/v1/cancelParcel.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/v1CancelParcel
  */
 class V1CancelParcelPrompt extends AbstractPrompt
 {

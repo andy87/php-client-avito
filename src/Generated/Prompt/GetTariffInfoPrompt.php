@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getTariffInfo.
+ * Класс данных запроса Avito API [GET] /tariff/info/1.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/tariff/documentation#operation/getTariffInfo
  */
 class GetTariffInfoPrompt extends AbstractPrompt
 {

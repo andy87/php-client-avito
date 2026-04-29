@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API resumeGetContacts.
+ * Класс данных запроса Avito API [GET] /job/v1/resumes/{resume_id}/contacts/.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/resumeGetContacts
  */
 class ResumeGetContactsPrompt extends AbstractPrompt
 {

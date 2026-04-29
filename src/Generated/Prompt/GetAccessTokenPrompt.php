@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getAccessToken.
+ * Класс данных запроса Avito API [POST] /token.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/auth/documentation#operation/getAccessToken
  */
 class GetAccessTokenPrompt extends AbstractPrompt
 {

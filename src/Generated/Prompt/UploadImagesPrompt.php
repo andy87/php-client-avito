@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API uploadImages.
+ * Класс данных запроса Avito API [POST] /messenger/v1/accounts/{user_id}/uploadImages.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/uploadImages
  */
 class UploadImagesPrompt extends AbstractPrompt
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API chatByActionId.
+ * Ответ Avito API [GET] /cpa/v1/chatByActionId/{actionId}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/chatByActionId
  */
 class ChatByActionIdResponse extends AbstractResponse
 {

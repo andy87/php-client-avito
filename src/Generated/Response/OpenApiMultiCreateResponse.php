@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API openApiMultiCreate.
+ * Ответ Avito API [POST] /special-offers/v1/multiCreate.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/sbc-gateway/documentation#operation/openApiMultiCreate
  */
 class OpenApiMultiCreateResponse extends AbstractResponse
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API postSyncCreateReportByVin.
+ * Класс данных запроса Avito API [POST] /autoteka/v1/sync/create-by-vin.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/postSyncCreateReportByVin
  */
 class PostSyncCreateReportByVinPrompt extends AbstractPrompt
 {

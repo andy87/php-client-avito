@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API getLastCompletedReportV3.
+ * Ответ Avito API [GET] /autoload/v3/reports/last_completed_report.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getLastCompletedReportV3
  */
 class GetLastCompletedReportV3Response extends AbstractResponse
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API saveItemBids.
+ * Ответ Avito API [POST] /auction/1/bids.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/auction/documentation#operation/saveItemBids
  */
 class SaveItemBidsResponse extends AbstractResponse
 {

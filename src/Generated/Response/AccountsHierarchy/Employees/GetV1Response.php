@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response\AccountsHierarchy\Employees;
 use Andy87\ClientsAvito\Generated\Response\GetEmployeesV1Response as BaseGetEmployeesV1Response;
 
 /**
- * Дочерний alias DTO ответа Avito API getEmployeesV1.
+ * Ответ Avito API [GET] /getEmployeesV1.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/accounts-hierarchy/documentation#operation/getEmployeesV1
  */
 class GetV1Response extends BaseGetEmployeesV1Response
 {

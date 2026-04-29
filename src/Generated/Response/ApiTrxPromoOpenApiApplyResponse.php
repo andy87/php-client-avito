@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API api_trx_promo_open_api_apply.
+ * Ответ Avito API [POST] /trx-promo/1/apply.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/trxpromo/documentation#operation/api_trx_promo_open_api_apply
  */
 class ApiTrxPromoOpenApiApplyResponse extends AbstractResponse
 {

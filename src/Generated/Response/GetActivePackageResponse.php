@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API getActivePackage.
+ * Ответ Avito API [GET] /autoteka/v1/packages/active_package.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/getActivePackage
  */
 class GetActivePackageResponse extends AbstractResponse
 {

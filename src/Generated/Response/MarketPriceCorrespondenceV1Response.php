@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API market_price_correspondence_v1.
+ * Ответ Avito API [GET] /realty/v1/marketPriceCorrespondence/{itemId}/{price}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/realty-reports/documentation#operation/market_price_correspondence_v1
  */
 class MarketPriceCorrespondenceV1Response extends AbstractResponse
 {

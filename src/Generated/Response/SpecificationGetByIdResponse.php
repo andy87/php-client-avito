@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API specificationGetById.
+ * Ответ Avito API [GET] /autoteka/v1/specifications/specification/{specificationID}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/specificationGetById
  */
 class SpecificationGetByIdResponse extends AbstractResponse
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API getDicts.
+ * Ответ Avito API [GET] /job/v2/vacancy/dict.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/getDicts
  */
 class GetDictsResponse extends AbstractResponse
 {

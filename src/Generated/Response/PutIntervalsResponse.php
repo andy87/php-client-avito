@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API putIntervals.
+ * Ответ Avito API [POST] /realty/v1/items/intervals.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/putIntervals
  */
 class PutIntervalsResponse extends AbstractResponse
 {

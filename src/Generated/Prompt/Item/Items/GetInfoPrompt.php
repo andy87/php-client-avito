@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Item\Items;
 use Andy87\ClientsAvito\Generated\Prompt\GetItemsInfoPrompt as BaseGetItemsInfoPrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API getItemsInfo.
+ * Класс данных запроса Avito API [GET] /core/v1/items.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/getItemsInfo
  */
 class GetInfoPrompt extends BaseGetItemsInfoPrompt
 {

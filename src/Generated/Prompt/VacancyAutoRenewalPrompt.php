@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API vacancyAutoRenewal.
+ * Класс данных запроса Avito API [PUT] /job/v2/vacancies/{vacancy_uuid}/auto_renewal.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyAutoRenewal
  */
 class VacancyAutoRenewalPrompt extends AbstractPrompt
 {

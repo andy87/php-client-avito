@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API putBookingsInfo.
+ * Класс данных запроса Avito API [POST] /core/v1/accounts/{user_id}/items/{item_id}/bookings.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/putBookingsInfo
  */
 class PutBookingsInfoPrompt extends AbstractPrompt
 {

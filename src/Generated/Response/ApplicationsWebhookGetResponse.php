@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API applicationsWebhookGet.
+ * Ответ Avito API [GET] /job/v1/applications/webhook.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhookGet
  */
 class ApplicationsWebhookGetResponse extends AbstractResponse
 {

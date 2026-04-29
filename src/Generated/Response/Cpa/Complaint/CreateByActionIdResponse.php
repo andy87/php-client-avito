@@ -7,7 +7,12 @@ namespace Andy87\ClientsAvito\Generated\Response\Cpa\Complaint;
 use Andy87\ClientsAvito\Generated\Response\CreateComplaintByActionIdResponse as BaseCreateComplaintByActionIdResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API createComplaintByActionId.
+ * Ответ Avito API [POST] /cpa/v1/createComplaintByActionId.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/createComplaintByActionId
+ * 
+ * @property \Andy87\ClientsAvito\Generated\Schema\Cpa\CpaError|null $errorData Response field error
+ * @property bool|null $success Response field success
  */
 class CreateByActionIdResponse extends BaseCreateComplaintByActionIdResponse
 {

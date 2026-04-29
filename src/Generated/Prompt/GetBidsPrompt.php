@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getBids.
+ * Класс данных запроса Avito API [GET] /cpxpromo/1/getBids/{itemId}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/getBids
  */
 class GetBidsPrompt extends AbstractPrompt
 {

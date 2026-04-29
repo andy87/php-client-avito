@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API userDocsTree.
+ * Класс данных запроса Avito API [GET] /autoload/v1/user-docs/tree.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/userDocsTree
  */
 class UserDocsTreePrompt extends AbstractPrompt
 {

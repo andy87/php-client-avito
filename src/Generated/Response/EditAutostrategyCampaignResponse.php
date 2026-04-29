@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API editAutostrategyCampaign.
+ * Ответ Avito API [POST] /autostrategy/v1/campaign/edit.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/editAutostrategyCampaign
  */
 class EditAutostrategyCampaignResponse extends AbstractResponse
 {

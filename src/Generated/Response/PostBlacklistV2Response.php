@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API postBlacklistV2.
+ * Ответ Avito API [POST] /messenger/v2/accounts/{user_id}/blacklist.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/postBlacklistV2
  */
 class PostBlacklistV2Response extends AbstractResponse
 {

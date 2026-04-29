@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API getMessagesV3.
+ * Ответ Avito API [GET] /messenger/v3/accounts/{user_id}/chats/{chat_id}/messages/.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/getMessagesV3
  */
 class GetMessagesV3Response extends AbstractResponse
 {

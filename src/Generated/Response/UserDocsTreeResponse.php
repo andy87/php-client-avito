@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API userDocsTree.
+ * Ответ Avito API [GET] /autoload/v1/user-docs/tree.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/userDocsTree
  */
 class UserDocsTreeResponse extends AbstractResponse
 {

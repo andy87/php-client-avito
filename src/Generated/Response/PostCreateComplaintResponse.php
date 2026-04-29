@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API postCreateComplaint.
+ * Ответ Avito API [POST] /cpa/v1/createComplaint.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/postCreateComplaint
  */
 class PostCreateComplaintResponse extends AbstractResponse
 {

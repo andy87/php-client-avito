@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API UpdateTerms.
+ * Ответ Avito API [POST] /delivery-sandbox/tariffs/{tariff_id}/terms.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/UpdateTerms
  */
 class UpdateTermsResponse extends AbstractResponse
 {

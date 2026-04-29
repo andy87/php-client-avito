@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API chatByActionId.
+ * Класс данных запроса Avito API [GET] /cpa/v1/chatByActionId/{actionId}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/chatByActionId
  */
 class ChatByActionIdPrompt extends AbstractPrompt
 {

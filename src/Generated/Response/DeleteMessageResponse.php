@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API deleteMessage.
+ * Ответ Avito API [POST] /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages/{message_id}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/deleteMessage
  */
 class DeleteMessageResponse extends AbstractResponse
 {

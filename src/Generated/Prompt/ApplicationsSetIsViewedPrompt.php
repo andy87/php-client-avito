@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API applicationsSetIsViewed.
+ * Класс данных запроса Avito API [POST] /job/v1/applications/set_is_viewed.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsSetIsViewed
  */
 class ApplicationsSetIsViewedPrompt extends AbstractPrompt
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Specification;
 use Andy87\ClientsAvito\Generated\Prompt\SpecificationGetByIdPrompt as BaseSpecificationGetByIdPrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API specificationGetById.
+ * Класс данных запроса Avito API [GET] /autoteka/v1/specifications/specification/{specificationID}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/specificationGetById
  */
 class GetByIdPrompt extends BaseSpecificationGetByIdPrompt
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API api_trx_promo_open_api_cancel.
+ * Ответ Avito API [POST] /trx-promo/1/cancel.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/trxpromo/documentation#operation/api_trx_promo_open_api_cancel
  */
 class ApiTrxPromoOpenApiCancelResponse extends AbstractResponse
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API applicationsApplyActions.
+ * Ответ Avito API [POST] /job/v1/applications/apply_actions.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsApplyActions
  */
 class ApplicationsApplyActionsResponse extends AbstractResponse
 {

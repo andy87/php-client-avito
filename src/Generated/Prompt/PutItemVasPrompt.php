@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API putItemVas.
+ * Класс данных запроса Avito API [PUT] /core/v1/accounts/{user_id}/items/{item_id}/vas.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/putItemVas
  */
 class PutItemVasPrompt extends AbstractPrompt
 {

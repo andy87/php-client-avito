@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API checkAhUserV1.
+ * Ответ Avito API [GET] /checkAhUserV1.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/accounts-hierarchy/documentation#operation/checkAhUserV1
  */
 class CheckAhUserV1Response extends AbstractResponse
 {

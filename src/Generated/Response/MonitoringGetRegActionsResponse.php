@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API monitoringGetRegActions.
+ * Ответ Avito API [GET] /autoteka/v1/monitoring/get-reg-actions/.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/monitoringGetRegActions
  */
 class MonitoringGetRegActionsResponse extends AbstractResponse
 {

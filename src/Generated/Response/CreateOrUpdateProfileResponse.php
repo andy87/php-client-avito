@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API createOrUpdateProfile.
+ * Ответ Avito API [POST] /autoload/v1/profile.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/createOrUpdateProfile
  */
 class CreateOrUpdateProfileResponse extends AbstractResponse
 {

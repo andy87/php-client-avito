@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API applicationsApplyActions.
+ * Класс данных запроса Avito API [POST] /job/v1/applications/apply_actions.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsApplyActions
  */
 class ApplicationsApplyActionsPrompt extends AbstractPrompt
 {

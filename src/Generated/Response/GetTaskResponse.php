@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API GetTask.
+ * Ответ Avito API [GET] /delivery-sandbox/tasks/{task_id}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/GetTask
  */
 class GetTaskResponse extends AbstractResponse
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API checkConfirmationCode.
+ * Класс данных запроса Avito API [POST] /delivery-sandbox/order/checkConfirmationCode.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/checkConfirmationCode
  */
 class CheckConfirmationCodePrompt extends AbstractPrompt
 {

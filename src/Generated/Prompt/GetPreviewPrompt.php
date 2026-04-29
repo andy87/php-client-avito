@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getPreview.
+ * Класс данных запроса Avito API [GET] /autoteka/v1/previews/{previewId}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/getPreview
  */
 class GetPreviewPrompt extends AbstractPrompt
 {

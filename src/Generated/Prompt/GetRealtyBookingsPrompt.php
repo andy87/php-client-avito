@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getRealtyBookings.
+ * Класс данных запроса Avito API [GET] /realty/v1/accounts/{user_id}/items/{item_id}/bookings.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/getRealtyBookings
  */
 class GetRealtyBookingsPrompt extends AbstractPrompt
 {

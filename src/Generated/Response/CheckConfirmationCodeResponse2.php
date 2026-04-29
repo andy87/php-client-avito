@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API checkConfirmationCode.
+ * Ответ Avito API [POST] /order-management/1/order/checkConfirmationCode.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/checkConfirmationCode
  */
 class CheckConfirmationCodeResponse2 extends AbstractResponse
 {

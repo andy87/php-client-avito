@@ -7,7 +7,11 @@ namespace Andy87\ClientsAvito\Generated\Response\Job\Applications;
 use Andy87\ClientsAvito\Generated\Response\ApplicationsWebhookDeleteResponse as BaseApplicationsWebhookDeleteResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API applicationsWebhookDelete.
+ * Ответ Avito API [DELETE] /job/v1/applications/webhook.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhookDelete
+ * 
+ * @property bool|null $ok Response field ok
  */
 class WebhookDeleteResponse extends BaseApplicationsWebhookDeleteResponse
 {

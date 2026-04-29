@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API postWebhookUnsubscribe.
+ * Класс данных запроса Avito API [POST] /messenger/v1/webhook/unsubscribe.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/postWebhookUnsubscribe
  */
 class PostWebhookUnsubscribePrompt extends AbstractPrompt
 {

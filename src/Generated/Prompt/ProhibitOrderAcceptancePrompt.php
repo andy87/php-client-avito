@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API prohibitOrderAcceptance.
+ * Класс данных запроса Avito API [POST] /delivery-sandbox/prohibitOrderAcceptance.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/prohibitOrderAcceptance
  */
 class ProhibitOrderAcceptancePrompt extends AbstractPrompt
 {

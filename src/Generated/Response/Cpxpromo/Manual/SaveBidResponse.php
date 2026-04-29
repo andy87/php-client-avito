@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response\Cpxpromo\Manual;
 use Andy87\ClientsAvito\Generated\Response\SaveManualBidResponse as BaseSaveManualBidResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API saveManualBid.
+ * Ответ Avito API [POST] /cpxpromo/1/setManual.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/saveManualBid
  */
 class SaveBidResponse extends BaseSaveManualBidResponse
 {

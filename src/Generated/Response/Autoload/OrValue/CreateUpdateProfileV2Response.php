@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response\Autoload\OrValue;
 use Andy87\ClientsAvito\Generated\Response\CreateOrUpdateProfileV2Response as BaseCreateOrUpdateProfileV2Response;
 
 /**
- * Дочерний alias DTO ответа Avito API createOrUpdateProfileV2.
+ * Ответ Avito API [POST] /autoload/v2/profile.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/createOrUpdateProfileV2
  */
 class CreateUpdateProfileV2Response extends BaseCreateOrUpdateProfileV2Response
 {

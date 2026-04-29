@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getUserBalance.
+ * Класс данных запроса Avito API [GET] /core/v1/accounts/{user_id}/balance/.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/user/documentation#operation/getUserBalance
  */
 class GetUserBalancePrompt extends AbstractPrompt
 {

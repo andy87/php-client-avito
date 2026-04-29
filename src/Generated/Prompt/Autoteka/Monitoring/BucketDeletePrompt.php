@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Monitoring;
 use Andy87\ClientsAvito\Generated\Prompt\MonitoringBucketDeletePrompt as BaseMonitoringBucketDeletePrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API monitoringBucketDelete.
+ * Класс данных запроса Avito API [POST] /autoteka/v1/monitoring/bucket/delete.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/monitoringBucketDelete
  */
 class BucketDeletePrompt extends BaseMonitoringBucketDeletePrompt
 {

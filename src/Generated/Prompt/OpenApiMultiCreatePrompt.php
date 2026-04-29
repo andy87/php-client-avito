@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API openApiMultiCreate.
+ * Класс данных запроса Avito API [POST] /special-offers/v1/multiCreate.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/sbc-gateway/documentation#operation/openApiMultiCreate
  */
 class OpenApiMultiCreatePrompt extends AbstractPrompt
 {

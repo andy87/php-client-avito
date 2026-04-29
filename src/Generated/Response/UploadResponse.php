@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API upload.
+ * Ответ Avito API [POST] /autoload/v1/upload.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/upload
  */
 class UploadResponse extends AbstractResponse
 {

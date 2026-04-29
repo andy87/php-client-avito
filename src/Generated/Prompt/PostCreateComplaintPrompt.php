@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API postCreateComplaint.
+ * Класс данных запроса Avito API [POST] /cpa/v1/createComplaint.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/postCreateComplaint
  */
 class PostCreateComplaintPrompt extends AbstractPrompt
 {

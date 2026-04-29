@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API CreateReportForClassified.
+ * Ответ Avito API [POST] /realty/v1/report/create/{itemId}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/realty-reports/documentation#operation/CreateReportForClassified
  */
 class CreateReportForClassifiedResponse extends AbstractResponse
 {

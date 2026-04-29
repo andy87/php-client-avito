@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API ChangeParcelResult.
+ * Ответ Avito API [POST] /delivery/order/changeParcelResult.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/ChangeParcelResult
  */
 class ChangeParcelResultResponse extends AbstractResponse
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt\DeliverySandbox\Sorting;
 use Andy87\ClientsAvito\Generated\Prompt\AddSortingCenterPrompt as BaseAddSortingCenterPrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API AddSortingCenter.
+ * Класс данных запроса Avito API [POST] /delivery-sandbox/tariffs/sorting-center.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddSortingCenter
  */
 class AddCenterPrompt extends BaseAddSortingCenterPrompt
 {

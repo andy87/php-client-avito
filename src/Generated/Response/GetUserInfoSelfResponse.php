@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API getUserInfoSelf.
+ * Ответ Avito API [GET] /core/v1/accounts/self.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/user/documentation#operation/getUserInfoSelf
  */
 class GetUserInfoSelfResponse extends AbstractResponse
 {

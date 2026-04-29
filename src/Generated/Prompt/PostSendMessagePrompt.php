@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API postSendMessage.
+ * Класс данных запроса Avito API [POST] /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/postSendMessage
  */
 class PostSendMessagePrompt extends AbstractPrompt
 {

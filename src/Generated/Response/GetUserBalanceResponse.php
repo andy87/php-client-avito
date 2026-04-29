@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API getUserBalance.
+ * Ответ Avito API [GET] /core/v1/accounts/{user_id}/balance/.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/user/documentation#operation/getUserBalance
  */
 class GetUserBalanceResponse extends AbstractResponse
 {

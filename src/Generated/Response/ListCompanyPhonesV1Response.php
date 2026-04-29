@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API listCompanyPhonesV1.
+ * Ответ Avito API [GET] /listCompanyPhonesV1.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/accounts-hierarchy/documentation#operation/listCompanyPhonesV1
  */
 class ListCompanyPhonesV1Response extends AbstractResponse
 {

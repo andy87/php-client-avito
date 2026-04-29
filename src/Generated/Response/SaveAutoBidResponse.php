@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API saveAutoBid.
+ * Ответ Avito API [POST] /cpxpromo/1/setAuto.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/saveAutoBid
  */
 class SaveAutoBidResponse extends AbstractResponse
 {

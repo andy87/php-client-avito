@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getRatingsInfoV1.
+ * Класс данных запроса Avito API [GET] /ratings/v1/info.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/getRatingsInfoV1
  */
 class GetRatingsInfoV1Prompt extends AbstractPrompt
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response\Str\Base;
 use Andy87\ClientsAvito\Generated\Response\PostBaseParamsResponse as BasePostBaseParamsResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API postBaseParams.
+ * Ответ Avito API [POST] /realty/v1/items/{item_id}/base.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/postBaseParams
  */
 class PostParamsResponse extends BasePostBaseParamsResponse
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API customAreaSchedule.
+ * Ответ Avito API [POST] /delivery-sandbox/areas/custom-schedule.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/customAreaSchedule
  */
 class CustomAreaScheduleResponse extends AbstractResponse
 {

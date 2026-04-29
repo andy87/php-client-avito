@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API updatePrice.
+ * Ответ Avito API [POST] /core/v1/items/{item_id}/update_price.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/updatePrice
  */
 class UpdatePriceResponse extends AbstractResponse
 {

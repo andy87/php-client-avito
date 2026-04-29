@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API itemAnalytics.
+ * Ответ Avito API [POST] /stats/v2/accounts/{user_id}/items.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/itemAnalytics
  */
 class ItemAnalyticsResponse extends AbstractResponse
 {

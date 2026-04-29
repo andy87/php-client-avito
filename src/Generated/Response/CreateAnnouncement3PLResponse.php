@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API CreateAnnouncement3PL.
+ * Ответ Avito API [POST] /createAnnouncement.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/CreateAnnouncement3PL
  */
 class CreateAnnouncement3PLResponse extends AbstractResponse
 {

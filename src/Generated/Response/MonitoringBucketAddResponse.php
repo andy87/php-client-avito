@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API monitoringBucketAdd.
+ * Ответ Avito API [POST] /autoteka/v1/monitoring/bucket/add.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/monitoringBucketAdd
  */
 class MonitoringBucketAddResponse extends AbstractResponse
 {

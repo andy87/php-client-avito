@@ -7,7 +7,13 @@ namespace Andy87\ClientsAvito\Generated\Response\Auth\Access;
 use Andy87\ClientsAvito\Generated\Response\GetAccessTokenResponse as BaseGetAccessTokenResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API getAccessToken.
+ * Ответ Avito API [POST] /token.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/auth/documentation#operation/getAccessToken
+ * 
+ * @property string|null $access_token Ключ для временной авторизации в системе
+ * @property float|null $expires_in Время жизни ключа в секундах
+ * @property string|null $token_type Тип ключа авторизации
  */
 class GetTokenResponse extends BaseGetAccessTokenResponse
 {

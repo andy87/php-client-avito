@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API postStockManagement1Info.
+ * Ответ Avito API [POST] /stock-management/1/info.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/stock-management/documentation#operation/postStockManagement1Info
  */
 class PostStockManagement1InfoResponse extends AbstractResponse
 {

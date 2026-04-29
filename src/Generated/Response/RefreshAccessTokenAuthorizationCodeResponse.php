@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API refreshAccessTokenAuthorizationCode.
+ * Ответ Avito API [POST] /token‎‎.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/auth/documentation#operation/refreshAccessTokenAuthorizationCode
  */
 class RefreshAccessTokenAuthorizationCodeResponse extends AbstractResponse
 {

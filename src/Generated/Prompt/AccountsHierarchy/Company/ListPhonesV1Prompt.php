@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt\AccountsHierarchy\Company;
 use Andy87\ClientsAvito\Generated\Prompt\ListCompanyPhonesV1Prompt as BaseListCompanyPhonesV1Prompt;
 
 /**
- * Дочерний alias DTO запроса Avito API listCompanyPhonesV1.
+ * Класс данных запроса Avito API [GET] /listCompanyPhonesV1.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/accounts-hierarchy/documentation#operation/listCompanyPhonesV1
  */
 class ListPhonesV1Prompt extends BaseListCompanyPhonesV1Prompt
 {

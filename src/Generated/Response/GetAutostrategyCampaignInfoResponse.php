@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API getAutostrategyCampaignInfo.
+ * Ответ Avito API [POST] /autostrategy/v1/campaign/info.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/getAutostrategyCampaignInfo
  */
 class GetAutostrategyCampaignInfoResponse extends AbstractResponse
 {

@@ -7,7 +7,12 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Cpxpromo\Bids;
 use Andy87\ClientsAvito\Generated\Prompt\GetBidsPrompt as BaseGetBidsPrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API getBids.
+ * Класс данных запроса Avito API [GET] /cpxpromo/1/getBids/{itemId}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/getBids
+ * 
+ * @property string $Authorization Токен для авторизации
+ * @property int $itemId path-parameter itemId
  */
 class GetPrompt extends BaseGetBidsPrompt
 {

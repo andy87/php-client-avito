@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API TrackAnnouncement.
+ * Класс данных запроса Avito API [POST] /delivery-sandbox/announcements/track.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/TrackAnnouncement
  */
 class TrackAnnouncementPrompt extends AbstractPrompt
 {

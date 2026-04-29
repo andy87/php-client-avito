@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API postWebhookUnsubscribe.
+ * Ответ Avito API [POST] /messenger/v1/webhook/unsubscribe.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/postWebhookUnsubscribe
  */
 class PostWebhookUnsubscribeResponse extends AbstractResponse
 {

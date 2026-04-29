@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API AddTagsToSortingCenter.
+ * Ответ Avito API [POST] /delivery-sandbox/tariffs/{tariff_id}/tagged-sorting-centers.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddTagsToSortingCenter
  */
 class AddTagsToSortingCenterResponse extends AbstractResponse
 {

@@ -7,7 +7,11 @@ namespace Andy87\ClientsAvito\Generated\Response\Autoteka\Specification;
 use Andy87\ClientsAvito\Generated\Response\SpecificationGetByIdResponse as BaseSpecificationGetByIdResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API specificationGetById.
+ * Ответ Avito API [GET] /autoteka/v1/specifications/specification/{specificationID}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/specificationGetById
+ * 
+ * @property \Andy87\ClientsAvito\Generated\Schema\Autoteka\GetSpecificationResponseDataAutoteka|null $result Response field result
  */
 class GetByIdResponse extends BaseSpecificationGetByIdResponse
 {

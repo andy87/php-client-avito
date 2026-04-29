@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API postOperationsHistory.
+ * Ответ Avito API [POST] /core/v1/accounts/operations_history/.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/user/documentation#operation/postOperationsHistory
  */
 class PostOperationsHistoryResponse extends AbstractResponse
 {

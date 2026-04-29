@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt\DeliverySandbox\Terminals;
 use Andy87\ClientsAvito\Generated\Prompt\AddTerminalsSandboxPrompt as BaseAddTerminalsSandboxPrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API AddTerminalsSandbox.
+ * Класс данных запроса Avito API [POST] /delivery-sandbox/tariffs/{tariff_id}/terminals.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddTerminalsSandbox
  */
 class AddSandboxPrompt extends BaseAddTerminalsSandboxPrompt
 {

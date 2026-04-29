@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API putStockManagement1Stocks.
+ * Класс данных запроса Avito API [PUT] /stock-management/1/stocks.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/stock-management/documentation#operation/putStockManagement1Stocks
  */
 class PutStockManagement1StocksPrompt extends AbstractPrompt
 {

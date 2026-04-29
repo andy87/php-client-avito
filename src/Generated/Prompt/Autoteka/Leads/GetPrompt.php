@@ -7,7 +7,13 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Leads;
 use Andy87\ClientsAvito\Generated\Prompt\GetLeadsPrompt as BaseGetLeadsPrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API getLeads.
+ * Класс данных запроса Avito API [POST] /autoteka/v1/get-leads/.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/getLeads
+ * 
+ * @property int|null $lastId Последний успешно-прочитанный id, указывается для постраничной выдачи
+ * @property int|null $limit Количество записей в ответе
+ * @property int $subscriptionId Идентификатор подписки
  */
 class GetPrompt extends BaseGetLeadsPrompt
 {

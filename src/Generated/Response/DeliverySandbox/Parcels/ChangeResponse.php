@@ -7,7 +7,12 @@ namespace Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Parcels;
 use Andy87\ClientsAvito\Generated\Response\ChangeParcelsResponse as BaseChangeParcelsResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API ChangeParcels.
+ * Ответ Avito API [POST] /sandbox/changeParcels.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/ChangeParcels
+ * 
+ * @property \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\ChangeParcelsData|null $data Response field data
+ * @property \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\ChangeParcelsError|null $errorData Response field error
  */
 class ChangeResponse extends BaseChangeParcelsResponse
 {

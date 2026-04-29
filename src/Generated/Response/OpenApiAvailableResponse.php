@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API openApiAvailable.
+ * Ответ Avito API [POST] /special-offers/v1/available.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/sbc-gateway/documentation#operation/openApiAvailable
  */
 class OpenApiAvailableResponse extends AbstractResponse
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API postWebhookV3.
+ * Класс данных запроса Avito API [POST] /messenger/v3/webhook.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/postWebhookV3
  */
 class PostWebhookV3Prompt extends AbstractPrompt
 {

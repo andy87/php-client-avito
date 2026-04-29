@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API createReviewAnswerV1.
+ * Класс данных запроса Avito API [POST] /ratings/v1/answers.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/createReviewAnswerV1
  */
 class CreateReviewAnswerV1Prompt extends AbstractPrompt
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getLastCompletedReportV3.
+ * Класс данных запроса Avito API [GET] /autoload/v3/reports/last_completed_report.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getLastCompletedReportV3
  */
 class GetLastCompletedReportV3Prompt extends AbstractPrompt
 {

@@ -7,7 +7,11 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Item\Vas;
 use Andy87\ClientsAvito\Generated\Prompt\VasPricesPrompt as BaseVasPricesPrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API vasPrices.
+ * Класс данных запроса Avito API [POST] /core/v1/accounts/{userId}/vas/prices.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/vasPrices
+ * 
+ * @property array<int, int> $itemIds Набор идентификаторов объявлений на сайте
  */
 class PricesPrompt extends BaseVasPricesPrompt
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API resumeGetContacts.
+ * Ответ Avito API [GET] /job/v1/resumes/{resume_id}/contacts/.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/resumeGetContacts
  */
 class ResumeGetContactsResponse extends AbstractResponse
 {

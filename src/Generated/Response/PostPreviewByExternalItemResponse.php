@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API postPreviewByExternalItem.
+ * Ответ Avito API [POST] /autoteka/v1/request-preview-by-external-item.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/postPreviewByExternalItem
  */
 class PostPreviewByExternalItemResponse extends AbstractResponse
 {

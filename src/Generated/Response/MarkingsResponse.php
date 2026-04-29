@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API markings.
+ * Ответ Avito API [POST] /order-management/1/markings.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/markings
  */
 class MarkingsResponse extends AbstractResponse
 {

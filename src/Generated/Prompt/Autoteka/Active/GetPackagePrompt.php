@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Active;
 use Andy87\ClientsAvito\Generated\Prompt\GetActivePackagePrompt as BaseGetActivePackagePrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API getActivePackage.
+ * Класс данных запроса Avito API [GET] /autoteka/v1/packages/active_package.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/getActivePackage
  */
 class GetPackagePrompt extends BaseGetActivePackagePrompt
 {

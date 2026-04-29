@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API list_orders_by_user_v1.
+ * Ответ Avito API [POST] /promotion/v1/items/services/orders/get.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/promotion/documentation#operation/list_orders_by_user_v1
  */
 class ListOrdersByUserV1Response extends AbstractResponse
 {

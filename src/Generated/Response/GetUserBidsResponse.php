@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API getUserBids.
+ * Ответ Avito API [GET] /auction/1/bids.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/auction/documentation#operation/getUserBids
  */
 class GetUserBidsResponse extends AbstractResponse
 {

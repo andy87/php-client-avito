@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API AddAreasSandbox.
+ * Класс данных запроса Avito API [POST] /delivery-sandbox/tariffs/{tariff_id}/areas.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddAreasSandbox
  */
 class AddAreasSandboxPrompt extends AbstractPrompt
 {

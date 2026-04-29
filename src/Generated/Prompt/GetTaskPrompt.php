@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API GetTask.
+ * Класс данных запроса Avito API [GET] /delivery-sandbox/tasks/{task_id}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/GetTask
  */
 class GetTaskPrompt extends AbstractPrompt
 {

@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API postBaseParams.
+ * Класс данных запроса Avito API [POST] /realty/v1/items/{item_id}/base.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/postBaseParams
  */
 class PostBaseParamsPrompt extends AbstractPrompt
 {

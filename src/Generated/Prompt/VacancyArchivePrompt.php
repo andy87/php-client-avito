@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API vacancyArchive.
+ * Класс данных запроса Avito API [PUT] /job/v1/vacancies/archived/{vacancy_id}.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyArchive
  */
 class VacancyArchivePrompt extends AbstractPrompt
 {

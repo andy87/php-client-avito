@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API vacancyAutoRenewal.
+ * Ответ Avito API [PUT] /job/v2/vacancies/{vacancy_uuid}/auto_renewal.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyAutoRenewal
  */
 class VacancyAutoRenewalResponse extends AbstractResponse
 {

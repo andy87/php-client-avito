@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API linkItemsV1.
+ * Класс данных запроса Avito API [POST] /linkItemsV1.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/accounts-hierarchy/documentation#operation/linkItemsV1
  */
 class LinkItemsV1Prompt extends AbstractPrompt
 {

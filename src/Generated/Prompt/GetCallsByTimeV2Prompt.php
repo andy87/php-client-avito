@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getCallsByTimeV2.
+ * Класс данных запроса Avito API [POST] /cpa/v2/callsByTime.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/getCallsByTimeV2
  */
 class GetCallsByTimeV2Prompt extends AbstractPrompt
 {

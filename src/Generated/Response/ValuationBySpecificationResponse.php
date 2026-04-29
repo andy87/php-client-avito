@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API valuationBySpecification.
+ * Ответ Avito API [POST] /autoteka/v1/valuation/by-specification.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/valuationBySpecification
  */
 class ValuationBySpecificationResponse extends AbstractResponse
 {

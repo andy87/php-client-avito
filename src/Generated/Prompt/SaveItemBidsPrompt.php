@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API saveItemBids.
+ * Класс данных запроса Avito API [POST] /auction/1/bids.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/auction/documentation#operation/saveItemBids
  */
 class SaveItemBidsPrompt extends AbstractPrompt
 {

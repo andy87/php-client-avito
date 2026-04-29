@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getAutostrategyCampaignInfo.
+ * Класс данных запроса Avito API [POST] /autostrategy/v1/campaign/info.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/getAutostrategyCampaignInfo
  */
 class GetAutostrategyCampaignInfoPrompt extends AbstractPrompt
 {

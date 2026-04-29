@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API balanceInfoV2.
+ * Ответ Avito API [POST] /cpa/v2/balanceInfo.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/balanceInfoV2
  */
 class BalanceInfoV2Response extends AbstractResponse
 {

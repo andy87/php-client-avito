@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API updatePrice.
+ * Класс данных запроса Avito API [POST] /core/v1/items/{item_id}/update_price.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/updatePrice
  */
 class UpdatePricePrompt extends AbstractPrompt
 {

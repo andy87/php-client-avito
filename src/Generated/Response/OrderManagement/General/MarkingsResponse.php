@@ -7,7 +7,11 @@ namespace Andy87\ClientsAvito\Generated\Response\OrderManagement\General;
 use Andy87\ClientsAvito\Generated\Response\MarkingsResponse as BaseMarkingsResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API markings.
+ * Ответ Avito API [POST] /order-management/1/markings.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/markings
+ * 
+ * @property array<int, array<string, mixed>>|null $results Массив результатов обновления
  */
 class MarkingsResponse extends BaseMarkingsResponse
 {

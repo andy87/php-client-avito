@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API upload.
+ * Класс данных запроса Avito API [POST] /autoload/v1/upload.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/upload
  */
 class UploadPrompt extends AbstractPrompt
 {

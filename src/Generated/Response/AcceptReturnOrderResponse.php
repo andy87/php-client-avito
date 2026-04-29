@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API acceptReturnOrder.
+ * Ответ Avito API [POST] /order-management/1/order/acceptReturnOrder.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/acceptReturnOrder
  */
 class AcceptReturnOrderResponse extends AbstractResponse
 {

@@ -7,7 +7,11 @@ namespace Andy87\ClientsAvito\Generated\Response\Autoteka\Monitoring;
 use Andy87\ClientsAvito\Generated\Response\MonitoringBucketDeleteResponse as BaseMonitoringBucketDeleteResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API monitoringBucketDelete.
+ * Ответ Avito API [POST] /autoteka/v1/monitoring/bucket/delete.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/monitoringBucketDelete
+ * 
+ * @property array<string, mixed>|null $result Response field result
  */
 class BucketDeleteResponse extends BaseMonitoringBucketDeleteResponse
 {

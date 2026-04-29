@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Job\Dicts;
 use Andy87\ClientsAvito\Generated\Prompt\GetDictsPrompt as BaseGetDictsPrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API getDicts.
+ * Класс данных запроса Avito API [GET] /job/v2/vacancy/dict.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/getDicts
  */
 class GetPrompt extends BaseGetDictsPrompt
 {

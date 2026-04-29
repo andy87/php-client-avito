@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Job\Resumes;
 use Andy87\ClientsAvito\Generated\Prompt\ResumesGetPrompt as BaseResumesGetPrompt;
 
 /**
- * Дочерний alias DTO запроса Avito API resumesGet.
+ * Класс данных запроса Avito API [GET] /job/v1/resumes/.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/resumesGet
  */
 class GetPrompt extends BaseResumesGetPrompt
 {

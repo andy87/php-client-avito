@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API applyTransition.
+ * Класс данных запроса Avito API [POST] /order-management/1/order/applyTransition.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/applyTransition
  */
 class ApplyTransitionPrompt extends AbstractPrompt
 {

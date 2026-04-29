@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API create_bbip_order_for_items_v1.
+ * Класс данных запроса Avito API [PUT] /promotion/v1/items/services/bbip/orders/create.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/promotion/documentation#operation/create_bbip_order_for_items_v1
  */
 class CreateBbipOrderForItemsV1Prompt extends AbstractPrompt
 {

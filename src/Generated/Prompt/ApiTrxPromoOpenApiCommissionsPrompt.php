@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API api_trx_promo_open_api_commissions.
+ * Класс данных запроса Avito API [GET] /trx-promo/1/commissions.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/trxpromo/documentation#operation/api_trx_promo_open_api_commissions
  */
 class ApiTrxPromoOpenApiCommissionsPrompt extends AbstractPrompt
 {

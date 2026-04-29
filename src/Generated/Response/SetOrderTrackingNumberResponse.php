@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API setOrderTrackingNumber.
+ * Ответ Avito API [POST] /order-management/1/order/setTrackingNumber.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/setOrderTrackingNumber
  */
 class SetOrderTrackingNumberResponse extends AbstractResponse
 {

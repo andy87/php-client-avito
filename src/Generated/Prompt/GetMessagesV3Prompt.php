@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
- * DTO запроса Avito API getMessagesV3.
+ * Класс данных запроса Avito API [GET] /messenger/v3/accounts/{user_id}/chats/{chat_id}/messages/.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/getMessagesV3
  */
 class GetMessagesV3Prompt extends AbstractPrompt
 {

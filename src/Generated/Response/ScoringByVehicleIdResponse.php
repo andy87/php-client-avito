@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API scoringByVehicleId.
+ * Ответ Avito API [POST] /autoteka/v1/scoring/by-vehicle-id.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/scoringByVehicleId
  */
 class ScoringByVehicleIdResponse extends AbstractResponse
 {

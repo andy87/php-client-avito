@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API create_bbip_order_for_items_v1.
+ * Ответ Avito API [PUT] /promotion/v1/items/services/bbip/orders/create.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/promotion/documentation#operation/create_bbip_order_for_items_v1
  */
 class CreateBbipOrderForItemsV1Response extends AbstractResponse
 {

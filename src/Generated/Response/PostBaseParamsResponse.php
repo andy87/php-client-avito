@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response;
 use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
- * DTO ответа Avito API postBaseParams.
+ * Ответ Avito API [POST] /realty/v1/items/{item_id}/base.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/postBaseParams
  */
 class PostBaseParamsResponse extends AbstractResponse
 {

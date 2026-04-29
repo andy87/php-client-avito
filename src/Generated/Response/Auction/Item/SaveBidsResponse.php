@@ -7,7 +7,9 @@ namespace Andy87\ClientsAvito\Generated\Response\Auction\Item;
 use Andy87\ClientsAvito\Generated\Response\SaveItemBidsResponse as BaseSaveItemBidsResponse;
 
 /**
- * Дочерний alias DTO ответа Avito API saveItemBids.
+ * Ответ Avito API [POST] /auction/1/bids.
+ * 
+ * @documentation https://developers.avito.ru/api-catalog/auction/documentation#operation/saveItemBids
  */
 class SaveBidsResponse extends BaseSaveItemBidsResponse
 {
