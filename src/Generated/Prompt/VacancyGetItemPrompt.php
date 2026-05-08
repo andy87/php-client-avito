@@ -21,17 +21,19 @@ class VacancyGetItemPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = [];
+    protected const FIELD_MAP = ['vacancy_id' => 'vacancy_id'];
 
-    protected const REQUIRED_FIELDS = [];
+    protected const REQUIRED_FIELDS = ['vacancy_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['vacancy_id'];
 
     protected const QUERY_FIELDS = [];
 
     protected const BODY_FIELDS = [];
+    /** @var string|int path-parameter vacancy_id */
+    public string|int $vacancy_id;
 }

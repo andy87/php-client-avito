@@ -21,15 +21,15 @@ class PostCallsStatsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'itemIds' => 'itemIds'];
+    protected const FIELD_MAP = ['dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'itemIds' => 'itemIds', 'user_id' => 'user_id'];
 
-    protected const REQUIRED_FIELDS = ['dateFrom', 'dateTo'];
+    protected const REQUIRED_FIELDS = ['dateFrom', 'dateTo', 'user_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['user_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -43,4 +43,6 @@ class PostCallsStatsPrompt extends AbstractPrompt
 
     /** @var array<int, int>|null Идентификаторы объявлений */
     public ?array $itemIds = null;
+    /** @var string|int path-parameter user_id */
+    public string|int $user_id;
 }

@@ -21,17 +21,19 @@ class GetDictByIDPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = false;
 
-    protected const FIELD_MAP = [];
+    protected const FIELD_MAP = ['dictionary_id' => 'dictionary_id'];
 
-    protected const REQUIRED_FIELDS = [];
+    protected const REQUIRED_FIELDS = ['dictionary_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['dictionary_id'];
 
     protected const QUERY_FIELDS = [];
 
     protected const BODY_FIELDS = [];
+    /** @var string|int path-parameter dictionary_id */
+    public string|int $dictionary_id;
 }

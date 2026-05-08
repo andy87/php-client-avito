@@ -21,15 +21,15 @@ class PutBookingsInfoPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['bookings' => 'bookings', 'source' => 'source'];
+    protected const FIELD_MAP = ['bookings' => 'bookings', 'source' => 'source', 'user_id' => 'user_id', 'item_id' => 'item_id'];
 
-    protected const REQUIRED_FIELDS = [];
+    protected const REQUIRED_FIELDS = ['user_id', 'item_id'];
 
     protected const NULLABLE_FIELDS = ['source'];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['user_id', 'item_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -40,4 +40,9 @@ class PutBookingsInfoPrompt extends AbstractPrompt
 
     /** @var string|null Название PMS системы */
     public ?string $source = null;
+    /** @var string|int path-parameter user_id */
+    public string|int $user_id;
+
+    /** @var string|int path-parameter item_id */
+    public string|int $item_id;
 }

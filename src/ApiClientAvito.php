@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Andy87\ClientsAvito;
 
 use Andy87\ClientsBase\Auth\ClientCredentialsAuthorizationStrategy;
+use Andy87\ClientsBase\Config\ClientOptions;
 use Andy87\ClientsBase\Contracts\AuthorizationStrategyInterface;
 use Andy87\ClientsBase\Contracts\HttpTransportInterface;
 use Andy87\ClientsBase\Event\AfterInitEvent;
@@ -68,13 +69,16 @@ class ApiClientAvito
     /** @var ClientRuntime Runtime-контекст клиента. */
     private ClientRuntime $runtime;
 
+    /** @var ClientOptions Настройки выполнения запросов. */
+    private ClientOptions $options;
+
     /**
      * Создаёт клиент Avito API.
      *
      * @param AvitoConfig|array<string, mixed> $config Конфигурация клиента.
-     * @param HttpTransportInterface|array<string, mixed>|null $transport HTTP-транспорт или options вторым аргументом.
+     * @param HttpTransportInterface|array<string, mixed>|ClientOptions|null $transport HTTP-транспорт, ClientOptions или options вторым аргументом.
      * @param AuthorizationStrategyInterface|null $authorizationStrategy Стратегия авторизации.
-     * @param array<string, mixed>|null $options Options клиента, если transport передан отдельным аргументом.
+     * @param array<string, mixed>|ClientOptions|null $options Options клиента, если transport передан отдельным аргументом.
      *
      * @return void
      *
@@ -82,11 +86,11 @@ class ApiClientAvito
      */
     public function __construct(
         AvitoConfig|array $config,
-        HttpTransportInterface|array|null $transport = null,
+        HttpTransportInterface|array|ClientOptions|null $transport = null,
         ?AuthorizationStrategyInterface $authorizationStrategy = null,
-        ?array $options = null,
+        array|ClientOptions|null $options = null,
     ) {
-        if (is_array($transport)) {
+        if (is_array($transport) || $transport instanceof ClientOptions) {
             if ($authorizationStrategy !== null || $options !== null) {
                 throw new \InvalidArgumentException('Options as second argument cannot be combined with authorization strategy or fourth argument options.');
             }
@@ -97,9 +101,10 @@ class ApiClientAvito
 
         $options ??= [];
         $config = is_array($config) ? AvitoConfig::fromArray($config) : $config;
+        $this->options = $this->createClientOptions($options, $config->timeout);
         $this->runtime = new ClientRuntime(
-            headers: $this->getOptionArray($options, self::HEADERS),
-            events: $this->getOptionArray($options, self::EVENTS),
+            headers: $this->options->headers,
+            events: $this->options->events,
         );
         $this->baseUrl = $config->baseUrl;
         $this->transport = $transport ?? new NativeHttpTransport();
@@ -107,9 +112,9 @@ class ApiClientAvito
             tokenUrl: $config->tokenUrl,
             clientId: $config->clientId,
             clientSecret: $config->clientSecret,
-            timeout: $config->timeout,
+            timeout: $this->options->timeout,
         );
-        $this->timeout = $config->timeout;
+        $this->timeout = $this->options->timeout;
         $this->runtime->dispatch(self::EVENT_AFTER_INIT, new AfterInitEvent($this));
     }
 
@@ -167,6 +172,7 @@ class ApiClientAvito
             transport: $this->transport,
             timeout: $this->timeout,
             runtime: $this->runtime,
+            options: $this->options,
         );
     }
 
@@ -235,6 +241,29 @@ class ApiClientAvito
     public function getHeaders(): array
     {
         return $this->runtime->getHeaders();
+    }
+
+    /**
+     * Создаёт настройки выполнения запросов из ClientOptions или массива options.
+     *
+     * @param array<string, mixed>|ClientOptions $options Options клиента.
+     * @param int $timeout Таймаут из конфигурации Avito.
+     *
+     * @return ClientOptions Настройки выполнения запросов.
+     *
+     * @throws \InvalidArgumentException Если options описаны некорректно.
+     */
+    private function createClientOptions(array|ClientOptions $options, int $timeout): ClientOptions
+    {
+        if ($options instanceof ClientOptions) {
+            return $options;
+        }
+
+        return new ClientOptions(
+            timeout: (int) ($options['timeout'] ?? $timeout),
+            headers: $this->getOptionArray($options, self::HEADERS),
+            events: $this->getOptionArray($options, self::EVENTS),
+        );
     }
 
     /**

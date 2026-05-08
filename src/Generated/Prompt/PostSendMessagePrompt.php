@@ -21,15 +21,15 @@ class PostSendMessagePrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['message' => 'message', 'type' => 'type'];
+    protected const FIELD_MAP = ['message' => 'message', 'type' => 'type', 'user_id' => 'user_id', 'chat_id' => 'chat_id'];
 
-    protected const REQUIRED_FIELDS = [];
+    protected const REQUIRED_FIELDS = ['user_id', 'chat_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['user_id', 'chat_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -40,4 +40,9 @@ class PostSendMessagePrompt extends AbstractPrompt
 
     /** @var string|null Тип сообщения */
     public ?string $type = null;
+    /** @var string|int path-parameter user_id */
+    public string|int $user_id;
+
+    /** @var string|int path-parameter chat_id */
+    public string|int $chat_id;
 }

@@ -21,15 +21,15 @@ class ItemAnalyticsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'filter' => 'filter', 'grouping' => 'grouping', 'limit' => 'limit', 'metrics' => 'metrics', 'offset' => 'offset', 'sort' => 'sort'];
+    protected const FIELD_MAP = ['dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'filter' => 'filter', 'grouping' => 'grouping', 'limit' => 'limit', 'metrics' => 'metrics', 'offset' => 'offset', 'sort' => 'sort', 'user_id' => 'user_id'];
 
-    protected const REQUIRED_FIELDS = ['dateFrom', 'dateTo', 'grouping', 'limit', 'metrics', 'offset'];
+    protected const REQUIRED_FIELDS = ['dateFrom', 'dateTo', 'grouping', 'limit', 'metrics', 'offset', 'user_id'];
 
     protected const NULLABLE_FIELDS = ['filter', 'limit', 'offset', 'sort'];
 
     protected const CASTS = ['grouping' => \Andy87\ClientsAvito\Generated\Schema\Item\Groupings::class];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['user_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -58,4 +58,6 @@ class ItemAnalyticsPrompt extends AbstractPrompt
 
     /** @var array<string, mixed>|null Сортировка по заданному показателю */
     public ?array $sort = null;
+    /** @var string|int path-parameter user_id */
+    public string|int $user_id;
 }

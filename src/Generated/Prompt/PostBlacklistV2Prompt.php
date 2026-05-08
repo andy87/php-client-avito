@@ -21,15 +21,15 @@ class PostBlacklistV2Prompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['users' => 'users'];
+    protected const FIELD_MAP = ['users' => 'users', 'user_id' => 'user_id'];
 
-    protected const REQUIRED_FIELDS = [];
+    protected const REQUIRED_FIELDS = ['user_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['user_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -37,4 +37,6 @@ class PostBlacklistV2Prompt extends AbstractPrompt
 
     /** @var array<int, array<string, mixed>>|null Body field users */
     public ?array $users = null;
+    /** @var string|int path-parameter user_id */
+    public string|int $user_id;
 }

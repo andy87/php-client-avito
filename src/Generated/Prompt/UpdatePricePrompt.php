@@ -21,15 +21,15 @@ class UpdatePricePrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['price' => 'price'];
+    protected const FIELD_MAP = ['price' => 'price', 'item_id' => 'item_id'];
 
-    protected const REQUIRED_FIELDS = ['price'];
+    protected const REQUIRED_FIELDS = ['price', 'item_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['item_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -37,4 +37,6 @@ class UpdatePricePrompt extends AbstractPrompt
 
     /** @var int Цена */
     public int $price;
+    /** @var string|int path-parameter item_id */
+    public string|int $item_id;
 }

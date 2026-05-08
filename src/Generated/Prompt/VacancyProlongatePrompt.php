@@ -21,15 +21,15 @@ class VacancyProlongatePrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['billing_type' => 'billing_type', 'employee_id' => 'employee_id'];
+    protected const FIELD_MAP = ['billing_type' => 'billing_type', 'employee_id' => 'employee_id', 'vacancy_id' => 'vacancy_id'];
 
-    protected const REQUIRED_FIELDS = ['billing_type'];
+    protected const REQUIRED_FIELDS = ['billing_type', 'vacancy_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['vacancy_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -49,4 +49,6 @@ class VacancyProlongatePrompt extends AbstractPrompt
 Сотрудник должен быть в активен.
  */
     public ?int $employee_id = null;
+    /** @var string|int path-parameter vacancy_id */
+    public string|int $vacancy_id;
 }

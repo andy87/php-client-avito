@@ -70,6 +70,7 @@ abstract class BaseAvitoProvider extends AbstractProvider
             transport: $this->transport,
             timeout: $this->timeout,
             runtime: $this->runtime,
+            options: $this->options,
         );
     }
 

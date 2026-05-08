@@ -21,17 +21,19 @@ class ResumeGetItemPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = [];
+    protected const FIELD_MAP = ['resume_id' => 'resume_id'];
 
-    protected const REQUIRED_FIELDS = [];
+    protected const REQUIRED_FIELDS = ['resume_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['resume_id'];
 
     protected const QUERY_FIELDS = [];
 
     protected const BODY_FIELDS = [];
+    /** @var string|int path-parameter resume_id */
+    public string|int $resume_id;
 }

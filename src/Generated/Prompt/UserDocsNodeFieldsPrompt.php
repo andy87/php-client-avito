@@ -21,17 +21,19 @@ class UserDocsNodeFieldsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = false;
 
-    protected const FIELD_MAP = [];
+    protected const FIELD_MAP = ['node_slug' => 'node_slug'];
 
-    protected const REQUIRED_FIELDS = [];
+    protected const REQUIRED_FIELDS = ['node_slug'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['node_slug'];
 
     protected const QUERY_FIELDS = [];
 
     protected const BODY_FIELDS = [];
+    /** @var string|int path-parameter node_slug */
+    public string|int $node_slug;
 }

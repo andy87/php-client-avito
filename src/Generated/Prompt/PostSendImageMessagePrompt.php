@@ -21,15 +21,15 @@ class PostSendImageMessagePrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['image_id' => 'image_id'];
+    protected const FIELD_MAP = ['image_id' => 'image_id', 'user_id' => 'user_id', 'chat_id' => 'chat_id'];
 
-    protected const REQUIRED_FIELDS = ['image_id'];
+    protected const REQUIRED_FIELDS = ['image_id', 'user_id', 'chat_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['user_id', 'chat_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -37,4 +37,9 @@ class PostSendImageMessagePrompt extends AbstractPrompt
 
     /** @var string Идентификатор загруженного изображения */
     public string $image_id;
+    /** @var string|int path-parameter user_id */
+    public string|int $user_id;
+
+    /** @var string|int path-parameter chat_id */
+    public string|int $chat_id;
 }

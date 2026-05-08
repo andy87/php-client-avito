@@ -21,15 +21,15 @@ class VacancyAutoRenewalPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['auto_renewal' => 'auto_renewal'];
+    protected const FIELD_MAP = ['auto_renewal' => 'auto_renewal', 'vacancy_uuid' => 'vacancy_uuid'];
 
-    protected const REQUIRED_FIELDS = ['auto_renewal'];
+    protected const REQUIRED_FIELDS = ['auto_renewal', 'vacancy_uuid'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['vacancy_uuid'];
 
     protected const QUERY_FIELDS = [];
 
@@ -37,4 +37,6 @@ class VacancyAutoRenewalPrompt extends AbstractPrompt
 
     /** @var bool Body field auto_renewal */
     public bool $auto_renewal;
+    /** @var string|int path-parameter vacancy_uuid */
+    public string|int $vacancy_uuid;
 }

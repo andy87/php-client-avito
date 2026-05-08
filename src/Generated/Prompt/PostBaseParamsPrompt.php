@@ -21,15 +21,15 @@ class PostBaseParamsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['discount' => 'discount', 'extra_guest_fee' => 'extra_guest_fee', 'extra_guest_threshold' => 'extra_guest_threshold', 'fees' => 'fees', 'instant' => 'instant', 'minimal_duration' => 'minimal_duration', 'night_price' => 'night_price', 'refund' => 'refund'];
+    protected const FIELD_MAP = ['discount' => 'discount', 'extra_guest_fee' => 'extra_guest_fee', 'extra_guest_threshold' => 'extra_guest_threshold', 'fees' => 'fees', 'instant' => 'instant', 'minimal_duration' => 'minimal_duration', 'night_price' => 'night_price', 'refund' => 'refund', 'item_id' => 'item_id'];
 
-    protected const REQUIRED_FIELDS = [];
+    protected const REQUIRED_FIELDS = ['item_id'];
 
     protected const NULLABLE_FIELDS = ['extra_guest_fee', 'extra_guest_threshold', 'fees', 'instant', 'minimal_duration', 'night_price', 'refund'];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['item_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -58,4 +58,6 @@ class PostBaseParamsPrompt extends AbstractPrompt
 
     /** @var array<string, mixed>|null Параметры возврата */
     public ?array $refund = null;
+    /** @var string|int path-parameter item_id */
+    public string|int $item_id;
 }

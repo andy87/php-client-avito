@@ -21,15 +21,15 @@ class ApplyVasPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['slugs' => 'slugs', 'stickers' => 'stickers'];
+    protected const FIELD_MAP = ['slugs' => 'slugs', 'stickers' => 'stickers', 'itemId' => 'itemId'];
 
-    protected const REQUIRED_FIELDS = ['slugs'];
+    protected const REQUIRED_FIELDS = ['slugs', 'itemId'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['itemId'];
 
     protected const QUERY_FIELDS = [];
 
@@ -40,4 +40,6 @@ class ApplyVasPrompt extends AbstractPrompt
 
     /** @var array<int, int>|null Список значков */
     public ?array $stickers = null;
+    /** @var string|int path-parameter itemId */
+    public string|int $itemId;
 }

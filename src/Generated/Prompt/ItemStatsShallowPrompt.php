@@ -21,15 +21,15 @@ class ItemStatsShallowPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'fields' => 'fields', 'itemIds' => 'itemIds', 'periodGrouping' => 'periodGrouping'];
+    protected const FIELD_MAP = ['dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'fields' => 'fields', 'itemIds' => 'itemIds', 'periodGrouping' => 'periodGrouping', 'user_id' => 'user_id'];
 
-    protected const REQUIRED_FIELDS = ['dateFrom', 'dateTo', 'itemIds'];
+    protected const REQUIRED_FIELDS = ['dateFrom', 'dateTo', 'itemIds', 'user_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = ['dateFrom' => \Andy87\ClientsAvito\Generated\Schema\Item\StatisticsDateFrom::class, 'dateTo' => \Andy87\ClientsAvito\Generated\Schema\Item\StatisticsDateTo::class, 'fields' => \Andy87\ClientsAvito\Generated\Schema\Item\StatisticsFields::class, 'itemIds' => \Andy87\ClientsAvito\Generated\Schema\Item\StatisticsItemIDs::class, 'periodGrouping' => \Andy87\ClientsAvito\Generated\Schema\Item\StatisticsPeriodGrouping::class];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['user_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -49,4 +49,6 @@ class ItemStatsShallowPrompt extends AbstractPrompt
 
     /** @var \Andy87\ClientsAvito\Generated\Schema\Item\StatisticsPeriodGrouping|null Body field periodGrouping */
     public ?\Andy87\ClientsAvito\Generated\Schema\Item\StatisticsPeriodGrouping $periodGrouping = null;
+    /** @var string|int path-parameter user_id */
+    public string|int $user_id;
 }

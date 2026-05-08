@@ -21,17 +21,19 @@ class AddTerminalsSandboxPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = [];
+    protected const FIELD_MAP = ['tariff_id' => 'tariff_id'];
 
-    protected const REQUIRED_FIELDS = [];
+    protected const REQUIRED_FIELDS = ['tariff_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['tariff_id'];
 
     protected const QUERY_FIELDS = [];
 
     protected const BODY_FIELDS = [];
+    /** @var string|int path-parameter tariff_id */
+    public string|int $tariff_id;
 }

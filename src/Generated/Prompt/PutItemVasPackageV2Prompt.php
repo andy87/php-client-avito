@@ -21,15 +21,15 @@ class PutItemVasPackageV2Prompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['package_id' => 'package_id'];
+    protected const FIELD_MAP = ['package_id' => 'package_id', 'user_id' => 'user_id', 'item_id' => 'item_id'];
 
-    protected const REQUIRED_FIELDS = ['package_id'];
+    protected const REQUIRED_FIELDS = ['package_id', 'user_id', 'item_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['user_id', 'item_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -52,4 +52,9 @@ class PutItemVasPackageV2Prompt extends AbstractPrompt
 Если попытаться применить эти пакеты в недоступных для них регионе и категории, оплата не пройдёт.
  */
     public string $package_id;
+    /** @var string|int path-parameter user_id */
+    public string|int $user_id;
+
+    /** @var string|int path-parameter item_id */
+    public string|int $item_id;
 }

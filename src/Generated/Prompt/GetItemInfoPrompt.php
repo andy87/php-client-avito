@@ -21,17 +21,22 @@ class GetItemInfoPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = [];
+    protected const FIELD_MAP = ['user_id' => 'user_id', 'item_id' => 'item_id'];
 
-    protected const REQUIRED_FIELDS = [];
+    protected const REQUIRED_FIELDS = ['user_id', 'item_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['user_id', 'item_id'];
 
     protected const QUERY_FIELDS = [];
 
     protected const BODY_FIELDS = [];
+    /** @var string|int path-parameter user_id */
+    public string|int $user_id;
+
+    /** @var string|int path-parameter item_id */
+    public string|int $item_id;
 }

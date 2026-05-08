@@ -21,15 +21,15 @@ class AccountSpendingsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'filter' => 'filter', 'grouping' => 'grouping', 'spendingTypes' => 'spendingTypes'];
+    protected const FIELD_MAP = ['dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'filter' => 'filter', 'grouping' => 'grouping', 'spendingTypes' => 'spendingTypes', 'user_id' => 'user_id'];
 
-    protected const REQUIRED_FIELDS = ['dateFrom', 'dateTo', 'grouping', 'spendingTypes'];
+    protected const REQUIRED_FIELDS = ['dateFrom', 'dateTo', 'grouping', 'spendingTypes', 'user_id'];
 
     protected const NULLABLE_FIELDS = ['filter'];
 
     protected const CASTS = ['grouping' => \Andy87\ClientsAvito\Generated\Schema\Item\SpendingsGroupings::class];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['user_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -49,4 +49,6 @@ class AccountSpendingsPrompt extends AbstractPrompt
 
     /** @var array<int, string> Набор необходимых типов расходов */
     public array $spendingTypes;
+    /** @var string|int path-parameter user_id */
+    public string|int $user_id;
 }

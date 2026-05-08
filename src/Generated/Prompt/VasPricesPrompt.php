@@ -21,15 +21,15 @@ class VasPricesPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['itemIds' => 'itemIds'];
+    protected const FIELD_MAP = ['itemIds' => 'itemIds', 'userId' => 'userId'];
 
-    protected const REQUIRED_FIELDS = ['itemIds'];
+    protected const REQUIRED_FIELDS = ['itemIds', 'userId'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['userId'];
 
     protected const QUERY_FIELDS = [];
 
@@ -37,4 +37,6 @@ class VasPricesPrompt extends AbstractPrompt
 
     /** @var array<int, int> Набор идентификаторов объявлений на сайте */
     public array $itemIds;
+    /** @var string|int path-parameter userId */
+    public string|int $userId;
 }

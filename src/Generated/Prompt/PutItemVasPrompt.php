@@ -21,15 +21,15 @@ class PutItemVasPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['vas_id' => 'vas_id'];
+    protected const FIELD_MAP = ['vas_id' => 'vas_id', 'user_id' => 'user_id', 'item_id' => 'item_id'];
 
-    protected const REQUIRED_FIELDS = ['vas_id'];
+    protected const REQUIRED_FIELDS = ['vas_id', 'user_id', 'item_id'];
 
     protected const NULLABLE_FIELDS = [];
 
     protected const CASTS = [];
 
-    protected const PATH_FIELDS = [];
+    protected const PATH_FIELDS = ['user_id', 'item_id'];
 
     protected const QUERY_FIELDS = [];
 
@@ -40,4 +40,9 @@ class PutItemVasPrompt extends AbstractPrompt
 - `xl` – [XL-объявление](https://support.avito.ru/articles/685)
  */
     public string $vas_id;
+    /** @var string|int path-parameter user_id */
+    public string|int $user_id;
+
+    /** @var string|int path-parameter item_id */
+    public string|int $item_id;
 }

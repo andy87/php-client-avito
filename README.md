@@ -4,7 +4,7 @@
 
 Typed PHP client for the Avito Public API. The package provides a main `ApiClientAvito` entry point, generated provider sections, request prompt DTOs, response DTOs, and schema classes.
 
-The client is built on top of `andy87/clients-base` and targets PHP 8.1 or newer.
+The client is built on top of `andy87/clients-sdk` and targets PHP 8.1 or newer.
 
 ## Requirements
 
