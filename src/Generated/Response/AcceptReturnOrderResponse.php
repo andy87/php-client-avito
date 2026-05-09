@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Andy87\ClientsAvito\Generated\Response;
 
-use Andy87\ClientsBase\Response\AbstractResponse;
+use Andy87\PhpClientSdk\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /order-management/1/order/acceptReturnOrder.

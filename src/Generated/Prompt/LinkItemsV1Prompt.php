@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Andy87\ClientsAvito\Generated\Prompt;
 
-use Andy87\ClientsBase\Prompt\AbstractPrompt;
+use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /linkItemsV1.

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Andy87\ClientsAvito;
 
-use Andy87\ClientsBase\Config\BaseUrl;
+use Andy87\PhpClientSdk\Config\BaseUrl;
 
 /**
  * Хранит настройки подключения к Avito API.

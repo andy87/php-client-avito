@@ -4,7 +4,7 @@
 
 Типизированный PHP-клиент для Avito Public API. Пакет предоставляет главный клиент `ApiClientAvito`, сгенерированные provider-разделы, DTO запросов, DTO ответов и schema-классы.
 
-Клиент построен на базе `andy87/clients-sdk` и рассчитан на PHP 8.1 или новее.
+Клиент построен на базе `andy87/php-client-sdk` и рассчитан на PHP 8.1 или новее.
 
 ## Требования
 
@@ -142,7 +142,7 @@ $config = AvitoConfig::fromEnv(suffix: 'CURIES');
 
 ## События и заголовки
 
-`ApiClientAvito` поддерживает общие runtime-options из `andy87/clients-sdk`: дефолтные заголовки запросов и обработчики событий. Runtime-состояние хранится один раз на клиенте и используется всеми provider-разделами, включая уже созданные лениво provider-ы.
+`ApiClientAvito` поддерживает общие runtime-options из `andy87/php-client-sdk`: дефолтные заголовки запросов и обработчики событий. Runtime-состояние хранится один раз на клиенте и используется всеми provider-разделами, включая уже созданные лениво provider-ы.
 
 Если используется дефолтный HTTP-транспорт, runtime-options можно передать вторым аргументом конструктора:
 
@@ -151,9 +151,9 @@ $config = AvitoConfig::fromEnv(suffix: 'CURIES');
 
 declare(strict_types=1);
 
-use Andy87\ClientsBase\Event\BeforeRequestEvent;
-use Andy87\ClientsBase\Event\AfterRequestEvent;
-use Andy87\ClientsBase\Event\RequestExceptionEvent;
+use Andy87\PhpClientSdk\Event\BeforeRequestEvent;
+use Andy87\PhpClientSdk\Event\AfterRequestEvent;
+use Andy87\PhpClientSdk\Event\RequestExceptionEvent;
 use Andy87\ClientsAvito\ApiClientAvito;
 
 $client = new ApiClientAvito([
@@ -185,7 +185,7 @@ $client = new ApiClientAvito([
 declare(strict_types=1);
 
 use Andy87\ClientsAvito\ApiClientAvito;
-use Andy87\ClientsBase\Contracts\HttpTransportInterface;
+use Andy87\PhpClientSdk\Contracts\HttpTransportInterface;
 
 /** @var HttpTransportInterface $transport */
 $client = new ApiClientAvito(
@@ -210,7 +210,7 @@ $client = new ApiClientAvito(
 
 declare(strict_types=1);
 
-use Andy87\ClientsBase\Event\BeforeRequestEvent;
+use Andy87\PhpClientSdk\Event\BeforeRequestEvent;
 use Andy87\ClientsAvito\ApiClientAvito;
 
 /** @var ApiClientAvito $client */
@@ -238,7 +238,7 @@ $client->setHeaders(['X-Account' => 'secondary']);
 
 declare(strict_types=1);
 
-use Andy87\ClientsBase\Event\BeforeRequestEvent;
+use Andy87\PhpClientSdk\Event\BeforeRequestEvent;
 use Andy87\ClientsAvito\ApiClientAvito;
 
 $client = new ApiClientAvito($config, [
@@ -284,8 +284,8 @@ $clientWithoutRefreshRetry = new ApiClientAvito($config, [
 
 use Andy87\ClientsAvito\ApiClientAvito;
 use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
-use Andy87\ClientsBase\Auth\ApiKeyAuthorizationStrategy;
-use Andy87\ClientsBase\Auth\PromptClassAuthorizationStrategyResolver;
+use Andy87\PhpClientSdk\Auth\ApiKeyAuthorizationStrategy;
+use Andy87\PhpClientSdk\Auth\PromptClassAuthorizationStrategyResolver;
 
 $client = new ApiClientAvito($config, [
     ApiClientAvito::AUTHORIZATION_RESOLVER => new PromptClassAuthorizationStrategyResolver([
@@ -312,7 +312,7 @@ $lastRecord = $client->getTraceableTransport()?->getLastRecord();
 
 ## Mock-тестирование
 
-Сгенерированные prompts можно мокать по классу через `andy87/clients-sdk`. Так тесты не зависят от группировки сгенерированных URL:
+Сгенерированные prompts можно мокать по классу через `andy87/php-client-sdk`. Так тесты не зависят от группировки сгенерированных URL:
 
 ```php
 <?php
@@ -321,9 +321,9 @@ declare(strict_types=1);
 
 use Andy87\ClientsAvito\ApiClientAvito;
 use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
-use Andy87\ClientsBase\Auth\NullAuthorizationStrategy;
-use Andy87\ClientsBase\Mock\MockTransport;
-use Andy87\ClientsBase\Mock\PromptClassMockResponseResolver;
+use Andy87\PhpClientSdk\Auth\NullAuthorizationStrategy;
+use Andy87\PhpClientSdk\Mock\MockTransport;
+use Andy87\PhpClientSdk\Mock\PromptClassMockResponseResolver;
 
 $resolver = (new PromptClassMockResponseResolver())
     ->addJson(GetUserInfoSelfPrompt::class, [

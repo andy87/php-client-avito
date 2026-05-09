@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace Andy87\ClientsAvito;
 
-use Andy87\ClientsBase\Auth\ClientCredentialsAuthorizationStrategy;
-use Andy87\ClientsBase\Config\ClientOptions;
-use Andy87\ClientsBase\Contracts\AuthorizationStrategyResolverInterface;
-use Andy87\ClientsBase\Contracts\AuthorizationStrategyInterface;
-use Andy87\ClientsBase\Contracts\HttpTransportInterface;
-use Andy87\ClientsBase\Event\AfterInitEvent;
-use Andy87\ClientsBase\Event\ClientEvents;
-use Andy87\ClientsBase\Http\NativeHttpTransport;
-use Andy87\ClientsBase\Http\TraceableTransport;
-use Andy87\ClientsBase\Runtime\ClientRuntime;
+use Andy87\PhpClientSdk\Auth\ClientCredentialsAuthorizationStrategy;
+use Andy87\PhpClientSdk\Config\ClientOptions;
+use Andy87\PhpClientSdk\Contracts\AuthorizationStrategyResolverInterface;
+use Andy87\PhpClientSdk\Contracts\AuthorizationStrategyInterface;
+use Andy87\PhpClientSdk\Contracts\HttpTransportInterface;
+use Andy87\PhpClientSdk\Event\AfterInitEvent;
+use Andy87\PhpClientSdk\Event\ClientEvents;
+use Andy87\PhpClientSdk\Http\NativeHttpTransport;
+use Andy87\PhpClientSdk\Http\TraceableTransport;
+use Andy87\PhpClientSdk\Runtime\ClientRuntime;
 use Andy87\ClientsAvito\Generated\ProviderRegistry;
 
 /**

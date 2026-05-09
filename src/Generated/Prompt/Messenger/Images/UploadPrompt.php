@@ -12,7 +12,7 @@ use Andy87\ClientsAvito\Generated\Prompt\UploadImagesPrompt as BaseUploadImagesP
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/uploadImages
  *
  * @property int $user_id Идентификатор пользователя (клиента)
- * @property \Andy87\ClientsBase\Http\MultipartFile|string $uploadfile__ Body field uploadfile[]
+ * @property \Andy87\PhpClientSdk\Http\MultipartFile|string $uploadfile__ Body field uploadfile[]
  */
 class UploadPrompt extends BaseUploadImagesPrompt
 {

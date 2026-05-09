@@ -4,7 +4,7 @@
 
 Typed PHP client for the Avito Public API. The package provides a main `ApiClientAvito` entry point, generated provider sections, request prompt DTOs, response DTOs, and schema classes.
 
-The client is built on top of `andy87/clients-sdk` and targets PHP 8.1 or newer.
+The client is built on top of `andy87/php-client-sdk` and targets PHP 8.1 or newer.
 
 ## Requirements
 
@@ -142,7 +142,7 @@ This reads `AVITO_CLIENT_ID_CURIES` and `AVITO_CLIENT_SECRET_CURIES`.
 
 ## Events and Headers
 
-`ApiClientAvito` supports shared runtime options from `andy87/clients-sdk`: default request headers and event listeners. Runtime state is stored once on the client and is shared with all provider sections, including providers that were already created lazily.
+`ApiClientAvito` supports shared runtime options from `andy87/php-client-sdk`: default request headers and event listeners. Runtime state is stored once on the client and is shared with all provider sections, including providers that were already created lazily.
 
 If you use the default HTTP transport, pass runtime options as the second constructor argument:
 
@@ -151,9 +151,9 @@ If you use the default HTTP transport, pass runtime options as the second constr
 
 declare(strict_types=1);
 
-use Andy87\ClientsBase\Event\BeforeRequestEvent;
-use Andy87\ClientsBase\Event\AfterRequestEvent;
-use Andy87\ClientsBase\Event\RequestExceptionEvent;
+use Andy87\PhpClientSdk\Event\BeforeRequestEvent;
+use Andy87\PhpClientSdk\Event\AfterRequestEvent;
+use Andy87\PhpClientSdk\Event\RequestExceptionEvent;
 use Andy87\ClientsAvito\ApiClientAvito;
 
 $client = new ApiClientAvito([
@@ -185,7 +185,7 @@ If you pass a custom transport as the second argument, pass runtime options as t
 declare(strict_types=1);
 
 use Andy87\ClientsAvito\ApiClientAvito;
-use Andy87\ClientsBase\Contracts\HttpTransportInterface;
+use Andy87\PhpClientSdk\Contracts\HttpTransportInterface;
 
 /** @var HttpTransportInterface $transport */
 $client = new ApiClientAvito(
@@ -210,7 +210,7 @@ You can also change headers and attach listeners after client creation:
 
 declare(strict_types=1);
 
-use Andy87\ClientsBase\Event\BeforeRequestEvent;
+use Andy87\PhpClientSdk\Event\BeforeRequestEvent;
 use Andy87\ClientsAvito\ApiClientAvito;
 
 /** @var ApiClientAvito $client */
@@ -238,7 +238,7 @@ Each event option accepts either one callable or a list of callables:
 
 declare(strict_types=1);
 
-use Andy87\ClientsBase\Event\BeforeRequestEvent;
+use Andy87\PhpClientSdk\Event\BeforeRequestEvent;
 use Andy87\ClientsAvito\ApiClientAvito;
 
 $client = new ApiClientAvito($config, [
@@ -284,8 +284,8 @@ Use `authorizationResolver` when a generated prompt needs a different auth strat
 
 use Andy87\ClientsAvito\ApiClientAvito;
 use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
-use Andy87\ClientsBase\Auth\ApiKeyAuthorizationStrategy;
-use Andy87\ClientsBase\Auth\PromptClassAuthorizationStrategyResolver;
+use Andy87\PhpClientSdk\Auth\ApiKeyAuthorizationStrategy;
+use Andy87\PhpClientSdk\Auth\PromptClassAuthorizationStrategyResolver;
 
 $client = new ApiClientAvito($config, [
     ApiClientAvito::AUTHORIZATION_RESOLVER => new PromptClassAuthorizationStrategyResolver([
@@ -312,7 +312,7 @@ $lastRecord = $client->getTraceableTransport()?->getLastRecord();
 
 ## Mock Testing
 
-Generated prompts can be mocked by class through `andy87/clients-sdk`. This keeps tests independent from generated URL grouping:
+Generated prompts can be mocked by class through `andy87/php-client-sdk`. This keeps tests independent from generated URL grouping:
 
 ```php
 <?php
@@ -321,9 +321,9 @@ declare(strict_types=1);
 
 use Andy87\ClientsAvito\ApiClientAvito;
 use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
-use Andy87\ClientsBase\Auth\NullAuthorizationStrategy;
-use Andy87\ClientsBase\Mock\MockTransport;
-use Andy87\ClientsBase\Mock\PromptClassMockResponseResolver;
+use Andy87\PhpClientSdk\Auth\NullAuthorizationStrategy;
+use Andy87\PhpClientSdk\Mock\MockTransport;
+use Andy87\PhpClientSdk\Mock\PromptClassMockResponseResolver;
 
 $resolver = (new PromptClassMockResponseResolver())
     ->addJson(GetUserInfoSelfPrompt::class, [

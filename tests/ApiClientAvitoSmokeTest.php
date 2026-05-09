@@ -20,22 +20,22 @@ use Andy87\ClientsAvito\Generated\Prompt\UploadImagesPrompt;
 use Andy87\ClientsAvito\Generated\Response\DownloadLabelResponse;
 use Andy87\ClientsAvito\Generated\Response\GetUserInfoSelfResponse;
 use Andy87\ClientsAvito\Generated\Response\PostOperationsHistoryResponse;
-use Andy87\ClientsBase\Auth\ApiKeyAuthorizationStrategy;
-use Andy87\ClientsBase\Auth\NullAuthorizationStrategy;
-use Andy87\ClientsBase\Auth\PromptClassAuthorizationStrategyResolver;
-use Andy87\ClientsBase\Http\HttpRequest;
-use Andy87\ClientsBase\Http\HttpResponse;
-use Andy87\ClientsBase\Http\MultipartFile;
-use Andy87\ClientsBase\Http\TraceableTransport;
-use Andy87\ClientsBase\Mock\CallbackMockResponseResolver;
-use Andy87\ClientsBase\Mock\MockResponseResolverInterface;
-use Andy87\ClientsBase\Mock\MockTransport;
-use Andy87\ClientsBase\Mock\PromptClassMockResponseResolver;
-use Andy87\ClientsBase\Mock\RouteMockResponseResolver;
+use Andy87\PhpClientSdk\Auth\ApiKeyAuthorizationStrategy;
+use Andy87\PhpClientSdk\Auth\NullAuthorizationStrategy;
+use Andy87\PhpClientSdk\Auth\PromptClassAuthorizationStrategyResolver;
+use Andy87\PhpClientSdk\Http\HttpRequest;
+use Andy87\PhpClientSdk\Http\HttpResponse;
+use Andy87\PhpClientSdk\Http\MultipartFile;
+use Andy87\PhpClientSdk\Http\TraceableTransport;
+use Andy87\PhpClientSdk\Mock\CallbackMockResponseResolver;
+use Andy87\PhpClientSdk\Mock\MockResponseResolverInterface;
+use Andy87\PhpClientSdk\Mock\MockTransport;
+use Andy87\PhpClientSdk\Mock\PromptClassMockResponseResolver;
+use Andy87\PhpClientSdk\Mock\RouteMockResponseResolver;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Проверяет базовую работоспособность Avito-клиента после миграции на clients-sdk.
+ * Проверяет базовую работоспособность Avito-клиента после миграции на php-client-sdk.
  */
 class ApiClientAvitoSmokeTest extends TestCase
 {
