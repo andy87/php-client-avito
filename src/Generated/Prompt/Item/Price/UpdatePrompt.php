@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\UpdatePricePrompt as BaseUpdatePricePro
 
 /**
  * Класс данных запроса Avito API [POST] /core/v1/items/{item_id}/update_price.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/updatePrice
- * 
+ *
+ * @property int $item_id Идентификатор объявления на сайте
  * @property int $price Цена
  */
 class UpdatePrompt extends BaseUpdatePricePrompt

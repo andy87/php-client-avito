@@ -15,9 +15,9 @@ class LeadsProvider extends BaseAvitoProvider
 {
     /**
      * Получение событий сервиса Сигнал
-     * 
+     *
      * Метод получения событий сервиса Сигнал
-     * 
+     *
      * OperationId: getLeads.
      * HTTP: POST /autoteka/v1/get-leads/.
      *

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /messenger/v2/accounts/{user_id}/chats.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/getChatsV2
  */
 class GetChatsV2Response extends AbstractResponse

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoload/v2/profile.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/createOrUpdateProfileV2
  */
 class CreateOrUpdateProfileV2Prompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class CreateOrUpdateProfileV2Prompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = false;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['agreement' => 'agreement', 'autoload_enabled' => 'autoload_enabled', 'feeds_data' => 'feeds_data', 'report_email' => 'report_email', 'schedule' => 'schedule'];
 
@@ -33,7 +35,11 @@ class CreateOrUpdateProfileV2Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['agreement', 'autoload_enabled', 'feeds_data', 'report_email', 'schedule'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var bool|null Согласие с [правилами](https://support.avito.ru/articles/203867776) использования Авито Автозагрузки.
 

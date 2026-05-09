@@ -61,10 +61,10 @@ class OrderManagementProvider extends BaseAvitoProvider
 
     /**
      * Выбор отделения отделения Почты России для получения возврата
-     * 
+     *
      * Данный метод применяется для подтверждения возврата товара и выбора отделения Почты России, куда будет доставлен возврат.
      * Максимальное количество запросов в минуту - 100.
-     * 
+     *
      * OperationId: acceptReturnOrder.
      * HTTP: POST /order-management/1/order/acceptReturnOrder.
      *
@@ -86,10 +86,10 @@ class OrderManagementProvider extends BaseAvitoProvider
 
     /**
      * Изменение статуса заказа
-     * 
+     *
      * Данный метод применяется для изменения статуса заказа, в частности для подтверждения или отмены заказа.
      * Максимальное количество запросов в минуту - 100.
-     * 
+     *
      * OperationId: applyTransition.
      * HTTP: POST /order-management/1/order/applyTransition.
      *
@@ -111,10 +111,10 @@ class OrderManagementProvider extends BaseAvitoProvider
 
     /**
      * Метод для проверки кода подтверждения заказа.
-     * 
+     *
      * Данный метод используется для подтверждения личности для получения заказа в ПВЗ. Пользователь называет код  из приложения сотруднику СД. Далее через API служба доставки проверяет его валидность.
      * Максимальное количество запросов в минуту - 2000.
-     * 
+     *
      * OperationId: checkConfirmationCode.
      * HTTP: POST /order-management/1/order/checkConfirmationCode.
      *
@@ -136,10 +136,10 @@ class OrderManagementProvider extends BaseAvitoProvider
 
     /**
      * Метод для подготовки заказа с самовывозом
-     * 
+     *
      * Данный метод применяется продавцом для подготовки заказа и передачи адреса, сроков бронирования и сообщения покупателю.
      * Максимальное количество запросов в минуту - 60
-     * 
+     *
      * OperationId: cncSetDetails.
      * HTTP: POST /order-management/1/order/cncSetDetails.
      *
@@ -161,10 +161,10 @@ class OrderManagementProvider extends BaseAvitoProvider
 
     /**
      * Скачать сгенерированный PDF-файл (этикетку).
-     * 
+     *
      * Скачивание сгенерированного PDF-файла с этикетками по идентификатору задачи.  Файл доступен после успешного завершения генерации.
      * Максимальное количество запросов в минуту - 1000.
-     * 
+     *
      * OperationId: downloadLabel.
      * HTTP: GET /order-management/1/orders/labels/{taskID}/download.
      *
@@ -186,10 +186,10 @@ class OrderManagementProvider extends BaseAvitoProvider
 
     /**
      * Создать задачу на генерацию этикеток (до 100).
-     * 
-     * Создаёт задачу на генерацию PDF-этикеток для заказов (до 100 штук).  Возвращает идентификатор задачи для последующей проверки статуса и скачивания результата. 
+     *
+     * Создаёт задачу на генерацию PDF-этикеток для заказов (до 100 штук).  Возвращает идентификатор задачи для последующей проверки статуса и скачивания результата.
      * Максимальное количество запросов в минуту - 1000. Эта ручка доступна только для ПВЗ заказов.
-     * 
+     *
      * OperationId: generateLabels.
      * HTTP: POST /order-management/1/orders/labels.
      *
@@ -211,10 +211,10 @@ class OrderManagementProvider extends BaseAvitoProvider
 
     /**
      * Создать задачу на генерацию этикеток (до 1000).
-     * 
+     *
      * Создаёт задачу на генерацию PDF-этикеток для заказов (до 1000 штук).  Возвращает идентификатор задачи для последующей проверки статуса и скачивания результата.
      * Максимальное количество запросов в минуту - 1. Эта ручка доступна только для ПВЗ заказов.
-     * 
+     *
      * OperationId: generateLabelsExtended.
      * HTTP: POST /order-management/1/orders/labels/extended.
      *
@@ -236,10 +236,10 @@ class OrderManagementProvider extends BaseAvitoProvider
 
     /**
      * Метод получения доступных временных промежутков приезда курьера
-     * 
+     *
      * Данный метод применяется для получения всех промежутков времени, когда курьер может приехать забрать товар, чтобы отвезти его покупателю.
      * Максимальное количество запросов в минуту - 100.
-     * 
+     *
      * OperationId: getCourierDeliveryRange.
      * HTTP: GET /order-management/1/order/getCourierDeliveryRange.
      *
@@ -261,10 +261,10 @@ class OrderManagementProvider extends BaseAvitoProvider
 
     /**
      * Получение информации о заказах
-     * 
+     *
      * Получение информации о заказах по статусу.
      * Максимальное количество запросов в минуту - 500.
-     * 
+     *
      * OperationId: getOrders.
      * HTTP: GET /order-management/1/orders.
      *
@@ -286,11 +286,11 @@ class OrderManagementProvider extends BaseAvitoProvider
 
     /**
      * Передача честного знака
-     * 
+     *
      * Метод для передачи честного знака для товаров в заказе.
      * Максимальное количество элементов в одном запросе - 50.
      * Максимальное количество запросов в минуту - 100.
-     * 
+     *
      * OperationId: markings.
      * HTTP: POST /order-management/1/markings.
      *
@@ -312,10 +312,10 @@ class OrderManagementProvider extends BaseAvitoProvider
 
     /**
      * Метод выбора определённого доступного временного промежутка для приезда курьера
-     * 
+     *
      * Данный метод применяется после метода получения всех промежутков времени, когда курьер может приехать и забрать товар.  Вызвав этот метод, продавец выбирает определённый временной промежуток приезда курьера.
      * Также этот метод можно вызвать, чтобы изменить время приезда курьера, если он ещё не забрал посылку. Максимальное количество запросов в минуту - 200.
-     * 
+     *
      * OperationId: setCourierDeliveryRange.
      * HTTP: POST /order-management/1/order/setCourierDeliveryRange.
      *
@@ -337,10 +337,10 @@ class OrderManagementProvider extends BaseAvitoProvider
 
     /**
      * Передача трек-номера
-     * 
+     *
      * Метод для передачи трек-номера для доставки партнёрами продавца (DBS)
      * Максимальное количество запросов в минуту - 100.
-     * 
+     *
      * OperationId: setOrderTrackingNumber.
      * HTTP: POST /order-management/1/order/setTrackingNumber.
      *

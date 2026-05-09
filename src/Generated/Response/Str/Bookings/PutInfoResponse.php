@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\PutBookingsInfoResponse as BasePutBoo
 
 /**
  * Ответ Avito API [POST] /core/v1/accounts/{user_id}/items/{item_id}/bookings.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/putBookingsInfo
- * 
+ *
  * @property string|null $result Результат обработки запроса
  */
 class PutInfoResponse extends BasePutBookingsInfoResponse

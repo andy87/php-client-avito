@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/v1/createAnnouncement.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/v1createAnnouncement
  */
 class V1createAnnouncementPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class V1createAnnouncementPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['announcementID' => 'announcementID', 'announcementType' => 'announcementType', 'barcode' => 'barcode', 'date' => 'date', 'options' => 'options', 'packages' => 'packages', 'receiver' => 'receiver', 'sender' => 'sender'];
 
@@ -33,7 +35,11 @@ class V1createAnnouncementPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['announcementID', 'announcementType', 'barcode', 'date', 'options', 'packages', 'receiver', 'sender'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string Уникальный идентификатор анонса UUID V4. */
     public string $announcementID;

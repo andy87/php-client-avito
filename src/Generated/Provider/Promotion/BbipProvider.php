@@ -19,16 +19,16 @@ class BbipProvider extends BaseAvitoProvider
 {
     /**
      * BBIP. Подключение услуги продвижения
-     * 
+     *
      * Создать заявку на подключение услуг продвижения.
-     * 
+     *
      * Создание заявки для набора объявлений возможно только в случае если ни по одному из объявлений не возникло ошибок.
-     * 
+     *
      * При успешном создании заявки система возвращает `orderId` (идентификатор заявки),
      * на основе которого можно проверять как статус заявки, так и статус подключения услуг по объявлениям.
-     * 
+     *
      * **Rate limit:** 10 RPM
-     * 
+     *
      * OperationId: create_bbip_order_for_items_v1.
      * HTTP: PUT /promotion/v1/items/services/bbip/orders/create.
      *
@@ -50,11 +50,11 @@ class BbipProvider extends BaseAvitoProvider
 
     /**
      * BBIP. Прогноз продвижения
-     * 
+     *
      * Получение прогноза продвижения по объявлениям
-     * 
+     *
      * **Rate limit:** 100 RPM
-     * 
+     *
      * OperationId: get_bbip_forecasts_by_items_v1.
      * HTTP: POST /promotion/v1/items/services/bbip/forecasts/get.
      *
@@ -76,11 +76,11 @@ class BbipProvider extends BaseAvitoProvider
 
     /**
      * BBIP. Варианты бюджета продвижения
-     * 
+     *
      * Получение доступных вариантов бюджета для продвижения
-     * 
+     *
      * **Rate limit:** 100 RPM
-     * 
+     *
      * OperationId: get_bbip_suggests_by_items_v1.
      * HTTP: POST /promotion/v1/items/services/bbip/suggests/get.
      *

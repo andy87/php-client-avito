@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /realty/v1/marketPriceCorrespondence/{itemId}/{price}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/realty-reports/documentation#operation/market_price_correspondence_v1
  */
 class MarketPriceCorrespondenceV1Prompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class MarketPriceCorrespondenceV1Prompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['itemId' => 'itemId', 'price' => 'price'];
 
@@ -33,7 +35,11 @@ class MarketPriceCorrespondenceV1Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int Идентифиактор объявления */
     public int $itemId;

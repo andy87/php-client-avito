@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/v1/cancelAnnouncement.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/v1cancelAnnouncement
  */
 class V1cancelAnnouncementResponse extends AbstractResponse

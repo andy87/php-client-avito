@@ -15,11 +15,11 @@ class OrderProvider extends BaseAvitoProvider
 {
     /**
      * Статус заявки
-     * 
+     *
      * Получение статуса заявки на подключение услуг продвижения
-     * 
+     *
      * **Rate limit:** 100 RPM
-     * 
+     *
      * OperationId: get_order_status_v1.
      * HTTP: POST /promotion/v1/items/services/orders/status.
      *

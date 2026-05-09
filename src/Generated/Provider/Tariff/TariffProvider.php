@@ -15,11 +15,11 @@ class TariffProvider extends BaseAvitoProvider
 {
     /**
      * Информация по тарифу
-     * 
+     *
      * Получение информации по тарифу.
-     * 
+     *
      * **Внимание:** информация доступна только для тарифов в категории "Транспорт". **Тариф должен быть не "СРА"**
-     * 
+     *
      * OperationId: getTariffInfo.
      * HTTP: GET /tariff/info/1.
      *

@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\ApplicationsWebhooksGetResponse as Ba
 
 /**
  * Ответ Avito API [GET] /job/v1/applications/webhooks.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhooksGet
- * 
+ *
  * @property array<int, \Andy87\ClientsAvito\Generated\Schema\Job\WebhookSubscribeRequestBody> $webhooks список вебхуков
  */
 class WebhooksGetResponse extends BaseApplicationsWebhooksGetResponse

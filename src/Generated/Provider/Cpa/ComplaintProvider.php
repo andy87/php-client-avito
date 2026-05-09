@@ -15,9 +15,9 @@ class ComplaintProvider extends BaseAvitoProvider
 {
     /**
      * Создание жалобы для звонков/чатов
-     * 
+     *
      * Создание жалобы на целевое действие по actionId. Максимальное количество запросов в минуту - 3.
-     * 
+     *
      * OperationId: createComplaintByActionId.
      * HTTP: POST /cpa/v1/createComplaintByActionId.
      *

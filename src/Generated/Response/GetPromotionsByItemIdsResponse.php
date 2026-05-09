@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /cpxpromo/1/getPromotionsByItemIds.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/getPromotionsByItemIds
  */
 class GetPromotionsByItemIdsResponse extends AbstractResponse

@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\V1getChangeParcelInfoPrompt as BaseV1ge
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/v1/getChangeParcelInfo.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/v1getChangeParcelInfo
- * 
+ *
  * @property string $applicationID Body field applicationID
  */
 class GetChangeParcelInfoPrompt extends BaseV1getChangeParcelInfoPrompt

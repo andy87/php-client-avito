@@ -15,7 +15,7 @@ class BlacklistProvider extends BaseAvitoProvider
 {
     /**
      * Добавление пользователя в blacklist
-     * 
+     *
      * OperationId: postBlacklistV2.
      * HTTP: POST /messenger/v2/accounts/{user_id}/blacklist.
      *

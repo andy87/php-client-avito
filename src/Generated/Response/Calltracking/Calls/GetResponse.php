@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\GetCallsResponse as BaseGetCallsRespo
 
 /**
  * Ответ Avito API [POST] /calltracking/v1/getCalls/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/calltracking/documentation#operation/get_calls
  */
 class GetResponse extends BaseGetCallsResponse

@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\CreateAnnouncement3PLPrompt as BaseCrea
 
 /**
  * Класс данных запроса Avito API [POST] /createAnnouncement.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/CreateAnnouncement3PL
- * 
+ *
  * @property \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID $announcementID Body field announcementID
  * @property string $announcementType Тип анонса
  * @property string $barcode Уникальный ШК анонса. Должен быть напечатан на бумажных сопроводительных документах (акте приема передачи). Данный ШК необходимо использовать для установки соответствия принимаемой партии грузомест/посылок с анонсом переданным в электронном виде через инфообмен.

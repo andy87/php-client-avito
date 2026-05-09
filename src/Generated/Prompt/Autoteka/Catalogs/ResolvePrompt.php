@@ -8,10 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\CatalogsResolvePrompt as BaseCatalogsRe
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/catalogs/resolve.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/catalogsResolve
- * 
- * @property string|null $Authorization Токен для авторизации
+ *
  * @property array<int, array<string, mixed>> $fieldsValueIds Выбранные значения параметров
  */
 class ResolvePrompt extends BaseCatalogsResolvePrompt

@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetReportByIdV2Response as BaseGetRep
 
 /**
  * Ответ Avito API [GET] /autoload/v2/reports/{report_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getReportByIdV2
- * 
+ *
  * @property array<int, array<string, mixed>> $events Ошибки и предупреждения, которые относятся ко всей выгрузке
  * @property string $feed_url Ссылка на копию файла с объявлениями в момент начала загрузки
  * @property string $finished_at Дата и время закрытия отчёта (окончания выгрузки)

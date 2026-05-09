@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\V1CancelParcelPrompt as BaseV1CancelPar
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/v1/cancelParcel.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/v1CancelParcel
- * 
+ *
  * @property \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CancelSandboxParcelOptions|null $options Body field options
  * @property string $parcelID Body field parcelID
  */

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /messenger/v1/accounts/{user_id}/getVoiceFiles.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/getVoiceFiles
  */
 class GetVoiceFilesResponse extends AbstractResponse

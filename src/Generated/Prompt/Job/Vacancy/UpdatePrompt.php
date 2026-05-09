@@ -8,9 +8,11 @@ use Andy87\ClientsAvito\Generated\Prompt\VacancyUpdatePrompt as BaseVacancyUpdat
 
 /**
  * Класс данных запроса Avito API [PUT] /job/v1/vacancies/{vacancy_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyUpdate
- * 
+ *
+ * @property int $vacancy_id Идентификатор вакансии на сайте
+ * @property bool|null $X_Is_Employee Сотрудник компании может редактировать только свои вакансии.
  * @property string|null $address Полный адрес объекта (строка длиной от 0 до 256 символов)
  * @property \Andy87\ClientsAvito\Generated\Schema\Job\AdministratorOrganizationType|null $administrator_organization_type Body field administrator_organization_type
  * @property \Andy87\ClientsAvito\Generated\Schema\Job\AgeCriteria|null $age Body field age

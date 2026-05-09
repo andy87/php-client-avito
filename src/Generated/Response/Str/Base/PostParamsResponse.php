@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\PostBaseParamsResponse as BasePostBas
 
 /**
  * Ответ Avito API [POST] /realty/v1/items/{item_id}/base.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/postBaseParams
  */
 class PostParamsResponse extends BasePostBaseParamsResponse

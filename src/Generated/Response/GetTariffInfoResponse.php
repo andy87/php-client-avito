@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /tariff/info/1.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/tariff/documentation#operation/getTariffInfo
  */
 class GetTariffInfoResponse extends AbstractResponse

@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\PostCreateComplaintPrompt as BasePostCr
 
 /**
  * Класс данных запроса Avito API [POST] /cpa/v1/createComplaint.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/postCreateComplaint
- * 
+ *
+ * @property string $X_Source Имя сервиса, отправляющего запрос
  * @property int $callId Идентификатор звонка
  * @property string $message Текст жалобы
  */

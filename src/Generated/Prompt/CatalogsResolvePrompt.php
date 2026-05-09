@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/catalogs/resolve.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/catalogsResolve
  */
 class CatalogsResolvePrompt extends AbstractPrompt
@@ -21,7 +21,9 @@ class CatalogsResolvePrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'fieldsValueIds' => 'fieldsValueIds'];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['fieldsValueIds' => 'fieldsValueIds'];
 
     protected const REQUIRED_FIELDS = ['fieldsValueIds'];
 
@@ -33,10 +35,11 @@ class CatalogsResolvePrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['fieldsValueIds'];
 
-    /** @var string|null Токен для авторизации */
-    public ?string $Authorization = null;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<int, array<string, mixed>> Выбранные значения параметров */
     public array $fieldsValueIds;

@@ -8,10 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\ValuationBySpecificationPrompt as BaseV
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/valuation/by-specification.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/valuationBySpecification
- * 
- * @property string|null $Authorization Токен для авторизации
+ *
  * @property array<string, mixed>|null $location Body field location
  * @property int|null $mileage Пробег в км
  * @property array<string, mixed> $specification Body field specification

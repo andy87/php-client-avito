@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [PUT] /core/v2/accounts/{user_id}/items/{item_id}/vas_packages.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/putItemVasPackageV2
  */
 class PutItemVasPackageV2Prompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class PutItemVasPackageV2Prompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['package_id' => 'package_id', 'user_id' => 'user_id', 'item_id' => 'item_id'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['package_id', 'user_id', 'item_id'];
+    protected const FIELD_MAP = ['user_id' => 'user_id', 'item_id' => 'item_id', 'package_id' => 'package_id'];
+
+    protected const REQUIRED_FIELDS = ['user_id', 'item_id', 'package_id'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,7 +35,17 @@ class PutItemVasPackageV2Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['package_id'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Номер пользователя в Личном кабинете Авито */
+    public int $user_id;
+
+    /** @var int Идентификатор объявления на сайте */
+    public int $item_id;
 
     /** @var string Идентификатор пакета услуг, возможные варианты значения:
 - `x2_1` - применение пакета До 2 раз больше просмотров на 1 день
@@ -52,9 +64,4 @@ class PutItemVasPackageV2Prompt extends AbstractPrompt
 Если попытаться применить эти пакеты в недоступных для них регионе и категории, оплата не пройдёт.
  */
     public string $package_id;
-    /** @var string|int path-parameter user_id */
-    public string|int $user_id;
-
-    /** @var string|int path-parameter item_id */
-    public string|int $item_id;
 }

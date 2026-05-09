@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetItemInfoResponse as BaseGetItemInf
 
 /**
  * Ответ Avito API [GET] /core/v1/accounts/{user_id}/items/{item_id}/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/getItemInfo
- * 
+ *
  * @property string|null $autoload_item_id [Идентификатор объявления](https://autoload.avito.ru/format/realty/#Id) из файла автозагрузки
  * @property string|null $finish_time Дата завершения объявления
  * @property string|null $start_time Дата создания объявления

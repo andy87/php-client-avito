@@ -17,10 +17,10 @@ class ProfileProvider extends BaseAvitoProvider
 {
     /**
      * Получение профиля пользователя автозагрузки (deprecated)
-     * 
+     *
      * Возвращает настройки профиля пользователя автозагрузки.
      * С 23.12.2024 вместо поля upload_url используйте поле feeds_data. В нём содержится название файла и ссылка на него. [Новая версия](https://developers.avito.ru/api-catalog/autoload/documentation#operation/getProfileV2)
-     * 
+     *
      * OperationId: getProfile.
      * HTTP: GET /autoload/v1/profile.
      *
@@ -42,9 +42,9 @@ class ProfileProvider extends BaseAvitoProvider
 
     /**
      * Получение профиля пользователя автозагрузки
-     * 
+     *
      * Возвращает настройки профиля пользователя автозагрузки. С 23.12.2024 вместо поля upload_url используйте поле feeds_data. В нём содержится название файла и ссылка на него.
-     * 
+     *
      * OperationId: getProfileV2.
      * HTTP: GET /autoload/v2/profile.
      *

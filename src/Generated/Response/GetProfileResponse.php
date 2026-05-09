@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /autoload/v1/profile.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getProfile
  */
 class GetProfileResponse extends AbstractResponse

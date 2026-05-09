@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autostrategy/v1/campaigns.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/getAutostrategyCampaigns
  */
 class GetAutostrategyCampaignsPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetAutostrategyCampaignsPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['filter' => 'filter', 'limit' => 'limit', 'offset' => 'offset', 'orderBy' => 'orderBy', 'statusId' => 'statusId'];
 
@@ -33,7 +35,11 @@ class GetAutostrategyCampaignsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['filter', 'limit', 'offset', 'orderBy', 'statusId'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<string, mixed>|null Фильтр */
     public ?array $filter = null;

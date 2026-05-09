@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /messenger/v2/accounts/{user_id}/blacklist.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/postBlacklistV2
  */
 class PostBlacklistV2Response extends AbstractResponse

@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\GetBbipForecastsByItemsV1Prompt as Base
 
 /**
  * Класс данных запроса Avito API [POST] /promotion/v1/items/services/bbip/forecasts/get.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/promotion/documentation#operation/get_bbip_forecasts_by_items_v1
- * 
+ *
+ * @property string|null $X_Is_Employee Пользователь работает от имени сотрудника компании (boolean, "true"\\"false")
  * @property array<int, \Andy87\ClientsAvito\Generated\Schema\Promotion\BbipForecastRequestByItemV1> $items Данные по объявлениям для запроса прогноза
  */
 class GetForecastsByItemsV1Prompt extends BaseGetBbipForecastsByItemsV1Prompt

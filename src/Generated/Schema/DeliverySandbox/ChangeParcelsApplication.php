@@ -20,7 +20,7 @@ class ChangeParcelsApplication extends AbstractSchemaModel
     protected const CASTS = ['receiver' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\ChangeParcelsClient::class];
 
     /** @var string Идентификатор заявки Avito
-  
+
 Идентификатор заявки - уникальный идентификатор заявки на изменение данных о посылке в формате uuid, который должен быть передан в обратном запросе с результатом исполнения заявки.
  */
     public string $id;

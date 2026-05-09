@@ -15,9 +15,9 @@ class OperationsProvider extends BaseAvitoProvider
 {
     /**
      * Получение истории операций пользователя
-     * 
+     *
      * Возвращает список операций пользователя (списания/пополнение кошелька - деньги и бонусы) за определенный временной период (задается пользователем)
-     * 
+     *
      * OperationId: postOperationsHistory.
      * HTTP: POST /core/v1/accounts/operations_history/.
      *

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/valuation/by-specification.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/valuationBySpecification
  */
 class ValuationBySpecificationPrompt extends AbstractPrompt
@@ -21,7 +21,9 @@ class ValuationBySpecificationPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'location' => 'location', 'mileage' => 'mileage', 'specification' => 'specification', 'vehicleId' => 'vehicleId'];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['location' => 'location', 'mileage' => 'mileage', 'specification' => 'specification', 'vehicleId' => 'vehicleId'];
 
     protected const REQUIRED_FIELDS = ['specification'];
 
@@ -33,10 +35,11 @@ class ValuationBySpecificationPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['location', 'mileage', 'specification', 'vehicleId'];
 
-    /** @var string|null Токен для авторизации */
-    public ?string $Authorization = null;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<string, mixed>|null Body field location */
     public ?array $location = null;

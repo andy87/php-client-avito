@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /core/v1/accounts/{userId}/vas/prices.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/vasPrices
  */
 class VasPricesResponse extends AbstractResponse

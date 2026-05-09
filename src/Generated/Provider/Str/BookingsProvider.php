@@ -15,9 +15,9 @@ class BookingsProvider extends BaseAvitoProvider
 {
     /**
      * Заполнение календаря занятости объекта недвижимости
-     * 
+     *
      * Заполнение календаря занятости объекта недвижимости (для краткосрочной аренды)
-     * 
+     *
      * OperationId: putBookingsInfo.
      * HTTP: POST /core/v1/accounts/{user_id}/items/{item_id}/bookings.
      *

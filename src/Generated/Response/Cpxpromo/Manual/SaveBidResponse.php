@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\SaveManualBidResponse as BaseSaveManu
 
 /**
  * Ответ Avito API [POST] /cpxpromo/1/setManual.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/saveManualBid
  */
 class SaveBidResponse extends BaseSaveManualBidResponse

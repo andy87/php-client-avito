@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [DELETE] /ratings/v1/answers/{answer_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/removeReviewAnswerV1
  */
 class RemoveReviewAnswerV1Response extends AbstractResponse

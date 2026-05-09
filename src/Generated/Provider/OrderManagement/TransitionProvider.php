@@ -15,10 +15,10 @@ class TransitionProvider extends BaseAvitoProvider
 {
     /**
      * Изменение статуса заказа
-     * 
+     *
      * Данный метод применяется для изменения статуса заказа, в частности для подтверждения или отмены заказа.
      * Максимальное количество запросов в минуту - 100.
-     * 
+     *
      * OperationId: applyTransition.
      * HTTP: POST /order-management/1/order/applyTransition.
      *

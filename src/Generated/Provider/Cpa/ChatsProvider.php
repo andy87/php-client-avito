@@ -17,9 +17,9 @@ class ChatsProvider extends BaseAvitoProvider
 {
     /**
      * Чаты по времени (deprecated)
-     * 
+     *
      * Получение списка чатов по времени создания (deprecated). Максимальное количество запросов в минуту - 60.
-     * 
+     *
      * OperationId: chatsByTime.
      * HTTP: POST /cpa/v1/chatsByTime.
      *
@@ -41,9 +41,9 @@ class ChatsProvider extends BaseAvitoProvider
 
     /**
      * Чаты по времени
-     * 
+     *
      * Получение списка чатов по времени создания. Максимальное количество запросов в минуту - 40.
-     * 
+     *
      * OperationId: chatsByTime.
      * HTTP: POST /cpa/v2/chatsByTime.
      *

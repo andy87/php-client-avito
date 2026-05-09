@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [PUT] /job/v1/vacancies/archived/{vacancy_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyArchive
  */
 class VacancyArchiveResponse extends AbstractResponse

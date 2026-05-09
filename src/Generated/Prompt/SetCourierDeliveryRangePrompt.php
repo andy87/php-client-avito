@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/order/setCourierDeliveryRange.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/setCourierDeliveryRange
  */
 class SetCourierDeliveryRangePrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class SetCourierDeliveryRangePrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'address' => 'address', 'addressDetails' => 'addressDetails', 'endDate' => 'endDate', 'intervalType' => 'intervalType', 'name' => 'name', 'orderId' => 'orderId', 'phone' => 'phone', 'startDate' => 'startDate'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization', 'address', 'endDate', 'intervalType', 'name', 'orderId', 'phone', 'startDate'];
+    protected const FIELD_MAP = ['address' => 'address', 'addressDetails' => 'addressDetails', 'endDate' => 'endDate', 'intervalType' => 'intervalType', 'name' => 'name', 'orderId' => 'orderId', 'phone' => 'phone', 'startDate' => 'startDate'];
+
+    protected const REQUIRED_FIELDS = ['address', 'endDate', 'intervalType', 'name', 'orderId', 'phone', 'startDate'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class SetCourierDeliveryRangePrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['address', 'addressDetails', 'endDate', 'intervalType', 'name', 'orderId', 'phone', 'startDate'];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string Адрес продавца */
     public string $address;

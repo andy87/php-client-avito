@@ -15,7 +15,7 @@ class RatingsProvider extends BaseAvitoProvider
 {
     /**
      * Получение информации о рейтинге пользователя
-     * 
+     *
      * OperationId: getRatingsInfoV1.
      * HTTP: GET /ratings/v1/info.
      *

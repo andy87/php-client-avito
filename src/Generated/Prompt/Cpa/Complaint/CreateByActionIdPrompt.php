@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\CreateComplaintByActionIdPrompt as Base
 
 /**
  * Класс данных запроса Avito API [POST] /cpa/v1/createComplaintByActionId.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/createComplaintByActionId
- * 
+ *
+ * @property string $X_Source Имя сервиса, отправляющего запрос
  * @property int $actionId ID действия (action), по которому подаётся жалоба
  * @property string $message Сообщение, прикрепленное к жалобе
  */

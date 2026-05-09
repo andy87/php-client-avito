@@ -15,10 +15,10 @@ class OrderProvider extends BaseAvitoProvider
 {
     /**
      * Передача трек-номера
-     * 
+     *
      * Метод для передачи трек-номера для доставки партнёрами продавца (DBS)
      * Максимальное количество запросов в минуту - 100.
-     * 
+     *
      * OperationId: setOrderTrackingNumber.
      * HTTP: POST /order-management/1/order/setTrackingNumber.
      *

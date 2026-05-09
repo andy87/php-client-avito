@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetUserInfoSelfResponse as BaseGetUse
 
 /**
  * Ответ Avito API [GET] /core/v1/accounts/self.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/user/documentation#operation/getUserInfoSelf
- * 
+ *
  * @property string|null $email Email пользователя
  * @property int|null $id Идентификатор пользователя
  * @property string|null $name Имя пользователя

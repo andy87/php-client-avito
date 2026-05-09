@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\GetServicesByItemsV1Prompt as BaseGetSe
 
 /**
  * Класс данных запроса Avito API [POST] /promotion/v1/items/services/get.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/promotion/documentation#operation/get_services_by_items_v1
- * 
+ *
+ * @property string|null $X_Is_Employee Пользователь работает от имени сотрудника компании (boolean, "true"\\"false")
  * @property array<int, int>|null $itemIds Идентификаторы объявлений
  */
 class GetByItemsV1Prompt extends BaseGetServicesByItemsV1Prompt

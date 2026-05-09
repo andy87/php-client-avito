@@ -15,9 +15,9 @@ class DictsProvider extends BaseAvitoProvider
 {
     /**
      * Получение списка доступных словарей
-     * 
+     *
      * Возвращает все доступные словари (Заменяет существующие списки)
-     * 
+     *
      * OperationId: getDicts.
      * HTTP: GET /job/v2/vacancy/dict.
      *

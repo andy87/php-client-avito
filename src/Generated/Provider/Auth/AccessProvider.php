@@ -19,9 +19,9 @@ class AccessProvider extends BaseAvitoProvider
 {
     /**
      * Получение access token
-     * 
+     *
      * Получения временного ключа для авторизации
-     * 
+     *
      * OperationId: getAccessToken.
      * HTTP: POST /token.
      *
@@ -43,9 +43,9 @@ class AccessProvider extends BaseAvitoProvider
 
     /**
      * Получение access token
-     * 
+     *
      * Получения временного ключа для авторизации запроса от лица пользователя
-     * 
+     *
      * OperationId: getAccessTokenAuthorizationCode.
      * HTTP: POST /token‎.
      *
@@ -67,9 +67,9 @@ class AccessProvider extends BaseAvitoProvider
 
     /**
      * Обновление access token
-     * 
+     *
      * Обновление временного ключа для авторизации запроса от лица пользователя
-     * 
+     *
      * OperationId: refreshAccessTokenAuthorizationCode.
      * HTTP: POST /token‎‎.
      *

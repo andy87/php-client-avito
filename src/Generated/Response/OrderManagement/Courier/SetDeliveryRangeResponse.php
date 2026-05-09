@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\SetCourierDeliveryRangeResponse as Ba
 
 /**
  * Ответ Avito API [POST] /order-management/1/order/setCourierDeliveryRange.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/setCourierDeliveryRange
- * 
+ *
  * @property bool|null $success Флаг успеха выбора времени приезда курьера
  */
 class SetDeliveryRangeResponse extends BaseSetCourierDeliveryRangeResponse

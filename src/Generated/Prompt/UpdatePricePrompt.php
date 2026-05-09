@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /core/v1/items/{item_id}/update_price.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/updatePrice
  */
 class UpdatePricePrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class UpdatePricePrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['price' => 'price', 'item_id' => 'item_id'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['price', 'item_id'];
+    protected const FIELD_MAP = ['item_id' => 'item_id', 'price' => 'price'];
+
+    protected const REQUIRED_FIELDS = ['item_id', 'price'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,15 @@ class UpdatePricePrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['price'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Идентификатор объявления на сайте */
+    public int $item_id;
 
     /** @var int Цена */
     public int $price;
-    /** @var string|int path-parameter item_id */
-    public string|int $item_id;
 }

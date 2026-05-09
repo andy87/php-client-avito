@@ -15,9 +15,9 @@ class ChatProvider extends BaseAvitoProvider
 {
     /**
      * Чат
-     * 
+     *
      * Получение модели чата по идентификатору Максимальное количество запросов в минуту - 3.
-     * 
+     *
      * OperationId: chatByActionId.
      * HTTP: GET /cpa/v1/chatByActionId/{actionId}.
      *

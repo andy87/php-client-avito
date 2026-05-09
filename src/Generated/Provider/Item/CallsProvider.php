@@ -15,9 +15,9 @@ class CallsProvider extends BaseAvitoProvider
 {
     /**
      * Получение статистики по звонкам
-     * 
+     *
      * Получение агрегированной статистики звонков, полученных пользователем
-     * 
+     *
      * OperationId: postCallsStats.
      * HTTP: POST /core/v1/accounts/{user_id}/calls/stats/.
      *

@@ -17,11 +17,11 @@ class OrValueProvider extends BaseAvitoProvider
 {
     /**
      * Создание/редактирование настроек профиля пользователя автозагрузки (deprecated)
-     * 
-     * Предназначен для создания и управления профилем автозагрузки. Если профиля еще не существует - через этот метод можно его создать. 
-     * 
+     *
+     * Предназначен для создания и управления профилем автозагрузки. Если профиля еще не существует - через этот метод можно его создать.
+     *
      * С 23.12.2024 вместо поля upload_url используйте поле feeds_data. В нём содержится название файла и ссылка на него. [Новая версия](https://developers.avito.ru/api-catalog/autoload/documentation#operation/createOrUpdateProfileV2)
-     * 
+     *
      * OperationId: createOrUpdateProfile.
      * HTTP: POST /autoload/v1/profile.
      *
@@ -43,9 +43,9 @@ class OrValueProvider extends BaseAvitoProvider
 
     /**
      * Создание/редактирование настроек профиля пользователя автозагрузки
-     * 
+     *
      * Предназначен для создания и управления профилем автозагрузки. Если профиля еще не существует - через этот метод можно его создать. С 23.12.2024 вместо поля feed_url используйте поле feeds_data. В нём содержится название файла и ссылка на него.
-     * 
+     *
      * OperationId: createOrUpdateProfileV2.
      * HTTP: POST /autoload/v2/profile.
      *

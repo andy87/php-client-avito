@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autostrategy/v1/campaign/create.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/createAutostrategyCampaign
  */
 class CreateAutostrategyCampaignPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class CreateAutostrategyCampaignPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['budget' => 'budget', 'budgetBonus' => 'budgetBonus', 'budgetReal' => 'budgetReal', 'calcId' => 'calcId', 'campaignType' => 'campaignType', 'description' => 'description', 'finishTime' => 'finishTime', 'items' => 'items', 'startTime' => 'startTime', 'title' => 'title'];
 
@@ -33,7 +35,11 @@ class CreateAutostrategyCampaignPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['budget', 'budgetBonus', 'budgetReal', 'calcId', 'campaignType', 'description', 'finishTime', 'items', 'startTime', 'title'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int|null Выделенный бюджет на кампанию в рублях.<br/>**Обязательно только для типа кампании `AS`** */
     public ?int $budget = null;

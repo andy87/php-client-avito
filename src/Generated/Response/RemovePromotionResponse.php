@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /cpxpromo/1/remove.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/removePromotion
  */
 class RemovePromotionResponse extends AbstractResponse

@@ -8,10 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\PostSyncCreateReportByVinPrompt as Base
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/sync/create-by-vin.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/postSyncCreateReportByVin
- * 
- * @property string|null $Authorization Токен для авторизации
+ *
  * @property string $vin VIN или номер кузова запрашиваемого авто.
  */
 class PostCreateReportByVinPrompt extends BasePostSyncCreateReportByVinPrompt

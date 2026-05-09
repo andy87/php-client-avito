@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /autoload/v1/user-docs/tree.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/userDocsTree
  */
 class UserDocsTreeResponse extends AbstractResponse

@@ -17,9 +17,9 @@ class ChatProvider extends BaseAvitoProvider
 {
     /**
      * Получение информации по чату
-     * 
+     *
      * Возвращает данные чата и последнее сообщение в нем
-     * 
+     *
      * OperationId: getChatByIdV2.
      * HTTP: GET /messenger/v2/accounts/{user_id}/chats/{chat_id}.
      *
@@ -41,9 +41,9 @@ class ChatProvider extends BaseAvitoProvider
 
     /**
      * Прочитать чат
-     * 
+     *
      * После успешного получения списка сообщений необходимо вызвать этот метод для того, чтобы чат стал прочитанным.
-     * 
+     *
      * OperationId: chatRead.
      * HTTP: POST /messenger/v1/accounts/{user_id}/chats/{chat_id}/read.
      *

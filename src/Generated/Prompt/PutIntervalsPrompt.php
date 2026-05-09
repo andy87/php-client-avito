@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /realty/v1/items/intervals.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/putIntervals
  */
 class PutIntervalsPrompt extends AbstractPrompt
@@ -21,7 +21,9 @@ class PutIntervalsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['intervals' => 'intervals', 'item_id' => 'item_id', 'source' => 'source'];
+    protected const QUERY_PARAMETER_STYLES = ['skip_error' => ['style' => 'form', 'explode' => true]];
+
+    protected const FIELD_MAP = ['skip_error' => 'skip_error', 'intervals' => 'intervals', 'item_id' => 'item_id', 'source' => 'source'];
 
     protected const REQUIRED_FIELDS = [];
 
@@ -31,9 +33,16 @@ class PutIntervalsPrompt extends AbstractPrompt
 
     protected const PATH_FIELDS = [];
 
-    protected const QUERY_FIELDS = [];
+    protected const QUERY_FIELDS = ['skip_error'];
+
+    protected const HEADER_FIELDS = [];
 
     protected const BODY_FIELDS = ['intervals', 'item_id', 'source'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var bool|null Флаг, с которым вместо ошибок(если ошибка произошла с айтемом) возвращается 200 статус, без ошибки */
+    public ?bool $skip_error = null;
 
     /** @var array<int, array<string, mixed>>|null Список интервалов для выбранного объявления */
     public ?array $intervals = null;

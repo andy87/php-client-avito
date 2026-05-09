@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\BalanceInfoV2Response as BaseBalanceI
 
 /**
  * Ответ Avito API [POST] /cpa/v2/balanceInfo.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/balanceInfoV2
- * 
+ *
  * @property int|null $advance Response field advance
  * @property int|null $balance Response field balance
  * @property int|null $debt Response field debt

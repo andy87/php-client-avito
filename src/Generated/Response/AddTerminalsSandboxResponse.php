@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/tariffs/{tariff_id}/terminals.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddTerminalsSandbox
  */
 class AddTerminalsSandboxResponse extends AbstractResponse

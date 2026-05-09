@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /job/v1/applications/get_states.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsGetStates
  */
 class ApplicationsGetStatesResponse extends AbstractResponse

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /core/v1/accounts/{user_id}/balance/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/user/documentation#operation/getUserBalance
  */
 class GetUserBalancePrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetUserBalancePrompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['user_id' => 'user_id'];
 
@@ -33,7 +35,12 @@ class GetUserBalancePrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
-    /** @var string|int path-parameter user_id */
-    public string|int $user_id;
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Идентификатор пользователя (клиента) */
+    public int $user_id;
 }

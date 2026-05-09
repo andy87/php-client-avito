@@ -15,9 +15,9 @@ class CallProvider extends BaseAvitoProvider
 {
     /**
      * Звонок по идентификатору
-     * 
+     *
      * Возвращает информацию о звонке по его id(callId)
-     * 
+     *
      * OperationId: get_call_by_id.
      * HTTP: POST /calltracking/v1/getCallById/.
      *

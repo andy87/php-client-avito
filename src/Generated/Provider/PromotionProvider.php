@@ -41,16 +41,16 @@ class PromotionProvider extends BaseAvitoProvider
 
     /**
      * BBIP. Подключение услуги продвижения
-     * 
+     *
      * Создать заявку на подключение услуг продвижения.
-     * 
+     *
      * Создание заявки для набора объявлений возможно только в случае если ни по одному из объявлений не возникло ошибок.
-     * 
+     *
      * При успешном создании заявки система возвращает `orderId` (идентификатор заявки),
      * на основе которого можно проверять как статус заявки, так и статус подключения услуг по объявлениям.
-     * 
+     *
      * **Rate limit:** 10 RPM
-     * 
+     *
      * OperationId: create_bbip_order_for_items_v1.
      * HTTP: PUT /promotion/v1/items/services/bbip/orders/create.
      *
@@ -72,11 +72,11 @@ class PromotionProvider extends BaseAvitoProvider
 
     /**
      * BBIP. Прогноз продвижения
-     * 
+     *
      * Получение прогноза продвижения по объявлениям
-     * 
+     *
      * **Rate limit:** 100 RPM
-     * 
+     *
      * OperationId: get_bbip_forecasts_by_items_v1.
      * HTTP: POST /promotion/v1/items/services/bbip/forecasts/get.
      *
@@ -98,11 +98,11 @@ class PromotionProvider extends BaseAvitoProvider
 
     /**
      * BBIP. Варианты бюджета продвижения
-     * 
+     *
      * Получение доступных вариантов бюджета для продвижения
-     * 
+     *
      * **Rate limit:** 100 RPM
-     * 
+     *
      * OperationId: get_bbip_suggests_by_items_v1.
      * HTTP: POST /promotion/v1/items/services/bbip/suggests/get.
      *
@@ -124,11 +124,11 @@ class PromotionProvider extends BaseAvitoProvider
 
     /**
      * Словарь типов услуг продвижения
-     * 
+     *
      * Получение словаря типов услуг продвижения
-     * 
+     *
      * **Rate limit:** 100 RPM
-     * 
+     *
      * OperationId: get_dict_of_services_v1.
      * HTTP: POST /promotion/v1/items/services/dict.
      *
@@ -150,11 +150,11 @@ class PromotionProvider extends BaseAvitoProvider
 
     /**
      * Статус заявки
-     * 
+     *
      * Получение статуса заявки на подключение услуг продвижения
-     * 
+     *
      * **Rate limit:** 100 RPM
-     * 
+     *
      * OperationId: get_order_status_v1.
      * HTTP: POST /promotion/v1/items/services/orders/status.
      *
@@ -176,11 +176,11 @@ class PromotionProvider extends BaseAvitoProvider
 
     /**
      * Список услуг продвижения
-     * 
+     *
      * Получение списка активных услуг продвижения по объявлениям
-     *  
+     *
      * **Rate limit:** 100 RPM
-     * 
+     *
      * OperationId: get_services_by_items_v1.
      * HTTP: POST /promotion/v1/items/services/get.
      *
@@ -202,11 +202,11 @@ class PromotionProvider extends BaseAvitoProvider
 
     /**
      * Список заявок
-     * 
+     *
      * Получение списка заявок на подключение услуг.
-     * 
+     *
      * **Rate limit:** 100 RPM
-     * 
+     *
      * OperationId: list_orders_by_user_v1.
      * HTTP: POST /promotion/v1/items/services/orders/get.
      *

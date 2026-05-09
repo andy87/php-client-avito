@@ -17,9 +17,9 @@ class ItemsProvider extends BaseAvitoProvider
 {
     /**
      * Прикрепление сотрудника иерархии к объявлениям, перезакрепление объявлений между сотрудниками иерархии
-     * 
+     *
      * Для взаимодействия с иерархией аккаунтов необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: linkItemsV1.
      * HTTP: POST /linkItemsV1.
      *
@@ -41,9 +41,9 @@ class ItemsProvider extends BaseAvitoProvider
 
     /**
      * Получение списка объявлений по сотруднику
-     * 
+     *
      * Ручка для получения списка объявлений по сотруднику с фильтром по категории объявлений. Получение объявлений по компании недоступно.
-     * 
+     *
      * OperationId: listItemsByEmployeeIdV1.
      * HTTP: POST /listItemsByEmployeeIdV1.
      *

@@ -27,7 +27,7 @@ class AutostrategyProvider extends BaseAvitoProvider
 {
     /**
      * Создание новой кампании
-     * 
+     *
      * OperationId: createAutostrategyCampaign.
      * HTTP: POST /autostrategy/v1/campaign/create.
      *
@@ -49,9 +49,9 @@ class AutostrategyProvider extends BaseAvitoProvider
 
     /**
      * Редактирование кампании
-     * 
+     *
      * **Возможно редактирование лишь только кампаний, имеющих тип `AS`**
-     * 
+     *
      * OperationId: editAutostrategyCampaign.
      * HTTP: POST /autostrategy/v1/campaign/edit.
      *
@@ -73,7 +73,7 @@ class AutostrategyProvider extends BaseAvitoProvider
 
     /**
      * Расчет бюджета кампании
-     * 
+     *
      * OperationId: getAutostrategyBudget.
      * HTTP: POST /autostrategy/v1/budget.
      *
@@ -95,7 +95,7 @@ class AutostrategyProvider extends BaseAvitoProvider
 
     /**
      * Получение полной информации о кампании
-     * 
+     *
      * OperationId: getAutostrategyCampaignInfo.
      * HTTP: POST /autostrategy/v1/campaign/info.
      *
@@ -117,9 +117,9 @@ class AutostrategyProvider extends BaseAvitoProvider
 
     /**
      * Получение списка кампаний
-     * 
+     *
      * **Получение кампаний текущего пользователя с учетом фильтров**
-     * 
+     *
      * OperationId: getAutostrategyCampaigns.
      * HTTP: POST /autostrategy/v1/campaigns.
      *
@@ -141,7 +141,7 @@ class AutostrategyProvider extends BaseAvitoProvider
 
     /**
      * Получение статистики по кампании
-     * 
+     *
      * OperationId: getAutostrategyStat.
      * HTTP: POST /autostrategy/v1/stat.
      *
@@ -163,7 +163,7 @@ class AutostrategyProvider extends BaseAvitoProvider
 
     /**
      * Остановка кампании
-     * 
+     *
      * OperationId: stopAutostrategyCampaign.
      * HTTP: POST /autostrategy/v1/campaign/stop.
      *

@@ -15,9 +15,9 @@ class AccessProvider extends BaseAvitoProvider
 {
     /**
      * Получение access token
-     * 
+     *
      * Получение временного ключа для авторизации, пример `curl -L -X POST 'https://pro.autoteka.ru/token/' -H 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'grant_type=client_credentials' --data-urlencode 'client_id=XXX' --data-urlencode 'client_secret=YYY'`
-     * 
+     *
      * OperationId: getAccessToken.
      * HTTP: POST /token.
      *

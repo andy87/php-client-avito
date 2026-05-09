@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /special-offers/v1/stats.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/sbc-gateway/documentation#operation/openApiStats
  */
 class OpenApiStatsPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class OpenApiStatsPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['dateTimeFrom' => 'dateTimeFrom', 'dateTimeTo' => 'dateTimeTo'];
 
@@ -33,7 +35,11 @@ class OpenApiStatsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['dateTimeFrom', 'dateTimeTo'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string Время выборки От. RFC3339 */
     public string $dateTimeFrom;

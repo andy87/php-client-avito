@@ -17,11 +17,11 @@ class PostProvider extends BaseAvitoProvider
 {
     /**
      * Отправка сообщения с изображением
-     * 
+     *
      * Метод используется для отправки сообщения с изображением.
-     * 
+     *
      * Для отправки сообщения с изображением необходимо передать в запросе id изображения, полученного после загрузки.
-     * 
+     *
      * OperationId: postSendImageMessage.
      * HTTP: POST /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages/image.
      *
@@ -43,9 +43,9 @@ class PostProvider extends BaseAvitoProvider
 
     /**
      * Отправка сообщения
-     * 
+     *
      * На данный момент можно отправить только текстовое сообщение
-     * 
+     *
      * OperationId: postSendMessage.
      * HTTP: POST /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages.
      *

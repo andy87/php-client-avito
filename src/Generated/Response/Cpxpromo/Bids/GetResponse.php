@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetBidsResponse as BaseGetBidsRespons
 
 /**
  * Ответ Avito API [GET] /cpxpromo/1/getBids/{itemId}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/getBids
- * 
+ *
  * @property int $actionTypeID Тип события (1 - звонок | 5 - пакет кликов | 7 - мессенджер, передача контакта в чате)
  * @property \Andy87\ClientsAvito\Generated\Schema\Cpxpromo\Auto|null $auto Response field auto
  * @property \Andy87\ClientsAvito\Generated\Schema\Cpxpromo\Manual|null $manual Response field manual

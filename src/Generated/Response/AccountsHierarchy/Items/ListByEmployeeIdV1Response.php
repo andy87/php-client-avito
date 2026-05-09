@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\ListItemsByEmployeeIdV1Response as Ba
 
 /**
  * Ответ Avito API [POST] /listItemsByEmployeeIdV1.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/accounts-hierarchy/documentation#operation/listItemsByEmployeeIdV1
- * 
+ *
  * @property bool $hasNext Можно пагинировать дальше по списку
  * @property array<int, int> $items Список идентификаторов объявлений
  */

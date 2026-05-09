@@ -25,11 +25,11 @@ class RealtyReportsProvider extends BaseAvitoProvider
 
     /**
      * Получение аналитического отчета по недвижимости
-     * 
+     *
      * Получение аналитического отчета по недвижимости
-     * 
+     *
      * **Данный метод доступен только пользователям с активной подпиской «Лидер» в категории «Недвижимость»**
-     * 
+     *
      * OperationId: CreateReportForClassified.
      * HTTP: POST /realty/v1/report/create/{itemId}.
      *
@@ -51,11 +51,11 @@ class RealtyReportsProvider extends BaseAvitoProvider
 
     /**
      * Получение соответствия переданной цены рыночной цене
-     * 
+     *
      * Получение соответствия переданной цены рыночной цене
-     * 
+     *
      * **Данный метод доступен только пользователям с активной подпиской «Лидер» в категории «Недвижимость»**
-     * 
+     *
      * OperationId: market_price_correspondence_v1.
      * HTTP: GET /realty/v1/marketPriceCorrespondence/{itemId}/{price}.
      *

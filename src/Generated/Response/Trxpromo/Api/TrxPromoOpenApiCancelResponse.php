@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\ApiTrxPromoOpenApiCancelResponse as B
 
 /**
  * Ответ Avito API [POST] /trx-promo/1/cancel.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/trxpromo/documentation#operation/api_trx_promo_open_api_cancel
- * 
+ *
  * @property array<string, mixed> $success Response field success
  */
 class TrxPromoOpenApiCancelResponse extends BaseApiTrxPromoOpenApiCancelResponse

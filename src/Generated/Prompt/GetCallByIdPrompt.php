@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /calltracking/v1/getCallById/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/calltracking/documentation#operation/get_call_by_id
  */
 class GetCallByIdPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetCallByIdPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['callId' => 'callId'];
 
@@ -33,7 +35,11 @@ class GetCallByIdPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['callId'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int Body field callId */
     public int $callId;

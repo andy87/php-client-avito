@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /special-offers/v1/stats.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/sbc-gateway/documentation#operation/openApiStats
  */
 class OpenApiStatsResponse extends AbstractResponse

@@ -21,10 +21,10 @@ class MonitoringProvider extends BaseAvitoProvider
 {
     /**
      * Добавить идентификаторы (vin/frame) на мониторинг
-     * 
+     *
      * Метод для добавления идентификаторов (vin/frame) на мониторинг.
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки.
-     * 
+     *
      * OperationId: monitoringBucketAdd.
      * HTTP: POST /autoteka/v1/monitoring/bucket/add.
      *
@@ -46,9 +46,9 @@ class MonitoringProvider extends BaseAvitoProvider
 
     /**
      * Полная очистка списка мониторинга
-     * 
+     *
      * Метод для очистки списка мониторинга
-     * 
+     *
      * OperationId: monitoringBucketDelete.
      * HTTP: POST /autoteka/v1/monitoring/bucket/delete.
      *
@@ -70,9 +70,9 @@ class MonitoringProvider extends BaseAvitoProvider
 
     /**
      * Удаление идентификаторов из мониторинга (vin/frame)
-     * 
+     *
      * Метод удаления идентификаторов из мониторинга (vin/frame)
-     * 
+     *
      * OperationId: monitoringBucketRemove.
      * HTTP: POST /autoteka/v1/monitoring/bucket/remove.
      *
@@ -94,9 +94,9 @@ class MonitoringProvider extends BaseAvitoProvider
 
     /**
      * Получение событий мониторинга
-     * 
+     *
      * Метод получение событий мониторинга
-     * 
+     *
      * OperationId: monitoringGetRegActions.
      * HTTP: GET /autoteka/v1/monitoring/get-reg-actions/.
      *

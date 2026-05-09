@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages/{message_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/deleteMessage
  */
 class DeleteMessagePrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class DeleteMessagePrompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['user_id' => 'user_id', 'chat_id' => 'chat_id', 'message_id' => 'message_id'];
 
@@ -33,13 +35,18 @@ class DeleteMessagePrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
-    /** @var string|int path-parameter user_id */
-    public string|int $user_id;
 
-    /** @var string|int path-parameter chat_id */
-    public string|int $chat_id;
+    protected const BODY_ROOT_FIELD = null;
 
-    /** @var string|int path-parameter message_id */
-    public string|int $message_id;
+    /** @var int Идентификатор пользователя (клиента) */
+    public int $user_id;
+
+    /** @var string Идентификатор чата (клиента) */
+    public string $chat_id;
+
+    /** @var string Идентификатор сообщения */
+    public string $message_id;
 }

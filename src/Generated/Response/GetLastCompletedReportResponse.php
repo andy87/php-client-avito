@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /autoload/v2/reports/last_completed_report.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getLastCompletedReport
  */
 class GetLastCompletedReportResponse extends AbstractResponse

@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\ChangeParcelResultResponse as BaseCha
 
 /**
  * Ответ Avito API [POST] /delivery/order/changeParcelResult.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/ChangeParcelResult
- * 
+ *
  * @property array<string, mixed>|null $data Response field data
  * @property array<string, mixed>|null $errorData Response field error
  */

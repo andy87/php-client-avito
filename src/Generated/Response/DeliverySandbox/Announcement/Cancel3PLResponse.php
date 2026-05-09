@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\CancelAnnouncement3PLResponse as Base
 
 /**
  * Ответ Avito API [POST] /cancelAnnouncement.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/CancelAnnouncement3PL
- * 
+ *
  * @property array<string, mixed>|null $data Response field data
  * @property array<string, mixed>|null $errorData Response field error
  */

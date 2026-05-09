@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /job/v2/vacancy/dict.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/getDicts
  */
 class GetDictsResponse extends AbstractResponse

@@ -15,9 +15,9 @@ class ChatsProvider extends BaseAvitoProvider
 {
     /**
      * Получение информации по чатам
-     * 
+     *
      * Возвращает список чатов
-     * 
+     *
      * OperationId: getChatsV2.
      * HTTP: GET /messenger/v2/accounts/{user_id}/chats.
      *

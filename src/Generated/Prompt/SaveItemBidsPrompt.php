@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /auction/1/bids.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/auction/documentation#operation/saveItemBids
  */
 class SaveItemBidsPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class SaveItemBidsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'items' => 'items'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization', 'items'];
+    protected const FIELD_MAP = ['items' => 'items'];
+
+    protected const REQUIRED_FIELDS = ['items'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class SaveItemBidsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['items'];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<int, array<string, mixed>> Body field items */
     public array $items;

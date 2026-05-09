@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /listItemsByEmployeeIdV1.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/accounts-hierarchy/documentation#operation/listItemsByEmployeeIdV1
  */
 class ListItemsByEmployeeIdV1Response extends AbstractResponse

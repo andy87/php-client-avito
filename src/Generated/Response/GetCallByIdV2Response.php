@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /cpa/v2/callById.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/getCallByIdV2
  */
 class GetCallByIdV2Response extends AbstractResponse

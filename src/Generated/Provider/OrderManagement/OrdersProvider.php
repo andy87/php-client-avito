@@ -15,10 +15,10 @@ class OrdersProvider extends BaseAvitoProvider
 {
     /**
      * Получение информации о заказах
-     * 
+     *
      * Получение информации о заказах по статусу.
      * Максимальное количество запросов в минуту - 500.
-     * 
+     *
      * OperationId: getOrders.
      * HTTP: GET /order-management/1/orders.
      *

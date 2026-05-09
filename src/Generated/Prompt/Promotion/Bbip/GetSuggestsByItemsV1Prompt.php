@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\GetBbipSuggestsByItemsV1Prompt as BaseG
 
 /**
  * Класс данных запроса Avito API [POST] /promotion/v1/items/services/bbip/suggests/get.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/promotion/documentation#operation/get_bbip_suggests_by_items_v1
- * 
+ *
+ * @property string|null $X_Is_Employee Пользователь работает от имени сотрудника компании (boolean, "true"\\"false")
  * @property array<int, int>|null $itemIds Идентификаторы объявлений
  */
 class GetSuggestsByItemsV1Prompt extends BaseGetBbipSuggestsByItemsV1Prompt

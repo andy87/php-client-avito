@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetRatingsInfoV1Response as BaseGetRa
 
 /**
  * Ответ Avito API [GET] /ratings/v1/info.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/getRatingsInfoV1
- * 
+ *
  * @property bool $isEnabled Включен ли рейтинг
  * @property \Andy87\ClientsAvito\Generated\Schema\Ratings\Rating|null $rating Response field rating
  */

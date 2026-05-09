@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /cpa/v2/callsByTime.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/getCallsByTimeV2
  */
 class GetCallsByTimeV2Prompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class GetCallsByTimeV2Prompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['dateTimeFrom' => 'dateTimeFrom', 'limit' => 'limit', 'offset' => 'offset'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['dateTimeFrom', 'limit'];
+    protected const FIELD_MAP = ['X_Source' => 'X-Source', 'dateTimeFrom' => 'dateTimeFrom', 'limit' => 'limit', 'offset' => 'offset'];
+
+    protected const REQUIRED_FIELDS = ['X_Source', 'dateTimeFrom', 'limit'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,7 +35,14 @@ class GetCallsByTimeV2Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Source'];
+
     protected const BODY_FIELDS = ['dateTimeFrom', 'limit', 'offset'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var string Имя сервиса, отправляющего запрос */
+    public string $X_Source;
 
     /** @var string Время с которого нужно начинать поиск звонков по startTime (строка в формате RFC3339) */
     public string $dateTimeFrom;

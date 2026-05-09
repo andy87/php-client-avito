@@ -21,9 +21,9 @@ class ReportProvider extends BaseAvitoProvider
 {
     /**
      * Получение отчета по его ID
-     * 
+     *
      * Получение подробного отчета по его идентификатору, полученному из [запроса на создание отчета](#operation/postReport)
-     * 
+     *
      * OperationId: getReport.
      * HTTP: GET /autoteka/v1/reports/{report_id}.
      *
@@ -45,9 +45,9 @@ class ReportProvider extends BaseAvitoProvider
 
     /**
      * Получение списка отчётов
-     * 
+     *
      * Получение списка запрошенных ранее отчетов [запроса на создание отчета](#operation/postReport)
-     * 
+     *
      * OperationId: getReportList.
      * HTTP: GET /autoteka/v1/reports/list/.
      *
@@ -69,9 +69,9 @@ class ReportProvider extends BaseAvitoProvider
 
     /**
      * Отчет по превью
-     * 
+     *
      * Метод для запроса отчета по `previewId`, возвращает идентификатор отчета по которому сформированный отчет можно получить в [методе для получения отчета по его идентификатору](#operation/getReport). При запросе происходит списание доступных отчетов
-     * 
+     *
      * OperationId: postReport.
      * HTTP: POST /autoteka/v1/reports.
      *
@@ -93,9 +93,9 @@ class ReportProvider extends BaseAvitoProvider
 
     /**
      * Отчет по идентификатору авто (vin/frame)
-     * 
+     *
      * Метод для запроса отчета по идентификатору авто (vin/frame), возвращает идентификатор отчета по которому сформированный отчет можно получить в [методе для получения отчета по его идентификатору](#operation/getReport). При запросе происходит списание доступных отчетов
-     * 
+     *
      * OperationId: postReportByVehicleId.
      * HTTP: POST /autoteka/v1/reports-by-vehicle-id.
      *

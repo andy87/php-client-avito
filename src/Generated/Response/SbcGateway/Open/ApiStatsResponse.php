@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\OpenApiStatsResponse as BaseOpenApiSt
 
 /**
  * Ответ Avito API [POST] /special-offers/v1/stats.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/sbc-gateway/documentation#operation/openApiStats
- * 
+ *
  * @property array<int, array<string, mixed>>|null $stats Response field stats
  */
 class ApiStatsResponse extends BaseOpenApiStatsResponse

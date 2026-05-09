@@ -15,10 +15,10 @@ class MessageProvider extends BaseAvitoProvider
 {
     /**
      * Удаление сообщения
-     * 
+     *
      * Сообщение не пропадает из истории, а меняет свой тип на deleted.
      * Удалять сообщения можно не позднее часа с момента их отправки.
-     * 
+     *
      * OperationId: deleteMessage.
      * HTTP: POST /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages/{message_id}.
      *

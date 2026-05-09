@@ -15,11 +15,11 @@ class DictProvider extends BaseAvitoProvider
 {
     /**
      * Словарь типов услуг продвижения
-     * 
+     *
      * Получение словаря типов услуг продвижения
-     * 
+     *
      * **Rate limit:** 100 RPM
-     * 
+     *
      * OperationId: get_dict_of_services_v1.
      * HTTP: POST /promotion/v1/items/services/dict.
      *

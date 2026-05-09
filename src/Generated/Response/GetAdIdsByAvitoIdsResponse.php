@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /autoload/v2/items/ad_ids.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getAdIdsByAvitoIds
  */
 class GetAdIdsByAvitoIdsResponse extends AbstractResponse

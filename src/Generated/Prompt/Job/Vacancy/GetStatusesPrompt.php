@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\VacancyGetStatusesPrompt as BaseVacancy
 
 /**
  * Класс данных запроса Avito API [POST] /job/v2/vacancies/statuses.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyGetStatuses
- * 
+ *
+ * @property bool|null $X_Is_Employee Сотрудник компании получает информацию о статусе публикации вакансии, которую он опубликовал для компании
  * @property array<int, string> $ids Body field ids
  */
 class GetStatusesPrompt extends BaseVacancyGetStatusesPrompt

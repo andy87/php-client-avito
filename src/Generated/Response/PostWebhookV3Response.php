@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /messenger/v3/webhook.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/postWebhookV3
  */
 class PostWebhookV3Response extends AbstractResponse

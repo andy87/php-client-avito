@@ -8,8 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\RemoveReviewAnswerV1Prompt as BaseRemov
 
 /**
  * Класс данных запроса Avito API [DELETE] /ratings/v1/answers/{answer_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/removeReviewAnswerV1
+ *
+ * @property int $answer_id Идентификатор ответа на отзыв
  */
 class RemoveAnswerV1Prompt extends BaseRemoveReviewAnswerV1Prompt
 {

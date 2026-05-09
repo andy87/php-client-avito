@@ -8,8 +8,11 @@ use Andy87\ClientsAvito\Generated\Prompt\UploadImagesPrompt as BaseUploadImagesP
 
 /**
  * Класс данных запроса Avito API [POST] /messenger/v1/accounts/{user_id}/uploadImages.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/uploadImages
+ *
+ * @property int $user_id Идентификатор пользователя (клиента)
+ * @property \Andy87\ClientsBase\Http\MultipartFile|string $uploadfile__ Body field uploadfile[]
  */
 class UploadPrompt extends BaseUploadImagesPrompt
 {

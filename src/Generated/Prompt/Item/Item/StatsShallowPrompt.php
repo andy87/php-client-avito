@@ -8,9 +8,11 @@ use Andy87\ClientsAvito\Generated\Prompt\ItemStatsShallowPrompt as BaseItemStats
 
 /**
  * Класс данных запроса Avito API [POST] /stats/v1/accounts/{user_id}/items.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/itemStatsShallow
- * 
+ *
+ * @property int $user_id Идентификатор пользователя (клиента)
+ * @property string $Content_Type Тип данных запроса
  * @property \Andy87\ClientsAvito\Generated\Schema\Item\StatisticsDateFrom $dateFrom Body field dateFrom
  * @property \Andy87\ClientsAvito\Generated\Schema\Item\StatisticsDateTo $dateTo Body field dateTo
  * @property \Andy87\ClientsAvito\Generated\Schema\Item\StatisticsFields|null $fields Body field fields

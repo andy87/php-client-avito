@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\VacancyCreatePrompt as BaseVacancyCreat
 
 /**
  * Класс данных запроса Avito API [POST] /job/v1/vacancies.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyCreate
- * 
+ *
+ * @property bool|null $X_Is_Employee Вакансия будет публиковаться от имени сотрудника компании, к которой он привязан.
  * @property string|null $address Полный адрес объекта (строка длиной от 1 до 256 символов). Обязательное, если не указаны координаты.
  * @property \Andy87\ClientsAvito\Generated\Schema\Job\AdministratorOrganizationType|null $administrator_organization_type Body field administrator_organization_type
  * @property \Andy87\ClientsAvito\Generated\Schema\Job\AgeCriteria|null $age Body field age

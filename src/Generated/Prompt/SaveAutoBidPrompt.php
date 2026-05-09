@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /cpxpromo/1/setAuto.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/saveAutoBid
  */
 class SaveAutoBidPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class SaveAutoBidPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'actionTypeID' => 'actionTypeID', 'budgetPenny' => 'budgetPenny', 'budgetType' => 'budgetType', 'itemID' => 'itemID'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization', 'actionTypeID', 'budgetPenny', 'budgetType', 'itemID'];
+    protected const FIELD_MAP = ['actionTypeID' => 'actionTypeID', 'budgetPenny' => 'budgetPenny', 'budgetType' => 'budgetType', 'itemID' => 'itemID'];
+
+    protected const REQUIRED_FIELDS = ['actionTypeID', 'budgetPenny', 'budgetType', 'itemID'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class SaveAutoBidPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['actionTypeID', 'budgetPenny', 'budgetType', 'itemID'];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int Тип события (1 - звонок | 5 - пакет кликов | 7 - мессенджер, передача контакта в чате) */
     public int $actionTypeID;

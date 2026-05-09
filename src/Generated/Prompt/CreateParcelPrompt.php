@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /createParcel.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/createParcel
  */
 class CreateParcelPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class CreateParcelPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = false;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['barcodes' => 'barcodes', 'directOrderID' => 'directOrderID', 'items' => 'items', 'options' => 'options', 'orderID' => 'orderID', 'package' => 'package', 'parcelID' => 'parcelID', 'payment' => 'payment', 'receiver' => 'receiver', 'sender' => 'sender'];
 
@@ -33,7 +35,11 @@ class CreateParcelPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['barcodes', 'directOrderID', 'items', 'options', 'orderID', 'package', 'parcelID', 'payment', 'receiver', 'sender'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<int, string>|null Штрихкоды посылки.
  */

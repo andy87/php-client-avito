@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /autoload/v2/profile.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/createOrUpdateProfileV2
  */
 class CreateOrUpdateProfileV2Response extends AbstractResponse

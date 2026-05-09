@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\VacancyProlongateResponse as BaseVaca
 
 /**
  * Ответ Avito API [POST] /job/v1/vacancies/{vacancy_id}/prolongate.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyProlongate
  */
 class ProlongateResponse extends BaseVacancyProlongateResponse

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /autoteka/v1/sync/create-by-regnumber.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/postSyncCreateReportByRegNumber
  */
 class PostSyncCreateReportByRegNumberResponse extends AbstractResponse

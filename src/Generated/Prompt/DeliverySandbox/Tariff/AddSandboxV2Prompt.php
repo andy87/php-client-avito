@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\AddTariffSandboxV2Prompt as BaseAddTari
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/tariffsV2.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddTariffSandboxV2
- * 
+ *
  * @property string $deliveryProviderTariffId Идентификатор тарифного плана на стороне службы доставки - должен быть уникален.
  * @property array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DirectionV2> $directions Body field directions
  * @property string $name Человекопонятное название тарифного плана

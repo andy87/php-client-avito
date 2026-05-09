@@ -8,8 +8,11 @@ use Andy87\ClientsAvito\Generated\Prompt\BalanceInfoV3Prompt as BaseBalanceInfoV
 
 /**
  * Класс данных запроса Avito API [POST] /cpa/v3/balanceInfo.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/balanceInfoV3
+ *
+ * @property string $X_Source Имя сервиса, отправляющего запрос
+ * @property string|null $body Request body
  */
 class InfoV3Prompt extends BaseBalanceInfoV3Prompt
 {

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autostrategy/v1/campaign/info.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/getAutostrategyCampaignInfo
  */
 class GetAutostrategyCampaignInfoPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetAutostrategyCampaignInfoPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['campaignId' => 'campaignId'];
 
@@ -33,7 +35,11 @@ class GetAutostrategyCampaignInfoPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['campaignId'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int Идентификатор активной кампании */
     public int $campaignId;

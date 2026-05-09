@@ -8,8 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\GetUserBalancePrompt as BaseGetUserBala
 
 /**
  * Класс данных запроса Avito API [GET] /core/v1/accounts/{user_id}/balance/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/user/documentation#operation/getUserBalance
+ *
+ * @property int $user_id Идентификатор пользователя (клиента)
  */
 class GetBalancePrompt extends BaseGetUserBalancePrompt
 {

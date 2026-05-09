@@ -15,11 +15,11 @@ class TaskProvider extends BaseAvitoProvider
 {
     /**
      * Получение информации по задаче
-     * 
+     *
      * Получить информацию о задаче
-     * 
+     *
      * Примерное время выполнения задачи от 5 до 20 минут
-     * 
+     *
      * ### Возможные статусы задачи
      *  Задача может быть в одном из следующих статусов:
      *   * `processing` - задача ждёт очередь на выполнение или уже выполняется
@@ -27,14 +27,14 @@ class TaskProvider extends BaseAvitoProvider
      *   * `failed` - задача завершилась с ошибкой или не смогла завершиться по техническим причинам
      *   * `pending_approval` - загрузка терминалов приостановлена, процент критичных изменений превысил допустимый порог и требуется ручное одобрение
      *   * `declined` - загрузка терминалов отклонена
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code       |       error message          |
      * |-----------|--------------------|------------------------------|
      * |    200    | URL_PATH_INVALID   | Task id must be int url path |
      * |    200    | INVALID_ENTITY     | Empty provider               |
      * |    500    | FAILED_TO_GET_TASK | Failed to get task           |
-     * 
+     *
      * OperationId: GetTask.
      * HTTP: GET /delivery-sandbox/tasks/{task_id}.
      *

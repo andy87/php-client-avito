@@ -15,9 +15,9 @@ class ActiveProvider extends BaseAvitoProvider
 {
     /**
      * Запрос остатка отчётов пользователя
-     * 
+     *
      * Возвращает остаток отчётов в текущем пакете пользователя
-     * 
+     *
      * OperationId: getActivePackage.
      * HTTP: GET /autoteka/v1/packages/active_package.
      *

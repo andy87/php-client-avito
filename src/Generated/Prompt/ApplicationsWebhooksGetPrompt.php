@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /job/v1/applications/webhooks.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhooksGet
  */
 class ApplicationsWebhooksGetPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class ApplicationsWebhooksGetPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = [];
 
@@ -33,5 +35,9 @@ class ApplicationsWebhooksGetPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
 }

@@ -8,9 +8,11 @@ use Andy87\ClientsAvito\Generated\Prompt\ItemAnalyticsPrompt as BaseItemAnalytic
 
 /**
  * Класс данных запроса Avito API [POST] /stats/v2/accounts/{user_id}/items.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/itemAnalytics
- * 
+ *
+ * @property int $user_id Идентификатор пользователя (клиента)
+ * @property string $Content_Type Тип данных запроса
  * @property string $dateFrom Дата (в формате YYYY-MM-DD), с которой (включительно) надо получить статистику
  * @property string $dateTo Дата (в формате YYYY-MM-DD), по которую (включительно) надо получить статистику
  * @property array<string, mixed>|null $filter Набор ограничений, по которым нужно отфильтровать данные

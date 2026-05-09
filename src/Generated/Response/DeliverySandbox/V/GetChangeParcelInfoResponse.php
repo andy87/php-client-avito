@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\V1getChangeParcelInfoResponse as Base
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/v1/getChangeParcelInfo.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/v1getChangeParcelInfo
- * 
+ *
  * @property \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\GetChangeParcelInfoReplyData|null $data Response field data
  * @property \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\GetChangeParcelInfoError|null $errorData Response field error
  */

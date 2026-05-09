@@ -17,9 +17,9 @@ class ResumeProvider extends BaseAvitoProvider
 {
     /**
      * Доступ к контактным данным соискателя
-     * 
+     *
      * Для получения контактов пользователя необходимо приобрести пакет просмотров в [личном кабинете](https://www.avito.ru/paid-services/contact-packages/cvs). Если резюме было получено из отклика, контакты предоставляются без списания из пакета просмотров.
-     * 
+     *
      * OperationId: resumeGetContacts.
      * HTTP: GET /job/v1/resumes/{resume_id}/contacts/.
      *
@@ -41,9 +41,9 @@ class ResumeProvider extends BaseAvitoProvider
 
     /**
      * Просмотр данных резюме
-     * 
+     *
      * По умолчанию fields и params выводятся все. Если указана только часть полей - остальные поля будут отсутствовать в ответе.
-     * 
+     *
      * OperationId: resumeGetItem.
      * HTTP: GET /job/v2/resumes/{resume_id}.
      *

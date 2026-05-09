@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /stats/v1/accounts/{user_id}/items.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/itemStatsShallow
  */
 class ItemStatsShallowResponse extends AbstractResponse

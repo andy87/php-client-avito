@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoload/v1/user-docs/tree.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/userDocsTree
  */
 class UserDocsTreePrompt extends AbstractPrompt
@@ -21,11 +21,13 @@ class UserDocsTreePrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = false;
 
-    protected const FIELD_MAP = [];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['If_Modified_Since' => 'If-Modified-Since'];
 
     protected const REQUIRED_FIELDS = [];
 
-    protected const NULLABLE_FIELDS = [];
+    protected const NULLABLE_FIELDS = ['If_Modified_Since'];
 
     protected const CASTS = [];
 
@@ -33,5 +35,12 @@ class UserDocsTreePrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['If_Modified_Since'];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var string|null Дата и время последней полученной версии в формате RFC1123 в UTC */
+    public ?string $If_Modified_Since = null;
 }

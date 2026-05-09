@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /linkItemsV1.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/accounts-hierarchy/documentation#operation/linkItemsV1
  */
 class LinkItemsV1Prompt extends AbstractPrompt
@@ -21,7 +21,9 @@ class LinkItemsV1Prompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['employeeId' => 'employeeId', 'itemIds' => 'itemIds'];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['X_Oauth_Scopes' => 'X-Oauth-Scopes', 'X_Oauth_Flow' => 'X-Oauth-Flow', 'employeeId' => 'employeeId', 'itemIds' => 'itemIds'];
 
     protected const REQUIRED_FIELDS = ['employeeId', 'itemIds'];
 
@@ -33,7 +35,17 @@ class LinkItemsV1Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Oauth_Scopes', 'X_Oauth_Flow'];
+
     protected const BODY_FIELDS = ['employeeId', 'itemIds'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var string|null Список зон доступа, полученных приложением */
+    public ?string $X_Oauth_Scopes = null;
+
+    /** @var string|null Выбранный флоу авторизации по протоколу OAuth 2.0 (client_credentials/authorization_code) */
+    public ?string $X_Oauth_Flow = null;
 
     /** @var int Идентификатор сотрудника, к которому прилинкуются объявления */
     public int $employeeId;

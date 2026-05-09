@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Prompt\GetActivePackagePrompt as BaseGetActive
 
 /**
  * Класс данных запроса Avito API [GET] /autoteka/v1/packages/active_package.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/getActivePackage
  */
 class GetPackagePrompt extends BaseGetActivePackagePrompt

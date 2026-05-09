@@ -17,12 +17,12 @@ class SortingProvider extends BaseAvitoProvider
 {
     /**
      * Загрузить сортировочные центры
-     * 
-     * Создание задачи на загрузку своих сортировочных центров и первичная валидация данных.  
-     * После загрузки сортировочных центров им необходимо проставить тэги отдельным запросом  
-     * 
+     *
+     * Создание задачи на загрузку своих сортировочных центров и первичная валидация данных.
+     * После загрузки сортировочных центров им необходимо проставить тэги отдельным запросом
+     *
      * Данные необходимо загружать по мере обновления данных о сортировочных центрах (как правило это 1-2 раза в сутки)
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code                  |       error message                        |
      * |-----------|-------------------------------|--------------------------------------------|
@@ -30,10 +30,10 @@ class SortingProvider extends BaseAvitoProvider
      * |    200    | INVALID_ENTITY                | Empty sorting centers list                 |
      * |    200    | INVALID_ENTITY                | Failed to convert sorting centers          |
      * |    500    | FAILED_TO_ADD_SORTING_CENTERS | Failed to add sorting centers              |
-     * 
-     * Итоговый результат операции необходимо проверять через:  
+     *
+     * Итоговый результат операции необходимо проверять через:
      * [метод получения результата выполнения задачи](#operation/GetTask)
-     * 
+     *
      * OperationId: AddSortingCenter.
      * HTTP: POST /delivery-sandbox/tariffs/sorting-center.
      *
@@ -55,9 +55,9 @@ class SortingProvider extends BaseAvitoProvider
 
     /**
      * Получить список сортировочных центров
-     * 
+     *
      * Возвращает сортировочные центы для переданных служб доставки
-     * 
+     *
      * ### Справочник служб доставки
      * |    код    |    Название  |
      * |-----------|--------------|
@@ -66,14 +66,14 @@ class SortingProvider extends BaseAvitoProvider
      * |     bb    | Boxberyy     |
      * |     pp    | PickPoint    |
      * |    dpd    | DPD          |
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code                  |       error message                                      |
      * |-----------|-------------------------------|----------------------------------------------------------|
      * |    200    | INVALID_QUERY_PARAMETERS      | Failed to convert entities: {error description}          |
      * |    200    | INVALID_QUERY_PARAMETERS      | Failed to get entities from request: {error description} |
      * |    500    | FAILED_TO_GET_SORTING_CENTERS | Failed to get sorting centers                            |
-     * 
+     *
      * OperationId: GetSortingCenter.
      * HTTP: GET /delivery-sandbox/sorting-center.
      *

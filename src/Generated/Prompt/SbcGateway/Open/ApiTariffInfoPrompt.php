@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Prompt\OpenApiTariffInfoPrompt as BaseOpenApiT
 
 /**
  * Класс данных запроса Avito API [POST] /special-offers/v1/tariffInfo.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/sbc-gateway/documentation#operation/openApiTariffInfo
  */
 class ApiTariffInfoPrompt extends BaseOpenApiTariffInfoPrompt

@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\CheckConfirmationCodePrompt as BaseChec
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/order/checkConfirmationCode.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/checkConfirmationCode
- * 
+ *
  * @property string $confirmCode Body field confirmCode
  * @property string $parcelID Body field parcelID
  */

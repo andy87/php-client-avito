@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/v2/createParcel.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/CreateSandboxParcelV2
  */
 class CreateSandboxParcelV2Prompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class CreateSandboxParcelV2Prompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['items' => 'items', 'options' => 'options', 'receiver' => 'receiver', 'sender' => 'sender', 'tags' => 'tags'];
 
@@ -33,7 +35,11 @@ class CreateSandboxParcelV2Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['items', 'options', 'receiver', 'sender', 'tags'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateSandboxParcelItem>|null Body field items */
     public ?array $items = null;

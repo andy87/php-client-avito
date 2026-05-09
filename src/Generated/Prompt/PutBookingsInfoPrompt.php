@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /core/v1/accounts/{user_id}/items/{item_id}/bookings.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/putBookingsInfo
  */
 class PutBookingsInfoPrompt extends AbstractPrompt
@@ -21,7 +21,9 @@ class PutBookingsInfoPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['bookings' => 'bookings', 'source' => 'source', 'user_id' => 'user_id', 'item_id' => 'item_id'];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['user_id' => 'user_id', 'item_id' => 'item_id', 'bookings' => 'bookings', 'source' => 'source'];
 
     protected const REQUIRED_FIELDS = ['user_id', 'item_id'];
 
@@ -33,16 +35,21 @@ class PutBookingsInfoPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['bookings', 'source'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Номер пользователя в Личном кабинете Авито */
+    public int $user_id;
+
+    /** @var int Идентификатор объявления на сайте */
+    public int $item_id;
 
     /** @var array<int, array<string, mixed>>|null Список броней для выбранного объекта недвижимости (объявления) */
     public ?array $bookings = null;
 
     /** @var string|null Название PMS системы */
     public ?string $source = null;
-    /** @var string|int path-parameter user_id */
-    public string|int $user_id;
-
-    /** @var string|int path-parameter item_id */
-    public string|int $item_id;
 }

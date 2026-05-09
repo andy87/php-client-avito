@@ -8,8 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\CustomAreaSchedulePrompt as BaseCustomA
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/areas/custom-schedule.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/customAreaSchedule
+ *
+ * @property \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CustomAreaScheduleRequest $body Request body
  */
 class AreaSchedulePrompt extends BaseCustomAreaSchedulePrompt
 {

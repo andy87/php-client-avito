@@ -15,11 +15,11 @@ class ParcelsProvider extends BaseAvitoProvider
 {
     /**
      * Обновление свойств посылок
-     * 
+     *
      * Описание механики изменения посылок [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/izmenenie_svoystv_posylok).
-     * 
+     *
      * Метод реализуется на стороне службы доставки. Предназначен для обновления различных свойств посылок по инициативе Avito.
-     * 
+     *
      * OperationId: ChangeParcels.
      * HTTP: POST /sandbox/changeParcels.
      *

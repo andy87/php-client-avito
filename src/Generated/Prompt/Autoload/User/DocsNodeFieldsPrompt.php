@@ -8,8 +8,11 @@ use Andy87\ClientsAvito\Generated\Prompt\UserDocsNodeFieldsPrompt as BaseUserDoc
 
 /**
  * Класс данных запроса Avito API [GET] /autoload/v1/user-docs/node/{node_slug}/fields.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/userDocsNodeFields
+ *
+ * @property string $node_slug slug узла дерева категории
+ * @property string|null $If_Modified_Since Дата и время последней полученной версии в формате RFC1123 в UTC
  */
 class DocsNodeFieldsPrompt extends BaseUserDocsNodeFieldsPrompt
 {

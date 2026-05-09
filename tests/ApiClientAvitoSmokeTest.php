@@ -7,8 +7,17 @@ namespace Andy87\ClientsAvito\Tests;
 use Andy87\ClientsAvito\ApiClientAvito;
 use Andy87\ClientsAvito\AvitoConfig;
 use Andy87\ClientsAvito\BaseAvitoProvider;
+use Andy87\ClientsAvito\Generated\Prompt\AddAreasSandboxPrompt;
+use Andy87\ClientsAvito\Generated\Prompt\ApplicationsWebhookDeletePrompt;
+use Andy87\ClientsAvito\Generated\Prompt\ApplyVasPrompt;
+use Andy87\ClientsAvito\Generated\Prompt\ChatByActionIdPrompt;
+use Andy87\ClientsAvito\Generated\Prompt\DownloadLabelPrompt;
+use Andy87\ClientsAvito\Generated\Prompt\GenerateLabelsPrompt;
+use Andy87\ClientsAvito\Generated\Prompt\GetChatsV2Prompt;
 use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
 use Andy87\ClientsAvito\Generated\Prompt\PostOperationsHistoryPrompt;
+use Andy87\ClientsAvito\Generated\Prompt\UploadImagesPrompt;
+use Andy87\ClientsAvito\Generated\Response\DownloadLabelResponse;
 use Andy87\ClientsAvito\Generated\Response\GetUserInfoSelfResponse;
 use Andy87\ClientsAvito\Generated\Response\PostOperationsHistoryResponse;
 use Andy87\ClientsBase\Auth\ApiKeyAuthorizationStrategy;
@@ -16,6 +25,7 @@ use Andy87\ClientsBase\Auth\NullAuthorizationStrategy;
 use Andy87\ClientsBase\Auth\PromptClassAuthorizationStrategyResolver;
 use Andy87\ClientsBase\Http\HttpRequest;
 use Andy87\ClientsBase\Http\HttpResponse;
+use Andy87\ClientsBase\Http\MultipartFile;
 use Andy87\ClientsBase\Http\TraceableTransport;
 use Andy87\ClientsBase\Mock\CallbackMockResponseResolver;
 use Andy87\ClientsBase\Mock\MockResponseResolverInterface;
@@ -220,7 +230,7 @@ class ApiClientAvitoSmokeTest extends TestCase
     public function testAuthorizationResolverCanOverrideGeneratedPromptAuthorization(): void
     {
         $authorizationHeader = null;
-        $resolver = new CallbackMockResponseResolver(static function (HttpRequest $request) use (&$authorizationHeader): ?HttpResponse {
+        $resolver = new CallbackMockResponseResolver(static function (HttpRequest $request) use (&$authorizationHeader): HttpResponse {
             $authorizationHeader = $request->headers['X-Api-Key'] ?? null;
 
             return new HttpResponse(200, ['Content-Type' => 'application/json'], '{"id":123,"name":"Resolver"}');
@@ -317,6 +327,166 @@ class ApiClientAvitoSmokeTest extends TestCase
     }
 
     /**
+     * Проверяет генерацию header, path, query и body параметров в Generated Prompt DTO.
+     *
+     * @return void
+     */
+    public function testGeneratedPromptMapsHeaderPathQueryAndBodyParameters(): void
+    {
+        $requests = [];
+        $resolver = new CallbackMockResponseResolver(static function (HttpRequest $request) use (&$requests): ?HttpResponse {
+            $requests[] = $request;
+
+            if ($request->method === 'POST' && $request->url === 'https://api.avito.test/order-management/1/orders/labels') {
+                return new HttpResponse(200, ['Content-Type' => 'application/json'], '{"taskID":"task-1"}');
+            }
+
+            if ($request->method === 'GET' && $request->url === 'https://api.avito.test/cpa/v1/chatByActionId/77') {
+                return new HttpResponse(200, ['Content-Type' => 'application/json'], '{}');
+            }
+
+            if ($request->method === 'PUT' && $request->url === 'https://api.avito.test/core/v2/items/123/vas/') {
+                return new HttpResponse(200, ['Content-Type' => 'application/json'], '{}');
+            }
+
+            if ($request->method === 'DELETE' && $request->url === 'https://api.avito.test/job/v1/applications/webhook') {
+                return new HttpResponse(200, ['Content-Type' => 'application/json'], '{"ok":true}');
+            }
+
+            return null;
+        });
+        $client = $this->createClient($resolver);
+
+        $client->orderManagement->generateLabels(new GenerateLabelsPrompt(['orderIDs' => ['order-1']]));
+        $client->cpa->chatByActionId(new ChatByActionIdPrompt(['actionId' => 77, 'X_Source' => 'crm']));
+        $client->item->applyVas(new ApplyVasPrompt(['item_id' => 123, 'slugs' => ['vip']]));
+        $client->job->applicationsWebhookDelete(new ApplicationsWebhookDeletePrompt(['url' => 'https://hook.test/avito']));
+
+        self::assertCount(4, $requests);
+        self::assertSame(['orderIDs' => ['order-1']], $requests[0]->body);
+        self::assertArrayNotHasKey('Authorization', $requests[0]->body);
+        self::assertSame('crm', $requests[1]->headers['X-Source']);
+        self::assertSame('https://api.avito.test/cpa/v1/chatByActionId/77', $requests[1]->url);
+        self::assertSame('https://api.avito.test/core/v2/items/123/vas/', $requests[2]->url);
+        self::assertSame(['slugs' => ['vip']], $requests[2]->body);
+        self::assertSame(['url' => 'https://hook.test/avito'], $requests[3]->query);
+        self::assertSame('url=https%3A%2F%2Fhook.test%2Favito', $requests[3]->metadata['queryString']);
+    }
+
+    /**
+     * Проверяет, что generated Prompt DTO отправляет root requestBody без обёртки в поле body.
+     *
+     * @return void
+     */
+    public function testGeneratedPromptSendsRootRequestBody(): void
+    {
+        $capturedRequest = null;
+        $resolver = new CallbackMockResponseResolver(static function (HttpRequest $request) use (&$capturedRequest): HttpResponse {
+            $capturedRequest = $request;
+
+            return new HttpResponse(200, ['Content-Type' => 'application/json'], '{}');
+        });
+        $client = $this->createClient($resolver);
+
+        $client->deliverySandbox->addAreasSandbox(new AddAreasSandboxPrompt([
+            'tariff_id' => 15,
+            'body' => [
+                'areas' => [
+                    ['id' => 1],
+                ],
+            ],
+        ]));
+
+        self::assertInstanceOf(HttpRequest::class, $capturedRequest);
+        self::assertSame('https://api.avito.test/delivery-sandbox/tariffs/15/areas', $capturedRequest->url);
+        self::assertSame(['areas' => [['id' => 1]]], $capturedRequest->body);
+        self::assertSame('{"areas":[{"id":1}]}', $capturedRequest->rawBody);
+    }
+
+    /**
+     * Проверяет multipart/form-data upload в generated Prompt DTO.
+     *
+     * @return void
+     */
+    public function testGeneratedPromptSendsMultipartUpload(): void
+    {
+        $path = tempnam(sys_get_temp_dir(), 'avito-upload');
+        self::assertIsString($path);
+        file_put_contents($path, 'image-bytes');
+
+        try {
+            $capturedRequest = null;
+            $resolver = new CallbackMockResponseResolver(static function (HttpRequest $request) use (&$capturedRequest): HttpResponse {
+                $capturedRequest = $request;
+
+                return new HttpResponse(200, ['Content-Type' => 'application/json'], '{}');
+            });
+            $client = $this->createClient($resolver);
+
+            $client->messenger->uploadImages(new UploadImagesPrompt([
+                'user_id' => 7,
+                'uploadfile[]' => new MultipartFile($path, 'image.jpg', 'image/jpeg'),
+            ]));
+
+            self::assertInstanceOf(HttpRequest::class, $capturedRequest);
+            self::assertSame('https://api.avito.test/messenger/v1/accounts/7/uploadImages', $capturedRequest->url);
+            self::assertStringStartsWith('multipart/form-data; boundary=', (string) $capturedRequest->headers['Content-Type']);
+            self::assertStringContainsString('name="uploadfile[]"', (string) $capturedRequest->rawBody);
+            self::assertStringContainsString('filename="image.jpg"', (string) $capturedRequest->rawBody);
+            self::assertStringContainsString('image-bytes', (string) $capturedRequest->rawBody);
+        } finally {
+            unlink($path);
+        }
+    }
+
+    /**
+     * Проверяет OpenAPI form/explode query encoding для generated массивов.
+     *
+     * @return void
+     */
+    public function testGeneratedPromptUsesOpenApiQueryStyles(): void
+    {
+        $capturedRequest = null;
+        $resolver = new CallbackMockResponseResolver(static function (HttpRequest $request) use (&$capturedRequest): HttpResponse {
+            $capturedRequest = $request;
+
+            return new HttpResponse(200, ['Content-Type' => 'application/json'], '{}');
+        });
+        $client = $this->createClient($resolver);
+
+        $client->messenger->getChatsV2(new GetChatsV2Prompt([
+            'user_id' => 7,
+            'item_ids' => [10, 20],
+            'chat_types' => ['u2i', 'u2u'],
+        ]));
+
+        self::assertInstanceOf(HttpRequest::class, $capturedRequest);
+        self::assertSame('item_ids=10&item_ids=20&chat_types=u2i&chat_types=u2u', $capturedRequest->metadata['queryString']);
+    }
+
+    /**
+     * Проверяет, что non-JSON download response возвращается как DTO с сохранённым rawBody.
+     *
+     * @return void
+     */
+    public function testGeneratedDownloadResponseKeepsNonJsonRawBody(): void
+    {
+        $resolver = (new RouteMockResponseResolver())->add(
+            'GET',
+            '/order-management/1/orders/labels/task-1/download',
+            new HttpResponse(200, ['Content-Type' => 'application/pdf'], '%PDF-1.4'),
+        );
+        $client = $this->createClient($resolver);
+
+        $response = $client->orderManagement->downloadLabel(new DownloadLabelPrompt(['taskID' => 'task-1']));
+
+        self::assertInstanceOf(DownloadLabelResponse::class, $response);
+        self::assertFalse($response->hasError());
+        self::assertSame('%PDF-1.4', $response->getRawBody());
+        self::assertSame([], $response->getDecodedBody());
+    }
+
+    /**
      * Проверяет, что error-response возвращается как DTO с ApiError без гидрации успешной модели.
      *
      * @dataProvider errorResponseProvider
@@ -352,8 +522,10 @@ class ApiClientAvitoSmokeTest extends TestCase
         self::assertTrue($response->hasError());
         self::assertSame($statusCode, $response->getStatusCode());
         self::assertNull($response->model);
-        self::assertSame($code, $response->getError()?->code);
-        self::assertSame($message, $response->getError()?->message);
+        $error = $response->getError();
+        self::assertNotNull($error);
+        self::assertSame($code, $error->code);
+        self::assertSame($message, $error->message);
     }
 
     /**

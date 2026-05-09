@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\PostOperationsHistoryResponse as Base
 
 /**
  * Ответ Avito API [POST] /core/v1/accounts/operations_history/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/user/documentation#operation/postOperationsHistory
- * 
+ *
  * @property array<string, mixed>|null $result Response field result
  */
 class PostHistoryResponse extends BasePostOperationsHistoryResponse

@@ -15,9 +15,9 @@ class DictProvider extends BaseAvitoProvider
 {
     /**
      * Получение доступных значений списка по ID словаря
-     * 
+     *
      * Возвращает доступные значения по имени справочника. Значения с признаком deprecated не могут использоваться при создании и обновлении вакансий.
-     * 
+     *
      * OperationId: getDictByID.
      * HTTP: GET /job/v2/vacancy/dict/{dictionary_id}.
      *

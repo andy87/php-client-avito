@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\VacancyUpdateV2Response as BaseVacanc
 
 /**
  * Ответ Avito API [POST] /job/v2/vacancies/update/{vacancy_uuid}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyUpdateV2
  */
 class UpdateV2Response extends BaseVacancyUpdateV2Response

@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetLeadsResponse as BaseGetLeadsRespo
 
 /**
  * Ответ Avito API [POST] /autoteka/v1/get-leads/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/getLeads
- * 
+ *
  * @property array<string, mixed>|null $pagination Response field pagination
  * @property array<int, array<string, mixed>>|null $result Response field result
  */

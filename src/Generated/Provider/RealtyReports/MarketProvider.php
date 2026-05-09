@@ -15,11 +15,11 @@ class MarketProvider extends BaseAvitoProvider
 {
     /**
      * Получение соответствия переданной цены рыночной цене
-     * 
+     *
      * Получение соответствия переданной цены рыночной цене
-     * 
+     *
      * **Данный метод доступен только пользователям с активной подпиской «Лидер» в категории «Недвижимость»**
-     * 
+     *
      * OperationId: market_price_correspondence_v1.
      * HTTP: GET /realty/v1/marketPriceCorrespondence/{itemId}/{price}.
      *

@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetLastCompletedReportResponse as Bas
 
 /**
  * Ответ Avito API [GET] /autoload/v2/reports/last_completed_report.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getLastCompletedReport
- * 
+ *
  * @property array<int, array<string, mixed>> $events Ошибки и предупреждения, которые относятся ко всей выгрузке
  * @property string $feed_url Ссылка на копию файла с объявлениями в момент начала загрузки
  * @property string $finished_at Дата и время закрытия отчёта (окончания выгрузки)

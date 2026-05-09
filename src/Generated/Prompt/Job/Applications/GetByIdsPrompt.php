@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\ApplicationsGetByIdsPrompt as BaseAppli
 
 /**
  * Класс данных запроса Avito API [POST] /job/v1/applications/get_by_ids.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsGetByIds
- * 
+ *
+ * @property bool|null $X_Is_Employee Сотрудник может получить информацию по откликам для вакансий которые он разместил в рамках компании
  * @property array<int, string>|null $ids Body field ids
  */
 class GetByIdsPrompt extends BaseApplicationsGetByIdsPrompt

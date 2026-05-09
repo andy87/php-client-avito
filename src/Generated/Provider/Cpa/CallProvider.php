@@ -17,11 +17,11 @@ class CallProvider extends BaseAvitoProvider
 {
     /**
      * Запись звонка (deprecated)
-     * 
+     *
      * __DEPRECATED__
      * __Используйте endpoint [get_record_by_call_id](https://developers.avito.ru/api-catalog/calltracking/documentation#operation/get_record_by_call_id)__
      * Получение записи звонка по идентификатору
-     * 
+     *
      * OperationId: getCall.
      * HTTP: GET /cpa/v1/call/{call_id}.
      *
@@ -43,9 +43,9 @@ class CallProvider extends BaseAvitoProvider
 
     /**
      * Звонок
-     * 
+     *
      * Получение модели звонка по идентификатору
-     * 
+     *
      * OperationId: getCallByIdV2.
      * HTTP: POST /cpa/v2/callById.
      *

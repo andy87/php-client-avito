@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages/image.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/postSendImageMessage
  */
 class PostSendImageMessageResponse extends AbstractResponse

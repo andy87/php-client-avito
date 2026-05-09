@@ -33,9 +33,9 @@ class VacancyProvider extends BaseAvitoProvider
 {
     /**
      * Остановка публикации вакансии
-     * 
+     *
      * Снимает с публикации объявление в категории Вакансии.
-     * 
+     *
      * OperationId: vacancyArchive.
      * HTTP: PUT /job/v1/vacancies/archived/{vacancy_id}.
      *
@@ -57,9 +57,9 @@ class VacancyProvider extends BaseAvitoProvider
 
     /**
      * Автопродление вакансии v2
-     * 
+     *
      * Включает или выключает автопродление вакансии. Если вакансия в архиве, то при включении автопродления вакансия будет автоматически поднята из архива.
-     * 
+     *
      * OperationId: vacancyAutoRenewal.
      * HTTP: PUT /job/v2/vacancies/{vacancy_uuid}/auto_renewal.
      *
@@ -81,9 +81,9 @@ class VacancyProvider extends BaseAvitoProvider
 
     /**
      * Публикация вакансии
-     * 
+     *
      * Для публикации вакансии необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: vacancyCreate.
      * HTTP: POST /job/v1/vacancies.
      *
@@ -105,10 +105,10 @@ class VacancyProvider extends BaseAvitoProvider
 
     /**
      * Публикация вакансии v2
-     * 
+     *
      * Для публикации вакансии необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
      * Для проверки статуса публикации используйте полученный идентификатор в [методе получения статуса](https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyGetStatuses).
-     * 
+     *
      * OperationId: vacancyCreateV2.
      * HTTP: POST /job/v2/vacancies.
      *
@@ -130,10 +130,10 @@ class VacancyProvider extends BaseAvitoProvider
 
     /**
      * Просмотр данных вакансии
-     * 
+     *
      * По умолчанию fields и params выводятся все. Если указана только часть полей - остальные поля будут отсутствовать в ответе.
      * Для просмотра данных необходимо быть владельцем вакансии.
-     * 
+     *
      * OperationId: vacancyGetItem.
      * HTTP: GET /job/v2/vacancies/{vacancy_id}.
      *
@@ -155,11 +155,11 @@ class VacancyProvider extends BaseAvitoProvider
 
     /**
      * Получение статуса публикации вакансий V2
-     * 
+     *
      * Получение списка статусов процесса публикации и модерации вакансий.
      * В запросе используйте идентификатор, полученный [методе
      * публикации вакансии v2](https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyCreateV2)
-     * 
+     *
      * OperationId: vacancyGetStatuses.
      * HTTP: POST /job/v2/vacancies/statuses.
      *
@@ -181,9 +181,9 @@ class VacancyProvider extends BaseAvitoProvider
 
     /**
      * Реактивация вакансии
-     * 
+     *
      * Реактивирует объявление в категории Вакансии. Необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: vacancyProlongate.
      * HTTP: POST /job/v1/vacancies/{vacancy_id}/prolongate.
      *
@@ -205,7 +205,7 @@ class VacancyProvider extends BaseAvitoProvider
 
     /**
      * Поиск вакансий
-     * 
+     *
      * OperationId: searchVacancy.
      * HTTP: GET /job/v2/vacancies.
      *
@@ -227,9 +227,9 @@ class VacancyProvider extends BaseAvitoProvider
 
     /**
      * Редактирование вакансии
-     * 
+     *
      * Редактирует объявление в категории Вакансии. Необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: vacancyUpdate.
      * HTTP: PUT /job/v1/vacancies/{vacancy_id}.
      *
@@ -251,9 +251,9 @@ class VacancyProvider extends BaseAvitoProvider
 
     /**
      * Редактирование вакансии v2
-     * 
+     *
      * Редактирует объявление в категории Вакансии. Необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: vacancyUpdateV2.
      * HTTP: POST /job/v2/vacancies/update/{vacancy_uuid}.
      *

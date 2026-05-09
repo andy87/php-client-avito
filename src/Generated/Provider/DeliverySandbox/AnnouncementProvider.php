@@ -21,11 +21,11 @@ class AnnouncementProvider extends BaseAvitoProvider
 {
     /**
      * Отмена анонса в СД
-     * 
+     *
      * Описание работы анонсов [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/anonsy).
-     * 
+     *
      * Метод реализуется на стороне службы доставки. Метод предназначен для отмены анонса.
-     * 
+     *
      * OperationId: CancelAnnouncement3PL.
      * HTTP: POST /cancelAnnouncement.
      *
@@ -47,11 +47,11 @@ class AnnouncementProvider extends BaseAvitoProvider
 
     /**
      * Создание анонса в Avito
-     * 
+     *
      * Описание работы анонсов [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/anonsy).
-     * 
+     *
      * Создает анонс о планируемой отгрузке в Avito. После успешного создания анонс направляется в службу доставки указанную в поле "receiver".
-     * 
+     *
      * OperationId: CreateAnnouncement.
      * HTTP: POST /delivery-sandbox/announcements/create.
      *
@@ -73,11 +73,11 @@ class AnnouncementProvider extends BaseAvitoProvider
 
     /**
      * Создание анонса в СД
-     * 
+     *
      * Описание работы анонсов [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/anonsy).
-     * 
+     *
      * Метод реализуется на стороне службы доставки. Метод создает анонс о планируемой отгрузке из службы доставки, указанной в поле "sender", в службу доставки, указанную в поле "receiver".
-     * 
+     *
      * OperationId: CreateAnnouncement3PL.
      * HTTP: POST /createAnnouncement.
      *
@@ -99,11 +99,11 @@ class AnnouncementProvider extends BaseAvitoProvider
 
     /**
      * Трекинг анонсов
-     * 
+     *
      * Описание работы анонсов [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/anonsy).
-     * 
+     *
      * Метод для приема треков по анонсу от служб доставок.
-     * 
+     *
      * OperationId: TrackAnnouncement.
      * HTTP: POST /delivery-sandbox/announcements/track.
      *

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /job/v2/vacancies/statuses.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyGetStatuses
  */
 class VacancyGetStatusesPrompt extends AbstractPrompt
@@ -21,11 +21,13 @@ class VacancyGetStatusesPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['ids' => 'ids'];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['X_Is_Employee' => 'X-Is-Employee', 'ids' => 'ids'];
 
     protected const REQUIRED_FIELDS = ['ids'];
 
-    protected const NULLABLE_FIELDS = [];
+    protected const NULLABLE_FIELDS = ['X_Is_Employee'];
 
     protected const CASTS = [];
 
@@ -33,7 +35,14 @@ class VacancyGetStatusesPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Is_Employee'];
+
     protected const BODY_FIELDS = ['ids'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var bool|null Сотрудник компании получает информацию о статусе публикации вакансии, которую он опубликовал для компании */
+    public ?bool $X_Is_Employee = null;
 
     /** @var array<int, string> Body field ids */
     public array $ids;

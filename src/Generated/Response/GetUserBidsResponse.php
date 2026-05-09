@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /auction/1/bids.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/auction/documentation#operation/getUserBids
  */
 class GetUserBidsResponse extends AbstractResponse

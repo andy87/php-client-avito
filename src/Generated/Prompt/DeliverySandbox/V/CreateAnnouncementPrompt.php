@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\V1createAnnouncementPrompt as BaseV1cre
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/v1/createAnnouncement.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/v1createAnnouncement
- * 
+ *
  * @property string $announcementID Уникальный идентификатор анонса UUID V4.
  * @property string $announcementType Тип анонса.
  * @property string $barcode Штрихкод анонса.

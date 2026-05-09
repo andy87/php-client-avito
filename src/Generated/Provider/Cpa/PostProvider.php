@@ -15,9 +15,9 @@ class PostProvider extends BaseAvitoProvider
 {
     /**
      * Создание жалобы для звонков
-     * 
+     *
      * Создание жалобы на звонок по идентификатору. Максимальное количество запросов в минуту - 1.
-     * 
+     *
      * OperationId: postCreateComplaint.
      * HTTP: POST /cpa/v1/createComplaint.
      *

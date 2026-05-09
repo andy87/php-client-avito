@@ -15,9 +15,9 @@ class PhonesProvider extends BaseAvitoProvider
 {
     /**
      * Информация по номерам телефонов из целевых чатов
-     * 
+     *
      * Получение информации по номерам телефонов из целевых чатов Максимальное количество запросов в минуту - 5.
-     * 
+     *
      * OperationId: phonesInfoFromChats.
      * HTTP: POST /cpa/v1/phonesInfoFromChats.
      *

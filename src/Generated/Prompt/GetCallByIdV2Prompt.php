@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /cpa/v2/callById.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/getCallByIdV2
  */
 class GetCallByIdV2Prompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class GetCallByIdV2Prompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['callId' => 'callId'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['callId'];
+    protected const FIELD_MAP = ['X_Source' => 'X-Source', 'callId' => 'callId'];
+
+    protected const REQUIRED_FIELDS = ['X_Source', 'callId'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,7 +35,14 @@ class GetCallByIdV2Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Source'];
+
     protected const BODY_FIELDS = ['callId'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var string Имя сервиса, отправляющего запрос */
+    public string $X_Source;
 
     /** @var int Идентификатор звонка */
     public int $callId;

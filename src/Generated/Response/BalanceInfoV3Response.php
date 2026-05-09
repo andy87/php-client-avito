@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /cpa/v3/balanceInfo.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/balanceInfoV3
  */
 class BalanceInfoV3Response extends AbstractResponse

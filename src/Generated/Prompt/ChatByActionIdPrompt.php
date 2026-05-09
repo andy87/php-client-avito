@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /cpa/v1/chatByActionId/{actionId}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/chatByActionId
  */
 class ChatByActionIdPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class ChatByActionIdPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = false;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'X_Source' => 'X-Source', 'actionId' => 'actionId'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization', 'X_Source', 'actionId'];
+    protected const FIELD_MAP = ['X_Source' => 'X-Source', 'actionId' => 'actionId'];
+
+    protected const REQUIRED_FIELDS = ['X_Source', 'actionId'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class ChatByActionIdPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Source'];
+
     protected const BODY_FIELDS = [];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string Имя сервиса, отправляющего запрос */
     public string $X_Source;

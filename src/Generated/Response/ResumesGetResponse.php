@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /job/v1/resumes/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/resumesGet
  */
 class ResumesGetResponse extends AbstractResponse

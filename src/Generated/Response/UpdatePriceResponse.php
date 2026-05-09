@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /core/v1/items/{item_id}/update_price.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/updatePrice
  */
 class UpdatePriceResponse extends AbstractResponse

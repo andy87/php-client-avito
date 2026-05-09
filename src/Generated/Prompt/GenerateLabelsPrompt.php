@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/orders/labels.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/generateLabels
  */
 class GenerateLabelsPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class GenerateLabelsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'orderIDs' => 'orderIDs'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization', 'orderIDs'];
+    protected const FIELD_MAP = ['orderIDs' => 'orderIDs'];
+
+    protected const REQUIRED_FIELDS = ['orderIDs'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class GenerateLabelsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['orderIDs'];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<int, string> ID заказов в сервисе сделок (marketplace) */
     public array $orderIDs;

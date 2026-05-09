@@ -95,10 +95,10 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Получение актуальных параметров Автокаталога
-     * 
+     *
      * Метод для получения возможных параметров для заполнения пользователем.
      * Первый запрос можно сделать без параметров, получить данные и далее, передавая нужные id и valueId в повторном запросе, получить все параметры.
-     * 
+     *
      * OperationId: catalogsResolve.
      * HTTP: POST /autoteka/v1/catalogs/resolve.
      *
@@ -120,9 +120,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Получение access token
-     * 
+     *
      * Получение временного ключа для авторизации, пример `curl -L -X POST 'https://pro.autoteka.ru/token/' -H 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'grant_type=client_credentials' --data-urlencode 'client_id=XXX' --data-urlencode 'client_secret=YYY'`
-     * 
+     *
      * OperationId: getAccessToken.
      * HTTP: POST /token.
      *
@@ -144,9 +144,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Запрос остатка отчётов пользователя
-     * 
+     *
      * Возвращает остаток отчётов в текущем пакете пользователя
-     * 
+     *
      * OperationId: getActivePackage.
      * HTTP: GET /autoteka/v1/packages/active_package.
      *
@@ -168,9 +168,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Получение событий сервиса Сигнал
-     * 
+     *
      * Метод получения событий сервиса Сигнал
-     * 
+     *
      * OperationId: getLeads.
      * HTTP: POST /autoteka/v1/get-leads/.
      *
@@ -192,9 +192,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Получение превью по его ID
-     * 
+     *
      * Возвращает текущий статус сбора информации превью, и краткую инфо по запрашиваемому `VIN`
-     * 
+     *
      * OperationId: getPreview.
      * HTTP: GET /autoteka/v1/previews/{previewId}.
      *
@@ -216,9 +216,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Получение отчета по его ID
-     * 
+     *
      * Получение подробного отчета по его идентификатору, полученному из [запроса на создание отчета](#operation/postReport)
-     * 
+     *
      * OperationId: getReport.
      * HTTP: GET /autoteka/v1/reports/{report_id}.
      *
@@ -240,9 +240,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Получение списка отчётов
-     * 
+     *
      * Получение списка запрошенных ранее отчетов [запроса на создание отчета](#operation/postReport)
-     * 
+     *
      * OperationId: getReportList.
      * HTTP: GET /autoteka/v1/reports/list/.
      *
@@ -264,11 +264,11 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Получение тизера по ID тизера
-     * 
+     *
      * Получение тизера по его идентификатору, полученному из [запроса на создание тизера](#operation/postTeaser).
-     * 
+     *
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки. Обратите внимание, что для её подключения надо завести отдельную учётную запись Автотеки.
-     * 
+     *
      * OperationId: getTeaser.
      * HTTP: GET /autoteka/v1/teasers/{teaser_id}.
      *
@@ -290,10 +290,10 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Добавить идентификаторы (vin/frame) на мониторинг
-     * 
+     *
      * Метод для добавления идентификаторов (vin/frame) на мониторинг.
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки.
-     * 
+     *
      * OperationId: monitoringBucketAdd.
      * HTTP: POST /autoteka/v1/monitoring/bucket/add.
      *
@@ -315,9 +315,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Полная очистка списка мониторинга
-     * 
+     *
      * Метод для очистки списка мониторинга
-     * 
+     *
      * OperationId: monitoringBucketDelete.
      * HTTP: POST /autoteka/v1/monitoring/bucket/delete.
      *
@@ -339,9 +339,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Удаление идентификаторов из мониторинга (vin/frame)
-     * 
+     *
      * Метод удаления идентификаторов из мониторинга (vin/frame)
-     * 
+     *
      * OperationId: monitoringBucketRemove.
      * HTTP: POST /autoteka/v1/monitoring/bucket/remove.
      *
@@ -363,9 +363,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Получение событий мониторинга
-     * 
+     *
      * Метод получение событий мониторинга
-     * 
+     *
      * OperationId: monitoringGetRegActions.
      * HTTP: GET /autoteka/v1/monitoring/get-reg-actions/.
      *
@@ -387,9 +387,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Превью по ID объявления другой площадки
-     * 
+     *
      * Возвращает идентификатор `previewId`, по которому асинхронно с помощью [запроса на получение превью по ID](#operation/getPreview) можно получить результат
-     * 
+     *
      * OperationId: postPreviewByExternalItem.
      * HTTP: POST /autoteka/v1/request-preview-by-external-item.
      *
@@ -411,9 +411,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Превью по ID объявления Авито
-     * 
+     *
      * Возвращает идентификатор `previewId`, по которому асинхронно с помощью [запроса на получение превью по ID](#operation/getPreview) можно получить результат
-     * 
+     *
      * OperationId: postPreviewByItemId.
      * HTTP: POST /autoteka/v1/request-preview-by-item-id.
      *
@@ -435,9 +435,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Превью по государственному номеру
-     * 
+     *
      * Возвращает идентификатор `previewId`, по которому асинхронно с помощью [запроса на получение превью по ID](#operation/getPreview) можно получить результат
-     * 
+     *
      * OperationId: postPreviewByRegNumber.
      * HTTP: POST /autoteka/v1/request-preview-by-regnumber.
      *
@@ -459,9 +459,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Превью по VIN или номеру кузова
-     * 
+     *
      * Возвращает идентификатор `previewId`, по которому асинхронно с помощью [запроса на получение превью по ID](#operation/getPreview) можно получить результат
-     * 
+     *
      * OperationId: postPreviewByVin.
      * HTTP: POST /autoteka/v1/previews.
      *
@@ -483,9 +483,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Отчет по превью
-     * 
+     *
      * Метод для запроса отчета по `previewId`, возвращает идентификатор отчета по которому сформированный отчет можно получить в [методе для получения отчета по его идентификатору](#operation/getReport). При запросе происходит списание доступных отчетов
-     * 
+     *
      * OperationId: postReport.
      * HTTP: POST /autoteka/v1/reports.
      *
@@ -507,9 +507,9 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Отчет по идентификатору авто (vin/frame)
-     * 
+     *
      * Метод для запроса отчета по идентификатору авто (vin/frame), возвращает идентификатор отчета по которому сформированный отчет можно получить в [методе для получения отчета по его идентификатору](#operation/getReport). При запросе происходит списание доступных отчетов
-     * 
+     *
      * OperationId: postReportByVehicleId.
      * HTTP: POST /autoteka/v1/reports-by-vehicle-id.
      *
@@ -531,10 +531,10 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Синхронное создание отчета по ГРЗ
-     * 
+     *
      * Метод для создания отчета по государственному регистрационному номеру в синхронном режиме без превью. Возвращает отчет. Таймаут - 30 секунд. Списывает проверку. Если в течение 30 секунд отчет не был сформирован, повторный запрос в течение часа не спишет дополнительных проверок.
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки.
-     * 
+     *
      * OperationId: postSyncCreateReportByRegNumber.
      * HTTP: POST /autoteka/v1/sync/create-by-regnumber.
      *
@@ -556,10 +556,10 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Синхронное создание отчёта по VIN или номеру кузова
-     * 
+     *
      * Метод для создания отчета по VIN или номеру кузова в синхронном режиме без превью. Возвращает отчет. Таймаут - 30 секунд. Списывает проверку. Если в течение 30 секунд отчет не был сформирован, повторный запрос в течение часа не спишет дополнительных проверок.
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки.
-     * 
+     *
      * OperationId: postSyncCreateReportByVin.
      * HTTP: POST /autoteka/v1/sync/create-by-vin.
      *
@@ -581,11 +581,11 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Тизер по идентификатору авто (vin/frame)
-     * 
+     *
      * Метод для создания тизера по идентификатору авто (vin/frame), возвращает идентификатор отчета, по которому сформированный тизер можно получить в [методе для получения тизера по идентификатору отчета](#operation/getTeaser). При запросе происходит списание доступных отчетов.
-     * 
+     *
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки. Обратите внимание, что для её подключения надо завести отдельную учётную запись Автотеки.
-     * 
+     *
      * OperationId: postTeaser.
      * HTTP: POST /autoteka/v1/teasers.
      *
@@ -607,11 +607,11 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Скоринг рисков по идентификатору авто (vin/frame)
-     * 
+     *
      * Метод для запроса скоринга рисков по идентификатору авто (vin/frame). Возвращает идентификатор, по которому скоринг можно получить в [методе для получения скоринга рисков по его идентификатору](#operation/scoringGetById). При запросе происходит списание доступных проверок.
-     * 
+     *
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки. Обратите внимание, что для её подключения надо завести отдельную учётную запись Автотеки.
-     * 
+     *
      * OperationId: scoringByVehicleId.
      * HTTP: POST /autoteka/v1/scoring/by-vehicle-id.
      *
@@ -633,11 +633,11 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Получение скоринга рисков по его ID
-     * 
+     *
      * Получение скоринга рисков по его идентификатору, полученному из [запроса на создание скоринга](#operation/scoringByVehicleId).
-     * 
+     *
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки. Обратите внимание, что для её подключения надо завести отдельную учётную запись Автотеки.
-     * 
+     *
      * OperationId: scoringGetById.
      * HTTP: GET /autoteka/v1/scoring/{scoring_id}.
      *
@@ -659,11 +659,11 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Запрос характеристик по регистрационному номеру
-     * 
+     *
      * Метод для запроса на получение спецификации по регистрационному номеру, возвращает идентификатор спецификации, по которому можно получить спецификацию в [методе для получения спецификации](#operation/specificationGetById).
-     * 
+     *
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки. Обратите внимание, что для её подключения надо завести отдельную учётную запись Автотеки.
-     * 
+     *
      * OperationId: specificationByPlateNumber.
      * HTTP: POST /autoteka/v1/specifications/by-plate-number.
      *
@@ -685,11 +685,11 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Запрос характеристик по идентификатору авто (vin/frame)
-     * 
+     *
      * Метод для запроса на получение спецификации по идентификатору авто (vin/frame), возвращает идентификатор спецификации, по которому можно получить спецификацию в [методе для получения спецификации](#operation/specificationGetById).
-     * 
+     *
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки. Обратите внимание, что для её подключения надо завести отдельную учётную запись Автотеки.
-     * 
+     *
      * OperationId: specificationByVehicleId.
      * HTTP: POST /autoteka/v1/specifications/by-vehicle-id.
      *
@@ -711,11 +711,11 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Получение характеристик по ID запроса
-     * 
+     *
      * Метод для получения спецификации по ее идентификатору.
-     * 
+     *
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки. Обратите внимание, что для её подключения надо завести отдельную учётную запись Автотеки.
-     * 
+     *
      * OperationId: specificationGetById.
      * HTTP: GET /autoteka/v1/specifications/specification/{specificationID}.
      *
@@ -737,11 +737,11 @@ class AutotekaProvider extends BaseAvitoProvider
 
     /**
      * Получение оценки по параметрам
-     * 
+     *
      * Метод для получения оценки по параметрам, полученным из методов [получения спецификации по ее идентификатору](#operation/specificationID) и [получения параметров автокаталога Авито](#operation/catalogsResolve)
-     * 
+     *
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки. Обратите внимание, что для её подключения надо завести отдельную учётную запись Автотеки.
-     * 
+     *
      * OperationId: valuationBySpecification.
      * HTTP: POST /autoteka/v1/valuation/by-specification.
      *

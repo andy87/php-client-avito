@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /stats/v2/accounts/{user_id}/spendings.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/accountSpendings
  */
 class AccountSpendingsResponse extends AbstractResponse

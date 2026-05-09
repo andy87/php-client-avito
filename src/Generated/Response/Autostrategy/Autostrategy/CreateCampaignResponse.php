@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\CreateAutostrategyCampaignResponse as
 
 /**
  * Ответ Avito API [POST] /autostrategy/v1/campaign/create.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/createAutostrategyCampaign
- * 
+ *
  * @property \Andy87\ClientsAvito\Generated\Schema\Autostrategy\Campaign|null $campaign Response field campaign
  */
 class CreateCampaignResponse extends BaseCreateAutostrategyCampaignResponse

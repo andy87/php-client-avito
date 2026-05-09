@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /core/v1/accounts/{user_id}/items/{item_id}/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/getItemInfo
  */
 class GetItemInfoPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetItemInfoPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['user_id' => 'user_id', 'item_id' => 'item_id'];
 
@@ -33,10 +35,15 @@ class GetItemInfoPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
-    protected const BODY_FIELDS = [];
-    /** @var string|int path-parameter user_id */
-    public string|int $user_id;
+    protected const HEADER_FIELDS = [];
 
-    /** @var string|int path-parameter item_id */
-    public string|int $item_id;
+    protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Номер пользователя в Личном кабинете Авито */
+    public int $user_id;
+
+    /** @var int Идентификатор объявления на сайте */
+    public int $item_id;
 }

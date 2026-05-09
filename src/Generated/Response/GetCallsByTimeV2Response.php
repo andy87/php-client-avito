@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /cpa/v2/callsByTime.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/getCallsByTimeV2
  */
 class GetCallsByTimeV2Response extends AbstractResponse

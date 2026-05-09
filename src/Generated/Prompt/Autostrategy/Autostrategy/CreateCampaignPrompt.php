@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\CreateAutostrategyCampaignPrompt as Bas
 
 /**
  * Класс данных запроса Avito API [POST] /autostrategy/v1/campaign/create.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/createAutostrategyCampaign
- * 
+ *
  * @property int|null $budget Выделенный бюджет на кампанию в рублях.<br/>**Обязательно только для типа кампании `AS`**
  * @property int|null $budgetBonus Бонусная часть бюджета, в рублях, которая спишется засчет бонусов.<br/>**Может быть только для типа кампании `AP`**
  * @property int|null $budgetReal Часть бюджета на кампанию в рублях.<br/>**Обязательно только для типа кампании `AP`**

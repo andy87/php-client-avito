@@ -15,10 +15,10 @@ class ConfirmationProvider extends BaseAvitoProvider
 {
     /**
      * Метод для проверки кода подтверждения заказа.
-     * 
+     *
      * Данный метод используется для подтверждения личности для получения заказа в ПВЗ. Пользователь называет код  из приложения сотруднику СД. Далее через API служба доставки проверяет его валидность.
      * Максимальное количество запросов в минуту - 2000.
-     * 
+     *
      * OperationId: checkConfirmationCode.
      * HTTP: POST /order-management/1/order/checkConfirmationCode.
      *

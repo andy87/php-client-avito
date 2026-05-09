@@ -15,9 +15,9 @@ class IntervalsProvider extends BaseAvitoProvider
 {
     /**
      * Заполнение доступности объекта недвижимости с квотами и без
-     * 
+     *
      * Заполнение календаря доступности объекта недвижимости с квотами и без (для краткосрочной аренды)
-     * 
+     *
      * OperationId: putIntervals.
      * HTTP: POST /realty/v1/items/intervals.
      *

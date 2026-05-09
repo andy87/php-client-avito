@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/v1/getParcelInfo.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/v1getParcelInfo
  */
 class V1getParcelInfoPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class V1getParcelInfoPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['parcelID' => 'parcelID'];
 
@@ -33,7 +35,11 @@ class V1getParcelInfoPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['parcelID'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string Body field parcelID */
     public string $parcelID;

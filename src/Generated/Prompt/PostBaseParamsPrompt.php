@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /realty/v1/items/{item_id}/base.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/postBaseParams
  */
 class PostBaseParamsPrompt extends AbstractPrompt
@@ -21,7 +21,9 @@ class PostBaseParamsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['discount' => 'discount', 'extra_guest_fee' => 'extra_guest_fee', 'extra_guest_threshold' => 'extra_guest_threshold', 'fees' => 'fees', 'instant' => 'instant', 'minimal_duration' => 'minimal_duration', 'night_price' => 'night_price', 'refund' => 'refund', 'item_id' => 'item_id'];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['item_id' => 'item_id', 'discount' => 'discount', 'extra_guest_fee' => 'extra_guest_fee', 'extra_guest_threshold' => 'extra_guest_threshold', 'fees' => 'fees', 'instant' => 'instant', 'minimal_duration' => 'minimal_duration', 'night_price' => 'night_price', 'refund' => 'refund'];
 
     protected const REQUIRED_FIELDS = ['item_id'];
 
@@ -33,7 +35,14 @@ class PostBaseParamsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['discount', 'extra_guest_fee', 'extra_guest_threshold', 'fees', 'instant', 'minimal_duration', 'night_price', 'refund'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Идентификатор объявления на сайте */
+    public int $item_id;
 
     /** @var array<int, array<string, mixed>>|null Скидки при бронировании от threshold ночей */
     public ?array $discount = null;
@@ -58,6 +67,4 @@ class PostBaseParamsPrompt extends AbstractPrompt
 
     /** @var array<string, mixed>|null Параметры возврата */
     public ?array $refund = null;
-    /** @var string|int path-parameter item_id */
-    public string|int $item_id;
 }

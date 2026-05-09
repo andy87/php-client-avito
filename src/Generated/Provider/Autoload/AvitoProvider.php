@@ -15,12 +15,12 @@ class AvitoProvider extends BaseAvitoProvider
 {
     /**
      * ID объявлений на Авито
-     * 
+     *
      * Метод позволяет получить идентификаторы (ID) объявлений на Авито по идентификаторам объявлений из файла автозагрузки.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * OperationId: getAvitoIdsByAdIds.
      * HTTP: GET /autoload/v2/items/avito_ids.
      *

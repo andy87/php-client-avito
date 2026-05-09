@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /getEmployeesV1.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/accounts-hierarchy/documentation#operation/getEmployeesV1
  */
 class GetEmployeesV1Prompt extends AbstractPrompt
@@ -21,7 +21,9 @@ class GetEmployeesV1Prompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = [];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['X_Oauth_Scopes' => 'X-Oauth-Scopes', 'X_Oauth_Flow' => 'X-Oauth-Flow'];
 
     protected const REQUIRED_FIELDS = [];
 
@@ -33,5 +35,15 @@ class GetEmployeesV1Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Oauth_Scopes', 'X_Oauth_Flow'];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var string|null Список зон доступа, полученных приложением */
+    public ?string $X_Oauth_Scopes = null;
+
+    /** @var string|null Выбранный флоу авторизации по протоколу OAuth 2.0 (client_credentials/authorization_code) */
+    public ?string $X_Oauth_Flow = null;
 }

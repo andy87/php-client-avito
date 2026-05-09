@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /autostrategy/v1/campaign/stop.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/stopAutostrategyCampaign
  */
 class StopAutostrategyCampaignResponse extends AbstractResponse

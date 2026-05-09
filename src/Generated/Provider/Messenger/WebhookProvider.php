@@ -17,9 +17,9 @@ class WebhookProvider extends BaseAvitoProvider
 {
     /**
      * Отключение уведомлений (webhooks)
-     * 
+     *
      * Отключение уведомлений
-     * 
+     *
      * OperationId: postWebhookUnsubscribe.
      * HTTP: POST /messenger/v1/webhook/unsubscribe.
      *
@@ -41,16 +41,16 @@ class WebhookProvider extends BaseAvitoProvider
 
     /**
      * Включение уведомлений V3 (webhooks)
-     * 
-     * Включение webhook-уведомлений. 
-     * 
+     *
+     * Включение webhook-уведомлений.
+     *
      * Схему JSON приходящего в webhook сообщения можно увидеть в примерах ответов.
-     * 
+     *
      * После регистрации url'а для получения веб-хуков, убедитесь, что он доступен, работает и возвращает статус 200 ОК соблюдая timeout 2s,
      * например, выполнив запрос:
-     * 
+     *
      * curl --connect-timeout 2 <url-вашего-вебхука> -i -d '{}'
-     * 
+     *
      * OperationId: postWebhookV3.
      * HTTP: POST /messenger/v3/webhook.
      *

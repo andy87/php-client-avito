@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /core/v1/items.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/getItemsInfo
  */
 class GetItemsInfoResponse extends AbstractResponse

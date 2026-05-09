@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetProfileResponse as BaseGetProfileR
 
 /**
  * Ответ Avito API [GET] /autoload/v1/profile.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getProfile
- * 
+ *
  * @property bool $autoload_enabled Статус автозагрузки (вкл/выкл)
  * @property string|null $report_email Почта, на которую будут приходить отчеты о выгрузках
  * @property \Andy87\ClientsAvito\Generated\Schema\Autoload\ExportSchedule $schedule Response field schedule

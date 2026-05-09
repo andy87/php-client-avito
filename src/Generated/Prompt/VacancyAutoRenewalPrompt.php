@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [PUT] /job/v2/vacancies/{vacancy_uuid}/auto_renewal.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyAutoRenewal
  */
 class VacancyAutoRenewalPrompt extends AbstractPrompt
@@ -21,11 +21,13 @@ class VacancyAutoRenewalPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['auto_renewal' => 'auto_renewal', 'vacancy_uuid' => 'vacancy_uuid'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['auto_renewal', 'vacancy_uuid'];
+    protected const FIELD_MAP = ['vacancy_uuid' => 'vacancy_uuid', 'X_Is_Employee' => 'X-Is-Employee', 'auto_renewal' => 'auto_renewal'];
 
-    protected const NULLABLE_FIELDS = [];
+    protected const REQUIRED_FIELDS = ['vacancy_uuid', 'auto_renewal'];
+
+    protected const NULLABLE_FIELDS = ['X_Is_Employee'];
 
     protected const CASTS = [];
 
@@ -33,10 +35,20 @@ class VacancyAutoRenewalPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Is_Employee'];
+
     protected const BODY_FIELDS = ['auto_renewal'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var string UUID Идентификатор вакансии для V2 ручек
+(возвращается ручкой [Публикация вакансии V2](https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyCreateV2) )
+ */
+    public string $vacancy_uuid;
+
+    /** @var bool|null Включает привилегии компании для сотрудника, позволяет включать автопродление вакансий принадлежащих сотруднику опубликованных от имени компании */
+    public ?bool $X_Is_Employee = null;
 
     /** @var bool Body field auto_renewal */
     public bool $auto_renewal;
-    /** @var string|int path-parameter vacancy_uuid */
-    public string|int $vacancy_uuid;
 }

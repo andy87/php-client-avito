@@ -15,11 +15,11 @@ class ValuationProvider extends BaseAvitoProvider
 {
     /**
      * Получение оценки по параметрам
-     * 
+     *
      * Метод для получения оценки по параметрам, полученным из методов [получения спецификации по ее идентификатору](#operation/specificationID) и [получения параметров автокаталога Авито](#operation/catalogsResolve)
-     * 
+     *
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки. Обратите внимание, что для её подключения надо завести отдельную учётную запись Автотеки.
-     * 
+     *
      * OperationId: valuationBySpecification.
      * HTTP: POST /autoteka/v1/valuation/by-specification.
      *

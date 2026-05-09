@@ -111,18 +111,18 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Загрузить области доставки
-     * 
+     *
      * Метод позволяет загрузить области, в которых возможна услуга курьерской доставки/забора
      * В качестве классификатора адресов используются индесы Почты России, то есть в 1 индекс включаются все адреса,
      * которые к нему относятся.
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code      |       error message                                       |
      * |-----------|-------------------|-----------------------------------------------------------|
      * |    200    | URL_PATH_INVALID  | Tariff id must be int url path                            |
      * |    200    | TERMINALS_INVALID | Failed to convert areas: {error description}          |
      * |    200    | TERMINALS_INVALID | Failed to get terminals from request: {error description} |
-     * 
+     *
      * OperationId: AddAreasSandbox.
      * HTTP: POST /delivery-sandbox/tariffs/{tariff_id}/areas.
      *
@@ -144,12 +144,12 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Загрузить сортировочные центры
-     * 
-     * Создание задачи на загрузку своих сортировочных центров и первичная валидация данных.  
-     * После загрузки сортировочных центров им необходимо проставить тэги отдельным запросом  
-     * 
+     *
+     * Создание задачи на загрузку своих сортировочных центров и первичная валидация данных.
+     * После загрузки сортировочных центров им необходимо проставить тэги отдельным запросом
+     *
      * Данные необходимо загружать по мере обновления данных о сортировочных центрах (как правило это 1-2 раза в сутки)
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code                  |       error message                        |
      * |-----------|-------------------------------|--------------------------------------------|
@@ -157,10 +157,10 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      * |    200    | INVALID_ENTITY                | Empty sorting centers list                 |
      * |    200    | INVALID_ENTITY                | Failed to convert sorting centers          |
      * |    500    | FAILED_TO_ADD_SORTING_CENTERS | Failed to add sorting centers              |
-     * 
-     * Итоговый результат операции необходимо проверять через:  
+     *
+     * Итоговый результат операции необходимо проверять через:
      * [метод получения результата выполнения задачи](#operation/GetTask)
-     * 
+     *
      * OperationId: AddSortingCenter.
      * HTTP: POST /delivery-sandbox/tariffs/sorting-center.
      *
@@ -182,11 +182,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Установка тэгов своим и/или чужим сортировочным центрам
-     * 
-     * Создание задачи на установку тэгов из своего тарифа своим и/или чужим сортировочным центрам.  
-     * В рамках одного тарифа одному сортировочному центру может соответствовать только один тэг.  
-     * Перепривязка сортировочного центра к тэгу в рамках одного тарифа невозможна, в случае ошибочной привязки необходимо сообщить об этом своему менеджеру по логистике.   
-     * 
+     *
+     * Создание задачи на установку тэгов из своего тарифа своим и/или чужим сортировочным центрам.
+     * В рамках одного тарифа одному сортировочному центру может соответствовать только один тэг.
+     * Перепривязка сортировочного центра к тэгу в рамках одного тарифа невозможна, в случае ошибочной привязки необходимо сообщить об этом своему менеджеру по логистике.
+     *
      * ### Описание ошибок
      * | http code |   error code                          |           error message                                      |
      * |-----------|---------------------------------------|--------------------------------------------------------------|
@@ -196,11 +196,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      * |    200    | INVALID_ENTITY                        | Zero tariff_if in path                                       |
      * |    200    | INVALID_ENTITY                        | Failed to convert tags                                       |
      * |    500    | FAILED_TO_ADD_TAGS_TO_SORTING_CENTERS | Failed to add tags to sorting centers                        |
-     * 
-     * 
-     * Итоговый результат операции необходимо проверять через:  
+     *
+     *
+     * Итоговый результат операции необходимо проверять через:
      * [метод получения результата выполнения задачи](#operation/GetTask)
-     * 
+     *
      * OperationId: AddTagsToSortingCenter.
      * HTTP: POST /delivery-sandbox/tariffs/{tariff_id}/tagged-sorting-centers.
      *
@@ -222,64 +222,64 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Загрузить новый тариф v2
-     * 
+     *
      * Нефункциональные требования:
-     * 
+     *
      * Максимальный размер тела запроса - 400MB<br/>
      * Максимальное количество направлений - 1 миллион
-     * 
+     *
      * Метод позволяет службам доставки самостоятельно управлять:
      *   1. Доступностью направлений доставки
      *   2. Стоимостью доставки по каждому из направлений
      *   3. Сроками доставки по каждому из направлений
-     * 
+     *
      * ## Используемые термины:
-     * 
+     *
      * - **Пункт выдачи заказов (ПВЗ)(Terminal)** - место, в котором в зависимости от списка предоставляемых услуг пользователь может сдать/получить/вернуть посылку
-     * 
+     *
      * - **Область доставки (Area)** - зона (список индексов Почты России), в которой осуществляется курьерская доставка/забор посылок
-     * 
+     *
      * - **Хаб/Сортировочный центр (SortingCenter)** - место, где сортируются посылки для дальнейшей отправки в ПВЗ (используется для кросс-доставки)
-     * 
+     *
      * - **Тэг направления(Tag)** - используется для объединения в группу ПВЗ/Областей доставки/Сортировочных центров
      *     является свойством объекта ПВЗ или области доставки.
-     *     
+     *
      *     Допускается распределять тэги по ПВЗ/Областям доставки/Сортировочным центрам любым образом, при этом наиболее распространенным критерием для тэгирования является географическая близость ПВЗ/Областей доставки/Сортировочных центров друг к другу или принадлежность к одному административному субъекту.
-     * 
+     *
      * - **Тарифная зона доставки(TariffZone)** - список правил и параметров необходимых для расчета стоимости различных услуг, которые будут оказаны в процессе доставки заказа, в том числе с разделением на C2C и B2C.
      *     Сумма стоимостей по всем услугам перечисленным в тарифной зоне равна расчетной стоимости, которую Авито заплатит службе доставки за доставку заказа.
      *     Важно отметить, что допускается загрузка только уникальных тарифных зон - то есть, в одном тарифе не может существовать двух тарифных зон с одинаковыми значениями поля *items*
-     * 
+     *
      * - **Зона сроков доставки(TermsZone)** - список правил и параметров необходимых для расчета сроков доставки.
      *     Как минимальный, так и максимальный срок передаются в рабочих днях.
      *     Важно отметить, что допускается загрузка только уникальных зон сроков доставки - то есть, в одном тарифе не может существовать двух зон сроков доставки с одинаковыми значениями поля *minTerm* и *maxTerm*
-     * 
+     *
      * - **Направление доставки(Direction)** - объект определяющий возможность доставки из directionTagFrom (группа ПВЗ / список индексов_Почты_России в случае курьерской доставки), в directionTagTo (группу ПВЗ / список индексов_Почты_России в случае курьерской доставки).
      *     При этом направление так же определяет условия, на которых доставка будет осуществляться: тарифную зону и сроки доставки
-     * 
+     *
      * - **Тарифный план(Tariff)** - список всех возможных направлений доставки, действующий на определенном интервале времени (например, до подписания договора об изменении тарифов)
-     * 
+     *
      * ## Диаграмма связей между используемыми объектами:
-     * 
+     *
      * <img src="https://www.avito.st/s/avito/components/api-description/delivery/images/tariff_diagram_v2.svg" />
-     * 
+     *
      * ### Инсталляция (первое добавление службой доставки тарифов):
      * >1. [Создать тариф](#operation/AddTariffSandboxV2)
      * >Для каждого направления в тарифе нужно указать те типы доставки, которые по нему доступны.
      * >2. Загрузить [ПВЗ](#operation/AddTerminalsSandbox)/[Области_доставки](#operation/AddAreasSandbox) и свои [сортировочные центры](#operation/AddSortingCenter), если требуется
      * --
-     * 
-     * *Дополнительно для подключения к кросс доставке:*  
-     * >3. [Скачать чужие сортировочные центры](#operation/GetSortingCenter)  
-     * >4. Установить чужим сортировочным центрам тэги из своего тарифа, который был загружен на шаге 1  
-     * >5. [Загрузить чужие сортировочные центры с тэгами из своего тарифа](#operation/AddTagsToSortingCenter)  
-     * 
+     *
+     * *Дополнительно для подключения к кросс доставке:*
+     * >3. [Скачать чужие сортировочные центры](#operation/GetSortingCenter)
+     * >4. Установить чужим сортировочным центрам тэги из своего тарифа, который был загружен на шаге 1
+     * >5. [Загрузить чужие сортировочные центры с тэгами из своего тарифа](#operation/AddTagsToSortingCenter)
+     *
      * #### Схема работы кросс доставочного тарифа
-     * 
+     *
      * <img src="https://avito.st/static/ims/1a890394-cde9-49cf-b2e0-dd5b00dd9a97_new_xdelivery_common_2490x1380.png" />
-     * 
+     *
      * ### Бесшовное обновление тарифа
-     * 
+     *
      * При использовании данного подхода к обновлению тарифа отсутствует момент даунтайма - то есть отсутствия ПВЗ/Областей_доставки службы доставки на карте Авито.
      *   1. Необходимо загрузить новый тариф и сообщить номер залитого тарифа вашему менеджеру по логистике в Авито
      *     - Для загрузки тарифа используется [метод загрузки тарифа](#operation/AddTariffSandbox)
@@ -289,13 +289,13 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      *     - Для загрузки ПВЗ используется [метод загрузки ПВЗ](#operation/AddTerminalsSandbox). Важно учесть, что в URL необходимо указать id загруженного на предыдущем этапе тарифа
      *     - Для получения результата загрузки ПВЗ используется [метод получения результата выполнения задачи](#operation/GetTerminalsTaskSandbox). Необходимо убедиться в отсутствии ошибок загрузки ПВЗ
      *   4. Сообщить вашему менеджеру по логистике в Авито о том, что ПВЗ к тарифу успешно загружены
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code   |       error message                                      |
      * |-----------|----------------|----------------------------------------------------------|
      * |    200    | INVALID_ENTITY | Failed to convert entities: {error description}          |
      * |    200    | INVALID_ENTITY | Failed to get entities from request: {error description} |
-     * 
+     *
      * OperationId: AddTariffSandboxV2.
      * HTTP: POST /delivery-sandbox/tariffsV2.
      *
@@ -317,17 +317,17 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Загрузить терминалы
-     * 
+     *
      * Загрузить новые терминалы
-     * 
+     *
      * Данные необходимо загружать по мере обновления данных о ПВЗ (как правило это 1-2 раза в сутки)
-     * 
+     *
      * ### Система апрува терминалов
-     * 
+     *
      * При загрузке терминалов система автоматически сравнивает новые данные с текущими в базе.
      * Если процент критичных изменений превышает заданный порог — задача переходит в статус `pending_approval`
      * и требует ручного одобрения.
-     * 
+     *
      * **Критичные изменения** (хотя бы одно из):
      * - Добавление нового терминала
      * - Удаление терминала
@@ -336,21 +336,21 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      * - Изменение расписания
      * - Изменение тега (направления)
      * - Сдвиг координат более чем на 100 метров
-     * 
+     *
      * Формула: `критичных / (существующих + добавленных) * 100% > порог`
-     * 
+     *
      * При срабатывании апрува задача переходит в статус `pending_approval`, а в результате задачи
      * возвращаются поля с информацией об изменениях (`diff_added`, `diff_deleted`, `diff_modified`, `diff_critical`, `diff_total`).
-     * 
+     *
      * > Система апрува не затрагивает ABD-терминалы.
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code      |       error message                                       |
      * |-----------|-------------------|-----------------------------------------------------------|
      * |    200    | URL_PATH_INVALID  | Tariff id must be int url path                            |
      * |    200    | TERMINALS_INVALID | Failed to convert terminals: {error description}          |
      * |    200    | TERMINALS_INVALID | Failed to get terminals from request: {error decsription} |
-     * 
+     *
      * OperationId: AddTerminalsSandbox.
      * HTTP: POST /delivery-sandbox/tariffs/{tariff_id}/terminals.
      *
@@ -372,11 +372,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Отмена анонса в СД
-     * 
+     *
      * Описание работы анонсов [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/anonsy).
-     * 
+     *
      * Метод реализуется на стороне службы доставки. Метод предназначен для отмены анонса.
-     * 
+     *
      * OperationId: CancelAnnouncement3PL.
      * HTTP: POST /cancelAnnouncement.
      *
@@ -398,11 +398,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Отмена посылки
-     * 
+     *
      * Метод должен быть имплементирован на стороне службы доставки.
-     * 
+     *
      * Описание механики работы и дополнительные требования см. [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/otmena_posylki).
-     * 
+     *
      * OperationId: cancelParcel.
      * HTTP: POST /delivery-sandbox/cancelParcel.
      *
@@ -424,11 +424,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Отправка результата исполнения заявки
-     * 
+     *
      * Описание механики изменения посылок [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/izmenenie_svoystv_posylok).
-     * 
+     *
      * Метод для передачи результата исполнения заявки, созданной с помощью метода [/changeParcels](#operation/ChangeParcels).
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code         |       причина ошибки                                                                                                                                                 |
      * |-----------|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -437,18 +437,18 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      * |    200    | STATUS_INVALID       | заявка не может быть переведена в статус указанный в запросе.                                                                                                        |
      * |    200    | FAILED_REASON_MISSES | отсутствует причина, по которой заявка не может быть исполнена. Данный код ошибки будет возвращен при статусе заявки declined и отсутствующем или пустом поле reason.|
      * |    200    | PARCEL_CLOSED        | посылка, связанная с заявкой, уже неактивная (была получена, утеряна или ушла на возвратное движение).                                              |
-     * 
+     *
      * ### Порядок повторных попыток
-     * 
+     *
      * - ID_INVALID, NOT_FOUND: повторные отправки запросов не помогут, имеет место ошибка валидации номера заявки.
      * - STATUS_INVALID: может помочь повтор с другим, корректным, статусом.
      * - FAILED_REASON_MISSES: повторная отправка возможна после заполнения поля reason для заявки в статусе declined или отправки запроса со статусом approved.
      * - PARCEL_CLOSED: нет смысла отправлять запрос повторно, данный код означает, что изменение свойства для посылки более не актуально так как посылка вручена или изменилось направление движение посылки.
      * - HTTP 500: означает недоступность API, необходим повтор.
-     * 
-     * 
+     *
+     *
      * ### Возможные причины для отклонения заявки и коды приведены в таблице
-     * 
+     *
      * | Тип заявки               |   reason code                   |       Описание                                                             |
      * |--------------------------|---------------------------------|----------------------------------------------------------------------------|
      * | prohibitParcelAcceptance | already_received                | Посылка уже была принята от продавца и запрет её приёма невозможен.        |
@@ -459,10 +459,10 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      * | extendParcelStorage      | invalid_parcel_status           | Продление срока хранения невозможно в текущем состоянии (статусе посылки). |
      * | extendParcelStorage      | parcel_not_found                | Посылка не найдена.                                                        |
      * | любой                    | текст в свободной форме         | Причина отклонения, которая отличается от стандартизированных              |
-     * 
+     *
      * Для описанных сценариев важно использовать стандартизированные причины для отклонения заявки. Это может влиять на политику ретраев и другие внутренние процессы внутри Avito.
      * Список стандартных причин может расширяться в будущем в зависимости от статистики использования и возникающих корнер-кейсов.
-     * 
+     *
      * OperationId: ChangeParcelResult.
      * HTTP: POST /delivery/order/changeParcelResult.
      *
@@ -484,11 +484,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Обновление свойств посылок
-     * 
+     *
      * Описание механики изменения посылок [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/izmenenie_svoystv_posylok).
-     * 
+     *
      * Метод реализуется на стороне службы доставки. Предназначен для обновления различных свойств посылок по инициативе Avito.
-     * 
+     *
      * OperationId: ChangeParcels.
      * HTTP: POST /sandbox/changeParcels.
      *
@@ -510,9 +510,9 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Проверка кода подтверждения
-     * 
+     *
      * Метод для проверки службой доставки кода подтверждения, который пользователь показал на пункте выдачи заказа.<br />
-     * 
+     *
      * ### Статус проверки кода
      * | status      |       Значение                                |
      * |-------------|-----------------------------------------------|
@@ -520,7 +520,7 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      * |   fail      | Код неверный.                                 |
      * |   expired   | Код подтверждения устарел.                    |
      * |   attempts  | Превышено максимальное количество попыток.    |
-     * 
+     *
      * OperationId: checkConfirmationCode.
      * HTTP: POST /delivery-sandbox/order/checkConfirmationCode.
      *
@@ -542,11 +542,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Создание анонса в Avito
-     * 
+     *
      * Описание работы анонсов [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/anonsy).
-     * 
+     *
      * Создает анонс о планируемой отгрузке в Avito. После успешного создания анонс направляется в службу доставки указанную в поле "receiver".
-     * 
+     *
      * OperationId: CreateAnnouncement.
      * HTTP: POST /delivery-sandbox/announcements/create.
      *
@@ -568,11 +568,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Создание анонса в СД
-     * 
+     *
      * Описание работы анонсов [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/anonsy).
-     * 
+     *
      * Метод реализуется на стороне службы доставки. Метод создает анонс о планируемой отгрузке из службы доставки, указанной в поле "sender", в службу доставки, указанную в поле "receiver".
-     * 
+     *
      * OperationId: CreateAnnouncement3PL.
      * HTTP: POST /createAnnouncement.
      *
@@ -594,11 +594,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Создание посылки
-     * 
+     *
      * Метод реализуется на стороне службы доставки.
-     * 
+     *
      * Описание механики работы и дополнительные требования см. [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/sozdanie_posylki).
-     * 
+     *
      * OperationId: createParcel.
      * HTTP: POST /createParcel.
      *
@@ -620,13 +620,13 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Создание тестовой посылки
-     * 
+     *
      * Метод доступен только в Песочнице.
-     * 
+     *
      * Метод запускает процесс создания тестовой посылки.
-     * 
+     *
      * Описание механики работы и дополнительные требования см. [здесь](#info/sozdanie_testovyh_posylok).
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code       |       error message          |
      * |-----------|--------------------|------------------------------|
@@ -634,7 +634,7 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      * |    200    | VALIDATION_ERROR   | invalid request              |
      * |    200    | LIMIT_REACHED      | create parcels limit reached |
      * |    500    | INTERNAL_ERROR     | create parcel error          |
-     * 
+     *
      * OperationId: CreateSandboxParcelV2.
      * HTTP: POST /delivery-sandbox/v2/createParcel.
      *
@@ -656,10 +656,10 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Установка графика работы на определённый день
-     * 
+     *
      * Метод можно использовать для установки расписания отличного от регулярного, например для того, чтобы установить
      * праздничные дни нерабочими или установить для них расписание отличное от регулярного.
-     * 
+     *
      * OperationId: customAreaSchedule.
      * HTTP: POST /delivery-sandbox/areas/custom-schedule.
      *
@@ -681,9 +681,9 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Получить список сортировочных центров
-     * 
+     *
      * Возвращает сортировочные центы для переданных служб доставки
-     * 
+     *
      * ### Справочник служб доставки
      * |    код    |    Название  |
      * |-----------|--------------|
@@ -692,14 +692,14 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      * |     bb    | Boxberyy     |
      * |     pp    | PickPoint    |
      * |    dpd    | DPD          |
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code                  |       error message                                      |
      * |-----------|-------------------------------|----------------------------------------------------------|
      * |    200    | INVALID_QUERY_PARAMETERS      | Failed to convert entities: {error description}          |
      * |    200    | INVALID_QUERY_PARAMETERS      | Failed to get entities from request: {error description} |
      * |    500    | FAILED_TO_GET_SORTING_CENTERS | Failed to get sorting centers                            |
-     * 
+     *
      * OperationId: GetSortingCenter.
      * HTTP: GET /delivery-sandbox/sorting-center.
      *
@@ -721,11 +721,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Получение информации по задаче
-     * 
+     *
      * Получить информацию о задаче
-     * 
+     *
      * Примерное время выполнения задачи от 5 до 20 минут
-     * 
+     *
      * ### Возможные статусы задачи
      *  Задача может быть в одном из следующих статусов:
      *   * `processing` - задача ждёт очередь на выполнение или уже выполняется
@@ -733,14 +733,14 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      *   * `failed` - задача завершилась с ошибкой или не смогла завершиться по техническим причинам
      *   * `pending_approval` - загрузка терминалов приостановлена, процент критичных изменений превысил допустимый порог и требуется ручное одобрение
      *   * `declined` - загрузка терминалов отклонена
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code       |       error message          |
      * |-----------|--------------------|------------------------------|
      * |    200    | URL_PATH_INVALID   | Task id must be int url path |
      * |    200    | INVALID_ENTITY     | Empty provider               |
      * |    500    | FAILED_TO_GET_TASK | Failed to get task           |
-     * 
+     *
      * OperationId: GetTask.
      * HTTP: GET /delivery-sandbox/tasks/{task_id}.
      *
@@ -762,11 +762,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Запрет приёма посылки от отправителя
-     * 
+     *
      * Метод должен быть имплементирован на стороне службы доставки.
-     * 
+     *
      * Описание механики работы и дополнительные требования см. [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/zapret_priema_posylki).
-     * 
+     *
      * OperationId: prohibitOrderAcceptance.
      * HTTP: POST /delivery-sandbox/prohibitOrderAcceptance.
      *
@@ -788,11 +788,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Добавление / изменение параметров доставки посылки
-     * 
+     *
      * Метод используется для отправки в Avito параметров, относящихся к доставке посылки. <br />
      * В случае повторной передачи параметров, данные будут перезаписаны. <br />
      * Важно передавать актуальные данные. Например, если конечная стоимость доставки заказа изменилась, нужно отправить ее заново. <br />
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code         |       error message                               |
      * |-----------|----------------------|---------------------------------------------------|
@@ -806,7 +806,7 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      * |    200    |   PROPERTIES_INVALID | Delivery cost must be positive integer number     |
      * |    200    |   PROPERTIES_INVALID | Forbidden terminal change in current order status |
      * |    200    |   PROPERTIES_INVALID | Both terminals cannot be changed                  |
-     * 
+     *
      * OperationId: setOrderProperties.
      * HTTP: POST /delivery-sandbox/order/properties.
      *
@@ -828,21 +828,21 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Фактический адрес приёма / возврата посылки
-     * 
+     *
      * ### Фактический ПВЗ приема
-     * Фактический ПВЗ приема посылки посылки нужен Avito для работы как с [агентскими](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/agentskie_vozvraty), так и с [клиентскими](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/klientskie_vozvraty) возвратами. 
+     * Фактический ПВЗ приема посылки посылки нужен Avito для работы как с [агентскими](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/agentskie_vozvraty), так и с [клиентскими](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/klientskie_vozvraty) возвратами.
      * Если получатель посылки откажется от её получения "на месте", то Avito понадобится показать ПВЗ возврата
-     * отправителю, а этим ПВЗ будет фактический ПВЗ приема. Если же посылку нужно будет вернуть отправителю через клиентский 
+     * отправителю, а этим ПВЗ будет фактический ПВЗ приема. Если же посылку нужно будет вернуть отправителю через клиентский
      * возврат, то для создания отдельной возвратной посылки Avito критически важно знать тот же фактический ПВЗ приема.<br/>
-     * 
+     *
      * Присылайте адрес в момент приема посылки от отправителя или чуть позже, если нет возможности это делать сразу.<br/>
-     * 
+     *
      * ### Фактический адрес возврата
      * ПВЗ, из которого забрали возврат.<br/>
-     * 
+     *
      * ### Про повторные запросы
      * В случае повторной передачи новые данные будут записаны.<br/>
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code           |       error message                           |
      * |-----------|------------------------|-----------------------------------------------|
@@ -851,7 +851,7 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      * |    200    |   REAL_ADDRESS_INVALID | Failed to get real address from request       |
      * |    200    |   REAL_ADDRESS_INVALID | Incorrect terminal type                       |
      * |    200    |   REAL_ADDRESS_INVALID | Incorrect terminal number                     |
-     * 
+     *
      * OperationId: setOrderRealAddress.
      * HTTP: POST /delivery-sandbox/order/realAddress.
      *
@@ -873,11 +873,11 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Трекинг анонсов
-     * 
+     *
      * Описание работы анонсов [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/anonsy).
-     * 
+     *
      * Метод для приема треков по анонсу от служб доставок.
-     * 
+     *
      * OperationId: TrackAnnouncement.
      * HTTP: POST /delivery-sandbox/announcements/track.
      *
@@ -899,13 +899,13 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Трекинг
-     * 
+     *
      * Метод для передачи информации по трекингу посылки от службы доставки в Avito.
-     * 
+     *
      * Механика работы и прочие важные моменты описаны в [разделе](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/treking).
-     * 
+     *
      * Обязательно ознакомьтесь и реализуйте [политику повторов запросов](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/politika_povtorov_v_trekinge).
-     * 
+     *
      * OperationId: tracking.
      * HTTP: POST /delivery-sandbox/order/tracking.
      *
@@ -927,14 +927,14 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Обновить сроки по тарифу
-     * 
-     * Создание задачи на обновление сроков в тарифе. Подробнее про сроки можно почитать в разделе загрузки тарифа https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddTariffSandboxV2.  
-     * 
+     *
+     * Создание задачи на обновление сроков в тарифе. Подробнее про сроки можно почитать в разделе загрузки тарифа https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddTariffSandboxV2.
+     *
      * Важно ! Список новых сроков должен полностью соответствовать по deliveryProviderZoneId и name списку сроков, переданному при создании тарифа.
      * Т.е. необходимо перечислить все те же deliveryProviderZoneId и name, но можете поменять сроки (maxTerm и/или minTerm).
      * Если в какой-то зоне сроки не меняются, то необходимо все равно передать ее в исходном виде (без изменения в maxTerm и minTerm.
      * При загрузке неполного списка обновление сроков упадет с ошибкой (об этом узнать можно будет через [метод получения результата выполнения задачи](#operation/GetTask))
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code                  |       error message                                                   |
      * |-----------|-------------------------------|-----------------------------------------------------------------------|
@@ -943,10 +943,10 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      * |    200    | INVALID_ENTITY                | Не указан или указан невалидный tariff_id, должно быть передано число |
      * |    200    | INVALID_ENTITY                | Передан tariff_id равный 0                                            |
      * |    500    | FAILED_TO_UPDATE_TERMS        | Ошибка обработки сроков                                               |
-     * 
-     * Итоговый результат операции необходимо проверять через:  
+     *
+     * Итоговый результат операции необходимо проверять через:
      * [метод получения результата выполнения задачи](#operation/GetTask)
-     * 
+     *
      * OperationId: UpdateTerms.
      * HTTP: POST /delivery-sandbox/tariffs/{tariff_id}/terms.
      *
@@ -968,26 +968,26 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Отправка события об отмене тестового анонса
-     * 
+     *
      * Метод доступен только в Песочнице.
-     * 
+     *
      * Описание работы анонсов [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/anonsy).
-     * 
+     *
      * Метод запускает процесс отмены тестового анонса.
      * При успешном выполнении в ответе должен быть статус success. По предоставленному вами url (параметр options.urlToCancelAnnouncement)
      * должно прийти сообщение об отмене анонса.
-     * 
+     *
      * ### Вариант использования
      * Метод призван облегчить тестирование интеграции вашего API по обмену анонсами с Avito.
      * В метод необходимо передать ID тестового анонса, созданного ранее посредством [метода создания тестового анонса](#operation/v1createAnnouncement).
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code                |
      * |-----------|-----------------------------|
      * |    200    | VALIDATION_ERROR            |
      * |    200    | ANNOUNCEMENT_NOT_FOUND      |
      * |    500    | INTERNAL_ERROR              |
-     * 
+     *
      * OperationId: v1cancelAnnouncement.
      * HTTP: POST /delivery-sandbox/v1/cancelAnnouncement.
      *
@@ -1009,15 +1009,15 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Отмена тестовой посылки
-     * 
+     *
      * Метод доступен только в Песочнице.
-     * 
+     *
      * Метод инициирует [запрет приёма посылки](#operation/prohibitOrderAcceptance) в службе доставки и, если он состоялся, то посылка отменяется.
      * Отменить можно только те посылки, которые были созданы с помощью [метода создания тестовой посылки](#operation/v1createParcel).
-     * 
+     *
      * По умолчанию запрос на запрет приема посылки будет отправлен в мок. Чтобы изменить это поведение и получить запрос у себя в системе,
      * воспользуйтесь параметром `options.cancelationUrl`.
-     * 
+     *
      * OperationId: v1CancelParcel.
      * HTTP: POST /delivery-sandbox/v1/cancelParcel.
      *
@@ -1039,16 +1039,16 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Создание заявки на изменение данных тестовой посылки
-     * 
+     *
      * Метод доступен только в Песочнице.
-     * 
+     *
      * Описание механики изменения посылок [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/izmenenie_svoystv_posylok).
-     * 
+     *
      * Метод создаёт заявку на изменение данных посылки. Например, на изменение ФИО и телефона получателя.
-     * 
+     *
      * По умолчанию запрос на создание заявки не будет отправлен в вашу систему. Чтобы это произошло, необходимо
      * заполнить параметр options.changeParcelUrl.
-     * 
+     *
      * OperationId: v1changeParcel.
      * HTTP: POST /delivery-sandbox/v1/changeParcel.
      *
@@ -1070,20 +1070,20 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Создание тестового анонса
-     * 
+     *
      * Метод доступен только в Песочнице.
-     * 
+     *
      * Описание работы анонсов [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/anonsy).
-     * 
+     *
      * Метод запускает процесс создания тестового анонса.
-     * При успешном выполнении в ответе должен быть статус success, а предоставленный анонс должен прийти по указанному 
+     * При успешном выполнении в ответе должен быть статус success, а предоставленный анонс должен прийти по указанному
      * вами URL (параметр options.urlToSendAnnouncement).
-     * 
-     * При формировании тестового анонса необходимо указать ID тестовых посылок (параметр packages.parcelIDs). 
+     *
+     * При формировании тестового анонса необходимо указать ID тестовых посылок (параметр packages.parcelIDs).
      * ID тестовых посылок можно узнать при помощи двух методов [создания тестовой посылки](#operation/v1createParcel)
      * и [получения ее ID](#operation/v1getRegisteredParcelID). Обращаем внимание, что для тестирования приема входящих
      * анонсов необходимо создать кросс-доставочную посылку (в параметре options.xDelivery.leg выставить флаг X_DELIVERY_LAST_LEG).
-     * 
+     *
      * ### Вариант использования
      * Метод призван облегчить тестирование интеграции вашего API по обмену анонсами с Avito.
      * В метод необходимо передать ID посылки, а для этого её нужно создать. Таким образом, шаги будут выглядеть примерно так:
@@ -1092,14 +1092,14 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      *   <li>С полученным orderID вызываем метод получения ID тестовой посылки.</li>
      *   <li>С полученным ID посылки делаем запрос на создание анонса.</li>
      * </ol>
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code       |
      * |-----------|--------------------|
      * |    200    | VALIDATION_ERROR   |
      * |    200    | OBJECT_EXISTS      |
      * |    500    | INTERNAL_ERROR     |
-     * 
+     *
      * OperationId: v1createAnnouncement.
      * HTTP: POST /delivery-sandbox/v1/createAnnouncement.
      *
@@ -1121,25 +1121,25 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Получение последнего события тестового анонса
-     * 
+     *
      * Метод доступен только в Песочнице.
-     * 
+     *
      * Описание работы анонсов [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/anonsy).
-     * 
+     *
      * Метод позволяет проверить последнее зарегистрированное событие по анонсу.
-     * 
+     *
      * ### Вариант использования
      * Метод призван облегчить тестирование интеграции вашего api по обмену анонсами с Avito.
-     * Метод можно использовать в связке с [методом отмены анонса](#operation/v1cancelAnnouncement) для проверки того, что 
+     * Метод можно использовать в связке с [методом отмены анонса](#operation/v1cancelAnnouncement) для проверки того, что
      * последнее событие тестового анонса изменилось.
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code                |
      * |-----------|-----------------------------|
      * |    200    | VALIDATION_ERROR            |
      * |    200    | ANNOUNCEMENT_NOT_FOUND      |
      * |    500    | INTERNAL_ERROR              |
-     * 
+     *
      * OperationId: v1getAnnouncementEvent.
      * HTTP: POST /delivery-sandbox/v1/getAnnouncementEvent.
      *
@@ -1161,14 +1161,14 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Получение информации об изменении тестовой посылки
-     * 
+     *
      * Метод доступен только в Песочнице.
-     * 
+     *
      * Описание механики изменения посылок [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/izmenenie_svoystv_posylok).
-     * 
+     *
      * Метод возвращает информацию о заявке на изменение данных тестовой посылки. Информацию можно получить только по тем заявкам
      * которые были созданы с помощью [метода создания заявки на изменение данных](#operation/v1changeParcel).
-     * 
+     *
      * OperationId: v1getChangeParcelInfo.
      * HTTP: POST /delivery-sandbox/v1/getChangeParcelInfo.
      *
@@ -1190,12 +1190,12 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Получение информации о тестовой посылке
-     * 
+     *
      * Метод доступен только в Песочнице.
-     * 
+     *
      * Метод возвращает информацию о тестовой посылке. Информацию можно получить только по тем посылкам
      * которые были созданы с помощью [метода создания тестовой посылки](#operation/v1createParcel).
-     * 
+     *
      * OperationId: v1getParcelInfo.
      * HTTP: POST /delivery-sandbox/v1/getParcelInfo.
      *
@@ -1217,14 +1217,14 @@ class DeliverySandboxProvider extends BaseAvitoProvider
 
     /**
      * Получение ID зарегистрированной тестовой посылки
-     * 
+     *
      * Метод доступен только в Песочнице.
-     * 
+     *
      * Метод возвращает идентификатор зарегистрированной тестовой посылки, созданной с помощью
      * [метода создания тестовой посылки](#operation/v1createParcel).
-     * 
+     *
      * Вариант использования метода см. в описании [метода создания тестовой посылки](#operation/v1createParcel)
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code       |       error message          |
      * |-----------|--------------------|------------------------------|
@@ -1232,7 +1232,7 @@ class DeliverySandboxProvider extends BaseAvitoProvider
      * |    200    | NOT_REGISTERED     | parcel not registered yet    |
      * |    200    | VALIDATION_ERROR   | wrong orderID format         |
      * |    500    | INTERNAL_ERROR     | get parcel id failed         |
-     * 
+     *
      * OperationId: v1getRegisteredParcelID.
      * HTTP: POST /delivery-sandbox/v1/getRegisteredParcelID.
      *

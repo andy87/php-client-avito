@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /calltracking/v1/getCallById/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/calltracking/documentation#operation/get_call_by_id
  */
 class GetCallByIdResponse extends AbstractResponse

@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\RemoveReviewAnswerV1Response as BaseR
 
 /**
  * Ответ Avito API [DELETE] /ratings/v1/answers/{answer_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/removeReviewAnswerV1
- * 
+ *
  * @property bool $success Статус успешности запроса
  */
 class RemoveAnswerV1Response extends BaseRemoveReviewAnswerV1Response

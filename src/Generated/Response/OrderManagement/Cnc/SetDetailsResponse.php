@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\CncSetDetailsResponse as BaseCncSetDe
 
 /**
  * Ответ Avito API [POST] /order-management/1/order/cncSetDetails.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/cncSetDetails
- * 
+ *
  * @property array<string, mixed>|null $result Response field result
  * @property string|null $status Response field status
  */

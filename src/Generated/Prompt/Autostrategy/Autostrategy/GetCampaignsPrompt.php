@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\GetAutostrategyCampaignsPrompt as BaseG
 
 /**
  * Класс данных запроса Avito API [POST] /autostrategy/v1/campaigns.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/getAutostrategyCampaigns
- * 
+ *
  * @property array<string, mixed>|null $filter Фильтр
  * @property int $limit Ограничение на выборку
  * @property int|null $offset Смещение выборки, по умолчанию равно 0

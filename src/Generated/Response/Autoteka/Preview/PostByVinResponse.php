@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\PostPreviewByVinResponse as BasePostP
 
 /**
  * Ответ Avito API [POST] /autoteka/v1/previews.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/postPreviewByVin
- * 
+ *
  * @property \Andy87\ClientsAvito\Generated\Schema\Autoteka\RequestPreviewResponseDataAutoteka|null $result Response field result
  */
 class PostByVinResponse extends BasePostPreviewByVinResponse

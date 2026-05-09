@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoload/v3/reports/last_completed_report.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getLastCompletedReportV3
  */
 class GetLastCompletedReportV3Prompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class GetLastCompletedReportV3Prompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = false;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization'];
+    protected const FIELD_MAP = [];
+
+    protected const REQUIRED_FIELDS = [];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,8 +35,9 @@ class GetLastCompletedReportV3Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 }

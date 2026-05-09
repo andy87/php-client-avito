@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoteka/v1/scoring/{scoring_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/scoringGetById
  */
 class ScoringGetByIdPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class ScoringGetByIdPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['scoring_id' => 'scoring_id'];
 
@@ -33,7 +35,12 @@ class ScoringGetByIdPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
-    /** @var string|int path-parameter scoring_id */
-    public string|int $scoring_id;
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Идентификатор скоринга. */
+    public int $scoring_id;
 }

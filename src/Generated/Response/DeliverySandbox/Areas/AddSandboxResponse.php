@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\AddAreasSandboxResponse as BaseAddAre
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/tariffs/{tariff_id}/areas.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddAreasSandbox
- * 
+ *
  * @property array<string, mixed>|null $data Response field data
  * @property \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryError|null $errorData Response field error
  */

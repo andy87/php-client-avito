@@ -17,9 +17,9 @@ class RealtyProvider extends BaseAvitoProvider
 {
     /**
      * Получение списка броней по объявлению
-     * 
+     *
      * Возвращает информацию о бронированиях объекта за весь период.
-     * 
+     *
      * OperationId: getRealtyBookings.
      * HTTP: GET /realty/v1/accounts/{user_id}/items/{item_id}/bookings.
      *
@@ -41,9 +41,9 @@ class RealtyProvider extends BaseAvitoProvider
 
     /**
      * Актуализация параметров для выбранных периодов
-     * 
+     *
      * Обновляет параметры (цена за ночь, доплата за гостя, минимальная продолжительность брони) для каждого из переданных диапазонов дат, изменения применяются к каждой дате диапазона. В случае, если на занимаемые даты есть брони в неподтвержденных статусах, то брони переводятся в статус overbook.
-     * 
+     *
      * OperationId: postRealtyPrices.
      * HTTP: POST /realty/v1/accounts/{user_id}/items/{item_id}/prices.
      *

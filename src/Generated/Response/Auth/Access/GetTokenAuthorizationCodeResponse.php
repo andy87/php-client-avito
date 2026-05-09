@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetAccessTokenAuthorizationCodeRespon
 
 /**
  * Ответ Avito API [POST] /token‎.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/auth/documentation#operation/getAccessTokenAuthorizationCode
- * 
+ *
  * @property string|null $access_token Ключ для временной авторизации в системе
  * @property float|null $expires_in Время жизни ключа в секундах
  * @property string|null $refresh_token Ключ для обновления токена доступа

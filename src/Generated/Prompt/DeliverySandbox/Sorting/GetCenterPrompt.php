@@ -8,8 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\GetSortingCenterPrompt as BaseGetSortin
 
 /**
  * Класс данных запроса Avito API [GET] /delivery-sandbox/sorting-center.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/GetSortingCenter
+ *
+ * @property string $deliveryProviders Список кодов служб доставки, сортировочные центры которых необходимо вернуть
  */
 class GetCenterPrompt extends BaseGetSortingCenterPrompt
 {

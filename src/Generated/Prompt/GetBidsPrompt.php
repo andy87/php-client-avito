@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /cpxpromo/1/getBids/{itemId}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/getBids
  */
 class GetBidsPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class GetBidsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'itemId' => 'itemId'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization', 'itemId'];
+    protected const FIELD_MAP = ['itemId' => 'itemId'];
+
+    protected const REQUIRED_FIELDS = ['itemId'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class GetBidsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int path-parameter itemId */
     public int $itemId;

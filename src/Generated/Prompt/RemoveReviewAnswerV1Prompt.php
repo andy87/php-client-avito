@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [DELETE] /ratings/v1/answers/{answer_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/removeReviewAnswerV1
  */
 class RemoveReviewAnswerV1Prompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class RemoveReviewAnswerV1Prompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['answer_id' => 'answer_id'];
 
@@ -33,7 +35,12 @@ class RemoveReviewAnswerV1Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
-    /** @var string|int path-parameter answer_id */
-    public string|int $answer_id;
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Идентификатор ответа на отзыв */
+    public int $answer_id;
 }

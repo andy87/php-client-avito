@@ -15,10 +15,10 @@ class CustomProvider extends BaseAvitoProvider
 {
     /**
      * Установка графика работы на определённый день
-     * 
+     *
      * Метод можно использовать для установки расписания отличного от регулярного, например для того, чтобы установить
      * праздничные дни нерабочими или установить для них расписание отличное от регулярного.
-     * 
+     *
      * OperationId: customAreaSchedule.
      * HTTP: POST /delivery-sandbox/areas/custom-schedule.
      *

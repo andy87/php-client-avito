@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /token.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/auth/documentation#operation/getAccessToken
  */
 class GetAccessTokenResponse extends AbstractResponse

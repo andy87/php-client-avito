@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /promotion/v1/items/services/get.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/promotion/documentation#operation/get_services_by_items_v1
  */
 class GetServicesByItemsV1Response extends AbstractResponse

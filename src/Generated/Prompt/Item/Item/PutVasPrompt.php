@@ -8,9 +8,11 @@ use Andy87\ClientsAvito\Generated\Prompt\PutItemVasPrompt as BasePutItemVasPromp
 
 /**
  * Класс данных запроса Avito API [PUT] /core/v1/accounts/{user_id}/items/{item_id}/vas.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/putItemVas
- * 
+ *
+ * @property int $user_id Номер пользователя в Личном кабинете Авито
+ * @property int $item_id Идентификатор объявления на сайте
  * @property string $vas_id Идентификатор услуги, возможные его варианты значения: - `highlight` — [выделение объявления](https://support.avito.ru/articles/200026858) - `xl` – [XL-объявление](https://support.avito.ru/articles/685)
  */
 class PutVasPrompt extends BasePutItemVasPrompt

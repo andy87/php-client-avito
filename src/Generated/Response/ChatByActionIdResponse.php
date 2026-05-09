@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /cpa/v1/chatByActionId/{actionId}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/chatByActionId
  */
 class ChatByActionIdResponse extends AbstractResponse

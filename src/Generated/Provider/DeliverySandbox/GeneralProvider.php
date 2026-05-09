@@ -15,13 +15,13 @@ class GeneralProvider extends BaseAvitoProvider
 {
     /**
      * Трекинг
-     * 
+     *
      * Метод для передачи информации по трекингу посылки от службы доставки в Avito.
-     * 
+     *
      * Механика работы и прочие важные моменты описаны в [разделе](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/treking).
-     * 
+     *
      * Обязательно ознакомьтесь и реализуйте [политику повторов запросов](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/politika_povtorov_v_trekinge).
-     * 
+     *
      * OperationId: tracking.
      * HTTP: POST /delivery-sandbox/order/tracking.
      *

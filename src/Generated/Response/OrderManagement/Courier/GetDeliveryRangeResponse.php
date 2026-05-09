@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetCourierDeliveryRangeResponse as Ba
 
 /**
  * Ответ Avito API [GET] /order-management/1/order/getCourierDeliveryRange.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/getCourierDeliveryRange
- * 
+ *
  * @property array<string, mixed> $result Данные для отображения виджета подтверждения заказа продавцом
  * @property string $status Response field status
  */

@@ -8,8 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\ScoringGetByIdPrompt as BaseScoringGetB
 
 /**
  * Класс данных запроса Avito API [GET] /autoteka/v1/scoring/{scoring_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/scoringGetById
+ *
+ * @property int $scoring_id Идентификатор скоринга.
  */
 class GetByIdPrompt extends BaseScoringGetByIdPrompt
 {

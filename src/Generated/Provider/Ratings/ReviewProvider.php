@@ -17,7 +17,7 @@ class ReviewProvider extends BaseAvitoProvider
 {
     /**
      * Отправка ответа на отзыв
-     * 
+     *
      * OperationId: createReviewAnswerV1.
      * HTTP: POST /ratings/v1/answers.
      *
@@ -39,7 +39,7 @@ class ReviewProvider extends BaseAvitoProvider
 
     /**
      * Запрос на удаление ответа на отзыв
-     * 
+     *
      * OperationId: removeReviewAnswerV1.
      * HTTP: DELETE /ratings/v1/answers/{answer_id}.
      *

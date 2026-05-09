@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [DELETE] /job/v1/applications/webhook.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhookDelete
  */
 class ApplicationsWebhookDeletePrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class ApplicationsWebhookDeletePrompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = ['url' => ['style' => 'form', 'explode' => true]];
 
     protected const FIELD_MAP = ['url' => 'url'];
 
@@ -33,7 +35,11 @@ class ApplicationsWebhookDeletePrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = ['url'];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string|null URL, на который отправляются уведомления */
     public ?string $url = null;

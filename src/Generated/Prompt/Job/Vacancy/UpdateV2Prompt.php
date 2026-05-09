@@ -8,9 +8,11 @@ use Andy87\ClientsAvito\Generated\Prompt\VacancyUpdateV2Prompt as BaseVacancyUpd
 
 /**
  * Класс данных запроса Avito API [POST] /job/v2/vacancies/update/{vacancy_uuid}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyUpdateV2
- * 
+ *
+ * @property string $vacancy_uuid UUID Идентификатор вакансии для V2 ручек (возвращается ручкой [Публикация вакансии V2](https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyCreateV2) )
+ * @property bool|null $X_Is_Employee Сотрудник компании может редактировать только свои вакансии.
  * @property \Andy87\ClientsAvito\Generated\Schema\Job\AdministratorOrganizationType|null $administrator_organization_type Body field administrator_organization_type
  * @property \Andy87\ClientsAvito\Generated\Schema\Job\AgeCriteria|null $age Body field age
  * @property array<int, string>|null $age_preferences Блок "в том числе для кандидатов" (массив строк) Возможные значения элементов массива: - "olderThan45" - старше 45 лет; - "olderThan14" - от 14 лет; - "olderThan16" - от 16 лет; - "withHealthProblems" - с нарушениями здоровья; - "students" - для студентов; - "pensioners" - для пенсионеров.

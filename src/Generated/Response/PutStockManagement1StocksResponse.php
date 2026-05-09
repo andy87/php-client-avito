@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [PUT] /stock-management/1/stocks.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/stock-management/documentation#operation/putStockManagement1Stocks
  */
 class PutStockManagement1StocksResponse extends AbstractResponse

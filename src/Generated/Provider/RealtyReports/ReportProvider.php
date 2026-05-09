@@ -15,11 +15,11 @@ class ReportProvider extends BaseAvitoProvider
 {
     /**
      * Получение аналитического отчета по недвижимости
-     * 
+     *
      * Получение аналитического отчета по недвижимости
-     * 
+     *
      * **Данный метод доступен только пользователям с активной подпиской «Лидер» в категории «Недвижимость»**
-     * 
+     *
      * OperationId: CreateReportForClassified.
      * HTTP: POST /realty/v1/report/create/{itemId}.
      *

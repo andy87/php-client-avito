@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /promotion/v1/items/services/orders/status.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/promotion/documentation#operation/get_order_status_v1
  */
 class GetOrderStatusV1Response extends AbstractResponse

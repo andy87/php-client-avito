@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\ApplyVasResponse as BaseApplyVasRespo
 
 /**
  * Ответ Avito API [PUT] /core/v2/items/{itemId}/vas/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/applyVas
  */
 class ApplyResponse extends BaseApplyVasResponse

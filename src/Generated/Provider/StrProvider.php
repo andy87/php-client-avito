@@ -35,9 +35,9 @@ class StrProvider extends BaseAvitoProvider
 
     /**
      * Получение списка броней по объявлению
-     * 
+     *
      * Возвращает информацию о бронированиях объекта за весь период.
-     * 
+     *
      * OperationId: getRealtyBookings.
      * HTTP: GET /realty/v1/accounts/{user_id}/items/{item_id}/bookings.
      *
@@ -59,9 +59,9 @@ class StrProvider extends BaseAvitoProvider
 
     /**
      * Установка базовых параметров
-     * 
+     *
      * Обновляет базовые параметры: цена за ночь, минимальное количество ночей, доплата за гостя,  количество гостей больше которых активируется опция доплаты за гостя, период бесплатной отмены, параметры мгновенного бронирования (активность, максимальное/минимальное количество дней до заселения), скидки на бронирование.
-     * 
+     *
      * OperationId: postBaseParams.
      * HTTP: POST /realty/v1/items/{item_id}/base.
      *
@@ -83,9 +83,9 @@ class StrProvider extends BaseAvitoProvider
 
     /**
      * Актуализация параметров для выбранных периодов
-     * 
+     *
      * Обновляет параметры (цена за ночь, доплата за гостя, минимальная продолжительность брони) для каждого из переданных диапазонов дат, изменения применяются к каждой дате диапазона. В случае, если на занимаемые даты есть брони в неподтвержденных статусах, то брони переводятся в статус overbook.
-     * 
+     *
      * OperationId: postRealtyPrices.
      * HTTP: POST /realty/v1/accounts/{user_id}/items/{item_id}/prices.
      *
@@ -107,9 +107,9 @@ class StrProvider extends BaseAvitoProvider
 
     /**
      * Заполнение календаря занятости объекта недвижимости
-     * 
+     *
      * Заполнение календаря занятости объекта недвижимости (для краткосрочной аренды)
-     * 
+     *
      * OperationId: putBookingsInfo.
      * HTTP: POST /core/v1/accounts/{user_id}/items/{item_id}/bookings.
      *
@@ -131,9 +131,9 @@ class StrProvider extends BaseAvitoProvider
 
     /**
      * Заполнение доступности объекта недвижимости с квотами и без
-     * 
+     *
      * Заполнение календаря доступности объекта недвижимости с квотами и без (для краткосрочной аренды)
-     * 
+     *
      * OperationId: putIntervals.
      * HTTP: POST /realty/v1/items/intervals.
      *

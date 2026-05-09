@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /autoload/v1/upload.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/upload
  */
 class UploadResponse extends AbstractResponse

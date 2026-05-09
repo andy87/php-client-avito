@@ -71,11 +71,11 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Создание/редактирование настроек профиля пользователя автозагрузки (deprecated)
-     * 
-     * Предназначен для создания и управления профилем автозагрузки. Если профиля еще не существует - через этот метод можно его создать. 
-     * 
+     *
+     * Предназначен для создания и управления профилем автозагрузки. Если профиля еще не существует - через этот метод можно его создать.
+     *
      * С 23.12.2024 вместо поля upload_url используйте поле feeds_data. В нём содержится название файла и ссылка на него. [Новая версия](https://developers.avito.ru/api-catalog/autoload/documentation#operation/createOrUpdateProfileV2)
-     * 
+     *
      * OperationId: createOrUpdateProfile.
      * HTTP: POST /autoload/v1/profile.
      *
@@ -97,9 +97,9 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Создание/редактирование настроек профиля пользователя автозагрузки
-     * 
+     *
      * Предназначен для создания и управления профилем автозагрузки. Если профиля еще не существует - через этот метод можно его создать. С 23.12.2024 вместо поля feed_url используйте поле feeds_data. В нём содержится название файла и ссылка на него.
-     * 
+     *
      * OperationId: createOrUpdateProfileV2.
      * HTTP: POST /autoload/v2/profile.
      *
@@ -121,12 +121,12 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * ID объявлений из файла
-     * 
+     *
      * Метод позволяет получить идентификаторы (ID) объявлений из файла автозагрузки по ID объявлений на Авито.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * OperationId: getAdIdsByAvitoIds.
      * HTTP: GET /autoload/v2/items/ad_ids.
      *
@@ -148,12 +148,12 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Объявления по ID в автозагрузке
-     * 
+     *
      * По запросу API отдаст данные по конкретным объявлениям.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * OperationId: getAutoloadItemsInfoV2.
      * HTTP: GET /autoload/v2/reports/items.
      *
@@ -175,12 +175,12 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * ID объявлений на Авито
-     * 
+     *
      * Метод позволяет получить идентификаторы (ID) объявлений на Авито по идентификаторам объявлений из файла автозагрузки.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * OperationId: getAvitoIdsByAdIds.
      * HTTP: GET /autoload/v2/items/avito_ids.
      *
@@ -202,15 +202,15 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Статистика по последней выгрузке (deprecated)
-     * 
+     *
      * Метод возвращает сводную статистику с результатами последней завершённой выгрузки.
      * Например, сколько объявлений было в файле и сколько из них было опубликовано с ошибками или без.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * С 23.12.2024 вместо поля feed_url используйте поле feeds_urls. В нём содержится название файла и ссылка на него. [Новая версия](https://developers.avito.ru/api-catalog/autoload/documentation#operation/getLastCompletedReportV3)
-     * 
+     *
      * OperationId: getLastCompletedReport.
      * HTTP: GET /autoload/v2/reports/last_completed_report.
      *
@@ -232,15 +232,15 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Статистика по последней выгрузке
-     * 
+     *
      * Метод возвращает сводную статистику с результатами последней завершённой выгрузки.
      * Например, сколько объявлений было в файле и сколько из них было опубликовано с ошибками или без.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * С 23.12.2024 вместо поля feed_url используйте поле feeds_urls. В нём содержится название файла и ссылка на него.
-     * 
+     *
      * OperationId: getLastCompletedReportV3.
      * HTTP: GET /autoload/v3/reports/last_completed_report.
      *
@@ -262,10 +262,10 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Получение профиля пользователя автозагрузки (deprecated)
-     * 
+     *
      * Возвращает настройки профиля пользователя автозагрузки.
      * С 23.12.2024 вместо поля upload_url используйте поле feeds_data. В нём содержится название файла и ссылка на него. [Новая версия](https://developers.avito.ru/api-catalog/autoload/documentation#operation/getProfileV2)
-     * 
+     *
      * OperationId: getProfile.
      * HTTP: GET /autoload/v1/profile.
      *
@@ -287,9 +287,9 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Получение профиля пользователя автозагрузки
-     * 
+     *
      * Возвращает настройки профиля пользователя автозагрузки. С 23.12.2024 вместо поля upload_url используйте поле feeds_data. В нём содержится название файла и ссылка на него.
-     * 
+     *
      * OperationId: getProfileV2.
      * HTTP: GET /autoload/v2/profile.
      *
@@ -311,15 +311,15 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Статистика по конкретной выгрузке (deprecated)
-     * 
+     *
      * Метод возвращает сводную статистику с результатами конкретной выгрузки — по ID отчёта.
      * Например, сколько объявлений было в файле и сколько из них было опубликовано с ошибками или без.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * С 23.12.2024 вместо поля feed_url используйте поле feeds_urls. В нём содержится название файла и ссылка на него. [Новая версия](https://developers.avito.ru/api-catalog/autoload/documentation#operation/getReportByIdV3)
-     * 
+     *
      * OperationId: getReportByIdV2.
      * HTTP: GET /autoload/v2/reports/{report_id}.
      *
@@ -341,15 +341,15 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Статистика по конкретной выгрузке
-     * 
+     *
      * Метод возвращает сводную статистику с результатами конкретной выгрузки — по ID отчёта.
      * Например, сколько объявлений было в файле и сколько из них было опубликовано с ошибками или без.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * С 23.12.2024 вместо поля feed_url используйте поле feeds_urls. В нём содержится название файла и ссылка на него.
-     * 
+     *
      * OperationId: getReportByIdV3.
      * HTTP: GET /autoload/v3/reports/{report_id}.
      *
@@ -371,14 +371,14 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Все объявления из конкретной выгрузки
-     * 
+     *
      * С помощью этого метода можно получить результаты обработки каждого объявления в конкретной выгрузке.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * С 23.12.2024 добавляется поле feed_name. В нём содержится название файла.
-     * 
+     *
      * OperationId: getReportItemsById.
      * HTTP: GET /autoload/v2/reports/{report_id}/items.
      *
@@ -400,12 +400,12 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Списания за объявления в конкретной выгрузке
-     * 
+     *
      * С помощью этого метода можно получить информацию о списаниях за размещение каждого объявления в конкретной выгрузке.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * OperationId: getReportItemsFeesById.
      * HTTP: GET /autoload/v2/reports/{report_id}/items/fees.
      *
@@ -427,13 +427,13 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Список отчётов автозагрузки
-     * 
+     *
      * По запросу вы получите список отчётов автозагрузки.
      * Они будут отсортированы в порядке убывания: самый свежий отчёт — в начале списка.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * OperationId: getReportsV2.
      * HTTP: GET /autoload/v2/reports.
      *
@@ -455,17 +455,17 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Загрузка файла по ссылке
-     * 
+     *
      * Метод запускает процесс выгрузки объявлений из файла по ссылке, которая указана
      * [в настройках автозагрузки](https://www.avito.ru/autoload/settings) в профиле Авито.
      * В течение часа таким способом можно запустить только одну выгрузку.
-     * 
+     *
      * **Важно**: на загрузки с помощью этого метода не распространяются лимиты на количество публикаций, которые указаны в настройках автозагрузки в профиле Авито.
      * Все объявления из файла, которые могут быть опубликованы или активированы, будут опубликованы или активированы.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * OperationId: upload.
      * HTTP: POST /autoload/v1/upload.
      *
@@ -487,11 +487,11 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Получения полей категории
-     * 
+     *
      * Метод позволяет получить поля конкретной категории и их параметры, зависимости полей, возможные значения и их типы, предупреждения (например, когда поле станет обязательным) и ссылки на каталоги значений.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link), если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * OperationId: userDocsNodeFields.
      * HTTP: GET /autoload/v1/user-docs/node/{node_slug}/fields.
      *
@@ -513,10 +513,10 @@ class AutoloadProvider extends BaseAvitoProvider
 
     /**
      * Получение дерева категорий
-     * 
-     * Метод позволяет получить дерево категорий Авито в виде массива.  
+     *
+     * Метод позволяет получить дерево категорий Авито в виде массива.
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link), если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * OperationId: userDocsTree.
      * HTTP: GET /autoload/v1/user-docs/tree.
      *

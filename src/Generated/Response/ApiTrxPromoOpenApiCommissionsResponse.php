@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /trx-promo/1/commissions.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/trxpromo/documentation#operation/api_trx_promo_open_api_commissions
  */
 class ApiTrxPromoOpenApiCommissionsResponse extends AbstractResponse

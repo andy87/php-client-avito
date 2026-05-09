@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\PhonesInfoFromChatsPrompt as BasePhones
 
 /**
  * Класс данных запроса Avito API [POST] /cpa/v1/phonesInfoFromChats.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/phonesInfoFromChats
- * 
+ *
+ * @property string $X_Source Имя сервиса, отправляющего запрос
  * @property string $dateTimeFrom Время с которого начинается поиск
  * @property int $limit Body field limit
  * @property int $offset Body field offset

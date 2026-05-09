@@ -35,9 +35,9 @@ class AccountsHierarchyProvider extends BaseAvitoProvider
 
     /**
      * Получение информации о статусе пользователя в ИА
-     * 
+     *
      * Ручка для получения информации по ИА для пользователя
-     * 
+     *
      * OperationId: checkAhUserV1.
      * HTTP: GET /checkAhUserV1.
      *
@@ -59,9 +59,9 @@ class AccountsHierarchyProvider extends BaseAvitoProvider
 
     /**
      * Получение списка сотрудников иерархии
-     * 
+     *
      * Для взаимодействия с иерархией аккаунтов необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: getEmployeesV1.
      * HTTP: GET /getEmployeesV1.
      *
@@ -83,9 +83,9 @@ class AccountsHierarchyProvider extends BaseAvitoProvider
 
     /**
      * Прикрепление сотрудника иерархии к объявлениям, перезакрепление объявлений между сотрудниками иерархии
-     * 
+     *
      * Для взаимодействия с иерархией аккаунтов необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: linkItemsV1.
      * HTTP: POST /linkItemsV1.
      *
@@ -107,9 +107,9 @@ class AccountsHierarchyProvider extends BaseAvitoProvider
 
     /**
      * Получение списка телефонов компании
-     * 
+     *
      * Для взаимодействия с иерархией аккаунтов необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: listCompanyPhonesV1.
      * HTTP: GET /listCompanyPhonesV1.
      *
@@ -131,9 +131,9 @@ class AccountsHierarchyProvider extends BaseAvitoProvider
 
     /**
      * Получение списка объявлений по сотруднику
-     * 
+     *
      * Ручка для получения списка объявлений по сотруднику с фильтром по категории объявлений. Получение объявлений по компании недоступно.
-     * 
+     *
      * OperationId: listItemsByEmployeeIdV1.
      * HTTP: POST /listItemsByEmployeeIdV1.
      *

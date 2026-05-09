@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\GetEmployeesV1Response as BaseGetEmpl
 
 /**
  * Ответ Avito API [GET] /getEmployeesV1.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/accounts-hierarchy/documentation#operation/getEmployeesV1
  */
 class GetV1Response extends BaseGetEmployeesV1Response

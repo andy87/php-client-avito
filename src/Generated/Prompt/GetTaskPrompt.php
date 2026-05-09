@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /delivery-sandbox/tasks/{task_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/GetTask
  */
 class GetTaskPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetTaskPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['task_id' => 'task_id'];
 
@@ -33,7 +35,12 @@ class GetTaskPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
-    /** @var string|int path-parameter task_id */
-    public string|int $task_id;
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int path-parameter task_id */
+    public int $task_id;
 }

@@ -19,11 +19,11 @@ class SpecificationProvider extends BaseAvitoProvider
 {
     /**
      * Запрос характеристик по регистрационному номеру
-     * 
+     *
      * Метод для запроса на получение спецификации по регистрационному номеру, возвращает идентификатор спецификации, по которому можно получить спецификацию в [методе для получения спецификации](#operation/specificationGetById).
-     * 
+     *
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки. Обратите внимание, что для её подключения надо завести отдельную учётную запись Автотеки.
-     * 
+     *
      * OperationId: specificationByPlateNumber.
      * HTTP: POST /autoteka/v1/specifications/by-plate-number.
      *
@@ -45,11 +45,11 @@ class SpecificationProvider extends BaseAvitoProvider
 
     /**
      * Запрос характеристик по идентификатору авто (vin/frame)
-     * 
+     *
      * Метод для запроса на получение спецификации по идентификатору авто (vin/frame), возвращает идентификатор спецификации, по которому можно получить спецификацию в [методе для получения спецификации](#operation/specificationGetById).
-     * 
+     *
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки. Обратите внимание, что для её подключения надо завести отдельную учётную запись Автотеки.
-     * 
+     *
      * OperationId: specificationByVehicleId.
      * HTTP: POST /autoteka/v1/specifications/by-vehicle-id.
      *
@@ -71,11 +71,11 @@ class SpecificationProvider extends BaseAvitoProvider
 
     /**
      * Получение характеристик по ID запроса
-     * 
+     *
      * Метод для получения спецификации по ее идентификатору.
-     * 
+     *
      * Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки. Обратите внимание, что для её подключения надо завести отдельную учётную запись Автотеки.
-     * 
+     *
      * OperationId: specificationGetById.
      * HTTP: GET /autoteka/v1/specifications/specification/{specificationID}.
      *

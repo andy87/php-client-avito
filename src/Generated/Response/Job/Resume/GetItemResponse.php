@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\ResumeGetItemResponse as BaseResumeGe
 
 /**
  * Ответ Avito API [GET] /job/v2/resumes/{resume_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/resumeGetItem
- * 
+ *
  * @property \Andy87\ClientsAvito\Generated\Schema\Job\AddressDetails|null $address_details Response field address_details
  * @property string|null $description Описание резюме
  * @property int|null $id Идентификатор резюме

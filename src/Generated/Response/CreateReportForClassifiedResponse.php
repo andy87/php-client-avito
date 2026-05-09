@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /realty/v1/report/create/{itemId}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/realty-reports/documentation#operation/CreateReportForClassified
  */
 class CreateReportForClassifiedResponse extends AbstractResponse

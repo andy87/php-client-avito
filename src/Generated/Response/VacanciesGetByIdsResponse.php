@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /job/v2/vacancies/batch.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacanciesGetByIds
  */
 class VacanciesGetByIdsResponse extends AbstractResponse

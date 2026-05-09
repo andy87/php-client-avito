@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Prompt\ApplicationsWebhookGetPrompt as BaseApp
 
 /**
  * Класс данных запроса Avito API [GET] /job/v1/applications/webhook.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhookGet
  */
 class WebhookGetPrompt extends BaseApplicationsWebhookGetPrompt

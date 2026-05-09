@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\OpenApiMultiCreatePrompt as BaseOpenApi
 
 /**
  * Класс данных запроса Avito API [POST] /special-offers/v1/multiCreate.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/sbc-gateway/documentation#operation/openApiMultiCreate
- * 
+ *
  * @property array<int, int> $itemIds Список id выбранных для рассылки объявлений
  */
 class ApiMultiCreatePrompt extends BaseOpenApiMultiCreatePrompt

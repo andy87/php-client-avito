@@ -15,11 +15,11 @@ class GeneralProvider extends BaseAvitoProvider
 {
     /**
      * Передача честного знака
-     * 
+     *
      * Метод для передачи честного знака для товаров в заказе.
      * Максимальное количество элементов в одном запросе - 50.
      * Максимальное количество запросов в минуту - 100.
-     * 
+     *
      * OperationId: markings.
      * HTTP: POST /order-management/1/markings.
      *

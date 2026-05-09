@@ -8,9 +8,11 @@ use Andy87\ClientsAvito\Generated\Prompt\PostSendImageMessagePrompt as BasePostS
 
 /**
  * Класс данных запроса Avito API [POST] /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages/image.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/postSendImageMessage
- * 
+ *
+ * @property int $user_id Идентификатор пользователя (клиента)
+ * @property string $chat_id Идентификатор чата (клиента)
  * @property string $image_id Идентификатор загруженного изображения
  */
 class SendImageMessagePrompt extends BasePostSendImageMessagePrompt

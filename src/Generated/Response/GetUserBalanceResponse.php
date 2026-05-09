@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /core/v1/accounts/{user_id}/balance/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/user/documentation#operation/getUserBalance
  */
 class GetUserBalanceResponse extends AbstractResponse

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /job/v2/vacancy/dict.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/getDicts
  */
 class GetDictsPrompt extends AbstractPrompt
@@ -21,11 +21,13 @@ class GetDictsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = false;
 
-    protected const FIELD_MAP = [];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['X_Is_Employee' => 'X-Is-Employee'];
 
     protected const REQUIRED_FIELDS = [];
 
-    protected const NULLABLE_FIELDS = [];
+    protected const NULLABLE_FIELDS = ['X_Is_Employee'];
 
     protected const CASTS = [];
 
@@ -33,5 +35,12 @@ class GetDictsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Is_Employee'];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var bool|null Включает привилегии компании для сотрудника */
+    public ?bool $X_Is_Employee = null;
 }

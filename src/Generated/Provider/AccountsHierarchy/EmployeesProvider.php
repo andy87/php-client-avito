@@ -15,9 +15,9 @@ class EmployeesProvider extends BaseAvitoProvider
 {
     /**
      * Получение списка сотрудников иерархии
-     * 
+     *
      * Для взаимодействия с иерархией аккаунтов необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: getEmployeesV1.
      * HTTP: GET /getEmployeesV1.
      *

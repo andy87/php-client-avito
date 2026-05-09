@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\VacancyGetItemResponse as BaseVacancy
 
 /**
  * Ответ Avito API [GET] /job/v2/vacancies/{vacancy_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyGetItem
- * 
+ *
  * @property array<string, mixed>|null $addressDetails Детали адреса вакансии
  * @property bool|null $auto_renewal Вакансия на автопродлении
  * @property array<string, mixed>|null $contacts Информация о контактах в вакансии

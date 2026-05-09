@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\StopAutostrategyCampaignPrompt as BaseS
 
 /**
  * Класс данных запроса Avito API [POST] /autostrategy/v1/campaign/stop.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/stopAutostrategyCampaign
- * 
+ *
  * @property int $campaignId Идентификатор активной кампании
  * @property int $version Текущая версия кампании
  */

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /job/v1/vacancies/{vacancy_id}/prolongate.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyProlongate
  */
 class VacancyProlongatePrompt extends AbstractPrompt
@@ -21,11 +21,13 @@ class VacancyProlongatePrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['billing_type' => 'billing_type', 'employee_id' => 'employee_id', 'vacancy_id' => 'vacancy_id'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['billing_type', 'vacancy_id'];
+    protected const FIELD_MAP = ['vacancy_id' => 'vacancy_id', 'X_Is_Employee' => 'X-Is-Employee', 'billing_type' => 'billing_type', 'employee_id' => 'employee_id'];
 
-    protected const NULLABLE_FIELDS = [];
+    protected const REQUIRED_FIELDS = ['vacancy_id', 'billing_type'];
+
+    protected const NULLABLE_FIELDS = ['X_Is_Employee'];
 
     protected const CASTS = [];
 
@@ -33,7 +35,17 @@ class VacancyProlongatePrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Is_Employee'];
+
     protected const BODY_FIELDS = ['billing_type', 'employee_id'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Идентификатор вакансии на сайте */
+    public int $vacancy_id;
+
+    /** @var bool|null Сотрудник компании может реактивировать только свою вакансию */
+    public ?bool $X_Is_Employee = null;
 
     /** @var string Вариант платного размещения
 
@@ -49,6 +61,4 @@ class VacancyProlongatePrompt extends AbstractPrompt
 Сотрудник должен быть в активен.
  */
     public ?int $employee_id = null;
-    /** @var string|int path-parameter vacancy_id */
-    public string|int $vacancy_id;
 }

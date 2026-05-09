@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/markings.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/markings
  */
 class MarkingsPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class MarkingsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'markings' => 'markings'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization'];
+    protected const FIELD_MAP = ['markings' => 'markings'];
+
+    protected const REQUIRED_FIELDS = [];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class MarkingsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['markings'];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\OrderManagement\Marking>|null Массив маркировок, которые требуется передать */
     public ?array $markings = null;

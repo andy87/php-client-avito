@@ -8,8 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\GetPreviewPrompt as BaseGetPreviewPromp
 
 /**
  * Класс данных запроса Avito API [GET] /autoteka/v1/previews/{previewId}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/getPreview
+ *
+ * @property int $previewId Идентификатор превью
  */
 class GetPrompt extends BaseGetPreviewPrompt
 {

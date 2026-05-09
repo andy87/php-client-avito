@@ -31,7 +31,7 @@ class Delivery extends AbstractSchemaModel
     /** @var string|null Название службы доставки. */
     public ?string $serviceName = null;
 
-    /** @var string|null Способ доставки 
+    /** @var string|null Способ доставки
   - `pvz` - ПВЗ;
   - `dbs` - Доставка партнёрами продавца (ПВЗ);
   - `rdbs` - Доставка курьером продавца;

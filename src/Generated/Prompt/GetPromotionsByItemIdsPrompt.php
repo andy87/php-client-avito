@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /cpxpromo/1/getPromotionsByItemIds.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/getPromotionsByItemIds
  */
 class GetPromotionsByItemIdsPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class GetPromotionsByItemIdsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'itemIDs' => 'itemIDs'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization', 'itemIDs'];
+    protected const FIELD_MAP = ['itemIDs' => 'itemIDs'];
+
+    protected const REQUIRED_FIELDS = ['itemIDs'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class GetPromotionsByItemIdsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['itemIDs'];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<int, int> Body field itemIDs */
     public array $itemIDs;

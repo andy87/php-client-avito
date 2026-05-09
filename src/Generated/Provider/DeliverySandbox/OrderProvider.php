@@ -19,11 +19,11 @@ class OrderProvider extends BaseAvitoProvider
 {
     /**
      * Запрет приёма посылки от отправителя
-     * 
+     *
      * Метод должен быть имплементирован на стороне службы доставки.
-     * 
+     *
      * Описание механики работы и дополнительные требования см. [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/zapret_priema_posylki).
-     * 
+     *
      * OperationId: prohibitOrderAcceptance.
      * HTTP: POST /delivery-sandbox/prohibitOrderAcceptance.
      *
@@ -45,11 +45,11 @@ class OrderProvider extends BaseAvitoProvider
 
     /**
      * Добавление / изменение параметров доставки посылки
-     * 
+     *
      * Метод используется для отправки в Avito параметров, относящихся к доставке посылки. <br />
      * В случае повторной передачи параметров, данные будут перезаписаны. <br />
      * Важно передавать актуальные данные. Например, если конечная стоимость доставки заказа изменилась, нужно отправить ее заново. <br />
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code         |       error message                               |
      * |-----------|----------------------|---------------------------------------------------|
@@ -63,7 +63,7 @@ class OrderProvider extends BaseAvitoProvider
      * |    200    |   PROPERTIES_INVALID | Delivery cost must be positive integer number     |
      * |    200    |   PROPERTIES_INVALID | Forbidden terminal change in current order status |
      * |    200    |   PROPERTIES_INVALID | Both terminals cannot be changed                  |
-     * 
+     *
      * OperationId: setOrderProperties.
      * HTTP: POST /delivery-sandbox/order/properties.
      *
@@ -85,21 +85,21 @@ class OrderProvider extends BaseAvitoProvider
 
     /**
      * Фактический адрес приёма / возврата посылки
-     * 
+     *
      * ### Фактический ПВЗ приема
-     * Фактический ПВЗ приема посылки посылки нужен Avito для работы как с [агентскими](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/agentskie_vozvraty), так и с [клиентскими](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/klientskie_vozvraty) возвратами. 
+     * Фактический ПВЗ приема посылки посылки нужен Avito для работы как с [агентскими](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/agentskie_vozvraty), так и с [клиентскими](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/klientskie_vozvraty) возвратами.
      * Если получатель посылки откажется от её получения "на месте", то Avito понадобится показать ПВЗ возврата
-     * отправителю, а этим ПВЗ будет фактический ПВЗ приема. Если же посылку нужно будет вернуть отправителю через клиентский 
+     * отправителю, а этим ПВЗ будет фактический ПВЗ приема. Если же посылку нужно будет вернуть отправителю через клиентский
      * возврат, то для создания отдельной возвратной посылки Avito критически важно знать тот же фактический ПВЗ приема.<br/>
-     * 
+     *
      * Присылайте адрес в момент приема посылки от отправителя или чуть позже, если нет возможности это делать сразу.<br/>
-     * 
+     *
      * ### Фактический адрес возврата
      * ПВЗ, из которого забрали возврат.<br/>
-     * 
+     *
      * ### Про повторные запросы
      * В случае повторной передачи новые данные будут записаны.<br/>
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code           |       error message                           |
      * |-----------|------------------------|-----------------------------------------------|
@@ -108,7 +108,7 @@ class OrderProvider extends BaseAvitoProvider
      * |    200    |   REAL_ADDRESS_INVALID | Failed to get real address from request       |
      * |    200    |   REAL_ADDRESS_INVALID | Incorrect terminal type                       |
      * |    200    |   REAL_ADDRESS_INVALID | Incorrect terminal number                     |
-     * 
+     *
      * OperationId: setOrderRealAddress.
      * HTTP: POST /delivery-sandbox/order/realAddress.
      *

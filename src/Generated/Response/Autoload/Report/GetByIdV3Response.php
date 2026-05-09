@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetReportByIdV3Response as BaseGetRep
 
 /**
  * Ответ Avito API [GET] /autoload/v3/reports/{report_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getReportByIdV3
- * 
+ *
  * @property array<int, array<string, mixed>> $events Ошибки и предупреждения, которые относятся ко всей выгрузке
  * @property array<int, array<string, mixed>>|null $feeds_urls Response field feeds_urls
  * @property string $finished_at Дата и время закрытия отчёта (окончания выгрузки)

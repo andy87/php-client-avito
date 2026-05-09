@@ -15,9 +15,9 @@ class AhProvider extends BaseAvitoProvider
 {
     /**
      * Получение информации о статусе пользователя в ИА
-     * 
+     *
      * Ручка для получения информации по ИА для пользователя
-     * 
+     *
      * OperationId: checkAhUserV1.
      * HTTP: GET /checkAhUserV1.
      *

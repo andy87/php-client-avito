@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /realty/v1/items/intervals.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/putIntervals
  */
 class PutIntervalsResponse extends AbstractResponse

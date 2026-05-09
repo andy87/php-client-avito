@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /calltracking/v1/getRecordByCallId/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/calltracking/documentation#operation/get_record_by_call_id
  */
 class GetRecordByCallIdPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetRecordByCallIdPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = ['callId' => ['style' => 'form', 'explode' => true]];
 
     protected const FIELD_MAP = ['callId' => 'callId'];
 
@@ -33,7 +35,11 @@ class GetRecordByCallIdPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = ['callId'];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int Идентификатор звонка */
     public int $callId;

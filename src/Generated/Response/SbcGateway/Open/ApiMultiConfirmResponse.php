@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\OpenApiMultiConfirmResponse as BaseOp
 
 /**
  * Ответ Avito API [POST] /special-offers/v1/multiConfirm.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/sbc-gateway/documentation#operation/openApiMultiConfirm
- * 
+ *
  * @property bool|null $ok Response field ok
  */
 class ApiMultiConfirmResponse extends BaseOpenApiMultiConfirmResponse

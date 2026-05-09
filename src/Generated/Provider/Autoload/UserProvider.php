@@ -17,11 +17,11 @@ class UserProvider extends BaseAvitoProvider
 {
     /**
      * Получения полей категории
-     * 
+     *
      * Метод позволяет получить поля конкретной категории и их параметры, зависимости полей, возможные значения и их типы, предупреждения (например, когда поле станет обязательным) и ссылки на каталоги значений.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link), если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * OperationId: userDocsNodeFields.
      * HTTP: GET /autoload/v1/user-docs/node/{node_slug}/fields.
      *
@@ -43,10 +43,10 @@ class UserProvider extends BaseAvitoProvider
 
     /**
      * Получение дерева категорий
-     * 
-     * Метод позволяет получить дерево категорий Авито в виде массива.  
+     *
+     * Метод позволяет получить дерево категорий Авито в виде массива.
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link), если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * OperationId: userDocsTree.
      * HTTP: GET /autoload/v1/user-docs/tree.
      *

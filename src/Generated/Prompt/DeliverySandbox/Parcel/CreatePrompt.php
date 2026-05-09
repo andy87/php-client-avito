@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\CreateParcelPrompt as BaseCreateParcelP
 
 /**
  * Класс данных запроса Avito API [POST] /createParcel.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/createParcel
- * 
+ *
  * @property array<int, string>|null $barcodes Штрихкоды посылки.
  * @property string|null $directOrderID Идентификатор прямого заказа Avito.
  * @property array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelItem> $items Список товаров, которые поедут в посылке. Содержит полное описание каждого отдельно взятого товара.

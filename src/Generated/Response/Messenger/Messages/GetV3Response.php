@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\GetMessagesV3Response as BaseGetMessa
 
 /**
  * Ответ Avito API [GET] /messenger/v3/accounts/{user_id}/chats/{chat_id}/messages/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/getMessagesV3
  */
 class GetV3Response extends BaseGetMessagesV3Response

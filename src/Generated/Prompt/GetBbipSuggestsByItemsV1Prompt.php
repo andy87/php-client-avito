@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /promotion/v1/items/services/bbip/suggests/get.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/promotion/documentation#operation/get_bbip_suggests_by_items_v1
  */
 class GetBbipSuggestsByItemsV1Prompt extends AbstractPrompt
@@ -21,7 +21,9 @@ class GetBbipSuggestsByItemsV1Prompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['itemIds' => 'itemIds'];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['X_Is_Employee' => 'X-Is-Employee', 'itemIds' => 'itemIds'];
 
     protected const REQUIRED_FIELDS = [];
 
@@ -33,7 +35,14 @@ class GetBbipSuggestsByItemsV1Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Is_Employee'];
+
     protected const BODY_FIELDS = ['itemIds'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var string|null Пользователь работает от имени сотрудника компании (boolean, "true"\\"false") */
+    public ?string $X_Is_Employee = null;
 
     /** @var array<int, int>|null Идентификаторы объявлений */
     public ?array $itemIds = null;

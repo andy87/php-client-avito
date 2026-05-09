@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /messenger/v1/accounts/{user_id}/uploadImages.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/uploadImages
  */
 class UploadImagesPrompt extends AbstractPrompt
@@ -17,13 +17,15 @@ class UploadImagesPrompt extends AbstractPrompt
 
     protected const ENDPOINT = '/messenger/v1/accounts/{user_id}/uploadImages';
 
-    protected const CONTENT_TYPE = null;
+    protected const CONTENT_TYPE = 'multipart/form-data';
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['user_id' => 'user_id'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['user_id'];
+    protected const FIELD_MAP = ['user_id' => 'user_id', 'uploadfile__' => 'uploadfile[]'];
+
+    protected const REQUIRED_FIELDS = ['user_id', 'uploadfile__'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,7 +35,15 @@ class UploadImagesPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
-    protected const BODY_FIELDS = [];
-    /** @var string|int path-parameter user_id */
-    public string|int $user_id;
+    protected const HEADER_FIELDS = [];
+
+    protected const BODY_FIELDS = ['uploadfile__'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Идентификатор пользователя (клиента) */
+    public int $user_id;
+
+    /** @var \Andy87\ClientsBase\Http\MultipartFile|string Body field uploadfile[] */
+    public \Andy87\ClientsBase\Http\MultipartFile|string $uploadfile__;
 }

@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetItemsInfoResponse as BaseGetItemsI
 
 /**
  * Ответ Avito API [GET] /core/v1/items.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/getItemsInfo
- * 
+ *
  * @property array<string, mixed>|null $meta Response field meta
  * @property array<int, array<string, mixed>>|null $resources Response field resources
  */

@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\GetAutostrategyStatPrompt as BaseGetAut
 
 /**
  * Класс данных запроса Avito API [POST] /autostrategy/v1/stat.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/getAutostrategyStat
- * 
+ *
  * @property int $campaignId Идентификатор запущенной или уже прошедшей кампании
  */
 class GetStatPrompt extends BaseGetAutostrategyStatPrompt

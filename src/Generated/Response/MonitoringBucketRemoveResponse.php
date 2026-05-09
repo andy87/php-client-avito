@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /autoteka/v1/monitoring/bucket/remove.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/monitoringBucketRemove
  */
 class MonitoringBucketRemoveResponse extends AbstractResponse

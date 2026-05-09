@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autostrategy/v1/budget.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/getAutostrategyBudget
  */
 class GetAutostrategyBudgetPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetAutostrategyBudgetPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['campaignType' => 'campaignType', 'finishTime' => 'finishTime', 'items' => 'items', 'startTime' => 'startTime'];
 
@@ -33,7 +35,11 @@ class GetAutostrategyBudgetPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['campaignType', 'finishTime', 'items', 'startTime'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string Тип кампании. Возможные типы:<br/> `AS` - Автостратегия. Cтратегия расчитана на определенное количество автомобилей, которые находятся в продаже<br/> `AP` - Автопилот. Cтратегия расчитана на все автомобили, которые находятся в продаже<br/> */
     public string $campaignType;

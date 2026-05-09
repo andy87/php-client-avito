@@ -30,9 +30,11 @@
     "andy87/clients-sdk": "^0.3"
   },
   "require-dev": {
+    "phpstan/phpstan": "^1.12",
     "phpunit/phpunit": "^10.5"
   },
   "scripts": {
+    "analyse": "phpstan analyse src tests --level=5",
     "generate": "node tools/generate-avito-openapi.mjs",
     "test": "phpunit"
   }

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /token‎.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/auth/documentation#operation/getAccessTokenAuthorizationCode
  */
 class GetAccessTokenAuthorizationCodePrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetAccessTokenAuthorizationCodePrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/x-www-form-urlencoded';
 
     protected const AUTHORIZATION_REQUIRED = false;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['client_id' => 'client_id', 'client_secret' => 'client_secret', 'code' => 'code', 'grant_type' => 'grant_type'];
 
@@ -33,7 +35,11 @@ class GetAccessTokenAuthorizationCodePrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['client_id', 'client_secret', 'code', 'grant_type'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string Body field client_id */
     public string $client_id;

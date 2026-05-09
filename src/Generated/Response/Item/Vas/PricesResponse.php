@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\VasPricesResponse as BaseVasPricesRes
 
 /**
  * Ответ Avito API [POST] /core/v1/accounts/{userId}/vas/prices.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/vasPrices
  */
 class PricesResponse extends BaseVasPricesResponse

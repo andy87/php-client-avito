@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoload/v2/reports/items.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getAutoloadItemsInfoV2
  */
 class GetAutoloadItemsInfoV2Prompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class GetAutoloadItemsInfoV2Prompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = false;
 
-    protected const FIELD_MAP = ['query' => 'query', 'Authorization' => 'Authorization'];
+    protected const QUERY_PARAMETER_STYLES = ['query' => ['style' => 'form', 'explode' => true]];
 
-    protected const REQUIRED_FIELDS = ['query', 'Authorization'];
+    protected const FIELD_MAP = ['query' => 'query'];
+
+    protected const REQUIRED_FIELDS = ['query'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,13 +35,14 @@ class GetAutoloadItemsInfoV2Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = ['query'];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string Идентификаторы объявлений из файла ([параметр Id](https://autoload.avito.ru/format/realty/#Id)).
 Формат значения: строка, содержащая от 1 до 100 идентификаторов, перечисленных через «,» или «|».
  */
     public string $query;
-
-    /** @var string Токен для авторизации */
-    public string $Authorization;
 }

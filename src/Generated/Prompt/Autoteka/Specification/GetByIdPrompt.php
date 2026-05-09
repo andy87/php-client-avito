@@ -8,8 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\SpecificationGetByIdPrompt as BaseSpeci
 
 /**
  * Класс данных запроса Avito API [GET] /autoteka/v1/specifications/specification/{specificationID}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/specificationGetById
+ *
+ * @property int $specificationID Идентификатор спецификации
  */
 class GetByIdPrompt extends BaseSpecificationGetByIdPrompt
 {

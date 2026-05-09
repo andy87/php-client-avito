@@ -46,7 +46,7 @@ class Terminal extends AbstractSchemaModel
     /** @var string Человекопонятное название пункта самовывоза (будет использоваться в интефейсной части) */
     public string $name;
 
-    /** @var array<int, string>|null Доступные в точке выдачи опции. Примерка (fitting), проверка электроники (electronics-checking), 
+    /** @var array<int, string>|null Доступные в точке выдачи опции. Примерка (fitting), проверка электроники (electronics-checking),
 оплата при получении картой (cod-by-card), оплата при получении наличными (cod-by-cash).
 Массовая сдача заказов (multi-drop-off) в процессе разработки.
  */
@@ -68,7 +68,7 @@ class Terminal extends AbstractSchemaModel
     public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Schedule $schedule;
 
     /** @var array<int, string> Доступные в ПВЗ услуги. Забор (intake), выдача (delivery).
-Отображение пункта выдачи на карте отправителя/получателя посылки зависит от наличия соответствующей услуги у пункта выдачи.  
+Отображение пункта выдачи на карте отправителя/получателя посылки зависит от наличия соответствующей услуги у пункта выдачи.
 - если указана услуга `delivery` - ПВЗ будет показан на карте покупателя, при условии соответствия посылки ограничениям ПВЗ (Restriction)
 - если указана услуга `intake` - ПВЗ будет показан на карте продавца, при условии соответствия посылки ограничениям ПВЗ (Restriction)
  */

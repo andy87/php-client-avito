@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /job/v2/vacancy/dict/{dictionary_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/getDictByID
  */
 class GetDictByIDPrompt extends AbstractPrompt
@@ -21,11 +21,13 @@ class GetDictByIDPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = false;
 
-    protected const FIELD_MAP = ['dictionary_id' => 'dictionary_id'];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['dictionary_id' => 'dictionary_id', 'X_Is_Employee' => 'X-Is-Employee'];
 
     protected const REQUIRED_FIELDS = ['dictionary_id'];
 
-    protected const NULLABLE_FIELDS = [];
+    protected const NULLABLE_FIELDS = ['X_Is_Employee'];
 
     protected const CASTS = [];
 
@@ -33,7 +35,15 @@ class GetDictByIDPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Is_Employee'];
+
     protected const BODY_FIELDS = [];
-    /** @var string|int path-parameter dictionary_id */
-    public string|int $dictionary_id;
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var string Идентификатор словаря */
+    public string $dictionary_id;
+
+    /** @var bool|null Включает привилегии компании для сотрудника */
+    public ?bool $X_Is_Employee = null;
 }

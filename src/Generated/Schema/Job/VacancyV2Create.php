@@ -51,7 +51,7 @@ class VacancyV2Create extends AbstractSchemaModel
     /** @var \Andy87\ClientsAvito\Generated\Schema\Job\Bonuses|null Schema field bonuses */
     public ?\Andy87\ClientsAvito\Generated\Schema\Job\Bonuses $bonuses = null;
 
-    /** @var int|null Идентификатор сферы деятельности 
+    /** @var int|null Идентификатор сферы деятельности
 <br>
 Получить актуальный список доступных значений можно из справочника `business_area` через метод [getDictByID](/api-catalog/job/documentation#operation/getDictByID).
 <br>
@@ -100,7 +100,7 @@ class VacancyV2Create extends AbstractSchemaModel
   - internship - Стажировка
   - partial - Частичная
 
-Если ничего не выбрать то будет автоматически проставляться в зависимости от графика работы: 
+Если ничего не выбрать то будет автоматически проставляться в зависимости от графика работы:
 При flexible и partTime, тип занятости - partial.
 ßДля всех остальных full.
  */

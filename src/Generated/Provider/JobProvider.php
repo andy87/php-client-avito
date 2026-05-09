@@ -81,10 +81,10 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Батчевая смена статуса откликов
-     * 
+     *
      * Переводит сразу несколько откликов в новый статус одним запросом. В запросе нужно передать целевой статус, а также список идентификаторов откликов, к которым он должен быть применён
      * Максимальный размер батча — не более 100 идентификаторов откликов в одном запросе
-     * 
+     *
      * OperationId: applicationsApplyActions.
      * HTTP: POST /job/v1/applications/apply_actions.
      *
@@ -106,9 +106,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Получение списка откликов
-     * 
+     *
      * Получение списка откликов по uuid, полученным по  [подписке на уведомления](https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhookPut) (webhook) и через метод  [получение идентификаторов откликов](https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsGetIds) Максимальный лимит = 100
-     * 
+     *
      * OperationId: applicationsGetByIds.
      * HTTP: POST /job/v1/applications/get_by_ids.
      *
@@ -130,10 +130,10 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Получение идентификаторов откликов
-     * 
+     *
      * Возвращает лимитированное количество идентификаторов откликов отсортированных по дате создания  начиная с самых свежих, для последующего получения по ним расширенной информации через метод [получение списка откликов](https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsGetByIds).
      * Максимальный лимит = 100
-     * 
+     *
      * OperationId: applicationsGetIds.
      * HTTP: GET /job/v1/applications/get_ids.
      *
@@ -155,9 +155,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Получение списка возможных статусов откликов
-     * 
+     *
      * Возвращает список доступных статусов откликов и их описания
-     * 
+     *
      * OperationId: applicationsGetStates.
      * HTTP: GET /job/v1/applications/get_states.
      *
@@ -179,9 +179,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Изменение статуса отклика
-     * 
+     *
      * Возвращает информацию по откликам и статусу просмотренности отклика, при изменении статуса также статус изменится в Авито Pro.  Максимальный лимит = 100
-     * 
+     *
      * OperationId: applicationsSetIsViewed.
      * HTTP: POST /job/v1/applications/set_is_viewed.
      *
@@ -203,9 +203,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Отключение уведомлений по откликам (webhook)
-     * 
+     *
      * Отписка от уведомлений о создании и обновлении откликов на вакансии. Если авторизация происходит от имени приложения, отписка от вебхука будет для приложения
-     * 
+     *
      * OperationId: applicationsWebhookDelete.
      * HTTP: DELETE /job/v1/applications/webhook.
      *
@@ -227,9 +227,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Получение информации о подписках (webhook)
-     * 
+     *
      * Получение информации по существующим подпискам на создание и обновление откликов. Будет возвращен самый старый активный вебхук. Если авторизация происходит от имени приложения, будет возвращен вебхук приложения
-     * 
+     *
      * OperationId: applicationsWebhookGet.
      * HTTP: GET /job/v1/applications/webhook.
      *
@@ -251,15 +251,15 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Включение уведомлений по откликам (webhook)
-     * 
+     *
      * Подписка на уведомления о создании и обновлении откликов на вакансии. Если авторизация происходит от имени приложения, вебхук будет привязан к приложению. Исключение:
      *   - изменение сотрудника относящегося к объявлению (employee_id)
-     * 
-     * Важно: 
+     *
+     * Важно:
      *   Проверьте доступность url, при его недоступности из контура Авито webhook не будет создан/перезаписан.
      *   Если url недоступен больше месяца, то он удаляется и на него не придут новые уведомления.
      *   Список адресов с которых идут запросы по url IP 185.89.12.0/22, 146.158.48.0/21, 185.79.237.224/28 и 87.245.204.32/28.
-     * 
+     *
      * OperationId: applicationsWebhookPut.
      * HTTP: PUT /job/v1/applications/webhook.
      *
@@ -281,9 +281,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Получение списка подписок (webhook)
-     * 
+     *
      * Получение списка активных подписок на создание и обновление откликов в хронологическом порядке от самого старого к самому новому. Если авторизация происходит от имени приложения, будут возвращены вебхуки приложения
-     * 
+     *
      * OperationId: applicationsWebhooksGet.
      * HTTP: GET /job/v1/applications/webhooks.
      *
@@ -305,9 +305,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Получение доступных значений списка по ID словаря
-     * 
+     *
      * Возвращает доступные значения по имени справочника. Значения с признаком deprecated не могут использоваться при создании и обновлении вакансий.
-     * 
+     *
      * OperationId: getDictByID.
      * HTTP: GET /job/v2/vacancy/dict/{dictionary_id}.
      *
@@ -329,9 +329,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Получение списка доступных словарей
-     * 
+     *
      * Возвращает все доступные словари (Заменяет существующие списки)
-     * 
+     *
      * OperationId: getDicts.
      * HTTP: GET /job/v2/vacancy/dict.
      *
@@ -353,9 +353,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Доступ к контактным данным соискателя
-     * 
+     *
      * Для получения контактов пользователя необходимо приобрести пакет просмотров в [личном кабинете](https://www.avito.ru/paid-services/contact-packages/cvs). Если резюме было получено из отклика, контакты предоставляются без списания из пакета просмотров.
-     * 
+     *
      * OperationId: resumeGetContacts.
      * HTTP: GET /job/v1/resumes/{resume_id}/contacts/.
      *
@@ -377,9 +377,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Просмотр данных резюме
-     * 
+     *
      * По умолчанию fields и params выводятся все. Если указана только часть полей - остальные поля будут отсутствовать в ответе.
-     * 
+     *
      * OperationId: resumeGetItem.
      * HTTP: GET /job/v2/resumes/{resume_id}.
      *
@@ -401,7 +401,7 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Поиск резюме
-     * 
+     *
      * OperationId: resumesGet.
      * HTTP: GET /job/v1/resumes/.
      *
@@ -423,7 +423,7 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Поиск вакансий
-     * 
+     *
      * OperationId: searchVacancy.
      * HTTP: GET /job/v2/vacancies.
      *
@@ -445,10 +445,10 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Просмотр данных вакансий
-     * 
+     *
      * По умолчанию fields и params выводятся все. Если указана только часть полей - остальные поля будут отсутствовать в ответе.
      * Для просмотра данных необходимо быть владельцем вакансии.
-     * 
+     *
      * OperationId: vacanciesGetByIds.
      * HTTP: POST /job/v2/vacancies/batch.
      *
@@ -470,9 +470,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Остановка публикации вакансии
-     * 
+     *
      * Снимает с публикации объявление в категории Вакансии.
-     * 
+     *
      * OperationId: vacancyArchive.
      * HTTP: PUT /job/v1/vacancies/archived/{vacancy_id}.
      *
@@ -494,9 +494,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Автопродление вакансии v2
-     * 
+     *
      * Включает или выключает автопродление вакансии. Если вакансия в архиве, то при включении автопродления вакансия будет автоматически поднята из архива.
-     * 
+     *
      * OperationId: vacancyAutoRenewal.
      * HTTP: PUT /job/v2/vacancies/{vacancy_uuid}/auto_renewal.
      *
@@ -518,9 +518,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Публикация вакансии
-     * 
+     *
      * Для публикации вакансии необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: vacancyCreate.
      * HTTP: POST /job/v1/vacancies.
      *
@@ -542,10 +542,10 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Публикация вакансии v2
-     * 
+     *
      * Для публикации вакансии необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
      * Для проверки статуса публикации используйте полученный идентификатор в [методе получения статуса](https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyGetStatuses).
-     * 
+     *
      * OperationId: vacancyCreateV2.
      * HTTP: POST /job/v2/vacancies.
      *
@@ -567,10 +567,10 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Просмотр данных вакансии
-     * 
+     *
      * По умолчанию fields и params выводятся все. Если указана только часть полей - остальные поля будут отсутствовать в ответе.
      * Для просмотра данных необходимо быть владельцем вакансии.
-     * 
+     *
      * OperationId: vacancyGetItem.
      * HTTP: GET /job/v2/vacancies/{vacancy_id}.
      *
@@ -592,11 +592,11 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Получение статуса публикации вакансий V2
-     * 
+     *
      * Получение списка статусов процесса публикации и модерации вакансий.
      * В запросе используйте идентификатор, полученный [методе
      * публикации вакансии v2](https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyCreateV2)
-     * 
+     *
      * OperationId: vacancyGetStatuses.
      * HTTP: POST /job/v2/vacancies/statuses.
      *
@@ -618,9 +618,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Реактивация вакансии
-     * 
+     *
      * Реактивирует объявление в категории Вакансии. Необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: vacancyProlongate.
      * HTTP: POST /job/v1/vacancies/{vacancy_id}/prolongate.
      *
@@ -642,9 +642,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Редактирование вакансии
-     * 
+     *
      * Редактирует объявление в категории Вакансии. Необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: vacancyUpdate.
      * HTTP: PUT /job/v1/vacancies/{vacancy_id}.
      *
@@ -666,9 +666,9 @@ class JobProvider extends BaseAvitoProvider
 
     /**
      * Редактирование вакансии v2
-     * 
+     *
      * Редактирует объявление в категории Вакансии. Необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: vacancyUpdateV2.
      * HTTP: POST /job/v2/vacancies/update/{vacancy_uuid}.
      *

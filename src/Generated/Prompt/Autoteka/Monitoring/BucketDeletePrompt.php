@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Prompt\MonitoringBucketDeletePrompt as BaseMon
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/monitoring/bucket/delete.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/monitoringBucketDelete
  */
 class BucketDeletePrompt extends BaseMonitoringBucketDeletePrompt

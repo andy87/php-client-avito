@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoload/v2/reports/{report_id}/items/fees.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getReportItemsFeesById
  */
 class GetReportItemsFeesByIdPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetReportItemsFeesByIdPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = false;
+
+    protected const QUERY_PARAMETER_STYLES = ['per_page' => ['style' => 'form', 'explode' => true], 'page' => ['style' => 'form', 'explode' => true], 'ad_ids' => ['style' => 'form', 'explode' => true], 'avito_ids' => ['style' => 'form', 'explode' => true]];
 
     protected const FIELD_MAP = ['report_id' => 'report_id', 'per_page' => 'per_page', 'page' => 'page', 'ad_ids' => 'ad_ids', 'avito_ids' => 'avito_ids'];
 
@@ -33,7 +35,11 @@ class GetReportItemsFeesByIdPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = ['per_page', 'page', 'ad_ids', 'avito_ids'];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int Идентификатор отчёта (ID) */
     public int $report_id;

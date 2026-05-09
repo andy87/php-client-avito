@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /stats/v2/accounts/{user_id}/items.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/itemAnalytics
  */
 class ItemAnalyticsPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class ItemAnalyticsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'filter' => 'filter', 'grouping' => 'grouping', 'limit' => 'limit', 'metrics' => 'metrics', 'offset' => 'offset', 'sort' => 'sort', 'user_id' => 'user_id'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['dateFrom', 'dateTo', 'grouping', 'limit', 'metrics', 'offset', 'user_id'];
+    protected const FIELD_MAP = ['user_id' => 'user_id', 'Content_Type' => 'Content-Type', 'dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'filter' => 'filter', 'grouping' => 'grouping', 'limit' => 'limit', 'metrics' => 'metrics', 'offset' => 'offset', 'sort' => 'sort'];
+
+    protected const REQUIRED_FIELDS = ['user_id', 'Content_Type', 'dateFrom', 'dateTo', 'grouping', 'limit', 'metrics', 'offset'];
 
     protected const NULLABLE_FIELDS = ['filter', 'limit', 'offset', 'sort'];
 
@@ -33,7 +35,17 @@ class ItemAnalyticsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['Content_Type'];
+
     protected const BODY_FIELDS = ['dateFrom', 'dateTo', 'filter', 'grouping', 'limit', 'metrics', 'offset', 'sort'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Идентификатор пользователя (клиента) */
+    public int $user_id;
+
+    /** @var string Тип данных запроса */
+    public string $Content_Type;
 
     /** @var string Дата (в формате YYYY-MM-DD), с которой (включительно) надо получить статистику */
     public string $dateFrom;
@@ -58,6 +70,4 @@ class ItemAnalyticsPrompt extends AbstractPrompt
 
     /** @var array<string, mixed>|null Сортировка по заданному показателю */
     public ?array $sort = null;
-    /** @var string|int path-parameter user_id */
-    public string|int $user_id;
 }

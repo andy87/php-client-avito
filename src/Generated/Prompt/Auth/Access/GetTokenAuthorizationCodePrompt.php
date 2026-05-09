@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\GetAccessTokenAuthorizationCodePrompt a
 
 /**
  * Класс данных запроса Avito API [POST] /token‎.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/auth/documentation#operation/getAccessTokenAuthorizationCode
- * 
+ *
  * @property string $client_id Body field client_id
  * @property string $client_secret Body field client_secret
  * @property string $code Body field code

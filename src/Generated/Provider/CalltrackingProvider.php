@@ -29,9 +29,9 @@ class CalltrackingProvider extends BaseAvitoProvider
 
     /**
      * Звонок по идентификатору
-     * 
+     *
      * Возвращает информацию о звонке по его id(callId)
-     * 
+     *
      * OperationId: get_call_by_id.
      * HTTP: POST /calltracking/v1/getCallById/.
      *
@@ -53,9 +53,9 @@ class CalltrackingProvider extends BaseAvitoProvider
 
     /**
      * Звонки по времени
-     * 
+     *
      * Возвращает список звонков с фильтром по времени звонка
-     * 
+     *
      * OperationId: get_calls.
      * HTTP: POST /calltracking/v1/getCalls/.
      *
@@ -77,13 +77,13 @@ class CalltrackingProvider extends BaseAvitoProvider
 
     /**
      * Получение аудиозаписи звонка по идентификатору
-     * 
+     *
      * Возвращает запись звонка по его id (callId).
-     * 
+     *
      * Мы гарантируем, что записи звонка доступны для получения в течение 3х месяцев после завершения звонка.
-     * 
+     *
      * Записи звонка становятся доступны в данном API с некоторой задержкой после окончания звонка. Обычно эта задержка составляет до 30 минут.
-     * 
+     *
      * OperationId: get_record_by_call_id.
      * HTTP: GET /calltracking/v1/getRecordByCallId/.
      *

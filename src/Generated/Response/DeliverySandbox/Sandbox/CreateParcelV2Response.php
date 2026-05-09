@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\CreateSandboxParcelV2Response as Base
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/v2/createParcel.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/CreateSandboxParcelV2
- * 
+ *
  * @property array<string, mixed>|null $data Response field data
  * @property \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelError|null $errorData Response field error
  */

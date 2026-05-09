@@ -15,11 +15,11 @@ class MessagesProvider extends BaseAvitoProvider
 {
     /**
      * Получение списка сообщений V3
-     * 
+     *
      * Получение списка сообщений.  **Не помечает чат прочитанным.**
      * После успешного получения списка сообщений необходимо вызвать [метод](https://api.avito.ru/docs/api.html#operation/chatRead), который сделает сообщения прочитанными.
      * Для получения новых сообщений в реальном времени используйте [webhooks](https://api.avito.ru/docs/api.html#operation/postWebhookV3)
-     * 
+     *
      * OperationId: getMessagesV3.
      * HTTP: GET /messenger/v3/accounts/{user_id}/chats/{chat_id}/messages/.
      *

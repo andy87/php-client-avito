@@ -8,8 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\ApplicationsGetStatesPrompt as BaseAppl
 
 /**
  * Класс данных запроса Avito API [GET] /job/v1/applications/get_states.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsGetStates
+ *
+ * @property bool|null $X_Is_Employee Получение списка возможных статусов откликов
  */
 class GetStatesPrompt extends BaseApplicationsGetStatesPrompt
 {

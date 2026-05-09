@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/order/checkConfirmationCode.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/checkConfirmationCode
  */
 class CheckConfirmationCodePrompt2 extends AbstractPrompt
@@ -21,9 +21,11 @@ class CheckConfirmationCodePrompt2 extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'confirmCode' => 'confirmCode', 'parcelID' => 'parcelID'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization'];
+    protected const FIELD_MAP = ['confirmCode' => 'confirmCode', 'parcelID' => 'parcelID'];
+
+    protected const REQUIRED_FIELDS = [];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class CheckConfirmationCodePrompt2 extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['confirmCode', 'parcelID'];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string|null Код, который показал пользователь */
     public ?string $confirmCode = null;

@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\VacancyGetStatusesResponse as BaseVac
 
 /**
  * Ответ Avito API [POST] /job/v2/vacancies/statuses.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyGetStatuses
  */
 class GetStatusesResponse extends BaseVacancyGetStatusesResponse

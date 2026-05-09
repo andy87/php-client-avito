@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\CancelAnnouncement3PLPrompt as BaseCanc
 
 /**
  * Класс данных запроса Avito API [POST] /cancelAnnouncement.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/CancelAnnouncement3PL
- * 
+ *
  * @property \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID $announcementID Body field announcementID
  * @property string|null $reason Причина омены анонса
  */

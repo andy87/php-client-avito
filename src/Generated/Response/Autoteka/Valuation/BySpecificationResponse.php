@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\ValuationBySpecificationResponse as B
 
 /**
  * Ответ Avito API [POST] /autoteka/v1/valuation/by-specification.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/valuationBySpecification
- * 
+ *
  * @property \Andy87\ClientsAvito\Generated\Schema\Autoteka\ValuationBySpecificationResultAutoteka|null $result Response field result
  */
 class BySpecificationResponse extends BaseValuationBySpecificationResponse

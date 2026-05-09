@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\VacancyCreateResponse as BaseVacancyC
 
 /**
  * Ответ Avito API [POST] /job/v1/vacancies.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyCreate
- * 
+ *
  * @property string|null $id Идентификатор добавленной вакансии на сайте.
  * @property string|null $url URL добавленной вакансии.
  * @property string|null $uuid Идентификатор добавленной вакансии.

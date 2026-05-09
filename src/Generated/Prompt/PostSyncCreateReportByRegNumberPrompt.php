@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/sync/create-by-regnumber.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/postSyncCreateReportByRegNumber
  */
 class PostSyncCreateReportByRegNumberPrompt extends AbstractPrompt
@@ -21,7 +21,9 @@ class PostSyncCreateReportByRegNumberPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'regNumber' => 'regNumber'];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['regNumber' => 'regNumber'];
 
     protected const REQUIRED_FIELDS = ['regNumber'];
 
@@ -33,10 +35,11 @@ class PostSyncCreateReportByRegNumberPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['regNumber'];
 
-    /** @var string|null Токен для авторизации */
-    public ?string $Authorization = null;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string государственный номер запрашиваемого авто. */
     public string $regNumber;

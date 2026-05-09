@@ -15,9 +15,9 @@ class ConfirmationProvider extends BaseAvitoProvider
 {
     /**
      * Проверка кода подтверждения
-     * 
+     *
      * Метод для проверки службой доставки кода подтверждения, который пользователь показал на пункте выдачи заказа.<br />
-     * 
+     *
      * ### Статус проверки кода
      * | status      |       Значение                                |
      * |-------------|-----------------------------------------------|
@@ -25,7 +25,7 @@ class ConfirmationProvider extends BaseAvitoProvider
      * |   fail      | Код неверный.                                 |
      * |   expired   | Код подтверждения устарел.                    |
      * |   attempts  | Превышено максимальное количество попыток.    |
-     * 
+     *
      * OperationId: checkConfirmationCode.
      * HTTP: POST /delivery-sandbox/order/checkConfirmationCode.
      *

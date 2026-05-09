@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/specifications/by-plate-number.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/specificationByPlateNumber
  */
 class SpecificationByPlateNumberPrompt extends AbstractPrompt
@@ -21,7 +21,9 @@ class SpecificationByPlateNumberPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'plateNumber' => 'plateNumber'];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['plateNumber' => 'plateNumber'];
 
     protected const REQUIRED_FIELDS = ['plateNumber'];
 
@@ -33,10 +35,11 @@ class SpecificationByPlateNumberPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['plateNumber'];
 
-    /** @var string|null Токен для авторизации */
-    public ?string $Authorization = null;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string Регистрационный номер запрашиваемого авто. */
     public string $plateNumber;

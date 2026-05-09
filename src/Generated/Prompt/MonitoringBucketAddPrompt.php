@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/monitoring/bucket/add.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/monitoringBucketAdd
  */
 class MonitoringBucketAddPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class MonitoringBucketAddPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['data' => 'data'];
 
@@ -33,7 +35,11 @@ class MonitoringBucketAddPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['data'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<int, string>|null Набор VIN-номеров для дальнейшего заполнения реестра */
     public ?array $data = null;

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /autoteka/v1/scoring/by-vehicle-id.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/scoringByVehicleId
  */
 class ScoringByVehicleIdResponse extends AbstractResponse

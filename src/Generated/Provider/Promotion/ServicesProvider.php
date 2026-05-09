@@ -15,11 +15,11 @@ class ServicesProvider extends BaseAvitoProvider
 {
     /**
      * Список услуг продвижения
-     * 
+     *
      * Получение списка активных услуг продвижения по объявлениям
-     *  
+     *
      * **Rate limit:** 100 RPM
-     * 
+     *
      * OperationId: get_services_by_items_v1.
      * HTTP: POST /promotion/v1/items/services/get.
      *

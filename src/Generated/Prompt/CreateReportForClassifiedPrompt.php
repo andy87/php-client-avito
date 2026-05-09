@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /realty/v1/report/create/{itemId}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/realty-reports/documentation#operation/CreateReportForClassified
  */
 class CreateReportForClassifiedPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class CreateReportForClassifiedPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['itemId' => 'itemId'];
 
@@ -33,7 +35,11 @@ class CreateReportForClassifiedPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int Идентификатор объявления */
     public int $itemId;

@@ -15,9 +15,9 @@ class SubscriptionsProvider extends BaseAvitoProvider
 {
     /**
      * Получение подписок (webhooks)
-     * 
+     *
      * Получение списка подписок
-     * 
+     *
      * OperationId: getSubscriptions.
      * HTTP: POST /messenger/v1/subscriptions.
      *

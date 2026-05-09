@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/get-leads/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/getLeads
  */
 class GetLeadsPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetLeadsPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['lastId' => 'lastId', 'limit' => 'limit', 'subscriptionId' => 'subscriptionId'];
 
@@ -33,7 +35,11 @@ class GetLeadsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['lastId', 'limit', 'subscriptionId'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int|null Последний успешно-прочитанный id, указывается для постраничной выдачи */
     public ?int $lastId = null;

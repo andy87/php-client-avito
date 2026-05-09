@@ -31,10 +31,10 @@ class ApplicationsProvider extends BaseAvitoProvider
 {
     /**
      * Батчевая смена статуса откликов
-     * 
+     *
      * Переводит сразу несколько откликов в новый статус одним запросом. В запросе нужно передать целевой статус, а также список идентификаторов откликов, к которым он должен быть применён
      * Максимальный размер батча — не более 100 идентификаторов откликов в одном запросе
-     * 
+     *
      * OperationId: applicationsApplyActions.
      * HTTP: POST /job/v1/applications/apply_actions.
      *
@@ -56,9 +56,9 @@ class ApplicationsProvider extends BaseAvitoProvider
 
     /**
      * Получение списка откликов
-     * 
+     *
      * Получение списка откликов по uuid, полученным по  [подписке на уведомления](https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhookPut) (webhook) и через метод  [получение идентификаторов откликов](https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsGetIds) Максимальный лимит = 100
-     * 
+     *
      * OperationId: applicationsGetByIds.
      * HTTP: POST /job/v1/applications/get_by_ids.
      *
@@ -80,10 +80,10 @@ class ApplicationsProvider extends BaseAvitoProvider
 
     /**
      * Получение идентификаторов откликов
-     * 
+     *
      * Возвращает лимитированное количество идентификаторов откликов отсортированных по дате создания  начиная с самых свежих, для последующего получения по ним расширенной информации через метод [получение списка откликов](https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsGetByIds).
      * Максимальный лимит = 100
-     * 
+     *
      * OperationId: applicationsGetIds.
      * HTTP: GET /job/v1/applications/get_ids.
      *
@@ -105,9 +105,9 @@ class ApplicationsProvider extends BaseAvitoProvider
 
     /**
      * Получение списка возможных статусов откликов
-     * 
+     *
      * Возвращает список доступных статусов откликов и их описания
-     * 
+     *
      * OperationId: applicationsGetStates.
      * HTTP: GET /job/v1/applications/get_states.
      *
@@ -129,9 +129,9 @@ class ApplicationsProvider extends BaseAvitoProvider
 
     /**
      * Изменение статуса отклика
-     * 
+     *
      * Возвращает информацию по откликам и статусу просмотренности отклика, при изменении статуса также статус изменится в Авито Pro.  Максимальный лимит = 100
-     * 
+     *
      * OperationId: applicationsSetIsViewed.
      * HTTP: POST /job/v1/applications/set_is_viewed.
      *
@@ -153,9 +153,9 @@ class ApplicationsProvider extends BaseAvitoProvider
 
     /**
      * Отключение уведомлений по откликам (webhook)
-     * 
+     *
      * Отписка от уведомлений о создании и обновлении откликов на вакансии. Если авторизация происходит от имени приложения, отписка от вебхука будет для приложения
-     * 
+     *
      * OperationId: applicationsWebhookDelete.
      * HTTP: DELETE /job/v1/applications/webhook.
      *
@@ -177,9 +177,9 @@ class ApplicationsProvider extends BaseAvitoProvider
 
     /**
      * Получение информации о подписках (webhook)
-     * 
+     *
      * Получение информации по существующим подпискам на создание и обновление откликов. Будет возвращен самый старый активный вебхук. Если авторизация происходит от имени приложения, будет возвращен вебхук приложения
-     * 
+     *
      * OperationId: applicationsWebhookGet.
      * HTTP: GET /job/v1/applications/webhook.
      *
@@ -201,15 +201,15 @@ class ApplicationsProvider extends BaseAvitoProvider
 
     /**
      * Включение уведомлений по откликам (webhook)
-     * 
+     *
      * Подписка на уведомления о создании и обновлении откликов на вакансии. Если авторизация происходит от имени приложения, вебхук будет привязан к приложению. Исключение:
      *   - изменение сотрудника относящегося к объявлению (employee_id)
-     * 
-     * Важно: 
+     *
+     * Важно:
      *   Проверьте доступность url, при его недоступности из контура Авито webhook не будет создан/перезаписан.
      *   Если url недоступен больше месяца, то он удаляется и на него не придут новые уведомления.
      *   Список адресов с которых идут запросы по url IP 185.89.12.0/22, 146.158.48.0/21, 185.79.237.224/28 и 87.245.204.32/28.
-     * 
+     *
      * OperationId: applicationsWebhookPut.
      * HTTP: PUT /job/v1/applications/webhook.
      *
@@ -231,9 +231,9 @@ class ApplicationsProvider extends BaseAvitoProvider
 
     /**
      * Получение списка подписок (webhook)
-     * 
+     *
      * Получение списка активных подписок на создание и обновление откликов в хронологическом порядке от самого старого к самому новому. Если авторизация происходит от имени приложения, будут возвращены вебхуки приложения
-     * 
+     *
      * OperationId: applicationsWebhooksGet.
      * HTTP: GET /job/v1/applications/webhooks.
      *

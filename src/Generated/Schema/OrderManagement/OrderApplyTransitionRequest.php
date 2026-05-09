@@ -25,7 +25,7 @@ class OrderApplyTransitionRequest extends AbstractSchemaModel
     /** @var array<string, mixed>|null Дополнительные параметры доставки */
     public ?array $params = null;
 
-    /** @var string|null Название перехода. 
+    /** @var string|null Название перехода.
   * `confirm` - подтверждение заказа;
   * `reject` - отмена заказа;
   * `perform` - подтверждение отправки заказа (RDBS);

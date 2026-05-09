@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [DELETE] /job/v1/applications/webhook.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhookDelete
  */
 class ApplicationsWebhookDeleteResponse extends AbstractResponse

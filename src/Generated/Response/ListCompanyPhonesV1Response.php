@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /listCompanyPhonesV1.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/accounts-hierarchy/documentation#operation/listCompanyPhonesV1
  */
 class ListCompanyPhonesV1Response extends AbstractResponse

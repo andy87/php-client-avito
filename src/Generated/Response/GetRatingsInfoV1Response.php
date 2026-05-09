@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /ratings/v1/info.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/getRatingsInfoV1
  */
 class GetRatingsInfoV1Response extends AbstractResponse

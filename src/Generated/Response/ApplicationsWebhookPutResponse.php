@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [PUT] /job/v1/applications/webhook.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhookPut
  */
 class ApplicationsWebhookPutResponse extends AbstractResponse

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/announcements/track.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/TrackAnnouncement
  */
 class TrackAnnouncementPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class TrackAnnouncementPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['announcementID' => 'announcementID', 'date' => 'date', 'event' => 'event'];
 
@@ -33,7 +35,11 @@ class TrackAnnouncementPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['announcementID', 'date', 'event'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID Body field announcementID */
     public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID $announcementID;

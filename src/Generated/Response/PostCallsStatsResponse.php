@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /core/v1/accounts/{user_id}/calls/stats/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/postCallsStats
  */
 class PostCallsStatsResponse extends AbstractResponse

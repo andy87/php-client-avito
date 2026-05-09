@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\OpenApiStatsPrompt as BaseOpenApiStatsP
 
 /**
  * Класс данных запроса Avito API [POST] /special-offers/v1/stats.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/sbc-gateway/documentation#operation/openApiStats
- * 
+ *
  * @property string $dateTimeFrom Время выборки От. RFC3339
  * @property string $dateTimeTo Время выборки До. RFC3339
  */

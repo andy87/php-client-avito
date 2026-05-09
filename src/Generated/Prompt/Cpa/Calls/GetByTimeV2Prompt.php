@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\GetCallsByTimeV2Prompt as BaseGetCallsB
 
 /**
  * Класс данных запроса Avito API [POST] /cpa/v2/callsByTime.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/getCallsByTimeV2
- * 
+ *
+ * @property string $X_Source Имя сервиса, отправляющего запрос
  * @property string $dateTimeFrom Время с которого нужно начинать поиск звонков по startTime (строка в формате RFC3339)
  * @property int $limit Размер выборки
  * @property int|null $offset Смещение выборки (по-умолчанию 0). Для улучшения производительности лучше использовать максимальный startTime звонка из предыдущей выборки

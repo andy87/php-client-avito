@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\EditAutostrategyCampaignResponse as B
 
 /**
  * Ответ Avito API [POST] /autostrategy/v1/campaign/edit.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/editAutostrategyCampaign
- * 
+ *
  * @property \Andy87\ClientsAvito\Generated\Schema\Autostrategy\Campaign|null $campaign Response field campaign
  */
 class EditCampaignResponse extends BaseEditAutostrategyCampaignResponse

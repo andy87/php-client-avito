@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\ChatByActionIdResponse as BaseChatByA
 
 /**
  * Ответ Avito API [GET] /cpa/v1/chatByActionId/{actionId}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/chatByActionId
- * 
+ *
  * @property \Andy87\ClientsAvito\Generated\Schema\Cpa\OpenApiChatsComposition|null $chat Response field chat
  */
 class ByActionIdResponse extends BaseChatByActionIdResponse

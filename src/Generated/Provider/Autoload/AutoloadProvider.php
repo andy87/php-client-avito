@@ -15,12 +15,12 @@ class AutoloadProvider extends BaseAvitoProvider
 {
     /**
      * Объявления по ID в автозагрузке
-     * 
+     *
      * По запросу API отдаст данные по конкретным объявлениям.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * OperationId: getAutoloadItemsInfoV2.
      * HTTP: GET /autoload/v2/reports/items.
      *

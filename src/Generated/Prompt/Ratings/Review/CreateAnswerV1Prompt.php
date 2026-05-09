@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\CreateReviewAnswerV1Prompt as BaseCreat
 
 /**
  * Класс данных запроса Avito API [POST] /ratings/v1/answers.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/createReviewAnswerV1
- * 
+ *
  * @property string $message Текст ответа на отзыв
  * @property int $reviewId ID отзыва
  */

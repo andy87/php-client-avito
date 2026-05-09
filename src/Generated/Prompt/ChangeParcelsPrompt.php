@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /sandbox/changeParcels.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/ChangeParcels
  */
 class ChangeParcelsPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class ChangeParcelsPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = false;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['applications' => 'applications', 'type' => 'type'];
 
@@ -33,18 +35,23 @@ class ChangeParcelsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['applications', 'type'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\ChangeParcelsApplication> Body field applications */
     public array $applications;
 
     /** @var string Тип заявки.
-  
+
 Заявки могут быть следующих типов:
 - `changeReceiver` - обновить данные о получателе посылки.
 - `extendParcelStorage` - продлить срок хранения посылки.
 - `prohibitParcelReceive` - запретить выдачу посылки на ПВЗ вручения.
-- `prohibitParcelAcceptance` - запретить прием посылки на  ПВЗ отправки (в разработке).
+- `prohibitParcelAcceptance` - запретить прием посылки на ПВЗ отправки (в разработке).
+- `changeReceiverTerminalOnConfirmed` - обновить ПВЗ вручения.
  */
     public string $type;
 }

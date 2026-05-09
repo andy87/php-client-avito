@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /delivery-sandbox/sorting-center.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/GetSortingCenter
  */
 class GetSortingCenterPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class GetSortingCenterPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = [];
+    protected const QUERY_PARAMETER_STYLES = ['deliveryProviders' => ['style' => 'form', 'explode' => true]];
 
-    protected const REQUIRED_FIELDS = [];
+    protected const FIELD_MAP = ['deliveryProviders' => 'deliveryProviders'];
+
+    protected const REQUIRED_FIELDS = ['deliveryProviders'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -31,7 +33,14 @@ class GetSortingCenterPrompt extends AbstractPrompt
 
     protected const PATH_FIELDS = [];
 
-    protected const QUERY_FIELDS = [];
+    protected const QUERY_FIELDS = ['deliveryProviders'];
+
+    protected const HEADER_FIELDS = [];
 
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var string Список кодов служб доставки, сортировочные центры которых необходимо вернуть */
+    public string $deliveryProviders;
 }

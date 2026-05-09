@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\MonitoringBucketRemoveResponse as Bas
 
 /**
  * Ответ Avito API [POST] /autoteka/v1/monitoring/bucket/remove.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/monitoringBucketRemove
- * 
+ *
  * @property array<string, mixed>|null $result Response field result
  */
 class BucketRemoveResponse extends BaseMonitoringBucketRemoveResponse

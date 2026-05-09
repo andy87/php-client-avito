@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /stock-management/1/info.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/stock-management/documentation#operation/postStockManagement1Info
  */
 class PostStockManagement1InfoPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class PostStockManagement1InfoPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'item_ids' => 'item_ids', 'strong_consistency' => 'strong_consistency'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization', 'item_ids'];
+    protected const FIELD_MAP = ['item_ids' => 'item_ids', 'strong_consistency' => 'strong_consistency'];
+
+    protected const REQUIRED_FIELDS = ['item_ids'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class PostStockManagement1InfoPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['item_ids', 'strong_consistency'];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<int, int> Body field item_ids */
     public array $item_ids;

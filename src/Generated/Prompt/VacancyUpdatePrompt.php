@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [PUT] /job/v1/vacancies/{vacancy_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyUpdate
  */
 class VacancyUpdatePrompt extends AbstractPrompt
@@ -21,11 +21,13 @@ class VacancyUpdatePrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['address' => 'address', 'administrator_organization_type' => 'administrator_organization_type', 'age' => 'age', 'age_preferences' => 'age_preferences', 'allow_calls' => 'allow_calls', 'allow_messages' => 'allow_messages', 'apply_processing' => 'apply_processing', 'billing_type' => 'billing_type', 'bonuses' => 'bonuses', 'citizenship' => 'citizenship', 'construction_work_type' => 'construction_work_type', 'contacts' => 'contacts', 'coordinates' => 'coordinates', 'cuisine' => 'cuisine', 'custom_employer_name' => 'custom_employer_name', 'delivery_method' => 'delivery_method', 'description' => 'description', 'driving_experience' => 'driving_experience', 'driving_license_category' => 'driving_license_category', 'eatery_type' => 'eatery_type', 'education_level' => 'education_level', 'employee_id' => 'employee_id', 'experience' => 'experience', 'facility_type' => 'facility_type', 'food_production_shop_type' => 'food_production_shop_type', 'grade' => 'grade', 'html_tags' => 'html_tags', 'image_url' => 'image_url', 'is_company_car' => 'is_company_car', 'is_side_job' => 'is_side_job', 'medical_book' => 'medical_book', 'medical_specialization' => 'medical_specialization', 'medical_specialization_ids' => 'medical_specialization_ids', 'name' => 'name', 'payout_frequency' => 'payout_frequency', 'profession' => 'profession', 'registration_method' => 'registration_method', 'retail_equipment_type' => 'retail_equipment_type', 'retail_shop_type' => 'retail_shop_type', 'salary' => 'salary', 'salary_detail' => 'salary_detail', 'salary_range' => 'salary_range', 'shifts' => 'shifts', 'tools_availability' => 'tools_availability', 'vacancy_code' => 'vacancy_code', 'vehicle_type' => 'vehicle_type', 'work_days_per_week' => 'work_days_per_week', 'work_format' => 'work_format', 'work_hours_per_day' => 'work_hours_per_day', 'worker_class' => 'worker_class', 'vacancy_id' => 'vacancy_id'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['billing_type', 'vacancy_id'];
+    protected const FIELD_MAP = ['vacancy_id' => 'vacancy_id', 'X_Is_Employee' => 'X-Is-Employee', 'address' => 'address', 'administrator_organization_type' => 'administrator_organization_type', 'age' => 'age', 'age_preferences' => 'age_preferences', 'allow_calls' => 'allow_calls', 'allow_messages' => 'allow_messages', 'apply_processing' => 'apply_processing', 'billing_type' => 'billing_type', 'bonuses' => 'bonuses', 'citizenship' => 'citizenship', 'construction_work_type' => 'construction_work_type', 'contacts' => 'contacts', 'coordinates' => 'coordinates', 'cuisine' => 'cuisine', 'custom_employer_name' => 'custom_employer_name', 'delivery_method' => 'delivery_method', 'description' => 'description', 'driving_experience' => 'driving_experience', 'driving_license_category' => 'driving_license_category', 'eatery_type' => 'eatery_type', 'education_level' => 'education_level', 'employee_id' => 'employee_id', 'experience' => 'experience', 'facility_type' => 'facility_type', 'food_production_shop_type' => 'food_production_shop_type', 'grade' => 'grade', 'html_tags' => 'html_tags', 'image_url' => 'image_url', 'is_company_car' => 'is_company_car', 'is_side_job' => 'is_side_job', 'medical_book' => 'medical_book', 'medical_specialization' => 'medical_specialization', 'medical_specialization_ids' => 'medical_specialization_ids', 'name' => 'name', 'payout_frequency' => 'payout_frequency', 'profession' => 'profession', 'registration_method' => 'registration_method', 'retail_equipment_type' => 'retail_equipment_type', 'retail_shop_type' => 'retail_shop_type', 'salary' => 'salary', 'salary_detail' => 'salary_detail', 'salary_range' => 'salary_range', 'shifts' => 'shifts', 'tools_availability' => 'tools_availability', 'vacancy_code' => 'vacancy_code', 'vehicle_type' => 'vehicle_type', 'work_days_per_week' => 'work_days_per_week', 'work_format' => 'work_format', 'work_hours_per_day' => 'work_hours_per_day', 'worker_class' => 'worker_class'];
 
-    protected const NULLABLE_FIELDS = ['age_preferences', 'delivery_method', 'driving_experience', 'is_company_car', 'is_side_job', 'payout_frequency', 'vacancy_code'];
+    protected const REQUIRED_FIELDS = ['vacancy_id', 'billing_type'];
+
+    protected const NULLABLE_FIELDS = ['X_Is_Employee', 'age_preferences', 'delivery_method', 'driving_experience', 'is_company_car', 'is_side_job', 'payout_frequency', 'vacancy_code'];
 
     protected const CASTS = ['administrator_organization_type' => \Andy87\ClientsAvito\Generated\Schema\Job\AdministratorOrganizationType::class, 'age' => \Andy87\ClientsAvito\Generated\Schema\Job\AgeCriteria::class, 'allow_calls' => \Andy87\ClientsAvito\Generated\Schema\Job\AllowCalls::class, 'apply_processing' => \Andy87\ClientsAvito\Generated\Schema\Job\ApplyProcessing::class, 'bonuses' => \Andy87\ClientsAvito\Generated\Schema\Job\Bonuses::class, 'citizenship' => \Andy87\ClientsAvito\Generated\Schema\Job\CitizenshipCriteria::class, 'construction_work_type' => \Andy87\ClientsAvito\Generated\Schema\Job\ConstructionWorkType::class, 'contacts' => \Andy87\ClientsAvito\Generated\Schema\Job\Contacts::class, 'coordinates' => \Andy87\ClientsAvito\Generated\Schema\Job\Coordinates::class, 'cuisine' => \Andy87\ClientsAvito\Generated\Schema\Job\Cuisine::class, 'driving_license_category' => \Andy87\ClientsAvito\Generated\Schema\Job\DrivingLicenseCategory::class, 'eatery_type' => \Andy87\ClientsAvito\Generated\Schema\Job\EateryType::class, 'education_level' => \Andy87\ClientsAvito\Generated\Schema\Job\VacancyEducationLevel::class, 'facility_type' => \Andy87\ClientsAvito\Generated\Schema\Job\FacilityType::class, 'food_production_shop_type' => \Andy87\ClientsAvito\Generated\Schema\Job\FoodProductionShopType::class, 'grade' => \Andy87\ClientsAvito\Generated\Schema\Job\Grade::class, 'html_tags' => \Andy87\ClientsAvito\Generated\Schema\Job\HtmlTags::class, 'medical_book' => \Andy87\ClientsAvito\Generated\Schema\Job\MedicalBookVacancy::class, 'medical_specialization' => \Andy87\ClientsAvito\Generated\Schema\Job\MedicalSpecialization::class, 'medical_specialization_ids' => \Andy87\ClientsAvito\Generated\Schema\Job\MedicalSpecializationIds::class, 'profession' => \Andy87\ClientsAvito\Generated\Schema\Job\Profession::class, 'registration_method' => \Andy87\ClientsAvito\Generated\Schema\Job\RegistrationMethod::class, 'retail_equipment_type' => \Andy87\ClientsAvito\Generated\Schema\Job\RetailEquipmentType::class, 'retail_shop_type' => \Andy87\ClientsAvito\Generated\Schema\Job\RetailShopType::class, 'salary_detail' => \Andy87\ClientsAvito\Generated\Schema\Job\SalaryDetail::class, 'shifts' => \Andy87\ClientsAvito\Generated\Schema\Job\Shifts::class, 'tools_availability' => \Andy87\ClientsAvito\Generated\Schema\Job\ToolsAvailability::class, 'vehicle_type' => \Andy87\ClientsAvito\Generated\Schema\Job\VehicleType::class, 'work_days_per_week' => \Andy87\ClientsAvito\Generated\Schema\Job\WorkDaysPerWeek::class, 'work_hours_per_day' => \Andy87\ClientsAvito\Generated\Schema\Job\WorkHoursPerDay::class, 'worker_class' => \Andy87\ClientsAvito\Generated\Schema\Job\WorkerClass::class];
 
@@ -33,7 +35,17 @@ class VacancyUpdatePrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Is_Employee'];
+
     protected const BODY_FIELDS = ['address', 'administrator_organization_type', 'age', 'age_preferences', 'allow_calls', 'allow_messages', 'apply_processing', 'billing_type', 'bonuses', 'citizenship', 'construction_work_type', 'contacts', 'coordinates', 'cuisine', 'custom_employer_name', 'delivery_method', 'description', 'driving_experience', 'driving_license_category', 'eatery_type', 'education_level', 'employee_id', 'experience', 'facility_type', 'food_production_shop_type', 'grade', 'html_tags', 'image_url', 'is_company_car', 'is_side_job', 'medical_book', 'medical_specialization', 'medical_specialization_ids', 'name', 'payout_frequency', 'profession', 'registration_method', 'retail_equipment_type', 'retail_shop_type', 'salary', 'salary_detail', 'salary_range', 'shifts', 'tools_availability', 'vacancy_code', 'vehicle_type', 'work_days_per_week', 'work_format', 'work_hours_per_day', 'worker_class'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Идентификатор вакансии на сайте */
+    public int $vacancy_id;
+
+    /** @var bool|null Сотрудник компании может редактировать только свои вакансии. */
+    public ?bool $X_Is_Employee = null;
 
     /** @var string|null Полный адрес объекта (строка длиной от 0 до 256 символов) */
     public ?string $address = null;
@@ -208,6 +220,4 @@ deprecated значение hourlyPay будет заменено на dailyPay
 
     /** @var \Andy87\ClientsAvito\Generated\Schema\Job\WorkerClass|null Body field worker_class */
     public ?\Andy87\ClientsAvito\Generated\Schema\Job\WorkerClass $worker_class = null;
-    /** @var string|int path-parameter vacancy_id */
-    public string|int $vacancy_id;
 }

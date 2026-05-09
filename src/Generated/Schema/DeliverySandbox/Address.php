@@ -55,7 +55,7 @@ class Address extends AbstractSchemaModel
     /** @var string|null Подъезд */
     public ?string $porch = null;
 
-    /** @var string Субъект Российской Федерации.  
+    /** @var string Субъект Российской Федерации.
 Возможные типы субъектов: республики, края, области, города федерального значения, автономные области и автономные округа
  */
     public string $region;

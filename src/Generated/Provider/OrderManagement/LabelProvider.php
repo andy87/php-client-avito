@@ -15,10 +15,10 @@ class LabelProvider extends BaseAvitoProvider
 {
     /**
      * Скачать сгенерированный PDF-файл (этикетку).
-     * 
+     *
      * Скачивание сгенерированного PDF-файла с этикетками по идентификатору задачи.  Файл доступен после успешного завершения генерации.
      * Максимальное количество запросов в минуту - 1000.
-     * 
+     *
      * OperationId: downloadLabel.
      * HTTP: GET /order-management/1/orders/labels/{taskID}/download.
      *

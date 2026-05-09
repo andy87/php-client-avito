@@ -15,10 +15,10 @@ class VacanciesProvider extends BaseAvitoProvider
 {
     /**
      * Просмотр данных вакансий
-     * 
+     *
      * По умолчанию fields и params выводятся все. Если указана только часть полей - остальные поля будут отсутствовать в ответе.
      * Для просмотра данных необходимо быть владельцем вакансии.
-     * 
+     *
      * OperationId: vacanciesGetByIds.
      * HTTP: POST /job/v2/vacancies/batch.
      *

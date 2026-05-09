@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /token.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/getAccessToken
  */
 class GetAccessTokenPrompt2 extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetAccessTokenPrompt2 extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = false;
+
+    protected const QUERY_PARAMETER_STYLES = ['grant_type' => ['style' => 'form', 'explode' => true], 'client_id' => ['style' => 'form', 'explode' => true], 'client_secret' => ['style' => 'form', 'explode' => true]];
 
     protected const FIELD_MAP = ['grant_type' => 'grant_type', 'client_id' => 'client_id', 'client_secret' => 'client_secret'];
 
@@ -33,7 +35,11 @@ class GetAccessTokenPrompt2 extends AbstractPrompt
 
     protected const QUERY_FIELDS = ['grant_type', 'client_id', 'client_secret'];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string Тип OAuth flow – строка client_credentials */
     public string $grant_type;

@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\OpenApiMultiConfirmPrompt as BaseOpenAp
 
 /**
  * Класс данных запроса Avito API [POST] /special-offers/v1/multiConfirm.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/sbc-gateway/documentation#operation/openApiMultiConfirm
- * 
+ *
  * @property array<int, array<string, mixed>>|null $dispatches Body field dispatches
  * @property int|null $expiresAt Дата окончания предложения
  */

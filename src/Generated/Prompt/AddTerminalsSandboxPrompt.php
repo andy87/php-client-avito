@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/tariffs/{tariff_id}/terminals.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddTerminalsSandbox
  */
 class AddTerminalsSandboxPrompt extends AbstractPrompt
@@ -21,19 +21,29 @@ class AddTerminalsSandboxPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['tariff_id' => 'tariff_id'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['tariff_id'];
+    protected const FIELD_MAP = ['tariff_id' => 'tariff_id', 'body' => 'body'];
+
+    protected const REQUIRED_FIELDS = ['tariff_id', 'body'];
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = [];
+    protected const CASTS = ['body' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AddTerminalsRequest::class];
 
     protected const PATH_FIELDS = ['tariff_id'];
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
-    /** @var string|int path-parameter tariff_id */
-    public string|int $tariff_id;
+
+    protected const BODY_ROOT_FIELD = 'body';
+
+    /** @var int id тарифа, к которому должны быть прикреплены добавляемые терминалы */
+    public int $tariff_id;
+
+    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AddTerminalsRequest Request body */
+    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AddTerminalsRequest $body;
 }

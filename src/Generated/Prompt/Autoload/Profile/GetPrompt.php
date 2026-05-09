@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Prompt\GetProfilePrompt as BaseGetProfilePromp
 
 /**
  * Класс данных запроса Avito API [GET] /autoload/v1/profile.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getProfile
  */
 class GetPrompt extends BaseGetProfilePrompt

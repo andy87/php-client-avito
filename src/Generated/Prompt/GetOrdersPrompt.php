@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /order-management/1/orders.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/getOrders
  */
 class GetOrdersPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class GetOrdersPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'ids' => 'ids', 'statuses' => 'statuses', 'dateFrom' => 'dateFrom', 'page' => 'page', 'limit' => 'limit'];
+    protected const QUERY_PARAMETER_STYLES = ['ids' => ['style' => 'form', 'explode' => true], 'statuses' => ['style' => 'form', 'explode' => true], 'dateFrom' => ['style' => 'form', 'explode' => true], 'page' => ['style' => 'form', 'explode' => true], 'limit' => ['style' => 'form', 'explode' => true]];
 
-    protected const REQUIRED_FIELDS = ['Authorization'];
+    protected const FIELD_MAP = ['ids' => 'ids', 'statuses' => 'statuses', 'dateFrom' => 'dateFrom', 'page' => 'page', 'limit' => 'limit'];
+
+    protected const REQUIRED_FIELDS = [];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class GetOrdersPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = ['ids', 'statuses', 'dateFrom', 'page', 'limit'];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<int, string>|null Идентификаторы заказов
  */

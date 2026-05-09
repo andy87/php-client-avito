@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\CreateOrUpdateProfilePrompt as BaseCrea
 
 /**
  * Класс данных запроса Avito API [POST] /autoload/v1/profile.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/createOrUpdateProfile
- * 
+ *
  * @property bool|null $agreement Согласие с [правилами](https://support.avito.ru/articles/203867776) использования Авито Автозагрузки. Обязательно, если профиль еще не существует.
  * @property bool $autoload_enabled Статус автозагрузки (вкл/выкл)
  * @property string $report_email Почта, на которую будут приходить отчеты о выгрузках

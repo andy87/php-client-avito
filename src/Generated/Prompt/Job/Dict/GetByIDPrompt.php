@@ -8,8 +8,11 @@ use Andy87\ClientsAvito\Generated\Prompt\GetDictByIDPrompt as BaseGetDictByIDPro
 
 /**
  * Класс данных запроса Avito API [GET] /job/v2/vacancy/dict/{dictionary_id}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/getDictByID
+ *
+ * @property string $dictionary_id Идентификатор словаря
+ * @property bool|null $X_Is_Employee Включает привилегии компании для сотрудника
  */
 class GetByIDPrompt extends BaseGetDictByIDPrompt
 {

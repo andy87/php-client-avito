@@ -15,14 +15,14 @@ class TermsProvider extends BaseAvitoProvider
 {
     /**
      * Обновить сроки по тарифу
-     * 
-     * Создание задачи на обновление сроков в тарифе. Подробнее про сроки можно почитать в разделе загрузки тарифа https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddTariffSandboxV2.  
-     * 
+     *
+     * Создание задачи на обновление сроков в тарифе. Подробнее про сроки можно почитать в разделе загрузки тарифа https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddTariffSandboxV2.
+     *
      * Важно ! Список новых сроков должен полностью соответствовать по deliveryProviderZoneId и name списку сроков, переданному при создании тарифа.
      * Т.е. необходимо перечислить все те же deliveryProviderZoneId и name, но можете поменять сроки (maxTerm и/или minTerm).
      * Если в какой-то зоне сроки не меняются, то необходимо все равно передать ее в исходном виде (без изменения в maxTerm и minTerm.
      * При загрузке неполного списка обновление сроков упадет с ошибкой (об этом узнать можно будет через [метод получения результата выполнения задачи](#operation/GetTask))
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code                  |       error message                                                   |
      * |-----------|-------------------------------|-----------------------------------------------------------------------|
@@ -31,10 +31,10 @@ class TermsProvider extends BaseAvitoProvider
      * |    200    | INVALID_ENTITY                | Не указан или указан невалидный tariff_id, должно быть передано число |
      * |    200    | INVALID_ENTITY                | Передан tariff_id равный 0                                            |
      * |    500    | FAILED_TO_UPDATE_TERMS        | Ошибка обработки сроков                                               |
-     * 
-     * Итоговый результат операции необходимо проверять через:  
+     *
+     * Итоговый результат операции необходимо проверять через:
      * [метод получения результата выполнения задачи](#operation/GetTask)
-     * 
+     *
      * OperationId: UpdateTerms.
      * HTTP: POST /delivery-sandbox/tariffs/{tariff_id}/terms.
      *

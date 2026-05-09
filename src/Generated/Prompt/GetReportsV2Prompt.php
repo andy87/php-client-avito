@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoload/v2/reports.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getReportsV2
  */
 class GetReportsV2Prompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class GetReportsV2Prompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = false;
 
-    protected const FIELD_MAP = ['per_page' => 'per_page', 'page' => 'page', 'date_from' => 'date_from', 'date_to' => 'date_to', 'Authorization' => 'Authorization'];
+    protected const QUERY_PARAMETER_STYLES = ['per_page' => ['style' => 'form', 'explode' => true], 'page' => ['style' => 'form', 'explode' => true], 'date_from' => ['style' => 'form', 'explode' => true], 'date_to' => ['style' => 'form', 'explode' => true]];
 
-    protected const REQUIRED_FIELDS = ['Authorization'];
+    protected const FIELD_MAP = ['per_page' => 'per_page', 'page' => 'page', 'date_from' => 'date_from', 'date_to' => 'date_to'];
+
+    protected const REQUIRED_FIELDS = [];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,7 +35,11 @@ class GetReportsV2Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = ['per_page', 'page', 'date_from', 'date_to'];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int|null Количество отчётов на странице: целое число больше 0 и меньше или равно 200.
  */
@@ -52,7 +58,4 @@ class GetReportsV2Prompt extends AbstractPrompt
 Формат значения: RFC3339
  */
     public ?string $date_to = null;
-
-    /** @var string Токен для авторизации */
-    public string $Authorization;
 }

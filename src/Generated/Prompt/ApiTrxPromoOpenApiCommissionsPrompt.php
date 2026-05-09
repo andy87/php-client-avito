@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /trx-promo/1/commissions.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/trxpromo/documentation#operation/api_trx_promo_open_api_commissions
  */
 class ApiTrxPromoOpenApiCommissionsPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class ApiTrxPromoOpenApiCommissionsPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['x_oauth_scopes' => 'x-oauth-scopes', 'x_oauth_flow' => 'x-oauth-flow', 'x_authenticated_userid' => 'x-authenticated-userid', 'itemIDs' => 'itemIDs'];
 
@@ -33,7 +35,11 @@ class ApiTrxPromoOpenApiCommissionsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['x_oauth_scopes', 'x_oauth_flow', 'x_authenticated_userid'];
+
     protected const BODY_FIELDS = ['itemIDs'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string|null Список зон доступа */
     public ?string $x_oauth_scopes = null;

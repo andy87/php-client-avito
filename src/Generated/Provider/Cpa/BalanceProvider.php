@@ -17,9 +17,9 @@ class BalanceProvider extends BaseAvitoProvider
 {
     /**
      * Баланс (deprecated)
-     * 
+     *
      * __Используйте endpoint [balanceInfoV3](https://developers.avito.ru/api-catalog/cpa/documentation#operation/balanceInfoV3)__<br> Получение информации о балансе пользователя (баланс, долг, аванс текущего месяца) в копейках. Максимальное количество запросов в минуту - 1.
-     * 
+     *
      * OperationId: balanceInfoV2.
      * HTTP: POST /cpa/v2/balanceInfo.
      *
@@ -41,9 +41,9 @@ class BalanceProvider extends BaseAvitoProvider
 
     /**
      * Баланс
-     * 
+     *
      * Получение информации о текущем балансе пользователя в копейках. Максимальное количество запросов в минуту - 50.
-     * 
+     *
      * OperationId: balanceInfoV3.
      * HTTP: POST /cpa/v3/balanceInfo.
      *

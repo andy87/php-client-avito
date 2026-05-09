@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /job/v2/vacancies/batch.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacanciesGetByIds
  */
 class VacanciesGetByIdsPrompt extends AbstractPrompt
@@ -21,11 +21,13 @@ class VacanciesGetByIdsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['fields' => 'fields', 'ids' => 'ids', 'params' => 'params'];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['X_Is_Employee' => 'X-Is-Employee', 'fields' => 'fields', 'ids' => 'ids', 'params' => 'params'];
 
     protected const REQUIRED_FIELDS = ['ids'];
 
-    protected const NULLABLE_FIELDS = [];
+    protected const NULLABLE_FIELDS = ['X_Is_Employee'];
 
     protected const CASTS = [];
 
@@ -33,7 +35,14 @@ class VacanciesGetByIdsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['X_Is_Employee'];
+
     protected const BODY_FIELDS = ['fields', 'ids', 'params'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var bool|null Сотрудник компании получает информацию по вакансиям, которую он опубликовал для компании */
+    public ?bool $X_Is_Employee = null;
 
     /** @var array<int, string>|null Поля для основного тела ответа */
     public ?array $fields = null;

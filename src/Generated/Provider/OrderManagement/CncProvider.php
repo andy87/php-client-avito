@@ -15,10 +15,10 @@ class CncProvider extends BaseAvitoProvider
 {
     /**
      * Метод для подготовки заказа с самовывозом
-     * 
+     *
      * Данный метод применяется продавцом для подготовки заказа и передачи адреса, сроков бронирования и сообщения покупателю.
      * Максимальное количество запросов в минуту - 60
-     * 
+     *
      * OperationId: cncSetDetails.
      * HTTP: POST /order-management/1/order/cncSetDetails.
      *

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /trx-promo/1/cancel.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/trxpromo/documentation#operation/api_trx_promo_open_api_cancel
  */
 class ApiTrxPromoOpenApiCancelResponse extends AbstractResponse

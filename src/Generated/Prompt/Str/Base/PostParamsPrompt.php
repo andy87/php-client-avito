@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\PostBaseParamsPrompt as BasePostBasePar
 
 /**
  * Класс данных запроса Avito API [POST] /realty/v1/items/{item_id}/base.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/postBaseParams
- * 
+ *
+ * @property int $item_id Идентификатор объявления на сайте
  * @property array<int, array<string, mixed>>|null $discount Скидки при бронировании от threshold ночей
  * @property int|null $extra_guest_fee Доплата за гостя (рубли)
  * @property int|null $extra_guest_threshold Порог гостей, при котором цена - night_price

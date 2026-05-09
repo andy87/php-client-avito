@@ -8,9 +8,11 @@ use Andy87\ClientsAvito\Generated\Prompt\PutBookingsInfoPrompt as BasePutBooking
 
 /**
  * Класс данных запроса Avito API [POST] /core/v1/accounts/{user_id}/items/{item_id}/bookings.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/str/documentation#operation/putBookingsInfo
- * 
+ *
+ * @property int $user_id Номер пользователя в Личном кабинете Авито
+ * @property int $item_id Идентификатор объявления на сайте
  * @property array<int, array<string, mixed>>|null $bookings Список броней для выбранного объекта недвижимости (объявления)
  * @property string|null $source Название PMS системы
  */

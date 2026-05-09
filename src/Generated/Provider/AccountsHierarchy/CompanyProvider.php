@@ -15,9 +15,9 @@ class CompanyProvider extends BaseAvitoProvider
 {
     /**
      * Получение списка телефонов компании
-     * 
+     *
      * Для взаимодействия с иерархией аккаунтов необходимо приобрести тариф в [личном кабинете](https://www.avito.ru/paid-services/listing-fees).
-     * 
+     *
      * OperationId: listCompanyPhonesV1.
      * HTTP: GET /listCompanyPhonesV1.
      *

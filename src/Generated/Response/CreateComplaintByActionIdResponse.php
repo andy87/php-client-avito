@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /cpa/v1/createComplaintByActionId.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpa/documentation#operation/createComplaintByActionId
  */
 class CreateComplaintByActionIdResponse extends AbstractResponse

@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /ratings/v1/reviews.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/getReviewsV1
  */
 class GetReviewsV1Prompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class GetReviewsV1Prompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = ['offset' => ['style' => 'form', 'explode' => true], 'limit' => ['style' => 'form', 'explode' => true]];
 
     protected const FIELD_MAP = ['offset' => 'offset', 'limit' => 'limit'];
 
@@ -33,7 +35,11 @@ class GetReviewsV1Prompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = ['offset', 'limit'];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int Смещение */
     public int $offset;

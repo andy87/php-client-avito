@@ -63,9 +63,9 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Прочитать чат
-     * 
+     *
      * После успешного получения списка сообщений необходимо вызвать этот метод для того, чтобы чат стал прочитанным.
-     * 
+     *
      * OperationId: chatRead.
      * HTTP: POST /messenger/v1/accounts/{user_id}/chats/{chat_id}/read.
      *
@@ -87,10 +87,10 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Удаление сообщения
-     * 
+     *
      * Сообщение не пропадает из истории, а меняет свой тип на deleted.
      * Удалять сообщения можно не позднее часа с момента их отправки.
-     * 
+     *
      * OperationId: deleteMessage.
      * HTTP: POST /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages/{message_id}.
      *
@@ -112,9 +112,9 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Получение информации по чату
-     * 
+     *
      * Возвращает данные чата и последнее сообщение в нем
-     * 
+     *
      * OperationId: getChatByIdV2.
      * HTTP: GET /messenger/v2/accounts/{user_id}/chats/{chat_id}.
      *
@@ -136,9 +136,9 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Получение информации по чатам
-     * 
+     *
      * Возвращает список чатов
-     * 
+     *
      * OperationId: getChatsV2.
      * HTTP: GET /messenger/v2/accounts/{user_id}/chats.
      *
@@ -160,11 +160,11 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Получение списка сообщений V3
-     * 
+     *
      * Получение списка сообщений.  **Не помечает чат прочитанным.**
      * После успешного получения списка сообщений необходимо вызвать [метод](https://api.avito.ru/docs/api.html#operation/chatRead), который сделает сообщения прочитанными.
      * Для получения новых сообщений в реальном времени используйте [webhooks](https://api.avito.ru/docs/api.html#operation/postWebhookV3)
-     * 
+     *
      * OperationId: getMessagesV3.
      * HTTP: GET /messenger/v3/accounts/{user_id}/chats/{chat_id}/messages/.
      *
@@ -186,9 +186,9 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Получение подписок (webhooks)
-     * 
+     *
      * Получение списка подписок
-     * 
+     *
      * OperationId: getSubscriptions.
      * HTTP: POST /messenger/v1/subscriptions.
      *
@@ -210,14 +210,14 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Получение голосовых сообщений
-     * 
+     *
      * Метод используется для получения ссылки на файл с голосовым сообщением по идентификатору voice_id, получаемому из тела сообщения с типом voice.
-     * 
+     *
      * Особенности работы с голосовыми сообщениями:
-     * - Голосовые сообщения Авито используют кодек **[opus](https://ru.wikipedia.org/wiki/Opus_(%D0%BA%D0%BE%D0%B4%D0%B5%D0%BA))** внутри **.mp4** контейнера; 
+     * - Голосовые сообщения Авито используют кодек **[opus](https://ru.wikipedia.org/wiki/Opus_(%D0%BA%D0%BE%D0%B4%D0%B5%D0%BA))** внутри **.mp4** контейнера;
      * - Ссылка на голосовое сообщение доступна в течение **одного часа** с момента запроса. Попытка получить файл по ссылке спустя это время приведёт к ошибке. Для восстановления доступа необходимо получить новую ссылку на файл;
      * - Как и с обычными сообщениями, получение ссылки на файл доступно только для пользователей, находящихся в беседе, где голосовое сообщение было отправлено;
-     * 
+     *
      * OperationId: getVoiceFiles.
      * HTTP: GET /messenger/v1/accounts/{user_id}/getVoiceFiles.
      *
@@ -239,7 +239,7 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Добавление пользователя в blacklist
-     * 
+     *
      * OperationId: postBlacklistV2.
      * HTTP: POST /messenger/v2/accounts/{user_id}/blacklist.
      *
@@ -261,11 +261,11 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Отправка сообщения с изображением
-     * 
+     *
      * Метод используется для отправки сообщения с изображением.
-     * 
+     *
      * Для отправки сообщения с изображением необходимо передать в запросе id изображения, полученного после загрузки.
-     * 
+     *
      * OperationId: postSendImageMessage.
      * HTTP: POST /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages/image.
      *
@@ -287,9 +287,9 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Отправка сообщения
-     * 
+     *
      * На данный момент можно отправить только текстовое сообщение
-     * 
+     *
      * OperationId: postSendMessage.
      * HTTP: POST /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages.
      *
@@ -311,9 +311,9 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Отключение уведомлений (webhooks)
-     * 
+     *
      * Отключение уведомлений
-     * 
+     *
      * OperationId: postWebhookUnsubscribe.
      * HTTP: POST /messenger/v1/webhook/unsubscribe.
      *
@@ -335,16 +335,16 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Включение уведомлений V3 (webhooks)
-     * 
-     * Включение webhook-уведомлений. 
-     * 
+     *
+     * Включение webhook-уведомлений.
+     *
      * Схему JSON приходящего в webhook сообщения можно увидеть в примерах ответов.
-     * 
+     *
      * После регистрации url'а для получения веб-хуков, убедитесь, что он доступен, работает и возвращает статус 200 ОК соблюдая timeout 2s,
      * например, выполнив запрос:
-     * 
+     *
      * curl --connect-timeout 2 <url-вашего-вебхука> -i -d '{}'
-     * 
+     *
      * OperationId: postWebhookV3.
      * HTTP: POST /messenger/v3/webhook.
      *
@@ -366,14 +366,14 @@ class MessengerProvider extends BaseAvitoProvider
 
     /**
      * Загрузка изображений
-     * 
+     *
      * Метод используется для загрузки изображений в формате JPEG, HEIC, GIF, BMP или PNG.
-     * 
+     *
      * Особенности работы с загрузкой изображений:
      * - Метод поддерживает только одиночные изображения; для загрузки нескольких картинок необходимо сделать несколько запросов;
      * - Максимальный размер файла — 24 МБ;
      * - Максимальное разрешение — 75 мегапиксилей;
-     * 
+     *
      * OperationId: uploadImages.
      * HTTP: POST /messenger/v1/accounts/{user_id}/uploadImages.
      *

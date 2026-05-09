@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\SaveItemBidsResponse as BaseSaveItemB
 
 /**
  * Ответ Avito API [POST] /auction/1/bids.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/auction/documentation#operation/saveItemBids
  */
 class SaveBidsResponse extends BaseSaveItemBidsResponse

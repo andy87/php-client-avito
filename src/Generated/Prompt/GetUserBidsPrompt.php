@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /auction/1/bids.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/auction/documentation#operation/getUserBids
  */
 class GetUserBidsPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class GetUserBidsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'fromItemID' => 'fromItemID', 'batchSize' => 'batchSize'];
+    protected const QUERY_PARAMETER_STYLES = ['fromItemID' => ['style' => 'form', 'explode' => true], 'batchSize' => ['style' => 'form', 'explode' => true]];
 
-    protected const REQUIRED_FIELDS = ['Authorization'];
+    protected const FIELD_MAP = ['fromItemID' => 'fromItemID', 'batchSize' => 'batchSize'];
+
+    protected const REQUIRED_FIELDS = [];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class GetUserBidsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = ['fromItemID', 'batchSize'];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var int|null Идентификатор последнего объявления в предыдущей пачке (по умолчанию 0) */
     public ?int $fromItemID = null;

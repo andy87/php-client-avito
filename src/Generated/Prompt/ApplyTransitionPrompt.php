@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/order/applyTransition.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/applyTransition
  */
 class ApplyTransitionPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class ApplyTransitionPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'orderId' => 'orderId', 'params' => 'params', 'transition' => 'transition'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization'];
+    protected const FIELD_MAP = ['orderId' => 'orderId', 'params' => 'params', 'transition' => 'transition'];
+
+    protected const REQUIRED_FIELDS = [];
 
     protected const NULLABLE_FIELDS = ['params'];
 
@@ -33,10 +35,11 @@ class ApplyTransitionPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['orderId', 'params', 'transition'];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string|null ID заказа в Авито */
     public ?string $orderId = null;
@@ -44,7 +47,7 @@ class ApplyTransitionPrompt extends AbstractPrompt
     /** @var array<string, mixed>|null Дополнительные параметры доставки */
     public ?array $params = null;
 
-    /** @var string|null Название перехода. 
+    /** @var string|null Название перехода.
   * `confirm` - подтверждение заказа;
   * `reject` - отмена заказа;
   * `perform` - подтверждение отправки заказа (RDBS);

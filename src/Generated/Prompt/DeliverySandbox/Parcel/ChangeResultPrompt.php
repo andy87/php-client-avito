@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\ChangeParcelResultPrompt as BaseChangeP
 
 /**
  * Класс данных запроса Avito API [POST] /delivery/order/changeParcelResult.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/ChangeParcelResult
- * 
+ *
  * @property string $id Идентификатор заявки на изменение посылки
  * @property array<string, mixed>|null $options Body field options
  * @property string|null $reason Причина отклонения заявки (заполняется в случае отклонения).

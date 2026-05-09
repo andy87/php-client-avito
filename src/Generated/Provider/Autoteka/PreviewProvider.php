@@ -23,9 +23,9 @@ class PreviewProvider extends BaseAvitoProvider
 {
     /**
      * Получение превью по его ID
-     * 
+     *
      * Возвращает текущий статус сбора информации превью, и краткую инфо по запрашиваемому `VIN`
-     * 
+     *
      * OperationId: getPreview.
      * HTTP: GET /autoteka/v1/previews/{previewId}.
      *
@@ -47,9 +47,9 @@ class PreviewProvider extends BaseAvitoProvider
 
     /**
      * Превью по ID объявления другой площадки
-     * 
+     *
      * Возвращает идентификатор `previewId`, по которому асинхронно с помощью [запроса на получение превью по ID](#operation/getPreview) можно получить результат
-     * 
+     *
      * OperationId: postPreviewByExternalItem.
      * HTTP: POST /autoteka/v1/request-preview-by-external-item.
      *
@@ -71,9 +71,9 @@ class PreviewProvider extends BaseAvitoProvider
 
     /**
      * Превью по ID объявления Авито
-     * 
+     *
      * Возвращает идентификатор `previewId`, по которому асинхронно с помощью [запроса на получение превью по ID](#operation/getPreview) можно получить результат
-     * 
+     *
      * OperationId: postPreviewByItemId.
      * HTTP: POST /autoteka/v1/request-preview-by-item-id.
      *
@@ -95,9 +95,9 @@ class PreviewProvider extends BaseAvitoProvider
 
     /**
      * Превью по государственному номеру
-     * 
+     *
      * Возвращает идентификатор `previewId`, по которому асинхронно с помощью [запроса на получение превью по ID](#operation/getPreview) можно получить результат
-     * 
+     *
      * OperationId: postPreviewByRegNumber.
      * HTTP: POST /autoteka/v1/request-preview-by-regnumber.
      *
@@ -119,9 +119,9 @@ class PreviewProvider extends BaseAvitoProvider
 
     /**
      * Превью по VIN или номеру кузова
-     * 
+     *
      * Возвращает идентификатор `previewId`, по которому асинхронно с помощью [запроса на получение превью по ID](#operation/getPreview) можно получить результат
-     * 
+     *
      * OperationId: postPreviewByVin.
      * HTTP: POST /autoteka/v1/previews.
      *

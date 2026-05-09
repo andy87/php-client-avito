@@ -8,10 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\GetCourierDeliveryRangePrompt as BaseGe
 
 /**
  * Класс данных запроса Avito API [GET] /order-management/1/order/getCourierDeliveryRange.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/getCourierDeliveryRange
- * 
- * @property string $Authorization Токен для авторизации
+ *
  * @property string $orderId ID заказа
  * @property string|null $address Адрес продавца
  */

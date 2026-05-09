@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\GetReviewsV1Prompt as BaseGetReviewsV1P
 
 /**
  * Класс данных запроса Avito API [GET] /ratings/v1/reviews.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/getReviewsV1
- * 
+ *
  * @property int $offset Смещение
  * @property int $limit Лимит количества отзывов
  */

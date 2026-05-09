@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [GET] /order-management/1/order/getCourierDeliveryRange.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/getCourierDeliveryRange
  */
 class GetCourierDeliveryRangeResponse extends AbstractResponse

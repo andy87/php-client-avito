@@ -15,13 +15,13 @@ class SandboxProvider extends BaseAvitoProvider
 {
     /**
      * Создание тестовой посылки
-     * 
+     *
      * Метод доступен только в Песочнице.
-     * 
+     *
      * Метод запускает процесс создания тестовой посылки.
-     * 
+     *
      * Описание механики работы и дополнительные требования см. [здесь](#info/sozdanie_testovyh_posylok).
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code       |       error message          |
      * |-----------|--------------------|------------------------------|
@@ -29,7 +29,7 @@ class SandboxProvider extends BaseAvitoProvider
      * |    200    | VALIDATION_ERROR   | invalid request              |
      * |    200    | LIMIT_REACHED      | create parcels limit reached |
      * |    500    | INTERNAL_ERROR     | create parcel error          |
-     * 
+     *
      * OperationId: CreateSandboxParcelV2.
      * HTTP: POST /delivery-sandbox/v2/createParcel.
      *

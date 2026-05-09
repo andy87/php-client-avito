@@ -8,10 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\PostTeaserPrompt as BasePostTeaserPromp
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/teasers.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/postTeaser
- * 
- * @property string|null $Authorization Токен для авторизации
+ *
  * @property string $vehicleId Идентификатор запрашиваемого авто (vin/frame).
  */
 class PostPrompt extends BasePostTeaserPrompt

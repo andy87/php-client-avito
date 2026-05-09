@@ -8,9 +8,10 @@ use Andy87\ClientsAvito\Generated\Prompt\VasPricesPrompt as BaseVasPricesPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /core/v1/accounts/{userId}/vas/prices.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/vasPrices
- * 
+ *
+ * @property int $user_id Номер пользователя в Личном кабинете Авито
  * @property array<int, int> $itemIds Набор идентификаторов объявлений на сайте
  */
 class PricesPrompt extends BaseVasPricesPrompt

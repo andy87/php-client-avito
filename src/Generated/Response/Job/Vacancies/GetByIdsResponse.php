@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\VacanciesGetByIdsResponse as BaseVaca
 
 /**
  * Ответ Avito API [POST] /job/v2/vacancies/batch.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacanciesGetByIds
  */
 class GetByIdsResponse extends BaseVacanciesGetByIdsResponse

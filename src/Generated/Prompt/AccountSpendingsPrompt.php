@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /stats/v2/accounts/{user_id}/spendings.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/item/documentation#operation/accountSpendings
  */
 class AccountSpendingsPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class AccountSpendingsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'filter' => 'filter', 'grouping' => 'grouping', 'spendingTypes' => 'spendingTypes', 'user_id' => 'user_id'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['dateFrom', 'dateTo', 'grouping', 'spendingTypes', 'user_id'];
+    protected const FIELD_MAP = ['user_id' => 'user_id', 'Content_Type' => 'Content-Type', 'dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'filter' => 'filter', 'grouping' => 'grouping', 'spendingTypes' => 'spendingTypes'];
+
+    protected const REQUIRED_FIELDS = ['user_id', 'Content_Type', 'dateFrom', 'dateTo', 'grouping', 'spendingTypes'];
 
     protected const NULLABLE_FIELDS = ['filter'];
 
@@ -33,7 +35,17 @@ class AccountSpendingsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = ['Content_Type'];
+
     protected const BODY_FIELDS = ['dateFrom', 'dateTo', 'filter', 'grouping', 'spendingTypes'];
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Идентификатор пользователя (клиента) */
+    public int $user_id;
+
+    /** @var string Тип данных запроса */
+    public string $Content_Type;
 
     /** @var string Дата начала периода статистики расходов в формате YYYY-MM-DD */
     public string $dateFrom;
@@ -49,6 +61,4 @@ class AccountSpendingsPrompt extends AbstractPrompt
 
     /** @var array<int, string> Набор необходимых типов расходов */
     public array $spendingTypes;
-    /** @var string|int path-parameter user_id */
-    public string|int $user_id;
 }

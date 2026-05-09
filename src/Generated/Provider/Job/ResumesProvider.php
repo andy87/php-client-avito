@@ -15,7 +15,7 @@ class ResumesProvider extends BaseAvitoProvider
 {
     /**
      * Поиск резюме
-     * 
+     *
      * OperationId: resumesGet.
      * HTTP: GET /job/v1/resumes/.
      *

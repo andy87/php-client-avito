@@ -27,9 +27,9 @@ class UserProvider extends BaseAvitoProvider
 
     /**
      * Получение баланса кошелька пользователя
-     * 
+     *
      * Возвращает сумму реальных денежных средств в кошельке, а также сумму бонусных средств
-     * 
+     *
      * OperationId: getUserBalance.
      * HTTP: GET /core/v1/accounts/{user_id}/balance/.
      *
@@ -51,9 +51,9 @@ class UserProvider extends BaseAvitoProvider
 
     /**
      * Получение информации об авторизованном пользователе
-     * 
+     *
      * Возвращает идентификатор пользователя и его регистрационные данные
-     * 
+     *
      * OperationId: getUserInfoSelf.
      * HTTP: GET /core/v1/accounts/self.
      *
@@ -75,9 +75,9 @@ class UserProvider extends BaseAvitoProvider
 
     /**
      * Получение истории операций пользователя
-     * 
+     *
      * Возвращает список операций пользователя (списания/пополнение кошелька - деньги и бонусы) за определенный временной период (задается пользователем)
-     * 
+     *
      * OperationId: postOperationsHistory.
      * HTTP: POST /core/v1/accounts/operations_history/.
      *

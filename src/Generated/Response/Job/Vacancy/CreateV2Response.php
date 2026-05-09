@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\VacancyCreateV2Response as BaseVacanc
 
 /**
  * Ответ Avito API [POST] /job/v2/vacancies.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/vacancyCreateV2
  */
 class CreateV2Response extends BaseVacancyCreateV2Response

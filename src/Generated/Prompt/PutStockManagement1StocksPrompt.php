@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [PUT] /stock-management/1/stocks.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/stock-management/documentation#operation/putStockManagement1Stocks
  */
 class PutStockManagement1StocksPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class PutStockManagement1StocksPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'stocks' => 'stocks'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization', 'stocks'];
+    protected const FIELD_MAP = ['stocks' => 'stocks'];
+
+    protected const REQUIRED_FIELDS = ['stocks'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class PutStockManagement1StocksPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['stocks'];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var array<int, array<string, mixed>> Body field stocks */
     public array $stocks;

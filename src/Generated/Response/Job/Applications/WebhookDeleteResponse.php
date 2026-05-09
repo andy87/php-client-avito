@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\ApplicationsWebhookDeleteResponse as 
 
 /**
  * Ответ Avito API [DELETE] /job/v1/applications/webhook.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhookDelete
- * 
+ *
  * @property bool|null $ok Response field ok
  */
 class WebhookDeleteResponse extends BaseApplicationsWebhookDeleteResponse

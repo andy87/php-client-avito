@@ -15,7 +15,7 @@ class ReviewsProvider extends BaseAvitoProvider
 {
     /**
      * Получение списка активных отзывов на пользователя с пагинацией
-     * 
+     *
      * OperationId: getReviewsV1.
      * HTTP: GET /ratings/v1/reviews.
      *

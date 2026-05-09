@@ -17,15 +17,15 @@ class LastProvider extends BaseAvitoProvider
 {
     /**
      * Статистика по последней выгрузке (deprecated)
-     * 
+     *
      * Метод возвращает сводную статистику с результатами последней завершённой выгрузки.
      * Например, сколько объявлений было в файле и сколько из них было опубликовано с ошибками или без.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * С 23.12.2024 вместо поля feed_url используйте поле feeds_urls. В нём содержится название файла и ссылка на него. [Новая версия](https://developers.avito.ru/api-catalog/autoload/documentation#operation/getLastCompletedReportV3)
-     * 
+     *
      * OperationId: getLastCompletedReport.
      * HTTP: GET /autoload/v2/reports/last_completed_report.
      *
@@ -47,15 +47,15 @@ class LastProvider extends BaseAvitoProvider
 
     /**
      * Статистика по последней выгрузке
-     * 
+     *
      * Метод возвращает сводную статистику с результатами последней завершённой выгрузки.
      * Например, сколько объявлений было в файле и сколько из них было опубликовано с ошибками или без.
-     * 
+     *
      * 📝 [Напишите нам](https://docs.google.com/forms/d/e/1FAIpQLSdfTHlP6PKtOb08fxD7BaJ0VjtkaLXoRAswhF9gnKvrEyY16g/viewform?usp=sf_link),
      * если в методе вам не хватает каких-либо данных.
-     * 
+     *
      * С 23.12.2024 вместо поля feed_url используйте поле feeds_urls. В нём содержится название файла и ссылка на него.
-     * 
+     *
      * OperationId: getLastCompletedReportV3.
      * HTTP: GET /autoload/v3/reports/last_completed_report.
      *

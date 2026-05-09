@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/announcements/create.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/CreateAnnouncement
  */
 class CreateAnnouncementPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class CreateAnnouncementPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['announcementID' => 'announcementID', 'announcementType' => 'announcementType', 'barcode' => 'barcode', 'date' => 'date', 'packages' => 'packages', 'receiver' => 'receiver', 'sender' => 'sender'];
 
@@ -33,7 +35,11 @@ class CreateAnnouncementPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['announcementID', 'announcementType', 'barcode', 'date', 'packages', 'receiver', 'sender'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID Body field announcementID */
     public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID $announcementID;

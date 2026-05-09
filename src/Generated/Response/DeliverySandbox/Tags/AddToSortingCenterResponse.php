@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\AddTagsToSortingCenterResponse as Bas
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/tariffs/{tariff_id}/tagged-sorting-centers.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/AddTagsToSortingCenter
- * 
+ *
  * @property array<string, mixed>|null $data Response field data
  * @property array<string, mixed>|null $errorData Response field error
  */

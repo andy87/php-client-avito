@@ -19,7 +19,7 @@ class CustomAreaScheduleRequestObject extends AbstractSchemaModel
 
     protected const CASTS = ['customSchedule' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryIntervalInDate::class], 'providerAreaNumber' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryProviderAreaNumber::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryIntervalInDate> Cписок доступных интервалов доставки/забора посылки в определенную дату
+    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryIntervalInDate> Список доступных интервалов доставки/забора посылки в определенную дату
 В случае если доступные интервалы доставки отсутствуют требуется передать пустой список
  */
     public array $customSchedule;

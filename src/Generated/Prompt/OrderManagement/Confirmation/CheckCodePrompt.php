@@ -8,10 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\CheckConfirmationCodePrompt2 as BaseChe
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/order/checkConfirmationCode.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/checkConfirmationCode
- * 
- * @property string $Authorization Токен для авторизации
+ *
  * @property string|null $confirmCode Код, который показал пользователь
  * @property string|null $parcelID ID посылки в Авито
  */

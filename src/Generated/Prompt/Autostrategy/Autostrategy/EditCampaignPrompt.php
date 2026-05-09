@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\EditAutostrategyCampaignPrompt as BaseE
 
 /**
  * Класс данных запроса Avito API [POST] /autostrategy/v1/campaign/edit.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autostrategy/documentation#operation/editAutostrategyCampaign
- * 
+ *
  * @property int|null $budget Новый бюджет кампании в рублях
  * @property int|null $calcId Идентификатор расчета бюджета из ответа ручки `/autostrategy/v1/budget`
  * @property int $campaignId Идентификатор активной кампании

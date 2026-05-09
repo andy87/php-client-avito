@@ -23,12 +23,13 @@ class ChangeParcelsRequest extends AbstractSchemaModel
     public array $applications;
 
     /** @var string Тип заявки.
-  
+
 Заявки могут быть следующих типов:
 - `changeReceiver` - обновить данные о получателе посылки.
 - `extendParcelStorage` - продлить срок хранения посылки.
 - `prohibitParcelReceive` - запретить выдачу посылки на ПВЗ вручения.
-- `prohibitParcelAcceptance` - запретить прием посылки на  ПВЗ отправки (в разработке).
+- `prohibitParcelAcceptance` - запретить прием посылки на ПВЗ отправки (в разработке).
+- `changeReceiverTerminalOnConfirmed` - обновить ПВЗ вручения.
  */
     public string $type;
 }

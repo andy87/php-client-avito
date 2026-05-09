@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\PostWebhookUnsubscribeResponse as Bas
 
 /**
  * Ответ Avito API [POST] /messenger/v1/webhook/unsubscribe.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/postWebhookUnsubscribe
- * 
+ *
  * @property bool|null $ok Response field ok
  */
 class PostUnsubscribeResponse extends BasePostWebhookUnsubscribeResponse

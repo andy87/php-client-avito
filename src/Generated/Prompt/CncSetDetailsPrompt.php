@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/order/cncSetDetails.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/cncSetDetails
  */
 class CncSetDetailsPrompt extends AbstractPrompt
@@ -21,9 +21,11 @@ class CncSetDetailsPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'address' => 'address', 'bookingPeriod' => 'bookingPeriod', 'details' => 'details', 'id' => 'id', 'marketplaceId' => 'marketplaceId'];
+    protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const REQUIRED_FIELDS = ['Authorization', 'bookingPeriod', 'id', 'marketplaceId'];
+    protected const FIELD_MAP = ['address' => 'address', 'bookingPeriod' => 'bookingPeriod', 'details' => 'details', 'id' => 'id', 'marketplaceId' => 'marketplaceId'];
+
+    protected const REQUIRED_FIELDS = ['bookingPeriod', 'id', 'marketplaceId'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -33,10 +35,11 @@ class CncSetDetailsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['address', 'bookingPeriod', 'details', 'id', 'marketplaceId'];
 
-    /** @var string Токен для авторизации */
-    public string $Authorization;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string|null Адрес получения товара */
     public ?string $address = null;

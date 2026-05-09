@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoteka/v1/specifications/specification/{specificationID}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/specificationGetById
  */
 class SpecificationGetByIdPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class SpecificationGetByIdPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = null;
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['specificationID' => 'specificationID'];
 
@@ -33,7 +35,12 @@ class SpecificationGetByIdPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = [];
-    /** @var string|int path-parameter specificationID */
-    public string|int $specificationID;
+
+    protected const BODY_ROOT_FIELD = null;
+
+    /** @var int Идентификатор спецификации */
+    public int $specificationID;
 }

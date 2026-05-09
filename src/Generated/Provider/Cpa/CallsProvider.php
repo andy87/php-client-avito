@@ -15,9 +15,9 @@ class CallsProvider extends BaseAvitoProvider
 {
     /**
      * Звонки по времени
-     * 
+     *
      * Получение списка звонков по времени создания. Максимальное количество запросов в минуту - 1.
-     * 
+     *
      * OperationId: getCallsByTimeV2.
      * HTTP: POST /cpa/v2/callsByTime.
      *

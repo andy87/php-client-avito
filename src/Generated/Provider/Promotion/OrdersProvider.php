@@ -15,11 +15,11 @@ class OrdersProvider extends BaseAvitoProvider
 {
     /**
      * Список заявок
-     * 
+     *
      * Получение списка заявок на подключение услуг.
-     * 
+     *
      * **Rate limit:** 100 RPM
-     * 
+     *
      * OperationId: list_orders_by_user_v1.
      * HTTP: POST /promotion/v1/items/services/orders/get.
      *

@@ -15,18 +15,18 @@ class AreasProvider extends BaseAvitoProvider
 {
     /**
      * Загрузить области доставки
-     * 
+     *
      * Метод позволяет загрузить области, в которых возможна услуга курьерской доставки/забора
      * В качестве классификатора адресов используются индесы Почты России, то есть в 1 индекс включаются все адреса,
      * которые к нему относятся.
-     * 
+     *
      * ### Описание ошибок
      * | http code |   error code      |       error message                                       |
      * |-----------|-------------------|-----------------------------------------------------------|
      * |    200    | URL_PATH_INVALID  | Tariff id must be int url path                            |
      * |    200    | TERMINALS_INVALID | Failed to convert areas: {error description}          |
      * |    200    | TERMINALS_INVALID | Failed to get terminals from request: {error description} |
-     * 
+     *
      * OperationId: AddAreasSandbox.
      * HTTP: POST /delivery-sandbox/tariffs/{tariff_id}/areas.
      *

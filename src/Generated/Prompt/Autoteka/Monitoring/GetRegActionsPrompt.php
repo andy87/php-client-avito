@@ -8,8 +8,12 @@ use Andy87\ClientsAvito\Generated\Prompt\MonitoringGetRegActionsPrompt as BaseMo
 
 /**
  * Класс данных запроса Avito API [GET] /autoteka/v1/monitoring/get-reg-actions/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/monitoringGetRegActions
+ *
+ * @property string|null $cursor Позиция курсора
+ * @property string|null $operationDateFrom Отбирать рег. действия не раньше указанной даты (включительно)
+ * @property int|null $limit Количество строк в результате
  */
 class GetRegActionsPrompt extends BaseMonitoringGetRegActionsPrompt
 {

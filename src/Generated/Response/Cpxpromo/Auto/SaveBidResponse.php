@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\SaveAutoBidResponse as BaseSaveAutoBi
 
 /**
  * Ответ Avito API [POST] /cpxpromo/1/setAuto.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/saveAutoBid
  */
 class SaveBidResponse extends BaseSaveAutoBidResponse

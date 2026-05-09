@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/previews.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/postPreviewByVin
  */
 class PostPreviewByVinPrompt extends AbstractPrompt
@@ -21,7 +21,9 @@ class PostPreviewByVinPrompt extends AbstractPrompt
 
     protected const AUTHORIZATION_REQUIRED = true;
 
-    protected const FIELD_MAP = ['Authorization' => 'Authorization', 'vin' => 'vin'];
+    protected const QUERY_PARAMETER_STYLES = [];
+
+    protected const FIELD_MAP = ['vin' => 'vin'];
 
     protected const REQUIRED_FIELDS = ['vin'];
 
@@ -33,10 +35,11 @@ class PostPreviewByVinPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['vin'];
 
-    /** @var string|null Токен для авторизации */
-    public ?string $Authorization = null;
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string VIN или номер кузова запрашиваемого авто. */
     public string $vin;

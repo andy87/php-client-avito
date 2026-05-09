@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\CreateOrUpdateProfileV2Response as Ba
 
 /**
  * Ответ Avito API [POST] /autoload/v2/profile.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/createOrUpdateProfileV2
  */
 class CreateUpdateProfileV2Response extends BaseCreateOrUpdateProfileV2Response

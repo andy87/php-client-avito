@@ -15,10 +15,10 @@ class ReturnValueProvider extends BaseAvitoProvider
 {
     /**
      * Выбор отделения отделения Почты России для получения возврата
-     * 
+     *
      * Данный метод применяется для подтверждения возврата товара и выбора отделения Почты России, куда будет доставлен возврат.
      * Максимальное количество запросов в минуту - 100.
-     * 
+     *
      * OperationId: acceptReturnOrder.
      * HTTP: POST /order-management/1/order/acceptReturnOrder.
      *

@@ -31,7 +31,7 @@ class RatingsProvider extends BaseAvitoProvider
 
     /**
      * Отправка ответа на отзыв
-     * 
+     *
      * OperationId: createReviewAnswerV1.
      * HTTP: POST /ratings/v1/answers.
      *
@@ -53,7 +53,7 @@ class RatingsProvider extends BaseAvitoProvider
 
     /**
      * Получение информации о рейтинге пользователя
-     * 
+     *
      * OperationId: getRatingsInfoV1.
      * HTTP: GET /ratings/v1/info.
      *
@@ -75,7 +75,7 @@ class RatingsProvider extends BaseAvitoProvider
 
     /**
      * Получение списка активных отзывов на пользователя с пагинацией
-     * 
+     *
      * OperationId: getReviewsV1.
      * HTTP: GET /ratings/v1/reviews.
      *
@@ -97,7 +97,7 @@ class RatingsProvider extends BaseAvitoProvider
 
     /**
      * Запрос на удаление ответа на отзыв
-     * 
+     *
      * OperationId: removeReviewAnswerV1.
      * HTTP: DELETE /ratings/v1/answers/{answer_id}.
      *

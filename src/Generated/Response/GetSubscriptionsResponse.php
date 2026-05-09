@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /messenger/v1/subscriptions.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/getSubscriptions
  */
 class GetSubscriptionsResponse extends AbstractResponse

@@ -11,22 +11,25 @@ use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
  */
 class ChangeParcelsClient extends AbstractSchemaModel
 {
-    protected const FIELD_MAP = ['name' => 'name', 'phones' => 'phones'];
+    protected const FIELD_MAP = ['name' => 'name', 'phones' => 'phones', 'terminal' => 'terminal'];
 
     protected const REQUIRED_FIELDS = ['name', 'phones'];
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = [];
+    protected const CASTS = ['terminal' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\ChangeParcelsTerminal::class];
 
     /** @var string ФИО нового получателя посылки.
  */
     public string $name;
 
-    /** @var array<int, string> Список номеров телефонов нового получателя. 
+    /** @var array<int, string> Список номеров телефонов нового получателя.
 Если на стороне СД нет поддержки работы с несколькими номерами телефонов, то необходимо использовать первый из списка и считать его основным контактом.
-  
+
 Формат номеров телефона не регламентирован.
  */
     public array $phones;
+
+    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\ChangeParcelsTerminal|null Schema field terminal */
+    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\ChangeParcelsTerminal $terminal = null;
 }

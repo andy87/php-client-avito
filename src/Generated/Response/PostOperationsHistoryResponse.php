@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /core/v1/accounts/operations_history/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/user/documentation#operation/postOperationsHistory
  */
 class PostOperationsHistoryResponse extends AbstractResponse

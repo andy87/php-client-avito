@@ -8,10 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\PutStockManagement1StocksPrompt as Base
 
 /**
  * Класс данных запроса Avito API [PUT] /stock-management/1/stocks.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/stock-management/documentation#operation/putStockManagement1Stocks
- * 
- * @property string $Authorization Токен для авторизации
+ *
  * @property array<int, array<string, mixed>> $stocks Body field stocks
  */
 class PutManagement1StocksPrompt extends BasePutStockManagement1StocksPrompt

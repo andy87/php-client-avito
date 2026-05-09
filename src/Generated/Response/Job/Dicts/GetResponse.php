@@ -8,7 +8,7 @@ use Andy87\ClientsAvito\Generated\Response\GetDictsResponse as BaseGetDictsRespo
 
 /**
  * Ответ Avito API [GET] /job/v2/vacancy/dict.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/getDicts
  */
 class GetResponse extends BaseGetDictsResponse

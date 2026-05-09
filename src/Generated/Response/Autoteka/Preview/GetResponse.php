@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\GetPreviewResponse as BaseGetPreviewR
 
 /**
  * Ответ Avito API [GET] /autoteka/v1/previews/{previewId}.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/autoteka/documentation#operation/getPreview
- * 
+ *
  * @property \Andy87\ClientsAvito\Generated\Schema\Autoteka\GetPreviewResponseDataAutoteka|null $result Response field result
  */
 class GetResponse extends BaseGetPreviewResponse

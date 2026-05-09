@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\TrackingPrompt as BaseTrackingPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/order/tracking.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/tracking
- * 
+ *
  * @property string $avitoEventType Описание статусов см. [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/mehanika_raboty_trekinga).
  * @property mixed $avitoStatus Описание статусов см. [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/mehanika_raboty_trekinga).
  * @property string|null $comment Комментарий к статусу.

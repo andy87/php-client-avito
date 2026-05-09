@@ -8,8 +8,13 @@ use Andy87\ClientsAvito\Generated\Prompt\GetMessagesV3Prompt as BaseGetMessagesV
 
 /**
  * Класс данных запроса Avito API [GET] /messenger/v3/accounts/{user_id}/chats/{chat_id}/messages/.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/messenger/documentation#operation/getMessagesV3
+ *
+ * @property int $user_id Идентификатор пользователя (клиента)
+ * @property string $chat_id Идентификатор чата (клиента)
+ * @property int|null $limit Количество сообщений / чатов для запроса
+ * @property int|null $offset Сдвиг сообщений / чатов для запроса
  */
 class GetV3Prompt extends BaseGetMessagesV3Prompt
 {

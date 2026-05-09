@@ -15,9 +15,9 @@ class CallsProvider extends BaseAvitoProvider
 {
     /**
      * Звонки по времени
-     * 
+     *
      * Возвращает список звонков с фильтром по времени звонка
-     * 
+     *
      * OperationId: get_calls.
      * HTTP: POST /calltracking/v1/getCalls/.
      *

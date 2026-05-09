@@ -55,9 +55,9 @@ class CpaProvider extends BaseAvitoProvider
 
     /**
      * Баланс (deprecated)
-     * 
+     *
      * __Используйте endpoint [balanceInfoV3](https://developers.avito.ru/api-catalog/cpa/documentation#operation/balanceInfoV3)__<br> Получение информации о балансе пользователя (баланс, долг, аванс текущего месяца) в копейках. Максимальное количество запросов в минуту - 1.
-     * 
+     *
      * OperationId: balanceInfoV2.
      * HTTP: POST /cpa/v2/balanceInfo.
      *
@@ -79,9 +79,9 @@ class CpaProvider extends BaseAvitoProvider
 
     /**
      * Баланс
-     * 
+     *
      * Получение информации о текущем балансе пользователя в копейках. Максимальное количество запросов в минуту - 50.
-     * 
+     *
      * OperationId: balanceInfoV3.
      * HTTP: POST /cpa/v3/balanceInfo.
      *
@@ -103,9 +103,9 @@ class CpaProvider extends BaseAvitoProvider
 
     /**
      * Чат
-     * 
+     *
      * Получение модели чата по идентификатору Максимальное количество запросов в минуту - 3.
-     * 
+     *
      * OperationId: chatByActionId.
      * HTTP: GET /cpa/v1/chatByActionId/{actionId}.
      *
@@ -127,9 +127,9 @@ class CpaProvider extends BaseAvitoProvider
 
     /**
      * Чаты по времени (deprecated)
-     * 
+     *
      * Получение списка чатов по времени создания (deprecated). Максимальное количество запросов в минуту - 60.
-     * 
+     *
      * OperationId: chatsByTime.
      * HTTP: POST /cpa/v1/chatsByTime.
      *
@@ -151,9 +151,9 @@ class CpaProvider extends BaseAvitoProvider
 
     /**
      * Чаты по времени
-     * 
+     *
      * Получение списка чатов по времени создания. Максимальное количество запросов в минуту - 40.
-     * 
+     *
      * OperationId: chatsByTime.
      * HTTP: POST /cpa/v2/chatsByTime.
      *
@@ -175,9 +175,9 @@ class CpaProvider extends BaseAvitoProvider
 
     /**
      * Создание жалобы для звонков/чатов
-     * 
+     *
      * Создание жалобы на целевое действие по actionId. Максимальное количество запросов в минуту - 3.
-     * 
+     *
      * OperationId: createComplaintByActionId.
      * HTTP: POST /cpa/v1/createComplaintByActionId.
      *
@@ -199,11 +199,11 @@ class CpaProvider extends BaseAvitoProvider
 
     /**
      * Запись звонка (deprecated)
-     * 
+     *
      * __DEPRECATED__
      * __Используйте endpoint [get_record_by_call_id](https://developers.avito.ru/api-catalog/calltracking/documentation#operation/get_record_by_call_id)__
      * Получение записи звонка по идентификатору
-     * 
+     *
      * OperationId: getCall.
      * HTTP: GET /cpa/v1/call/{call_id}.
      *
@@ -225,9 +225,9 @@ class CpaProvider extends BaseAvitoProvider
 
     /**
      * Звонок
-     * 
+     *
      * Получение модели звонка по идентификатору
-     * 
+     *
      * OperationId: getCallByIdV2.
      * HTTP: POST /cpa/v2/callById.
      *
@@ -249,9 +249,9 @@ class CpaProvider extends BaseAvitoProvider
 
     /**
      * Звонки по времени
-     * 
+     *
      * Получение списка звонков по времени создания. Максимальное количество запросов в минуту - 1.
-     * 
+     *
      * OperationId: getCallsByTimeV2.
      * HTTP: POST /cpa/v2/callsByTime.
      *
@@ -273,9 +273,9 @@ class CpaProvider extends BaseAvitoProvider
 
     /**
      * Информация по номерам телефонов из целевых чатов
-     * 
+     *
      * Получение информации по номерам телефонов из целевых чатов Максимальное количество запросов в минуту - 5.
-     * 
+     *
      * OperationId: phonesInfoFromChats.
      * HTTP: POST /cpa/v1/phonesInfoFromChats.
      *
@@ -297,9 +297,9 @@ class CpaProvider extends BaseAvitoProvider
 
     /**
      * Создание жалобы для звонков
-     * 
+     *
      * Создание жалобы на звонок по идентификатору. Максимальное количество запросов в минуту - 1.
-     * 
+     *
      * OperationId: postCreateComplaint.
      * HTTP: POST /cpa/v1/createComplaint.
      *

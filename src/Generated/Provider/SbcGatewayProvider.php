@@ -29,9 +29,9 @@ class SbcGatewayProvider extends BaseAvitoProvider
 
     /**
      * Получение информации об объявлениях
-     * 
+     *
      * Позволяет проверить доступность услуги по каждому из переданных объявлений
-     * 
+     *
      * OperationId: openApiAvailable.
      * HTTP: POST /special-offers/v1/available.
      *
@@ -53,9 +53,9 @@ class SbcGatewayProvider extends BaseAvitoProvider
 
     /**
      * Отправка и оплата рассылки
-     * 
+     *
      * Подтверждение отправки рассылки и ее оплата (из кошелька Авито)
-     * 
+     *
      * OperationId: openApiMultiConfirm.
      * HTTP: POST /special-offers/v1/multiConfirm.
      *
@@ -77,9 +77,9 @@ class SbcGatewayProvider extends BaseAvitoProvider
 
     /**
      * Создание рассылки
-     * 
+     *
      * Создание рассылки по нескольким объявлениям, c фиксацией аудитории для рассылки
-     * 
+     *
      * OperationId: openApiMultiCreate.
      * HTTP: POST /special-offers/v1/multiCreate.
      *
@@ -101,9 +101,9 @@ class SbcGatewayProvider extends BaseAvitoProvider
 
     /**
      * Получение статистики
-     * 
+     *
      * Статистика по отправленным рассылкам за период
-     * 
+     *
      * OperationId: openApiStats.
      * HTTP: POST /special-offers/v1/stats.
      *
@@ -125,9 +125,9 @@ class SbcGatewayProvider extends BaseAvitoProvider
 
     /**
      * Получение информации о тарифе
-     * 
+     *
      * Узнать сколько осталось рассылок в тарифе (если активного тарифа нет, придет пустой ответ)
-     * 
+     *
      * OperationId: openApiTariffInfo.
      * HTTP: POST /special-offers/v1/tariffInfo.
      *

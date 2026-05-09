@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Response\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /job/v1/applications/set_is_viewed.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsSetIsViewed
  */
 class ApplicationsSetIsViewedResponse extends AbstractResponse

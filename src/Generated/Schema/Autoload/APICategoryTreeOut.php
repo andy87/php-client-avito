@@ -17,8 +17,8 @@ class APICategoryTreeOut extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['categories' => [APICategoryNode::class]];
+    protected const CASTS = ['categories' => [\Andy87\ClientsAvito\Generated\Schema\Autoload\APICategoryNode::class]];
 
-    /** @var array<int, APICategoryNode> Schema field categories */
+    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\APICategoryNode> Schema field categories */
     public array $categories;
 }

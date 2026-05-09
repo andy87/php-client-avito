@@ -8,9 +8,9 @@ use Andy87\ClientsAvito\Generated\Response\CreateReviewAnswerV1Response as BaseC
 
 /**
  * Ответ Avito API [POST] /ratings/v1/answers.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/createReviewAnswerV1
- * 
+ *
  * @property int $createdAt Timestamp создания ответа
  * @property int $id ID ответа
  */

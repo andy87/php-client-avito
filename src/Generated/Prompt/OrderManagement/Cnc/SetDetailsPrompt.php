@@ -8,10 +8,9 @@ use Andy87\ClientsAvito\Generated\Prompt\CncSetDetailsPrompt as BaseCncSetDetail
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/order/cncSetDetails.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/cncSetDetails
- * 
- * @property string $Authorization Токен для авторизации
+ *
  * @property string|null $address Адрес получения товара
  * @property int $bookingPeriod Сроки бронирования товара
  * @property string|null $details Комментарий, который получит покупатель

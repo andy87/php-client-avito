@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/v1/cancelParcel.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/v1CancelParcel
  */
 class V1CancelParcelPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class V1CancelParcelPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['options' => 'options', 'parcelID' => 'parcelID'];
 
@@ -33,7 +35,11 @@ class V1CancelParcelPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['options', 'parcelID'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CancelSandboxParcelOptions|null Body field options */
     public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CancelSandboxParcelOptions $options = null;

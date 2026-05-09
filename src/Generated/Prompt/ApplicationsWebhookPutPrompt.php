@@ -8,7 +8,7 @@ use Andy87\ClientsBase\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [PUT] /job/v1/applications/webhook.
- * 
+ *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/applicationsWebhookPut
  */
 class ApplicationsWebhookPutPrompt extends AbstractPrompt
@@ -20,6 +20,8 @@ class ApplicationsWebhookPutPrompt extends AbstractPrompt
     protected const CONTENT_TYPE = 'application/json';
 
     protected const AUTHORIZATION_REQUIRED = true;
+
+    protected const QUERY_PARAMETER_STYLES = [];
 
     protected const FIELD_MAP = ['secret' => 'secret', 'url' => 'url'];
 
@@ -33,7 +35,11 @@ class ApplicationsWebhookPutPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
+    protected const HEADER_FIELDS = [];
+
     protected const BODY_FIELDS = ['secret', 'url'];
+
+    protected const BODY_ROOT_FIELD = null;
 
     /** @var string сгенерированный ключ */
     public string $secret;
