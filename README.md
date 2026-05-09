@@ -96,6 +96,22 @@ $client = new ApiClientAvito([
 ]);
 ```
 
+If you need to compose the API URL from parts, use `protocol`, `host` and `prefix`. An explicit `baseUrl` still has priority:
+
+```php
+<?php
+
+use Andy87\ClientsAvito\ApiClientAvito;
+
+$client = new ApiClientAvito([
+    'clientId' => 'your-client-id',
+    'clientSecret' => 'your-client-secret',
+    'protocol' => 'https',
+    'host' => 'api.avito.ru',
+    'prefix' => 'openapi',
+]);
+```
+
 You can also use environment variables:
 
 ```php
@@ -242,6 +258,91 @@ $client = new ApiClientAvito($config, [
 Header names are merged case-insensitively. The request starts with `Accept: application/json`, then client headers are applied, then authorization headers are applied. Authorization headers override default client headers, and `EVENT_BEFORE_REQUEST` listeners can mutate the final `HttpRequest` before it is sent.
 
 HTTP responses with status `400` or higher are still converted into response DTOs and dispatch `EVENT_AFTER_REQUEST`. `EVENT_REQUEST_EXCEPTION` is only for thrown exceptions.
+
+## Authorization and Diagnostics Options
+
+`ClientCredentialsAuthorizationStrategy` refreshes the token and retries the original API request once after `401` by default. You can override or disable refresh statuses:
+
+```php
+<?php
+
+use Andy87\ClientsAvito\ApiClientAvito;
+
+$client = new ApiClientAvito($config, [
+    ApiClientAvito::REFRESH_AUTHORIZATION_STATUS_CODES => [401],
+]);
+
+$clientWithoutRefreshRetry = new ApiClientAvito($config, [
+    ApiClientAvito::REFRESH_AUTHORIZATION_STATUS_CODES => [],
+]);
+```
+
+Use `authorizationResolver` when a generated prompt needs a different auth strategy:
+
+```php
+<?php
+
+use Andy87\ClientsAvito\ApiClientAvito;
+use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+use Andy87\ClientsBase\Auth\ApiKeyAuthorizationStrategy;
+use Andy87\ClientsBase\Auth\PromptClassAuthorizationStrategyResolver;
+
+$client = new ApiClientAvito($config, [
+    ApiClientAvito::AUTHORIZATION_RESOLVER => new PromptClassAuthorizationStrategyResolver([
+        GetUserInfoSelfPrompt::class => new ApiKeyAuthorizationStrategy('X-Api-Key', 'secret'),
+    ]),
+]);
+```
+
+Enable `TraceableTransport` with `traceableTransport => true` to inspect requests and responses:
+
+```php
+<?php
+
+use Andy87\ClientsAvito\ApiClientAvito;
+use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+
+$client = new ApiClientAvito($config, [
+    ApiClientAvito::TRACEABLE_TRANSPORT => true,
+]);
+
+$response = $client->user->getUserInfoSelf(new GetUserInfoSelfPrompt());
+$lastRecord = $client->getTraceableTransport()?->getLastRecord();
+```
+
+## Mock Testing
+
+Generated prompts can be mocked by class through `andy87/clients-sdk`. This keeps tests independent from generated URL grouping:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Andy87\ClientsAvito\ApiClientAvito;
+use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+use Andy87\ClientsBase\Auth\NullAuthorizationStrategy;
+use Andy87\ClientsBase\Mock\MockTransport;
+use Andy87\ClientsBase\Mock\PromptClassMockResponseResolver;
+
+$resolver = (new PromptClassMockResponseResolver())
+    ->addJson(GetUserInfoSelfPrompt::class, [
+        'id' => 123,
+        'name' => 'Mock User',
+    ]);
+
+$client = new ApiClientAvito(
+    [
+        'clientId' => 'test-client-id',
+        'clientSecret' => 'test-client-secret',
+        'baseUrl' => 'https://api.avito.test',
+    ],
+    new MockTransport($resolver),
+    new NullAuthorizationStrategy(),
+);
+
+$response = $client->user->getUserInfoSelf(new GetUserInfoSelfPrompt());
+```
 
 ## Providers and Generated API
 

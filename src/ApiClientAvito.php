@@ -6,11 +6,13 @@ namespace Andy87\ClientsAvito;
 
 use Andy87\ClientsBase\Auth\ClientCredentialsAuthorizationStrategy;
 use Andy87\ClientsBase\Config\ClientOptions;
+use Andy87\ClientsBase\Contracts\AuthorizationStrategyResolverInterface;
 use Andy87\ClientsBase\Contracts\AuthorizationStrategyInterface;
 use Andy87\ClientsBase\Contracts\HttpTransportInterface;
 use Andy87\ClientsBase\Event\AfterInitEvent;
 use Andy87\ClientsBase\Event\ClientEvents;
 use Andy87\ClientsBase\Http\NativeHttpTransport;
+use Andy87\ClientsBase\Http\TraceableTransport;
 use Andy87\ClientsBase\Runtime\ClientRuntime;
 use Andy87\ClientsAvito\Generated\ProviderRegistry;
 
@@ -45,6 +47,9 @@ class ApiClientAvito
 {
     public const EVENTS = 'events';
     public const HEADERS = 'headers';
+    public const AUTHORIZATION_RESOLVER = 'authorizationResolver';
+    public const REFRESH_AUTHORIZATION_STATUS_CODES = 'refreshAuthorizationStatusCodes';
+    public const TRACEABLE_TRANSPORT = 'traceableTransport';
 
     public const EVENT_AFTER_INIT = ClientEvents::AFTER_INIT;
     public const EVENT_BEFORE_REQUEST = ClientEvents::BEFORE_REQUEST;
@@ -106,8 +111,8 @@ class ApiClientAvito
             headers: $this->options->headers,
             events: $this->options->events,
         );
-        $this->baseUrl = $config->baseUrl;
-        $this->transport = $transport ?? new NativeHttpTransport();
+        $this->baseUrl = $config->getBaseUrl();
+        $this->transport = $this->createTransport($transport ?? new NativeHttpTransport(), $options);
         $this->authorizationStrategy = $authorizationStrategy ?? new ClientCredentialsAuthorizationStrategy(
             tokenUrl: $config->tokenUrl,
             clientId: $config->clientId,
@@ -244,6 +249,26 @@ class ApiClientAvito
     }
 
     /**
+     * Возвращает HTTP-транспорт клиента.
+     *
+     * @return HttpTransportInterface HTTP-транспорт.
+     */
+    public function getTransport(): HttpTransportInterface
+    {
+        return $this->transport;
+    }
+
+    /**
+     * Возвращает диагностический transport-wrapper, если он включён.
+     *
+     * @return TraceableTransport|null Traceable transport или null.
+     */
+    public function getTraceableTransport(): ?TraceableTransport
+    {
+        return $this->transport instanceof TraceableTransport ? $this->transport : null;
+    }
+
+    /**
      * Создаёт настройки выполнения запросов из ClientOptions или массива options.
      *
      * @param array<string, mixed>|ClientOptions $options Options клиента.
@@ -263,7 +288,30 @@ class ApiClientAvito
             timeout: (int) ($options['timeout'] ?? $timeout),
             headers: $this->getOptionArray($options, self::HEADERS),
             events: $this->getOptionArray($options, self::EVENTS),
+            authorizationResolver: $this->getAuthorizationResolverOption($options),
+            refreshAuthorizationStatusCodes: $this->getRefreshStatusCodesOption($options),
         );
+    }
+
+    /**
+     * Создаёт HTTP-транспорт с опциональной диагностической обёрткой.
+     *
+     * @param HttpTransportInterface $transport Исходный HTTP-транспорт.
+     * @param array<string, mixed>|ClientOptions $options Options клиента.
+     *
+     * @return HttpTransportInterface HTTP-транспорт.
+     */
+    private function createTransport(HttpTransportInterface $transport, array|ClientOptions $options): HttpTransportInterface
+    {
+        if ($transport instanceof TraceableTransport) {
+            return $transport;
+        }
+
+        if (is_array($options) && ($options[self::TRACEABLE_TRANSPORT] ?? false) === true) {
+            return new TraceableTransport($transport);
+        }
+
+        return $transport;
     }
 
     /**
@@ -285,5 +333,55 @@ class ApiClientAvito
         }
 
         return $value;
+    }
+
+    /**
+     * Возвращает resolver стратегии авторизации из options.
+     *
+     * @param array<string, mixed> $options Options клиента.
+     *
+     * @return AuthorizationStrategyResolverInterface|null Resolver стратегии авторизации.
+     *
+     * @throws \InvalidArgumentException Если option имеет некорректный тип.
+     */
+    private function getAuthorizationResolverOption(array $options): ?AuthorizationStrategyResolverInterface
+    {
+        $resolver = $options[self::AUTHORIZATION_RESOLVER] ?? null;
+
+        if ($resolver === null || $resolver instanceof AuthorizationStrategyResolverInterface) {
+            return $resolver;
+        }
+
+        throw new \InvalidArgumentException(sprintf(
+            'Option "%s" must be an instance of %s.',
+            self::AUTHORIZATION_RESOLVER,
+            AuthorizationStrategyResolverInterface::class,
+        ));
+    }
+
+    /**
+     * Возвращает HTTP-статусы для refresh authorization retry.
+     *
+     * @param array<string, mixed> $options Options клиента.
+     *
+     * @return list<int> HTTP-статусы.
+     *
+     * @throws \InvalidArgumentException Если option имеет некорректный тип.
+     */
+    private function getRefreshStatusCodesOption(array $options): array
+    {
+        $statusCodes = $options[self::REFRESH_AUTHORIZATION_STATUS_CODES] ?? [401];
+
+        if (!is_array($statusCodes)) {
+            throw new \InvalidArgumentException(sprintf('Option "%s" must be an array.', self::REFRESH_AUTHORIZATION_STATUS_CODES));
+        }
+
+        return array_map(static function (mixed $statusCode): int {
+            if (!is_int($statusCode) && !(is_string($statusCode) && ctype_digit($statusCode))) {
+                throw new \InvalidArgumentException('Refresh authorization status code must be an integer.');
+            }
+
+            return (int) $statusCode;
+        }, array_values($statusCodes));
     }
 }

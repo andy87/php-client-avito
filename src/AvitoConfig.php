@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Andy87\ClientsAvito;
 
+use Andy87\ClientsBase\Config\BaseUrl;
+
 /**
  * Хранит настройки подключения к Avito API.
  */
 class AvitoConfig
 {
+    public const DEFAULT_BASE_URL = 'https://api.avito.ru';
+    public const DEFAULT_TOKEN_URL = 'https://api.avito.ru/token';
+
     /**
      * Создаёт конфигурацию Avito API.
      *
@@ -17,16 +22,45 @@ class AvitoConfig
      * @param string $baseUrl Базовый URL API.
      * @param string $tokenUrl URL получения access token.
      * @param int $timeout Таймаут HTTP-запросов.
+     * @param string|null $protocol HTTP-протокол для сборки base URL.
+     * @param string|null $host Хост API для сборки base URL.
+     * @param string|null $prefix Prefix пути API для сборки base URL.
+     * @param int|null $port Порт API для сборки base URL.
      *
      * @return void
      */
     public function __construct(
         public string $clientId,
         public string $clientSecret,
-        public string $baseUrl = 'https://api.avito.ru',
-        public string $tokenUrl = 'https://api.avito.ru/token',
+        public string $baseUrl = self::DEFAULT_BASE_URL,
+        public string $tokenUrl = self::DEFAULT_TOKEN_URL,
         public int $timeout = 30,
+        public ?string $protocol = null,
+        public ?string $host = null,
+        public ?string $prefix = null,
+        public ?int $port = null,
     ) {
+    }
+
+    /**
+     * Возвращает базовый URL API.
+     *
+     * @return string Базовый URL API.
+     *
+     * @throws \InvalidArgumentException Если составные части URL некорректны.
+     */
+    public function getBaseUrl(): string
+    {
+        if ($this->baseUrl !== self::DEFAULT_BASE_URL || $this->host === null) {
+            return $this->baseUrl;
+        }
+
+        return (string) new BaseUrl(
+            host: $this->host,
+            protocol: $this->protocol ?? 'https',
+            prefix: $this->prefix,
+            port: $this->port,
+        );
     }
 
     /**
@@ -54,9 +88,13 @@ class AvitoConfig
         return new self(
             clientId: $clientId,
             clientSecret: $clientSecret,
-            baseUrl: (string) ($data['baseUrl'] ?? $data['base_url'] ?? 'https://api.avito.ru'),
-            tokenUrl: (string) ($data['tokenUrl'] ?? $data['token_url'] ?? 'https://api.avito.ru/token'),
+            baseUrl: (string) ($data['baseUrl'] ?? $data['base_url'] ?? self::DEFAULT_BASE_URL),
+            tokenUrl: (string) ($data['tokenUrl'] ?? $data['token_url'] ?? self::DEFAULT_TOKEN_URL),
             timeout: (int) ($data['timeout'] ?? 30),
+            protocol: isset($data['protocol']) ? (string) $data['protocol'] : null,
+            host: isset($data['host']) ? (string) $data['host'] : null,
+            prefix: isset($data['prefix']) ? (string) $data['prefix'] : null,
+            port: isset($data['port']) ? (int) $data['port'] : null,
         );
     }
 

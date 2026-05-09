@@ -5,13 +5,22 @@ declare(strict_types=1);
 namespace Andy87\ClientsAvito\Tests;
 
 use Andy87\ClientsAvito\ApiClientAvito;
+use Andy87\ClientsAvito\AvitoConfig;
 use Andy87\ClientsAvito\BaseAvitoProvider;
 use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
 use Andy87\ClientsAvito\Generated\Prompt\PostOperationsHistoryPrompt;
 use Andy87\ClientsAvito\Generated\Response\GetUserInfoSelfResponse;
 use Andy87\ClientsAvito\Generated\Response\PostOperationsHistoryResponse;
+use Andy87\ClientsBase\Auth\ApiKeyAuthorizationStrategy;
 use Andy87\ClientsBase\Auth\NullAuthorizationStrategy;
+use Andy87\ClientsBase\Auth\PromptClassAuthorizationStrategyResolver;
+use Andy87\ClientsBase\Http\HttpRequest;
+use Andy87\ClientsBase\Http\HttpResponse;
+use Andy87\ClientsBase\Http\TraceableTransport;
+use Andy87\ClientsBase\Mock\CallbackMockResponseResolver;
+use Andy87\ClientsBase\Mock\MockResponseResolverInterface;
 use Andy87\ClientsBase\Mock\MockTransport;
+use Andy87\ClientsBase\Mock\PromptClassMockResponseResolver;
 use Andy87\ClientsBase\Mock\RouteMockResponseResolver;
 use PHPUnit\Framework\TestCase;
 
@@ -20,6 +29,44 @@ use PHPUnit\Framework\TestCase;
  */
 class ApiClientAvitoSmokeTest extends TestCase
 {
+    /**
+     * Проверяет сборку base URL из protocol, host и prefix.
+     *
+     * @return void
+     */
+    public function testConfigBuildsBaseUrlFromParts(): void
+    {
+        $config = AvitoConfig::fromArray([
+            'clientId' => 'test-client-id',
+            'clientSecret' => 'test-client-secret',
+            'protocol' => 'https',
+            'host' => 'api.avito.test',
+            'prefix' => 'openapi',
+        ]);
+
+        self::assertSame('https://api.avito.test/openapi', $config->getBaseUrl());
+        self::assertSame(AvitoConfig::DEFAULT_BASE_URL, $config->baseUrl);
+    }
+
+    /**
+     * Проверяет, что явный baseUrl имеет приоритет над составными частями URL.
+     *
+     * @return void
+     */
+    public function testExplicitBaseUrlHasPriorityOverBaseUrlParts(): void
+    {
+        $config = AvitoConfig::fromArray([
+            'clientId' => 'test-client-id',
+            'clientSecret' => 'test-client-secret',
+            'baseUrl' => 'https://explicit.avito.test',
+            'protocol' => 'https',
+            'host' => 'api.avito.test',
+            'prefix' => 'openapi',
+        ]);
+
+        self::assertSame('https://explicit.avito.test', $config->getBaseUrl());
+    }
+
     /**
      * Проверяет создание клиента и ленивую инициализацию всех provider-разделов.
      *
@@ -79,6 +126,158 @@ class ApiClientAvitoSmokeTest extends TestCase
         self::assertSame('Test User', $response->name);
         self::assertSame('/core/v1/accounts/self', $response->getRequest()?->metadata['endpoint'] ?? null);
         self::assertNull($response->getRequest()?->body);
+    }
+
+    /**
+     * Проверяет mock-ответ по классу generated Prompt DTO без привязки fixture к URL.
+     *
+     * @return void
+     */
+    public function testGetUserInfoSelfCanBeMockedByPromptClass(): void
+    {
+        $resolver = (new PromptClassMockResponseResolver())->addJson(
+            GetUserInfoSelfPrompt::class,
+            [
+                'id' => 321,
+                'name' => 'Prompt Class User',
+                'email' => 'prompt@example.com',
+                'phone' => '+79991112233',
+                'phones' => ['+79991112233'],
+                'profile_url' => 'https://www.avito.ru/user/prompt',
+            ],
+        );
+        $client = $this->createClient($resolver);
+
+        $response = $client->user->getUserInfoSelf(new GetUserInfoSelfPrompt());
+
+        self::assertInstanceOf(GetUserInfoSelfResponse::class, $response);
+        self::assertFalse($response->hasError());
+        self::assertSame(321, $response->id);
+        self::assertSame('Prompt Class User', $response->name);
+        self::assertSame('1', $response->getHeaders()['X-Mock-Response']);
+    }
+
+    /**
+     * Проверяет, что 401 обновляет OAuth token и повторяет API-запрос один раз.
+     *
+     * @return void
+     */
+    public function testUnauthorizedResponseRefreshesTokenAndRetriesOnce(): void
+    {
+        $tokenCalls = 0;
+        $apiCalls = 0;
+        $resolver = new CallbackMockResponseResolver(static function (HttpRequest $request) use (&$tokenCalls, &$apiCalls): ?HttpResponse {
+            if ($request->method === 'POST' && $request->url === 'https://auth.avito.test/token') {
+                ++$tokenCalls;
+
+                return new HttpResponse(200, ['Content-Type' => 'application/json'], sprintf(
+                    '{"access_token":"token-%d","expires_in":3600}',
+                    $tokenCalls,
+                ));
+            }
+
+            if ($request->method === 'GET' && $request->url === 'https://api.avito.test/core/v1/accounts/self') {
+                ++$apiCalls;
+
+                if ($apiCalls === 1) {
+                    return new HttpResponse(401, ['Content-Type' => 'application/json'], '{"error":{"message":"expired"}}');
+                }
+
+                return new HttpResponse(200, ['Content-Type' => 'application/json'], '{"id":777,"name":"Retried"}');
+            }
+
+            return null;
+        });
+        $client = new ApiClientAvito(
+            [
+                'clientId' => 'test-client-id',
+                'clientSecret' => 'test-client-secret',
+                'baseUrl' => 'https://api.avito.test',
+                'tokenUrl' => 'https://auth.avito.test/token',
+            ],
+            new MockTransport($resolver),
+            null,
+            [
+                ApiClientAvito::TRACEABLE_TRANSPORT => true,
+            ],
+        );
+
+        $response = $client->user->getUserInfoSelf(new GetUserInfoSelfPrompt());
+
+        self::assertFalse($response->hasError());
+        self::assertSame(777, $response->id);
+        self::assertSame(2, $tokenCalls);
+        self::assertSame(2, $apiCalls);
+        self::assertTrue($response->getRequest()?->metadata['authorizationRefreshed'] ?? false);
+        self::assertCount(4, $client->getTraceableTransport()?->getRecords() ?? []);
+    }
+
+    /**
+     * Проверяет, что authorizationResolver может переопределить auth для generated Prompt DTO.
+     *
+     * @return void
+     */
+    public function testAuthorizationResolverCanOverrideGeneratedPromptAuthorization(): void
+    {
+        $authorizationHeader = null;
+        $resolver = new CallbackMockResponseResolver(static function (HttpRequest $request) use (&$authorizationHeader): ?HttpResponse {
+            $authorizationHeader = $request->headers['X-Api-Key'] ?? null;
+
+            return new HttpResponse(200, ['Content-Type' => 'application/json'], '{"id":123,"name":"Resolver"}');
+        });
+        $client = new ApiClientAvito(
+            [
+                'clientId' => 'test-client-id',
+                'clientSecret' => 'test-client-secret',
+                'baseUrl' => 'https://api.avito.test',
+            ],
+            new MockTransport($resolver),
+            new NullAuthorizationStrategy(),
+            [
+                ApiClientAvito::AUTHORIZATION_RESOLVER => new PromptClassAuthorizationStrategyResolver([
+                    GetUserInfoSelfPrompt::class => new ApiKeyAuthorizationStrategy('X-Api-Key', 'prompt-secret'),
+                ]),
+            ],
+        );
+
+        $response = $client->user->getUserInfoSelf(new GetUserInfoSelfPrompt());
+
+        self::assertFalse($response->hasError());
+        self::assertSame('prompt-secret', $authorizationHeader);
+    }
+
+    /**
+     * Проверяет opt-in TraceableTransport и защиту от повторной обёртки.
+     *
+     * @return void
+     */
+    public function testTraceableTransportOptionRecordsRequestsAndDoesNotDoubleWrap(): void
+    {
+        $resolver = (new PromptClassMockResponseResolver())->addJson(
+            GetUserInfoSelfPrompt::class,
+            ['id' => 123, 'name' => 'Trace'],
+        );
+        $traceableTransport = new TraceableTransport(new MockTransport($resolver));
+        $client = new ApiClientAvito(
+            [
+                'clientId' => 'test-client-id',
+                'clientSecret' => 'test-client-secret',
+                'baseUrl' => 'https://api.avito.test',
+            ],
+            $traceableTransport,
+            new NullAuthorizationStrategy(),
+            [
+                ApiClientAvito::TRACEABLE_TRANSPORT => true,
+            ],
+        );
+
+        $response = $client->user->getUserInfoSelf(new GetUserInfoSelfPrompt());
+
+        self::assertSame($traceableTransport, $client->getTransport());
+        self::assertSame($traceableTransport, $client->getTraceableTransport());
+        self::assertFalse($response->hasError());
+        self::assertCount(1, $traceableTransport->getRecords());
+        self::assertSame(200, $traceableTransport->getLastRecord()?->response?->statusCode);
     }
 
     /**
@@ -181,11 +380,11 @@ class ApiClientAvitoSmokeTest extends TestCase
     /**
      * Создаёт Avito-клиент с mock transport без реальных HTTP-запросов.
      *
-     * @param RouteMockResponseResolver $resolver Resolver mock-ответов.
+     * @param MockResponseResolverInterface $resolver Resolver mock-ответов.
      *
      * @return ApiClientAvito Клиент Avito API.
      */
-    private function createClient(RouteMockResponseResolver $resolver): ApiClientAvito
+    private function createClient(MockResponseResolverInterface $resolver): ApiClientAvito
     {
         return new ApiClientAvito(
             [
