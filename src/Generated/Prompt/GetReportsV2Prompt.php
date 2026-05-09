@@ -19,7 +19,7 @@ class GetReportsV2Prompt extends AbstractPrompt
 
     protected const CONTENT_TYPE = null;
 
-    protected const AUTHORIZATION_REQUIRED = false;
+    protected const AUTHORIZATION_REQUIRED = true;
 
     protected const QUERY_PARAMETER_STYLES = ['per_page' => ['style' => 'form', 'explode' => true], 'page' => ['style' => 'form', 'explode' => true], 'date_from' => ['style' => 'form', 'explode' => true], 'date_to' => ['style' => 'form', 'explode' => true]];
 

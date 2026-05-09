@@ -19,7 +19,7 @@ class GetLastCompletedReportPrompt extends AbstractPrompt
 
     protected const CONTENT_TYPE = null;
 
-    protected const AUTHORIZATION_REQUIRED = false;
+    protected const AUTHORIZATION_REQUIRED = true;
 
     protected const QUERY_PARAMETER_STYLES = [];
 
