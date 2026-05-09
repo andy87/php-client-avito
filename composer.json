@@ -13,21 +13,9 @@
       "Andy87\\ClientsAvito\\Tests\\": "tests/"
     }
   },
-  "repositories": [
-    {
-      "type": "path",
-      "url": "../clients-sdk",
-      "options": {
-        "symlink": true,
-        "versions": {
-          "andy87/clients-sdk": "0.3.0"
-        }
-      }
-    }
-  ],
   "require": {
     "php": ">=8.1",
-    "andy87/clients-sdk": "^0.3"
+    "andy87/clients-sdk": "^0.3.1"
   },
   "require-dev": {
     "phpstan/phpstan": "^1.12",
