@@ -23,9 +23,9 @@ class ItemStatsShallowPrompt extends AbstractPrompt
 
     protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const FIELD_MAP = ['user_id' => 'user_id', 'Content_Type' => 'Content-Type', 'dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'fields' => 'fields', 'itemIds' => 'itemIds', 'periodGrouping' => 'periodGrouping'];
+    protected const FIELD_MAP = ['user_id' => 'user_id', 'dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'fields' => 'fields', 'itemIds' => 'itemIds', 'periodGrouping' => 'periodGrouping'];
 
-    protected const REQUIRED_FIELDS = ['user_id', 'Content_Type', 'dateFrom', 'dateTo', 'itemIds'];
+    protected const REQUIRED_FIELDS = ['user_id', 'dateFrom', 'dateTo', 'itemIds'];
 
     protected const NULLABLE_FIELDS = [];
 
@@ -35,7 +35,7 @@ class ItemStatsShallowPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
-    protected const HEADER_FIELDS = ['Content_Type'];
+    protected const HEADER_FIELDS = [];
 
     protected const BODY_FIELDS = ['dateFrom', 'dateTo', 'fields', 'itemIds', 'periodGrouping'];
 
@@ -43,9 +43,6 @@ class ItemStatsShallowPrompt extends AbstractPrompt
 
     /** @var int Идентификатор пользователя (клиента) */
     public int $user_id;
-
-    /** @var string Тип данных запроса */
-    public string $Content_Type;
 
     /** @var \Andy87\ClientsAvito\Generated\Schema\Item\StatisticsDateFrom Body field dateFrom */
     public \Andy87\ClientsAvito\Generated\Schema\Item\StatisticsDateFrom $dateFrom;

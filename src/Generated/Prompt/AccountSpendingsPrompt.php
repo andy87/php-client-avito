@@ -23,9 +23,9 @@ class AccountSpendingsPrompt extends AbstractPrompt
 
     protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const FIELD_MAP = ['user_id' => 'user_id', 'Content_Type' => 'Content-Type', 'dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'filter' => 'filter', 'grouping' => 'grouping', 'spendingTypes' => 'spendingTypes'];
+    protected const FIELD_MAP = ['user_id' => 'user_id', 'dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'filter' => 'filter', 'grouping' => 'grouping', 'spendingTypes' => 'spendingTypes'];
 
-    protected const REQUIRED_FIELDS = ['user_id', 'Content_Type', 'dateFrom', 'dateTo', 'grouping', 'spendingTypes'];
+    protected const REQUIRED_FIELDS = ['user_id', 'dateFrom', 'dateTo', 'grouping', 'spendingTypes'];
 
     protected const NULLABLE_FIELDS = ['filter'];
 
@@ -35,7 +35,7 @@ class AccountSpendingsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
-    protected const HEADER_FIELDS = ['Content_Type'];
+    protected const HEADER_FIELDS = [];
 
     protected const BODY_FIELDS = ['dateFrom', 'dateTo', 'filter', 'grouping', 'spendingTypes'];
 
@@ -43,9 +43,6 @@ class AccountSpendingsPrompt extends AbstractPrompt
 
     /** @var int Идентификатор пользователя (клиента) */
     public int $user_id;
-
-    /** @var string Тип данных запроса */
-    public string $Content_Type;
 
     /** @var string Дата начала периода статистики расходов в формате YYYY-MM-DD */
     public string $dateFrom;

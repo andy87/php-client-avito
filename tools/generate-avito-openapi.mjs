@@ -609,6 +609,14 @@ function isManagedAuthorizationHeader(parameter) {
         && String(parameter?.name || '').toLowerCase() === 'authorization';
 }
 
+function isManagedHeader(parameter) {
+    if (String(parameter?.in || '').toLowerCase() !== 'header') {
+        return false;
+    }
+
+    return ['authorization', 'content-type', 'accept'].includes(String(parameter?.name || '').toLowerCase());
+}
+
 function operationHasManagedAuthorizationHeader(spec, operation) {
     return (operation.parameters || [])
         .map((parameter) => normalizeParameter(spec, parameter))
@@ -629,6 +637,10 @@ function operationRequiresAuthorization(spec, operation) {
 
 function normalizedIdentifier(value) {
     return String(value).replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+}
+
+function cleanOpenApiPath(path) {
+    return String(path).replace(/\p{C}/gu, '');
 }
 
 function pathPlaceholderName(endpoint, parameterName) {
@@ -724,7 +736,7 @@ function buildPrompt(spec, op, meta) {
     for (const parameter of op.parameters || []) {
         const p = normalizeParameter(spec, parameter);
 
-        if (isManagedAuthorizationHeader(p)) {
+        if (isManagedHeader(p)) {
             continue;
         }
 
@@ -1250,13 +1262,15 @@ async function main() {
         }
 
         for (const [path, methods] of Object.entries(spec.paths || {})) {
+            const cleanPath = cleanOpenApiPath(path);
+
             for (const [httpMethod, op] of Object.entries(methods)) {
                 if (!httpMethods.has(httpMethod)) {
                     continue;
                 }
 
-                const operationId = op.operationId || fallbackOperationId(httpMethod, path);
-                const methodName = uniqueMethod(operationId, api.slug, path);
+                const operationId = op.operationId || fallbackOperationId(httpMethod, cleanPath);
+                const methodName = uniqueMethod(operationId, api.slug, cleanPath);
                 const classSuffix = methodName === operationId ? operationId : methodName;
                 const promptClass = uniqueClass(`${pascal(classSuffix)}Prompt`);
                 const responseClass = uniqueClass(`${pascal(classSuffix)}Response`);
@@ -1277,7 +1291,7 @@ async function main() {
                     sourceOperationId: op.operationId || null,
                     methodName,
                     httpMethod,
-                    path,
+                    path: cleanPath,
                     promptClass,
                     responseClass,
                     nestedPromptClass: `${nestedClassBase}Prompt`,

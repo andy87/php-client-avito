@@ -7,7 +7,7 @@ namespace Andy87\ClientsAvito\Generated\Prompt\Auth\Access;
 use Andy87\ClientsAvito\Generated\Prompt\GetAccessTokenAuthorizationCodePrompt as BaseGetAccessTokenAuthorizationCodePrompt;
 
 /**
- * Класс данных запроса Avito API [POST] /token‎.
+ * Класс данных запроса Avito API [POST] /token.
  *
  * @documentation https://developers.avito.ru/api-catalog/auth/documentation#operation/getAccessTokenAuthorizationCode
  *

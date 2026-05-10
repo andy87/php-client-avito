@@ -7,7 +7,7 @@ namespace Andy87\ClientsAvito\Generated\Prompt;
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
 /**
- * Класс данных запроса Avito API [POST] /token‎.
+ * Класс данных запроса Avito API [POST] /token.
  *
  * @documentation https://developers.avito.ru/api-catalog/auth/documentation#operation/getAccessTokenAuthorizationCode
  */
@@ -15,7 +15,7 @@ class GetAccessTokenAuthorizationCodePrompt extends AbstractPrompt
 {
     protected const METHOD = 'POST';
 
-    protected const ENDPOINT = '/token‎';
+    protected const ENDPOINT = '/token';
 
     protected const CONTENT_TYPE = 'application/x-www-form-urlencoded';
 

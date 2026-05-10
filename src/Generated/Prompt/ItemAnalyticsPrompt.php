@@ -23,9 +23,9 @@ class ItemAnalyticsPrompt extends AbstractPrompt
 
     protected const QUERY_PARAMETER_STYLES = [];
 
-    protected const FIELD_MAP = ['user_id' => 'user_id', 'Content_Type' => 'Content-Type', 'dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'filter' => 'filter', 'grouping' => 'grouping', 'limit' => 'limit', 'metrics' => 'metrics', 'offset' => 'offset', 'sort' => 'sort'];
+    protected const FIELD_MAP = ['user_id' => 'user_id', 'dateFrom' => 'dateFrom', 'dateTo' => 'dateTo', 'filter' => 'filter', 'grouping' => 'grouping', 'limit' => 'limit', 'metrics' => 'metrics', 'offset' => 'offset', 'sort' => 'sort'];
 
-    protected const REQUIRED_FIELDS = ['user_id', 'Content_Type', 'dateFrom', 'dateTo', 'grouping', 'limit', 'metrics', 'offset'];
+    protected const REQUIRED_FIELDS = ['user_id', 'dateFrom', 'dateTo', 'grouping', 'limit', 'metrics', 'offset'];
 
     protected const NULLABLE_FIELDS = ['filter', 'limit', 'offset', 'sort'];
 
@@ -35,7 +35,7 @@ class ItemAnalyticsPrompt extends AbstractPrompt
 
     protected const QUERY_FIELDS = [];
 
-    protected const HEADER_FIELDS = ['Content_Type'];
+    protected const HEADER_FIELDS = [];
 
     protected const BODY_FIELDS = ['dateFrom', 'dateTo', 'filter', 'grouping', 'limit', 'metrics', 'offset', 'sort'];
 
@@ -43,9 +43,6 @@ class ItemAnalyticsPrompt extends AbstractPrompt
 
     /** @var int Идентификатор пользователя (клиента) */
     public int $user_id;
-
-    /** @var string Тип данных запроса */
-    public string $Content_Type;
 
     /** @var string Дата (в формате YYYY-MM-DD), с которой (включительно) надо получить статистику */
     public string $dateFrom;
