@@ -55,6 +55,10 @@ echo $response->name . PHP_EOL;
 
 `ApiClientAvito` лениво открывает provider-разделы через свойства: `user`, `item`, `messenger`, `autoload`, `deliverySandbox` и другие разделы, сгенерированные из OpenAPI-спецификаций Avito.
 
+## Дополнительная документация
+
+- [Интеграционный сервис](integration-service.md) - framework-agnostic пример `AvitoService`, constructor injection, настройка `ApiClientAvito`, client credentials авторизация и token cache.
+
 ## Работа с prompts
 
 Сгенерированные prompt DTO заполняются через публичные свойства. Сначала создайте объект prompt, затем присвойте значения нужным полям напрямую.
@@ -145,9 +149,30 @@ $config = AvitoConfig::fromEnv(suffix: 'CURIES');
 
 В этом случае будут прочитаны `AVITO_CLIENT_ID_CURIES` и `AVITO_CLIENT_SECRET_CURIES`.
 
+## Зоны ответственности
+
+Пакет берёт на себя технический слой работы с Avito API:
+
+- получение access token для `client_credentials`;
+- добавление заголовка `Authorization: Bearer ...`;
+- кеширование token в памяти PHP-процесса;
+- подключение внешнего token cache через `CacheInterface`;
+- refresh/retry исходного запроса после `401`;
+- замену стратегии авторизации через SDK-интерфейсы.
+
+На стороне приложения обычно остаётся прикладная интеграция:
+
+- хранение `clientId` и `clientSecret` в env, secret manager или конфигурации framework;
+- регистрация `ApiClientAvito` и прикладного сервиса в DI/container;
+- выбор внешнего token cache для production-нагрузки;
+- бизнес-методы поверх generated provider-ов;
+- сценарии `authorization_code`, включая redirect, code, refresh token и хранение пользовательских token-ов.
+
 ## OAuth token
 
-`ApiClientAvito` автоматически использует client credentials для авторизованных generated API-вызовов. Если нужно вызвать token endpoint Avito напрямую, используйте сгенерированный auth provider:
+`ApiClientAvito` автоматически использует client credentials для авторизованных generated API-вызовов. Отдельно вызывать `/token` перед каждым обычным API-запросом не требуется.
+
+Ручной вызов token endpoint полезен для диагностики, проверки реквизитов или специфичных OAuth-сценариев:
 
 ```php
 <?php

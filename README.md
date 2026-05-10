@@ -55,6 +55,10 @@ echo $response->name . PHP_EOL;
 
 `ApiClientAvito` exposes provider sections lazily through properties such as `user`, `item`, `messenger`, `autoload`, `deliverySandbox`, and others generated from the Avito OpenAPI specifications.
 
+## Additional Documentation
+
+- [Integration service example](docs/ru/integration-service.md) - framework-agnostic `AvitoService`, constructor injection, `ApiClientAvito` setup, client credentials authorization, and token cache configuration.
+
 ## Working with Prompts
 
 Generated prompt DTOs are filled through public properties. Create a prompt object first, then assign request values directly to its fields.
@@ -145,9 +149,30 @@ $config = AvitoConfig::fromEnv(suffix: 'CURIES');
 
 This reads `AVITO_CLIENT_ID_CURIES` and `AVITO_CLIENT_SECRET_CURIES`.
 
+## Responsibility Boundaries
+
+The package handles the technical Avito API client layer:
+
+- requesting an access token for `client_credentials`;
+- adding the `Authorization: Bearer ...` header;
+- caching the token in the current PHP process;
+- connecting an external token cache through `CacheInterface`;
+- refreshing authorization and retrying the original request after `401`;
+- replacing the authorization strategy through SDK interfaces.
+
+The application usually owns the integration layer around the client:
+
+- storing `clientId` and `clientSecret` in environment variables, a secret manager, or framework configuration;
+- registering `ApiClientAvito` and an application service in DI/container;
+- choosing an external token cache for production workloads;
+- implementing business methods over generated providers;
+- handling `authorization_code` flows, including redirect, code, refresh token, and per-user token storage.
+
 ## OAuth Token
 
-`ApiClientAvito` uses client credentials automatically for authorized generated API calls. If you need to call the Avito token endpoint explicitly, use the generated auth provider:
+`ApiClientAvito` uses client credentials automatically for authorized generated API calls. You do not need to call `/token` manually before each regular API request.
+
+Manual token endpoint calls are useful for diagnostics, credential checks, or specific OAuth scenarios:
 
 ```php
 <?php
