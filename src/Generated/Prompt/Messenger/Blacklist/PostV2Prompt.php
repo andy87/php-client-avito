@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Messenger\Blacklist;
+namespace php_client_avito\Generated\Prompt\Messenger\Blacklist;
 
-use Andy87\ClientsAvito\Generated\Prompt\PostBlacklistV2Prompt as BasePostBlacklistV2Prompt;
+use php_client_avito\Generated\Prompt\PostBlacklistV2Prompt as BasePostBlacklistV2Prompt;
 
 /**
  * Класс данных запроса Avito API [POST] /messenger/v2/accounts/{user_id}/blacklist.

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,11 +19,11 @@ class GetAutostrategyCampaignsResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['campaigns' => [\Andy87\ClientsAvito\Generated\Schema\Autostrategy\Campaign::class]];
+    protected const CASTS = ['campaigns' => [\php_client_avito\Generated\Schema\Autostrategy\Campaign::class]];
 
-    protected const MODEL = \Andy87\ClientsAvito\Generated\Schema\Autostrategy\Campaigns::class;
+    protected const MODEL = \php_client_avito\Generated\Schema\Autostrategy\Campaigns::class;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autostrategy\Campaign>|null Список кампаний, удовлетворяющих фильтрам, с учетом смещения и ограничения */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autostrategy\Campaign>|null Список кампаний, удовлетворяющих фильтрам, с учетом смещения и ограничения */
     public ?array $campaigns = null;
 
     /** @var int|null Общее количество кампаний, удовлетворяющих фильтрам */

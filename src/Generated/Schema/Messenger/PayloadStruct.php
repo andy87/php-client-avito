@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Messenger;
+namespace php_client_avito\Generated\Schema\Messenger;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito messenger/PayloadStruct.
@@ -17,11 +17,11 @@ class PayloadStruct extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['value' => \Andy87\ClientsAvito\Generated\Schema\Messenger\WebhookMessage::class];
+    protected const CASTS = ['value' => \php_client_avito\Generated\Schema\Messenger\WebhookMessage::class];
 
     /** @var string|null Тип сообщения */
     public ?string $type = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Messenger\WebhookMessage|null Schema field value */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Messenger\WebhookMessage $value = null;
+    /** @var \php_client_avito\Generated\Schema\Messenger\WebhookMessage|null Schema field value */
+    public ?\php_client_avito\Generated\Schema\Messenger\WebhookMessage $value = null;
 }

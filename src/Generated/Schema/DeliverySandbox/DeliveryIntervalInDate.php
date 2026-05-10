@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/DeliveryIntervalInDate.
@@ -17,11 +17,11 @@ class DeliveryIntervalInDate extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['intervals' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryDayTimeIntervals::class];
+    protected const CASTS = ['intervals' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDayTimeIntervals::class];
 
     /** @var string дата доставки/забора */
     public string $date;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryDayTimeIntervals Schema field intervals */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryDayTimeIntervals $intervals;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDayTimeIntervals Schema field intervals */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDayTimeIntervals $intervals;
 }

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Tariff;
+namespace php_client_avito\Generated\Schema\Tariff;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito tariff/TariffInfo.
@@ -17,11 +17,11 @@ class TariffInfo extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['current' => \Andy87\ClientsAvito\Generated\Schema\Tariff\TariffContract::class, 'scheduled' => \Andy87\ClientsAvito\Generated\Schema\Tariff\TariffContract::class];
+    protected const CASTS = ['current' => \php_client_avito\Generated\Schema\Tariff\TariffContract::class, 'scheduled' => \php_client_avito\Generated\Schema\Tariff\TariffContract::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Tariff\TariffContract|null Schema field current */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Tariff\TariffContract $current = null;
+    /** @var \php_client_avito\Generated\Schema\Tariff\TariffContract|null Schema field current */
+    public ?\php_client_avito\Generated\Schema\Tariff\TariffContract $current = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Tariff\TariffContract|null Schema field scheduled */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Tariff\TariffContract $scheduled = null;
+    /** @var \php_client_avito\Generated\Schema\Tariff\TariffContract|null Schema field scheduled */
+    public ?\php_client_avito\Generated\Schema\Tariff\TariffContract $scheduled = null;
 }

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Job\Applications;
+namespace php_client_avito\Generated\Prompt\Job\Applications;
 
-use Andy87\ClientsAvito\Generated\Prompt\ApplicationsGetStatesPrompt as BaseApplicationsGetStatesPrompt;
+use php_client_avito\Generated\Prompt\ApplicationsGetStatesPrompt as BaseApplicationsGetStatesPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /job/v1/applications/get_states.

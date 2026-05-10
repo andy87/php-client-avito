@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Promotion;
+namespace php_client_avito\Generated\Schema\Promotion;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito promotion/OrderBrief.
@@ -17,7 +17,7 @@ class OrderBrief extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['status' => \Andy87\ClientsAvito\Generated\Schema\Promotion\OrderStatus::class];
+    protected const CASTS = ['status' => \php_client_avito\Generated\Schema\Promotion\OrderStatus::class];
 
     /** @var string|null Дата создания заявки */
     public ?string $createdAt = null;
@@ -25,6 +25,6 @@ class OrderBrief extends AbstractSchemaModel
     /** @var string|null Идентификатор заявки */
     public ?string $id = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Promotion\OrderStatus|null Schema field status */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Promotion\OrderStatus $status = null;
+    /** @var \php_client_avito\Generated\Schema\Promotion\OrderStatus|null Schema field status */
+    public ?\php_client_avito\Generated\Schema\Promotion\OrderStatus $status = null;
 }

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Cpa\Post;
+namespace php_client_avito\Generated\Prompt\Cpa\Post;
 
-use Andy87\ClientsAvito\Generated\Prompt\PostCreateComplaintPrompt as BasePostCreateComplaintPrompt;
+use php_client_avito\Generated\Prompt\PostCreateComplaintPrompt as BasePostCreateComplaintPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /cpa/v1/createComplaint.

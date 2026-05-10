@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Autoteka;
+namespace php_client_avito\Generated\Provider\Autoteka;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetTeaserPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\PostTeaserPrompt;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Teaser\GetResponse;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Teaser\PostResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetTeaserPrompt;
+use php_client_avito\Generated\Prompt\PostTeaserPrompt;
+use php_client_avito\Generated\Response\Autoteka\Teaser\GetResponse;
+use php_client_avito\Generated\Response\Autoteka\Teaser\PostResponse;
 
 /**
  * Группа методов "teaser" раздела Avito API "Автотека".

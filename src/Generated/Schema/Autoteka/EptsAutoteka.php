@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Autoteka;
+namespace php_client_avito\Generated\Schema\Autoteka;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/EptsAutoteka.
@@ -17,10 +17,10 @@ class EptsAutoteka extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['data' => \Andy87\ClientsAvito\Generated\Schema\Autoteka\EptsDataAutoteka::class];
+    protected const CASTS = ['data' => \php_client_avito\Generated\Schema\Autoteka\EptsDataAutoteka::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoteka\EptsDataAutoteka|null Schema field data */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Autoteka\EptsDataAutoteka $data = null;
+    /** @var \php_client_avito\Generated\Schema\Autoteka\EptsDataAutoteka|null Schema field data */
+    public ?\php_client_avito\Generated\Schema\Autoteka\EptsDataAutoteka $data = null;
 
     /** @var string Идентификатор запроса ЭПТС, по которому его можно получить */
     public string $requestId;

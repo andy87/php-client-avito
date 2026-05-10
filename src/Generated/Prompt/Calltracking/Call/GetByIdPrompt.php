@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Calltracking\Call;
+namespace php_client_avito\Generated\Prompt\Calltracking\Call;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetCallByIdPrompt as BaseGetCallByIdPrompt;
+use php_client_avito\Generated\Prompt\GetCallByIdPrompt as BaseGetCallByIdPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /calltracking/v1/getCallById/.

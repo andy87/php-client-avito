@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Item\Item;
+namespace php_client_avito\Generated\Prompt\Item\Item;
 
-use Andy87\ClientsAvito\Generated\Prompt\PutItemVasPackageV2Prompt as BasePutItemVasPackageV2Prompt;
+use php_client_avito\Generated\Prompt\PutItemVasPackageV2Prompt as BasePutItemVasPackageV2Prompt;
 
 /**
  * Класс данных запроса Avito API [PUT] /core/v2/accounts/{user_id}/items/{item_id}/vas_packages.

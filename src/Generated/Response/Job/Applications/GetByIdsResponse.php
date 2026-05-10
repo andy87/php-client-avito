@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Job\Applications;
+namespace php_client_avito\Generated\Response\Job\Applications;
 
-use Andy87\ClientsAvito\Generated\Response\ApplicationsGetByIdsResponse as BaseApplicationsGetByIdsResponse;
+use php_client_avito\Generated\Response\ApplicationsGetByIdsResponse as BaseApplicationsGetByIdsResponse;
 
 /**
  * Ответ Avito API [POST] /job/v1/applications/get_by_ids.

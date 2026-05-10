@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Promotion\Services;
+namespace php_client_avito\Generated\Prompt\Promotion\Services;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetServicesByItemsV1Prompt as BaseGetServicesByItemsV1Prompt;
+use php_client_avito\Generated\Prompt\GetServicesByItemsV1Prompt as BaseGetServicesByItemsV1Prompt;
 
 /**
  * Класс данных запроса Avito API [POST] /promotion/v1/items/services/get.

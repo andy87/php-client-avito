@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Autoteka;
+namespace php_client_avito\Generated\Provider\Autoteka;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetAccessTokenPrompt2;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Access\GetTokenResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetAccessTokenPrompt2;
+use php_client_avito\Generated\Response\Autoteka\Access\GetTokenResponse;
 
 /**
  * Группа методов "access" раздела Avito API "Автотека".

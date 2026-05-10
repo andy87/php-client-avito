@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class AddTariffSandboxV2Prompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['directions' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DirectionV2::class], 'tariffZones' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TariffZone::class], 'termsZones' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TermsZone::class]];
+    protected const CASTS = ['directions' => [\php_client_avito\Generated\Schema\DeliverySandbox\DirectionV2::class], 'tariffZones' => [\php_client_avito\Generated\Schema\DeliverySandbox\TariffZone::class], 'termsZones' => [\php_client_avito\Generated\Schema\DeliverySandbox\TermsZone::class]];
 
     protected const PATH_FIELDS = [];
 
@@ -45,7 +45,7 @@ class AddTariffSandboxV2Prompt extends AbstractPrompt
  */
     public string $deliveryProviderTariffId;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DirectionV2> Body field directions */
+    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\DirectionV2> Body field directions */
     public array $directions;
 
     /** @var string Человекопонятное название тарифного плана */
@@ -58,9 +58,9 @@ class AddTariffSandboxV2Prompt extends AbstractPrompt
  */
     public ?string $tariffType = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TariffZone> Body field tariffZones */
+    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\TariffZone> Body field tariffZones */
     public array $tariffZones;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TermsZone> Body field termsZones */
+    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\TermsZone> Body field termsZones */
     public array $termsZones;
 }

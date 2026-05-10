@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Autoteka;
+namespace php_client_avito\Generated\Provider\Autoteka;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetLeadsPrompt;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Leads\GetResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetLeadsPrompt;
+use php_client_avito\Generated\Response\Autoteka\Leads\GetResponse;
 
 /**
  * Группа методов "leads" раздела Avito API "Автотека".

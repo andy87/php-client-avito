@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Job;
+namespace php_client_avito\Generated\Provider\Job;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetDictByIDPrompt;
-use Andy87\ClientsAvito\Generated\Response\Job\Dict\GetByIDResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetDictByIDPrompt;
+use php_client_avito\Generated\Response\Job\Dict\GetByIDResponse;
 
 /**
  * Группа методов "dict" раздела Avito API "Авито.Работа".

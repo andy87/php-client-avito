@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,10 +19,10 @@ class ApplicationsWebhooksGetResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['webhooks' => [\Andy87\ClientsAvito\Generated\Schema\Job\WebhookSubscribeRequestBody::class]];
+    protected const CASTS = ['webhooks' => [\php_client_avito\Generated\Schema\Job\WebhookSubscribeRequestBody::class]];
 
-    protected const MODEL = \Andy87\ClientsAvito\Generated\Schema\Job\WebhooksSubscriptionResultList::class;
+    protected const MODEL = \php_client_avito\Generated\Schema\Job\WebhooksSubscriptionResultList::class;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Job\WebhookSubscribeRequestBody> список вебхуков */
+    /** @var array<int, \php_client_avito\Generated\Schema\Job\WebhookSubscribeRequestBody> список вебхуков */
     public array $webhooks;
 }

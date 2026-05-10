@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Cpxpromo\Auto;
+namespace php_client_avito\Generated\Prompt\Cpxpromo\Auto;
 
-use Andy87\ClientsAvito\Generated\Prompt\SaveAutoBidPrompt as BaseSaveAutoBidPrompt;
+use php_client_avito\Generated\Prompt\SaveAutoBidPrompt as BaseSaveAutoBidPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /cpxpromo/1/setAuto.

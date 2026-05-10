@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Cpxpromo\Bids;
+namespace php_client_avito\Generated\Prompt\Cpxpromo\Bids;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetBidsPrompt as BaseGetBidsPrompt;
+use php_client_avito\Generated\Prompt\GetBidsPrompt as BaseGetBidsPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /cpxpromo/1/getBids/{itemId}.

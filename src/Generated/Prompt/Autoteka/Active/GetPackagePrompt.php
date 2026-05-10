@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Active;
+namespace php_client_avito\Generated\Prompt\Autoteka\Active;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetActivePackagePrompt as BaseGetActivePackagePrompt;
+use php_client_avito\Generated\Prompt\GetActivePackagePrompt as BaseGetActivePackagePrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoteka/v1/packages/active_package.

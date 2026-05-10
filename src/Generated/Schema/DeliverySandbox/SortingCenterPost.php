@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/SortingCenterPost.
@@ -17,10 +17,10 @@ class SortingCenterPost extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['address' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Address::class, 'phones' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryPhones::class, 'restriction' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Restriction::class, 'schedule' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Schedule::class];
+    protected const CASTS = ['address' => \php_client_avito\Generated\Schema\DeliverySandbox\Address::class, 'phones' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryPhones::class, 'restriction' => \php_client_avito\Generated\Schema\DeliverySandbox\Restriction::class, 'schedule' => \php_client_avito\Generated\Schema\DeliverySandbox\Schedule::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Address Schema field address */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Address $address;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\Address Schema field address */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\Address $address;
 
     /** @var string Уникальный идентификатор ХАБа на стороне службы доставки */
     public string $deliveryProviderId;
@@ -31,8 +31,8 @@ class SortingCenterPost extends AbstractSchemaModel
     /** @var string Человекопонятное название ХАБа (будет использоваться в интефейсной части) */
     public string $name;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryPhones Schema field phones */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryPhones $phones;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryPhones Schema field phones */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryPhones $phones;
 
     /** @var array<int, string> Список ссылок на фотографии.
 <br />
@@ -40,9 +40,9 @@ class SortingCenterPost extends AbstractSchemaModel
  */
     public array $photos;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Restriction Schema field restriction */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Restriction $restriction;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\Restriction Schema field restriction */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\Restriction $restriction;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Schedule Schema field schedule */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Schedule $schedule;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\Schedule Schema field schedule */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\Schedule $schedule;
 }

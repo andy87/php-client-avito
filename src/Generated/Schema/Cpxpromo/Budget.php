@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Cpxpromo;
+namespace php_client_avito\Generated\Schema\Cpxpromo;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito cpxpromo/budget.
@@ -17,9 +17,9 @@ class Budget extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['budgets' => [\Andy87\ClientsAvito\Generated\Schema\Cpxpromo\BudgetValue::class]];
+    protected const CASTS = ['budgets' => [\php_client_avito\Generated\Schema\Cpxpromo\BudgetValue::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Cpxpromo\BudgetValue> Schema field budgets */
+    /** @var array<int, \php_client_avito\Generated\Schema\Cpxpromo\BudgetValue> Schema field budgets */
     public array $budgets;
 
     /** @var int Максимальный лимит (в копейках) */

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Cpa;
+namespace php_client_avito\Generated\Provider\Cpa;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\ChatByActionIdPrompt;
-use Andy87\ClientsAvito\Generated\Response\Cpa\Chat\ByActionIdResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\ChatByActionIdPrompt;
+use php_client_avito\Generated\Response\Cpa\Chat\ByActionIdResponse;
 
 /**
  * Группа методов "chat" раздела Avito API "CPA Авито".

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class CreateAnnouncement3PLPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['announcementID' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID::class, 'date' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DateWithTz::class, 'receiver' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AnnouncementDeliveryParticipant::class, 'sender' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AnnouncementDeliveryParticipant::class];
+    protected const CASTS = ['announcementID' => \php_client_avito\Generated\Schema\DeliverySandbox\UUID::class, 'date' => \php_client_avito\Generated\Schema\DeliverySandbox\DateWithTz::class, 'receiver' => \php_client_avito\Generated\Schema\DeliverySandbox\AnnouncementDeliveryParticipant::class, 'sender' => \php_client_avito\Generated\Schema\DeliverySandbox\AnnouncementDeliveryParticipant::class];
 
     protected const PATH_FIELDS = [];
 
@@ -41,8 +41,8 @@ class CreateAnnouncement3PLPrompt extends AbstractPrompt
 
     protected const BODY_ROOT_FIELD = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID Body field announcementID */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID $announcementID;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\UUID Body field announcementID */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\UUID $announcementID;
 
     /** @var string Тип анонса */
     public string $announcementType;
@@ -50,15 +50,15 @@ class CreateAnnouncement3PLPrompt extends AbstractPrompt
     /** @var string Уникальный ШК анонса. Должен быть напечатан на бумажных сопроводительных документах (акте приема передачи). Данный ШК необходимо использовать для установки соответствия принимаемой партии грузомест/посылок с анонсом переданным в электронном виде через инфообмен. */
     public string $barcode;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DateWithTz Дата и время создания анонса в формате RFC 3339 в UTC */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DateWithTz $date;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DateWithTz Дата и время создания анонса в формате RFC 3339 в UTC */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\DateWithTz $date;
 
     /** @var array<int, mixed> Список грузомест */
     public array $packages;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AnnouncementDeliveryParticipant Body field receiver */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AnnouncementDeliveryParticipant $receiver;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\AnnouncementDeliveryParticipant Body field receiver */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\AnnouncementDeliveryParticipant $receiver;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AnnouncementDeliveryParticipant Body field sender */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AnnouncementDeliveryParticipant $sender;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\AnnouncementDeliveryParticipant Body field sender */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\AnnouncementDeliveryParticipant $sender;
 }

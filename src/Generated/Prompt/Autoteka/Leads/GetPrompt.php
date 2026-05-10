@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Leads;
+namespace php_client_avito\Generated\Prompt\Autoteka\Leads;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetLeadsPrompt as BaseGetLeadsPrompt;
+use php_client_avito\Generated\Prompt\GetLeadsPrompt as BaseGetLeadsPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/get-leads/.

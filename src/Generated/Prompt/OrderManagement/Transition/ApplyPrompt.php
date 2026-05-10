@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\OrderManagement\Transition;
+namespace php_client_avito\Generated\Prompt\OrderManagement\Transition;
 
-use Andy87\ClientsAvito\Generated\Prompt\ApplyTransitionPrompt as BaseApplyTransitionPrompt;
+use php_client_avito\Generated\Prompt\ApplyTransitionPrompt as BaseApplyTransitionPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/order/applyTransition.

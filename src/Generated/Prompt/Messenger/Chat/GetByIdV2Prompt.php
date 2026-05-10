@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Messenger\Chat;
+namespace php_client_avito\Generated\Prompt\Messenger\Chat;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetChatByIdV2Prompt as BaseGetChatByIdV2Prompt;
+use php_client_avito\Generated\Prompt\GetChatByIdV2Prompt as BaseGetChatByIdV2Prompt;
 
 /**
  * Класс данных запроса Avito API [GET] /messenger/v2/accounts/{user_id}/chats/{chat_id}.

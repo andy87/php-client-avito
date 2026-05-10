@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Cpa\Chats;
+namespace php_client_avito\Generated\Prompt\Cpa\Chats;
 
-use Andy87\ClientsAvito\Generated\Prompt\ChatsByTimeCpaCpaV2ChatsByTimePrompt as BaseChatsByTimeCpaCpaV2ChatsByTimePrompt;
+use php_client_avito\Generated\Prompt\ChatsByTimeCpaCpaV2ChatsByTimePrompt as BaseChatsByTimeCpaCpaV2ChatsByTimePrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /cpa/v2/chatsByTime.

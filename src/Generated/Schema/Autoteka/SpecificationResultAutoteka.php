@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Autoteka;
+namespace php_client_avito\Generated\Schema\Autoteka;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/SpecificationResultAutoteka.
@@ -17,13 +17,13 @@ class SpecificationResultAutoteka extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['plateNumber', 'vehicleId'];
 
-    protected const CASTS = ['equipment' => \Andy87\ClientsAvito\Generated\Schema\Autoteka\SpecificationEquipmentAutoteka::class, 'normalizedSpecification' => \Andy87\ClientsAvito\Generated\Schema\Autoteka\SpecificationNormalizedSpecificationAutoteka::class];
+    protected const CASTS = ['equipment' => \php_client_avito\Generated\Schema\Autoteka\SpecificationEquipmentAutoteka::class, 'normalizedSpecification' => \php_client_avito\Generated\Schema\Autoteka\SpecificationNormalizedSpecificationAutoteka::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoteka\SpecificationEquipmentAutoteka Schema field equipment */
-    public \Andy87\ClientsAvito\Generated\Schema\Autoteka\SpecificationEquipmentAutoteka $equipment;
+    /** @var \php_client_avito\Generated\Schema\Autoteka\SpecificationEquipmentAutoteka Schema field equipment */
+    public \php_client_avito\Generated\Schema\Autoteka\SpecificationEquipmentAutoteka $equipment;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoteka\SpecificationNormalizedSpecificationAutoteka Schema field normalizedSpecification */
-    public \Andy87\ClientsAvito\Generated\Schema\Autoteka\SpecificationNormalizedSpecificationAutoteka $normalizedSpecification;
+    /** @var \php_client_avito\Generated\Schema\Autoteka\SpecificationNormalizedSpecificationAutoteka Schema field normalizedSpecification */
+    public \php_client_avito\Generated\Schema\Autoteka\SpecificationNormalizedSpecificationAutoteka $normalizedSpecification;
 
     /** @var string|null Регистрационный номер */
     public ?string $plateNumber;

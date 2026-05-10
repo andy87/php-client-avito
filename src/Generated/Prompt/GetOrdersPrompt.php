@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class GetOrdersPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['statuses' => [\Andy87\ClientsAvito\Generated\Schema\OrderManagement\Status::class]];
+    protected const CASTS = ['statuses' => [\php_client_avito\Generated\Schema\OrderManagement\Status::class]];
 
     protected const PATH_FIELDS = [];
 
@@ -45,7 +45,7 @@ class GetOrdersPrompt extends AbstractPrompt
  */
     public ?array $ids = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\OrderManagement\Status>|null Статус, по которому нужно получить заказы.
+    /** @var array<int, \php_client_avito\Generated\Schema\OrderManagement\Status>|null Статус, по которому нужно получить заказы.
 
 - on_confirmation - ожидает подтверждения
 

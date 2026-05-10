@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/Address.
@@ -17,7 +17,7 @@ class Address extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['zipCode' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryZipCode::class];
+    protected const CASTS = ['zipCode' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryZipCode::class];
 
     /** @var string|null Человекочитаемое представление адреса */
     public ?string $addressRow = null;
@@ -72,6 +72,6 @@ class Address extends AbstractSchemaModel
     /** @var string|null Тип субрегиона - муниципальный район/городской округ */
     public ?string $subRegionType = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryZipCode Schema field zipCode */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryZipCode $zipCode;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryZipCode Schema field zipCode */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryZipCode $zipCode;
 }

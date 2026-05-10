@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\RealtyReports;
+namespace php_client_avito\Generated\Provider\RealtyReports;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\CreateReportForClassifiedPrompt;
-use Andy87\ClientsAvito\Generated\Response\RealtyReports\Report\CreateForClassifiedResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\CreateReportForClassifiedPrompt;
+use php_client_avito\Generated\Response\RealtyReports\Report\CreateForClassifiedResponse;
 
 /**
  * Группа методов "report" раздела Avito API "Аналитика по недвижимости".

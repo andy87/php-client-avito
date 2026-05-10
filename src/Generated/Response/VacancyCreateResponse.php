@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -21,7 +21,7 @@ class VacancyCreateResponse extends AbstractResponse
 
     protected const CASTS = [];
 
-    protected const MODEL = \Andy87\ClientsAvito\Generated\Schema\Job\VacancyCreateResult::class;
+    protected const MODEL = \php_client_avito\Generated\Schema\Job\VacancyCreateResult::class;
 
     /** @var string|null Идентификатор добавленной вакансии на сайте. */
     public ?string $id = null;

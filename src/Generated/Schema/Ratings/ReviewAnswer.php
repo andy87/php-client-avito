@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Ratings;
+namespace php_client_avito\Generated\Schema\Ratings;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito ratings/ReviewAnswer.
@@ -17,7 +17,7 @@ class ReviewAnswer extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['reject_reasons' => [\Andy87\ClientsAvito\Generated\Schema\Ratings\RejectReason::class]];
+    protected const CASTS = ['reject_reasons' => [\php_client_avito\Generated\Schema\Ratings\RejectReason::class]];
 
     /** @var int Unix TimeStamp создания ответа */
     public int $createdAt;
@@ -25,7 +25,7 @@ class ReviewAnswer extends AbstractSchemaModel
     /** @var int ID ответа */
     public int $id;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Ratings\RejectReason>|null Список причин отклонения */
+    /** @var array<int, \php_client_avito\Generated\Schema\Ratings\RejectReason>|null Список причин отклонения */
     public ?array $reject_reasons = null;
 
     /** @var string Статус ответа:

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Calltracking;
+namespace php_client_avito\Generated\Schema\Calltracking;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito calltracking/GetCallByIdResponse.
@@ -17,11 +17,11 @@ class GetCallByIdResponse extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['call' => \Andy87\ClientsAvito\Generated\Schema\Calltracking\Call::class, 'error' => \Andy87\ClientsAvito\Generated\Schema\Calltracking\Error::class];
+    protected const CASTS = ['call' => \php_client_avito\Generated\Schema\Calltracking\Call::class, 'error' => \php_client_avito\Generated\Schema\Calltracking\Error::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Calltracking\Call Schema field call */
-    public \Andy87\ClientsAvito\Generated\Schema\Calltracking\Call $call;
+    /** @var \php_client_avito\Generated\Schema\Calltracking\Call Schema field call */
+    public \php_client_avito\Generated\Schema\Calltracking\Call $call;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Calltracking\Error Schema field error */
-    public \Andy87\ClientsAvito\Generated\Schema\Calltracking\Error $error;
+    /** @var \php_client_avito\Generated\Schema\Calltracking\Error Schema field error */
+    public \php_client_avito\Generated\Schema\Calltracking\Error $error;
 }

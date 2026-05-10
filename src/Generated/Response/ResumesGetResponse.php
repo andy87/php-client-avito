@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,13 +19,13 @@ class ResumesGetResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['meta' => \Andy87\ClientsAvito\Generated\Schema\Job\ResumeSearchMeta::class, 'resumes' => [\Andy87\ClientsAvito\Generated\Schema\Job\SimplifiedResume::class]];
+    protected const CASTS = ['meta' => \php_client_avito\Generated\Schema\Job\ResumeSearchMeta::class, 'resumes' => [\php_client_avito\Generated\Schema\Job\SimplifiedResume::class]];
 
     protected const MODEL = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Job\ResumeSearchMeta|null Response field meta */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Job\ResumeSearchMeta $meta = null;
+    /** @var \php_client_avito\Generated\Schema\Job\ResumeSearchMeta|null Response field meta */
+    public ?\php_client_avito\Generated\Schema\Job\ResumeSearchMeta $meta = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Job\SimplifiedResume>|null Response field resumes */
+    /** @var array<int, \php_client_avito\Generated\Schema\Job\SimplifiedResume>|null Response field resumes */
     public ?array $resumes = null;
 }

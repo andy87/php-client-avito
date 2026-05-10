@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/CreateSandboxParcelUserDelivery.
@@ -17,8 +17,8 @@ class CreateSandboxParcelUserDelivery extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['terminal' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelUserDeliveryTerminal::class];
+    protected const CASTS = ['terminal' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelUserDeliveryTerminal::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelUserDeliveryTerminal|null Schema field terminal */
-    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelUserDeliveryTerminal $terminal = null;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelUserDeliveryTerminal|null Schema field terminal */
+    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelUserDeliveryTerminal $terminal = null;
 }

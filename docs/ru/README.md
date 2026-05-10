@@ -17,10 +17,15 @@
 Установите пакет через Composer:
 
 ```bash
-composer require andy87/php-client-avito
+composer require andy87/php-client-avito:^0.5.0
 ```
 
-Имя пакета взято из `composer.json`. Документация не утверждает конкретное состояние публикации пакета в реестрах.
+Релиз `v0.5.0` опубликован на Packagist как `andy87/php-client-avito`.
+
+## Совместимость
+
+Версия `v0.5.0` рассчитана на PHP 8.1 или новее и требует `andy87/php-client-sdk:^0.4.0`.
+Composer устанавливает SDK-зависимость автоматически при установке пакета.
 
 ## Быстрый старт
 
@@ -33,8 +38,8 @@ declare(strict_types=1);
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Andy87\ClientsAvito\ApiClientAvito;
-use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+use php_client_avito\ApiClientAvito;
+use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
 
 $client = new ApiClientAvito([
     'clientId' => 'your-client-id',
@@ -59,7 +64,7 @@ echo $response->name . PHP_EOL;
 ```php
 <?php
 
-use Andy87\ClientsAvito\Generated\Prompt\VasPricesPrompt;
+use php_client_avito\Generated\Prompt\VasPricesPrompt;
 
 $prompt = new VasPricesPrompt();
 $prompt->itemIds = [123456789, 987654321];
@@ -72,7 +77,7 @@ $response = $client->item->vasPrices($prompt);
 ```php
 <?php
 
-use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
 
 $prompt = new GetUserInfoSelfPrompt();
 $response = $client->user->getUserInfoSelf($prompt);
@@ -85,7 +90,7 @@ $response = $client->user->getUserInfoSelf($prompt);
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito([
     'client_id' => 'your-client-id',
@@ -101,7 +106,7 @@ $client = new ApiClientAvito([
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito([
     'clientId' => 'your-client-id',
@@ -117,8 +122,8 @@ $client = new ApiClientAvito([
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
-use Andy87\ClientsAvito\AvitoConfig;
+use php_client_avito\ApiClientAvito;
+use php_client_avito\AvitoConfig;
 
 $client = new ApiClientAvito(AvitoConfig::fromEnv());
 ```
@@ -133,12 +138,44 @@ $client = new ApiClientAvito(AvitoConfig::fromEnv());
 ```php
 <?php
 
-use Andy87\ClientsAvito\AvitoConfig;
+use php_client_avito\AvitoConfig;
 
 $config = AvitoConfig::fromEnv(suffix: 'CURIES');
 ```
 
 В этом случае будут прочитаны `AVITO_CLIENT_ID_CURIES` и `AVITO_CLIENT_SECRET_CURIES`.
+
+## OAuth token
+
+`ApiClientAvito` автоматически использует client credentials для авторизованных generated API-вызовов. Если нужно вызвать token endpoint Avito напрямую, используйте сгенерированный auth provider:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use php_client_avito\ApiClientAvito;
+use php_client_avito\AvitoConfig;
+use php_client_avito\Generated\Prompt\GetAccessTokenPrompt;
+
+$config = new AvitoConfig(
+    clientId: 'your-client-id',
+    clientSecret: 'your-client-secret',
+);
+
+$client = new ApiClientAvito($config);
+
+$prompt = new GetAccessTokenPrompt();
+$prompt->client_id = $config->clientId;
+$prompt->client_secret = $config->clientSecret;
+$prompt->grant_type = 'client_credentials';
+
+$token = $client->auth->getAccessToken($prompt);
+
+echo $token->access_token . PHP_EOL;
+echo $token->token_type . PHP_EOL;
+echo $token->expires_in . PHP_EOL;
+```
 
 ## События и заголовки
 
@@ -154,7 +191,7 @@ declare(strict_types=1);
 use Andy87\PhpClientSdk\Event\BeforeRequestEvent;
 use Andy87\PhpClientSdk\Event\AfterRequestEvent;
 use Andy87\PhpClientSdk\Event\RequestExceptionEvent;
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito([
     'clientId' => 'your-client-id',
@@ -184,7 +221,7 @@ $client = new ApiClientAvito([
 
 declare(strict_types=1);
 
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 use Andy87\PhpClientSdk\Contracts\HttpTransportInterface;
 
 /** @var HttpTransportInterface $transport */
@@ -211,7 +248,7 @@ $client = new ApiClientAvito(
 declare(strict_types=1);
 
 use Andy87\PhpClientSdk\Event\BeforeRequestEvent;
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 /** @var ApiClientAvito $client */
 $client
@@ -239,7 +276,7 @@ $client->setHeaders(['X-Account' => 'secondary']);
 declare(strict_types=1);
 
 use Andy87\PhpClientSdk\Event\BeforeRequestEvent;
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito($config, [
     ApiClientAvito::EVENTS => [
@@ -266,7 +303,7 @@ HTTP-ответы со статусом `400` и выше всё равно пр
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito($config, [
     ApiClientAvito::REFRESH_AUTHORIZATION_STATUS_CODES => [401],
@@ -282,7 +319,7 @@ $clientWithoutRefreshRetry = new ApiClientAvito($config, [
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 use Andy87\PhpClientSdk\Cache\ArrayCache;
 
 $client = new ApiClientAvito($config, [
@@ -299,8 +336,8 @@ $client = new ApiClientAvito($config, [
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
-use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+use php_client_avito\ApiClientAvito;
+use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
 use Andy87\PhpClientSdk\Auth\ApiKeyAuthorizationStrategy;
 use Andy87\PhpClientSdk\Auth\PromptClassAuthorizationStrategyResolver;
 
@@ -316,8 +353,8 @@ $client = new ApiClientAvito($config, [
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
-use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+use php_client_avito\ApiClientAvito;
+use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
 
 $client = new ApiClientAvito($config, [
     ApiClientAvito::TRACEABLE_TRANSPORT => true,
@@ -336,8 +373,8 @@ $lastRecord = $client->getTraceableTransport()?->getLastRecord();
 
 declare(strict_types=1);
 
-use Andy87\ClientsAvito\ApiClientAvito;
-use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+use php_client_avito\ApiClientAvito;
+use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
 use Andy87\PhpClientSdk\Auth\NullAuthorizationStrategy;
 use Andy87\PhpClientSdk\Mock\MockTransport;
 use Andy87\PhpClientSdk\Mock\PromptClassMockResponseResolver;
@@ -366,28 +403,28 @@ $response = $client->user->getUserInfoSelf(new GetUserInfoSelfPrompt());
 Корневой namespace:
 
 ```text
-Andy87\ClientsAvito
+php_client_avito
 ```
 
 Основные классы:
 
-- `Andy87\ClientsAvito\ApiClientAvito` - главный клиент с ленивым доступом к provider-разделам.
-- `Andy87\ClientsAvito\AvitoConfig` - конфигурация подключения.
-- `Andy87\ClientsAvito\BaseAvitoProvider` - базовый provider для сгенерированных разделов API.
+- `php_client_avito\ApiClientAvito` - главный клиент с ленивым доступом к provider-разделам.
+- `php_client_avito\AvitoConfig` - конфигурация подключения.
+- `php_client_avito\BaseAvitoProvider` - базовый provider для сгенерированных разделов API.
 
 Сгенерированные классы находятся в:
 
-- `Andy87\ClientsAvito\Generated\Provider`
-- `Andy87\ClientsAvito\Generated\Prompt`
-- `Andy87\ClientsAvito\Generated\Response`
-- `Andy87\ClientsAvito\Generated\Schema`
+- `php_client_avito\Generated\Provider`
+- `php_client_avito\Generated\Prompt`
+- `php_client_avito\Generated\Response`
+- `php_client_avito\Generated\Schema`
 
 Список доступных provider-разделов можно получить во время выполнения:
 
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito([
     'clientId' => 'your-client-id',

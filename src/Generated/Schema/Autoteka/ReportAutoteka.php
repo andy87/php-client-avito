@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Autoteka;
+namespace php_client_avito\Generated\Schema\Autoteka;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/Report_autoteka.
@@ -17,10 +17,10 @@ class ReportAutoteka extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['data' => \Andy87\ClientsAvito\Generated\Schema\Autoteka\ReportDataAutoteka::class];
+    protected const CASTS = ['data' => \php_client_avito\Generated\Schema\Autoteka\ReportDataAutoteka::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoteka\ReportDataAutoteka|null Schema field data */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Autoteka\ReportDataAutoteka $data = null;
+    /** @var \php_client_avito\Generated\Schema\Autoteka\ReportDataAutoteka|null Schema field data */
+    public ?\php_client_avito\Generated\Schema\Autoteka\ReportDataAutoteka $data = null;
 
     /** @var string|null Ссылка на скачивание pdf версии отчета */
     public ?string $pdfLink = null;

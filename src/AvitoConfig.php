@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito;
+namespace php_client_avito;
 
 use Andy87\PhpClientSdk\Config\BaseUrl;
 

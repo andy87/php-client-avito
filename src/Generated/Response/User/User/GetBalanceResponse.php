@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\User\User;
+namespace php_client_avito\Generated\Response\User\User;
 
-use Andy87\ClientsAvito\Generated\Response\GetUserBalanceResponse as BaseGetUserBalanceResponse;
+use php_client_avito\Generated\Response\GetUserBalanceResponse as BaseGetUserBalanceResponse;
 
 /**
  * Ответ Avito API [GET] /core/v1/accounts/{user_id}/balance/.

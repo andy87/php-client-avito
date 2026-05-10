@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Autoteka;
+namespace php_client_avito\Generated\Schema\Autoteka;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/Diagnostics.
@@ -17,9 +17,9 @@ class Diagnostics extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['events' => [\Andy87\ClientsAvito\Generated\Schema\Autoteka\DiagnosticsEvent::class]];
+    protected const CASTS = ['events' => [\php_client_avito\Generated\Schema\Autoteka\DiagnosticsEvent::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoteka\DiagnosticsEvent> Список диагностических осмотров */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\DiagnosticsEvent> Список диагностических осмотров */
     public array $events;
 
     /** @var int Дата актуализации данных */

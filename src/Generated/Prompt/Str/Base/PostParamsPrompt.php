@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Str\Base;
+namespace php_client_avito\Generated\Prompt\Str\Base;
 
-use Andy87\ClientsAvito\Generated\Prompt\PostBaseParamsPrompt as BasePostBaseParamsPrompt;
+use php_client_avito\Generated\Prompt\PostBaseParamsPrompt as BasePostBaseParamsPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /realty/v1/items/{item_id}/base.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Preview;
+namespace php_client_avito\Generated\Prompt\Autoteka\Preview;
 
-use Andy87\ClientsAvito\Generated\Prompt\PostPreviewByRegNumberPrompt as BasePostPreviewByRegNumberPrompt;
+use php_client_avito\Generated\Prompt\PostPreviewByRegNumberPrompt as BasePostPreviewByRegNumberPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/request-preview-by-regnumber.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Autoteka\Monitoring;
+namespace php_client_avito\Generated\Response\Autoteka\Monitoring;
 
-use Andy87\ClientsAvito\Generated\Response\MonitoringBucketRemoveResponse as BaseMonitoringBucketRemoveResponse;
+use php_client_avito\Generated\Response\MonitoringBucketRemoveResponse as BaseMonitoringBucketRemoveResponse;
 
 /**
  * Ответ Avito API [POST] /autoteka/v1/monitoring/bucket/remove.

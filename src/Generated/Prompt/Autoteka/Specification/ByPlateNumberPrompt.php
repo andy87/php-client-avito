@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Specification;
+namespace php_client_avito\Generated\Prompt\Autoteka\Specification;
 
-use Andy87\ClientsAvito\Generated\Prompt\SpecificationByPlateNumberPrompt as BaseSpecificationByPlateNumberPrompt;
+use php_client_avito\Generated\Prompt\SpecificationByPlateNumberPrompt as BaseSpecificationByPlateNumberPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/specifications/by-plate-number.

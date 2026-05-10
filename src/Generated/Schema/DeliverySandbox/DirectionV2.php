@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/DirectionV2.
@@ -17,7 +17,7 @@ class DirectionV2 extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['zones' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Zone::class]];
+    protected const CASTS = ['zones' => [\php_client_avito\Generated\Schema\DeliverySandbox\Zone::class]];
 
     /** @var string Идентификатор или человекопонятное название направления доставки на стороне службы доставки */
     public string $providerDirectionId;
@@ -28,6 +28,6 @@ class DirectionV2 extends AbstractSchemaModel
     /** @var string Тэг направления адресных объектов (ПВЗ) в которые доступна доставка на условиях приведенных в данном направление */
     public string $tagTo;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Zone> Schema field zones */
+    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\Zone> Schema field zones */
     public array $zones;
 }

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/AddTariffRequestV2.
@@ -17,13 +17,13 @@ class AddTariffRequestV2 extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['directions' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DirectionV2::class], 'tariffZones' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TariffZone::class], 'termsZones' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TermsZone::class]];
+    protected const CASTS = ['directions' => [\php_client_avito\Generated\Schema\DeliverySandbox\DirectionV2::class], 'tariffZones' => [\php_client_avito\Generated\Schema\DeliverySandbox\TariffZone::class], 'termsZones' => [\php_client_avito\Generated\Schema\DeliverySandbox\TermsZone::class]];
 
     /** @var string Идентификатор тарифного плана на стороне службы доставки - должен быть уникален.
  */
     public string $deliveryProviderTariffId;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DirectionV2> Schema field directions */
+    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\DirectionV2> Schema field directions */
     public array $directions;
 
     /** @var string Человекопонятное название тарифного плана */
@@ -36,9 +36,9 @@ class AddTariffRequestV2 extends AbstractSchemaModel
  */
     public ?string $tariffType = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TariffZone> Schema field tariffZones */
+    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\TariffZone> Schema field tariffZones */
     public array $tariffZones;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TermsZone> Schema field termsZones */
+    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\TermsZone> Schema field termsZones */
     public array $termsZones;
 }

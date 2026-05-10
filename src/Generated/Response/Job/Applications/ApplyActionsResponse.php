@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Job\Applications;
+namespace php_client_avito\Generated\Response\Job\Applications;
 
-use Andy87\ClientsAvito\Generated\Response\ApplicationsApplyActionsResponse as BaseApplicationsApplyActionsResponse;
+use php_client_avito\Generated\Response\ApplicationsApplyActionsResponse as BaseApplicationsApplyActionsResponse;
 
 /**
  * Ответ Avito API [POST] /job/v1/applications/apply_actions.

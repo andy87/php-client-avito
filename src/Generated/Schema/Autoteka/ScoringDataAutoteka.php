@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Autoteka;
+namespace php_client_avito\Generated\Schema\Autoteka;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/ScoringDataAutoteka.
@@ -17,10 +17,10 @@ class ScoringDataAutoteka extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['carsharing', 'epts', 'import', 'leasing', 'pledges', 'priceEvaluation', 'registrations', 'restrictions', 'stealing', 'taxi'];
 
-    protected const CASTS = ['accidents' => \Andy87\ClientsAvito\Generated\Schema\Autoteka\ScoringAccidents::class, 'placements' => \Andy87\ClientsAvito\Generated\Schema\Autoteka\ScoringPlacements::class, 'seriousDamage' => \Andy87\ClientsAvito\Generated\Schema\Autoteka\ScoringSeriousDamage::class, 'techSpecification' => \Andy87\ClientsAvito\Generated\Schema\Autoteka\ScoringTechSpecification::class];
+    protected const CASTS = ['accidents' => \php_client_avito\Generated\Schema\Autoteka\ScoringAccidents::class, 'placements' => \php_client_avito\Generated\Schema\Autoteka\ScoringPlacements::class, 'seriousDamage' => \php_client_avito\Generated\Schema\Autoteka\ScoringSeriousDamage::class, 'techSpecification' => \php_client_avito\Generated\Schema\Autoteka\ScoringTechSpecification::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoteka\ScoringAccidents|null Schema field accidents */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Autoteka\ScoringAccidents $accidents = null;
+    /** @var \php_client_avito\Generated\Schema\Autoteka\ScoringAccidents|null Schema field accidents */
+    public ?\php_client_avito\Generated\Schema\Autoteka\ScoringAccidents $accidents = null;
 
     /** @var array<string, mixed>|null Каршеринг */
     public ?array $carsharing = null;
@@ -34,8 +34,8 @@ class ScoringDataAutoteka extends AbstractSchemaModel
     /** @var array<string, mixed>|null Лизинг */
     public ?array $leasing = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoteka\ScoringPlacements|null Schema field placements */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Autoteka\ScoringPlacements $placements = null;
+    /** @var \php_client_avito\Generated\Schema\Autoteka\ScoringPlacements|null Schema field placements */
+    public ?\php_client_avito\Generated\Schema\Autoteka\ScoringPlacements $placements = null;
 
     /** @var array<string, mixed>|null Залоги */
     public ?array $pledges = null;
@@ -49,8 +49,8 @@ class ScoringDataAutoteka extends AbstractSchemaModel
     /** @var array<string, mixed>|null Ограничения */
     public ?array $restrictions = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoteka\ScoringSeriousDamage|null Schema field seriousDamage */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Autoteka\ScoringSeriousDamage $seriousDamage = null;
+    /** @var \php_client_avito\Generated\Schema\Autoteka\ScoringSeriousDamage|null Schema field seriousDamage */
+    public ?\php_client_avito\Generated\Schema\Autoteka\ScoringSeriousDamage $seriousDamage = null;
 
     /** @var array<string, mixed>|null Угоны */
     public ?array $stealing = null;
@@ -58,6 +58,6 @@ class ScoringDataAutoteka extends AbstractSchemaModel
     /** @var array<string, mixed>|null Такси */
     public ?array $taxi = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoteka\ScoringTechSpecification|null Schema field techSpecification */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Autoteka\ScoringTechSpecification $techSpecification = null;
+    /** @var \php_client_avito\Generated\Schema\Autoteka\ScoringTechSpecification|null Schema field techSpecification */
+    public ?\php_client_avito\Generated\Schema\Autoteka\ScoringTechSpecification $techSpecification = null;
 }

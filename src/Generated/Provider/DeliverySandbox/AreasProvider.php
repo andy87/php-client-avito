@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\DeliverySandbox;
+namespace php_client_avito\Generated\Provider\DeliverySandbox;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\AddAreasSandboxPrompt;
-use Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Areas\AddSandboxResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\AddAreasSandboxPrompt;
+use php_client_avito\Generated\Response\DeliverySandbox\Areas\AddSandboxResponse;
 
 /**
  * Группа методов "areas" раздела Avito API "Доставка".

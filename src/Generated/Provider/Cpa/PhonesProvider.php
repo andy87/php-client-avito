@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Cpa;
+namespace php_client_avito\Generated\Provider\Cpa;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\PhonesInfoFromChatsPrompt;
-use Andy87\ClientsAvito\Generated\Response\Cpa\Phones\InfoFromChatsResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\PhonesInfoFromChatsPrompt;
+use php_client_avito\Generated\Response\Cpa\Phones\InfoFromChatsResponse;
 
 /**
  * Группа методов "phones" раздела Avito API "CPA Авито".

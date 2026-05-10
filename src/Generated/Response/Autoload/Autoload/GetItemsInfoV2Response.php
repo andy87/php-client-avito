@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Autoload\Autoload;
+namespace php_client_avito\Generated\Response\Autoload\Autoload;
 
-use Andy87\ClientsAvito\Generated\Response\GetAutoloadItemsInfoV2Response as BaseGetAutoloadItemsInfoV2Response;
+use php_client_avito\Generated\Response\GetAutoloadItemsInfoV2Response as BaseGetAutoloadItemsInfoV2Response;
 
 /**
  * Ответ Avito API [GET] /autoload/v2/reports/items.
  *
  * @documentation https://developers.avito.ru/api-catalog/autoload/documentation#operation/getAutoloadItemsInfoV2
  *
- * @property array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\ItemInfoAutoloadV2> $items Список объявлений
+ * @property array<int, \php_client_avito\Generated\Schema\Autoload\ItemInfoAutoloadV2> $items Список объявлений
  */
 class GetItemsInfoV2Response extends BaseGetAutoloadItemsInfoV2Response
 {

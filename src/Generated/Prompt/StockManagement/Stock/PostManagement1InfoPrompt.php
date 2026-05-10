@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\StockManagement\Stock;
+namespace php_client_avito\Generated\Prompt\StockManagement\Stock;
 
-use Andy87\ClientsAvito\Generated\Prompt\PostStockManagement1InfoPrompt as BasePostStockManagement1InfoPrompt;
+use php_client_avito\Generated\Prompt\PostStockManagement1InfoPrompt as BasePostStockManagement1InfoPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /stock-management/1/info.

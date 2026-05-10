@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Job\Dicts;
+namespace php_client_avito\Generated\Response\Job\Dicts;
 
-use Andy87\ClientsAvito\Generated\Response\GetDictsResponse as BaseGetDictsResponse;
+use php_client_avito\Generated\Response\GetDictsResponse as BaseGetDictsResponse;
 
 /**
  * Ответ Avito API [GET] /job/v2/vacancy/dict.

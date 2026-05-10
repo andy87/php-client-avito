@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Promotion;
+namespace php_client_avito\Generated\Provider\Promotion;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetServicesByItemsV1Prompt;
-use Andy87\ClientsAvito\Generated\Response\Promotion\Services\GetByItemsV1Response;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetServicesByItemsV1Prompt;
+use php_client_avito\Generated\Response\Promotion\Services\GetByItemsV1Response;
 
 /**
  * Группа методов "services" раздела Avito API "Продвижение".

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Str;
+namespace php_client_avito\Generated\Provider\Str;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\PutIntervalsPrompt;
-use Andy87\ClientsAvito\Generated\Response\Str\Intervals\PutResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\PutIntervalsPrompt;
+use php_client_avito\Generated\Response\Str\Intervals\PutResponse;
 
 /**
  * Группа методов "intervals" раздела Avito API "Краткосрочная аренда".

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Announcement;
+namespace php_client_avito\Generated\Response\DeliverySandbox\Announcement;
 
-use Andy87\ClientsAvito\Generated\Response\CancelAnnouncement3PLResponse as BaseCancelAnnouncement3PLResponse;
+use php_client_avito\Generated\Response\CancelAnnouncement3PLResponse as BaseCancelAnnouncement3PLResponse;
 
 /**
  * Ответ Avito API [POST] /cancelAnnouncement.

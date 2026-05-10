@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Sync;
+namespace php_client_avito\Generated\Prompt\Autoteka\Sync;
 
-use Andy87\ClientsAvito\Generated\Prompt\PostSyncCreateReportByVinPrompt as BasePostSyncCreateReportByVinPrompt;
+use php_client_avito\Generated\Prompt\PostSyncCreateReportByVinPrompt as BasePostSyncCreateReportByVinPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/sync/create-by-vin.

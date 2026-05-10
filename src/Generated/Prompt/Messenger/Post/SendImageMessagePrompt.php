@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Messenger\Post;
+namespace php_client_avito\Generated\Prompt\Messenger\Post;
 
-use Andy87\ClientsAvito\Generated\Prompt\PostSendImageMessagePrompt as BasePostSendImageMessagePrompt;
+use php_client_avito\Generated\Prompt\PostSendImageMessagePrompt as BasePostSendImageMessagePrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages/image.

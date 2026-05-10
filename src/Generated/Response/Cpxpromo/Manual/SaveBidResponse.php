@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Cpxpromo\Manual;
+namespace php_client_avito\Generated\Response\Cpxpromo\Manual;
 
-use Andy87\ClientsAvito\Generated\Response\SaveManualBidResponse as BaseSaveManualBidResponse;
+use php_client_avito\Generated\Response\SaveManualBidResponse as BaseSaveManualBidResponse;
 
 /**
  * Ответ Avito API [POST] /cpxpromo/1/setManual.

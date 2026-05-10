@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Tariff\Tariff;
+namespace php_client_avito\Generated\Prompt\Tariff\Tariff;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetTariffInfoPrompt as BaseGetTariffInfoPrompt;
+use php_client_avito\Generated\Prompt\GetTariffInfoPrompt as BaseGetTariffInfoPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /tariff/info/1.

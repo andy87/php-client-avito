@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider;
+namespace php_client_avito\Generated\Provider;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\ApiTrxPromoOpenApiApplyPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\ApiTrxPromoOpenApiCancelPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\ApiTrxPromoOpenApiCommissionsPrompt;
-use Andy87\ClientsAvito\Generated\Response\ApiTrxPromoOpenApiApplyResponse;
-use Andy87\ClientsAvito\Generated\Response\ApiTrxPromoOpenApiCancelResponse;
-use Andy87\ClientsAvito\Generated\Response\ApiTrxPromoOpenApiCommissionsResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiApplyPrompt;
+use php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiCancelPrompt;
+use php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiCommissionsPrompt;
+use php_client_avito\Generated\Response\ApiTrxPromoOpenApiApplyResponse;
+use php_client_avito\Generated\Response\ApiTrxPromoOpenApiCancelResponse;
+use php_client_avito\Generated\Response\ApiTrxPromoOpenApiCommissionsResponse;
 
 /**
  * Provider раздела Avito API "TrxPromo".

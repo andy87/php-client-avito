@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\StockManagement\Stock;
+namespace php_client_avito\Generated\Response\StockManagement\Stock;
 
-use Andy87\ClientsAvito\Generated\Response\PostStockManagement1InfoResponse as BasePostStockManagement1InfoResponse;
+use php_client_avito\Generated\Response\PostStockManagement1InfoResponse as BasePostStockManagement1InfoResponse;
 
 /**
  * Ответ Avito API [POST] /stock-management/1/info.

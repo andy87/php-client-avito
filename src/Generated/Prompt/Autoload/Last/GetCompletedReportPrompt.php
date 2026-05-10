@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoload\Last;
+namespace php_client_avito\Generated\Prompt\Autoload\Last;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetLastCompletedReportPrompt as BaseGetLastCompletedReportPrompt;
+use php_client_avito\Generated\Prompt\GetLastCompletedReportPrompt as BaseGetLastCompletedReportPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoload/v2/reports/last_completed_report.

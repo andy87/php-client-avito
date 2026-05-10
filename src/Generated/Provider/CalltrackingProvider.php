@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider;
+namespace php_client_avito\Generated\Provider;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetCallByIdPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetCallsPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetRecordByCallIdPrompt;
-use Andy87\ClientsAvito\Generated\Response\GetCallByIdResponse;
-use Andy87\ClientsAvito\Generated\Response\GetCallsResponse;
-use Andy87\ClientsAvito\Generated\Response\GetRecordByCallIdResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetCallByIdPrompt;
+use php_client_avito\Generated\Prompt\GetCallsPrompt;
+use php_client_avito\Generated\Prompt\GetRecordByCallIdPrompt;
+use php_client_avito\Generated\Response\GetCallByIdResponse;
+use php_client_avito\Generated\Response\GetCallsResponse;
+use php_client_avito\Generated\Response\GetRecordByCallIdResponse;
 
 /**
  * Provider раздела Avito API "CallTracking[КТ]".

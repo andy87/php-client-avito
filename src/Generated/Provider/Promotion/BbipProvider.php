@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Promotion;
+namespace php_client_avito\Generated\Provider\Promotion;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\CreateBbipOrderForItemsV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetBbipForecastsByItemsV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetBbipSuggestsByItemsV1Prompt;
-use Andy87\ClientsAvito\Generated\Response\Promotion\Bbip\CreateOrderForItemsV1Response;
-use Andy87\ClientsAvito\Generated\Response\Promotion\Bbip\GetForecastsByItemsV1Response;
-use Andy87\ClientsAvito\Generated\Response\Promotion\Bbip\GetSuggestsByItemsV1Response;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\CreateBbipOrderForItemsV1Prompt;
+use php_client_avito\Generated\Prompt\GetBbipForecastsByItemsV1Prompt;
+use php_client_avito\Generated\Prompt\GetBbipSuggestsByItemsV1Prompt;
+use php_client_avito\Generated\Response\Promotion\Bbip\CreateOrderForItemsV1Response;
+use php_client_avito\Generated\Response\Promotion\Bbip\GetForecastsByItemsV1Response;
+use php_client_avito\Generated\Response\Promotion\Bbip\GetSuggestsByItemsV1Response;
 
 /**
  * Группа методов "bbip" раздела Avito API "Продвижение".

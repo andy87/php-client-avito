@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Autoteka;
+namespace php_client_avito\Generated\Schema\Autoteka;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/CarsharingDataAutoteka.
@@ -17,11 +17,11 @@ class CarsharingDataAutoteka extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['events' => [\Andy87\ClientsAvito\Generated\Schema\Autoteka\CarsharingDataEventAutoteka::class], 'recaps' => [\Andy87\ClientsAvito\Generated\Schema\Autoteka\RecapAutoteka::class]];
+    protected const CASTS = ['events' => [\php_client_avito\Generated\Schema\Autoteka\CarsharingDataEventAutoteka::class], 'recaps' => [\php_client_avito\Generated\Schema\Autoteka\RecapAutoteka::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoteka\CarsharingDataEventAutoteka> Список записей об использовании ТС в каршеринге */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\CarsharingDataEventAutoteka> Список записей об использовании ТС в каршеринге */
     public array $events;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoteka\RecapAutoteka> Поле не поддерживается. Решение о факте использования в каршеринге нужно принимать на основании данных в массиве Events */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\RecapAutoteka> Поле не поддерживается. Решение о факте использования в каршеринге нужно принимать на основании данных в массиве Events */
     public array $recaps;
 }

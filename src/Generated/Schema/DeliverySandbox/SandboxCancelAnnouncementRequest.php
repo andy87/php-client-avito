@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/SandboxCancelAnnouncementRequest.
@@ -17,7 +17,7 @@ class SandboxCancelAnnouncementRequest extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['options' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions::class];
+    protected const CASTS = ['options' => \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions::class];
 
     /** @var string Уникальный идентификатор анонса UUID V4. */
     public string $announcementID;
@@ -25,6 +25,6 @@ class SandboxCancelAnnouncementRequest extends AbstractSchemaModel
     /** @var string Дата события */
     public string $date;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions Schema field options */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions $options;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions Schema field options */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions $options;
 }

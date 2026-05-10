@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Autoteka;
+namespace php_client_avito\Generated\Schema\Autoteka;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/TechInspectionHistory.
@@ -17,8 +17,8 @@ class TechInspectionHistory extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['events' => [\Andy87\ClientsAvito\Generated\Schema\Autoteka\TechInspectionHistoryEvent::class]];
+    protected const CASTS = ['events' => [\php_client_avito\Generated\Schema\Autoteka\TechInspectionHistoryEvent::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoteka\TechInspectionHistoryEvent> Список записей о прохождении тех. осмотра */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\TechInspectionHistoryEvent> Список записей о прохождении тех. осмотра */
     public array $events;
 }

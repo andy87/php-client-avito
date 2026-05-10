@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\DeliverySandbox;
+namespace php_client_avito\Generated\Provider\DeliverySandbox;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\CancelAnnouncement3PLPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\CreateAnnouncement3PLPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\CreateAnnouncementPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\TrackAnnouncementPrompt;
-use Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Announcement\Cancel3PLResponse;
-use Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Announcement\Create3PLResponse;
-use Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Announcement\CreateResponse;
-use Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Announcement\TrackResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\CancelAnnouncement3PLPrompt;
+use php_client_avito\Generated\Prompt\CreateAnnouncement3PLPrompt;
+use php_client_avito\Generated\Prompt\CreateAnnouncementPrompt;
+use php_client_avito\Generated\Prompt\TrackAnnouncementPrompt;
+use php_client_avito\Generated\Response\DeliverySandbox\Announcement\Cancel3PLResponse;
+use php_client_avito\Generated\Response\DeliverySandbox\Announcement\Create3PLResponse;
+use php_client_avito\Generated\Response\DeliverySandbox\Announcement\CreateResponse;
+use php_client_avito\Generated\Response\DeliverySandbox\Announcement\TrackResponse;
 
 /**
  * Группа методов "announcement" раздела Avito API "Доставка".

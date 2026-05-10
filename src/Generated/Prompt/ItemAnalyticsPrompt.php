@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class ItemAnalyticsPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = ['filter', 'limit', 'offset', 'sort'];
 
-    protected const CASTS = ['grouping' => \Andy87\ClientsAvito\Generated\Schema\Item\Groupings::class];
+    protected const CASTS = ['grouping' => \php_client_avito\Generated\Schema\Item\Groupings::class];
 
     protected const PATH_FIELDS = ['user_id'];
 
@@ -53,8 +53,8 @@ class ItemAnalyticsPrompt extends AbstractPrompt
     /** @var array<string, mixed>|null Набор ограничений, по которым нужно отфильтровать данные */
     public ?array $filter = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Item\Groupings Body field grouping */
-    public \Andy87\ClientsAvito\Generated\Schema\Item\Groupings $grouping;
+    /** @var \php_client_avito\Generated\Schema\Item\Groupings Body field grouping */
+    public \php_client_avito\Generated\Schema\Item\Groupings $grouping;
 
     /** @var int|null Инструмент пагинации для ограничения количества сущностей в response; */
     public ?int $limit;

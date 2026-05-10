@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\RealtyReports\Report;
+namespace php_client_avito\Generated\Response\RealtyReports\Report;
 
-use Andy87\ClientsAvito\Generated\Response\CreateReportForClassifiedResponse as BaseCreateReportForClassifiedResponse;
+use php_client_avito\Generated\Response\CreateReportForClassifiedResponse as BaseCreateReportForClassifiedResponse;
 
 /**
  * Ответ Avito API [POST] /realty/v1/report/create/{itemId}.

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\AccountsHierarchy;
+namespace php_client_avito\Generated\Provider\AccountsHierarchy;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetEmployeesV1Prompt;
-use Andy87\ClientsAvito\Generated\Response\AccountsHierarchy\Employees\GetV1Response;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetEmployeesV1Prompt;
+use php_client_avito\Generated\Response\AccountsHierarchy\Employees\GetV1Response;
 
 /**
  * Группа методов "employees" раздела Avito API "Иерархия Аккаунтов".

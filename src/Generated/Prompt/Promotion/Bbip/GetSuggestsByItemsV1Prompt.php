@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Promotion\Bbip;
+namespace php_client_avito\Generated\Prompt\Promotion\Bbip;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetBbipSuggestsByItemsV1Prompt as BaseGetBbipSuggestsByItemsV1Prompt;
+use php_client_avito\Generated\Prompt\GetBbipSuggestsByItemsV1Prompt as BaseGetBbipSuggestsByItemsV1Prompt;
 
 /**
  * Класс данных запроса Avito API [POST] /promotion/v1/items/services/bbip/suggests/get.

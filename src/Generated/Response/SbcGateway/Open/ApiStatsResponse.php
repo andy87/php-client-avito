@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\SbcGateway\Open;
+namespace php_client_avito\Generated\Response\SbcGateway\Open;
 
-use Andy87\ClientsAvito\Generated\Response\OpenApiStatsResponse as BaseOpenApiStatsResponse;
+use php_client_avito\Generated\Response\OpenApiStatsResponse as BaseOpenApiStatsResponse;
 
 /**
  * Ответ Avito API [POST] /special-offers/v1/stats.

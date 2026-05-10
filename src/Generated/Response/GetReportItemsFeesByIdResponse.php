@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,11 +19,11 @@ class GetReportItemsFeesByIdResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['fees' => [\Andy87\ClientsAvito\Generated\Schema\Autoload\ItemFeesInfoReportAutoloadV2::class]];
+    protected const CASTS = ['fees' => [\php_client_avito\Generated\Schema\Autoload\ItemFeesInfoReportAutoloadV2::class]];
 
     protected const MODEL = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\ItemFeesInfoReportAutoloadV2>|null Список списаний за размещение объявлений */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\ItemFeesInfoReportAutoloadV2>|null Список списаний за размещение объявлений */
     public ?array $fees = null;
 
     /** @var array<string, mixed> Данные пагинации */

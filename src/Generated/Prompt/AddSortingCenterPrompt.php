@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class AddSortingCenterPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['body' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AddSortingCentersRequest::class];
+    protected const CASTS = ['body' => \php_client_avito\Generated\Schema\DeliverySandbox\AddSortingCentersRequest::class];
 
     protected const PATH_FIELDS = [];
 
@@ -41,6 +41,6 @@ class AddSortingCenterPrompt extends AbstractPrompt
 
     protected const BODY_ROOT_FIELD = 'body';
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AddSortingCentersRequest Request body */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AddSortingCentersRequest $body;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\AddSortingCentersRequest Request body */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\AddSortingCentersRequest $body;
 }

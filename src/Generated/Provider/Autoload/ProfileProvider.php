@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Autoload;
+namespace php_client_avito\Generated\Provider\Autoload;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetProfilePrompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetProfileV2Prompt;
-use Andy87\ClientsAvito\Generated\Response\Autoload\Profile\GetResponse;
-use Andy87\ClientsAvito\Generated\Response\Autoload\Profile\GetV2Response;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetProfilePrompt;
+use php_client_avito\Generated\Prompt\GetProfileV2Prompt;
+use php_client_avito\Generated\Response\Autoload\Profile\GetResponse;
+use php_client_avito\Generated\Response\Autoload\Profile\GetV2Response;
 
 /**
  * Группа методов "profile" раздела Avito API "Автозагрузка".

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,11 +19,11 @@ class PhonesInfoFromChatsResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['results' => [\Andy87\ClientsAvito\Generated\Schema\Cpa\OpenAPIPhonesInfoFromChatsOut::class]];
+    protected const CASTS = ['results' => [\php_client_avito\Generated\Schema\Cpa\OpenAPIPhonesInfoFromChatsOut::class]];
 
     protected const MODEL = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Cpa\OpenAPIPhonesInfoFromChatsOut> Response field results */
+    /** @var array<int, \php_client_avito\Generated\Schema\Cpa\OpenAPIPhonesInfoFromChatsOut> Response field results */
     public array $results;
 
     /** @var int Число найденных чатов */

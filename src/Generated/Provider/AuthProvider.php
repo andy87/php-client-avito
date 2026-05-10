@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider;
+namespace php_client_avito\Generated\Provider;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetAccessTokenAuthorizationCodePrompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetAccessTokenPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\RefreshAccessTokenAuthorizationCodePrompt;
-use Andy87\ClientsAvito\Generated\Response\GetAccessTokenAuthorizationCodeResponse;
-use Andy87\ClientsAvito\Generated\Response\GetAccessTokenResponse;
-use Andy87\ClientsAvito\Generated\Response\RefreshAccessTokenAuthorizationCodeResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetAccessTokenAuthorizationCodePrompt;
+use php_client_avito\Generated\Prompt\GetAccessTokenPrompt;
+use php_client_avito\Generated\Prompt\RefreshAccessTokenAuthorizationCodePrompt;
+use php_client_avito\Generated\Response\GetAccessTokenAuthorizationCodeResponse;
+use php_client_avito\Generated\Response\GetAccessTokenResponse;
+use php_client_avito\Generated\Response\RefreshAccessTokenAuthorizationCodeResponse;
 
 /**
  * Provider раздела Avito API "Авторизация".

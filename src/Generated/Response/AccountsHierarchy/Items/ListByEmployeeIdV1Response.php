@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\AccountsHierarchy\Items;
+namespace php_client_avito\Generated\Response\AccountsHierarchy\Items;
 
-use Andy87\ClientsAvito\Generated\Response\ListItemsByEmployeeIdV1Response as BaseListItemsByEmployeeIdV1Response;
+use php_client_avito\Generated\Response\ListItemsByEmployeeIdV1Response as BaseListItemsByEmployeeIdV1Response;
 
 /**
  * Ответ Avito API [POST] /listItemsByEmployeeIdV1.

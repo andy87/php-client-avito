@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class CancelParcelPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['parcelID' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString::class];
+    protected const CASTS = ['parcelID' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString::class];
 
     protected const PATH_FIELDS = [];
 
@@ -44,6 +44,6 @@ class CancelParcelPrompt extends AbstractPrompt
     /** @var string Кто отменяет посылку */
     public string $actor;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString Body field parcelID */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString $parcelID;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString Body field parcelID */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString $parcelID;
 }

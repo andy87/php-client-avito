@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Str;
+namespace php_client_avito\Generated\Provider\Str;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\PostBaseParamsPrompt;
-use Andy87\ClientsAvito\Generated\Response\Str\Base\PostParamsResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\PostBaseParamsPrompt;
+use php_client_avito\Generated\Response\Str\Base\PostParamsResponse;
 
 /**
  * Группа методов "base" раздела Avito API "Краткосрочная аренда".

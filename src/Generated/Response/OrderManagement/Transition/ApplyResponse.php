@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\OrderManagement\Transition;
+namespace php_client_avito\Generated\Response\OrderManagement\Transition;
 
-use Andy87\ClientsAvito\Generated\Response\ApplyTransitionResponse as BaseApplyTransitionResponse;
+use php_client_avito\Generated\Response\ApplyTransitionResponse as BaseApplyTransitionResponse;
 
 /**
  * Ответ Avito API [POST] /order-management/1/order/applyTransition.

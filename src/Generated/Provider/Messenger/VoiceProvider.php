@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Messenger;
+namespace php_client_avito\Generated\Provider\Messenger;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetVoiceFilesPrompt;
-use Andy87\ClientsAvito\Generated\Response\Messenger\Voice\GetFilesResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetVoiceFilesPrompt;
+use php_client_avito\Generated\Response\Messenger\Voice\GetFilesResponse;
 
 /**
  * Группа методов "voice" раздела Avito API "Мессенджер".

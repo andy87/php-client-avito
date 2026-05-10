@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/CreateSandboxParcelV2.
@@ -17,13 +17,13 @@ class CreateSandboxParcelV2 extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['items' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateSandboxParcelItem::class], 'options' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateSandboxV2Options::class];
+    protected const CASTS = ['items' => [\php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxParcelItem::class], 'options' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxV2Options::class];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateSandboxParcelItem>|null Schema field items */
+    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxParcelItem>|null Schema field items */
     public ?array $items = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateSandboxV2Options|null Schema field options */
-    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateSandboxV2Options $options = null;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxV2Options|null Schema field options */
+    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxV2Options $options = null;
 
     /** @var array<string, mixed>|null Schema field receiver */
     public ?array $receiver = null;

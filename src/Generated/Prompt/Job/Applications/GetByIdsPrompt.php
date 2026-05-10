@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Job\Applications;
+namespace php_client_avito\Generated\Prompt\Job\Applications;
 
-use Andy87\ClientsAvito\Generated\Prompt\ApplicationsGetByIdsPrompt as BaseApplicationsGetByIdsPrompt;
+use php_client_avito\Generated\Prompt\ApplicationsGetByIdsPrompt as BaseApplicationsGetByIdsPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /job/v1/applications/get_by_ids.

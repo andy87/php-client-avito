@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Promotion;
+namespace php_client_avito\Generated\Schema\Promotion;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito promotion/ListOrdersByUserV1Resp.
@@ -17,9 +17,9 @@ class ListOrdersByUserV1Resp extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['orders' => [\Andy87\ClientsAvito\Generated\Schema\Promotion\OrderBrief::class]];
+    protected const CASTS = ['orders' => [\php_client_avito\Generated\Schema\Promotion\OrderBrief::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Promotion\OrderBrief> Список заявок на подключение услуг продвижения по объявлениям */
+    /** @var array<int, \php_client_avito\Generated\Schema\Promotion\OrderBrief> Список заявок на подключение услуг продвижения по объявлениям */
     public array $orders;
 
     /** @var array<string, mixed> Данные для постраничного чтения */

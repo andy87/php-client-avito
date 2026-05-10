@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class CreateBbipOrderForItemsV1Prompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['items' => [\Andy87\ClientsAvito\Generated\Schema\Promotion\BbipOrderByItemV1::class]];
+    protected const CASTS = ['items' => [\php_client_avito\Generated\Schema\Promotion\BbipOrderByItemV1::class]];
 
     protected const PATH_FIELDS = [];
 
@@ -44,6 +44,6 @@ class CreateBbipOrderForItemsV1Prompt extends AbstractPrompt
     /** @var string|null Пользователь работает от имени сотрудника компании (boolean, "true"\\"false") */
     public ?string $X_Is_Employee = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Promotion\BbipOrderByItemV1> Заявки на подключение BBIP по отдельным объявлениям */
+    /** @var array<int, \php_client_avito\Generated\Schema\Promotion\BbipOrderByItemV1> Заявки на подключение BBIP по отдельным объявлениям */
     public array $items;
 }

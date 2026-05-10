@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoload\Profile;
+namespace php_client_avito\Generated\Prompt\Autoload\Profile;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetProfileV2Prompt as BaseGetProfileV2Prompt;
+use php_client_avito\Generated\Prompt\GetProfileV2Prompt as BaseGetProfileV2Prompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoload/v2/profile.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Preview;
+namespace php_client_avito\Generated\Prompt\Autoteka\Preview;
 
-use Andy87\ClientsAvito\Generated\Prompt\PostPreviewByVinPrompt as BasePostPreviewByVinPrompt;
+use php_client_avito\Generated\Prompt\PostPreviewByVinPrompt as BasePostPreviewByVinPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/previews.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Teaser;
+namespace php_client_avito\Generated\Prompt\Autoteka\Teaser;
 
-use Andy87\ClientsAvito\Generated\Prompt\PostTeaserPrompt as BasePostTeaserPrompt;
+use php_client_avito\Generated\Prompt\PostTeaserPrompt as BasePostTeaserPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/teasers.

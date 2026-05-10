@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Str\Bookings;
+namespace php_client_avito\Generated\Prompt\Str\Bookings;
 
-use Andy87\ClientsAvito\Generated\Prompt\PutBookingsInfoPrompt as BasePutBookingsInfoPrompt;
+use php_client_avito\Generated\Prompt\PutBookingsInfoPrompt as BasePutBookingsInfoPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /core/v1/accounts/{user_id}/items/{item_id}/bookings.

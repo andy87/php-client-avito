@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Messenger;
+namespace php_client_avito\Generated\Provider\Messenger;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\ChatReadPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetChatByIdV2Prompt;
-use Andy87\ClientsAvito\Generated\Response\Messenger\Chat\GetByIdV2Response;
-use Andy87\ClientsAvito\Generated\Response\Messenger\Chat\ReadResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\ChatReadPrompt;
+use php_client_avito\Generated\Prompt\GetChatByIdV2Prompt;
+use php_client_avito\Generated\Response\Messenger\Chat\GetByIdV2Response;
+use php_client_avito\Generated\Response\Messenger\Chat\ReadResponse;
 
 /**
  * Группа методов "chat" раздела Avito API "Мессенджер".

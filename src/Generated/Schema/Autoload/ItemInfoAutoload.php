@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Autoload;
+namespace php_client_avito\Generated\Schema\Autoload;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoload/ItemInfoAutoload.
@@ -17,9 +17,9 @@ class ItemInfoAutoload extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['avito_id', 'fee_info', 'url'];
 
-    protected const CASTS = ['alarm' => [\Andy87\ClientsAvito\Generated\Schema\Autoload\ItemInfoErrorAutoload::class], 'errors' => [\Andy87\ClientsAvito\Generated\Schema\Autoload\ItemInfoErrorAutoload::class], 'warnings' => [\Andy87\ClientsAvito\Generated\Schema\Autoload\ItemInfoErrorAutoload::class]];
+    protected const CASTS = ['alarm' => [\php_client_avito\Generated\Schema\Autoload\ItemInfoErrorAutoload::class], 'errors' => [\php_client_avito\Generated\Schema\Autoload\ItemInfoErrorAutoload::class], 'warnings' => [\php_client_avito\Generated\Schema\Autoload\ItemInfoErrorAutoload::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\ItemInfoErrorAutoload>|null Ошибки, при которых публикация/обновление происходит, но при этом с объявлением есть проблема, которая требует вмешательства пользователя; публикация изменений, по-возможности, происходит */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\ItemInfoErrorAutoload>|null Ошибки, при которых публикация/обновление происходит, но при этом с объявлением есть проблема, которая требует вмешательства пользователя; публикация изменений, по-возможности, происходит */
     public ?array $alarm = null;
 
     /** @var array<int, string>|null Список примененных при выгрузке дополнительных услуг
@@ -35,7 +35,7 @@ class ItemInfoAutoload extends AbstractSchemaModel
     /** @var int|null Идентификатор объявления на сайте */
     public ?int $avito_id = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\ItemInfoErrorAutoload>|null Ошибки, при возникновении которых публикация новых не происходит, уже опубликованные — остаются без изменений, VAS-услуги не применяются, завершенные — не реактивируются */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\ItemInfoErrorAutoload>|null Ошибки, при возникновении которых публикация новых не происходит, уже опубликованные — остаются без изменений, VAS-услуги не применяются, завершенные — не реактивируются */
     public ?array $errors = null;
 
     /** @var string|null Дата последнего изменения состояния (статуса) выгрузки объявления */
@@ -98,6 +98,6 @@ class ItemInfoAutoload extends AbstractSchemaModel
     /** @var string|null URL объявления на сайте */
     public ?string $url = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\ItemInfoErrorAutoload>|null Ошибки, которые, в подавляющем большинстве случаев, информируют, но не требуют вмешательства (никак не влияют на статус обработки) */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\ItemInfoErrorAutoload>|null Ошибки, которые, в подавляющем большинстве случаев, информируют, но не требуют вмешательства (никак не влияют на статус обработки) */
     public ?array $warnings = null;
 }

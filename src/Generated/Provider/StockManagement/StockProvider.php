@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\StockManagement;
+namespace php_client_avito\Generated\Provider\StockManagement;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\PostStockManagement1InfoPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\PutStockManagement1StocksPrompt;
-use Andy87\ClientsAvito\Generated\Response\StockManagement\Stock\PostManagement1InfoResponse;
-use Andy87\ClientsAvito\Generated\Response\StockManagement\Stock\PutManagement1StocksResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\PostStockManagement1InfoPrompt;
+use php_client_avito\Generated\Prompt\PutStockManagement1StocksPrompt;
+use php_client_avito\Generated\Response\StockManagement\Stock\PostManagement1InfoResponse;
+use php_client_avito\Generated\Response\StockManagement\Stock\PutManagement1StocksResponse;
 
 /**
  * Группа методов "stock" раздела Avito API "Управление остатками".

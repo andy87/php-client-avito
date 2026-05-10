@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\OrderManagement\Label;
+namespace php_client_avito\Generated\Prompt\OrderManagement\Label;
 
-use Andy87\ClientsAvito\Generated\Prompt\DownloadLabelPrompt as BaseDownloadLabelPrompt;
+use php_client_avito\Generated\Prompt\DownloadLabelPrompt as BaseDownloadLabelPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /order-management/1/orders/labels/{taskID}/download.

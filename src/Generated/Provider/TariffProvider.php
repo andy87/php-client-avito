@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider;
+namespace php_client_avito\Generated\Provider;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetTariffInfoPrompt;
-use Andy87\ClientsAvito\Generated\Response\GetTariffInfoResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetTariffInfoPrompt;
+use php_client_avito\Generated\Response\GetTariffInfoResponse;
 
 /**
  * Provider раздела Avito API "Тарифы".

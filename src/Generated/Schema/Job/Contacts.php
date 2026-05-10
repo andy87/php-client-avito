@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Job;
+namespace php_client_avito\Generated\Schema\Job;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito job/Contacts.
@@ -17,7 +17,7 @@ class Contacts extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['email', 'name'];
 
-    protected const CASTS = ['phone' => \Andy87\ClientsAvito\Generated\Schema\Job\Phone::class];
+    protected const CASTS = ['phone' => \php_client_avito\Generated\Schema\Job\Phone::class];
 
     /** @var string|null Email контактного лица по данному объявлению.
 Учитывается только при публикации вакансии от имени Сотрудника.
@@ -35,6 +35,6 @@ class Contacts extends AbstractSchemaModel
  */
     public ?string $name = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Job\Phone|null Schema field phone */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Job\Phone $phone = null;
+    /** @var \php_client_avito\Generated\Schema\Job\Phone|null Schema field phone */
+    public ?\php_client_avito\Generated\Schema\Job\Phone $phone = null;
 }

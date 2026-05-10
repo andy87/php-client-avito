@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider;
+namespace php_client_avito\Generated\Provider;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\CreateReviewAnswerV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetRatingsInfoV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetReviewsV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\RemoveReviewAnswerV1Prompt;
-use Andy87\ClientsAvito\Generated\Response\CreateReviewAnswerV1Response;
-use Andy87\ClientsAvito\Generated\Response\GetRatingsInfoV1Response;
-use Andy87\ClientsAvito\Generated\Response\GetReviewsV1Response;
-use Andy87\ClientsAvito\Generated\Response\RemoveReviewAnswerV1Response;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\CreateReviewAnswerV1Prompt;
+use php_client_avito\Generated\Prompt\GetRatingsInfoV1Prompt;
+use php_client_avito\Generated\Prompt\GetReviewsV1Prompt;
+use php_client_avito\Generated\Prompt\RemoveReviewAnswerV1Prompt;
+use php_client_avito\Generated\Response\CreateReviewAnswerV1Response;
+use php_client_avito\Generated\Response\GetRatingsInfoV1Response;
+use php_client_avito\Generated\Response\GetReviewsV1Response;
+use php_client_avito\Generated\Response\RemoveReviewAnswerV1Response;
 
 /**
  * Provider раздела Avito API "Рейтинги и отзывы".

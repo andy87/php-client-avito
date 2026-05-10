@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\DeliverySandbox;
+namespace php_client_avito\Generated\Provider\DeliverySandbox;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\AddTagsToSortingCenterPrompt;
-use Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Tags\AddToSortingCenterResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\AddTagsToSortingCenterPrompt;
+use php_client_avito\Generated\Response\DeliverySandbox\Tags\AddToSortingCenterResponse;
 
 /**
  * Группа методов "tags" раздела Avito API "Доставка".

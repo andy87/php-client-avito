@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/SortingCenterGet.
@@ -17,9 +17,9 @@ class SortingCenterGet extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['data'];
 
-    protected const CASTS = ['data' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SortingCenterGetData::class]];
+    protected const CASTS = ['data' => [\php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterGetData::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SortingCenterGetData>|null Schema field data */
+    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterGetData>|null Schema field data */
     public ?array $data = null;
 
     /** @var array<string, mixed>|null Schema field error */

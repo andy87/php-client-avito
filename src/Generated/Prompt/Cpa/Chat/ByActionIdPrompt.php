@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Cpa\Chat;
+namespace php_client_avito\Generated\Prompt\Cpa\Chat;
 
-use Andy87\ClientsAvito\Generated\Prompt\ChatByActionIdPrompt as BaseChatByActionIdPrompt;
+use php_client_avito\Generated\Prompt\ChatByActionIdPrompt as BaseChatByActionIdPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /cpa/v1/chatByActionId/{actionId}.

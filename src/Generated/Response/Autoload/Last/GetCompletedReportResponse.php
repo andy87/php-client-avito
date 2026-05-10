@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Autoload\Last;
+namespace php_client_avito\Generated\Response\Autoload\Last;
 
-use Andy87\ClientsAvito\Generated\Response\GetLastCompletedReportResponse as BaseGetLastCompletedReportResponse;
+use php_client_avito\Generated\Response\GetLastCompletedReportResponse as BaseGetLastCompletedReportResponse;
 
 /**
  * Ответ Avito API [GET] /autoload/v2/reports/last_completed_report.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Autoload\Report;
+namespace php_client_avito\Generated\Response\Autoload\Report;
 
-use Andy87\ClientsAvito\Generated\Response\GetReportByIdV3Response as BaseGetReportByIdV3Response;
+use php_client_avito\Generated\Response\GetReportByIdV3Response as BaseGetReportByIdV3Response;
 
 /**
  * Ответ Avito API [GET] /autoload/v3/reports/{report_id}.

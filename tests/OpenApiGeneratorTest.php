@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Tests;
+namespace php_client_avito\Tests;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetProfilePrompt;
+use php_client_avito\Generated\Prompt\GetProfilePrompt;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -170,7 +170,7 @@ JS;
             }
 
             $relativePath = str_replace(dirname(__DIR__) . '/src/', '', $file->getPathname());
-            $className = 'Andy87\\ClientsAvito\\' . str_replace(['/', '.php'], ['\\', ''], $relativePath);
+            $className = 'php_client_avito\\' . str_replace(['/', '.php'], ['\\', ''], $relativePath);
 
             if (!class_exists($className)) {
                 continue;

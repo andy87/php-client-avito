@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Str\Intervals;
+namespace php_client_avito\Generated\Response\Str\Intervals;
 
-use Andy87\ClientsAvito\Generated\Response\PutIntervalsResponse as BasePutIntervalsResponse;
+use php_client_avito\Generated\Response\PutIntervalsResponse as BasePutIntervalsResponse;
 
 /**
  * Ответ Avito API [POST] /realty/v1/items/intervals.

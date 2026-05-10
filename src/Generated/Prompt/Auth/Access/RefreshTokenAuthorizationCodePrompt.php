@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Auth\Access;
+namespace php_client_avito\Generated\Prompt\Auth\Access;
 
-use Andy87\ClientsAvito\Generated\Prompt\RefreshAccessTokenAuthorizationCodePrompt as BaseRefreshAccessTokenAuthorizationCodePrompt;
+use php_client_avito\Generated\Prompt\RefreshAccessTokenAuthorizationCodePrompt as BaseRefreshAccessTokenAuthorizationCodePrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /token.

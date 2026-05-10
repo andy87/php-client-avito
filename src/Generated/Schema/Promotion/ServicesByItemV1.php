@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Promotion;
+namespace php_client_avito\Generated\Schema\Promotion;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito promotion/ServicesByItemV1.
@@ -17,11 +17,11 @@ class ServicesByItemV1 extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['services' => [\Andy87\ClientsAvito\Generated\Schema\Promotion\ServiceV1::class]];
+    protected const CASTS = ['services' => [\php_client_avito\Generated\Schema\Promotion\ServiceV1::class]];
 
     /** @var int|null Идентификатор объявления */
     public ?int $itemId = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Promotion\ServiceV1>|null Список услуг по объявлению */
+    /** @var array<int, \php_client_avito\Generated\Schema\Promotion\ServiceV1>|null Список услуг по объявлению */
     public ?array $services = null;
 }

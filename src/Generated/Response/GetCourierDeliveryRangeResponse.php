@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -21,7 +21,7 @@ class GetCourierDeliveryRangeResponse extends AbstractResponse
 
     protected const CASTS = [];
 
-    protected const MODEL = \Andy87\ClientsAvito\Generated\Schema\OrderManagement\GetDeliveryCourierConfirmationResponse::class;
+    protected const MODEL = \php_client_avito\Generated\Schema\OrderManagement\GetDeliveryCourierConfirmationResponse::class;
 
     /** @var array<string, mixed> Данные для отображения виджета подтверждения заказа продавцом */
     public array $result;

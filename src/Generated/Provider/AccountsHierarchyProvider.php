@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider;
+namespace php_client_avito\Generated\Provider;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\CheckAhUserV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetEmployeesV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\LinkItemsV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\ListCompanyPhonesV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\ListItemsByEmployeeIdV1Prompt;
-use Andy87\ClientsAvito\Generated\Response\CheckAhUserV1Response;
-use Andy87\ClientsAvito\Generated\Response\GetEmployeesV1Response;
-use Andy87\ClientsAvito\Generated\Response\LinkItemsV1Response;
-use Andy87\ClientsAvito\Generated\Response\ListCompanyPhonesV1Response;
-use Andy87\ClientsAvito\Generated\Response\ListItemsByEmployeeIdV1Response;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\CheckAhUserV1Prompt;
+use php_client_avito\Generated\Prompt\GetEmployeesV1Prompt;
+use php_client_avito\Generated\Prompt\LinkItemsV1Prompt;
+use php_client_avito\Generated\Prompt\ListCompanyPhonesV1Prompt;
+use php_client_avito\Generated\Prompt\ListItemsByEmployeeIdV1Prompt;
+use php_client_avito\Generated\Response\CheckAhUserV1Response;
+use php_client_avito\Generated\Response\GetEmployeesV1Response;
+use php_client_avito\Generated\Response\LinkItemsV1Response;
+use php_client_avito\Generated\Response\ListCompanyPhonesV1Response;
+use php_client_avito\Generated\Response\ListItemsByEmployeeIdV1Response;
 
 /**
  * Provider раздела Avito API "Иерархия Аккаунтов".

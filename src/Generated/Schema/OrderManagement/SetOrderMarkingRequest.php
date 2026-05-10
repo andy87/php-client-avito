@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\OrderManagement;
+namespace php_client_avito\Generated\Schema\OrderManagement;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito order-management/setOrderMarkingRequest.
@@ -17,8 +17,8 @@ class SetOrderMarkingRequest extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['markings' => [\Andy87\ClientsAvito\Generated\Schema\OrderManagement\Marking::class]];
+    protected const CASTS = ['markings' => [\php_client_avito\Generated\Schema\OrderManagement\Marking::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\OrderManagement\Marking>|null Массив маркировок, которые требуется передать */
+    /** @var array<int, \php_client_avito\Generated\Schema\OrderManagement\Marking>|null Массив маркировок, которые требуется передать */
     public ?array $markings = null;
 }

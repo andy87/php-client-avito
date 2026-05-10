@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\AccountsHierarchy;
+namespace php_client_avito\Generated\Provider\AccountsHierarchy;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\LinkItemsV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\ListItemsByEmployeeIdV1Prompt;
-use Andy87\ClientsAvito\Generated\Response\AccountsHierarchy\Items\LinkV1Response;
-use Andy87\ClientsAvito\Generated\Response\AccountsHierarchy\Items\ListByEmployeeIdV1Response;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\LinkItemsV1Prompt;
+use php_client_avito\Generated\Prompt\ListItemsByEmployeeIdV1Prompt;
+use php_client_avito\Generated\Response\AccountsHierarchy\Items\LinkV1Response;
+use php_client_avito\Generated\Response\AccountsHierarchy\Items\ListByEmployeeIdV1Response;
 
 /**
  * Группа методов "items" раздела Avito API "Иерархия Аккаунтов".

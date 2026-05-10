@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Cpxpromo\Manual;
+namespace php_client_avito\Generated\Prompt\Cpxpromo\Manual;
 
-use Andy87\ClientsAvito\Generated\Prompt\SaveManualBidPrompt as BaseSaveManualBidPrompt;
+use php_client_avito\Generated\Prompt\SaveManualBidPrompt as BaseSaveManualBidPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /cpxpromo/1/setManual.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Item;
+namespace php_client_avito\Generated\Schema\Item;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito item/ItemInfoAvito.
@@ -17,7 +17,7 @@ class ItemInfoAvito extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['autoload_item_id', 'finish_time', 'start_time', 'url', 'vas'];
 
-    protected const CASTS = ['vas' => [\Andy87\ClientsAvito\Generated\Schema\Item\InfoVas::class]];
+    protected const CASTS = ['vas' => [\php_client_avito\Generated\Schema\Item\InfoVas::class]];
 
     /** @var string|null [Идентификатор объявления](https://autoload.avito.ru/format/realty/#Id) из файла автозагрузки */
     public ?string $autoload_item_id = null;
@@ -34,6 +34,6 @@ class ItemInfoAvito extends AbstractSchemaModel
     /** @var string|null URL-адрес объявления */
     public ?string $url = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Item\InfoVas>|null Список примененных платных услуг */
+    /** @var array<int, \php_client_avito\Generated\Schema\Item\InfoVas>|null Список примененных платных услуг */
     public ?array $vas = null;
 }

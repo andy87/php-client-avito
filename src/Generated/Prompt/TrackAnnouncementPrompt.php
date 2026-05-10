@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class TrackAnnouncementPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['announcementID' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID::class, 'date' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DateWithTz::class];
+    protected const CASTS = ['announcementID' => \php_client_avito\Generated\Schema\DeliverySandbox\UUID::class, 'date' => \php_client_avito\Generated\Schema\DeliverySandbox\DateWithTz::class];
 
     protected const PATH_FIELDS = [];
 
@@ -41,11 +41,11 @@ class TrackAnnouncementPrompt extends AbstractPrompt
 
     protected const BODY_ROOT_FIELD = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID Body field announcementID */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID $announcementID;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\UUID Body field announcementID */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\UUID $announcementID;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DateWithTz Дата события */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DateWithTz $date;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DateWithTz Дата события */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\DateWithTz $date;
 
     /** @var string Body field event */
     public string $event;

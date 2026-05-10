@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\OrderManagement\Order;
+namespace php_client_avito\Generated\Prompt\OrderManagement\Order;
 
-use Andy87\ClientsAvito\Generated\Prompt\SetOrderTrackingNumberPrompt as BaseSetOrderTrackingNumberPrompt;
+use php_client_avito\Generated\Prompt\SetOrderTrackingNumberPrompt as BaseSetOrderTrackingNumberPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/order/setTrackingNumber.

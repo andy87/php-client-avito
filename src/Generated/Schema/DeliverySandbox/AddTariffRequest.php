@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/AddTariffRequest.
@@ -17,18 +17,18 @@ class AddTariffRequest extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['directions' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Direction::class], 'tariffZones' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TariffZone::class]];
+    protected const CASTS = ['directions' => [\php_client_avito\Generated\Schema\DeliverySandbox\Direction::class], 'tariffZones' => [\php_client_avito\Generated\Schema\DeliverySandbox\TariffZone::class]];
 
     /** @var string Идентификатор тарифного плана на стороне службы доставки - должен быть уникален.
  */
     public string $deliveryProviderTariffId;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Direction> Schema field directions */
+    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\Direction> Schema field directions */
     public array $directions;
 
     /** @var string Человекопонятное название тарифного плана */
     public string $name;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TariffZone> Schema field tariffZones */
+    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\TariffZone> Schema field tariffZones */
     public array $tariffZones;
 }

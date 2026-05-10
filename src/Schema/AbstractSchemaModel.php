@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Schema;
+namespace php_client_avito\Schema;
 
 /**
  * Базовая модель OpenAPI schema с гидрацией, вложенными cast-правилами и сериализацией.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Job\Applications;
+namespace php_client_avito\Generated\Prompt\Job\Applications;
 
-use Andy87\ClientsAvito\Generated\Prompt\ApplicationsWebhookDeletePrompt as BaseApplicationsWebhookDeletePrompt;
+use php_client_avito\Generated\Prompt\ApplicationsWebhookDeletePrompt as BaseApplicationsWebhookDeletePrompt;
 
 /**
  * Класс данных запроса Avito API [DELETE] /job/v1/applications/webhook.

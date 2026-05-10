@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Item;
+namespace php_client_avito\Generated\Provider\Item;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\AccountSpendingsPrompt;
-use Andy87\ClientsAvito\Generated\Response\Item\Account\SpendingsResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\AccountSpendingsPrompt;
+use php_client_avito\Generated\Response\Item\Account\SpendingsResponse;
 
 /**
  * Группа методов "account" раздела Avito API "Объявления".

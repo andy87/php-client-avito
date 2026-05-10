@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class AddTagsToSortingCenterPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['body' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TaggedSortingCenterRequest::class];
+    protected const CASTS = ['body' => \php_client_avito\Generated\Schema\DeliverySandbox\TaggedSortingCenterRequest::class];
 
     protected const PATH_FIELDS = ['tariff_id'];
 
@@ -44,6 +44,6 @@ class AddTagsToSortingCenterPrompt extends AbstractPrompt
     /** @var int id своего тарифа, теги которого будут установлены для сортировочных центров */
     public int $tariff_id;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TaggedSortingCenterRequest Request body */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\TaggedSortingCenterRequest $body;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\TaggedSortingCenterRequest Request body */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\TaggedSortingCenterRequest $body;
 }

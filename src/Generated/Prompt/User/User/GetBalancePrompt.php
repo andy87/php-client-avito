@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\User\User;
+namespace php_client_avito\Generated\Prompt\User\User;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetUserBalancePrompt as BaseGetUserBalancePrompt;
+use php_client_avito\Generated\Prompt\GetUserBalancePrompt as BaseGetUserBalancePrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /core/v1/accounts/{user_id}/balance/.

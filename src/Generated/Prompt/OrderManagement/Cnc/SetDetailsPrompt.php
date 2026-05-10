@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\OrderManagement\Cnc;
+namespace php_client_avito\Generated\Prompt\OrderManagement\Cnc;
 
-use Andy87\ClientsAvito\Generated\Prompt\CncSetDetailsPrompt as BaseCncSetDetailsPrompt;
+use php_client_avito\Generated\Prompt\CncSetDetailsPrompt as BaseCncSetDetailsPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/order/cncSetDetails.

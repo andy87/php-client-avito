@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Cpa;
+namespace php_client_avito\Generated\Provider\Cpa;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\ChatsByTimeCpaCpaV2ChatsByTimePrompt;
-use Andy87\ClientsAvito\Generated\Prompt\ChatsByTimePrompt;
-use Andy87\ClientsAvito\Generated\Response\Cpa\Chats\ByTimeCpaCpaV2ChatsByTimeResponse;
-use Andy87\ClientsAvito\Generated\Response\Cpa\Chats\ByTimeResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\ChatsByTimeCpaCpaV2ChatsByTimePrompt;
+use php_client_avito\Generated\Prompt\ChatsByTimePrompt;
+use php_client_avito\Generated\Response\Cpa\Chats\ByTimeCpaCpaV2ChatsByTimeResponse;
+use php_client_avito\Generated\Response\Cpa\Chats\ByTimeResponse;
 
 /**
  * Группа методов "chats" раздела Avito API "CPA Авито".

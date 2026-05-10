@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Promotion;
+namespace php_client_avito\Generated\Schema\Promotion;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito promotion/OrderService.
@@ -17,7 +17,7 @@ class OrderService extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['statusId' => \Andy87\ClientsAvito\Generated\Schema\Promotion\OrderServiceStatus::class];
+    protected const CASTS = ['statusId' => \php_client_avito\Generated\Schema\Promotion\OrderServiceStatus::class];
 
     /** @var int|null Идентификатор объявления */
     public ?int $itemId = null;
@@ -28,6 +28,6 @@ class OrderService extends AbstractSchemaModel
     /** @var string|null Тип услуги */
     public ?string $slug = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Promotion\OrderServiceStatus|null Schema field statusId */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Promotion\OrderServiceStatus $statusId = null;
+    /** @var \php_client_avito\Generated\Schema\Promotion\OrderServiceStatus|null Schema field statusId */
+    public ?\php_client_avito\Generated\Schema\Promotion\OrderServiceStatus $statusId = null;
 }

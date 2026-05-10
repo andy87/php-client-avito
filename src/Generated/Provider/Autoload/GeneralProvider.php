@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Autoload;
+namespace php_client_avito\Generated\Provider\Autoload;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\UploadPrompt;
-use Andy87\ClientsAvito\Generated\Response\Autoload\General\UploadResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\UploadPrompt;
+use php_client_avito\Generated\Response\Autoload\General\UploadResponse;
 
 /**
  * Группа методов "general" раздела Avito API "Автозагрузка".

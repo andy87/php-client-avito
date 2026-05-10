@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -21,7 +21,7 @@ class ApiTrxPromoOpenApiCancelResponse extends AbstractResponse
 
     protected const CASTS = [];
 
-    protected const MODEL = \Andy87\ClientsAvito\Generated\Schema\Trxpromo\CancelResponse::class;
+    protected const MODEL = \php_client_avito\Generated\Schema\Trxpromo\CancelResponse::class;
 
     /** @var array<string, mixed> Response field success */
     public array $success;

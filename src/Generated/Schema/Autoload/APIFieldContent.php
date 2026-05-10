@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Autoload;
+namespace php_client_avito\Generated\Schema\Autoload;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoload/APIFieldContent.
@@ -17,15 +17,15 @@ class APIFieldContent extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['name_in_catalog', 'values_link_json', 'values_link_xml', 'warnings'];
 
-    protected const CASTS = ['defaultValue' => \Andy87\ClientsAvito\Generated\Schema\Autoload\FieldValue::class, 'dependencies' => [\Andy87\ClientsAvito\Generated\Schema\Autoload\APIDependency::class], 'values' => [\Andy87\ClientsAvito\Generated\Schema\Autoload\FieldValue::class], 'values_range' => \Andy87\ClientsAvito\Generated\Schema\Autoload\FieldValueRange::class, 'warnings' => [\Andy87\ClientsAvito\Generated\Schema\Autoload\FieldWarning::class]];
+    protected const CASTS = ['defaultValue' => \php_client_avito\Generated\Schema\Autoload\FieldValue::class, 'dependencies' => [\php_client_avito\Generated\Schema\Autoload\APIDependency::class], 'values' => [\php_client_avito\Generated\Schema\Autoload\FieldValue::class], 'values_range' => \php_client_avito\Generated\Schema\Autoload\FieldValueRange::class, 'warnings' => [\php_client_avito\Generated\Schema\Autoload\FieldWarning::class]];
 
     /** @var string Тип данных в поле. */
     public string $data_type;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoload\FieldValue|null Schema field default */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Autoload\FieldValue $defaultValue = null;
+    /** @var \php_client_avito\Generated\Schema\Autoload\FieldValue|null Schema field default */
+    public ?\php_client_avito\Generated\Schema\Autoload\FieldValue $defaultValue = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\APIDependency>|null Список зависимостей одного поля от других. Информация в этих объектах нужна для определения, какое именно правило заполнения поля применить. */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\APIDependency>|null Список зависимостей одного поля от других. Информация в этих объектах нужна для определения, какое именно правило заполнения поля применить. */
     public ?array $dependencies = null;
 
     /** @var array<int, string>|null Текстовое представление описания зависимостей поля. */
@@ -52,7 +52,7 @@ class APIFieldContent extends AbstractSchemaModel
     /** @var bool Признак того, что поле может быть обязательным в зависимости от значения другого поля. Чтобы понять, есть ли зависимость, надо смотреть содержание атрибута dependencies. */
     public bool $required_by_dependency;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\FieldValue>|null Список возможных значений для поля. */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\FieldValue>|null Список возможных значений для поля. */
     public ?array $values = null;
 
     /** @var string|null Ссылка для получения списка полей в формате json. Структура значений по этой ссылке строго определена. Иногда бывает так, что ссылки нет.
@@ -63,9 +63,9 @@ class APIFieldContent extends AbstractSchemaModel
  */
     public ?string $values_link_xml = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoload\FieldValueRange|null Schema field values_range */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Autoload\FieldValueRange $values_range = null;
+    /** @var \php_client_avito\Generated\Schema\Autoload\FieldValueRange|null Schema field values_range */
+    public ?\php_client_avito\Generated\Schema\Autoload\FieldValueRange $values_range = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\FieldWarning>|null Schema field warnings */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\FieldWarning>|null Schema field warnings */
     public ?array $warnings = null;
 }

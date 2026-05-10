@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Messenger\Message;
+namespace php_client_avito\Generated\Response\Messenger\Message;
 
-use Andy87\ClientsAvito\Generated\Response\DeleteMessageResponse as BaseDeleteMessageResponse;
+use php_client_avito\Generated\Response\DeleteMessageResponse as BaseDeleteMessageResponse;
 
 /**
  * Ответ Avito API [POST] /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages/{message_id}.

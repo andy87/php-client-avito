@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Str\Intervals;
+namespace php_client_avito\Generated\Prompt\Str\Intervals;
 
-use Andy87\ClientsAvito\Generated\Prompt\PutIntervalsPrompt as BasePutIntervalsPrompt;
+use php_client_avito\Generated\Prompt\PutIntervalsPrompt as BasePutIntervalsPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /realty/v1/items/intervals.

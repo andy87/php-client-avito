@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Autoload;
+namespace php_client_avito\Generated\Schema\Autoload;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoload/ChildAPIField.
@@ -17,9 +17,9 @@ class ChildAPIField extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['content' => [\Andy87\ClientsAvito\Generated\Schema\Autoload\APIFieldContent::class]];
+    protected const CASTS = ['content' => [\php_client_avito\Generated\Schema\Autoload\APIFieldContent::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\APIFieldContent>|null Набор правил для заполнения тега. У одного тега может быть набор правил с разными условиями их применения. Одновременно они не применяются — все, кроме одного, должны быть исключены по правилам, описанным в атрибуте dependencies.
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\APIFieldContent>|null Набор правил для заполнения тега. У одного тега может быть набор правил с разными условиями их применения. Одновременно они не применяются — все, кроме одного, должны быть исключены по правилам, описанным в атрибуте dependencies.
 
 Иногда ни один из элементов не применяется. Так бывает, если текущее поле зависит от значения другого поля — пока не будет удовлетворено условие заполнения другого поля, текущее поле будет недоступно.
 

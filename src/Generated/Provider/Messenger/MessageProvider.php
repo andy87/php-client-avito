@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Messenger;
+namespace php_client_avito\Generated\Provider\Messenger;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\DeleteMessagePrompt;
-use Andy87\ClientsAvito\Generated\Response\Messenger\Message\DeleteResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\DeleteMessagePrompt;
+use php_client_avito\Generated\Response\Messenger\Message\DeleteResponse;
 
 /**
  * Группа методов "message" раздела Avito API "Мессенджер".

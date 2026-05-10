@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class SetOrderRealAddressPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['orderId' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString::class];
+    protected const CASTS = ['orderId' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString::class];
 
     protected const PATH_FIELDS = [];
 
@@ -44,6 +44,6 @@ class SetOrderRealAddressPrompt extends AbstractPrompt
     /** @var array<string, mixed> Body field address */
     public array $address;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString Body field orderId */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString $orderId;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString Body field orderId */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString $orderId;
 }

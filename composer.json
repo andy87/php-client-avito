@@ -5,12 +5,12 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Andy87\\ClientsAvito\\": "src/"
+      "php_client_avito\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Andy87\\ClientsAvito\\Tests\\": "tests/"
+      "php_client_avito\\Tests\\": "tests/"
     }
   },
   "require": {

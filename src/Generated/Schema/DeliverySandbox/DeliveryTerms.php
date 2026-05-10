@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/Delivery-terms.
@@ -17,23 +17,23 @@ class DeliveryTerms extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['cost' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Cost::class, 'directControlDate' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryDirectControlDate::class, 'receiverTerminalCode' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryReceiverTerminalCode::class, 'returnControlDate' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryReturnControlDate::class, 'senderReceiveTerminalCode' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliverySenderReceiveTerminalCode::class, 'toughWrap' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryToughWrap::class];
+    protected const CASTS = ['cost' => \php_client_avito\Generated\Schema\DeliverySandbox\Cost::class, 'directControlDate' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectControlDate::class, 'receiverTerminalCode' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryReceiverTerminalCode::class, 'returnControlDate' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryReturnControlDate::class, 'senderReceiveTerminalCode' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliverySenderReceiveTerminalCode::class, 'toughWrap' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryToughWrap::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Cost|null Schema field cost */
-    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Cost $cost = null;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\Cost|null Schema field cost */
+    public ?\php_client_avito\Generated\Schema\DeliverySandbox\Cost $cost = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryDirectControlDate|null Schema field directControlDate */
-    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryDirectControlDate $directControlDate = null;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectControlDate|null Schema field directControlDate */
+    public ?\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectControlDate $directControlDate = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryReceiverTerminalCode|null Schema field receiverTerminalCode */
-    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryReceiverTerminalCode $receiverTerminalCode = null;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryReceiverTerminalCode|null Schema field receiverTerminalCode */
+    public ?\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryReceiverTerminalCode $receiverTerminalCode = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryReturnControlDate|null Schema field returnControlDate */
-    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryReturnControlDate $returnControlDate = null;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryReturnControlDate|null Schema field returnControlDate */
+    public ?\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryReturnControlDate $returnControlDate = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliverySenderReceiveTerminalCode|null Schema field senderReceiveTerminalCode */
-    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliverySenderReceiveTerminalCode $senderReceiveTerminalCode = null;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliverySenderReceiveTerminalCode|null Schema field senderReceiveTerminalCode */
+    public ?\php_client_avito\Generated\Schema\DeliverySandbox\DeliverySenderReceiveTerminalCode $senderReceiveTerminalCode = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryToughWrap|null Schema field toughWrap */
-    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryToughWrap $toughWrap = null;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryToughWrap|null Schema field toughWrap */
+    public ?\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryToughWrap $toughWrap = null;
 }

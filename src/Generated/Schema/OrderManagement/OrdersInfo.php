@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\OrderManagement;
+namespace php_client_avito\Generated\Schema\OrderManagement;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito order-management/ordersInfo.
@@ -17,11 +17,11 @@ class OrdersInfo extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['orders' => [\Andy87\ClientsAvito\Generated\Schema\OrderManagement\Order::class]];
+    protected const CASTS = ['orders' => [\php_client_avito\Generated\Schema\OrderManagement\Order::class]];
 
     /** @var bool Есть ли еще заказы */
     public bool $hasMore;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\OrderManagement\Order> Массив заказов */
+    /** @var array<int, \php_client_avito\Generated\Schema\OrderManagement\Order> Массив заказов */
     public array $orders;
 }

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\OrderManagement;
+namespace php_client_avito\Generated\Schema\OrderManagement;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito order-management/order.
@@ -17,9 +17,9 @@ class Order extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['availableActions', 'marketplaceId'];
 
-    protected const CASTS = ['availableActions' => [\Andy87\ClientsAvito\Generated\Schema\OrderManagement\Action::class], 'delivery' => \Andy87\ClientsAvito\Generated\Schema\OrderManagement\Delivery::class, 'items' => [\Andy87\ClientsAvito\Generated\Schema\OrderManagement\Item::class], 'prices' => \Andy87\ClientsAvito\Generated\Schema\OrderManagement\OrderPrices::class, 'returnPolicy' => \Andy87\ClientsAvito\Generated\Schema\OrderManagement\ReturnPolicy::class, 'schedules' => \Andy87\ClientsAvito\Generated\Schema\OrderManagement\Schedules::class];
+    protected const CASTS = ['availableActions' => [\php_client_avito\Generated\Schema\OrderManagement\Action::class], 'delivery' => \php_client_avito\Generated\Schema\OrderManagement\Delivery::class, 'items' => [\php_client_avito\Generated\Schema\OrderManagement\Item::class], 'prices' => \php_client_avito\Generated\Schema\OrderManagement\OrderPrices::class, 'returnPolicy' => \php_client_avito\Generated\Schema\OrderManagement\ReturnPolicy::class, 'schedules' => \php_client_avito\Generated\Schema\OrderManagement\Schedules::class];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\OrderManagement\Action>|null Массив действий доступных по заказу. Действие с флагом required необходимо выполнить для движения заказа. В случае, когда действия от продавца не требуются, массив будет пустой.
+    /** @var array<int, \php_client_avito\Generated\Schema\OrderManagement\Action>|null Массив действий доступных по заказу. Действие с флагом required необходимо выполнить для движения заказа. В случае, когда действия от продавца не требуются, массив будет пустой.
 
   * `confirm` - подтверждение заказа;
   * `perform` - подтверждение отправки заказа (RDBS);
@@ -38,26 +38,26 @@ class Order extends AbstractSchemaModel
     /** @var string Дата и время создания заказа */
     public string $createdAt;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\OrderManagement\Delivery Schema field delivery */
-    public \Andy87\ClientsAvito\Generated\Schema\OrderManagement\Delivery $delivery;
+    /** @var \php_client_avito\Generated\Schema\OrderManagement\Delivery Schema field delivery */
+    public \php_client_avito\Generated\Schema\OrderManagement\Delivery $delivery;
 
     /** @var string Номер заказа в Авито */
     public string $id;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\OrderManagement\Item> Товары в заказе */
+    /** @var array<int, \php_client_avito\Generated\Schema\OrderManagement\Item> Товары в заказе */
     public array $items;
 
     /** @var string|null Номер заказа в Авито в новой системе */
     public ?string $marketplaceId = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\OrderManagement\OrderPrices Schema field prices */
-    public \Andy87\ClientsAvito\Generated\Schema\OrderManagement\OrderPrices $prices;
+    /** @var \php_client_avito\Generated\Schema\OrderManagement\OrderPrices Schema field prices */
+    public \php_client_avito\Generated\Schema\OrderManagement\OrderPrices $prices;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\OrderManagement\ReturnPolicy|null Schema field returnPolicy */
-    public ?\Andy87\ClientsAvito\Generated\Schema\OrderManagement\ReturnPolicy $returnPolicy = null;
+    /** @var \php_client_avito\Generated\Schema\OrderManagement\ReturnPolicy|null Schema field returnPolicy */
+    public ?\php_client_avito\Generated\Schema\OrderManagement\ReturnPolicy $returnPolicy = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\OrderManagement\Schedules Schema field schedules */
-    public \Andy87\ClientsAvito\Generated\Schema\OrderManagement\Schedules $schedules;
+    /** @var \php_client_avito\Generated\Schema\OrderManagement\Schedules Schema field schedules */
+    public \php_client_avito\Generated\Schema\OrderManagement\Schedules $schedules;
 
     /** @var string Текущий статус заказа */
     public string $status;

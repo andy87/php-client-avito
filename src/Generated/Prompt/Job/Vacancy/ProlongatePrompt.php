@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Job\Vacancy;
+namespace php_client_avito\Generated\Prompt\Job\Vacancy;
 
-use Andy87\ClientsAvito\Generated\Prompt\VacancyProlongatePrompt as BaseVacancyProlongatePrompt;
+use php_client_avito\Generated\Prompt\VacancyProlongatePrompt as BaseVacancyProlongatePrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /job/v1/vacancies/{vacancy_id}/prolongate.

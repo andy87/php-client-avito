@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Auth\Access;
+namespace php_client_avito\Generated\Response\Auth\Access;
 
-use Andy87\ClientsAvito\Generated\Response\GetAccessTokenAuthorizationCodeResponse as BaseGetAccessTokenAuthorizationCodeResponse;
+use php_client_avito\Generated\Response\GetAccessTokenAuthorizationCodeResponse as BaseGetAccessTokenAuthorizationCodeResponse;
 
 /**
  * Ответ Avito API [POST] /token‎.

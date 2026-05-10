@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Job\Vacancy;
+namespace php_client_avito\Generated\Prompt\Job\Vacancy;
 
-use Andy87\ClientsAvito\Generated\Prompt\VacancyArchivePrompt as BaseVacancyArchivePrompt;
+use php_client_avito\Generated\Prompt\VacancyArchivePrompt as BaseVacancyArchivePrompt;
 
 /**
  * Класс данных запроса Avito API [PUT] /job/v1/vacancies/archived/{vacancy_id}.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Messenger\Voice;
+namespace php_client_avito\Generated\Prompt\Messenger\Voice;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetVoiceFilesPrompt as BaseGetVoiceFilesPrompt;
+use php_client_avito\Generated\Prompt\GetVoiceFilesPrompt as BaseGetVoiceFilesPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /messenger/v1/accounts/{user_id}/getVoiceFiles.

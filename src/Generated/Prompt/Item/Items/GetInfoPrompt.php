@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Item\Items;
+namespace php_client_avito\Generated\Prompt\Item\Items;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetItemsInfoPrompt as BaseGetItemsInfoPrompt;
+use php_client_avito\Generated\Prompt\GetItemsInfoPrompt as BaseGetItemsInfoPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /core/v1/items.

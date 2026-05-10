@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Autoload\OrValue;
+namespace php_client_avito\Generated\Response\Autoload\OrValue;
 
-use Andy87\ClientsAvito\Generated\Response\CreateOrUpdateProfileResponse as BaseCreateOrUpdateProfileResponse;
+use php_client_avito\Generated\Response\CreateOrUpdateProfileResponse as BaseCreateOrUpdateProfileResponse;
 
 /**
  * Ответ Avito API [POST] /autoload/v1/profile.

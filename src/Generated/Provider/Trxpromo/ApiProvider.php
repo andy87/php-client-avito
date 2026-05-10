@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Trxpromo;
+namespace php_client_avito\Generated\Provider\Trxpromo;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\ApiTrxPromoOpenApiApplyPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\ApiTrxPromoOpenApiCancelPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\ApiTrxPromoOpenApiCommissionsPrompt;
-use Andy87\ClientsAvito\Generated\Response\Trxpromo\Api\TrxPromoOpenApiApplyResponse;
-use Andy87\ClientsAvito\Generated\Response\Trxpromo\Api\TrxPromoOpenApiCancelResponse;
-use Andy87\ClientsAvito\Generated\Response\Trxpromo\Api\TrxPromoOpenApiCommissionsResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiApplyPrompt;
+use php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiCancelPrompt;
+use php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiCommissionsPrompt;
+use php_client_avito\Generated\Response\Trxpromo\Api\TrxPromoOpenApiApplyResponse;
+use php_client_avito\Generated\Response\Trxpromo\Api\TrxPromoOpenApiCancelResponse;
+use php_client_avito\Generated\Response\Trxpromo\Api\TrxPromoOpenApiCommissionsResponse;
 
 /**
  * Группа методов "api" раздела Avito API "TrxPromo".

@@ -2,31 +2,31 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider;
+namespace php_client_avito\Generated\Provider;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\BalanceInfoV2Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\BalanceInfoV3Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\ChatByActionIdPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\ChatsByTimeCpaCpaV2ChatsByTimePrompt;
-use Andy87\ClientsAvito\Generated\Prompt\ChatsByTimePrompt;
-use Andy87\ClientsAvito\Generated\Prompt\CreateComplaintByActionIdPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetCallByIdV2Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetCallPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetCallsByTimeV2Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\PhonesInfoFromChatsPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\PostCreateComplaintPrompt;
-use Andy87\ClientsAvito\Generated\Response\BalanceInfoV2Response;
-use Andy87\ClientsAvito\Generated\Response\BalanceInfoV3Response;
-use Andy87\ClientsAvito\Generated\Response\ChatByActionIdResponse;
-use Andy87\ClientsAvito\Generated\Response\ChatsByTimeCpaCpaV2ChatsByTimeResponse;
-use Andy87\ClientsAvito\Generated\Response\ChatsByTimeResponse;
-use Andy87\ClientsAvito\Generated\Response\CreateComplaintByActionIdResponse;
-use Andy87\ClientsAvito\Generated\Response\GetCallByIdV2Response;
-use Andy87\ClientsAvito\Generated\Response\GetCallResponse;
-use Andy87\ClientsAvito\Generated\Response\GetCallsByTimeV2Response;
-use Andy87\ClientsAvito\Generated\Response\PhonesInfoFromChatsResponse;
-use Andy87\ClientsAvito\Generated\Response\PostCreateComplaintResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\BalanceInfoV2Prompt;
+use php_client_avito\Generated\Prompt\BalanceInfoV3Prompt;
+use php_client_avito\Generated\Prompt\ChatByActionIdPrompt;
+use php_client_avito\Generated\Prompt\ChatsByTimeCpaCpaV2ChatsByTimePrompt;
+use php_client_avito\Generated\Prompt\ChatsByTimePrompt;
+use php_client_avito\Generated\Prompt\CreateComplaintByActionIdPrompt;
+use php_client_avito\Generated\Prompt\GetCallByIdV2Prompt;
+use php_client_avito\Generated\Prompt\GetCallPrompt;
+use php_client_avito\Generated\Prompt\GetCallsByTimeV2Prompt;
+use php_client_avito\Generated\Prompt\PhonesInfoFromChatsPrompt;
+use php_client_avito\Generated\Prompt\PostCreateComplaintPrompt;
+use php_client_avito\Generated\Response\BalanceInfoV2Response;
+use php_client_avito\Generated\Response\BalanceInfoV3Response;
+use php_client_avito\Generated\Response\ChatByActionIdResponse;
+use php_client_avito\Generated\Response\ChatsByTimeCpaCpaV2ChatsByTimeResponse;
+use php_client_avito\Generated\Response\ChatsByTimeResponse;
+use php_client_avito\Generated\Response\CreateComplaintByActionIdResponse;
+use php_client_avito\Generated\Response\GetCallByIdV2Response;
+use php_client_avito\Generated\Response\GetCallResponse;
+use php_client_avito\Generated\Response\GetCallsByTimeV2Response;
+use php_client_avito\Generated\Response\PhonesInfoFromChatsResponse;
+use php_client_avito\Generated\Response\PostCreateComplaintResponse;
 
 /**
  * Provider раздела Avito API "CPA Авито".

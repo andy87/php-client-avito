@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/CreateParcelClientDeliveryTerminal.
@@ -17,10 +17,10 @@ class CreateParcelClientDeliveryTerminal extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['accuracy' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelPropertyAccuracy::class];
+    protected const CASTS = ['accuracy' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPropertyAccuracy::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelPropertyAccuracy Schema field accuracy */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelPropertyAccuracy $accuracy;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPropertyAccuracy Schema field accuracy */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPropertyAccuracy $accuracy;
 
     /** @var string Идентификатор ПВЗ по версии службы доставки владельца. */
     public string $id;

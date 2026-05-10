@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Auction;
+namespace php_client_avito\Generated\Provider\Auction;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetUserBidsPrompt;
-use Andy87\ClientsAvito\Generated\Response\Auction\User\GetBidsResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetUserBidsPrompt;
+use php_client_avito\Generated\Response\Auction\User\GetBidsResponse;
 
 /**
  * Группа методов "user" раздела Avito API "CPA-аукцион".

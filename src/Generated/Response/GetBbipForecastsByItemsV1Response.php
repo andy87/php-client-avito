@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,14 +19,14 @@ class GetBbipForecastsByItemsV1Response extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['errors' => [\Andy87\ClientsAvito\Generated\Schema\Promotion\ErrorByItemV1::class], 'items' => [\Andy87\ClientsAvito\Generated\Schema\Promotion\BbipForecastByItemV1::class]];
+    protected const CASTS = ['errors' => [\php_client_avito\Generated\Schema\Promotion\ErrorByItemV1::class], 'items' => [\php_client_avito\Generated\Schema\Promotion\BbipForecastByItemV1::class]];
 
-    protected const MODEL = \Andy87\ClientsAvito\Generated\Schema\Promotion\GetBbipForecastByItemsV1Resp::class;
+    protected const MODEL = \php_client_avito\Generated\Schema\Promotion\GetBbipForecastByItemsV1Resp::class;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Promotion\ErrorByItemV1> Информация об ошибках по объявлениям */
+    /** @var array<int, \php_client_avito\Generated\Schema\Promotion\ErrorByItemV1> Информация об ошибках по объявлениям */
     public array $errors;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Promotion\BbipForecastByItemV1> Прогноз по каждому объявлению */
+    /** @var array<int, \php_client_avito\Generated\Schema\Promotion\BbipForecastByItemV1> Прогноз по каждому объявлению */
     public array $items;
 
     /** @var int|null Общая стоимость по всем объявлениям (в копейках) */

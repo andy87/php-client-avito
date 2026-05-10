@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Item;
+namespace php_client_avito\Generated\Provider\Item;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetItemInfoPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\ItemAnalyticsPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\ItemStatsShallowPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\PutItemVasPackageV2Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\PutItemVasPrompt;
-use Andy87\ClientsAvito\Generated\Response\Item\Item\AnalyticsResponse;
-use Andy87\ClientsAvito\Generated\Response\Item\Item\GetInfoResponse;
-use Andy87\ClientsAvito\Generated\Response\Item\Item\PutVasPackageV2Response;
-use Andy87\ClientsAvito\Generated\Response\Item\Item\PutVasResponse;
-use Andy87\ClientsAvito\Generated\Response\Item\Item\StatsShallowResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetItemInfoPrompt;
+use php_client_avito\Generated\Prompt\ItemAnalyticsPrompt;
+use php_client_avito\Generated\Prompt\ItemStatsShallowPrompt;
+use php_client_avito\Generated\Prompt\PutItemVasPackageV2Prompt;
+use php_client_avito\Generated\Prompt\PutItemVasPrompt;
+use php_client_avito\Generated\Response\Item\Item\AnalyticsResponse;
+use php_client_avito\Generated\Response\Item\Item\GetInfoResponse;
+use php_client_avito\Generated\Response\Item\Item\PutVasPackageV2Response;
+use php_client_avito\Generated\Response\Item\Item\PutVasResponse;
+use php_client_avito\Generated\Response\Item\Item\StatsShallowResponse;
 
 /**
  * Группа методов "item" раздела Avito API "Объявления".

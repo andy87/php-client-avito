@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Catalogs;
+namespace php_client_avito\Generated\Prompt\Autoteka\Catalogs;
 
-use Andy87\ClientsAvito\Generated\Prompt\CatalogsResolvePrompt as BaseCatalogsResolvePrompt;
+use php_client_avito\Generated\Prompt\CatalogsResolvePrompt as BaseCatalogsResolvePrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/catalogs/resolve.

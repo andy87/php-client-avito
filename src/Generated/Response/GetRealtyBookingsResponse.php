@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,10 +19,10 @@ class GetRealtyBookingsResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['bookings' => [\Andy87\ClientsAvito\Generated\Schema\Str\RealtyBooking::class]];
+    protected const CASTS = ['bookings' => [\php_client_avito\Generated\Schema\Str\RealtyBooking::class]];
 
     protected const MODEL = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Str\RealtyBooking> Список броней */
+    /** @var array<int, \php_client_avito\Generated\Schema\Str\RealtyBooking> Список броней */
     public array $bookings;
 }

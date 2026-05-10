@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Job\Vacancy;
+namespace php_client_avito\Generated\Response\Job\Vacancy;
 
-use Andy87\ClientsAvito\Generated\Response\VacancyArchiveResponse as BaseVacancyArchiveResponse;
+use php_client_avito\Generated\Response\VacancyArchiveResponse as BaseVacancyArchiveResponse;
 
 /**
  * Ответ Avito API [PUT] /job/v1/vacancies/archived/{vacancy_id}.

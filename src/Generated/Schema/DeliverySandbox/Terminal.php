@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/Terminal.
@@ -17,16 +17,16 @@ class Terminal extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['address' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Address::class, 'directionTag' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag::class, 'phones' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryPhones::class, 'restriction' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Restriction::class, 'schedule' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Schedule::class];
+    protected const CASTS = ['address' => \php_client_avito\Generated\Schema\DeliverySandbox\Address::class, 'directionTag' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag::class, 'phones' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryPhones::class, 'restriction' => \php_client_avito\Generated\Schema\DeliverySandbox\Restriction::class, 'schedule' => \php_client_avito\Generated\Schema\DeliverySandbox\Schedule::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Address Schema field address */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Address $address;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\Address Schema field address */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\Address $address;
 
     /** @var string Уникальный идентификатор ПВЗ на стороне службы доставки (не допускается использование символа двоеточия «:» в идентификаторе) */
     public string $deliveryProviderId;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag Schema field directionTag */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag $directionTag;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag Schema field directionTag */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag $directionTag;
 
     /** @var string|null Отображаемое пользователям кастомное наименование пункта самовывоза. Требуется, чтобы отличать разные точки по бренду и виду.
 <br />
@@ -52,8 +52,8 @@ class Terminal extends AbstractSchemaModel
  */
     public ?array $options = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryPhones Schema field phones */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryPhones $phones;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryPhones Schema field phones */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryPhones $phones;
 
     /** @var array<int, string> Список ссылок на фотографии.
 <br />
@@ -61,11 +61,11 @@ class Terminal extends AbstractSchemaModel
  */
     public array $photos;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Restriction Schema field restriction */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Restriction $restriction;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\Restriction Schema field restriction */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\Restriction $restriction;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Schedule Schema field schedule */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Schedule $schedule;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\Schedule Schema field schedule */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\Schedule $schedule;
 
     /** @var array<int, string> Доступные в ПВЗ услуги. Забор (intake), выдача (delivery).
 Отображение пункта выдачи на карте отправителя/получателя посылки зависит от наличия соответствующей услуги у пункта выдачи.

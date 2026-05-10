@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Ratings;
+namespace php_client_avito\Generated\Schema\Ratings;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito ratings/GetRatingInfoResponse.
@@ -17,11 +17,11 @@ class GetRatingInfoResponse extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['rating' => \Andy87\ClientsAvito\Generated\Schema\Ratings\Rating::class];
+    protected const CASTS = ['rating' => \php_client_avito\Generated\Schema\Ratings\Rating::class];
 
     /** @var bool Включен ли рейтинг */
     public bool $isEnabled;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Ratings\Rating|null Schema field rating */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Ratings\Rating $rating = null;
+    /** @var \php_client_avito\Generated\Schema\Ratings\Rating|null Schema field rating */
+    public ?\php_client_avito\Generated\Schema\Ratings\Rating $rating = null;
 }

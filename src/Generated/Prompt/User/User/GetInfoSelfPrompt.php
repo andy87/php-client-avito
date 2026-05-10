@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\User\User;
+namespace php_client_avito\Generated\Prompt\User\User;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt as BaseGetUserInfoSelfPrompt;
+use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt as BaseGetUserInfoSelfPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /core/v1/accounts/self.

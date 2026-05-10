@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Str\Base;
+namespace php_client_avito\Generated\Response\Str\Base;
 
-use Andy87\ClientsAvito\Generated\Response\PostBaseParamsResponse as BasePostBaseParamsResponse;
+use php_client_avito\Generated\Response\PostBaseParamsResponse as BasePostBaseParamsResponse;
 
 /**
  * Ответ Avito API [POST] /realty/v1/items/{item_id}/base.

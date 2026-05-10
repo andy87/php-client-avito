@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Scoring;
+namespace php_client_avito\Generated\Prompt\Autoteka\Scoring;
 
-use Andy87\ClientsAvito\Generated\Prompt\ScoringByVehicleIdPrompt as BaseScoringByVehicleIdPrompt;
+use php_client_avito\Generated\Prompt\ScoringByVehicleIdPrompt as BaseScoringByVehicleIdPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/scoring/by-vehicle-id.

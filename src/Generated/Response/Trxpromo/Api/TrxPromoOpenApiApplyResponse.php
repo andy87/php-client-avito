@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Trxpromo\Api;
+namespace php_client_avito\Generated\Response\Trxpromo\Api;
 
-use Andy87\ClientsAvito\Generated\Response\ApiTrxPromoOpenApiApplyResponse as BaseApiTrxPromoOpenApiApplyResponse;
+use php_client_avito\Generated\Response\ApiTrxPromoOpenApiApplyResponse as BaseApiTrxPromoOpenApiApplyResponse;
 
 /**
  * Ответ Avito API [POST] /trx-promo/1/apply.

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,10 +19,10 @@ class ValuationBySpecificationResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['result' => \Andy87\ClientsAvito\Generated\Schema\Autoteka\ValuationBySpecificationResultAutoteka::class];
+    protected const CASTS = ['result' => \php_client_avito\Generated\Schema\Autoteka\ValuationBySpecificationResultAutoteka::class];
 
-    protected const MODEL = \Andy87\ClientsAvito\Generated\Schema\Autoteka\ValuationBySpecificationResponseBodyAutoteka::class;
+    protected const MODEL = \php_client_avito\Generated\Schema\Autoteka\ValuationBySpecificationResponseBodyAutoteka::class;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoteka\ValuationBySpecificationResultAutoteka|null Response field result */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Autoteka\ValuationBySpecificationResultAutoteka $result = null;
+    /** @var \php_client_avito\Generated\Schema\Autoteka\ValuationBySpecificationResultAutoteka|null Response field result */
+    public ?\php_client_avito\Generated\Schema\Autoteka\ValuationBySpecificationResultAutoteka $result = null;
 }

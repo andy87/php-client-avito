@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class V1cancelAnnouncementPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['options' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions::class];
+    protected const CASTS = ['options' => \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions::class];
 
     protected const PATH_FIELDS = [];
 
@@ -47,6 +47,6 @@ class V1cancelAnnouncementPrompt extends AbstractPrompt
     /** @var string Дата события */
     public string $date;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions Body field options */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions $options;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions Body field options */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions $options;
 }

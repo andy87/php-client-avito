@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/ChangeParcelsApplication.
@@ -17,7 +17,7 @@ class ChangeParcelsApplication extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['receiver' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\ChangeParcelsClient::class];
+    protected const CASTS = ['receiver' => \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsClient::class];
 
     /** @var string Идентификатор заявки Avito
 
@@ -29,6 +29,6 @@ class ChangeParcelsApplication extends AbstractSchemaModel
  */
     public string $parcelID;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\ChangeParcelsClient|null Schema field receiver */
-    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\ChangeParcelsClient $receiver = null;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsClient|null Schema field receiver */
+    public ?\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsClient $receiver = null;
 }

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Tariff;
+namespace php_client_avito\Generated\Response\DeliverySandbox\Tariff;
 
-use Andy87\ClientsAvito\Generated\Response\AddTariffSandboxV2Response as BaseAddTariffSandboxV2Response;
+use php_client_avito\Generated\Response\AddTariffSandboxV2Response as BaseAddTariffSandboxV2Response;
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/tariffsV2.

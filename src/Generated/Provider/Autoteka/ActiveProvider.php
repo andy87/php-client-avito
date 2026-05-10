@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Autoteka;
+namespace php_client_avito\Generated\Provider\Autoteka;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetActivePackagePrompt;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Active\GetPackageResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetActivePackagePrompt;
+use php_client_avito\Generated\Response\Autoteka\Active\GetPackageResponse;
 
 /**
  * Группа методов "active" раздела Avito API "Автотека".

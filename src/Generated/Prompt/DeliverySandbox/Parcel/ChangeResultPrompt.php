@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\DeliverySandbox\Parcel;
+namespace php_client_avito\Generated\Prompt\DeliverySandbox\Parcel;
 
-use Andy87\ClientsAvito\Generated\Prompt\ChangeParcelResultPrompt as BaseChangeParcelResultPrompt;
+use php_client_avito\Generated\Prompt\ChangeParcelResultPrompt as BaseChangeParcelResultPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /delivery/order/changeParcelResult.

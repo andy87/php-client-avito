@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Item;
+namespace php_client_avito\Generated\Schema\Item;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito item/VasApplyAvito.
@@ -17,11 +17,11 @@ class VasApplyAvito extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['vas' => \Andy87\ClientsAvito\Generated\Schema\Item\InfoVas::class];
+    protected const CASTS = ['vas' => \php_client_avito\Generated\Schema\Item\InfoVas::class];
 
     /** @var float|null Сумма списания за применение услуги */
     public ?float $amount = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Item\InfoVas|null Schema field vas */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Item\InfoVas $vas = null;
+    /** @var \php_client_avito\Generated\Schema\Item\InfoVas|null Schema field vas */
+    public ?\php_client_avito\Generated\Schema\Item\InfoVas $vas = null;
 }

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Autoload;
+namespace php_client_avito\Generated\Provider\Autoload;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetLastCompletedReportPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetLastCompletedReportV3Prompt;
-use Andy87\ClientsAvito\Generated\Response\Autoload\Last\GetCompletedReportResponse;
-use Andy87\ClientsAvito\Generated\Response\Autoload\Last\GetCompletedReportV3Response;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetLastCompletedReportPrompt;
+use php_client_avito\Generated\Prompt\GetLastCompletedReportV3Prompt;
+use php_client_avito\Generated\Response\Autoload\Last\GetCompletedReportResponse;
+use php_client_avito\Generated\Response\Autoload\Last\GetCompletedReportV3Response;
 
 /**
  * Группа методов "last" раздела Avito API "Автозагрузка".

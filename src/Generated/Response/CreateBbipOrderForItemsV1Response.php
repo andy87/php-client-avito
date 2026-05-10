@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,11 +19,11 @@ class CreateBbipOrderForItemsV1Response extends AbstractResponse
 
     protected const NULLABLE_FIELDS = ['orderId'];
 
-    protected const CASTS = ['errors' => [\Andy87\ClientsAvito\Generated\Schema\Promotion\ErrorByItemV1::class]];
+    protected const CASTS = ['errors' => [\php_client_avito\Generated\Schema\Promotion\ErrorByItemV1::class]];
 
-    protected const MODEL = \Andy87\ClientsAvito\Generated\Schema\Promotion\OrderBbipForItemsV1Resp::class;
+    protected const MODEL = \php_client_avito\Generated\Schema\Promotion\OrderBbipForItemsV1Resp::class;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Promotion\ErrorByItemV1> Информация об ошибках по объявлениям */
+    /** @var array<int, \php_client_avito\Generated\Schema\Promotion\ErrorByItemV1> Информация об ошибках по объявлениям */
     public array $errors;
 
     /** @var string|null Идентификатор созданной заявки на подключение услуг продвижения */

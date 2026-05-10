@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Messenger;
+namespace php_client_avito\Generated\Schema\Messenger;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito messenger/MessageQuote.
@@ -17,13 +17,13 @@ class MessageQuote extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['content' => \Andy87\ClientsAvito\Generated\Schema\Messenger\MessageContent::class];
+    protected const CASTS = ['content' => \php_client_avito\Generated\Schema\Messenger\MessageContent::class];
 
     /** @var int|null Schema field author_id */
     public ?int $author_id = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Messenger\MessageContent|null Schema field content */
-    public ?\Andy87\ClientsAvito\Generated\Schema\Messenger\MessageContent $content = null;
+    /** @var \php_client_avito\Generated\Schema\Messenger\MessageContent|null Schema field content */
+    public ?\php_client_avito\Generated\Schema\Messenger\MessageContent $content = null;
 
     /** @var int|null Schema field created */
     public ?int $created = null;

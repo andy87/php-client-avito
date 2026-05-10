@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Job\Applications;
+namespace php_client_avito\Generated\Response\Job\Applications;
 
-use Andy87\ClientsAvito\Generated\Response\ApplicationsWebhookGetResponse as BaseApplicationsWebhookGetResponse;
+use php_client_avito\Generated\Response\ApplicationsWebhookGetResponse as BaseApplicationsWebhookGetResponse;
 
 /**
  * Ответ Avito API [GET] /job/v1/applications/webhook.

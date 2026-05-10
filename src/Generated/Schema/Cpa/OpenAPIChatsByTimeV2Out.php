@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Cpa;
+namespace php_client_avito\Generated\Schema\Cpa;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito cpa/OpenAPIChatsByTimeV2Out.
@@ -17,13 +17,13 @@ class OpenAPIChatsByTimeV2Out extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['chats' => [\Andy87\ClientsAvito\Generated\Schema\Cpa\OpenApiChatsComposition::class], 'filters' => \Andy87\ClientsAvito\Generated\Schema\Cpa\OpenAPIChatsByTimeMetaFilters::class];
+    protected const CASTS = ['chats' => [\php_client_avito\Generated\Schema\Cpa\OpenApiChatsComposition::class], 'filters' => \php_client_avito\Generated\Schema\Cpa\OpenAPIChatsByTimeMetaFilters::class];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Cpa\OpenApiChatsComposition> Данные с чатами */
+    /** @var array<int, \php_client_avito\Generated\Schema\Cpa\OpenApiChatsComposition> Данные с чатами */
     public array $chats;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Cpa\OpenAPIChatsByTimeMetaFilters Schema field filters */
-    public \Andy87\ClientsAvito\Generated\Schema\Cpa\OpenAPIChatsByTimeMetaFilters $filters;
+    /** @var \php_client_avito\Generated\Schema\Cpa\OpenAPIChatsByTimeMetaFilters Schema field filters */
+    public \php_client_avito\Generated\Schema\Cpa\OpenAPIChatsByTimeMetaFilters $filters;
 
     /** @var int Количество чатов */
     public int $total;

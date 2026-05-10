@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoteka\Monitoring;
+namespace php_client_avito\Generated\Prompt\Autoteka\Monitoring;
 
-use Andy87\ClientsAvito\Generated\Prompt\MonitoringBucketRemovePrompt as BaseMonitoringBucketRemovePrompt;
+use php_client_avito\Generated\Prompt\MonitoringBucketRemovePrompt as BaseMonitoringBucketRemovePrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/monitoring/bucket/remove.

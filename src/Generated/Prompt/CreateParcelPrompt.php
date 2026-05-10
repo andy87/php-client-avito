@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class CreateParcelPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['items' => [\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelItem::class], 'options' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelOptions::class, 'package' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelPackage::class, 'payment' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelPayment::class, 'receiver' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelClient::class, 'sender' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelClient::class];
+    protected const CASTS = ['items' => [\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItem::class], 'options' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelOptions::class, 'package' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPackage::class, 'payment' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPayment::class, 'receiver' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClient::class, 'sender' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClient::class];
 
     protected const PATH_FIELDS = [];
 
@@ -49,32 +49,32 @@ class CreateParcelPrompt extends AbstractPrompt
  */
     public ?string $directOrderID = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelItem> Список товаров, которые поедут в посылке.
+    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItem> Список товаров, которые поедут в посылке.
 
 Содержит полное описание каждого отдельно взятого товара.
  */
     public array $items;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelOptions|null Body field options */
-    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelOptions $options = null;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelOptions|null Body field options */
+    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelOptions $options = null;
 
     /** @var string Идентификатор заказа Avito.
  */
     public string $orderID;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelPackage|null Body field package */
-    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelPackage $package = null;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPackage|null Body field package */
+    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPackage $package = null;
 
     /** @var string Идентификатор посылки Avito.
  */
     public string $parcelID;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelPayment Body field payment */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelPayment $payment;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPayment Body field payment */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPayment $payment;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelClient Body field receiver */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelClient $receiver;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClient Body field receiver */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClient $receiver;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelClient Body field sender */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelClient $sender;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClient Body field sender */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClient $sender;
 }

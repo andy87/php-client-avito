@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Autoteka;
+namespace php_client_avito\Generated\Provider\Autoteka;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetReportListPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetReportPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\PostReportByVehicleIdPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\PostReportPrompt;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Report\GetListResponse;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Report\GetResponse;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Report\PostByVehicleIdResponse;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Report\PostResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetReportListPrompt;
+use php_client_avito\Generated\Prompt\GetReportPrompt;
+use php_client_avito\Generated\Prompt\PostReportByVehicleIdPrompt;
+use php_client_avito\Generated\Prompt\PostReportPrompt;
+use php_client_avito\Generated\Response\Autoteka\Report\GetListResponse;
+use php_client_avito\Generated\Response\Autoteka\Report\GetResponse;
+use php_client_avito\Generated\Response\Autoteka\Report\PostByVehicleIdResponse;
+use php_client_avito\Generated\Response\Autoteka\Report\PostResponse;
 
 /**
  * Группа методов "report" раздела Avito API "Автотека".

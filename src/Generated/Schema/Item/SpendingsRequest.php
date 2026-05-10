@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Item;
+namespace php_client_avito\Generated\Schema\Item;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito item/SpendingsRequest.
@@ -17,7 +17,7 @@ class SpendingsRequest extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['filter'];
 
-    protected const CASTS = ['grouping' => \Andy87\ClientsAvito\Generated\Schema\Item\SpendingsGroupings::class];
+    protected const CASTS = ['grouping' => \php_client_avito\Generated\Schema\Item\SpendingsGroupings::class];
 
     /** @var string Дата начала периода статистики расходов в формате YYYY-MM-DD */
     public string $dateFrom;
@@ -28,8 +28,8 @@ class SpendingsRequest extends AbstractSchemaModel
     /** @var array<string, mixed>|null Набор ограничений, по которым необходимо отфильтровать расходы */
     public ?array $filter = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Item\SpendingsGroupings Schema field grouping */
-    public \Andy87\ClientsAvito\Generated\Schema\Item\SpendingsGroupings $grouping;
+    /** @var \php_client_avito\Generated\Schema\Item\SpendingsGroupings Schema field grouping */
+    public \php_client_avito\Generated\Schema\Item\SpendingsGroupings $grouping;
 
     /** @var array<int, string> Набор необходимых типов расходов */
     public array $spendingTypes;

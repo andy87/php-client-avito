@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Calltracking;
+namespace php_client_avito\Generated\Provider\Calltracking;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetCallByIdPrompt;
-use Andy87\ClientsAvito\Generated\Response\Calltracking\Call\GetByIdResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetCallByIdPrompt;
+use php_client_avito\Generated\Response\Calltracking\Call\GetByIdResponse;
 
 /**
  * Группа методов "call" раздела Avito API "CallTracking[КТ]".

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Ratings\Ratings;
+namespace php_client_avito\Generated\Prompt\Ratings\Ratings;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetRatingsInfoV1Prompt as BaseGetRatingsInfoV1Prompt;
+use php_client_avito\Generated\Prompt\GetRatingsInfoV1Prompt as BaseGetRatingsInfoV1Prompt;
 
 /**
  * Класс данных запроса Avito API [GET] /ratings/v1/info.

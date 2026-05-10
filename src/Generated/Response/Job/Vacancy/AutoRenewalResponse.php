@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Job\Vacancy;
+namespace php_client_avito\Generated\Response\Job\Vacancy;
 
-use Andy87\ClientsAvito\Generated\Response\VacancyAutoRenewalResponse as BaseVacancyAutoRenewalResponse;
+use php_client_avito\Generated\Response\VacancyAutoRenewalResponse as BaseVacancyAutoRenewalResponse;
 
 /**
  * Ответ Avito API [PUT] /job/v2/vacancies/{vacancy_uuid}/auto_renewal.

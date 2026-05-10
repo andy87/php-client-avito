@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/cutoffAndSchedule.
@@ -17,11 +17,11 @@ class CutoffAndSchedule extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['regularSchedule' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Schedule::class];
+    protected const CASTS = ['regularSchedule' => \php_client_avito\Generated\Schema\DeliverySandbox\Schedule::class];
 
     /** @var array<string, mixed> Schema field cutoff */
     public array $cutoff;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Schedule Schema field regularSchedule */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\Schedule $regularSchedule;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\Schedule Schema field regularSchedule */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\Schedule $regularSchedule;
 }

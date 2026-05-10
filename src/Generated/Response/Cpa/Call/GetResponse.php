@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Cpa\Call;
+namespace php_client_avito\Generated\Response\Cpa\Call;
 
-use Andy87\ClientsAvito\Generated\Response\GetCallResponse as BaseGetCallResponse;
+use php_client_avito\Generated\Response\GetCallResponse as BaseGetCallResponse;
 
 /**
  * Ответ Avito API [GET] /cpa/v1/call/{call_id}.

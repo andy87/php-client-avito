@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Tariff;
+namespace php_client_avito\Generated\Schema\Tariff;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito tariff/TariffContract.
@@ -17,7 +17,7 @@ class TariffContract extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['packages' => [\Andy87\ClientsAvito\Generated\Schema\Tariff\TariffContractPackage::class]];
+    protected const CASTS = ['packages' => [\php_client_avito\Generated\Schema\Tariff\TariffContractPackage::class]];
 
     /** @var int|null Количество бонусов на продвижение по тарифу */
     public ?int $bonus = null;
@@ -31,7 +31,7 @@ class TariffContract extends AbstractSchemaModel
     /** @var string|null Уровень тарифа */
     public ?string $level = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Tariff\TariffContractPackage>|null Пакеты размещений, доступные в рамках тарифа */
+    /** @var array<int, \php_client_avito\Generated\Schema\Tariff\TariffContractPackage>|null Пакеты размещений, доступные в рамках тарифа */
     public ?array $packages = null;
 
     /** @var array<string, mixed>|null Стоимость тарифа */

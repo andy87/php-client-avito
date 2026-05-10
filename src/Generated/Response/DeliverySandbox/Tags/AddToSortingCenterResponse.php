@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Tags;
+namespace php_client_avito\Generated\Response\DeliverySandbox\Tags;
 
-use Andy87\ClientsAvito\Generated\Response\AddTagsToSortingCenterResponse as BaseAddTagsToSortingCenterResponse;
+use php_client_avito\Generated\Response\AddTagsToSortingCenterResponse as BaseAddTagsToSortingCenterResponse;
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/tariffs/{tariff_id}/tagged-sorting-centers.

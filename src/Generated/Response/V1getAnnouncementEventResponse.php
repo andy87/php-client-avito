@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,13 +19,13 @@ class V1getAnnouncementEventResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = ['data'];
 
-    protected const CASTS = ['errorData' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SandboxGetAnnouncementEventError::class];
+    protected const CASTS = ['errorData' => \php_client_avito\Generated\Schema\DeliverySandbox\SandboxGetAnnouncementEventError::class];
 
-    protected const MODEL = \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SandboxGetAnnouncementEventReply::class;
+    protected const MODEL = \php_client_avito\Generated\Schema\DeliverySandbox\SandboxGetAnnouncementEventReply::class;
 
     /** @var array<string, mixed>|null Response field data */
     public ?array $data = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SandboxGetAnnouncementEventError|null Response field error */
-    public ?\Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SandboxGetAnnouncementEventError $errorData = null;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\SandboxGetAnnouncementEventError|null Response field error */
+    public ?\php_client_avito\Generated\Schema\DeliverySandbox\SandboxGetAnnouncementEventError $errorData = null;
 }

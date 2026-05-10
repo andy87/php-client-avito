@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Messenger;
+namespace php_client_avito\Generated\Schema\Messenger;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito messenger/Chats.
@@ -17,8 +17,8 @@ class Chats extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['chats' => [\Andy87\ClientsAvito\Generated\Schema\Messenger\Chat::class]];
+    protected const CASTS = ['chats' => [\php_client_avito\Generated\Schema\Messenger\Chat::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Messenger\Chat>|null Список чатов */
+    /** @var array<int, \php_client_avito\Generated\Schema\Messenger\Chat>|null Список чатов */
     public ?array $chats = null;
 }

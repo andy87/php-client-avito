@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\SbcGateway\Open;
+namespace php_client_avito\Generated\Prompt\SbcGateway\Open;
 
-use Andy87\ClientsAvito\Generated\Prompt\OpenApiAvailablePrompt as BaseOpenApiAvailablePrompt;
+use php_client_avito\Generated\Prompt\OpenApiAvailablePrompt as BaseOpenApiAvailablePrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /special-offers/v1/available.

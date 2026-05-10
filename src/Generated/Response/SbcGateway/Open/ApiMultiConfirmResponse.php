@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\SbcGateway\Open;
+namespace php_client_avito\Generated\Response\SbcGateway\Open;
 
-use Andy87\ClientsAvito\Generated\Response\OpenApiMultiConfirmResponse as BaseOpenApiMultiConfirmResponse;
+use php_client_avito\Generated\Response\OpenApiMultiConfirmResponse as BaseOpenApiMultiConfirmResponse;
 
 /**
  * Ответ Avito API [POST] /special-offers/v1/multiConfirm.

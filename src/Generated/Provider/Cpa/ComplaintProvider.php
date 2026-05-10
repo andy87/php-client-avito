@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Cpa;
+namespace php_client_avito\Generated\Provider\Cpa;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\CreateComplaintByActionIdPrompt;
-use Andy87\ClientsAvito\Generated\Response\Cpa\Complaint\CreateByActionIdResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\CreateComplaintByActionIdPrompt;
+use php_client_avito\Generated\Response\Cpa\Complaint\CreateByActionIdResponse;
 
 /**
  * Группа методов "complaint" раздела Avito API "CPA Авито".

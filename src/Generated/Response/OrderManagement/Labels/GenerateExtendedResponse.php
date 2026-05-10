@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\OrderManagement\Labels;
+namespace php_client_avito\Generated\Response\OrderManagement\Labels;
 
-use Andy87\ClientsAvito\Generated\Response\GenerateLabelsExtendedResponse as BaseGenerateLabelsExtendedResponse;
+use php_client_avito\Generated\Response\GenerateLabelsExtendedResponse as BaseGenerateLabelsExtendedResponse;
 
 /**
  * Ответ Avito API [POST] /order-management/1/orders/labels/extended.

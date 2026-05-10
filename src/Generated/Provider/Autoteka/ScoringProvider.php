@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Autoteka;
+namespace php_client_avito\Generated\Provider\Autoteka;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\ScoringByVehicleIdPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\ScoringGetByIdPrompt;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Scoring\ByVehicleIdResponse;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Scoring\GetByIdResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\ScoringByVehicleIdPrompt;
+use php_client_avito\Generated\Prompt\ScoringGetByIdPrompt;
+use php_client_avito\Generated\Response\Autoteka\Scoring\ByVehicleIdResponse;
+use php_client_avito\Generated\Response\Autoteka\Scoring\GetByIdResponse;
 
 /**
  * Группа методов "scoring" раздела Avito API "Автотека".

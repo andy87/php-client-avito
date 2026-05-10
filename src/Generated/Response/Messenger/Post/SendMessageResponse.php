@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Messenger\Post;
+namespace php_client_avito\Generated\Response\Messenger\Post;
 
-use Andy87\ClientsAvito\Generated\Response\PostSendMessageResponse as BasePostSendMessageResponse;
+use php_client_avito\Generated\Response\PostSendMessageResponse as BasePostSendMessageResponse;
 
 /**
  * Ответ Avito API [POST] /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages.

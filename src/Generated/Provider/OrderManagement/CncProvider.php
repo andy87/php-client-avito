@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\OrderManagement;
+namespace php_client_avito\Generated\Provider\OrderManagement;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\CncSetDetailsPrompt;
-use Andy87\ClientsAvito\Generated\Response\OrderManagement\Cnc\SetDetailsResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\CncSetDetailsPrompt;
+use php_client_avito\Generated\Response\OrderManagement\Cnc\SetDetailsResponse;
 
 /**
  * Группа методов "cnc" раздела Avito API "Управление заказами".

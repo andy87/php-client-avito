@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Autoteka;
+namespace php_client_avito\Generated\Provider\Autoteka;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\SpecificationByPlateNumberPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\SpecificationByVehicleIdPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\SpecificationGetByIdPrompt;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Specification\ByPlateNumberResponse;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Specification\ByVehicleIdResponse;
-use Andy87\ClientsAvito\Generated\Response\Autoteka\Specification\GetByIdResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\SpecificationByPlateNumberPrompt;
+use php_client_avito\Generated\Prompt\SpecificationByVehicleIdPrompt;
+use php_client_avito\Generated\Prompt\SpecificationGetByIdPrompt;
+use php_client_avito\Generated\Response\Autoteka\Specification\ByPlateNumberResponse;
+use php_client_avito\Generated\Response\Autoteka\Specification\ByVehicleIdResponse;
+use php_client_avito\Generated\Response\Autoteka\Specification\GetByIdResponse;
 
 /**
  * Группа методов "specification" раздела Avito API "Автотека".

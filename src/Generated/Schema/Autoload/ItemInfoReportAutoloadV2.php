@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Autoload;
+namespace php_client_avito\Generated\Schema\Autoload;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoload/ItemInfoReportAutoloadV2.
@@ -17,13 +17,13 @@ class ItemInfoReportAutoloadV2 extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['avito_date_end', 'avito_id', 'avito_status', 'feed_name', 'url'];
 
-    protected const CASTS = ['applied_vas' => [\Andy87\ClientsAvito\Generated\Schema\Autoload\ItemInfoVas::class], 'messages' => [\Andy87\ClientsAvito\Generated\Schema\Autoload\ItemInfoError::class]];
+    protected const CASTS = ['applied_vas' => [\php_client_avito\Generated\Schema\Autoload\ItemInfoVas::class], 'messages' => [\php_client_avito\Generated\Schema\Autoload\ItemInfoError::class]];
 
     /** @var string Идентификатор объявления из файла ([параметр Id](https://autoload.avito.ru/format/realty/#Id))
  */
     public string $ad_id;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\ItemInfoVas>|null Список примененных в конкретной выгрузке [услуг продвижения](https://support.avito.ru/partitions/131) */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\ItemInfoVas>|null Список примененных в конкретной выгрузке [услуг продвижения](https://support.avito.ru/partitions/131) */
     public ?array $applied_vas = null;
 
     /** @var string|null Дата окончания оплаченного периода размещения объявления */
@@ -45,7 +45,7 @@ class ItemInfoReportAutoloadV2 extends AbstractSchemaModel
     /** @var string|null Название фида из которого был взято объявление */
     public ?string $feed_name = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\ItemInfoError> Ошибки или предупреждения по объявлению */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\ItemInfoError> Ошибки или предупреждения по объявлению */
     public array $messages;
 
     /** @var array<string, mixed> Раздел отчёта, в котором находится объявление — то есть результат обработки объявления в конкретной выгрузке */

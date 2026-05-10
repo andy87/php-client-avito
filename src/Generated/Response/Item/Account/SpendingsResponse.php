@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Item\Account;
+namespace php_client_avito\Generated\Response\Item\Account;
 
-use Andy87\ClientsAvito\Generated\Response\AccountSpendingsResponse as BaseAccountSpendingsResponse;
+use php_client_avito\Generated\Response\AccountSpendingsResponse as BaseAccountSpendingsResponse;
 
 /**
  * Ответ Avito API [POST] /stats/v2/accounts/{user_id}/spendings.

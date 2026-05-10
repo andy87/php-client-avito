@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider;
+namespace php_client_avito\Generated\Provider;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\CreateBbipOrderForItemsV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetBbipForecastsByItemsV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetBbipSuggestsByItemsV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetDictOfServicesV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetOrderStatusV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetServicesByItemsV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\ListOrdersByUserV1Prompt;
-use Andy87\ClientsAvito\Generated\Response\CreateBbipOrderForItemsV1Response;
-use Andy87\ClientsAvito\Generated\Response\GetBbipForecastsByItemsV1Response;
-use Andy87\ClientsAvito\Generated\Response\GetBbipSuggestsByItemsV1Response;
-use Andy87\ClientsAvito\Generated\Response\GetDictOfServicesV1Response;
-use Andy87\ClientsAvito\Generated\Response\GetOrderStatusV1Response;
-use Andy87\ClientsAvito\Generated\Response\GetServicesByItemsV1Response;
-use Andy87\ClientsAvito\Generated\Response\ListOrdersByUserV1Response;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\CreateBbipOrderForItemsV1Prompt;
+use php_client_avito\Generated\Prompt\GetBbipForecastsByItemsV1Prompt;
+use php_client_avito\Generated\Prompt\GetBbipSuggestsByItemsV1Prompt;
+use php_client_avito\Generated\Prompt\GetDictOfServicesV1Prompt;
+use php_client_avito\Generated\Prompt\GetOrderStatusV1Prompt;
+use php_client_avito\Generated\Prompt\GetServicesByItemsV1Prompt;
+use php_client_avito\Generated\Prompt\ListOrdersByUserV1Prompt;
+use php_client_avito\Generated\Response\CreateBbipOrderForItemsV1Response;
+use php_client_avito\Generated\Response\GetBbipForecastsByItemsV1Response;
+use php_client_avito\Generated\Response\GetBbipSuggestsByItemsV1Response;
+use php_client_avito\Generated\Response\GetDictOfServicesV1Response;
+use php_client_avito\Generated\Response\GetOrderStatusV1Response;
+use php_client_avito\Generated\Response\GetServicesByItemsV1Response;
+use php_client_avito\Generated\Response\ListOrdersByUserV1Response;
 
 /**
  * Provider раздела Avito API "Продвижение".

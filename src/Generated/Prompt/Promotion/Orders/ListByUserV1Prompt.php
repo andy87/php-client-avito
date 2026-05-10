@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Promotion\Orders;
+namespace php_client_avito\Generated\Prompt\Promotion\Orders;
 
-use Andy87\ClientsAvito\Generated\Prompt\ListOrdersByUserV1Prompt as BaseListOrdersByUserV1Prompt;
+use php_client_avito\Generated\Prompt\ListOrdersByUserV1Prompt as BaseListOrdersByUserV1Prompt;
 
 /**
  * Класс данных запроса Avito API [POST] /promotion/v1/items/services/orders/get.

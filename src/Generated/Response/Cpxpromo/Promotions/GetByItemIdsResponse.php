@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Cpxpromo\Promotions;
+namespace php_client_avito\Generated\Response\Cpxpromo\Promotions;
 
-use Andy87\ClientsAvito\Generated\Response\GetPromotionsByItemIdsResponse as BaseGetPromotionsByItemIdsResponse;
+use php_client_avito\Generated\Response\GetPromotionsByItemIdsResponse as BaseGetPromotionsByItemIdsResponse;
 
 /**
  * Ответ Avito API [POST] /cpxpromo/1/getPromotionsByItemIds.

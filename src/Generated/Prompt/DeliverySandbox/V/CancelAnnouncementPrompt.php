@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\DeliverySandbox\V;
+namespace php_client_avito\Generated\Prompt\DeliverySandbox\V;
 
-use Andy87\ClientsAvito\Generated\Prompt\V1cancelAnnouncementPrompt as BaseV1cancelAnnouncementPrompt;
+use php_client_avito\Generated\Prompt\V1cancelAnnouncementPrompt as BaseV1cancelAnnouncementPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/v1/cancelAnnouncement.
@@ -13,7 +13,7 @@ use Andy87\ClientsAvito\Generated\Prompt\V1cancelAnnouncementPrompt as BaseV1can
  *
  * @property string $announcementID Уникальный идентификатор анонса UUID V4.
  * @property string $date Дата события
- * @property \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions $options Body field options
+ * @property \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCancelAnnouncementOptions $options Body field options
  */
 class CancelAnnouncementPrompt extends BaseV1cancelAnnouncementPrompt
 {

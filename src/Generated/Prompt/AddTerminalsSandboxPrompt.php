@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class AddTerminalsSandboxPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['body' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AddTerminalsRequest::class];
+    protected const CASTS = ['body' => \php_client_avito\Generated\Schema\DeliverySandbox\AddTerminalsRequest::class];
 
     protected const PATH_FIELDS = ['tariff_id'];
 
@@ -44,6 +44,6 @@ class AddTerminalsSandboxPrompt extends AbstractPrompt
     /** @var int id тарифа, к которому должны быть прикреплены добавляемые терминалы */
     public int $tariff_id;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AddTerminalsRequest Request body */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\AddTerminalsRequest $body;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\AddTerminalsRequest Request body */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\AddTerminalsRequest $body;
 }

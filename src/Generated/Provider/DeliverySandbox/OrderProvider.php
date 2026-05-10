@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\DeliverySandbox;
+namespace php_client_avito\Generated\Provider\DeliverySandbox;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\ProhibitOrderAcceptancePrompt;
-use Andy87\ClientsAvito\Generated\Prompt\SetOrderPropertiesPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\SetOrderRealAddressPrompt;
-use Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Order\ProhibitAcceptanceResponse;
-use Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Order\SetPropertiesResponse;
-use Andy87\ClientsAvito\Generated\Response\DeliverySandbox\Order\SetRealAddressResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\ProhibitOrderAcceptancePrompt;
+use php_client_avito\Generated\Prompt\SetOrderPropertiesPrompt;
+use php_client_avito\Generated\Prompt\SetOrderRealAddressPrompt;
+use php_client_avito\Generated\Response\DeliverySandbox\Order\ProhibitAcceptanceResponse;
+use php_client_avito\Generated\Response\DeliverySandbox\Order\SetPropertiesResponse;
+use php_client_avito\Generated\Response\DeliverySandbox\Order\SetRealAddressResponse;
 
 /**
  * Группа методов "order" раздела Avito API "Доставка".

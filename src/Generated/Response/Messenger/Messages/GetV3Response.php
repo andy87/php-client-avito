@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Messenger\Messages;
+namespace php_client_avito\Generated\Response\Messenger\Messages;
 
-use Andy87\ClientsAvito\Generated\Response\GetMessagesV3Response as BaseGetMessagesV3Response;
+use php_client_avito\Generated\Response\GetMessagesV3Response as BaseGetMessagesV3Response;
 
 /**
  * Ответ Avito API [GET] /messenger/v3/accounts/{user_id}/chats/{chat_id}/messages/.

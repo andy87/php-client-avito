@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autoload\General;
+namespace php_client_avito\Generated\Prompt\Autoload\General;
 
-use Andy87\ClientsAvito\Generated\Prompt\UploadPrompt as BaseUploadPrompt;
+use php_client_avito\Generated\Prompt\UploadPrompt as BaseUploadPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoload/v1/upload.

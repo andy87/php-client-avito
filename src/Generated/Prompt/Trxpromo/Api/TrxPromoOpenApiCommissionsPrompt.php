@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Trxpromo\Api;
+namespace php_client_avito\Generated\Prompt\Trxpromo\Api;
 
-use Andy87\ClientsAvito\Generated\Prompt\ApiTrxPromoOpenApiCommissionsPrompt as BaseApiTrxPromoOpenApiCommissionsPrompt;
+use php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiCommissionsPrompt as BaseApiTrxPromoOpenApiCommissionsPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /trx-promo/1/commissions.

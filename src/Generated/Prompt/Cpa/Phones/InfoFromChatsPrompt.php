@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Cpa\Phones;
+namespace php_client_avito\Generated\Prompt\Cpa\Phones;
 
-use Andy87\ClientsAvito\Generated\Prompt\PhonesInfoFromChatsPrompt as BasePhonesInfoFromChatsPrompt;
+use php_client_avito\Generated\Prompt\PhonesInfoFromChatsPrompt as BasePhonesInfoFromChatsPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /cpa/v1/phonesInfoFromChats.

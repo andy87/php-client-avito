@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Autoload;
+namespace php_client_avito\Generated\Schema\Autoload;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoload/APICategoryTreeOut.
@@ -17,8 +17,8 @@ class APICategoryTreeOut extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['categories' => [\Andy87\ClientsAvito\Generated\Schema\Autoload\APICategoryNode::class]];
+    protected const CASTS = ['categories' => [\php_client_avito\Generated\Schema\Autoload\APICategoryNode::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Autoload\APICategoryNode> Schema field categories */
+    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\APICategoryNode> Schema field categories */
     public array $categories;
 }

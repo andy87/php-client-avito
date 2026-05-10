@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\Ratings;
+namespace php_client_avito\Generated\Schema\Ratings;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito ratings/GetReviewsResponse.
@@ -17,9 +17,9 @@ class GetReviewsResponse extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['reviews' => [\Andy87\ClientsAvito\Generated\Schema\Ratings\Review::class]];
+    protected const CASTS = ['reviews' => [\php_client_avito\Generated\Schema\Ratings\Review::class]];
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Ratings\Review> Список отзывов */
+    /** @var array<int, \php_client_avito\Generated\Schema\Ratings\Review> Список отзывов */
     public array $reviews;
 
     /** @var int Количество всех отзывов */

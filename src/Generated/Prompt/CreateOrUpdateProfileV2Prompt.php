@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class CreateOrUpdateProfileV2Prompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = ['agreement'];
 
-    protected const CASTS = ['feeds_data' => \Andy87\ClientsAvito\Generated\Schema\Autoload\FeedsData::class, 'schedule' => \Andy87\ClientsAvito\Generated\Schema\Autoload\ExportSchedule::class];
+    protected const CASTS = ['feeds_data' => \php_client_avito\Generated\Schema\Autoload\FeedsData::class, 'schedule' => \php_client_avito\Generated\Schema\Autoload\ExportSchedule::class];
 
     protected const PATH_FIELDS = [];
 
@@ -50,12 +50,12 @@ class CreateOrUpdateProfileV2Prompt extends AbstractPrompt
     /** @var bool Статус автозагрузки (вкл/выкл) */
     public bool $autoload_enabled;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoload\FeedsData Body field feeds_data */
-    public \Andy87\ClientsAvito\Generated\Schema\Autoload\FeedsData $feeds_data;
+    /** @var \php_client_avito\Generated\Schema\Autoload\FeedsData Body field feeds_data */
+    public \php_client_avito\Generated\Schema\Autoload\FeedsData $feeds_data;
 
     /** @var string Почта, на которую будут приходить отчеты о выгрузках */
     public string $report_email;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\Autoload\ExportSchedule Body field schedule */
-    public \Andy87\ClientsAvito\Generated\Schema\Autoload\ExportSchedule $schedule;
+    /** @var \php_client_avito\Generated\Schema\Autoload\ExportSchedule Body field schedule */
+    public \php_client_avito\Generated\Schema\Autoload\ExportSchedule $schedule;
 }

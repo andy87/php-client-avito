@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Ratings;
+namespace php_client_avito\Generated\Provider\Ratings;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\CreateReviewAnswerV1Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\RemoveReviewAnswerV1Prompt;
-use Andy87\ClientsAvito\Generated\Response\Ratings\Review\CreateAnswerV1Response;
-use Andy87\ClientsAvito\Generated\Response\Ratings\Review\RemoveAnswerV1Response;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\CreateReviewAnswerV1Prompt;
+use php_client_avito\Generated\Prompt\RemoveReviewAnswerV1Prompt;
+use php_client_avito\Generated\Response\Ratings\Review\CreateAnswerV1Response;
+use php_client_avito\Generated\Response\Ratings\Review\RemoveAnswerV1Response;
 
 /**
  * Группа методов "review" раздела Avito API "Рейтинги и отзывы".

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/CreateParcelPackage.
@@ -17,11 +17,11 @@ class CreateParcelPackage extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['dimensions' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelItemDimensions::class, 'weight' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelItemWeight::class];
+    protected const CASTS = ['dimensions' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemDimensions::class, 'weight' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemWeight::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelItemDimensions Schema field dimensions */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelItemDimensions $dimensions;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemDimensions Schema field dimensions */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemDimensions $dimensions;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelItemWeight Schema field weight */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\CreateParcelItemWeight $weight;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemWeight Schema field weight */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemWeight $weight;
 }

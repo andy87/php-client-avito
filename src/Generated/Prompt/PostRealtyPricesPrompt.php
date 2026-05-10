@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt;
+namespace php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class PostRealtyPricesPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['prices' => [\Andy87\ClientsAvito\Generated\Schema\Str\ParamPriceItemRealty::class]];
+    protected const CASTS = ['prices' => [\php_client_avito\Generated\Schema\Str\ParamPriceItemRealty::class]];
 
     protected const PATH_FIELDS = ['user_id', 'item_id'];
 
@@ -50,6 +50,6 @@ class PostRealtyPricesPrompt extends AbstractPrompt
     /** @var bool|null Флаг, с которым вместо ошибок(если ошибка произошла с айтемом) возвращается 200 статус, без ошибки */
     public ?bool $skip_error = null;
 
-    /** @var array<int, \Andy87\ClientsAvito\Generated\Schema\Str\ParamPriceItemRealty> Body field prices */
+    /** @var array<int, \php_client_avito\Generated\Schema\Str\ParamPriceItemRealty> Body field prices */
     public array $prices;
 }

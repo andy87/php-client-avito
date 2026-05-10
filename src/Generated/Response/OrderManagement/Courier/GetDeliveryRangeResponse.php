@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\OrderManagement\Courier;
+namespace php_client_avito\Generated\Response\OrderManagement\Courier;
 
-use Andy87\ClientsAvito\Generated\Response\GetCourierDeliveryRangeResponse as BaseGetCourierDeliveryRangeResponse;
+use php_client_avito\Generated\Response\GetCourierDeliveryRangeResponse as BaseGetCourierDeliveryRangeResponse;
 
 /**
  * Ответ Avito API [GET] /order-management/1/order/getCourierDeliveryRange.

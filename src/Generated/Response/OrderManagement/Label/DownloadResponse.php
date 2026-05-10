@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\OrderManagement\Label;
+namespace php_client_avito\Generated\Response\OrderManagement\Label;
 
-use Andy87\ClientsAvito\Generated\Response\DownloadLabelResponse as BaseDownloadLabelResponse;
+use php_client_avito\Generated\Response\DownloadLabelResponse as BaseDownloadLabelResponse;
 
 /**
  * Ответ Avito API [GET] /order-management/1/orders/labels/{taskID}/download.

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Str;
+namespace php_client_avito\Generated\Provider\Str;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetRealtyBookingsPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\PostRealtyPricesPrompt;
-use Andy87\ClientsAvito\Generated\Response\Str\Realty\GetBookingsResponse;
-use Andy87\ClientsAvito\Generated\Response\Str\Realty\PostPricesResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetRealtyBookingsPrompt;
+use php_client_avito\Generated\Prompt\PostRealtyPricesPrompt;
+use php_client_avito\Generated\Response\Str\Realty\GetBookingsResponse;
+use php_client_avito\Generated\Response\Str\Realty\PostPricesResponse;
 
 /**
  * Группа методов "realty" раздела Avito API "Краткосрочная аренда".

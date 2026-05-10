@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response;
+namespace php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,7 +19,7 @@ class MarketPriceCorrespondenceV1Response extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['errorData' => \Andy87\ClientsAvito\Generated\Schema\RealtyReports\Error::class];
+    protected const CASTS = ['errorData' => \php_client_avito\Generated\Schema\RealtyReports\Error::class];
 
     protected const MODEL = null;
 
@@ -29,6 +29,6 @@ class MarketPriceCorrespondenceV1Response extends AbstractResponse
 - above - цена выше рыночной */
     public ?string $correspondence = null;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\RealtyReports\Error|null Response field error */
-    public ?\Andy87\ClientsAvito\Generated\Schema\RealtyReports\Error $errorData = null;
+    /** @var \php_client_avito\Generated\Schema\RealtyReports\Error|null Response field error */
+    public ?\php_client_avito\Generated\Schema\RealtyReports\Error $errorData = null;
 }

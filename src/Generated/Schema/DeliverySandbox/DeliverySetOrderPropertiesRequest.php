@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/DeliverySetOrderPropertiesRequest.
@@ -17,11 +17,11 @@ class DeliverySetOrderPropertiesRequest extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['orderId' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString::class, 'properties' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryParams::class];
+    protected const CASTS = ['orderId' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString::class, 'properties' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryParams::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString Schema field orderId */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString $orderId;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString Schema field orderId */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString $orderId;
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryParams Schema field properties */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\DeliveryParams $properties;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryParams Schema field properties */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryParams $properties;
 }

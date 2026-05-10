@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Cpxpromo\Auto;
+namespace php_client_avito\Generated\Response\Cpxpromo\Auto;
 
-use Andy87\ClientsAvito\Generated\Response\SaveAutoBidResponse as BaseSaveAutoBidResponse;
+use php_client_avito\Generated\Response\SaveAutoBidResponse as BaseSaveAutoBidResponse;
 
 /**
  * Ответ Avito API [POST] /cpxpromo/1/setAuto.

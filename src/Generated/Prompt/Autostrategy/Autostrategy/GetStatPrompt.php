@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Autostrategy\Autostrategy;
+namespace php_client_avito\Generated\Prompt\Autostrategy\Autostrategy;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetAutostrategyStatPrompt as BaseGetAutostrategyStatPrompt;
+use php_client_avito\Generated\Prompt\GetAutostrategyStatPrompt as BaseGetAutostrategyStatPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autostrategy/v1/stat.

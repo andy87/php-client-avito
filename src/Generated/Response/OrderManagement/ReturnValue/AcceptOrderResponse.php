@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\OrderManagement\ReturnValue;
+namespace php_client_avito\Generated\Response\OrderManagement\ReturnValue;
 
-use Andy87\ClientsAvito\Generated\Response\AcceptReturnOrderResponse as BaseAcceptReturnOrderResponse;
+use php_client_avito\Generated\Response\AcceptReturnOrderResponse as BaseAcceptReturnOrderResponse;
 
 /**
  * Ответ Avito API [POST] /order-management/1/order/acceptReturnOrder.

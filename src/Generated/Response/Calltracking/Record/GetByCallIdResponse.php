@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Calltracking\Record;
+namespace php_client_avito\Generated\Response\Calltracking\Record;
 
-use Andy87\ClientsAvito\Generated\Response\GetRecordByCallIdResponse as BaseGetRecordByCallIdResponse;
+use php_client_avito\Generated\Response\GetRecordByCallIdResponse as BaseGetRecordByCallIdResponse;
 
 /**
  * Ответ Avito API [GET] /calltracking/v1/getRecordByCallId/.

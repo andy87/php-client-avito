@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\User;
+namespace php_client_avito\Generated\Provider\User;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\GetUserBalancePrompt;
-use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
-use Andy87\ClientsAvito\Generated\Response\User\User\GetBalanceResponse;
-use Andy87\ClientsAvito\Generated\Response\User\User\GetInfoSelfResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\GetUserBalancePrompt;
+use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
+use php_client_avito\Generated\Response\User\User\GetBalanceResponse;
+use php_client_avito\Generated\Response\User\User\GetInfoSelfResponse;
 
 /**
  * Группа методов "user" раздела Avito API "Информация о пользователе".

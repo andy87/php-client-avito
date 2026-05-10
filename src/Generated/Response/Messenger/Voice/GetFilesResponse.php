@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Messenger\Voice;
+namespace php_client_avito\Generated\Response\Messenger\Voice;
 
-use Andy87\ClientsAvito\Generated\Response\GetVoiceFilesResponse as BaseGetVoiceFilesResponse;
+use php_client_avito\Generated\Response\GetVoiceFilesResponse as BaseGetVoiceFilesResponse;
 
 /**
  * Ответ Avito API [GET] /messenger/v1/accounts/{user_id}/getVoiceFiles.

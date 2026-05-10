@@ -17,10 +17,15 @@ The client is built on top of `andy87/php-client-sdk` and targets PHP 8.1 or new
 Install the package with Composer:
 
 ```bash
-composer require andy87/php-client-avito
+composer require andy87/php-client-avito:^0.5.0
 ```
 
-The package name is documented from `composer.json`. This README does not assume any specific registry or publication state.
+Release `v0.5.0` is published on Packagist as `andy87/php-client-avito`.
+
+## Compatibility
+
+Version `v0.5.0` targets PHP 8.1 or newer and requires `andy87/php-client-sdk:^0.4.0`.
+Composer resolves the SDK dependency automatically when the package is installed.
 
 ## Quick Start
 
@@ -33,8 +38,8 @@ declare(strict_types=1);
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Andy87\ClientsAvito\ApiClientAvito;
-use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+use php_client_avito\ApiClientAvito;
+use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
 
 $client = new ApiClientAvito([
     'clientId' => 'your-client-id',
@@ -59,7 +64,7 @@ Do not pass request data as a constructor array:
 ```php
 <?php
 
-use Andy87\ClientsAvito\Generated\Prompt\VasPricesPrompt;
+use php_client_avito\Generated\Prompt\VasPricesPrompt;
 
 $prompt = new VasPricesPrompt();
 $prompt->itemIds = [123456789, 987654321];
@@ -72,7 +77,7 @@ For API methods without parameters, create an empty prompt and pass it to the pr
 ```php
 <?php
 
-use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
 
 $prompt = new GetUserInfoSelfPrompt();
 $response = $client->user->getUserInfoSelf($prompt);
@@ -85,7 +90,7 @@ You can pass configuration as an array:
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito([
     'client_id' => 'your-client-id',
@@ -101,7 +106,7 @@ If you need to compose the API URL from parts, use `protocol`, `host` and `prefi
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito([
     'clientId' => 'your-client-id',
@@ -117,8 +122,8 @@ You can also use environment variables:
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
-use Andy87\ClientsAvito\AvitoConfig;
+use php_client_avito\ApiClientAvito;
+use php_client_avito\AvitoConfig;
 
 $client = new ApiClientAvito(AvitoConfig::fromEnv());
 ```
@@ -133,12 +138,44 @@ For multiple credential sets, pass a suffix:
 ```php
 <?php
 
-use Andy87\ClientsAvito\AvitoConfig;
+use php_client_avito\AvitoConfig;
 
 $config = AvitoConfig::fromEnv(suffix: 'CURIES');
 ```
 
 This reads `AVITO_CLIENT_ID_CURIES` and `AVITO_CLIENT_SECRET_CURIES`.
+
+## OAuth Token
+
+`ApiClientAvito` uses client credentials automatically for authorized generated API calls. If you need to call the Avito token endpoint explicitly, use the generated auth provider:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use php_client_avito\ApiClientAvito;
+use php_client_avito\AvitoConfig;
+use php_client_avito\Generated\Prompt\GetAccessTokenPrompt;
+
+$config = new AvitoConfig(
+    clientId: 'your-client-id',
+    clientSecret: 'your-client-secret',
+);
+
+$client = new ApiClientAvito($config);
+
+$prompt = new GetAccessTokenPrompt();
+$prompt->client_id = $config->clientId;
+$prompt->client_secret = $config->clientSecret;
+$prompt->grant_type = 'client_credentials';
+
+$token = $client->auth->getAccessToken($prompt);
+
+echo $token->access_token . PHP_EOL;
+echo $token->token_type . PHP_EOL;
+echo $token->expires_in . PHP_EOL;
+```
 
 ## Events and Headers
 
@@ -154,7 +191,7 @@ declare(strict_types=1);
 use Andy87\PhpClientSdk\Event\BeforeRequestEvent;
 use Andy87\PhpClientSdk\Event\AfterRequestEvent;
 use Andy87\PhpClientSdk\Event\RequestExceptionEvent;
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito([
     'clientId' => 'your-client-id',
@@ -184,7 +221,7 @@ If you pass a custom transport as the second argument, pass runtime options as t
 
 declare(strict_types=1);
 
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 use Andy87\PhpClientSdk\Contracts\HttpTransportInterface;
 
 /** @var HttpTransportInterface $transport */
@@ -211,7 +248,7 @@ You can also change headers and attach listeners after client creation:
 declare(strict_types=1);
 
 use Andy87\PhpClientSdk\Event\BeforeRequestEvent;
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 /** @var ApiClientAvito $client */
 $client
@@ -239,7 +276,7 @@ Each event option accepts either one callable or a list of callables:
 declare(strict_types=1);
 
 use Andy87\PhpClientSdk\Event\BeforeRequestEvent;
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito($config, [
     ApiClientAvito::EVENTS => [
@@ -266,7 +303,7 @@ HTTP responses with status `400` or higher are still converted into response DTO
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito($config, [
     ApiClientAvito::REFRESH_AUTHORIZATION_STATUS_CODES => [401],
@@ -282,7 +319,7 @@ Pass an SDK `CacheInterface` through options when the default OAuth strategy mus
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 use Andy87\PhpClientSdk\Cache\ArrayCache;
 
 $client = new ApiClientAvito($config, [
@@ -299,8 +336,8 @@ Use `authorizationResolver` when a generated prompt needs a different auth strat
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
-use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+use php_client_avito\ApiClientAvito;
+use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
 use Andy87\PhpClientSdk\Auth\ApiKeyAuthorizationStrategy;
 use Andy87\PhpClientSdk\Auth\PromptClassAuthorizationStrategyResolver;
 
@@ -316,8 +353,8 @@ Enable `TraceableTransport` with `traceableTransport => true` to inspect request
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
-use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+use php_client_avito\ApiClientAvito;
+use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
 
 $client = new ApiClientAvito($config, [
     ApiClientAvito::TRACEABLE_TRANSPORT => true,
@@ -336,8 +373,8 @@ Generated prompts can be mocked by class through `andy87/php-client-sdk`. This k
 
 declare(strict_types=1);
 
-use Andy87\ClientsAvito\ApiClientAvito;
-use Andy87\ClientsAvito\Generated\Prompt\GetUserInfoSelfPrompt;
+use php_client_avito\ApiClientAvito;
+use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
 use Andy87\PhpClientSdk\Auth\NullAuthorizationStrategy;
 use Andy87\PhpClientSdk\Mock\MockTransport;
 use Andy87\PhpClientSdk\Mock\PromptClassMockResponseResolver;
@@ -366,28 +403,28 @@ $response = $client->user->getUserInfoSelf(new GetUserInfoSelfPrompt());
 The root namespace is:
 
 ```text
-Andy87\ClientsAvito
+php_client_avito
 ```
 
 Main classes:
 
-- `Andy87\ClientsAvito\ApiClientAvito` - main client with lazy provider access.
-- `Andy87\ClientsAvito\AvitoConfig` - connection configuration.
-- `Andy87\ClientsAvito\BaseAvitoProvider` - base provider for generated API sections.
+- `php_client_avito\ApiClientAvito` - main client with lazy provider access.
+- `php_client_avito\AvitoConfig` - connection configuration.
+- `php_client_avito\BaseAvitoProvider` - base provider for generated API sections.
 
 Generated classes are placed under:
 
-- `Andy87\ClientsAvito\Generated\Provider`
-- `Andy87\ClientsAvito\Generated\Prompt`
-- `Andy87\ClientsAvito\Generated\Response`
-- `Andy87\ClientsAvito\Generated\Schema`
+- `php_client_avito\Generated\Provider`
+- `php_client_avito\Generated\Prompt`
+- `php_client_avito\Generated\Response`
+- `php_client_avito\Generated\Schema`
 
 You can inspect available top-level provider names at runtime:
 
 ```php
 <?php
 
-use Andy87\ClientsAvito\ApiClientAvito;
+use php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito([
     'clientId' => 'your-client-id',

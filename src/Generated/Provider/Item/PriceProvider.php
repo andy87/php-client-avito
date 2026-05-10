@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Item;
+namespace php_client_avito\Generated\Provider\Item;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\UpdatePricePrompt;
-use Andy87\ClientsAvito\Generated\Response\Item\Price\UpdateResponse;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\UpdatePricePrompt;
+use php_client_avito\Generated\Response\Item\Price\UpdateResponse;
 
 /**
  * Группа методов "price" раздела Avito API "Объявления".

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Prompt\Promotion\Order;
+namespace php_client_avito\Generated\Prompt\Promotion\Order;
 
-use Andy87\ClientsAvito\Generated\Prompt\GetOrderStatusV1Prompt as BaseGetOrderStatusV1Prompt;
+use php_client_avito\Generated\Prompt\GetOrderStatusV1Prompt as BaseGetOrderStatusV1Prompt;
 
 /**
  * Класс данных запроса Avito API [POST] /promotion/v1/items/services/orders/status.

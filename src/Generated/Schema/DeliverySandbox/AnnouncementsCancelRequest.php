@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Schema\DeliverySandbox;
+namespace php_client_avito\Generated\Schema\DeliverySandbox;
 
-use Andy87\ClientsAvito\Schema\AbstractSchemaModel;
+use php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/AnnouncementsCancelRequest.
@@ -17,10 +17,10 @@ class AnnouncementsCancelRequest extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['announcementID' => \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID::class];
+    protected const CASTS = ['announcementID' => \php_client_avito\Generated\Schema\DeliverySandbox\UUID::class];
 
-    /** @var \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID Schema field announcementID */
-    public \Andy87\ClientsAvito\Generated\Schema\DeliverySandbox\UUID $announcementID;
+    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\UUID Schema field announcementID */
+    public \php_client_avito\Generated\Schema\DeliverySandbox\UUID $announcementID;
 
     /** @var string|null Причина омены анонса */
     public ?string $reason = null;

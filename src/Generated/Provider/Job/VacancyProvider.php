@@ -2,29 +2,29 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Provider\Job;
+namespace php_client_avito\Generated\Provider\Job;
 
-use Andy87\ClientsAvito\BaseAvitoProvider;
-use Andy87\ClientsAvito\Generated\Prompt\SearchVacancyPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\VacancyArchivePrompt;
-use Andy87\ClientsAvito\Generated\Prompt\VacancyAutoRenewalPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\VacancyCreatePrompt;
-use Andy87\ClientsAvito\Generated\Prompt\VacancyCreateV2Prompt;
-use Andy87\ClientsAvito\Generated\Prompt\VacancyGetItemPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\VacancyGetStatusesPrompt;
-use Andy87\ClientsAvito\Generated\Prompt\VacancyProlongatePrompt;
-use Andy87\ClientsAvito\Generated\Prompt\VacancyUpdatePrompt;
-use Andy87\ClientsAvito\Generated\Prompt\VacancyUpdateV2Prompt;
-use Andy87\ClientsAvito\Generated\Response\Job\Vacancy\ArchiveResponse;
-use Andy87\ClientsAvito\Generated\Response\Job\Vacancy\AutoRenewalResponse;
-use Andy87\ClientsAvito\Generated\Response\Job\Vacancy\CreateResponse;
-use Andy87\ClientsAvito\Generated\Response\Job\Vacancy\CreateV2Response;
-use Andy87\ClientsAvito\Generated\Response\Job\Vacancy\GetItemResponse;
-use Andy87\ClientsAvito\Generated\Response\Job\Vacancy\GetStatusesResponse;
-use Andy87\ClientsAvito\Generated\Response\Job\Vacancy\ProlongateResponse;
-use Andy87\ClientsAvito\Generated\Response\Job\Vacancy\SearchResponse;
-use Andy87\ClientsAvito\Generated\Response\Job\Vacancy\UpdateResponse;
-use Andy87\ClientsAvito\Generated\Response\Job\Vacancy\UpdateV2Response;
+use php_client_avito\BaseAvitoProvider;
+use php_client_avito\Generated\Prompt\SearchVacancyPrompt;
+use php_client_avito\Generated\Prompt\VacancyArchivePrompt;
+use php_client_avito\Generated\Prompt\VacancyAutoRenewalPrompt;
+use php_client_avito\Generated\Prompt\VacancyCreatePrompt;
+use php_client_avito\Generated\Prompt\VacancyCreateV2Prompt;
+use php_client_avito\Generated\Prompt\VacancyGetItemPrompt;
+use php_client_avito\Generated\Prompt\VacancyGetStatusesPrompt;
+use php_client_avito\Generated\Prompt\VacancyProlongatePrompt;
+use php_client_avito\Generated\Prompt\VacancyUpdatePrompt;
+use php_client_avito\Generated\Prompt\VacancyUpdateV2Prompt;
+use php_client_avito\Generated\Response\Job\Vacancy\ArchiveResponse;
+use php_client_avito\Generated\Response\Job\Vacancy\AutoRenewalResponse;
+use php_client_avito\Generated\Response\Job\Vacancy\CreateResponse;
+use php_client_avito\Generated\Response\Job\Vacancy\CreateV2Response;
+use php_client_avito\Generated\Response\Job\Vacancy\GetItemResponse;
+use php_client_avito\Generated\Response\Job\Vacancy\GetStatusesResponse;
+use php_client_avito\Generated\Response\Job\Vacancy\ProlongateResponse;
+use php_client_avito\Generated\Response\Job\Vacancy\SearchResponse;
+use php_client_avito\Generated\Response\Job\Vacancy\UpdateResponse;
+use php_client_avito\Generated\Response\Job\Vacancy\UpdateV2Response;
 
 /**
  * Группа методов "vacancy" раздела Avito API "Авито.Работа".

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Andy87\ClientsAvito\Generated\Response\Auction\User;
+namespace php_client_avito\Generated\Response\Auction\User;
 
-use Andy87\ClientsAvito\Generated\Response\GetUserBidsResponse as BaseGetUserBidsResponse;
+use php_client_avito\Generated\Response\GetUserBidsResponse as BaseGetUserBidsResponse;
 
 /**
  * Ответ Avito API [GET] /auction/1/bids.
