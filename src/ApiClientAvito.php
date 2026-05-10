@@ -8,6 +8,7 @@ use Andy87\PhpClientSdk\Auth\ClientCredentialsAuthorizationStrategy;
 use Andy87\PhpClientSdk\Config\ClientOptions;
 use Andy87\PhpClientSdk\Contracts\AuthorizationStrategyResolverInterface;
 use Andy87\PhpClientSdk\Contracts\AuthorizationStrategyInterface;
+use Andy87\PhpClientSdk\Contracts\CacheInterface;
 use Andy87\PhpClientSdk\Contracts\HttpTransportInterface;
 use Andy87\PhpClientSdk\Event\AfterInitEvent;
 use Andy87\PhpClientSdk\Event\ClientEvents;
@@ -50,6 +51,9 @@ class ApiClientAvito
     public const AUTHORIZATION_RESOLVER = 'authorizationResolver';
     public const REFRESH_AUTHORIZATION_STATUS_CODES = 'refreshAuthorizationStatusCodes';
     public const TRACEABLE_TRANSPORT = 'traceableTransport';
+    public const TOKEN_CACHE = 'tokenCache';
+    public const TOKEN_CACHE_KEY = 'tokenCacheKey';
+    public const TOKEN_CLOCK_SKEW = 'tokenClockSkew';
 
     public const EVENT_AFTER_INIT = ClientEvents::AFTER_INIT;
     public const EVENT_BEFORE_REQUEST = ClientEvents::BEFORE_REQUEST;
@@ -113,12 +117,7 @@ class ApiClientAvito
         );
         $this->baseUrl = $config->getBaseUrl();
         $this->transport = $this->createTransport($transport ?? new NativeHttpTransport(), $options);
-        $this->authorizationStrategy = $authorizationStrategy ?? new ClientCredentialsAuthorizationStrategy(
-            tokenUrl: $config->tokenUrl,
-            clientId: $config->clientId,
-            clientSecret: $config->clientSecret,
-            timeout: $this->options->timeout,
-        );
+        $this->authorizationStrategy = $this->createAuthorizationStrategy($config, $authorizationStrategy, $options);
         $this->timeout = $this->options->timeout;
         $this->runtime->dispatch(self::EVENT_AFTER_INIT, new AfterInitEvent($this));
     }
@@ -315,6 +314,39 @@ class ApiClientAvito
     }
 
     /**
+     * Создаёт стратегию авторизации по умолчанию или возвращает пользовательскую.
+     *
+     * @param AvitoConfig $config Конфигурация клиента.
+     * @param AuthorizationStrategyInterface|null $authorizationStrategy Пользовательская стратегия авторизации.
+     * @param array<string, mixed>|ClientOptions $options Options клиента.
+     *
+     * @return AuthorizationStrategyInterface Стратегия авторизации.
+     *
+     * @throws \InvalidArgumentException Если cache-options описаны некорректно.
+     */
+    private function createAuthorizationStrategy(
+        AvitoConfig $config,
+        ?AuthorizationStrategyInterface $authorizationStrategy,
+        array|ClientOptions $options,
+    ): AuthorizationStrategyInterface {
+        if ($authorizationStrategy !== null) {
+            return $authorizationStrategy;
+        }
+
+        $optionsArray = is_array($options) ? $options : [];
+
+        return new ClientCredentialsAuthorizationStrategy(
+            tokenUrl: $config->tokenUrl,
+            clientId: $config->clientId,
+            clientSecret: $config->clientSecret,
+            timeout: $this->options->timeout,
+            tokenCache: $this->getTokenCacheOption($optionsArray),
+            tokenCacheKey: $this->getTokenCacheKeyOption($optionsArray),
+            clockSkew: $this->getTokenClockSkewOption($optionsArray),
+        );
+    }
+
+    /**
      * Возвращает array-option по имени.
      *
      * @param array<string, mixed> $options Options клиента.
@@ -357,6 +389,76 @@ class ApiClientAvito
             self::AUTHORIZATION_RESOLVER,
             AuthorizationStrategyResolverInterface::class,
         ));
+    }
+
+    /**
+     * Возвращает cache-хранилище OAuth token из options.
+     *
+     * @param array<string, mixed> $options Options клиента.
+     *
+     * @return CacheInterface|null Cache-хранилище или null для памяти процесса.
+     *
+     * @throws \InvalidArgumentException Если option имеет некорректный тип.
+     */
+    private function getTokenCacheOption(array $options): ?CacheInterface
+    {
+        $cache = $options[self::TOKEN_CACHE] ?? null;
+
+        if ($cache === null || $cache instanceof CacheInterface) {
+            return $cache;
+        }
+
+        throw new \InvalidArgumentException(sprintf(
+            'Option "%s" must be an instance of %s.',
+            self::TOKEN_CACHE,
+            CacheInterface::class,
+        ));
+    }
+
+    /**
+     * Возвращает ключ хранения OAuth token из options.
+     *
+     * @param array<string, mixed> $options Options клиента.
+     *
+     * @return string|null Ключ кеша или null для автоматического ключа SDK.
+     *
+     * @throws \InvalidArgumentException Если option имеет некорректный тип.
+     */
+    private function getTokenCacheKeyOption(array $options): ?string
+    {
+        $cacheKey = $options[self::TOKEN_CACHE_KEY] ?? null;
+
+        if ($cacheKey === null || is_string($cacheKey)) {
+            return $cacheKey;
+        }
+
+        throw new \InvalidArgumentException(sprintf('Option "%s" must be a string.', self::TOKEN_CACHE_KEY));
+    }
+
+    /**
+     * Возвращает ранний сдвиг обновления OAuth token из options.
+     *
+     * @param array<string, mixed> $options Options клиента.
+     *
+     * @return int Количество секунд до expires_at, за которое токен считается устаревшим.
+     *
+     * @throws \InvalidArgumentException Если option имеет некорректный тип.
+     */
+    private function getTokenClockSkewOption(array $options): int
+    {
+        $clockSkew = $options[self::TOKEN_CLOCK_SKEW] ?? 60;
+
+        if (!is_int($clockSkew) && !(is_string($clockSkew) && ctype_digit($clockSkew))) {
+            throw new \InvalidArgumentException(sprintf('Option "%s" must be a non-negative integer.', self::TOKEN_CLOCK_SKEW));
+        }
+
+        $clockSkew = (int) $clockSkew;
+
+        if ($clockSkew < 0) {
+            throw new \InvalidArgumentException(sprintf('Option "%s" must be a non-negative integer.', self::TOKEN_CLOCK_SKEW));
+        }
+
+        return $clockSkew;
     }
 
     /**

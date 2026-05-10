@@ -23,6 +23,7 @@ use Andy87\ClientsAvito\Generated\Response\PostOperationsHistoryResponse;
 use Andy87\PhpClientSdk\Auth\ApiKeyAuthorizationStrategy;
 use Andy87\PhpClientSdk\Auth\NullAuthorizationStrategy;
 use Andy87\PhpClientSdk\Auth\PromptClassAuthorizationStrategyResolver;
+use Andy87\PhpClientSdk\Cache\ArrayCache;
 use Andy87\PhpClientSdk\Http\HttpRequest;
 use Andy87\PhpClientSdk\Http\HttpResponse;
 use Andy87\PhpClientSdk\Http\MultipartFile;
@@ -220,6 +221,74 @@ class ApiClientAvitoSmokeTest extends TestCase
         self::assertSame(2, $apiCalls);
         self::assertTrue($response->getRequest()?->metadata['authorizationRefreshed'] ?? false);
         self::assertCount(4, $client->getTraceableTransport()?->getRecords() ?? []);
+    }
+
+    /**
+     * Проверяет, что default OAuth-стратегия использует TOKEN_CACHE options.
+     *
+     * @return void
+     */
+    public function testDefaultAuthorizationUsesTokenCacheOptions(): void
+    {
+        $cache = new ArrayCache();
+        $tokenCalls = 0;
+        $authorizationHeaders = [];
+        $resolver = new CallbackMockResponseResolver(static function (HttpRequest $request) use (&$tokenCalls, &$authorizationHeaders): ?HttpResponse {
+            if ($request->method === 'POST' && $request->url === 'https://auth.avito.test/token') {
+                ++$tokenCalls;
+
+                return new HttpResponse(200, ['Content-Type' => 'application/json'], '{"access_token":"cached-token","expires_in":3600}');
+            }
+
+            if ($request->method === 'GET' && $request->url === 'https://api.avito.test/core/v1/accounts/self') {
+                $authorizationHeaders[] = $request->headers['Authorization'] ?? null;
+
+                return new HttpResponse(200, ['Content-Type' => 'application/json'], '{"id":123,"name":"Cached"}');
+            }
+
+            return null;
+        });
+        $config = [
+            'clientId' => 'test-client-id',
+            'clientSecret' => 'test-client-secret',
+            'baseUrl' => 'https://api.avito.test',
+            'tokenUrl' => 'https://auth.avito.test/token',
+        ];
+        $options = [
+            ApiClientAvito::TOKEN_CACHE => $cache,
+            ApiClientAvito::TOKEN_CACHE_KEY => 'avito:test-client-id',
+            ApiClientAvito::TOKEN_CLOCK_SKEW => 60,
+        ];
+
+        $firstClient = new ApiClientAvito($config, new MockTransport($resolver), null, $options);
+        $secondClient = new ApiClientAvito($config, new MockTransport($resolver), null, $options);
+
+        self::assertSame(123, $firstClient->user->getUserInfoSelf(new GetUserInfoSelfPrompt())->id);
+        self::assertSame(123, $secondClient->user->getUserInfoSelf(new GetUserInfoSelfPrompt())->id);
+        self::assertSame(1, $tokenCalls);
+        self::assertSame(['Bearer cached-token', 'Bearer cached-token'], $authorizationHeaders);
+    }
+
+    /**
+     * Проверяет валидацию типа TOKEN_CACHE option.
+     *
+     * @return void
+     */
+    public function testTokenCacheOptionRequiresCacheInterface(): void
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage(ApiClientAvito::TOKEN_CACHE);
+
+        new ApiClientAvito(
+            [
+                'clientId' => 'test-client-id',
+                'clientSecret' => 'test-client-secret',
+                'baseUrl' => 'https://api.avito.test',
+            ],
+            [
+                ApiClientAvito::TOKEN_CACHE => new \stdClass(),
+            ],
+        );
     }
 
     /**

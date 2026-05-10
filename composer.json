@@ -15,7 +15,7 @@
   },
   "require": {
     "php": ">=8.1",
-    "andy87/php-client-sdk": "^0.3.2"
+    "andy87/php-client-sdk": "^0.4.0"
   },
   "require-dev": {
     "phpstan/phpstan": "^1.12",

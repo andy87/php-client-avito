@@ -277,6 +277,23 @@ $clientWithoutRefreshRetry = new ApiClientAvito($config, [
 ]);
 ```
 
+Чтобы дефолтная OAuth-стратегия хранила token во внешнем TTL-хранилище, передайте SDK `CacheInterface` через options. Это не привязывает Avito-клиент к Redis, Yii2, Symfony или другому фреймворку:
+
+```php
+<?php
+
+use Andy87\ClientsAvito\ApiClientAvito;
+use Andy87\PhpClientSdk\Cache\ArrayCache;
+
+$client = new ApiClientAvito($config, [
+    ApiClientAvito::TOKEN_CACHE => new ArrayCache(),
+    ApiClientAvito::TOKEN_CACHE_KEY => 'avito:oauth:client-id',
+    ApiClientAvito::TOKEN_CLOCK_SKEW => 60,
+]);
+```
+
+Для Redis, файлового кеша, БД или framework-cache используйте любой объект, реализующий `Andy87\PhpClientSdk\Contracts\CacheInterface`, либо адаптер из SDK, если ваше хранилище совместимо с PSR-16/simple-cache.
+
 Используйте `authorizationResolver`, когда generated prompt требует отдельную стратегию авторизации:
 
 ```php
