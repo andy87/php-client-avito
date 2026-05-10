@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Cpa;
+namespace and_y87\php_client_avito\Generated\Provider\Cpa;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetCallByIdV2Prompt;
-use php_client_avito\Generated\Prompt\GetCallPrompt;
-use php_client_avito\Generated\Response\Cpa\Call\GetByIdV2Response;
-use php_client_avito\Generated\Response\Cpa\Call\GetResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetCallByIdV2Prompt;
+use and_y87\php_client_avito\Generated\Prompt\GetCallPrompt;
+use and_y87\php_client_avito\Generated\Response\Cpa\Call\GetByIdV2Response;
+use and_y87\php_client_avito\Generated\Response\Cpa\Call\GetResponse;
 
 /**
  * Группа методов "call" раздела Avito API "CPA Авито".

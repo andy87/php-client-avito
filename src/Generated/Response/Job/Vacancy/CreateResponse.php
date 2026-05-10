@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Job\Vacancy;
+namespace and_y87\php_client_avito\Generated\Response\Job\Vacancy;
 
-use php_client_avito\Generated\Response\VacancyCreateResponse as BaseVacancyCreateResponse;
+use and_y87\php_client_avito\Generated\Response\VacancyCreateResponse as BaseVacancyCreateResponse;
 
 /**
  * Ответ Avito API [POST] /job/v1/vacancies.

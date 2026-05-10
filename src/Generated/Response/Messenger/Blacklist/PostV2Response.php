@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Messenger\Blacklist;
+namespace and_y87\php_client_avito\Generated\Response\Messenger\Blacklist;
 
-use php_client_avito\Generated\Response\PostBlacklistV2Response as BasePostBlacklistV2Response;
+use and_y87\php_client_avito\Generated\Response\PostBlacklistV2Response as BasePostBlacklistV2Response;
 
 /**
  * Ответ Avito API [POST] /messenger/v2/accounts/{user_id}/blacklist.

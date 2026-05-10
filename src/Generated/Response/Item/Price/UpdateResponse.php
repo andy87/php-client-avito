@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Item\Price;
+namespace and_y87\php_client_avito\Generated\Response\Item\Price;
 
-use php_client_avito\Generated\Response\UpdatePriceResponse as BaseUpdatePriceResponse;
+use and_y87\php_client_avito\Generated\Response\UpdatePriceResponse as BaseUpdatePriceResponse;
 
 /**
  * Ответ Avito API [POST] /core/v1/items/{item_id}/update_price.

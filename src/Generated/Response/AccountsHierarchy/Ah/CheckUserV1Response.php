@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\AccountsHierarchy\Ah;
+namespace and_y87\php_client_avito\Generated\Response\AccountsHierarchy\Ah;
 
-use php_client_avito\Generated\Response\CheckAhUserV1Response as BaseCheckAhUserV1Response;
+use and_y87\php_client_avito\Generated\Response\CheckAhUserV1Response as BaseCheckAhUserV1Response;
 
 /**
  * Ответ Avito API [GET] /checkAhUserV1.

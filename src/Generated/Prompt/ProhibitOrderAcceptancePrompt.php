@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt;
+namespace and_y87\php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class ProhibitOrderAcceptancePrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['orderId' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString::class];
+    protected const CASTS = ['orderId' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString::class];
 
     protected const PATH_FIELDS = [];
 
@@ -41,6 +41,6 @@ class ProhibitOrderAcceptancePrompt extends AbstractPrompt
 
     protected const BODY_ROOT_FIELD = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString Body field orderId */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString $orderId;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString Body field orderId */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString $orderId;
 }

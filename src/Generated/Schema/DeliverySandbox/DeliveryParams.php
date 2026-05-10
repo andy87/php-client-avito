@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/Delivery-params.
@@ -17,14 +17,14 @@ class DeliveryParams extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['delivery' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryTerms::class, 'dimensions' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDimensions::class, 'weight' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryWeight::class];
+    protected const CASTS = ['delivery' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryTerms::class, 'dimensions' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDimensions::class, 'weight' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryWeight::class];
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryTerms|null Schema field delivery */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryTerms $delivery = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryTerms|null Schema field delivery */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryTerms $delivery = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDimensions|null Schema field dimensions */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDimensions $dimensions = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDimensions|null Schema field dimensions */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDimensions $dimensions = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryWeight|null Schema field weight */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryWeight $weight = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryWeight|null Schema field weight */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryWeight $weight = null;
 }

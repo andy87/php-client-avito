@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autoteka\Valuation;
+namespace and_y87\php_client_avito\Generated\Prompt\Autoteka\Valuation;
 
-use php_client_avito\Generated\Prompt\ValuationBySpecificationPrompt as BaseValuationBySpecificationPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ValuationBySpecificationPrompt as BaseValuationBySpecificationPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/valuation/by-specification.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Job\Applications;
+namespace and_y87\php_client_avito\Generated\Response\Job\Applications;
 
-use php_client_avito\Generated\Response\ApplicationsSetIsViewedResponse as BaseApplicationsSetIsViewedResponse;
+use and_y87\php_client_avito\Generated\Response\ApplicationsSetIsViewedResponse as BaseApplicationsSetIsViewedResponse;
 
 /**
  * Ответ Avito API [POST] /job/v1/applications/set_is_viewed.

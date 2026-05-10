@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Autoteka;
+namespace and_y87\php_client_avito\Generated\Provider\Autoteka;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\ValuationBySpecificationPrompt;
-use php_client_avito\Generated\Response\Autoteka\Valuation\BySpecificationResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\ValuationBySpecificationPrompt;
+use and_y87\php_client_avito\Generated\Response\Autoteka\Valuation\BySpecificationResponse;
 
 /**
  * Группа методов "valuation" раздела Avito API "Автотека".

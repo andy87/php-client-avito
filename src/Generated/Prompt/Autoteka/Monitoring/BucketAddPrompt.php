@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autoteka\Monitoring;
+namespace and_y87\php_client_avito\Generated\Prompt\Autoteka\Monitoring;
 
-use php_client_avito\Generated\Prompt\MonitoringBucketAddPrompt as BaseMonitoringBucketAddPrompt;
+use and_y87\php_client_avito\Generated\Prompt\MonitoringBucketAddPrompt as BaseMonitoringBucketAddPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/monitoring/bucket/add.

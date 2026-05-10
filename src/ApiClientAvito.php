@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito;
+namespace and_y87\php_client_avito;
 
 use Andy87\PhpClientSdk\Auth\ClientCredentialsAuthorizationStrategy;
 use Andy87\PhpClientSdk\Config\ClientOptions;
@@ -15,34 +15,34 @@ use Andy87\PhpClientSdk\Event\ClientEvents;
 use Andy87\PhpClientSdk\Http\NativeHttpTransport;
 use Andy87\PhpClientSdk\Http\TraceableTransport;
 use Andy87\PhpClientSdk\Runtime\ClientRuntime;
-use php_client_avito\Generated\ProviderRegistry;
+use and_y87\php_client_avito\Generated\ProviderRegistry;
 
 /**
  * Главный клиент Avito API с ленивым доступом к provider-разделам.
  *
- * @property-read \php_client_avito\Generated\Provider\AccountsHierarchyProvider $accountsHierarchy
- * @property-read \php_client_avito\Generated\Provider\AuctionProvider $auction
- * @property-read \php_client_avito\Generated\Provider\AuthProvider $auth
- * @property-read \php_client_avito\Generated\Provider\AutoloadProvider $autoload
- * @property-read \php_client_avito\Generated\Provider\AutostrategyProvider $autostrategy
- * @property-read \php_client_avito\Generated\Provider\AutotekaProvider $autoteka
- * @property-read \php_client_avito\Generated\Provider\CalltrackingProvider $callTracking
- * @property-read \php_client_avito\Generated\Provider\CpaProvider $cpa
- * @property-read \php_client_avito\Generated\Provider\CpxpromoProvider $cpxPromo
- * @property-read \php_client_avito\Generated\Provider\DeliverySandboxProvider $deliverySandbox
- * @property-read \php_client_avito\Generated\Provider\ItemProvider $item
- * @property-read \php_client_avito\Generated\Provider\JobProvider $job
- * @property-read \php_client_avito\Generated\Provider\MessengerProvider $messenger
- * @property-read \php_client_avito\Generated\Provider\OrderManagementProvider $orderManagement
- * @property-read \php_client_avito\Generated\Provider\PromotionProvider $promotion
- * @property-read \php_client_avito\Generated\Provider\RatingsProvider $ratings
- * @property-read \php_client_avito\Generated\Provider\RealtyReportsProvider $realtyReports
- * @property-read \php_client_avito\Generated\Provider\SbcGatewayProvider $sbcGateway
- * @property-read \php_client_avito\Generated\Provider\StockManagementProvider $stockManagement
- * @property-read \php_client_avito\Generated\Provider\StrProvider $str
- * @property-read \php_client_avito\Generated\Provider\TariffProvider $tariff
- * @property-read \php_client_avito\Generated\Provider\TrxpromoProvider $trxPromo
- * @property-read \php_client_avito\Generated\Provider\UserProvider $user
+ * @property-read \and_y87\php_client_avito\Generated\Provider\AccountsHierarchyProvider $accountsHierarchy
+ * @property-read \and_y87\php_client_avito\Generated\Provider\AuctionProvider $auction
+ * @property-read \and_y87\php_client_avito\Generated\Provider\AuthProvider $auth
+ * @property-read \and_y87\php_client_avito\Generated\Provider\AutoloadProvider $autoload
+ * @property-read \and_y87\php_client_avito\Generated\Provider\AutostrategyProvider $autostrategy
+ * @property-read \and_y87\php_client_avito\Generated\Provider\AutotekaProvider $autoteka
+ * @property-read \and_y87\php_client_avito\Generated\Provider\CalltrackingProvider $callTracking
+ * @property-read \and_y87\php_client_avito\Generated\Provider\CpaProvider $cpa
+ * @property-read \and_y87\php_client_avito\Generated\Provider\CpxpromoProvider $cpxPromo
+ * @property-read \and_y87\php_client_avito\Generated\Provider\DeliverySandboxProvider $deliverySandbox
+ * @property-read \and_y87\php_client_avito\Generated\Provider\ItemProvider $item
+ * @property-read \and_y87\php_client_avito\Generated\Provider\JobProvider $job
+ * @property-read \and_y87\php_client_avito\Generated\Provider\MessengerProvider $messenger
+ * @property-read \and_y87\php_client_avito\Generated\Provider\OrderManagementProvider $orderManagement
+ * @property-read \and_y87\php_client_avito\Generated\Provider\PromotionProvider $promotion
+ * @property-read \and_y87\php_client_avito\Generated\Provider\RatingsProvider $ratings
+ * @property-read \and_y87\php_client_avito\Generated\Provider\RealtyReportsProvider $realtyReports
+ * @property-read \and_y87\php_client_avito\Generated\Provider\SbcGatewayProvider $sbcGateway
+ * @property-read \and_y87\php_client_avito\Generated\Provider\StockManagementProvider $stockManagement
+ * @property-read \and_y87\php_client_avito\Generated\Provider\StrProvider $str
+ * @property-read \and_y87\php_client_avito\Generated\Provider\TariffProvider $tariff
+ * @property-read \and_y87\php_client_avito\Generated\Provider\TrxpromoProvider $trxPromo
+ * @property-read \and_y87\php_client_avito\Generated\Provider\UserProvider $user
  */
 class ApiClientAvito
 {

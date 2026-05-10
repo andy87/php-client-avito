@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Job;
+namespace and_y87\php_client_avito\Generated\Schema\Job;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito job/WebhooksSubscriptionResultList.
@@ -17,8 +17,8 @@ class WebhooksSubscriptionResultList extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['webhooks' => [\php_client_avito\Generated\Schema\Job\WebhookSubscribeRequestBody::class]];
+    protected const CASTS = ['webhooks' => [\and_y87\php_client_avito\Generated\Schema\Job\WebhookSubscribeRequestBody::class]];
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Job\WebhookSubscribeRequestBody> список вебхуков */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Job\WebhookSubscribeRequestBody> список вебхуков */
     public array $webhooks;
 }

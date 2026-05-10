@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\DeliverySandbox\Sorting;
+namespace and_y87\php_client_avito\Generated\Response\DeliverySandbox\Sorting;
 
-use php_client_avito\Generated\Response\AddSortingCenterResponse as BaseAddSortingCenterResponse;
+use and_y87\php_client_avito\Generated\Response\AddSortingCenterResponse as BaseAddSortingCenterResponse;
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/tariffs/sorting-center.

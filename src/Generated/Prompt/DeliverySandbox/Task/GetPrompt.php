@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\DeliverySandbox\Task;
+namespace and_y87\php_client_avito\Generated\Prompt\DeliverySandbox\Task;
 
-use php_client_avito\Generated\Prompt\GetTaskPrompt as BaseGetTaskPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetTaskPrompt as BaseGetTaskPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /delivery-sandbox/tasks/{task_id}.

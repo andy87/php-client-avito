@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\OrderManagement\Cnc;
+namespace and_y87\php_client_avito\Generated\Response\OrderManagement\Cnc;
 
-use php_client_avito\Generated\Response\CncSetDetailsResponse as BaseCncSetDetailsResponse;
+use and_y87\php_client_avito\Generated\Response\CncSetDetailsResponse as BaseCncSetDetailsResponse;
 
 /**
  * Ответ Avito API [POST] /order-management/1/order/cncSetDetails.

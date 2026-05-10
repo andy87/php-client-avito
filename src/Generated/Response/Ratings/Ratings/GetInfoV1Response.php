@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Ratings\Ratings;
+namespace and_y87\php_client_avito\Generated\Response\Ratings\Ratings;
 
-use php_client_avito\Generated\Response\GetRatingsInfoV1Response as BaseGetRatingsInfoV1Response;
+use and_y87\php_client_avito\Generated\Response\GetRatingsInfoV1Response as BaseGetRatingsInfoV1Response;
 
 /**
  * Ответ Avito API [GET] /ratings/v1/info.
@@ -12,7 +12,7 @@ use php_client_avito\Generated\Response\GetRatingsInfoV1Response as BaseGetRatin
  * @documentation https://developers.avito.ru/api-catalog/ratings/documentation#operation/getRatingsInfoV1
  *
  * @property bool $isEnabled Включен ли рейтинг
- * @property \php_client_avito\Generated\Schema\Ratings\Rating|null $rating Response field rating
+ * @property \and_y87\php_client_avito\Generated\Schema\Ratings\Rating|null $rating Response field rating
  */
 class GetInfoV1Response extends BaseGetRatingsInfoV1Response
 {

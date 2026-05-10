@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt;
+namespace and_y87\php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class CreateOrUpdateProfilePrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = ['agreement'];
 
-    protected const CASTS = ['schedule' => \php_client_avito\Generated\Schema\Autoload\ExportSchedule::class];
+    protected const CASTS = ['schedule' => \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule::class];
 
     protected const PATH_FIELDS = [];
 
@@ -53,8 +53,8 @@ class CreateOrUpdateProfilePrompt extends AbstractPrompt
     /** @var string Почта, на которую будут приходить отчеты о выгрузках */
     public string $report_email;
 
-    /** @var \php_client_avito\Generated\Schema\Autoload\ExportSchedule Body field schedule */
-    public \php_client_avito\Generated\Schema\Autoload\ExportSchedule $schedule;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule Body field schedule */
+    public \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule $schedule;
 
     /** @var string URL-адрес фида, для которого настроены регулярные выгрузки. Должен начинаться с http или https. */
     public string $upload_url;

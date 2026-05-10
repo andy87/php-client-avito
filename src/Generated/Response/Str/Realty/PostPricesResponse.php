@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Str\Realty;
+namespace and_y87\php_client_avito\Generated\Response\Str\Realty;
 
-use php_client_avito\Generated\Response\PostRealtyPricesResponse as BasePostRealtyPricesResponse;
+use and_y87\php_client_avito\Generated\Response\PostRealtyPricesResponse as BasePostRealtyPricesResponse;
 
 /**
  * Ответ Avito API [POST] /realty/v1/accounts/{user_id}/items/{item_id}/prices.

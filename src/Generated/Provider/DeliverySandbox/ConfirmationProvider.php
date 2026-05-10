@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Provider\DeliverySandbox;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\CheckConfirmationCodePrompt;
-use php_client_avito\Generated\Response\DeliverySandbox\Confirmation\CheckCodeResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\CheckConfirmationCodePrompt;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\Confirmation\CheckCodeResponse;
 
 /**
  * Группа методов "confirmation" раздела Avito API "Доставка".

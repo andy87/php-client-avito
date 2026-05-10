@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Messenger\Images;
+namespace and_y87\php_client_avito\Generated\Response\Messenger\Images;
 
-use php_client_avito\Generated\Response\UploadImagesResponse as BaseUploadImagesResponse;
+use and_y87\php_client_avito\Generated\Response\UploadImagesResponse as BaseUploadImagesResponse;
 
 /**
  * Ответ Avito API [POST] /messenger/v1/accounts/{user_id}/uploadImages.

@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Tests;
+namespace and_y87\php_client_avito\Tests;
 
-use php_client_avito\ApiClientAvito;
-use php_client_avito\AvitoConfig;
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\AddAreasSandboxPrompt;
-use php_client_avito\Generated\Prompt\ApplicationsWebhookDeletePrompt;
-use php_client_avito\Generated\Prompt\ApplyVasPrompt;
-use php_client_avito\Generated\Prompt\ChatByActionIdPrompt;
-use php_client_avito\Generated\Prompt\DownloadLabelPrompt;
-use php_client_avito\Generated\Prompt\GenerateLabelsPrompt;
-use php_client_avito\Generated\Prompt\GetChatsV2Prompt;
-use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
-use php_client_avito\Generated\Prompt\PostOperationsHistoryPrompt;
-use php_client_avito\Generated\Prompt\UploadImagesPrompt;
-use php_client_avito\Generated\Response\DownloadLabelResponse;
-use php_client_avito\Generated\Response\GetUserInfoSelfResponse;
-use php_client_avito\Generated\Response\PostOperationsHistoryResponse;
+use and_y87\php_client_avito\ApiClientAvito;
+use and_y87\php_client_avito\AvitoConfig;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\AddAreasSandboxPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplicationsWebhookDeletePrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplyVasPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ChatByActionIdPrompt;
+use and_y87\php_client_avito\Generated\Prompt\DownloadLabelPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GenerateLabelsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetChatsV2Prompt;
+use and_y87\php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostOperationsHistoryPrompt;
+use and_y87\php_client_avito\Generated\Prompt\UploadImagesPrompt;
+use and_y87\php_client_avito\Generated\Response\DownloadLabelResponse;
+use and_y87\php_client_avito\Generated\Response\GetUserInfoSelfResponse;
+use and_y87\php_client_avito\Generated\Response\PostOperationsHistoryResponse;
 use Andy87\PhpClientSdk\Auth\ApiKeyAuthorizationStrategy;
 use Andy87\PhpClientSdk\Auth\NullAuthorizationStrategy;
 use Andy87\PhpClientSdk\Auth\PromptClassAuthorizationStrategyResolver;

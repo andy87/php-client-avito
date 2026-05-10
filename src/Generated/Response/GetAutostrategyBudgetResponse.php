@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,12 +19,12 @@ class GetAutostrategyBudgetResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = ['calcId'];
 
-    protected const CASTS = ['budget' => \php_client_avito\Generated\Schema\Autostrategy\Budget::class];
+    protected const CASTS = ['budget' => \and_y87\php_client_avito\Generated\Schema\Autostrategy\Budget::class];
 
     protected const MODEL = null;
 
-    /** @var \php_client_avito\Generated\Schema\Autostrategy\Budget|null Response field budget */
-    public ?\php_client_avito\Generated\Schema\Autostrategy\Budget $budget = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autostrategy\Budget|null Response field budget */
+    public ?\and_y87\php_client_avito\Generated\Schema\Autostrategy\Budget $budget = null;
 
     /** @var int|null Id расчета бюджета */
     public ?int $calcId = null;

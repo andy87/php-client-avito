@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Job;
+namespace and_y87\php_client_avito\Generated\Provider\Job;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\VacanciesGetByIdsPrompt;
-use php_client_avito\Generated\Response\Job\Vacancies\GetByIdsResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\VacanciesGetByIdsPrompt;
+use and_y87\php_client_avito\Generated\Response\Job\Vacancies\GetByIdsResponse;
 
 /**
  * Группа методов "vacancies" раздела Avito API "Авито.Работа".

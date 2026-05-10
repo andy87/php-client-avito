@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider;
+namespace and_y87\php_client_avito\Generated\Provider;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetUserBalancePrompt;
-use php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
-use php_client_avito\Generated\Prompt\PostOperationsHistoryPrompt;
-use php_client_avito\Generated\Response\GetUserBalanceResponse;
-use php_client_avito\Generated\Response\GetUserInfoSelfResponse;
-use php_client_avito\Generated\Response\PostOperationsHistoryResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetUserBalancePrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostOperationsHistoryPrompt;
+use and_y87\php_client_avito\Generated\Response\GetUserBalanceResponse;
+use and_y87\php_client_avito\Generated\Response\GetUserInfoSelfResponse;
+use and_y87\php_client_avito\Generated\Response\PostOperationsHistoryResponse;
 
 /**
  * Provider раздела Avito API "Информация о пользователе".

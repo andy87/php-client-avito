@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/CreateSandboxParcelItem.
@@ -17,9 +17,9 @@ class CreateSandboxParcelItem extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['breadcrumbs' => [\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemBreadcrumb::class]];
+    protected const CASTS = ['breadcrumbs' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemBreadcrumb::class]];
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemBreadcrumb>|null Schema field breadcrumbs */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemBreadcrumb>|null Schema field breadcrumbs */
     public ?array $breadcrumbs = null;
 
     /** @var int|null Schema field cost */

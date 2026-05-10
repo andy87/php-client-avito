@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/AnnouncementsPackage3PL.
@@ -17,12 +17,12 @@ class AnnouncementsPackage3PL extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['parcels' => [\php_client_avito\Generated\Schema\DeliverySandbox\AnnouncementsParcel3PL::class]];
+    protected const CASTS = ['parcels' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\AnnouncementsParcel3PL::class]];
 
     /** @var string Идентификатор грузоместа (ШК грузоместа) */
     public string $id;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\AnnouncementsParcel3PL> Список посылок */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\AnnouncementsParcel3PL> Список посылок */
     public array $parcels;
 
     /** @var string|null Номер пломбы */

@@ -2,35 +2,35 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider;
+namespace and_y87\php_client_avito\Generated\Provider;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\ChatReadPrompt;
-use php_client_avito\Generated\Prompt\DeleteMessagePrompt;
-use php_client_avito\Generated\Prompt\GetChatByIdV2Prompt;
-use php_client_avito\Generated\Prompt\GetChatsV2Prompt;
-use php_client_avito\Generated\Prompt\GetMessagesV3Prompt;
-use php_client_avito\Generated\Prompt\GetSubscriptionsPrompt;
-use php_client_avito\Generated\Prompt\GetVoiceFilesPrompt;
-use php_client_avito\Generated\Prompt\PostBlacklistV2Prompt;
-use php_client_avito\Generated\Prompt\PostSendImageMessagePrompt;
-use php_client_avito\Generated\Prompt\PostSendMessagePrompt;
-use php_client_avito\Generated\Prompt\PostWebhookUnsubscribePrompt;
-use php_client_avito\Generated\Prompt\PostWebhookV3Prompt;
-use php_client_avito\Generated\Prompt\UploadImagesPrompt;
-use php_client_avito\Generated\Response\ChatReadResponse;
-use php_client_avito\Generated\Response\DeleteMessageResponse;
-use php_client_avito\Generated\Response\GetChatByIdV2Response;
-use php_client_avito\Generated\Response\GetChatsV2Response;
-use php_client_avito\Generated\Response\GetMessagesV3Response;
-use php_client_avito\Generated\Response\GetSubscriptionsResponse;
-use php_client_avito\Generated\Response\GetVoiceFilesResponse;
-use php_client_avito\Generated\Response\PostBlacklistV2Response;
-use php_client_avito\Generated\Response\PostSendImageMessageResponse;
-use php_client_avito\Generated\Response\PostSendMessageResponse;
-use php_client_avito\Generated\Response\PostWebhookUnsubscribeResponse;
-use php_client_avito\Generated\Response\PostWebhookV3Response;
-use php_client_avito\Generated\Response\UploadImagesResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\ChatReadPrompt;
+use and_y87\php_client_avito\Generated\Prompt\DeleteMessagePrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetChatByIdV2Prompt;
+use and_y87\php_client_avito\Generated\Prompt\GetChatsV2Prompt;
+use and_y87\php_client_avito\Generated\Prompt\GetMessagesV3Prompt;
+use and_y87\php_client_avito\Generated\Prompt\GetSubscriptionsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetVoiceFilesPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostBlacklistV2Prompt;
+use and_y87\php_client_avito\Generated\Prompt\PostSendImageMessagePrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostSendMessagePrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostWebhookUnsubscribePrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostWebhookV3Prompt;
+use and_y87\php_client_avito\Generated\Prompt\UploadImagesPrompt;
+use and_y87\php_client_avito\Generated\Response\ChatReadResponse;
+use and_y87\php_client_avito\Generated\Response\DeleteMessageResponse;
+use and_y87\php_client_avito\Generated\Response\GetChatByIdV2Response;
+use and_y87\php_client_avito\Generated\Response\GetChatsV2Response;
+use and_y87\php_client_avito\Generated\Response\GetMessagesV3Response;
+use and_y87\php_client_avito\Generated\Response\GetSubscriptionsResponse;
+use and_y87\php_client_avito\Generated\Response\GetVoiceFilesResponse;
+use and_y87\php_client_avito\Generated\Response\PostBlacklistV2Response;
+use and_y87\php_client_avito\Generated\Response\PostSendImageMessageResponse;
+use and_y87\php_client_avito\Generated\Response\PostSendMessageResponse;
+use and_y87\php_client_avito\Generated\Response\PostWebhookUnsubscribeResponse;
+use and_y87\php_client_avito\Generated\Response\PostWebhookV3Response;
+use and_y87\php_client_avito\Generated\Response\UploadImagesResponse;
 
 /**
  * Provider раздела Avito API "Мессенджер".

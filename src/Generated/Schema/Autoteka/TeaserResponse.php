@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Autoteka;
+namespace and_y87\php_client_avito\Generated\Schema\Autoteka;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/TeaserResponse.
@@ -17,10 +17,10 @@ class TeaserResponse extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['data' => \php_client_avito\Generated\Schema\Autoteka\Teaser::class];
+    protected const CASTS = ['data' => \and_y87\php_client_avito\Generated\Schema\Autoteka\Teaser::class];
 
-    /** @var \php_client_avito\Generated\Schema\Autoteka\Teaser Schema field data */
-    public \php_client_avito\Generated\Schema\Autoteka\Teaser $data;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoteka\Teaser Schema field data */
+    public \and_y87\php_client_avito\Generated\Schema\Autoteka\Teaser $data;
 
     /** @var string Статус готовности */
     public string $status;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt;
+namespace and_y87\php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class GetBbipForecastsByItemsV1Prompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['items' => [\php_client_avito\Generated\Schema\Promotion\BbipForecastRequestByItemV1::class]];
+    protected const CASTS = ['items' => [\and_y87\php_client_avito\Generated\Schema\Promotion\BbipForecastRequestByItemV1::class]];
 
     protected const PATH_FIELDS = [];
 
@@ -44,6 +44,6 @@ class GetBbipForecastsByItemsV1Prompt extends AbstractPrompt
     /** @var string|null Пользователь работает от имени сотрудника компании (boolean, "true"\\"false") */
     public ?string $X_Is_Employee = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Promotion\BbipForecastRequestByItemV1> Данные по объявлениям для запроса прогноза */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Promotion\BbipForecastRequestByItemV1> Данные по объявлениям для запроса прогноза */
     public array $items;
 }

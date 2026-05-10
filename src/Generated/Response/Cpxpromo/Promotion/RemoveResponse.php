@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Cpxpromo\Promotion;
+namespace and_y87\php_client_avito\Generated\Response\Cpxpromo\Promotion;
 
-use php_client_avito\Generated\Response\RemovePromotionResponse as BaseRemovePromotionResponse;
+use and_y87\php_client_avito\Generated\Response\RemovePromotionResponse as BaseRemovePromotionResponse;
 
 /**
  * Ответ Avito API [POST] /cpxpromo/1/remove.

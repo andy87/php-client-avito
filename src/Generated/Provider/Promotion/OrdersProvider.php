@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Promotion;
+namespace and_y87\php_client_avito\Generated\Provider\Promotion;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\ListOrdersByUserV1Prompt;
-use php_client_avito\Generated\Response\Promotion\Orders\ListByUserV1Response;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\ListOrdersByUserV1Prompt;
+use and_y87\php_client_avito\Generated\Response\Promotion\Orders\ListByUserV1Response;
 
 /**
  * Группа методов "orders" раздела Avito API "Продвижение".

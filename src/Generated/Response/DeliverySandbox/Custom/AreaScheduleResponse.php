@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\DeliverySandbox\Custom;
+namespace and_y87\php_client_avito\Generated\Response\DeliverySandbox\Custom;
 
-use php_client_avito\Generated\Response\CustomAreaScheduleResponse as BaseCustomAreaScheduleResponse;
+use and_y87\php_client_avito\Generated\Response\CustomAreaScheduleResponse as BaseCustomAreaScheduleResponse;
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/areas/custom-schedule.

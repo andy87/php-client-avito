@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Cpxpromo;
+namespace and_y87\php_client_avito\Generated\Provider\Cpxpromo;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetBidsPrompt;
-use php_client_avito\Generated\Response\Cpxpromo\Bids\GetResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetBidsPrompt;
+use and_y87\php_client_avito\Generated\Response\Cpxpromo\Bids\GetResponse;
 
 /**
  * Группа методов "bids" раздела Avito API "Настройка цены целевого действия".

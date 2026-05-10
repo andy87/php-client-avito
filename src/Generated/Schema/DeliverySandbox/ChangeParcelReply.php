@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/ChangeParcelReply.
@@ -17,11 +17,11 @@ class ChangeParcelReply extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['data' => \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelReplyData::class, 'error' => \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelError::class];
+    protected const CASTS = ['data' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelReplyData::class, 'error' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelError::class];
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelReplyData|null Schema field data */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelReplyData $data = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelReplyData|null Schema field data */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelReplyData $data = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelError|null Schema field error */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelError $error = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelError|null Schema field error */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelError $error = null;
 }

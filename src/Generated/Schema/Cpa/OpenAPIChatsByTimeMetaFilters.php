@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Cpa;
+namespace and_y87\php_client_avito\Generated\Schema\Cpa;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito cpa/OpenAPIChatsByTimeMetaFilters.
@@ -17,8 +17,8 @@ class OpenAPIChatsByTimeMetaFilters extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['active' => \php_client_avito\Generated\Schema\Cpa\OpenAPIChatsByTimeFilters::class];
+    protected const CASTS = ['active' => \and_y87\php_client_avito\Generated\Schema\Cpa\OpenAPIChatsByTimeFilters::class];
 
-    /** @var \php_client_avito\Generated\Schema\Cpa\OpenAPIChatsByTimeFilters Schema field active */
-    public \php_client_avito\Generated\Schema\Cpa\OpenAPIChatsByTimeFilters $active;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Cpa\OpenAPIChatsByTimeFilters Schema field active */
+    public \and_y87\php_client_avito\Generated\Schema\Cpa\OpenAPIChatsByTimeFilters $active;
 }

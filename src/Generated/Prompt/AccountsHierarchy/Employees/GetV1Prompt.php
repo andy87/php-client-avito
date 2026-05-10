@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\AccountsHierarchy\Employees;
+namespace and_y87\php_client_avito\Generated\Prompt\AccountsHierarchy\Employees;
 
-use php_client_avito\Generated\Prompt\GetEmployeesV1Prompt as BaseGetEmployeesV1Prompt;
+use and_y87\php_client_avito\Generated\Prompt\GetEmployeesV1Prompt as BaseGetEmployeesV1Prompt;
 
 /**
  * Класс данных запроса Avito API [GET] /getEmployeesV1.

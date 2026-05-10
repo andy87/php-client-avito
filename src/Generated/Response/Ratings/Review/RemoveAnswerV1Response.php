@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Ratings\Review;
+namespace and_y87\php_client_avito\Generated\Response\Ratings\Review;
 
-use php_client_avito\Generated\Response\RemoveReviewAnswerV1Response as BaseRemoveReviewAnswerV1Response;
+use and_y87\php_client_avito\Generated\Response\RemoveReviewAnswerV1Response as BaseRemoveReviewAnswerV1Response;
 
 /**
  * Ответ Avito API [DELETE] /ratings/v1/answers/{answer_id}.

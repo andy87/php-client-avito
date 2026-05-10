@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -21,7 +21,7 @@ class ApplicationsGetStatesResponse extends AbstractResponse
 
     protected const CASTS = [];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Job\ApplicationsGetStatesResult::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Job\ApplicationsGetStatesResult::class;
 
     /** @var array<int, array<string, mixed>>|null Список возможных статусов откликов */
     public ?array $states = null;

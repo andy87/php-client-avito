@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\User;
+namespace and_y87\php_client_avito\Generated\Provider\User;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\PostOperationsHistoryPrompt;
-use php_client_avito\Generated\Response\User\Operations\PostHistoryResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\PostOperationsHistoryPrompt;
+use and_y87\php_client_avito\Generated\Response\User\Operations\PostHistoryResponse;
 
 /**
  * Группа методов "operations" раздела Avito API "Информация о пользователе".

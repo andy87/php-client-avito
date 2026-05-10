@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Autoload;
+namespace and_y87\php_client_avito\Generated\Schema\Autoload;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoload/CategoryNode.
@@ -17,7 +17,7 @@ class CategoryNode extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['nested' => [\php_client_avito\Generated\Schema\Autoload\CategoryNode::class]];
+    protected const CASTS = ['nested' => [\and_y87\php_client_avito\Generated\Schema\Autoload\CategoryNode::class]];
 
     /** @var int Id категории */
     public int $id;
@@ -28,7 +28,7 @@ class CategoryNode extends AbstractSchemaModel
     /** @var string Название категории */
     public string $name;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\CategoryNode>|null вложенный обьект ноды */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoload\CategoryNode>|null вложенный обьект ноды */
     public ?array $nested = null;
 
     /** @var bool|null Можно ли показывать поля для этого узла. */

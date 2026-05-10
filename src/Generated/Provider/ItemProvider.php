@@ -2,31 +2,31 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider;
+namespace and_y87\php_client_avito\Generated\Provider;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\AccountSpendingsPrompt;
-use php_client_avito\Generated\Prompt\ApplyVasPrompt;
-use php_client_avito\Generated\Prompt\GetItemInfoPrompt;
-use php_client_avito\Generated\Prompt\GetItemsInfoPrompt;
-use php_client_avito\Generated\Prompt\ItemAnalyticsPrompt;
-use php_client_avito\Generated\Prompt\ItemStatsShallowPrompt;
-use php_client_avito\Generated\Prompt\PostCallsStatsPrompt;
-use php_client_avito\Generated\Prompt\PutItemVasPackageV2Prompt;
-use php_client_avito\Generated\Prompt\PutItemVasPrompt;
-use php_client_avito\Generated\Prompt\UpdatePricePrompt;
-use php_client_avito\Generated\Prompt\VasPricesPrompt;
-use php_client_avito\Generated\Response\AccountSpendingsResponse;
-use php_client_avito\Generated\Response\ApplyVasResponse;
-use php_client_avito\Generated\Response\GetItemInfoResponse;
-use php_client_avito\Generated\Response\GetItemsInfoResponse;
-use php_client_avito\Generated\Response\ItemAnalyticsResponse;
-use php_client_avito\Generated\Response\ItemStatsShallowResponse;
-use php_client_avito\Generated\Response\PostCallsStatsResponse;
-use php_client_avito\Generated\Response\PutItemVasPackageV2Response;
-use php_client_avito\Generated\Response\PutItemVasResponse;
-use php_client_avito\Generated\Response\UpdatePriceResponse;
-use php_client_avito\Generated\Response\VasPricesResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\AccountSpendingsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplyVasPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetItemInfoPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetItemsInfoPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ItemAnalyticsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ItemStatsShallowPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostCallsStatsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PutItemVasPackageV2Prompt;
+use and_y87\php_client_avito\Generated\Prompt\PutItemVasPrompt;
+use and_y87\php_client_avito\Generated\Prompt\UpdatePricePrompt;
+use and_y87\php_client_avito\Generated\Prompt\VasPricesPrompt;
+use and_y87\php_client_avito\Generated\Response\AccountSpendingsResponse;
+use and_y87\php_client_avito\Generated\Response\ApplyVasResponse;
+use and_y87\php_client_avito\Generated\Response\GetItemInfoResponse;
+use and_y87\php_client_avito\Generated\Response\GetItemsInfoResponse;
+use and_y87\php_client_avito\Generated\Response\ItemAnalyticsResponse;
+use and_y87\php_client_avito\Generated\Response\ItemStatsShallowResponse;
+use and_y87\php_client_avito\Generated\Response\PostCallsStatsResponse;
+use and_y87\php_client_avito\Generated\Response\PutItemVasPackageV2Response;
+use and_y87\php_client_avito\Generated\Response\PutItemVasResponse;
+use and_y87\php_client_avito\Generated\Response\UpdatePriceResponse;
+use and_y87\php_client_avito\Generated\Response\VasPricesResponse;
 
 /**
  * Provider раздела Avito API "Объявления".

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 

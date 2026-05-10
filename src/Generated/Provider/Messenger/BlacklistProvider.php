@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Messenger;
+namespace and_y87\php_client_avito\Generated\Provider\Messenger;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\PostBlacklistV2Prompt;
-use php_client_avito\Generated\Response\Messenger\Blacklist\PostV2Response;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\PostBlacklistV2Prompt;
+use and_y87\php_client_avito\Generated\Response\Messenger\Blacklist\PostV2Response;
 
 /**
  * Группа методов "blacklist" раздела Avito API "Мессенджер".

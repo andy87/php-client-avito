@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Cpxpromo;
+namespace and_y87\php_client_avito\Generated\Provider\Cpxpromo;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetPromotionsByItemIdsPrompt;
-use php_client_avito\Generated\Response\Cpxpromo\Promotions\GetByItemIdsResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetPromotionsByItemIdsPrompt;
+use and_y87\php_client_avito\Generated\Response\Cpxpromo\Promotions\GetByItemIdsResponse;
 
 /**
  * Группа методов "promotions" раздела Avito API "Настройка цены целевого действия".

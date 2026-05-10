@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Item\Items;
+namespace and_y87\php_client_avito\Generated\Response\Item\Items;
 
-use php_client_avito\Generated\Response\GetItemsInfoResponse as BaseGetItemsInfoResponse;
+use and_y87\php_client_avito\Generated\Response\GetItemsInfoResponse as BaseGetItemsInfoResponse;
 
 /**
  * Ответ Avito API [GET] /core/v1/items.

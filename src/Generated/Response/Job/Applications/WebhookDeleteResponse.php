@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Job\Applications;
+namespace and_y87\php_client_avito\Generated\Response\Job\Applications;
 
-use php_client_avito\Generated\Response\ApplicationsWebhookDeleteResponse as BaseApplicationsWebhookDeleteResponse;
+use and_y87\php_client_avito\Generated\Response\ApplicationsWebhookDeleteResponse as BaseApplicationsWebhookDeleteResponse;
 
 /**
  * Ответ Avito API [DELETE] /job/v1/applications/webhook.

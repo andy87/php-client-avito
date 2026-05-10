@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\OrderManagement\ReturnValue;
+namespace and_y87\php_client_avito\Generated\Prompt\OrderManagement\ReturnValue;
 
-use php_client_avito\Generated\Prompt\AcceptReturnOrderPrompt as BaseAcceptReturnOrderPrompt;
+use and_y87\php_client_avito\Generated\Prompt\AcceptReturnOrderPrompt as BaseAcceptReturnOrderPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/order/acceptReturnOrder.

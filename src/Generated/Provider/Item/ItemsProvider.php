@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Item;
+namespace and_y87\php_client_avito\Generated\Provider\Item;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetItemsInfoPrompt;
-use php_client_avito\Generated\Response\Item\Items\GetInfoResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetItemsInfoPrompt;
+use and_y87\php_client_avito\Generated\Response\Item\Items\GetInfoResponse;
 
 /**
  * Группа методов "items" раздела Avito API "Объявления".

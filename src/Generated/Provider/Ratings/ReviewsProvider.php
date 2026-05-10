@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Ratings;
+namespace and_y87\php_client_avito\Generated\Provider\Ratings;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetReviewsV1Prompt;
-use php_client_avito\Generated\Response\Ratings\Reviews\GetV1Response;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetReviewsV1Prompt;
+use and_y87\php_client_avito\Generated\Response\Ratings\Reviews\GetV1Response;
 
 /**
  * Группа методов "reviews" раздела Avito API "Рейтинги и отзывы".

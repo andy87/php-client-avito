@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Autoload;
+namespace and_y87\php_client_avito\Generated\Provider\Autoload;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\CreateOrUpdateProfilePrompt;
-use php_client_avito\Generated\Prompt\CreateOrUpdateProfileV2Prompt;
-use php_client_avito\Generated\Response\Autoload\OrValue\CreateUpdateProfileResponse;
-use php_client_avito\Generated\Response\Autoload\OrValue\CreateUpdateProfileV2Response;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\CreateOrUpdateProfilePrompt;
+use and_y87\php_client_avito\Generated\Prompt\CreateOrUpdateProfileV2Prompt;
+use and_y87\php_client_avito\Generated\Response\Autoload\OrValue\CreateUpdateProfileResponse;
+use and_y87\php_client_avito\Generated\Response\Autoload\OrValue\CreateUpdateProfileV2Response;
 
 /**
  * Группа методов "orValue" раздела Avito API "Автозагрузка".

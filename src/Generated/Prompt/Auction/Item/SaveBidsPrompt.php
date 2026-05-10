@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Auction\Item;
+namespace and_y87\php_client_avito\Generated\Prompt\Auction\Item;
 
-use php_client_avito\Generated\Prompt\SaveItemBidsPrompt as BaseSaveItemBidsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\SaveItemBidsPrompt as BaseSaveItemBidsPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /auction/1/bids.

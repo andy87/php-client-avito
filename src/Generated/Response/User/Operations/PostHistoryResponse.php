@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\User\Operations;
+namespace and_y87\php_client_avito\Generated\Response\User\Operations;
 
-use php_client_avito\Generated\Response\PostOperationsHistoryResponse as BasePostOperationsHistoryResponse;
+use and_y87\php_client_avito\Generated\Response\PostOperationsHistoryResponse as BasePostOperationsHistoryResponse;
 
 /**
  * Ответ Avito API [POST] /core/v1/accounts/operations_history/.

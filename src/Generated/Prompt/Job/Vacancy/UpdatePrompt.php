@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Job\Vacancy;
+namespace and_y87\php_client_avito\Generated\Prompt\Job\Vacancy;
 
-use php_client_avito\Generated\Prompt\VacancyUpdatePrompt as BaseVacancyUpdatePrompt;
+use and_y87\php_client_avito\Generated\Prompt\VacancyUpdatePrompt as BaseVacancyUpdatePrompt;
 
 /**
  * Класс данных запроса Avito API [PUT] /job/v1/vacancies/{vacancy_id}.
@@ -14,55 +14,55 @@ use php_client_avito\Generated\Prompt\VacancyUpdatePrompt as BaseVacancyUpdatePr
  * @property int $vacancy_id Идентификатор вакансии на сайте
  * @property bool|null $X_Is_Employee Сотрудник компании может редактировать только свои вакансии.
  * @property string|null $address Полный адрес объекта (строка длиной от 0 до 256 символов)
- * @property \php_client_avito\Generated\Schema\Job\AdministratorOrganizationType|null $administrator_organization_type Body field administrator_organization_type
- * @property \php_client_avito\Generated\Schema\Job\AgeCriteria|null $age Body field age
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\AdministratorOrganizationType|null $administrator_organization_type Body field administrator_organization_type
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\AgeCriteria|null $age Body field age
  * @property array<int, string>|null $age_preferences Body field age_preferences
- * @property \php_client_avito\Generated\Schema\Job\AllowCalls|null $allow_calls Body field allow_calls
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\AllowCalls|null $allow_calls Body field allow_calls
  * @property bool|null $allow_messages Возможность откликнуться на вакансию через сайт. Если передается apply_processing, то значение allow_messages будет игнорироваться и равно true.
- * @property \php_client_avito\Generated\Schema\Job\ApplyProcessing|null $apply_processing Body field apply_processing
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\ApplyProcessing|null $apply_processing Body field apply_processing
  * @property string $billing_type Вариант платного размещения Возможные значения: - "package" - размещение объявления осуществляется только при наличии подходящего пакета размещения - "packageOrSingle" - при наличии подходящего пакета оплата размещения объявления произойдет с него; если нет подходящего пакета, но достаточно денег на кошельке Авито, то произойдет разовое размещение - "single" - только разовое размещение, произойдет при наличии достаточной суммы на кошельке Авито; если есть подходящий пакет размещения, он будет проигнорирован
- * @property \php_client_avito\Generated\Schema\Job\Bonuses|null $bonuses Body field bonuses
- * @property \php_client_avito\Generated\Schema\Job\CitizenshipCriteria|null $citizenship Body field citizenship
- * @property \php_client_avito\Generated\Schema\Job\ConstructionWorkType|null $construction_work_type Body field construction_work_type
- * @property \php_client_avito\Generated\Schema\Job\Contacts|null $contacts Body field contacts
- * @property \php_client_avito\Generated\Schema\Job\Coordinates|null $coordinates Body field coordinates
- * @property \php_client_avito\Generated\Schema\Job\Cuisine|null $cuisine Body field cuisine
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\Bonuses|null $bonuses Body field bonuses
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\CitizenshipCriteria|null $citizenship Body field citizenship
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\ConstructionWorkType|null $construction_work_type Body field construction_work_type
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\Contacts|null $contacts Body field contacts
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\Coordinates|null $coordinates Body field coordinates
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\Cuisine|null $cuisine Body field cuisine
  * @property string|null $custom_employer_name Название компании (строка длиной до 60 символов)
  * @property array<int, string>|null $delivery_method Способ доставки
  * @property string|null $description Описание вакансии (строка длиной от 1 до 5000 символов) Поддерживает html-тэги `p`, `ul`, `ol`, `li`, `br`, `strong`, `em`
  * @property array<string, mixed>|null $driving_experience Стаж вождения
- * @property \php_client_avito\Generated\Schema\Job\DrivingLicenseCategory|null $driving_license_category Body field driving_license_category
- * @property \php_client_avito\Generated\Schema\Job\EateryType|null $eatery_type Body field eatery_type
- * @property \php_client_avito\Generated\Schema\Job\VacancyEducationLevel|null $education_level Body field education_level
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\DrivingLicenseCategory|null $driving_license_category Body field driving_license_category
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\EateryType|null $eatery_type Body field eatery_type
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\VacancyEducationLevel|null $education_level Body field education_level
  * @property int|null $employee_id employee_id - Идентификатор сотрудника на Авито. Сотрудник может редактировать только закрепленные за ним вакансии в Avito Pro. Сотрудник должен быть в активен.
  * @property array<string, mixed>|null $experience Опыт работы
- * @property \php_client_avito\Generated\Schema\Job\FacilityType|null $facility_type Body field facility_type
- * @property \php_client_avito\Generated\Schema\Job\FoodProductionShopType|null $food_production_shop_type Body field food_production_shop_type
- * @property \php_client_avito\Generated\Schema\Job\Grade|null $grade Body field grade
- * @property \php_client_avito\Generated\Schema\Job\HtmlTags|null $html_tags Body field html_tags
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\FacilityType|null $facility_type Body field facility_type
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\FoodProductionShopType|null $food_production_shop_type Body field food_production_shop_type
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\Grade|null $grade Body field grade
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\HtmlTags|null $html_tags Body field html_tags
  * @property string|null $image_url URL-адрес логотипа вакансии. Ссылка на файл должна быть прямой | (при переходе не открываются элементы другого сайта (логотипы, кнопки или другие детали интерфейса) и не запрашивается логин и пароль) и доступной для IP 185.89.12.0/22, 146.158.48.0/21, 185.79.237.224/28 и 87.245.204.32/28;
  * @property bool|null $is_company_car Предоставляет ли компания автомобиль
  * @property bool|null $is_side_job Подработка
- * @property \php_client_avito\Generated\Schema\Job\MedicalBookVacancy|null $medical_book Body field medical_book
- * @property \php_client_avito\Generated\Schema\Job\MedicalSpecialization|null $medical_specialization Body field medical_specialization
- * @property \php_client_avito\Generated\Schema\Job\MedicalSpecializationIds|null $medical_specialization_ids Body field medical_specialization_ids
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\MedicalBookVacancy|null $medical_book Body field medical_book
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\MedicalSpecialization|null $medical_specialization Body field medical_specialization
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\MedicalSpecializationIds|null $medical_specialization_ids Body field medical_specialization_ids
  * @property string|null $name Название вакансии (строка длиной от 0 до 50 символов)
  * @property array<string, mixed>|null $payout_frequency Частота выплат Возможные значения: - "dailyPay" - Каждый день; - "biweeklyPay" - Дважды в месяц; - "weeklyPay" - Раз в неделю; - "thriceMonthlyPay" - три раза в месяц - "monthlyPay" - Раз в месяц. deprecated значение hourlyPay будет заменено на dailyPay
- * @property \php_client_avito\Generated\Schema\Job\Profession|null $profession Body field profession
- * @property \php_client_avito\Generated\Schema\Job\RegistrationMethod|null $registration_method Body field registration_method
- * @property \php_client_avito\Generated\Schema\Job\RetailEquipmentType|null $retail_equipment_type Body field retail_equipment_type
- * @property \php_client_avito\Generated\Schema\Job\RetailShopType|null $retail_shop_type Body field retail_shop_type
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\Profession|null $profession Body field profession
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\RegistrationMethod|null $registration_method Body field registration_method
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\RetailEquipmentType|null $retail_equipment_type Body field retail_equipment_type
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\RetailShopType|null $retail_shop_type Body field retail_shop_type
  * @property int|null $salary Зарплата, рублей в месяц, если заполнено вместе с salary_range, то приоритет у salary_range
- * @property \php_client_avito\Generated\Schema\Job\SalaryDetail|null $salary_detail Body field salary_detail
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\SalaryDetail|null $salary_detail Body field salary_detail
  * @property array<string, mixed>|null $salary_range Блок с вилкой зарплаты, если заполнен одновременно с salary, то имеет приоритет
- * @property \php_client_avito\Generated\Schema\Job\Shifts|null $shifts Body field shifts
- * @property \php_client_avito\Generated\Schema\Job\ToolsAvailability|null $tools_availability Body field tools_availability
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\Shifts|null $shifts Body field shifts
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\ToolsAvailability|null $tools_availability Body field tools_availability
  * @property string|null $vacancy_code Внутренний идентификатор вакансии или номер заявки на подбор, максимум 150 символов
- * @property \php_client_avito\Generated\Schema\Job\VehicleType|null $vehicle_type Body field vehicle_type
- * @property \php_client_avito\Generated\Schema\Job\WorkDaysPerWeek|null $work_days_per_week Body field work_days_per_week
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\VehicleType|null $vehicle_type Body field vehicle_type
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\WorkDaysPerWeek|null $work_days_per_week Body field work_days_per_week
  * @property array<int, string>|null $work_format Блок "Формат работы" (массив строк) Возможные значения элементов массива: - "office" - В офисе или на объекте; - "remote" - Удалённо; - "gibrid" - Гибрид.
- * @property \php_client_avito\Generated\Schema\Job\WorkHoursPerDay|null $work_hours_per_day Body field work_hours_per_day
- * @property \php_client_avito\Generated\Schema\Job\WorkerClass|null $worker_class Body field worker_class
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\WorkHoursPerDay|null $work_hours_per_day Body field work_hours_per_day
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\WorkerClass|null $worker_class Body field worker_class
  */
 class UpdatePrompt extends BaseVacancyUpdatePrompt
 {

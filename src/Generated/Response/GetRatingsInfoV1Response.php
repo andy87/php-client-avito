@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,13 +19,13 @@ class GetRatingsInfoV1Response extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['rating' => \php_client_avito\Generated\Schema\Ratings\Rating::class];
+    protected const CASTS = ['rating' => \and_y87\php_client_avito\Generated\Schema\Ratings\Rating::class];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Ratings\GetRatingInfoResponse::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Ratings\GetRatingInfoResponse::class;
 
     /** @var bool Включен ли рейтинг */
     public bool $isEnabled;
 
-    /** @var \php_client_avito\Generated\Schema\Ratings\Rating|null Response field rating */
-    public ?\php_client_avito\Generated\Schema\Ratings\Rating $rating = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Ratings\Rating|null Response field rating */
+    public ?\and_y87\php_client_avito\Generated\Schema\Ratings\Rating $rating = null;
 }

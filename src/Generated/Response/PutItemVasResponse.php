@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,13 +19,13 @@ class PutItemVasResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['vas' => \php_client_avito\Generated\Schema\Item\InfoVas::class];
+    protected const CASTS = ['vas' => \and_y87\php_client_avito\Generated\Schema\Item\InfoVas::class];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Item\VasApplyAvito::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Item\VasApplyAvito::class;
 
     /** @var float|null Сумма списания за применение услуги */
     public ?float $amount = null;
 
-    /** @var \php_client_avito\Generated\Schema\Item\InfoVas|null Response field vas */
-    public ?\php_client_avito\Generated\Schema\Item\InfoVas $vas = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\InfoVas|null Response field vas */
+    public ?\and_y87\php_client_avito\Generated\Schema\Item\InfoVas $vas = null;
 }

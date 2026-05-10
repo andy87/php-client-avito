@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Item;
+namespace and_y87\php_client_avito\Generated\Schema\Item;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito item/AnalyticsRequest.
@@ -17,7 +17,7 @@ class AnalyticsRequest extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['filter', 'limit', 'offset', 'sort'];
 
-    protected const CASTS = ['grouping' => \php_client_avito\Generated\Schema\Item\Groupings::class];
+    protected const CASTS = ['grouping' => \and_y87\php_client_avito\Generated\Schema\Item\Groupings::class];
 
     /** @var string Дата (в формате YYYY-MM-DD), с которой (включительно) надо получить статистику */
     public string $dateFrom;
@@ -28,8 +28,8 @@ class AnalyticsRequest extends AbstractSchemaModel
     /** @var array<string, mixed>|null Набор ограничений, по которым нужно отфильтровать данные */
     public ?array $filter = null;
 
-    /** @var \php_client_avito\Generated\Schema\Item\Groupings Schema field grouping */
-    public \php_client_avito\Generated\Schema\Item\Groupings $grouping;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\Groupings Schema field grouping */
+    public \and_y87\php_client_avito\Generated\Schema\Item\Groupings $grouping;
 
     /** @var int|null Инструмент пагинации для ограничения количества сущностей в response; */
     public ?int $limit;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,12 +19,12 @@ class ResumeGetItemResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = ['photos', 'salary'];
 
-    protected const CASTS = ['address_details' => \php_client_avito\Generated\Schema\Job\AddressDetails::class, 'photos' => [\php_client_avito\Generated\Schema\Job\Photo::class]];
+    protected const CASTS = ['address_details' => \and_y87\php_client_avito\Generated\Schema\Job\AddressDetails::class, 'photos' => [\and_y87\php_client_avito\Generated\Schema\Job\Photo::class]];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Job\Resume20::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Job\Resume20::class;
 
-    /** @var \php_client_avito\Generated\Schema\Job\AddressDetails|null Response field address_details */
-    public ?\php_client_avito\Generated\Schema\Job\AddressDetails $address_details = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\AddressDetails|null Response field address_details */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\AddressDetails $address_details = null;
 
     /** @var string|null Описание резюме */
     public ?string $description = null;
@@ -41,7 +41,7 @@ class ResumeGetItemResponse extends AbstractResponse
     /** @var array<string, mixed>|null Блок с параметрами резюме. Все поля опциональны и выводятся при наличии */
     public ?array $params = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Job\Photo>|null Присутствует в ответе только если в запросе есть флаг photos=true */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Job\Photo>|null Присутствует в ответе только если в запросе есть флаг photos=true */
     public ?array $photos = null;
 
     /** @var int|null Зарплата. Поле может отсутствовать в ответе (выводится при наличии зарплаты) */

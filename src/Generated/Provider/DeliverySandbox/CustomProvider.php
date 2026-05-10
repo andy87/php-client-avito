@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Provider\DeliverySandbox;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\CustomAreaSchedulePrompt;
-use php_client_avito\Generated\Response\DeliverySandbox\Custom\AreaScheduleResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\CustomAreaSchedulePrompt;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\Custom\AreaScheduleResponse;
 
 /**
  * Группа методов "custom" раздела Avito API "Доставка".

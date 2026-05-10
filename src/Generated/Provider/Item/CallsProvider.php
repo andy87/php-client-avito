@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Item;
+namespace and_y87\php_client_avito\Generated\Provider\Item;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\PostCallsStatsPrompt;
-use php_client_avito\Generated\Response\Item\Calls\PostStatsResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\PostCallsStatsPrompt;
+use and_y87\php_client_avito\Generated\Response\Item\Calls\PostStatsResponse;
 
 /**
  * Группа методов "calls" раздела Avito API "Объявления".

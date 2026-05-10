@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Item\Item;
+namespace and_y87\php_client_avito\Generated\Response\Item\Item;
 
-use php_client_avito\Generated\Response\ItemStatsShallowResponse as BaseItemStatsShallowResponse;
+use and_y87\php_client_avito\Generated\Response\ItemStatsShallowResponse as BaseItemStatsShallowResponse;
 
 /**
  * Ответ Avito API [POST] /stats/v1/accounts/{user_id}/items.

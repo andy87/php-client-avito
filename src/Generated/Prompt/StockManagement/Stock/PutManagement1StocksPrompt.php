@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\StockManagement\Stock;
+namespace and_y87\php_client_avito\Generated\Prompt\StockManagement\Stock;
 
-use php_client_avito\Generated\Prompt\PutStockManagement1StocksPrompt as BasePutStockManagement1StocksPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PutStockManagement1StocksPrompt as BasePutStockManagement1StocksPrompt;
 
 /**
  * Класс данных запроса Avito API [PUT] /stock-management/1/stocks.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/UpdateTermsReply.
@@ -17,11 +17,11 @@ class UpdateTermsReply extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['error' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError::class];
+    protected const CASTS = ['error' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError::class];
 
     /** @var array<string, mixed>|null Schema field data */
     public ?array $data = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError|null Schema field error */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError $error = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError|null Schema field error */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError $error = null;
 }

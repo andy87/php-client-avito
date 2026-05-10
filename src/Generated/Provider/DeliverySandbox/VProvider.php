@@ -2,25 +2,25 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Provider\DeliverySandbox;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\V1CancelParcelPrompt;
-use php_client_avito\Generated\Prompt\V1cancelAnnouncementPrompt;
-use php_client_avito\Generated\Prompt\V1changeParcelPrompt;
-use php_client_avito\Generated\Prompt\V1createAnnouncementPrompt;
-use php_client_avito\Generated\Prompt\V1getAnnouncementEventPrompt;
-use php_client_avito\Generated\Prompt\V1getChangeParcelInfoPrompt;
-use php_client_avito\Generated\Prompt\V1getParcelInfoPrompt;
-use php_client_avito\Generated\Prompt\V1getRegisteredParcelIDPrompt;
-use php_client_avito\Generated\Response\DeliverySandbox\V\CancelAnnouncementResponse;
-use php_client_avito\Generated\Response\DeliverySandbox\V\CancelParcelResponse;
-use php_client_avito\Generated\Response\DeliverySandbox\V\ChangeParcelResponse;
-use php_client_avito\Generated\Response\DeliverySandbox\V\CreateAnnouncementResponse;
-use php_client_avito\Generated\Response\DeliverySandbox\V\GetAnnouncementEventResponse;
-use php_client_avito\Generated\Response\DeliverySandbox\V\GetChangeParcelInfoResponse;
-use php_client_avito\Generated\Response\DeliverySandbox\V\GetParcelInfoResponse;
-use php_client_avito\Generated\Response\DeliverySandbox\V\GetRegisteredParcelIDResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\V1CancelParcelPrompt;
+use and_y87\php_client_avito\Generated\Prompt\V1cancelAnnouncementPrompt;
+use and_y87\php_client_avito\Generated\Prompt\V1changeParcelPrompt;
+use and_y87\php_client_avito\Generated\Prompt\V1createAnnouncementPrompt;
+use and_y87\php_client_avito\Generated\Prompt\V1getAnnouncementEventPrompt;
+use and_y87\php_client_avito\Generated\Prompt\V1getChangeParcelInfoPrompt;
+use and_y87\php_client_avito\Generated\Prompt\V1getParcelInfoPrompt;
+use and_y87\php_client_avito\Generated\Prompt\V1getRegisteredParcelIDPrompt;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\V\CancelAnnouncementResponse;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\V\CancelParcelResponse;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\V\ChangeParcelResponse;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\V\CreateAnnouncementResponse;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\V\GetAnnouncementEventResponse;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\V\GetChangeParcelInfoResponse;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\V\GetParcelInfoResponse;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\V\GetRegisteredParcelIDResponse;
 
 /**
  * Группа методов "v" раздела Avito API "Доставка".

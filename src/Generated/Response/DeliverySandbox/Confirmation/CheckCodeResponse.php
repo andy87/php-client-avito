@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\DeliverySandbox\Confirmation;
+namespace and_y87\php_client_avito\Generated\Response\DeliverySandbox\Confirmation;
 
-use php_client_avito\Generated\Response\CheckConfirmationCodeResponse as BaseCheckConfirmationCodeResponse;
+use and_y87\php_client_avito\Generated\Response\CheckConfirmationCodeResponse as BaseCheckConfirmationCodeResponse;
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/order/checkConfirmationCode.

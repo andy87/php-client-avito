@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Promotion\Dict;
+namespace and_y87\php_client_avito\Generated\Response\Promotion\Dict;
 
-use php_client_avito\Generated\Response\GetDictOfServicesV1Response as BaseGetDictOfServicesV1Response;
+use and_y87\php_client_avito\Generated\Response\GetDictOfServicesV1Response as BaseGetDictOfServicesV1Response;
 
 /**
  * Ответ Avito API [POST] /promotion/v1/items/services/dict.

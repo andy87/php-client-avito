@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/CreateParcelClientDeliveryCourier.
@@ -17,16 +17,16 @@ class CreateParcelClientDeliveryCourier extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['address' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierAddress::class, 'dateTimeInterval' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierDateTimeInterval::class, 'options' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierOptions::class];
+    protected const CASTS = ['address' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierAddress::class, 'dateTimeInterval' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierDateTimeInterval::class, 'options' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierOptions::class];
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierAddress Schema field address */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierAddress $address;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierAddress Schema field address */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierAddress $address;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierDateTimeInterval Schema field dateTimeInterval */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierDateTimeInterval $dateTimeInterval;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierDateTimeInterval Schema field dateTimeInterval */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierDateTimeInterval $dateTimeInterval;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierOptions|null Schema field options */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierOptions $options = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierOptions|null Schema field options */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDeliveryCourierOptions $options = null;
 
     /** @var string Cлужба доставки, которая будет осуществлять курьерскую доставку. */
     public string $provider;

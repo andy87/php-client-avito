@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\OrderManagement\Labels;
+namespace and_y87\php_client_avito\Generated\Prompt\OrderManagement\Labels;
 
-use php_client_avito\Generated\Prompt\GenerateLabelsExtendedPrompt as BaseGenerateLabelsExtendedPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GenerateLabelsExtendedPrompt as BaseGenerateLabelsExtendedPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /order-management/1/orders/labels/extended.

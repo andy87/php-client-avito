@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/CreateParcelReply.
@@ -17,11 +17,11 @@ class CreateParcelReply extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['data'];
 
-    protected const CASTS = ['error' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelError::class];
+    protected const CASTS = ['error' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelError::class];
 
     /** @var array<string, mixed>|null Schema field data */
     public ?array $data = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelError|null Schema field error */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelError $error = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelError|null Schema field error */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelError $error = null;
 }

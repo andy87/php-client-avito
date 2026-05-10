@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Str\Realty;
+namespace and_y87\php_client_avito\Generated\Prompt\Str\Realty;
 
-use php_client_avito\Generated\Prompt\GetRealtyBookingsPrompt as BaseGetRealtyBookingsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetRealtyBookingsPrompt as BaseGetRealtyBookingsPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /realty/v1/accounts/{user_id}/items/{item_id}/bookings.

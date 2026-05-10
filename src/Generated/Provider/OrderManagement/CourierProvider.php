@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\OrderManagement;
+namespace and_y87\php_client_avito\Generated\Provider\OrderManagement;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetCourierDeliveryRangePrompt;
-use php_client_avito\Generated\Prompt\SetCourierDeliveryRangePrompt;
-use php_client_avito\Generated\Response\OrderManagement\Courier\GetDeliveryRangeResponse;
-use php_client_avito\Generated\Response\OrderManagement\Courier\SetDeliveryRangeResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetCourierDeliveryRangePrompt;
+use and_y87\php_client_avito\Generated\Prompt\SetCourierDeliveryRangePrompt;
+use and_y87\php_client_avito\Generated\Response\OrderManagement\Courier\GetDeliveryRangeResponse;
+use and_y87\php_client_avito\Generated\Response\OrderManagement\Courier\SetDeliveryRangeResponse;
 
 /**
  * Группа методов "courier" раздела Avito API "Управление заказами".

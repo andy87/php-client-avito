@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Promotion\Dict;
+namespace and_y87\php_client_avito\Generated\Prompt\Promotion\Dict;
 
-use php_client_avito\Generated\Prompt\GetDictOfServicesV1Prompt as BaseGetDictOfServicesV1Prompt;
+use and_y87\php_client_avito\Generated\Prompt\GetDictOfServicesV1Prompt as BaseGetDictOfServicesV1Prompt;
 
 /**
  * Класс данных запроса Avito API [POST] /promotion/v1/items/services/dict.

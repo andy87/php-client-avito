@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider;
+namespace and_y87\php_client_avito\Generated\Provider;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetBidsPrompt;
-use php_client_avito\Generated\Prompt\GetPromotionsByItemIdsPrompt;
-use php_client_avito\Generated\Prompt\RemovePromotionPrompt;
-use php_client_avito\Generated\Prompt\SaveAutoBidPrompt;
-use php_client_avito\Generated\Prompt\SaveManualBidPrompt;
-use php_client_avito\Generated\Response\GetBidsResponse;
-use php_client_avito\Generated\Response\GetPromotionsByItemIdsResponse;
-use php_client_avito\Generated\Response\RemovePromotionResponse;
-use php_client_avito\Generated\Response\SaveAutoBidResponse;
-use php_client_avito\Generated\Response\SaveManualBidResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetBidsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetPromotionsByItemIdsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\RemovePromotionPrompt;
+use and_y87\php_client_avito\Generated\Prompt\SaveAutoBidPrompt;
+use and_y87\php_client_avito\Generated\Prompt\SaveManualBidPrompt;
+use and_y87\php_client_avito\Generated\Response\GetBidsResponse;
+use and_y87\php_client_avito\Generated\Response\GetPromotionsByItemIdsResponse;
+use and_y87\php_client_avito\Generated\Response\RemovePromotionResponse;
+use and_y87\php_client_avito\Generated\Response\SaveAutoBidResponse;
+use and_y87\php_client_avito\Generated\Response\SaveManualBidResponse;
 
 /**
  * Provider раздела Avito API "Настройка цены целевого действия".

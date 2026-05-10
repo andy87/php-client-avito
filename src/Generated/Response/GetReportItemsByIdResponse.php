@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,15 +19,15 @@ class GetReportItemsByIdResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['items' => [\php_client_avito\Generated\Schema\Autoload\ItemInfoReportAutoloadV2::class], 'meta' => \php_client_avito\Generated\Schema\Autoload\MetaReportItemsAutoloadV2::class];
+    protected const CASTS = ['items' => [\and_y87\php_client_avito\Generated\Schema\Autoload\ItemInfoReportAutoloadV2::class], 'meta' => \and_y87\php_client_avito\Generated\Schema\Autoload\MetaReportItemsAutoloadV2::class];
 
     protected const MODEL = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\ItemInfoReportAutoloadV2> Список объявлений */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoload\ItemInfoReportAutoloadV2> Список объявлений */
     public array $items;
 
-    /** @var \php_client_avito\Generated\Schema\Autoload\MetaReportItemsAutoloadV2 Response field meta */
-    public \php_client_avito\Generated\Schema\Autoload\MetaReportItemsAutoloadV2 $meta;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoload\MetaReportItemsAutoloadV2 Response field meta */
+    public \and_y87\php_client_avito\Generated\Schema\Autoload\MetaReportItemsAutoloadV2 $meta;
 
     /** @var int Идентификатор отчёта (ID) */
     public int $report_id;

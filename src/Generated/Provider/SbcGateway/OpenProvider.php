@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\SbcGateway;
+namespace and_y87\php_client_avito\Generated\Provider\SbcGateway;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\OpenApiAvailablePrompt;
-use php_client_avito\Generated\Prompt\OpenApiMultiConfirmPrompt;
-use php_client_avito\Generated\Prompt\OpenApiMultiCreatePrompt;
-use php_client_avito\Generated\Prompt\OpenApiStatsPrompt;
-use php_client_avito\Generated\Prompt\OpenApiTariffInfoPrompt;
-use php_client_avito\Generated\Response\SbcGateway\Open\ApiAvailableResponse;
-use php_client_avito\Generated\Response\SbcGateway\Open\ApiMultiConfirmResponse;
-use php_client_avito\Generated\Response\SbcGateway\Open\ApiMultiCreateResponse;
-use php_client_avito\Generated\Response\SbcGateway\Open\ApiStatsResponse;
-use php_client_avito\Generated\Response\SbcGateway\Open\ApiTariffInfoResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\OpenApiAvailablePrompt;
+use and_y87\php_client_avito\Generated\Prompt\OpenApiMultiConfirmPrompt;
+use and_y87\php_client_avito\Generated\Prompt\OpenApiMultiCreatePrompt;
+use and_y87\php_client_avito\Generated\Prompt\OpenApiStatsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\OpenApiTariffInfoPrompt;
+use and_y87\php_client_avito\Generated\Response\SbcGateway\Open\ApiAvailableResponse;
+use and_y87\php_client_avito\Generated\Response\SbcGateway\Open\ApiMultiConfirmResponse;
+use and_y87\php_client_avito\Generated\Response\SbcGateway\Open\ApiMultiCreateResponse;
+use and_y87\php_client_avito\Generated\Response\SbcGateway\Open\ApiStatsResponse;
+use and_y87\php_client_avito\Generated\Response\SbcGateway\Open\ApiTariffInfoResponse;
 
 /**
  * Группа методов "open" раздела Avito API "Рассылка скидок и спецпредложений в мессенджере (beta-version)".

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Provider\DeliverySandbox;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\AddTerminalsSandboxPrompt;
-use php_client_avito\Generated\Response\DeliverySandbox\Terminals\AddSandboxResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\AddTerminalsSandboxPrompt;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\Terminals\AddSandboxResponse;
 
 /**
  * Группа методов "terminals" раздела Avito API "Доставка".

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Autoload\Ad;
+namespace and_y87\php_client_avito\Generated\Response\Autoload\Ad;
 
-use php_client_avito\Generated\Response\GetAdIdsByAvitoIdsResponse as BaseGetAdIdsByAvitoIdsResponse;
+use and_y87\php_client_avito\Generated\Response\GetAdIdsByAvitoIdsResponse as BaseGetAdIdsByAvitoIdsResponse;
 
 /**
  * Ответ Avito API [GET] /autoload/v2/items/ad_ids.

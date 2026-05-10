@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Job\Vacancy;
+namespace and_y87\php_client_avito\Generated\Response\Job\Vacancy;
 
-use php_client_avito\Generated\Response\VacancyUpdateV2Response as BaseVacancyUpdateV2Response;
+use and_y87\php_client_avito\Generated\Response\VacancyUpdateV2Response as BaseVacancyUpdateV2Response;
 
 /**
  * Ответ Avito API [POST] /job/v2/vacancies/update/{vacancy_uuid}.

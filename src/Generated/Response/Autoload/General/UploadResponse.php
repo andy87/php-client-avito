@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Autoload\General;
+namespace and_y87\php_client_avito\Generated\Response\Autoload\General;
 
-use php_client_avito\Generated\Response\UploadResponse as BaseUploadResponse;
+use and_y87\php_client_avito\Generated\Response\UploadResponse as BaseUploadResponse;
 
 /**
  * Ответ Avito API [POST] /autoload/v1/upload.

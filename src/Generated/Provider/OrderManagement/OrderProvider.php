@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\OrderManagement;
+namespace and_y87\php_client_avito\Generated\Provider\OrderManagement;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\SetOrderTrackingNumberPrompt;
-use php_client_avito\Generated\Response\OrderManagement\Order\SetTrackingNumberResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\SetOrderTrackingNumberPrompt;
+use and_y87\php_client_avito\Generated\Response\OrderManagement\Order\SetTrackingNumberResponse;
 
 /**
  * Группа методов "order" раздела Avito API "Управление заказами".

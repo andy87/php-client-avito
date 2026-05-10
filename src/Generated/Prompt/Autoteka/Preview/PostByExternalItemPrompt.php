@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autoteka\Preview;
+namespace and_y87\php_client_avito\Generated\Prompt\Autoteka\Preview;
 
-use php_client_avito\Generated\Prompt\PostPreviewByExternalItemPrompt as BasePostPreviewByExternalItemPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostPreviewByExternalItemPrompt as BasePostPreviewByExternalItemPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/request-preview-by-external-item.

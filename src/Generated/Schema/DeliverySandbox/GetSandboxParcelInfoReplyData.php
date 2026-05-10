@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/GetSandboxParcelInfoReplyData.
@@ -17,12 +17,12 @@ class GetSandboxParcelInfoReplyData extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['dimensions' => \php_client_avito\Generated\Schema\DeliverySandbox\GetSandboxParcelInfoDimensions::class, 'history' => [\php_client_avito\Generated\Schema\DeliverySandbox\GetSandboxParcelInfoParcelHistory::class]];
+    protected const CASTS = ['dimensions' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\GetSandboxParcelInfoDimensions::class, 'history' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\GetSandboxParcelInfoParcelHistory::class]];
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\GetSandboxParcelInfoDimensions|null Schema field dimensions */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\GetSandboxParcelInfoDimensions $dimensions = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\GetSandboxParcelInfoDimensions|null Schema field dimensions */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\GetSandboxParcelInfoDimensions $dimensions = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\GetSandboxParcelInfoParcelHistory>|null Schema field history */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\GetSandboxParcelInfoParcelHistory>|null Schema field history */
     public ?array $history = null;
 
     /** @var array<string, mixed>|null Schema field receiver */

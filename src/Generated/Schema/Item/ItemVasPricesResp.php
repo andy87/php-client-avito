@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Item;
+namespace and_y87\php_client_avito\Generated\Schema\Item;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito item/ItemVasPricesResp.
@@ -17,14 +17,14 @@ class ItemVasPricesResp extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['stickers' => [\php_client_avito\Generated\Schema\Item\StickerResp::class], 'vas' => [\php_client_avito\Generated\Schema\Item\VasResp::class]];
+    protected const CASTS = ['stickers' => [\and_y87\php_client_avito\Generated\Schema\Item\StickerResp::class], 'vas' => [\and_y87\php_client_avito\Generated\Schema\Item\VasResp::class]];
 
     /** @var int|null Идентификатор объявления на сайте */
     public ?int $itemId = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Item\StickerResp>|null Schema field stickers */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Item\StickerResp>|null Schema field stickers */
     public ?array $stickers = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Item\VasResp> Schema field vas */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Item\VasResp> Schema field vas */
     public array $vas;
 }

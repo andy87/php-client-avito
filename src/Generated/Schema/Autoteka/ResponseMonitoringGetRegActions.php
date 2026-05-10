@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Autoteka;
+namespace and_y87\php_client_avito\Generated\Schema\Autoteka;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/ResponseMonitoringGetRegActions.
@@ -17,9 +17,9 @@ class ResponseMonitoringGetRegActions extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['data' => [\php_client_avito\Generated\Schema\Autoteka\ResponseMonitoringGetRegAction::class]];
+    protected const CASTS = ['data' => [\and_y87\php_client_avito\Generated\Schema\Autoteka\ResponseMonitoringGetRegAction::class]];
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\ResponseMonitoringGetRegAction> Массив рег. действий */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoteka\ResponseMonitoringGetRegAction> Массив рег. действий */
     public array $data;
 
     /** @var array<string, mixed> Объект, отвечающий за постраничное считывание информации */

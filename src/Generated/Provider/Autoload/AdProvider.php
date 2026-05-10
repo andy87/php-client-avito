@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Autoload;
+namespace and_y87\php_client_avito\Generated\Provider\Autoload;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetAdIdsByAvitoIdsPrompt;
-use php_client_avito\Generated\Response\Autoload\Ad\GetIdsByAvitoIdsResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetAdIdsByAvitoIdsPrompt;
+use and_y87\php_client_avito\Generated\Response\Autoload\Ad\GetIdsByAvitoIdsResponse;
 
 /**
  * Группа методов "ad" раздела Avito API "Автозагрузка".

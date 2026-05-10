@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Autoteka;
+namespace and_y87\php_client_avito\Generated\Schema\Autoteka;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/GetScoringResult.
@@ -17,8 +17,8 @@ class GetScoringResult extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['risksAssessment' => \php_client_avito\Generated\Schema\Autoteka\ScoringAutoteka::class];
+    protected const CASTS = ['risksAssessment' => \and_y87\php_client_avito\Generated\Schema\Autoteka\ScoringAutoteka::class];
 
-    /** @var \php_client_avito\Generated\Schema\Autoteka\ScoringAutoteka|null Schema field risksAssessment */
-    public ?\php_client_avito\Generated\Schema\Autoteka\ScoringAutoteka $risksAssessment = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoteka\ScoringAutoteka|null Schema field risksAssessment */
+    public ?\and_y87\php_client_avito\Generated\Schema\Autoteka\ScoringAutoteka $risksAssessment = null;
 }

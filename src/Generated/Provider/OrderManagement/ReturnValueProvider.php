@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\OrderManagement;
+namespace and_y87\php_client_avito\Generated\Provider\OrderManagement;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\AcceptReturnOrderPrompt;
-use php_client_avito\Generated\Response\OrderManagement\ReturnValue\AcceptOrderResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\AcceptReturnOrderPrompt;
+use and_y87\php_client_avito\Generated\Response\OrderManagement\ReturnValue\AcceptOrderResponse;
 
 /**
  * Группа методов "returnValue" раздела Avito API "Управление заказами".

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Autoload;
+namespace and_y87\php_client_avito\Generated\Schema\Autoload;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoload/ItemInfoAutoloadV2.
@@ -17,7 +17,7 @@ class ItemInfoAutoloadV2 extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['avito_date_end', 'avito_id', 'avito_status', 'fee_info', 'processing_time', 'url'];
 
-    protected const CASTS = ['messages' => [\php_client_avito\Generated\Schema\Autoload\ItemInfoError::class]];
+    protected const CASTS = ['messages' => [\and_y87\php_client_avito\Generated\Schema\Autoload\ItemInfoError::class]];
 
     /** @var string Идентификатор объявления из файла ([параметр Id](https://autoload.avito.ru/format/realty/#Id))
  */
@@ -42,7 +42,7 @@ class ItemInfoAutoloadV2 extends AbstractSchemaModel
     /** @var array<string, mixed>|null Информация о списании за размещение объявления */
     public ?array $fee_info;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\ItemInfoError> Ошибки или предупреждения по объявлению */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoload\ItemInfoError> Ошибки или предупреждения по объявлению */
     public array $messages;
 
     /** @var string|null Дата и время последней обработки объявления */

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/SandboxCreateAnnouncementRequest.
@@ -17,7 +17,7 @@ class SandboxCreateAnnouncementRequest extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['options' => \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementOptions::class, 'packages' => [\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementPackage::class], 'receiver' => \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant::class, 'sender' => \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant::class];
+    protected const CASTS = ['options' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementOptions::class, 'packages' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementPackage::class], 'receiver' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant::class, 'sender' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant::class];
 
     /** @var string Уникальный идентификатор анонса UUID V4. */
     public string $announcementID;
@@ -31,15 +31,15 @@ class SandboxCreateAnnouncementRequest extends AbstractSchemaModel
     /** @var string Дата и время создания анонса (UTC). */
     public string $date;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementOptions Schema field options */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementOptions $options;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementOptions Schema field options */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementOptions $options;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementPackage> Список грузомест. */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementPackage> Список грузомест. */
     public array $packages;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant Schema field receiver */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant $receiver;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant Schema field receiver */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant $receiver;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant Schema field sender */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant $sender;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant Schema field sender */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant $sender;
 }

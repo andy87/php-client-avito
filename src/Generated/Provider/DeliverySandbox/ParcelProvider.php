@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Provider\DeliverySandbox;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\CancelParcelPrompt;
-use php_client_avito\Generated\Prompt\ChangeParcelResultPrompt;
-use php_client_avito\Generated\Prompt\CreateParcelPrompt;
-use php_client_avito\Generated\Response\DeliverySandbox\Parcel\CancelResponse;
-use php_client_avito\Generated\Response\DeliverySandbox\Parcel\ChangeResultResponse;
-use php_client_avito\Generated\Response\DeliverySandbox\Parcel\CreateResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\CancelParcelPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ChangeParcelResultPrompt;
+use and_y87\php_client_avito\Generated\Prompt\CreateParcelPrompt;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\Parcel\CancelResponse;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\Parcel\ChangeResultResponse;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\Parcel\CreateResponse;
 
 /**
  * Группа методов "parcel" раздела Avito API "Доставка".

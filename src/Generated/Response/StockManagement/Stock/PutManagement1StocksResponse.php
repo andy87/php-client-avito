@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\StockManagement\Stock;
+namespace and_y87\php_client_avito\Generated\Response\StockManagement\Stock;
 
-use php_client_avito\Generated\Response\PutStockManagement1StocksResponse as BasePutStockManagement1StocksResponse;
+use and_y87\php_client_avito\Generated\Response\PutStockManagement1StocksResponse as BasePutStockManagement1StocksResponse;
 
 /**
  * Ответ Avito API [PUT] /stock-management/1/stocks.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Messenger\Chat;
+namespace and_y87\php_client_avito\Generated\Response\Messenger\Chat;
 
-use php_client_avito\Generated\Response\GetChatByIdV2Response as BaseGetChatByIdV2Response;
+use and_y87\php_client_avito\Generated\Response\GetChatByIdV2Response as BaseGetChatByIdV2Response;
 
 /**
  * Ответ Avito API [GET] /messenger/v2/accounts/{user_id}/chats/{chat_id}.

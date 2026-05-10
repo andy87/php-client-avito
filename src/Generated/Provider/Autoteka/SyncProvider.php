@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Autoteka;
+namespace and_y87\php_client_avito\Generated\Provider\Autoteka;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\PostSyncCreateReportByRegNumberPrompt;
-use php_client_avito\Generated\Prompt\PostSyncCreateReportByVinPrompt;
-use php_client_avito\Generated\Response\Autoteka\Sync\PostCreateReportByRegNumberResponse;
-use php_client_avito\Generated\Response\Autoteka\Sync\PostCreateReportByVinResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\PostSyncCreateReportByRegNumberPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostSyncCreateReportByVinPrompt;
+use and_y87\php_client_avito\Generated\Response\Autoteka\Sync\PostCreateReportByRegNumberResponse;
+use and_y87\php_client_avito\Generated\Response\Autoteka\Sync\PostCreateReportByVinResponse;
 
 /**
  * Группа методов "sync" раздела Avito API "Автотека".

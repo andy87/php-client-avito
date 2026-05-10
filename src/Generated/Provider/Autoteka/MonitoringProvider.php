@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Autoteka;
+namespace and_y87\php_client_avito\Generated\Provider\Autoteka;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\MonitoringBucketAddPrompt;
-use php_client_avito\Generated\Prompt\MonitoringBucketDeletePrompt;
-use php_client_avito\Generated\Prompt\MonitoringBucketRemovePrompt;
-use php_client_avito\Generated\Prompt\MonitoringGetRegActionsPrompt;
-use php_client_avito\Generated\Response\Autoteka\Monitoring\BucketAddResponse;
-use php_client_avito\Generated\Response\Autoteka\Monitoring\BucketDeleteResponse;
-use php_client_avito\Generated\Response\Autoteka\Monitoring\BucketRemoveResponse;
-use php_client_avito\Generated\Response\Autoteka\Monitoring\GetRegActionsResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\MonitoringBucketAddPrompt;
+use and_y87\php_client_avito\Generated\Prompt\MonitoringBucketDeletePrompt;
+use and_y87\php_client_avito\Generated\Prompt\MonitoringBucketRemovePrompt;
+use and_y87\php_client_avito\Generated\Prompt\MonitoringGetRegActionsPrompt;
+use and_y87\php_client_avito\Generated\Response\Autoteka\Monitoring\BucketAddResponse;
+use and_y87\php_client_avito\Generated\Response\Autoteka\Monitoring\BucketDeleteResponse;
+use and_y87\php_client_avito\Generated\Response\Autoteka\Monitoring\BucketRemoveResponse;
+use and_y87\php_client_avito\Generated\Response\Autoteka\Monitoring\GetRegActionsResponse;
 
 /**
  * Группа методов "monitoring" раздела Avito API "Автотека".

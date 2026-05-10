@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,10 +19,10 @@ class ChatByActionIdResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['chat' => \php_client_avito\Generated\Schema\Cpa\OpenApiChatsComposition::class];
+    protected const CASTS = ['chat' => \and_y87\php_client_avito\Generated\Schema\Cpa\OpenApiChatsComposition::class];
 
     protected const MODEL = null;
 
-    /** @var \php_client_avito\Generated\Schema\Cpa\OpenApiChatsComposition|null Response field chat */
-    public ?\php_client_avito\Generated\Schema\Cpa\OpenApiChatsComposition $chat = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Cpa\OpenApiChatsComposition|null Response field chat */
+    public ?\and_y87\php_client_avito\Generated\Schema\Cpa\OpenApiChatsComposition $chat = null;
 }

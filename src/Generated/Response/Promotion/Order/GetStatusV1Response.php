@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Promotion\Order;
+namespace and_y87\php_client_avito\Generated\Response\Promotion\Order;
 
-use php_client_avito\Generated\Response\GetOrderStatusV1Response as BaseGetOrderStatusV1Response;
+use and_y87\php_client_avito\Generated\Response\GetOrderStatusV1Response as BaseGetOrderStatusV1Response;
 
 /**
  * Ответ Avito API [POST] /promotion/v1/items/services/orders/status.
  *
  * @documentation https://developers.avito.ru/api-catalog/promotion/documentation#operation/get_order_status_v1
  *
- * @property array<int, \php_client_avito\Generated\Schema\Promotion\ErrorByItemV1>|null $errors Информация об ошибках получения данных по объявлениям
- * @property array<int, \php_client_avito\Generated\Schema\Promotion\OrderStatusByItemV1>|null $items Статус заявки на подключение услуги по объявлениям
+ * @property array<int, \and_y87\php_client_avito\Generated\Schema\Promotion\ErrorByItemV1>|null $errors Информация об ошибках получения данных по объявлениям
+ * @property array<int, \and_y87\php_client_avito\Generated\Schema\Promotion\OrderStatusByItemV1>|null $items Статус заявки на подключение услуги по объявлениям
  * @property string|null $orderId Идентификатор заявки на подключение услуг продвижения
- * @property \php_client_avito\Generated\Schema\Promotion\OrderStatus|null $status Response field status
+ * @property \and_y87\php_client_avito\Generated\Schema\Promotion\OrderStatus|null $status Response field status
  * @property int|null $totalPrice Общая стоимость заявки (в копейках)
  */
 class GetStatusV1Response extends BaseGetOrderStatusV1Response

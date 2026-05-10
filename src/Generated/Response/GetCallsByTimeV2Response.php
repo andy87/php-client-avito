@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,13 +19,13 @@ class GetCallsByTimeV2Response extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['calls' => [\php_client_avito\Generated\Schema\Cpa\CallV2::class], 'errorData' => \php_client_avito\Generated\Schema\Cpa\CpaError::class];
+    protected const CASTS = ['calls' => [\and_y87\php_client_avito\Generated\Schema\Cpa\CallV2::class], 'errorData' => \and_y87\php_client_avito\Generated\Schema\Cpa\CpaError::class];
 
     protected const MODEL = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Cpa\CallV2>|null Response field calls */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Cpa\CallV2>|null Response field calls */
     public ?array $calls = null;
 
-    /** @var \php_client_avito\Generated\Schema\Cpa\CpaError|null Response field error */
-    public ?\php_client_avito\Generated\Schema\Cpa\CpaError $errorData = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Cpa\CpaError|null Response field error */
+    public ?\and_y87\php_client_avito\Generated\Schema\Cpa\CpaError $errorData = null;
 }

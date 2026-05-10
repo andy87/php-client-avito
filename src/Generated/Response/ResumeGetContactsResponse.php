@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,14 +19,14 @@ class ResumeGetContactsResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = ['full_name'];
 
-    protected const CASTS = ['contacts' => [\php_client_avito\Generated\Schema\Job\ResumeContact::class]];
+    protected const CASTS = ['contacts' => [\and_y87\php_client_avito\Generated\Schema\Job\ResumeContact::class]];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Job\ResumeContacts::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Job\ResumeContacts::class;
 
     /** @var bool|null Response field already_bought */
     public ?bool $already_bought = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Job\ResumeContact>|null Response field contacts */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Job\ResumeContact>|null Response field contacts */
     public ?array $contacts = null;
 
     /** @var array<string, mixed>|null Детали ФИО */

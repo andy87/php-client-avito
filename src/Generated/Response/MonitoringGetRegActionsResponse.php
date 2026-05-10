@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,11 +19,11 @@ class MonitoringGetRegActionsResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['data' => [\php_client_avito\Generated\Schema\Autoteka\ResponseMonitoringGetRegAction::class]];
+    protected const CASTS = ['data' => [\and_y87\php_client_avito\Generated\Schema\Autoteka\ResponseMonitoringGetRegAction::class]];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Autoteka\ResponseMonitoringGetRegActions::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Autoteka\ResponseMonitoringGetRegActions::class;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\ResponseMonitoringGetRegAction> Массив рег. действий */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoteka\ResponseMonitoringGetRegAction> Массив рег. действий */
     public array $data;
 
     /** @var array<string, mixed> Объект, отвечающий за постраничное считывание информации */

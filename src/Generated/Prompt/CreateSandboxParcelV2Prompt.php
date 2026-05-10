@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt;
+namespace and_y87\php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class CreateSandboxParcelV2Prompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['items' => [\php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxParcelItem::class], 'options' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxV2Options::class];
+    protected const CASTS = ['items' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxParcelItem::class], 'options' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxV2Options::class];
 
     protected const PATH_FIELDS = [];
 
@@ -41,11 +41,11 @@ class CreateSandboxParcelV2Prompt extends AbstractPrompt
 
     protected const BODY_ROOT_FIELD = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxParcelItem>|null Body field items */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxParcelItem>|null Body field items */
     public ?array $items = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxV2Options|null Body field options */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxV2Options $options = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxV2Options|null Body field options */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateSandboxV2Options $options = null;
 
     /** @var array<string, mixed>|null Body field receiver */
     public ?array $receiver = null;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,11 +19,11 @@ class ListOrdersByUserV1Response extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['orders' => [\php_client_avito\Generated\Schema\Promotion\OrderBrief::class]];
+    protected const CASTS = ['orders' => [\and_y87\php_client_avito\Generated\Schema\Promotion\OrderBrief::class]];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Promotion\ListOrdersByUserV1Resp::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Promotion\ListOrdersByUserV1Resp::class;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Promotion\OrderBrief> Список заявок на подключение услуг продвижения по объявлениям */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Promotion\OrderBrief> Список заявок на подключение услуг продвижения по объявлениям */
     public array $orders;
 
     /** @var array<string, mixed> Данные для постраничного чтения */

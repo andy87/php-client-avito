@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/CreateParcelItem.
@@ -17,9 +17,9 @@ class CreateParcelItem extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['breadcrumbs' => [\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemBreadcrumb::class], 'dimensions' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemDimensions::class, 'imagesUrls' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemImagesUrls::class, 'weight' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemWeight::class];
+    protected const CASTS = ['breadcrumbs' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemBreadcrumb::class], 'dimensions' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemDimensions::class, 'imagesUrls' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemImagesUrls::class, 'weight' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemWeight::class];
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemBreadcrumb>|null Дерево категорий как на сайте Avito.
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemBreadcrumb>|null Дерево категорий как на сайте Avito.
  */
     public ?array $breadcrumbs = null;
 
@@ -29,14 +29,14 @@ class CreateParcelItem extends AbstractSchemaModel
     /** @var string|null Описание. */
     public ?string $description = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemDimensions|null Schema field dimensions */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemDimensions $dimensions = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemDimensions|null Schema field dimensions */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemDimensions $dimensions = null;
 
     /** @var int Идентификатор товара Avito. */
     public int $id;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemImagesUrls|null Schema field imagesUrls */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemImagesUrls $imagesUrls = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemImagesUrls|null Schema field imagesUrls */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemImagesUrls $imagesUrls = null;
 
     /** @var int Количество единиц товара. */
     public int $quantity;
@@ -54,6 +54,6 @@ class CreateParcelItem extends AbstractSchemaModel
     /** @var string Название. */
     public string $title;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemWeight|null Schema field weight */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemWeight $weight = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemWeight|null Schema field weight */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelItemWeight $weight = null;
 }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,12 +19,12 @@ class CreateComplaintByActionIdResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['errorData' => \php_client_avito\Generated\Schema\Cpa\CpaError::class];
+    protected const CASTS = ['errorData' => \and_y87\php_client_avito\Generated\Schema\Cpa\CpaError::class];
 
     protected const MODEL = null;
 
-    /** @var \php_client_avito\Generated\Schema\Cpa\CpaError|null Response field error */
-    public ?\php_client_avito\Generated\Schema\Cpa\CpaError $errorData = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Cpa\CpaError|null Response field error */
+    public ?\and_y87\php_client_avito\Generated\Schema\Cpa\CpaError $errorData = null;
 
     /** @var bool|null Response field success */
     public ?bool $success = null;

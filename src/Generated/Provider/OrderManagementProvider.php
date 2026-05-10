@@ -2,33 +2,33 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider;
+namespace and_y87\php_client_avito\Generated\Provider;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\AcceptReturnOrderPrompt;
-use php_client_avito\Generated\Prompt\ApplyTransitionPrompt;
-use php_client_avito\Generated\Prompt\CheckConfirmationCodePrompt2;
-use php_client_avito\Generated\Prompt\CncSetDetailsPrompt;
-use php_client_avito\Generated\Prompt\DownloadLabelPrompt;
-use php_client_avito\Generated\Prompt\GenerateLabelsExtendedPrompt;
-use php_client_avito\Generated\Prompt\GenerateLabelsPrompt;
-use php_client_avito\Generated\Prompt\GetCourierDeliveryRangePrompt;
-use php_client_avito\Generated\Prompt\GetOrdersPrompt;
-use php_client_avito\Generated\Prompt\MarkingsPrompt;
-use php_client_avito\Generated\Prompt\SetCourierDeliveryRangePrompt;
-use php_client_avito\Generated\Prompt\SetOrderTrackingNumberPrompt;
-use php_client_avito\Generated\Response\AcceptReturnOrderResponse;
-use php_client_avito\Generated\Response\ApplyTransitionResponse;
-use php_client_avito\Generated\Response\CheckConfirmationCodeResponse2;
-use php_client_avito\Generated\Response\CncSetDetailsResponse;
-use php_client_avito\Generated\Response\DownloadLabelResponse;
-use php_client_avito\Generated\Response\GenerateLabelsExtendedResponse;
-use php_client_avito\Generated\Response\GenerateLabelsResponse;
-use php_client_avito\Generated\Response\GetCourierDeliveryRangeResponse;
-use php_client_avito\Generated\Response\GetOrdersResponse;
-use php_client_avito\Generated\Response\MarkingsResponse;
-use php_client_avito\Generated\Response\SetCourierDeliveryRangeResponse;
-use php_client_avito\Generated\Response\SetOrderTrackingNumberResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\AcceptReturnOrderPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplyTransitionPrompt;
+use and_y87\php_client_avito\Generated\Prompt\CheckConfirmationCodePrompt2;
+use and_y87\php_client_avito\Generated\Prompt\CncSetDetailsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\DownloadLabelPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GenerateLabelsExtendedPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GenerateLabelsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetCourierDeliveryRangePrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetOrdersPrompt;
+use and_y87\php_client_avito\Generated\Prompt\MarkingsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\SetCourierDeliveryRangePrompt;
+use and_y87\php_client_avito\Generated\Prompt\SetOrderTrackingNumberPrompt;
+use and_y87\php_client_avito\Generated\Response\AcceptReturnOrderResponse;
+use and_y87\php_client_avito\Generated\Response\ApplyTransitionResponse;
+use and_y87\php_client_avito\Generated\Response\CheckConfirmationCodeResponse2;
+use and_y87\php_client_avito\Generated\Response\CncSetDetailsResponse;
+use and_y87\php_client_avito\Generated\Response\DownloadLabelResponse;
+use and_y87\php_client_avito\Generated\Response\GenerateLabelsExtendedResponse;
+use and_y87\php_client_avito\Generated\Response\GenerateLabelsResponse;
+use and_y87\php_client_avito\Generated\Response\GetCourierDeliveryRangeResponse;
+use and_y87\php_client_avito\Generated\Response\GetOrdersResponse;
+use and_y87\php_client_avito\Generated\Response\MarkingsResponse;
+use and_y87\php_client_avito\Generated\Response\SetCourierDeliveryRangeResponse;
+use and_y87\php_client_avito\Generated\Response\SetOrderTrackingNumberResponse;
 
 /**
  * Provider раздела Avito API "Управление заказами".

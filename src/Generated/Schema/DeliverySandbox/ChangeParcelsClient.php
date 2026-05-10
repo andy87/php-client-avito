@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/ChangeParcelsClient.
@@ -17,7 +17,7 @@ class ChangeParcelsClient extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['terminal' => \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsTerminal::class];
+    protected const CASTS = ['terminal' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsTerminal::class];
 
     /** @var string ФИО нового получателя посылки.
  */
@@ -30,6 +30,6 @@ class ChangeParcelsClient extends AbstractSchemaModel
  */
     public array $phones;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsTerminal|null Schema field terminal */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsTerminal $terminal = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsTerminal|null Schema field terminal */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsTerminal $terminal = null;
 }

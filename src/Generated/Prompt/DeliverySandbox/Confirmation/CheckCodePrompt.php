@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\DeliverySandbox\Confirmation;
+namespace and_y87\php_client_avito\Generated\Prompt\DeliverySandbox\Confirmation;
 
-use php_client_avito\Generated\Prompt\CheckConfirmationCodePrompt as BaseCheckConfirmationCodePrompt;
+use and_y87\php_client_avito\Generated\Prompt\CheckConfirmationCodePrompt as BaseCheckConfirmationCodePrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/order/checkConfirmationCode.

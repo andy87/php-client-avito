@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Item\Item;
+namespace and_y87\php_client_avito\Generated\Response\Item\Item;
 
-use php_client_avito\Generated\Response\GetItemInfoResponse as BaseGetItemInfoResponse;
+use and_y87\php_client_avito\Generated\Response\GetItemInfoResponse as BaseGetItemInfoResponse;
 
 /**
  * Ответ Avito API [GET] /core/v1/accounts/{user_id}/items/{item_id}/.
@@ -16,7 +16,7 @@ use php_client_avito\Generated\Response\GetItemInfoResponse as BaseGetItemInfoRe
  * @property string|null $start_time Дата создания объявления
  * @property string|null $status Статус объявления на сайте
  * @property string|null $url URL-адрес объявления
- * @property array<int, \php_client_avito\Generated\Schema\Item\InfoVas>|null $vas Список примененных платных услуг
+ * @property array<int, \and_y87\php_client_avito\Generated\Schema\Item\InfoVas>|null $vas Список примененных платных услуг
  */
 class GetInfoResponse extends BaseGetItemInfoResponse
 {

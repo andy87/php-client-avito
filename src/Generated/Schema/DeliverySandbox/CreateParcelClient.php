@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/CreateParcelClient.
@@ -17,10 +17,10 @@ class CreateParcelClient extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['delivery' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDelivery::class];
+    protected const CASTS = ['delivery' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDelivery::class];
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDelivery Schema field delivery */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDelivery $delivery;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDelivery Schema field delivery */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelClientDelivery $delivery;
 
     /** @var string Электронная почта. */
     public string $email;

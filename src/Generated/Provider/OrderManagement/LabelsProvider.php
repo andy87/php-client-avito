@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\OrderManagement;
+namespace and_y87\php_client_avito\Generated\Provider\OrderManagement;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GenerateLabelsExtendedPrompt;
-use php_client_avito\Generated\Prompt\GenerateLabelsPrompt;
-use php_client_avito\Generated\Response\OrderManagement\Labels\GenerateExtendedResponse;
-use php_client_avito\Generated\Response\OrderManagement\Labels\GenerateResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GenerateLabelsExtendedPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GenerateLabelsPrompt;
+use and_y87\php_client_avito\Generated\Response\OrderManagement\Labels\GenerateExtendedResponse;
+use and_y87\php_client_avito\Generated\Response\OrderManagement\Labels\GenerateResponse;
 
 /**
  * Группа методов "labels" раздела Avito API "Управление заказами".

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Autoteka;
+namespace and_y87\php_client_avito\Generated\Schema\Autoteka;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/VehicleSpecifications.
@@ -17,9 +17,9 @@ class VehicleSpecifications extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['events' => [\php_client_avito\Generated\Schema\Autoteka\VehicleSpecificationsParam::class]];
+    protected const CASTS = ['events' => [\and_y87\php_client_avito\Generated\Schema\Autoteka\VehicleSpecificationsParam::class]];
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\VehicleSpecificationsParam> Список параметров спецификации */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoteka\VehicleSpecificationsParam> Список параметров спецификации */
     public array $events;
 
     /** @var int Дата запроса к источнику UnixTime */

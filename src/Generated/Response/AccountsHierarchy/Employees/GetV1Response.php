@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\AccountsHierarchy\Employees;
+namespace and_y87\php_client_avito\Generated\Response\AccountsHierarchy\Employees;
 
-use php_client_avito\Generated\Response\GetEmployeesV1Response as BaseGetEmployeesV1Response;
+use and_y87\php_client_avito\Generated\Response\GetEmployeesV1Response as BaseGetEmployeesV1Response;
 
 /**
  * Ответ Avito API [GET] /getEmployeesV1.

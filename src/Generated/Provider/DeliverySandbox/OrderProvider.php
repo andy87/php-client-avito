@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Provider\DeliverySandbox;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\ProhibitOrderAcceptancePrompt;
-use php_client_avito\Generated\Prompt\SetOrderPropertiesPrompt;
-use php_client_avito\Generated\Prompt\SetOrderRealAddressPrompt;
-use php_client_avito\Generated\Response\DeliverySandbox\Order\ProhibitAcceptanceResponse;
-use php_client_avito\Generated\Response\DeliverySandbox\Order\SetPropertiesResponse;
-use php_client_avito\Generated\Response\DeliverySandbox\Order\SetRealAddressResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\ProhibitOrderAcceptancePrompt;
+use and_y87\php_client_avito\Generated\Prompt\SetOrderPropertiesPrompt;
+use and_y87\php_client_avito\Generated\Prompt\SetOrderRealAddressPrompt;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\Order\ProhibitAcceptanceResponse;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\Order\SetPropertiesResponse;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\Order\SetRealAddressResponse;
 
 /**
  * Группа методов "order" раздела Avito API "Доставка".

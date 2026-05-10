@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,12 +19,12 @@ class GetTeaserResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['data' => \php_client_avito\Generated\Schema\Autoteka\Teaser::class];
+    protected const CASTS = ['data' => \and_y87\php_client_avito\Generated\Schema\Autoteka\Teaser::class];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Autoteka\TeaserResponse::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Autoteka\TeaserResponse::class;
 
-    /** @var \php_client_avito\Generated\Schema\Autoteka\Teaser Response field data */
-    public \php_client_avito\Generated\Schema\Autoteka\Teaser $data;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoteka\Teaser Response field data */
+    public \and_y87\php_client_avito\Generated\Schema\Autoteka\Teaser $data;
 
     /** @var string Статус готовности */
     public string $status;

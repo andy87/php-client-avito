@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt;
+namespace and_y87\php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class ItemStatsShallowPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['dateFrom' => \php_client_avito\Generated\Schema\Item\StatisticsDateFrom::class, 'dateTo' => \php_client_avito\Generated\Schema\Item\StatisticsDateTo::class, 'fields' => \php_client_avito\Generated\Schema\Item\StatisticsFields::class, 'itemIds' => \php_client_avito\Generated\Schema\Item\StatisticsItemIDs::class, 'periodGrouping' => \php_client_avito\Generated\Schema\Item\StatisticsPeriodGrouping::class];
+    protected const CASTS = ['dateFrom' => \and_y87\php_client_avito\Generated\Schema\Item\StatisticsDateFrom::class, 'dateTo' => \and_y87\php_client_avito\Generated\Schema\Item\StatisticsDateTo::class, 'fields' => \and_y87\php_client_avito\Generated\Schema\Item\StatisticsFields::class, 'itemIds' => \and_y87\php_client_avito\Generated\Schema\Item\StatisticsItemIDs::class, 'periodGrouping' => \and_y87\php_client_avito\Generated\Schema\Item\StatisticsPeriodGrouping::class];
 
     protected const PATH_FIELDS = ['user_id'];
 
@@ -44,18 +44,18 @@ class ItemStatsShallowPrompt extends AbstractPrompt
     /** @var int Идентификатор пользователя (клиента) */
     public int $user_id;
 
-    /** @var \php_client_avito\Generated\Schema\Item\StatisticsDateFrom Body field dateFrom */
-    public \php_client_avito\Generated\Schema\Item\StatisticsDateFrom $dateFrom;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\StatisticsDateFrom Body field dateFrom */
+    public \and_y87\php_client_avito\Generated\Schema\Item\StatisticsDateFrom $dateFrom;
 
-    /** @var \php_client_avito\Generated\Schema\Item\StatisticsDateTo Body field dateTo */
-    public \php_client_avito\Generated\Schema\Item\StatisticsDateTo $dateTo;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\StatisticsDateTo Body field dateTo */
+    public \and_y87\php_client_avito\Generated\Schema\Item\StatisticsDateTo $dateTo;
 
-    /** @var \php_client_avito\Generated\Schema\Item\StatisticsFields|null Body field fields */
-    public ?\php_client_avito\Generated\Schema\Item\StatisticsFields $fields = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\StatisticsFields|null Body field fields */
+    public ?\and_y87\php_client_avito\Generated\Schema\Item\StatisticsFields $fields = null;
 
-    /** @var \php_client_avito\Generated\Schema\Item\StatisticsItemIDs Body field itemIds */
-    public \php_client_avito\Generated\Schema\Item\StatisticsItemIDs $itemIds;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\StatisticsItemIDs Body field itemIds */
+    public \and_y87\php_client_avito\Generated\Schema\Item\StatisticsItemIDs $itemIds;
 
-    /** @var \php_client_avito\Generated\Schema\Item\StatisticsPeriodGrouping|null Body field periodGrouping */
-    public ?\php_client_avito\Generated\Schema\Item\StatisticsPeriodGrouping $periodGrouping = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\StatisticsPeriodGrouping|null Body field periodGrouping */
+    public ?\and_y87\php_client_avito\Generated\Schema\Item\StatisticsPeriodGrouping $periodGrouping = null;
 }

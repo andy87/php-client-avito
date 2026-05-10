@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Item;
+namespace and_y87\php_client_avito\Generated\Provider\Item;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\ApplyVasPrompt;
-use php_client_avito\Generated\Prompt\VasPricesPrompt;
-use php_client_avito\Generated\Response\Item\Vas\ApplyResponse;
-use php_client_avito\Generated\Response\Item\Vas\PricesResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\ApplyVasPrompt;
+use and_y87\php_client_avito\Generated\Prompt\VasPricesPrompt;
+use and_y87\php_client_avito\Generated\Response\Item\Vas\ApplyResponse;
+use and_y87\php_client_avito\Generated\Response\Item\Vas\PricesResponse;
 
 /**
  * Группа методов "vas" раздела Avito API "Объявления".

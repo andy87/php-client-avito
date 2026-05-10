@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,11 +19,11 @@ class GetReviewsV1Response extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['reviews' => [\php_client_avito\Generated\Schema\Ratings\Review::class]];
+    protected const CASTS = ['reviews' => [\and_y87\php_client_avito\Generated\Schema\Ratings\Review::class]];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Ratings\GetReviewsResponse::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Ratings\GetReviewsResponse::class;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Ratings\Review> Список отзывов */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Ratings\Review> Список отзывов */
     public array $reviews;
 
     /** @var int Количество всех отзывов */

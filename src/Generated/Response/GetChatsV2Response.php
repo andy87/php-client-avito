@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,10 +19,10 @@ class GetChatsV2Response extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['chats' => [\php_client_avito\Generated\Schema\Messenger\Chat::class]];
+    protected const CASTS = ['chats' => [\and_y87\php_client_avito\Generated\Schema\Messenger\Chat::class]];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Messenger\Chats::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Messenger\Chats::class;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Messenger\Chat>|null Список чатов */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Messenger\Chat>|null Список чатов */
     public ?array $chats = null;
 }

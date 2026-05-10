@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autoteka\Report;
+namespace and_y87\php_client_avito\Generated\Prompt\Autoteka\Report;
 
-use php_client_avito\Generated\Prompt\PostReportByVehicleIdPrompt as BasePostReportByVehicleIdPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostReportByVehicleIdPrompt as BasePostReportByVehicleIdPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autoteka/v1/reports-by-vehicle-id.

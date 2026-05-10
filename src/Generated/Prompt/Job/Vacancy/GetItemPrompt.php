@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Job\Vacancy;
+namespace and_y87\php_client_avito\Generated\Prompt\Job\Vacancy;
 
-use php_client_avito\Generated\Prompt\VacancyGetItemPrompt as BaseVacancyGetItemPrompt;
+use and_y87\php_client_avito\Generated\Prompt\VacancyGetItemPrompt as BaseVacancyGetItemPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /job/v2/vacancies/{vacancy_id}.

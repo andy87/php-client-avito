@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Messenger\Webhook;
+namespace and_y87\php_client_avito\Generated\Response\Messenger\Webhook;
 
-use php_client_avito\Generated\Response\PostWebhookUnsubscribeResponse as BasePostWebhookUnsubscribeResponse;
+use and_y87\php_client_avito\Generated\Response\PostWebhookUnsubscribeResponse as BasePostWebhookUnsubscribeResponse;
 
 /**
  * Ответ Avito API [POST] /messenger/v1/webhook/unsubscribe.

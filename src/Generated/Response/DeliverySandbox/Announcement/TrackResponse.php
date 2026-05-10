@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\DeliverySandbox\Announcement;
+namespace and_y87\php_client_avito\Generated\Response\DeliverySandbox\Announcement;
 
-use php_client_avito\Generated\Response\TrackAnnouncementResponse as BaseTrackAnnouncementResponse;
+use and_y87\php_client_avito\Generated\Response\TrackAnnouncementResponse as BaseTrackAnnouncementResponse;
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/announcements/track.

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Auction;
+namespace and_y87\php_client_avito\Generated\Provider\Auction;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\SaveItemBidsPrompt;
-use php_client_avito\Generated\Response\Auction\Item\SaveBidsResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\SaveItemBidsPrompt;
+use and_y87\php_client_avito\Generated\Response\Auction\Item\SaveBidsResponse;
 
 /**
  * Группа методов "item" раздела Avito API "CPA-аукцион".

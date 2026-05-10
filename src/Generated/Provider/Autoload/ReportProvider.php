@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Autoload;
+namespace and_y87\php_client_avito\Generated\Provider\Autoload;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetReportByIdV2Prompt;
-use php_client_avito\Generated\Prompt\GetReportByIdV3Prompt;
-use php_client_avito\Generated\Prompt\GetReportItemsByIdPrompt;
-use php_client_avito\Generated\Prompt\GetReportItemsFeesByIdPrompt;
-use php_client_avito\Generated\Response\Autoload\Report\GetByIdV2Response;
-use php_client_avito\Generated\Response\Autoload\Report\GetByIdV3Response;
-use php_client_avito\Generated\Response\Autoload\Report\GetItemsByIdResponse;
-use php_client_avito\Generated\Response\Autoload\Report\GetItemsFeesByIdResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetReportByIdV2Prompt;
+use and_y87\php_client_avito\Generated\Prompt\GetReportByIdV3Prompt;
+use and_y87\php_client_avito\Generated\Prompt\GetReportItemsByIdPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetReportItemsFeesByIdPrompt;
+use and_y87\php_client_avito\Generated\Response\Autoload\Report\GetByIdV2Response;
+use and_y87\php_client_avito\Generated\Response\Autoload\Report\GetByIdV3Response;
+use and_y87\php_client_avito\Generated\Response\Autoload\Report\GetItemsByIdResponse;
+use and_y87\php_client_avito\Generated\Response\Autoload\Report\GetItemsFeesByIdResponse;
 
 /**
  * Группа методов "report" раздела Avito API "Автозагрузка".

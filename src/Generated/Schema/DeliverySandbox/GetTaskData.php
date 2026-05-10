@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/GetTaskData.
@@ -17,13 +17,13 @@ class GetTaskData extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['errors', 'result'];
 
-    protected const CASTS = ['errors' => [\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError::class]];
+    protected const CASTS = ['errors' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError::class]];
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError>|null Schema field errors */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError>|null Schema field errors */
     public ?array $errors = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\AreasTaskResult|null Schema field result */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\AreasTaskResult $result = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\AreasTaskResult|null Schema field result */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\AreasTaskResult $result = null;
 
     /** @var string Статус задачи */
     public string $state;

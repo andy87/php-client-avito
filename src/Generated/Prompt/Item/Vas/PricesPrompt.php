@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Item\Vas;
+namespace and_y87\php_client_avito\Generated\Prompt\Item\Vas;
 
-use php_client_avito\Generated\Prompt\VasPricesPrompt as BaseVasPricesPrompt;
+use and_y87\php_client_avito\Generated\Prompt\VasPricesPrompt as BaseVasPricesPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /core/v1/accounts/{userId}/vas/prices.

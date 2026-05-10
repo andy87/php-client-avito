@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\DeliverySandbox\V;
+namespace and_y87\php_client_avito\Generated\Response\DeliverySandbox\V;
 
-use php_client_avito\Generated\Response\V1createAnnouncementResponse as BaseV1createAnnouncementResponse;
+use and_y87\php_client_avito\Generated\Response\V1createAnnouncementResponse as BaseV1createAnnouncementResponse;
 
 /**
  * Ответ Avito API [POST] /delivery-sandbox/v1/createAnnouncement.
@@ -12,7 +12,7 @@ use php_client_avito\Generated\Response\V1createAnnouncementResponse as BaseV1cr
  * @documentation https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#operation/v1createAnnouncement
  *
  * @property array<string, mixed>|null $data Response field data
- * @property \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementError|null $errorData Response field error
+ * @property \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementError|null $errorData Response field error
  */
 class CreateAnnouncementResponse extends BaseV1createAnnouncementResponse
 {

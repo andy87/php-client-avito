@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,9 +19,9 @@ class GetItemInfoResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = ['autoload_item_id', 'finish_time', 'start_time', 'url', 'vas'];
 
-    protected const CASTS = ['vas' => [\php_client_avito\Generated\Schema\Item\InfoVas::class]];
+    protected const CASTS = ['vas' => [\and_y87\php_client_avito\Generated\Schema\Item\InfoVas::class]];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Item\ItemInfoAvito::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Item\ItemInfoAvito::class;
 
     /** @var string|null [Идентификатор объявления](https://autoload.avito.ru/format/realty/#Id) из файла автозагрузки */
     public ?string $autoload_item_id = null;
@@ -38,6 +38,6 @@ class GetItemInfoResponse extends AbstractResponse
     /** @var string|null URL-адрес объявления */
     public ?string $url = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Item\InfoVas>|null Список примененных платных услуг */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Item\InfoVas>|null Список примененных платных услуг */
     public ?array $vas = null;
 }

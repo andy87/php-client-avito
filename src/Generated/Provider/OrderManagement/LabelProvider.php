@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\OrderManagement;
+namespace and_y87\php_client_avito\Generated\Provider\OrderManagement;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\DownloadLabelPrompt;
-use php_client_avito\Generated\Response\OrderManagement\Label\DownloadResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\DownloadLabelPrompt;
+use and_y87\php_client_avito\Generated\Response\OrderManagement\Label\DownloadResponse;
 
 /**
  * Группа методов "label" раздела Avito API "Управление заказами".

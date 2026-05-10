@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,13 +19,13 @@ class ProhibitOrderAcceptanceResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = ['data'];
 
-    protected const CASTS = ['errorData' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError::class];
+    protected const CASTS = ['errorData' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError::class];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\DeliverySandbox\ProhibitOrderAcceptanceReply::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ProhibitOrderAcceptanceReply::class;
 
     /** @var array<string, mixed>|null Response field data */
     public ?array $data = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError|null Response field error */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError $errorData = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError|null Response field error */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryError $errorData = null;
 }

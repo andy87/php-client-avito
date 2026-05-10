@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/ChangeParcelsRequest.
@@ -17,9 +17,9 @@ class ChangeParcelsRequest extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['applications' => [\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsApplication::class]];
+    protected const CASTS = ['applications' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsApplication::class]];
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsApplication> Schema field applications */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsApplication> Schema field applications */
     public array $applications;
 
     /** @var string Тип заявки.

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,13 +19,13 @@ class ChangeParcelsResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['data' => \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsData::class, 'errorData' => \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsError::class];
+    protected const CASTS = ['data' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsData::class, 'errorData' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsError::class];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsResponse::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsResponse::class;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsData|null Response field data */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsData $data = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsData|null Response field data */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsData $data = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsError|null Response field error */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsError $errorData = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsError|null Response field error */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelsError $errorData = null;
 }

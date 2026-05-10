@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Job;
+namespace and_y87\php_client_avito\Generated\Provider\Job;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\ResumeGetContactsPrompt;
-use php_client_avito\Generated\Prompt\ResumeGetItemPrompt;
-use php_client_avito\Generated\Response\Job\Resume\GetContactsResponse;
-use php_client_avito\Generated\Response\Job\Resume\GetItemResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\ResumeGetContactsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ResumeGetItemPrompt;
+use and_y87\php_client_avito\Generated\Response\Job\Resume\GetContactsResponse;
+use and_y87\php_client_avito\Generated\Response\Job\Resume\GetItemResponse;
 
 /**
  * Группа методов "resume" раздела Avito API "Авито.Работа".

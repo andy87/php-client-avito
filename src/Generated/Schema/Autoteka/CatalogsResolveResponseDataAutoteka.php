@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Autoteka;
+namespace and_y87\php_client_avito\Generated\Schema\Autoteka;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/CatalogsResolveResponseDataAutoteka.
@@ -17,8 +17,8 @@ class CatalogsResolveResponseDataAutoteka extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['fields' => [\php_client_avito\Generated\Schema\Autoteka\CatalogsFieldAutoteka::class]];
+    protected const CASTS = ['fields' => [\and_y87\php_client_avito\Generated\Schema\Autoteka\CatalogsFieldAutoteka::class]];
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\CatalogsFieldAutoteka> Schema field fields */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoteka\CatalogsFieldAutoteka> Schema field fields */
     public array $fields;
 }

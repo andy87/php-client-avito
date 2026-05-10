@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Cpa\Balance;
+namespace and_y87\php_client_avito\Generated\Prompt\Cpa\Balance;
 
-use php_client_avito\Generated\Prompt\BalanceInfoV3Prompt as BaseBalanceInfoV3Prompt;
+use and_y87\php_client_avito\Generated\Prompt\BalanceInfoV3Prompt as BaseBalanceInfoV3Prompt;
 
 /**
  * Класс данных запроса Avito API [POST] /cpa/v3/balanceInfo.

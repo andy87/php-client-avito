@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Cpa;
+namespace and_y87\php_client_avito\Generated\Schema\Cpa;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito cpa/Error.
@@ -17,7 +17,7 @@ class Error extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['payload' => \php_client_avito\Generated\Schema\Cpa\ErrorPayload::class];
+    protected const CASTS = ['payload' => \and_y87\php_client_avito\Generated\Schema\Cpa\ErrorPayload::class];
 
     /** @var int Internal error code */
     public int $code;
@@ -25,6 +25,6 @@ class Error extends AbstractSchemaModel
     /** @var string Human readable error text */
     public string $message;
 
-    /** @var \php_client_avito\Generated\Schema\Cpa\ErrorPayload|null Schema field payload */
-    public ?\php_client_avito\Generated\Schema\Cpa\ErrorPayload $payload = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Cpa\ErrorPayload|null Schema field payload */
+    public ?\and_y87\php_client_avito\Generated\Schema\Cpa\ErrorPayload $payload = null;
 }

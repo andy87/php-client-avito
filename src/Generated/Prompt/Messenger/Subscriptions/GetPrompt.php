@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Messenger\Subscriptions;
+namespace and_y87\php_client_avito\Generated\Prompt\Messenger\Subscriptions;
 
-use php_client_avito\Generated\Prompt\GetSubscriptionsPrompt as BaseGetSubscriptionsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetSubscriptionsPrompt as BaseGetSubscriptionsPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /messenger/v1/subscriptions.

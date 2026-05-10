@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\SbcGateway\Open;
+namespace and_y87\php_client_avito\Generated\Prompt\SbcGateway\Open;
 
-use php_client_avito\Generated\Prompt\OpenApiMultiConfirmPrompt as BaseOpenApiMultiConfirmPrompt;
+use and_y87\php_client_avito\Generated\Prompt\OpenApiMultiConfirmPrompt as BaseOpenApiMultiConfirmPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /special-offers/v1/multiConfirm.

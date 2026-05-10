@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\OrderManagement\Courier;
+namespace and_y87\php_client_avito\Generated\Prompt\OrderManagement\Courier;
 
-use php_client_avito\Generated\Prompt\GetCourierDeliveryRangePrompt as BaseGetCourierDeliveryRangePrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetCourierDeliveryRangePrompt as BaseGetCourierDeliveryRangePrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /order-management/1/order/getCourierDeliveryRange.

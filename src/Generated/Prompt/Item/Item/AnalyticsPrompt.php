@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Item\Item;
+namespace and_y87\php_client_avito\Generated\Prompt\Item\Item;
 
-use php_client_avito\Generated\Prompt\ItemAnalyticsPrompt as BaseItemAnalyticsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ItemAnalyticsPrompt as BaseItemAnalyticsPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /stats/v2/accounts/{user_id}/items.
@@ -15,7 +15,7 @@ use php_client_avito\Generated\Prompt\ItemAnalyticsPrompt as BaseItemAnalyticsPr
  * @property string $dateFrom Дата (в формате YYYY-MM-DD), с которой (включительно) надо получить статистику
  * @property string $dateTo Дата (в формате YYYY-MM-DD), по которую (включительно) надо получить статистику
  * @property array<string, mixed>|null $filter Набор ограничений, по которым нужно отфильтровать данные
- * @property \php_client_avito\Generated\Schema\Item\Groupings $grouping Body field grouping
+ * @property \and_y87\php_client_avito\Generated\Schema\Item\Groupings $grouping Body field grouping
  * @property int|null $limit Инструмент пагинации для ограничения количества сущностей в response;
  * @property array<int, string> $metrics Набор доступных показателей, которые должны присутствовать в ответе
  * @property int|null $offset инструмент пагинации или смещение, с которого начинается выборка данных;

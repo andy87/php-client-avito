@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Job;
+namespace and_y87\php_client_avito\Generated\Schema\Job;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito job/VacancyV2Create.
@@ -17,13 +17,13 @@ class VacancyV2Create extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['business_area', 'delivery_method', 'description', 'driving_experience', 'employment', 'experience', 'is_company_car', 'location', 'schedule', 'title', 'vacancy_code'];
 
-    protected const CASTS = ['administrator_organization_type' => \php_client_avito\Generated\Schema\Job\AdministratorOrganizationType::class, 'age' => \php_client_avito\Generated\Schema\Job\AgeCriteria::class, 'apply_processing' => \php_client_avito\Generated\Schema\Job\ApplyProcessing::class, 'bonuses' => \php_client_avito\Generated\Schema\Job\Bonuses::class, 'citizenship' => \php_client_avito\Generated\Schema\Job\CitizenshipCriteria::class, 'construction_work_type' => \php_client_avito\Generated\Schema\Job\ConstructionWorkType::class, 'cuisine' => \php_client_avito\Generated\Schema\Job\Cuisine::class, 'driving_license_category' => \php_client_avito\Generated\Schema\Job\DrivingLicenseCategory::class, 'eatery_type' => \php_client_avito\Generated\Schema\Job\EateryType::class, 'education_level' => \php_client_avito\Generated\Schema\Job\VacancyEducationLevel::class, 'facility_type' => \php_client_avito\Generated\Schema\Job\FacilityType::class, 'food_production_shop_type' => \php_client_avito\Generated\Schema\Job\FoodProductionShopType::class, 'grade' => \php_client_avito\Generated\Schema\Job\Grade::class, 'medical_book' => \php_client_avito\Generated\Schema\Job\MedicalBookVacancy::class, 'medical_specialization' => \php_client_avito\Generated\Schema\Job\MedicalSpecialization::class, 'medical_specialization_ids' => \php_client_avito\Generated\Schema\Job\MedicalSpecializationIds::class, 'profession' => \php_client_avito\Generated\Schema\Job\Profession::class, 'registration_method' => \php_client_avito\Generated\Schema\Job\RegistrationMethod::class, 'retail_equipment_type' => \php_client_avito\Generated\Schema\Job\RetailEquipmentType::class, 'retail_shop_type' => \php_client_avito\Generated\Schema\Job\RetailShopType::class, 'salary_detail' => \php_client_avito\Generated\Schema\Job\SalaryDetail::class, 'shifts' => \php_client_avito\Generated\Schema\Job\Shifts::class, 'tools_availability' => \php_client_avito\Generated\Schema\Job\ToolsAvailability::class, 'vehicle_type' => \php_client_avito\Generated\Schema\Job\VehicleType::class, 'work_days_per_week' => \php_client_avito\Generated\Schema\Job\WorkDaysPerWeek::class, 'work_hours_per_day' => \php_client_avito\Generated\Schema\Job\WorkHoursPerDay::class, 'worker_class' => \php_client_avito\Generated\Schema\Job\WorkerClass::class];
+    protected const CASTS = ['administrator_organization_type' => \and_y87\php_client_avito\Generated\Schema\Job\AdministratorOrganizationType::class, 'age' => \and_y87\php_client_avito\Generated\Schema\Job\AgeCriteria::class, 'apply_processing' => \and_y87\php_client_avito\Generated\Schema\Job\ApplyProcessing::class, 'bonuses' => \and_y87\php_client_avito\Generated\Schema\Job\Bonuses::class, 'citizenship' => \and_y87\php_client_avito\Generated\Schema\Job\CitizenshipCriteria::class, 'construction_work_type' => \and_y87\php_client_avito\Generated\Schema\Job\ConstructionWorkType::class, 'cuisine' => \and_y87\php_client_avito\Generated\Schema\Job\Cuisine::class, 'driving_license_category' => \and_y87\php_client_avito\Generated\Schema\Job\DrivingLicenseCategory::class, 'eatery_type' => \and_y87\php_client_avito\Generated\Schema\Job\EateryType::class, 'education_level' => \and_y87\php_client_avito\Generated\Schema\Job\VacancyEducationLevel::class, 'facility_type' => \and_y87\php_client_avito\Generated\Schema\Job\FacilityType::class, 'food_production_shop_type' => \and_y87\php_client_avito\Generated\Schema\Job\FoodProductionShopType::class, 'grade' => \and_y87\php_client_avito\Generated\Schema\Job\Grade::class, 'medical_book' => \and_y87\php_client_avito\Generated\Schema\Job\MedicalBookVacancy::class, 'medical_specialization' => \and_y87\php_client_avito\Generated\Schema\Job\MedicalSpecialization::class, 'medical_specialization_ids' => \and_y87\php_client_avito\Generated\Schema\Job\MedicalSpecializationIds::class, 'profession' => \and_y87\php_client_avito\Generated\Schema\Job\Profession::class, 'registration_method' => \and_y87\php_client_avito\Generated\Schema\Job\RegistrationMethod::class, 'retail_equipment_type' => \and_y87\php_client_avito\Generated\Schema\Job\RetailEquipmentType::class, 'retail_shop_type' => \and_y87\php_client_avito\Generated\Schema\Job\RetailShopType::class, 'salary_detail' => \and_y87\php_client_avito\Generated\Schema\Job\SalaryDetail::class, 'shifts' => \and_y87\php_client_avito\Generated\Schema\Job\Shifts::class, 'tools_availability' => \and_y87\php_client_avito\Generated\Schema\Job\ToolsAvailability::class, 'vehicle_type' => \and_y87\php_client_avito\Generated\Schema\Job\VehicleType::class, 'work_days_per_week' => \and_y87\php_client_avito\Generated\Schema\Job\WorkDaysPerWeek::class, 'work_hours_per_day' => \and_y87\php_client_avito\Generated\Schema\Job\WorkHoursPerDay::class, 'worker_class' => \and_y87\php_client_avito\Generated\Schema\Job\WorkerClass::class];
 
-    /** @var \php_client_avito\Generated\Schema\Job\AdministratorOrganizationType|null Schema field administrator_organization_type */
-    public ?\php_client_avito\Generated\Schema\Job\AdministratorOrganizationType $administrator_organization_type = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\AdministratorOrganizationType|null Schema field administrator_organization_type */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\AdministratorOrganizationType $administrator_organization_type = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\AgeCriteria|null Schema field age */
-    public ?\php_client_avito\Generated\Schema\Job\AgeCriteria $age = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\AgeCriteria|null Schema field age */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\AgeCriteria $age = null;
 
     /** @var array<int, string>|null Блок "в том числе для кандидатов" (массив строк)
 
@@ -37,8 +37,8 @@ class VacancyV2Create extends AbstractSchemaModel
  */
     public ?array $age_preferences = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\ApplyProcessing|null Schema field apply_processing */
-    public ?\php_client_avito\Generated\Schema\Job\ApplyProcessing $apply_processing = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\ApplyProcessing|null Schema field apply_processing */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\ApplyProcessing $apply_processing = null;
 
     /** @var string Вариант платного размещения
 
@@ -48,8 +48,8 @@ class VacancyV2Create extends AbstractSchemaModel
  */
     public string $billing_type;
 
-    /** @var \php_client_avito\Generated\Schema\Job\Bonuses|null Schema field bonuses */
-    public ?\php_client_avito\Generated\Schema\Job\Bonuses $bonuses = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\Bonuses|null Schema field bonuses */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\Bonuses $bonuses = null;
 
     /** @var int|null Идентификатор сферы деятельности
 <br>
@@ -58,17 +58,17 @@ class VacancyV2Create extends AbstractSchemaModel
  */
     public ?int $business_area = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\CitizenshipCriteria|null Schema field citizenship */
-    public ?\php_client_avito\Generated\Schema\Job\CitizenshipCriteria $citizenship = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\CitizenshipCriteria|null Schema field citizenship */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\CitizenshipCriteria $citizenship = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\ConstructionWorkType|null Schema field construction_work_type */
-    public ?\php_client_avito\Generated\Schema\Job\ConstructionWorkType $construction_work_type = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\ConstructionWorkType|null Schema field construction_work_type */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\ConstructionWorkType $construction_work_type = null;
 
     /** @var array<string, mixed>|null Контактная информация */
     public ?array $contacts = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\Cuisine|null Schema field cuisine */
-    public ?\php_client_avito\Generated\Schema\Job\Cuisine $cuisine = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\Cuisine|null Schema field cuisine */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\Cuisine $cuisine = null;
 
     /** @var array<int, string>|null Способ доставки */
     public ?array $delivery_method = null;
@@ -84,14 +84,14 @@ class VacancyV2Create extends AbstractSchemaModel
     /** @var string|null Стаж вождения */
     public ?string $driving_experience = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\DrivingLicenseCategory|null Schema field driving_license_category */
-    public ?\php_client_avito\Generated\Schema\Job\DrivingLicenseCategory $driving_license_category = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\DrivingLicenseCategory|null Schema field driving_license_category */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\DrivingLicenseCategory $driving_license_category = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\EateryType|null Schema field eatery_type */
-    public ?\php_client_avito\Generated\Schema\Job\EateryType $eatery_type = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\EateryType|null Schema field eatery_type */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\EateryType $eatery_type = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\VacancyEducationLevel|null Schema field education_level */
-    public ?\php_client_avito\Generated\Schema\Job\VacancyEducationLevel $education_level = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\VacancyEducationLevel|null Schema field education_level */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\VacancyEducationLevel $education_level = null;
 
     /** @var string|null Занятость <br>
 Возможные значения:
@@ -109,14 +109,14 @@ class VacancyV2Create extends AbstractSchemaModel
     /** @var string|null Опыт работы */
     public ?string $experience = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\FacilityType|null Schema field facility_type */
-    public ?\php_client_avito\Generated\Schema\Job\FacilityType $facility_type = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\FacilityType|null Schema field facility_type */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\FacilityType $facility_type = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\FoodProductionShopType|null Schema field food_production_shop_type */
-    public ?\php_client_avito\Generated\Schema\Job\FoodProductionShopType $food_production_shop_type = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\FoodProductionShopType|null Schema field food_production_shop_type */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\FoodProductionShopType $food_production_shop_type = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\Grade|null Schema field grade */
-    public ?\php_client_avito\Generated\Schema\Job\Grade $grade = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\Grade|null Schema field grade */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\Grade $grade = null;
 
     /** @var array<string, mixed>|null employee_id - Идентификатор сотрудника на Авито. Если этот параметр указан, то с баланса сотрудника в Avito Pro будет списано размещение.
 Использовать параметр можно только с billing_type равным package.
@@ -136,14 +136,14 @@ class VacancyV2Create extends AbstractSchemaModel
     /** @var array<string, mixed>|null Геолокация вакансии (как минимум одно из значений) */
     public ?array $location = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\MedicalBookVacancy|null Schema field medical_book */
-    public ?\php_client_avito\Generated\Schema\Job\MedicalBookVacancy $medical_book = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\MedicalBookVacancy|null Schema field medical_book */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\MedicalBookVacancy $medical_book = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\MedicalSpecialization|null Schema field medical_specialization */
-    public ?\php_client_avito\Generated\Schema\Job\MedicalSpecialization $medical_specialization = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\MedicalSpecialization|null Schema field medical_specialization */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\MedicalSpecialization $medical_specialization = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\MedicalSpecializationIds|null Schema field medical_specialization_ids */
-    public ?\php_client_avito\Generated\Schema\Job\MedicalSpecializationIds $medical_specialization_ids = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\MedicalSpecializationIds|null Schema field medical_specialization_ids */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\MedicalSpecializationIds $medical_specialization_ids = null;
 
     /** @var string|null Частота выплат <br>
 Возможные значения:
@@ -159,8 +159,8 @@ deprecated значение hourlyPay будет заменено на dailyPay
  */
     public ?string $payout_frequency = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\Profession|null Schema field profession */
-    public ?\php_client_avito\Generated\Schema\Job\Profession $profession = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\Profession|null Schema field profession */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\Profession $profession = null;
 
     /** @var array<int, string>|null Блок участие вакансии в программах (массив строк)
 
@@ -172,20 +172,20 @@ deprecated значение hourlyPay будет заменено на dailyPay
  */
     public ?array $programs = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\RegistrationMethod|null Schema field registration_method */
-    public ?\php_client_avito\Generated\Schema\Job\RegistrationMethod $registration_method = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\RegistrationMethod|null Schema field registration_method */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\RegistrationMethod $registration_method = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\RetailEquipmentType|null Schema field retail_equipment_type */
-    public ?\php_client_avito\Generated\Schema\Job\RetailEquipmentType $retail_equipment_type = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\RetailEquipmentType|null Schema field retail_equipment_type */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\RetailEquipmentType $retail_equipment_type = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\RetailShopType|null Schema field retail_shop_type */
-    public ?\php_client_avito\Generated\Schema\Job\RetailShopType $retail_shop_type = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\RetailShopType|null Schema field retail_shop_type */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\RetailShopType $retail_shop_type = null;
 
     /** @var array<string, mixed>|null Блок с вилкой зарплаты */
     public ?array $salary = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\SalaryDetail|null Schema field salary_detail */
-    public ?\php_client_avito\Generated\Schema\Job\SalaryDetail $salary_detail = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\SalaryDetail|null Schema field salary_detail */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\SalaryDetail $salary_detail = null;
 
     /** @var string|null Режим работы <br>
 Возможные значения:
@@ -200,23 +200,23 @@ deprecated значения fiveDay, sixDay, partTime, fullDay и remote буд�
  */
     public ?string $schedule = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\Shifts|null Schema field shifts */
-    public ?\php_client_avito\Generated\Schema\Job\Shifts $shifts = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\Shifts|null Schema field shifts */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\Shifts $shifts = null;
 
     /** @var string|null Название вакансии (строка длиной от 1 до 50 символов) */
     public ?string $title = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\ToolsAvailability|null Schema field tools_availability */
-    public ?\php_client_avito\Generated\Schema\Job\ToolsAvailability $tools_availability = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\ToolsAvailability|null Schema field tools_availability */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\ToolsAvailability $tools_availability = null;
 
     /** @var string|null Внутренний идентификатор вакансии или номер заявки на подбор, максимум 150 символов */
     public ?string $vacancy_code = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\VehicleType|null Schema field vehicle_type */
-    public ?\php_client_avito\Generated\Schema\Job\VehicleType $vehicle_type = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\VehicleType|null Schema field vehicle_type */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\VehicleType $vehicle_type = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\WorkDaysPerWeek|null Schema field work_days_per_week */
-    public ?\php_client_avito\Generated\Schema\Job\WorkDaysPerWeek $work_days_per_week = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\WorkDaysPerWeek|null Schema field work_days_per_week */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\WorkDaysPerWeek $work_days_per_week = null;
 
     /** @var array<int, string>|null Блок "Формат работы" (массив строк)
 
@@ -227,9 +227,9 @@ deprecated значения fiveDay, sixDay, partTime, fullDay и remote буд�
  */
     public ?array $work_format = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\WorkHoursPerDay|null Schema field work_hours_per_day */
-    public ?\php_client_avito\Generated\Schema\Job\WorkHoursPerDay $work_hours_per_day = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\WorkHoursPerDay|null Schema field work_hours_per_day */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\WorkHoursPerDay $work_hours_per_day = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\WorkerClass|null Schema field worker_class */
-    public ?\php_client_avito\Generated\Schema\Job\WorkerClass $worker_class = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\WorkerClass|null Schema field worker_class */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\WorkerClass $worker_class = null;
 }

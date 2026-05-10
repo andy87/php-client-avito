@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autoload\Report;
+namespace and_y87\php_client_avito\Generated\Prompt\Autoload\Report;
 
-use php_client_avito\Generated\Prompt\GetReportByIdV3Prompt as BaseGetReportByIdV3Prompt;
+use and_y87\php_client_avito\Generated\Prompt\GetReportByIdV3Prompt as BaseGetReportByIdV3Prompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoload/v3/reports/{report_id}.

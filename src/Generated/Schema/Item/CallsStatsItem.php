@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Item;
+namespace and_y87\php_client_avito\Generated\Schema\Item;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito item/CallsStatsItem.
@@ -17,9 +17,9 @@ class CallsStatsItem extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['days' => [\php_client_avito\Generated\Schema\Item\CallsStatsDay::class]];
+    protected const CASTS = ['days' => [\and_y87\php_client_avito\Generated\Schema\Item\CallsStatsDay::class]];
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Item\CallsStatsDay>|null Массив статистики звонков объявления в разрезе дней */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Item\CallsStatsDay>|null Массив статистики звонков объявления в разрезе дней */
     public ?array $days = null;
 
     /** @var int Идентификатор сотрудника в сервисе иерархии аккаунтов (0 означает, что звонок не аттрибуцирован до сотрудника) */

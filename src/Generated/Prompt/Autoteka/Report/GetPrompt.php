@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autoteka\Report;
+namespace and_y87\php_client_avito\Generated\Prompt\Autoteka\Report;
 
-use php_client_avito\Generated\Prompt\GetReportPrompt as BaseGetReportPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetReportPrompt as BaseGetReportPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoteka/v1/reports/{report_id}.

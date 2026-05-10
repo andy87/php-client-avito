@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autostrategy\Autostrategy;
+namespace and_y87\php_client_avito\Generated\Prompt\Autostrategy\Autostrategy;
 
-use php_client_avito\Generated\Prompt\StopAutostrategyCampaignPrompt as BaseStopAutostrategyCampaignPrompt;
+use and_y87\php_client_avito\Generated\Prompt\StopAutostrategyCampaignPrompt as BaseStopAutostrategyCampaignPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autostrategy/v1/campaign/stop.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/CancelSandboxParcelReply.
@@ -17,11 +17,11 @@ class CancelSandboxParcelReply extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['data'];
 
-    protected const CASTS = ['error' => \php_client_avito\Generated\Schema\DeliverySandbox\CancelSandboxParcelError::class];
+    protected const CASTS = ['error' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CancelSandboxParcelError::class];
 
     /** @var array<string, mixed>|null Schema field data */
     public ?array $data = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CancelSandboxParcelError|null Schema field error */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CancelSandboxParcelError $error = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CancelSandboxParcelError|null Schema field error */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CancelSandboxParcelError $error = null;
 }

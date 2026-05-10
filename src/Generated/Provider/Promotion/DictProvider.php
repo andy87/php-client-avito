@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Promotion;
+namespace and_y87\php_client_avito\Generated\Provider\Promotion;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetDictOfServicesV1Prompt;
-use php_client_avito\Generated\Response\Promotion\Dict\GetOfServicesV1Response;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetDictOfServicesV1Prompt;
+use and_y87\php_client_avito\Generated\Response\Promotion\Dict\GetOfServicesV1Response;
 
 /**
  * Группа методов "dict" раздела Avito API "Продвижение".

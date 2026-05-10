@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autoteka\Access;
+namespace and_y87\php_client_avito\Generated\Prompt\Autoteka\Access;
 
-use php_client_avito\Generated\Prompt\GetAccessTokenPrompt2 as BaseGetAccessTokenPrompt2;
+use and_y87\php_client_avito\Generated\Prompt\GetAccessTokenPrompt2 as BaseGetAccessTokenPrompt2;
 
 /**
  * Класс данных запроса Avito API [POST] /token.

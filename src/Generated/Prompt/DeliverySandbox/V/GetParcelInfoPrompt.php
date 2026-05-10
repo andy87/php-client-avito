@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\DeliverySandbox\V;
+namespace and_y87\php_client_avito\Generated\Prompt\DeliverySandbox\V;
 
-use php_client_avito\Generated\Prompt\V1getParcelInfoPrompt as BaseV1getParcelInfoPrompt;
+use and_y87\php_client_avito\Generated\Prompt\V1getParcelInfoPrompt as BaseV1getParcelInfoPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /delivery-sandbox/v1/getParcelInfo.

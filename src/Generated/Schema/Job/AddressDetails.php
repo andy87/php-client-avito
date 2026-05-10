@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Job;
+namespace and_y87\php_client_avito\Generated\Schema\Job;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito job/AddressDetails.
@@ -17,13 +17,13 @@ class AddressDetails extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['address', 'district', 'location', 'metro'];
 
-    protected const CASTS = ['coordinates' => \php_client_avito\Generated\Schema\Job\Coordinates::class];
+    protected const CASTS = ['coordinates' => \and_y87\php_client_avito\Generated\Schema\Job\Coordinates::class];
 
     /** @var string|null Полный адрес */
     public ?string $address = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\Coordinates|null Schema field coordinates */
-    public ?\php_client_avito\Generated\Schema\Job\Coordinates $coordinates = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\Coordinates|null Schema field coordinates */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\Coordinates $coordinates = null;
 
     /** @var string|null Название района */
     public ?string $district = null;

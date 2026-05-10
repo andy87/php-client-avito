@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt;
+namespace and_y87\php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class V1changeParcelPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['application' => \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelRequestApplication::class, 'options' => \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelRequestOptions::class];
+    protected const CASTS = ['application' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelRequestApplication::class, 'options' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelRequestOptions::class];
 
     protected const PATH_FIELDS = [];
 
@@ -41,11 +41,11 @@ class V1changeParcelPrompt extends AbstractPrompt
 
     protected const BODY_ROOT_FIELD = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelRequestApplication|null Body field application */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelRequestApplication $application = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelRequestApplication|null Body field application */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelRequestApplication $application = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelRequestOptions|null Body field options */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelRequestOptions $options = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelRequestOptions|null Body field options */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\ChangeParcelRequestOptions $options = null;
 
     /** @var string Body field parcelID */
     public string $parcelID;

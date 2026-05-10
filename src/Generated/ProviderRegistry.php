@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated;
+namespace and_y87\php_client_avito\Generated;
 
 /**
  * Хранит карту лениво доступных provider-разделов Avito API.

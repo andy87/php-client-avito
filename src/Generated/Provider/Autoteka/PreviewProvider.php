@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Autoteka;
+namespace and_y87\php_client_avito\Generated\Provider\Autoteka;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetPreviewPrompt;
-use php_client_avito\Generated\Prompt\PostPreviewByExternalItemPrompt;
-use php_client_avito\Generated\Prompt\PostPreviewByItemIdPrompt;
-use php_client_avito\Generated\Prompt\PostPreviewByRegNumberPrompt;
-use php_client_avito\Generated\Prompt\PostPreviewByVinPrompt;
-use php_client_avito\Generated\Response\Autoteka\Preview\GetResponse;
-use php_client_avito\Generated\Response\Autoteka\Preview\PostByExternalItemResponse;
-use php_client_avito\Generated\Response\Autoteka\Preview\PostByItemIdResponse;
-use php_client_avito\Generated\Response\Autoteka\Preview\PostByRegNumberResponse;
-use php_client_avito\Generated\Response\Autoteka\Preview\PostByVinResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetPreviewPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostPreviewByExternalItemPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostPreviewByItemIdPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostPreviewByRegNumberPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostPreviewByVinPrompt;
+use and_y87\php_client_avito\Generated\Response\Autoteka\Preview\GetResponse;
+use and_y87\php_client_avito\Generated\Response\Autoteka\Preview\PostByExternalItemResponse;
+use and_y87\php_client_avito\Generated\Response\Autoteka\Preview\PostByItemIdResponse;
+use and_y87\php_client_avito\Generated\Response\Autoteka\Preview\PostByRegNumberResponse;
+use and_y87\php_client_avito\Generated\Response\Autoteka\Preview\PostByVinResponse;
 
 /**
  * Группа методов "preview" раздела Avito API "Автотека".

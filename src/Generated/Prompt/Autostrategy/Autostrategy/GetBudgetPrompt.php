@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autostrategy\Autostrategy;
+namespace and_y87\php_client_avito\Generated\Prompt\Autostrategy\Autostrategy;
 
-use php_client_avito\Generated\Prompt\GetAutostrategyBudgetPrompt as BaseGetAutostrategyBudgetPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetAutostrategyBudgetPrompt as BaseGetAutostrategyBudgetPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /autostrategy/v1/budget.

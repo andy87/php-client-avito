@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Job\Resume;
+namespace and_y87\php_client_avito\Generated\Response\Job\Resume;
 
-use php_client_avito\Generated\Response\ResumeGetItemResponse as BaseResumeGetItemResponse;
+use and_y87\php_client_avito\Generated\Response\ResumeGetItemResponse as BaseResumeGetItemResponse;
 
 /**
  * Ответ Avito API [GET] /job/v2/resumes/{resume_id}.
  *
  * @documentation https://developers.avito.ru/api-catalog/job/documentation#operation/resumeGetItem
  *
- * @property \php_client_avito\Generated\Schema\Job\AddressDetails|null $address_details Response field address_details
+ * @property \and_y87\php_client_avito\Generated\Schema\Job\AddressDetails|null $address_details Response field address_details
  * @property string|null $description Описание резюме
  * @property int|null $id Идентификатор резюме
  * @property bool|null $is_active Активность резюме
  * @property bool|null $is_purchased Контакты резюме куплены
  * @property array<string, mixed>|null $params Блок с параметрами резюме. Все поля опциональны и выводятся при наличии
- * @property array<int, \php_client_avito\Generated\Schema\Job\Photo>|null $photos Присутствует в ответе только если в запросе есть флаг photos=true
+ * @property array<int, \and_y87\php_client_avito\Generated\Schema\Job\Photo>|null $photos Присутствует в ответе только если в запросе есть флаг photos=true
  * @property int|null $salary Зарплата. Поле может отсутствовать в ответе (выводится при наличии зарплаты)
  * @property string|null $start_time Дата публикации резюме
  * @property string|null $title Наименование резюме

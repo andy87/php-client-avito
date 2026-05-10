@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\DeliverySandbox\Sorting;
+namespace and_y87\php_client_avito\Generated\Prompt\DeliverySandbox\Sorting;
 
-use php_client_avito\Generated\Prompt\GetSortingCenterPrompt as BaseGetSortingCenterPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetSortingCenterPrompt as BaseGetSortingCenterPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /delivery-sandbox/sorting-center.

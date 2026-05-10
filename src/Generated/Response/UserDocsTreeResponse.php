@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,10 +19,10 @@ class UserDocsTreeResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['categories' => [\php_client_avito\Generated\Schema\Autoload\APICategoryNode::class]];
+    protected const CASTS = ['categories' => [\and_y87\php_client_avito\Generated\Schema\Autoload\APICategoryNode::class]];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Autoload\APICategoryTreeOut::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Autoload\APICategoryTreeOut::class;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\APICategoryNode> Response field categories */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoload\APICategoryNode> Response field categories */
     public array $categories;
 }

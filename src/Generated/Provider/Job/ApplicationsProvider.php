@@ -2,27 +2,27 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Job;
+namespace and_y87\php_client_avito\Generated\Provider\Job;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\ApplicationsApplyActionsPrompt;
-use php_client_avito\Generated\Prompt\ApplicationsGetByIdsPrompt;
-use php_client_avito\Generated\Prompt\ApplicationsGetIdsPrompt;
-use php_client_avito\Generated\Prompt\ApplicationsGetStatesPrompt;
-use php_client_avito\Generated\Prompt\ApplicationsSetIsViewedPrompt;
-use php_client_avito\Generated\Prompt\ApplicationsWebhookDeletePrompt;
-use php_client_avito\Generated\Prompt\ApplicationsWebhookGetPrompt;
-use php_client_avito\Generated\Prompt\ApplicationsWebhookPutPrompt;
-use php_client_avito\Generated\Prompt\ApplicationsWebhooksGetPrompt;
-use php_client_avito\Generated\Response\Job\Applications\ApplyActionsResponse;
-use php_client_avito\Generated\Response\Job\Applications\GetByIdsResponse;
-use php_client_avito\Generated\Response\Job\Applications\GetIdsResponse;
-use php_client_avito\Generated\Response\Job\Applications\GetStatesResponse;
-use php_client_avito\Generated\Response\Job\Applications\SetIsViewedResponse;
-use php_client_avito\Generated\Response\Job\Applications\WebhookDeleteResponse;
-use php_client_avito\Generated\Response\Job\Applications\WebhookGetResponse;
-use php_client_avito\Generated\Response\Job\Applications\WebhookPutResponse;
-use php_client_avito\Generated\Response\Job\Applications\WebhooksGetResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\ApplicationsApplyActionsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplicationsGetByIdsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplicationsGetIdsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplicationsGetStatesPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplicationsSetIsViewedPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplicationsWebhookDeletePrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplicationsWebhookGetPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplicationsWebhookPutPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplicationsWebhooksGetPrompt;
+use and_y87\php_client_avito\Generated\Response\Job\Applications\ApplyActionsResponse;
+use and_y87\php_client_avito\Generated\Response\Job\Applications\GetByIdsResponse;
+use and_y87\php_client_avito\Generated\Response\Job\Applications\GetIdsResponse;
+use and_y87\php_client_avito\Generated\Response\Job\Applications\GetStatesResponse;
+use and_y87\php_client_avito\Generated\Response\Job\Applications\SetIsViewedResponse;
+use and_y87\php_client_avito\Generated\Response\Job\Applications\WebhookDeleteResponse;
+use and_y87\php_client_avito\Generated\Response\Job\Applications\WebhookGetResponse;
+use and_y87\php_client_avito\Generated\Response\Job\Applications\WebhookPutResponse;
+use and_y87\php_client_avito\Generated\Response\Job\Applications\WebhooksGetResponse;
 
 /**
  * Группа методов "applications" раздела Avito API "Авито.Работа".

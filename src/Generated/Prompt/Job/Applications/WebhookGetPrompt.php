@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Job\Applications;
+namespace and_y87\php_client_avito\Generated\Prompt\Job\Applications;
 
-use php_client_avito\Generated\Prompt\ApplicationsWebhookGetPrompt as BaseApplicationsWebhookGetPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplicationsWebhookGetPrompt as BaseApplicationsWebhookGetPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /job/v1/applications/webhook.

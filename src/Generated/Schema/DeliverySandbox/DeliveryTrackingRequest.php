@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/DeliveryTrackingRequest.
@@ -17,7 +17,7 @@ class DeliveryTrackingRequest extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['date' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryEventDateTime::class, 'orderId' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString::class];
+    protected const CASTS = ['date' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryEventDateTime::class, 'orderId' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString::class];
 
     /** @var string Описание статусов см. [здесь](https://developers.avito.ru/api-catalog/delivery-sandbox/documentation#info/mehanika_raboty_trekinga). */
     public string $avitoEventType;
@@ -28,8 +28,8 @@ class DeliveryTrackingRequest extends AbstractSchemaModel
     /** @var string|null Комментарий к статусу. */
     public ?string $comment = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryEventDateTime Schema field date */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryEventDateTime $date;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryEventDateTime Schema field date */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryEventDateTime $date;
 
     /** @var string Локация в которой произошло событие (населённый пункт в именительном падеже). */
     public string $location;
@@ -39,8 +39,8 @@ class DeliveryTrackingRequest extends AbstractSchemaModel
  */
     public ?array $options = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString Schema field orderId */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString $orderId;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString Schema field orderId */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryOrderIdString $orderId;
 
     /** @var string Код события по версии службы доставки. */
     public string $providerEventCode;

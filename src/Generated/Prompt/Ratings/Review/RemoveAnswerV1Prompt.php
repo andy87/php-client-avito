@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Ratings\Review;
+namespace and_y87\php_client_avito\Generated\Prompt\Ratings\Review;
 
-use php_client_avito\Generated\Prompt\RemoveReviewAnswerV1Prompt as BaseRemoveReviewAnswerV1Prompt;
+use and_y87\php_client_avito\Generated\Prompt\RemoveReviewAnswerV1Prompt as BaseRemoveReviewAnswerV1Prompt;
 
 /**
  * Класс данных запроса Avito API [DELETE] /ratings/v1/answers/{answer_id}.

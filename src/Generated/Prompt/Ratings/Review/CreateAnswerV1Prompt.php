@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Ratings\Review;
+namespace and_y87\php_client_avito\Generated\Prompt\Ratings\Review;
 
-use php_client_avito\Generated\Prompt\CreateReviewAnswerV1Prompt as BaseCreateReviewAnswerV1Prompt;
+use and_y87\php_client_avito\Generated\Prompt\CreateReviewAnswerV1Prompt as BaseCreateReviewAnswerV1Prompt;
 
 /**
  * Класс данных запроса Avito API [POST] /ratings/v1/answers.

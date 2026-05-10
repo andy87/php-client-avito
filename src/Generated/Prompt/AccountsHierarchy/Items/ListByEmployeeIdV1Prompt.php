@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\AccountsHierarchy\Items;
+namespace and_y87\php_client_avito\Generated\Prompt\AccountsHierarchy\Items;
 
-use php_client_avito\Generated\Prompt\ListItemsByEmployeeIdV1Prompt as BaseListItemsByEmployeeIdV1Prompt;
+use and_y87\php_client_avito\Generated\Prompt\ListItemsByEmployeeIdV1Prompt as BaseListItemsByEmployeeIdV1Prompt;
 
 /**
  * Класс данных запроса Avito API [POST] /listItemsByEmployeeIdV1.

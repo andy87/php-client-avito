@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,19 +19,19 @@ class GetProfileV2Response extends AbstractResponse
 
     protected const NULLABLE_FIELDS = ['report_email'];
 
-    protected const CASTS = ['feeds_data' => \php_client_avito\Generated\Schema\Autoload\FeedsData::class, 'schedule' => \php_client_avito\Generated\Schema\Autoload\ExportSchedule::class];
+    protected const CASTS = ['feeds_data' => \and_y87\php_client_avito\Generated\Schema\Autoload\FeedsData::class, 'schedule' => \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule::class];
 
     protected const MODEL = null;
 
     /** @var bool Статус автозагрузки (вкл/выкл) */
     public bool $autoload_enabled;
 
-    /** @var \php_client_avito\Generated\Schema\Autoload\FeedsData Response field feeds_data */
-    public \php_client_avito\Generated\Schema\Autoload\FeedsData $feeds_data;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoload\FeedsData Response field feeds_data */
+    public \and_y87\php_client_avito\Generated\Schema\Autoload\FeedsData $feeds_data;
 
     /** @var string|null Почта, на которую будут приходить отчеты о выгрузках */
     public ?string $report_email;
 
-    /** @var \php_client_avito\Generated\Schema\Autoload\ExportSchedule Response field schedule */
-    public \php_client_avito\Generated\Schema\Autoload\ExportSchedule $schedule;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule Response field schedule */
+    public \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule $schedule;
 }

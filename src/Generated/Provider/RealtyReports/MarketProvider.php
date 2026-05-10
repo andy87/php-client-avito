@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\RealtyReports;
+namespace and_y87\php_client_avito\Generated\Provider\RealtyReports;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\MarketPriceCorrespondenceV1Prompt;
-use php_client_avito\Generated\Response\RealtyReports\Market\PriceCorrespondenceV1Response;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\MarketPriceCorrespondenceV1Prompt;
+use and_y87\php_client_avito\Generated\Response\RealtyReports\Market\PriceCorrespondenceV1Response;
 
 /**
  * Группа методов "market" раздела Avito API "Аналитика по недвижимости".

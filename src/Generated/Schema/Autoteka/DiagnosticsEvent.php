@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Autoteka;
+namespace and_y87\php_client_avito\Generated\Schema\Autoteka;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/DiagnosticsEvent.
@@ -17,7 +17,7 @@ class DiagnosticsEvent extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['damages' => [\php_client_avito\Generated\Schema\Autoteka\DiagnosticsEventDamage::class], 'photos' => [\php_client_avito\Generated\Schema\Autoteka\DiagnosticsEventPhoto::class]];
+    protected const CASTS = ['damages' => [\and_y87\php_client_avito\Generated\Schema\Autoteka\DiagnosticsEventDamage::class], 'photos' => [\and_y87\php_client_avito\Generated\Schema\Autoteka\DiagnosticsEventPhoto::class]];
 
     /** @var string Город проведения ДО */
     public string $city;
@@ -28,7 +28,7 @@ class DiagnosticsEvent extends AbstractSchemaModel
     /** @var int Дата проведения ДО UnixTime */
     public int $createdAt;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\DiagnosticsEventDamage> Массив событий с найденными на ДО повреждениями а/м */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoteka\DiagnosticsEventDamage> Массив событий с найденными на ДО повреждениями а/м */
     public array $damages;
 
     /** @var string Название компании проводившей ДО */
@@ -37,7 +37,7 @@ class DiagnosticsEvent extends AbstractSchemaModel
     /** @var int Пробег на момент ДО */
     public int $mileage;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\DiagnosticsEventPhoto> Массив фотографий с ДО */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoteka\DiagnosticsEventPhoto> Массив фотографий с ДО */
     public array $photos;
 
     /** @var string Область проведения ДО */

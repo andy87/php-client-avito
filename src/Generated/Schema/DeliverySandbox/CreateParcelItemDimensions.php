@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/CreateParcelItemDimensions.
@@ -17,10 +17,10 @@ class CreateParcelItemDimensions extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['accuracy' => \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPropertyAccuracy::class];
+    protected const CASTS = ['accuracy' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPropertyAccuracy::class];
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPropertyAccuracy Schema field accuracy */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPropertyAccuracy $accuracy;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPropertyAccuracy Schema field accuracy */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CreateParcelPropertyAccuracy $accuracy;
 
     /** @var array<int, int> Габариты в сантиметрах.
 

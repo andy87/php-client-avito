@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Autoload;
+namespace and_y87\php_client_avito\Generated\Schema\Autoload;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoload/UpsertProfileIn.
@@ -17,7 +17,7 @@ class UpsertProfileIn extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['agreement'];
 
-    protected const CASTS = ['schedule' => \php_client_avito\Generated\Schema\Autoload\ExportSchedule::class];
+    protected const CASTS = ['schedule' => \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule::class];
 
     /** @var bool|null Согласие с [правилами](https://support.avito.ru/articles/203867776) использования Авито Автозагрузки.
 
@@ -31,8 +31,8 @@ class UpsertProfileIn extends AbstractSchemaModel
     /** @var string Почта, на которую будут приходить отчеты о выгрузках */
     public string $report_email;
 
-    /** @var \php_client_avito\Generated\Schema\Autoload\ExportSchedule Schema field schedule */
-    public \php_client_avito\Generated\Schema\Autoload\ExportSchedule $schedule;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule Schema field schedule */
+    public \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule $schedule;
 
     /** @var string URL-адрес фида, для которого настроены регулярные выгрузки. Должен начинаться с http или https. */
     public string $upload_url;

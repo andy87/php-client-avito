@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\OrderManagement\General;
+namespace and_y87\php_client_avito\Generated\Response\OrderManagement\General;
 
-use php_client_avito\Generated\Response\MarkingsResponse as BaseMarkingsResponse;
+use and_y87\php_client_avito\Generated\Response\MarkingsResponse as BaseMarkingsResponse;
 
 /**
  * Ответ Avito API [POST] /order-management/1/markings.

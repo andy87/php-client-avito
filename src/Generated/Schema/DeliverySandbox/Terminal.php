@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/Terminal.
@@ -17,16 +17,16 @@ class Terminal extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['address' => \php_client_avito\Generated\Schema\DeliverySandbox\Address::class, 'directionTag' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag::class, 'phones' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryPhones::class, 'restriction' => \php_client_avito\Generated\Schema\DeliverySandbox\Restriction::class, 'schedule' => \php_client_avito\Generated\Schema\DeliverySandbox\Schedule::class];
+    protected const CASTS = ['address' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\Address::class, 'directionTag' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag::class, 'phones' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryPhones::class, 'restriction' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\Restriction::class, 'schedule' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\Schedule::class];
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\Address Schema field address */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\Address $address;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\Address Schema field address */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\Address $address;
 
     /** @var string Уникальный идентификатор ПВЗ на стороне службы доставки (не допускается использование символа двоеточия «:» в идентификаторе) */
     public string $deliveryProviderId;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag Schema field directionTag */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag $directionTag;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag Schema field directionTag */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag $directionTag;
 
     /** @var string|null Отображаемое пользователям кастомное наименование пункта самовывоза. Требуется, чтобы отличать разные точки по бренду и виду.
 <br />
@@ -52,8 +52,8 @@ class Terminal extends AbstractSchemaModel
  */
     public ?array $options = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryPhones Schema field phones */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryPhones $phones;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryPhones Schema field phones */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryPhones $phones;
 
     /** @var array<int, string> Список ссылок на фотографии.
 <br />
@@ -61,11 +61,11 @@ class Terminal extends AbstractSchemaModel
  */
     public array $photos;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\Restriction Schema field restriction */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\Restriction $restriction;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\Restriction Schema field restriction */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\Restriction $restriction;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\Schedule Schema field schedule */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\Schedule $schedule;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\Schedule Schema field schedule */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\Schedule $schedule;
 
     /** @var array<int, string> Доступные в ПВЗ услуги. Забор (intake), выдача (delivery).
 Отображение пункта выдачи на карте отправителя/получателя посылки зависит от наличия соответствующей услуги у пункта выдачи.

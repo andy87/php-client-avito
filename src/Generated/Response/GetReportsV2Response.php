@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,13 +19,13 @@ class GetReportsV2Response extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['meta' => \php_client_avito\Generated\Schema\Autoload\MetaReportsAutoloadV2::class, 'reports' => \php_client_avito\Generated\Schema\Autoload\ReportShortAutoloadV2::class];
+    protected const CASTS = ['meta' => \and_y87\php_client_avito\Generated\Schema\Autoload\MetaReportsAutoloadV2::class, 'reports' => \and_y87\php_client_avito\Generated\Schema\Autoload\ReportShortAutoloadV2::class];
 
     protected const MODEL = null;
 
-    /** @var \php_client_avito\Generated\Schema\Autoload\MetaReportsAutoloadV2|null Response field meta */
-    public ?\php_client_avito\Generated\Schema\Autoload\MetaReportsAutoloadV2 $meta = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoload\MetaReportsAutoloadV2|null Response field meta */
+    public ?\and_y87\php_client_avito\Generated\Schema\Autoload\MetaReportsAutoloadV2 $meta = null;
 
-    /** @var \php_client_avito\Generated\Schema\Autoload\ReportShortAutoloadV2|null Response field reports */
-    public ?\php_client_avito\Generated\Schema\Autoload\ReportShortAutoloadV2 $reports = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoload\ReportShortAutoloadV2|null Response field reports */
+    public ?\and_y87\php_client_avito\Generated\Schema\Autoload\ReportShortAutoloadV2 $reports = null;
 }

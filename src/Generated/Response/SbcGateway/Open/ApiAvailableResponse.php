@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\SbcGateway\Open;
+namespace and_y87\php_client_avito\Generated\Response\SbcGateway\Open;
 
-use php_client_avito\Generated\Response\OpenApiAvailableResponse as BaseOpenApiAvailableResponse;
+use and_y87\php_client_avito\Generated\Response\OpenApiAvailableResponse as BaseOpenApiAvailableResponse;
 
 /**
  * Ответ Avito API [POST] /special-offers/v1/available.

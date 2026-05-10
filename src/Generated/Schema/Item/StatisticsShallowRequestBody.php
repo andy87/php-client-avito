@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Item;
+namespace and_y87\php_client_avito\Generated\Schema\Item;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito item/StatisticsShallowRequestBody.
@@ -17,20 +17,20 @@ class StatisticsShallowRequestBody extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['dateFrom' => \php_client_avito\Generated\Schema\Item\StatisticsDateFrom::class, 'dateTo' => \php_client_avito\Generated\Schema\Item\StatisticsDateTo::class, 'fields' => \php_client_avito\Generated\Schema\Item\StatisticsFields::class, 'itemIds' => \php_client_avito\Generated\Schema\Item\StatisticsItemIDs::class, 'periodGrouping' => \php_client_avito\Generated\Schema\Item\StatisticsPeriodGrouping::class];
+    protected const CASTS = ['dateFrom' => \and_y87\php_client_avito\Generated\Schema\Item\StatisticsDateFrom::class, 'dateTo' => \and_y87\php_client_avito\Generated\Schema\Item\StatisticsDateTo::class, 'fields' => \and_y87\php_client_avito\Generated\Schema\Item\StatisticsFields::class, 'itemIds' => \and_y87\php_client_avito\Generated\Schema\Item\StatisticsItemIDs::class, 'periodGrouping' => \and_y87\php_client_avito\Generated\Schema\Item\StatisticsPeriodGrouping::class];
 
-    /** @var \php_client_avito\Generated\Schema\Item\StatisticsDateFrom Schema field dateFrom */
-    public \php_client_avito\Generated\Schema\Item\StatisticsDateFrom $dateFrom;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\StatisticsDateFrom Schema field dateFrom */
+    public \and_y87\php_client_avito\Generated\Schema\Item\StatisticsDateFrom $dateFrom;
 
-    /** @var \php_client_avito\Generated\Schema\Item\StatisticsDateTo Schema field dateTo */
-    public \php_client_avito\Generated\Schema\Item\StatisticsDateTo $dateTo;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\StatisticsDateTo Schema field dateTo */
+    public \and_y87\php_client_avito\Generated\Schema\Item\StatisticsDateTo $dateTo;
 
-    /** @var \php_client_avito\Generated\Schema\Item\StatisticsFields|null Schema field fields */
-    public ?\php_client_avito\Generated\Schema\Item\StatisticsFields $fields = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\StatisticsFields|null Schema field fields */
+    public ?\and_y87\php_client_avito\Generated\Schema\Item\StatisticsFields $fields = null;
 
-    /** @var \php_client_avito\Generated\Schema\Item\StatisticsItemIDs Schema field itemIds */
-    public \php_client_avito\Generated\Schema\Item\StatisticsItemIDs $itemIds;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\StatisticsItemIDs Schema field itemIds */
+    public \and_y87\php_client_avito\Generated\Schema\Item\StatisticsItemIDs $itemIds;
 
-    /** @var \php_client_avito\Generated\Schema\Item\StatisticsPeriodGrouping|null Schema field periodGrouping */
-    public ?\php_client_avito\Generated\Schema\Item\StatisticsPeriodGrouping $periodGrouping = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\StatisticsPeriodGrouping|null Schema field periodGrouping */
+    public ?\and_y87\php_client_avito\Generated\Schema\Item\StatisticsPeriodGrouping $periodGrouping = null;
 }

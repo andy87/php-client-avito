@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Messenger;
+namespace and_y87\php_client_avito\Generated\Provider\Messenger;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\UploadImagesPrompt;
-use php_client_avito\Generated\Response\Messenger\Images\UploadResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\UploadImagesPrompt;
+use and_y87\php_client_avito\Generated\Response\Messenger\Images\UploadResponse;
 
 /**
  * Группа методов "images" раздела Avito API "Мессенджер".

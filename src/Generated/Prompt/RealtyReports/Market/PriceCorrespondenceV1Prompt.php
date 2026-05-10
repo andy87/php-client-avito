@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\RealtyReports\Market;
+namespace and_y87\php_client_avito\Generated\Prompt\RealtyReports\Market;
 
-use php_client_avito\Generated\Prompt\MarketPriceCorrespondenceV1Prompt as BaseMarketPriceCorrespondenceV1Prompt;
+use and_y87\php_client_avito\Generated\Prompt\MarketPriceCorrespondenceV1Prompt as BaseMarketPriceCorrespondenceV1Prompt;
 
 /**
  * Класс данных запроса Avito API [GET] /realty/v1/marketPriceCorrespondence/{itemId}/{price}.

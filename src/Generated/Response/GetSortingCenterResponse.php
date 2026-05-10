@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,11 +19,11 @@ class GetSortingCenterResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = ['data'];
 
-    protected const CASTS = ['data' => [\php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterGetData::class]];
+    protected const CASTS = ['data' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterGetData::class]];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterGet::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterGet::class;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterGetData>|null Response field data */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterGetData>|null Response field data */
     public ?array $data = null;
 
     /** @var array<string, mixed>|null Response field error */

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Cpa;
+namespace and_y87\php_client_avito\Generated\Provider\Cpa;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\BalanceInfoV2Prompt;
-use php_client_avito\Generated\Prompt\BalanceInfoV3Prompt;
-use php_client_avito\Generated\Response\Cpa\Balance\InfoV2Response;
-use php_client_avito\Generated\Response\Cpa\Balance\InfoV3Response;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\BalanceInfoV2Prompt;
+use and_y87\php_client_avito\Generated\Prompt\BalanceInfoV3Prompt;
+use and_y87\php_client_avito\Generated\Response\Cpa\Balance\InfoV2Response;
+use and_y87\php_client_avito\Generated\Response\Cpa\Balance\InfoV3Response;
 
 /**
  * Группа методов "balance" раздела Avito API "CPA Авито".

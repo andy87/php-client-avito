@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider;
+namespace and_y87\php_client_avito\Generated\Provider;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetUserBidsPrompt;
-use php_client_avito\Generated\Prompt\SaveItemBidsPrompt;
-use php_client_avito\Generated\Response\GetUserBidsResponse;
-use php_client_avito\Generated\Response\SaveItemBidsResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetUserBidsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\SaveItemBidsPrompt;
+use and_y87\php_client_avito\Generated\Response\GetUserBidsResponse;
+use and_y87\php_client_avito\Generated\Response\SaveItemBidsResponse;
 
 /**
  * Provider раздела Avito API "CPA-аукцион".

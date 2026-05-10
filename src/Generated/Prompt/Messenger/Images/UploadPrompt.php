@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Messenger\Images;
+namespace and_y87\php_client_avito\Generated\Prompt\Messenger\Images;
 
-use php_client_avito\Generated\Prompt\UploadImagesPrompt as BaseUploadImagesPrompt;
+use and_y87\php_client_avito\Generated\Prompt\UploadImagesPrompt as BaseUploadImagesPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /messenger/v1/accounts/{user_id}/uploadImages.

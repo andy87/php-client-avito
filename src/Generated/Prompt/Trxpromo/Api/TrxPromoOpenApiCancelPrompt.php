@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Trxpromo\Api;
+namespace and_y87\php_client_avito\Generated\Prompt\Trxpromo\Api;
 
-use php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiCancelPrompt as BaseApiTrxPromoOpenApiCancelPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiCancelPrompt as BaseApiTrxPromoOpenApiCancelPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /trx-promo/1/cancel.

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Messenger;
+namespace and_y87\php_client_avito\Generated\Provider\Messenger;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\PostSendImageMessagePrompt;
-use php_client_avito\Generated\Prompt\PostSendMessagePrompt;
-use php_client_avito\Generated\Response\Messenger\Post\SendImageMessageResponse;
-use php_client_avito\Generated\Response\Messenger\Post\SendMessageResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\PostSendImageMessagePrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostSendMessagePrompt;
+use and_y87\php_client_avito\Generated\Response\Messenger\Post\SendImageMessageResponse;
+use and_y87\php_client_avito\Generated\Response\Messenger\Post\SendMessageResponse;
 
 /**
  * Группа методов "post" раздела Avito API "Мессенджер".

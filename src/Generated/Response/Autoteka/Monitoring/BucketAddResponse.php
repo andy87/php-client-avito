@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Autoteka\Monitoring;
+namespace and_y87\php_client_avito\Generated\Response\Autoteka\Monitoring;
 
-use php_client_avito\Generated\Response\MonitoringBucketAddResponse as BaseMonitoringBucketAddResponse;
+use and_y87\php_client_avito\Generated\Response\MonitoringBucketAddResponse as BaseMonitoringBucketAddResponse;
 
 /**
  * Ответ Avito API [POST] /autoteka/v1/monitoring/bucket/add.

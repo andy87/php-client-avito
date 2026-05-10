@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/TaggedSortingCenter.
@@ -17,11 +17,11 @@ class TaggedSortingCenter extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['deliveryProviderId' => \php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterID::class, 'directionTag' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag::class];
+    protected const CASTS = ['deliveryProviderId' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterID::class, 'directionTag' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag::class];
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterID Schema field deliveryProviderId */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterID $deliveryProviderId;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterID Schema field deliveryProviderId */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SortingCenterID $deliveryProviderId;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag Schema field directionTag */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag $directionTag;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag Schema field directionTag */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag $directionTag;
 }

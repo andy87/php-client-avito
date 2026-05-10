@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,10 +19,10 @@ class ScoringGetByIdResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['result' => \php_client_avito\Generated\Schema\Autoteka\GetScoringResult::class];
+    protected const CASTS = ['result' => \and_y87\php_client_avito\Generated\Schema\Autoteka\GetScoringResult::class];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Autoteka\GetScoring::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Autoteka\GetScoring::class;
 
-    /** @var \php_client_avito\Generated\Schema\Autoteka\GetScoringResult|null Response field result */
-    public ?\php_client_avito\Generated\Schema\Autoteka\GetScoringResult $result = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoteka\GetScoringResult|null Response field result */
+    public ?\and_y87\php_client_avito\Generated\Schema\Autoteka\GetScoringResult $result = null;
 }

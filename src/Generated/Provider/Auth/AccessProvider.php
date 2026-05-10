@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Auth;
+namespace and_y87\php_client_avito\Generated\Provider\Auth;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetAccessTokenAuthorizationCodePrompt;
-use php_client_avito\Generated\Prompt\GetAccessTokenPrompt;
-use php_client_avito\Generated\Prompt\RefreshAccessTokenAuthorizationCodePrompt;
-use php_client_avito\Generated\Response\Auth\Access\GetTokenAuthorizationCodeResponse;
-use php_client_avito\Generated\Response\Auth\Access\GetTokenResponse;
-use php_client_avito\Generated\Response\Auth\Access\RefreshTokenAuthorizationCodeResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetAccessTokenAuthorizationCodePrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetAccessTokenPrompt;
+use and_y87\php_client_avito\Generated\Prompt\RefreshAccessTokenAuthorizationCodePrompt;
+use and_y87\php_client_avito\Generated\Response\Auth\Access\GetTokenAuthorizationCodeResponse;
+use and_y87\php_client_avito\Generated\Response\Auth\Access\GetTokenResponse;
+use and_y87\php_client_avito\Generated\Response\Auth\Access\RefreshTokenAuthorizationCodeResponse;
 
 /**
  * Группа методов "access" раздела Avito API "Авторизация".

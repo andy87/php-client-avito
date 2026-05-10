@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Messenger\Subscriptions;
+namespace and_y87\php_client_avito\Generated\Response\Messenger\Subscriptions;
 
-use php_client_avito\Generated\Response\GetSubscriptionsResponse as BaseGetSubscriptionsResponse;
+use and_y87\php_client_avito\Generated\Response\GetSubscriptionsResponse as BaseGetSubscriptionsResponse;
 
 /**
  * Ответ Avito API [POST] /messenger/v1/subscriptions.

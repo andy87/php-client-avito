@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\OrderManagement\Order;
+namespace and_y87\php_client_avito\Generated\Response\OrderManagement\Order;
 
-use php_client_avito\Generated\Response\SetOrderTrackingNumberResponse as BaseSetOrderTrackingNumberResponse;
+use and_y87\php_client_avito\Generated\Response\SetOrderTrackingNumberResponse as BaseSetOrderTrackingNumberResponse;
 
 /**
  * Ответ Avito API [POST] /order-management/1/order/setTrackingNumber.

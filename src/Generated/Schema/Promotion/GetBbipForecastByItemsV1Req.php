@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Promotion;
+namespace and_y87\php_client_avito\Generated\Schema\Promotion;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito promotion/GetBbipForecastByItemsV1Req.
@@ -17,8 +17,8 @@ class GetBbipForecastByItemsV1Req extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['items' => [\php_client_avito\Generated\Schema\Promotion\BbipForecastRequestByItemV1::class]];
+    protected const CASTS = ['items' => [\and_y87\php_client_avito\Generated\Schema\Promotion\BbipForecastRequestByItemV1::class]];
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Promotion\BbipForecastRequestByItemV1> Данные по объявлениям для запроса прогноза */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Promotion\BbipForecastRequestByItemV1> Данные по объявлениям для запроса прогноза */
     public array $items;
 }

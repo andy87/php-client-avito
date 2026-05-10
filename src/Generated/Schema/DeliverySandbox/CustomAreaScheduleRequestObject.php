@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/customAreaScheduleRequestObject.
@@ -17,14 +17,14 @@ class CustomAreaScheduleRequestObject extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['useAllAreas'];
 
-    protected const CASTS = ['customSchedule' => [\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryIntervalInDate::class], 'providerAreaNumber' => [\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryProviderAreaNumber::class]];
+    protected const CASTS = ['customSchedule' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryIntervalInDate::class], 'providerAreaNumber' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryProviderAreaNumber::class]];
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryIntervalInDate> Список доступных интервалов доставки/забора посылки в определенную дату
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryIntervalInDate> Список доступных интервалов доставки/забора посылки в определенную дату
 В случае если доступные интервалы доставки отсутствуют требуется передать пустой список
  */
     public array $customSchedule;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryProviderAreaNumber> Список областей, к которым применимо данное расписание. */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryProviderAreaNumber> Список областей, к которым применимо данное расписание. */
     public array $providerAreaNumber;
 
     /** @var array<int, string> Услуги расписание на которые требуется скорректировать. Забор (intake), доставка (delivery) */

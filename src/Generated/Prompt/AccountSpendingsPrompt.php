@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt;
+namespace and_y87\php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class AccountSpendingsPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = ['filter'];
 
-    protected const CASTS = ['grouping' => \php_client_avito\Generated\Schema\Item\SpendingsGroupings::class];
+    protected const CASTS = ['grouping' => \and_y87\php_client_avito\Generated\Schema\Item\SpendingsGroupings::class];
 
     protected const PATH_FIELDS = ['user_id'];
 
@@ -53,8 +53,8 @@ class AccountSpendingsPrompt extends AbstractPrompt
     /** @var array<string, mixed>|null Набор ограничений, по которым необходимо отфильтровать расходы */
     public ?array $filter = null;
 
-    /** @var \php_client_avito\Generated\Schema\Item\SpendingsGroupings Body field grouping */
-    public \php_client_avito\Generated\Schema\Item\SpendingsGroupings $grouping;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Item\SpendingsGroupings Body field grouping */
+    public \and_y87\php_client_avito\Generated\Schema\Item\SpendingsGroupings $grouping;
 
     /** @var array<int, string> Набор необходимых типов расходов */
     public array $spendingTypes;

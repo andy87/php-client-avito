@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\AccountsHierarchy\Ah;
+namespace and_y87\php_client_avito\Generated\Prompt\AccountsHierarchy\Ah;
 
-use php_client_avito\Generated\Prompt\CheckAhUserV1Prompt as BaseCheckAhUserV1Prompt;
+use and_y87\php_client_avito\Generated\Prompt\CheckAhUserV1Prompt as BaseCheckAhUserV1Prompt;
 
 /**
  * Класс данных запроса Avito API [GET] /checkAhUserV1.

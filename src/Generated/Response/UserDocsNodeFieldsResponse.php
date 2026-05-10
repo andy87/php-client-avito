@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,16 +19,16 @@ class UserDocsNodeFieldsResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['alert' => \php_client_avito\Generated\Schema\Autoload\APFieldsNodeAlert::class, 'fields' => [\php_client_avito\Generated\Schema\Autoload\APIField::class], 'node' => \php_client_avito\Generated\Schema\Autoload\APIFieldsNode::class];
+    protected const CASTS = ['alert' => \and_y87\php_client_avito\Generated\Schema\Autoload\APFieldsNodeAlert::class, 'fields' => [\and_y87\php_client_avito\Generated\Schema\Autoload\APIField::class], 'node' => \and_y87\php_client_avito\Generated\Schema\Autoload\APIFieldsNode::class];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Autoload\APIFieldsOut::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Autoload\APIFieldsOut::class;
 
-    /** @var \php_client_avito\Generated\Schema\Autoload\APFieldsNodeAlert|null Response field alert */
-    public ?\php_client_avito\Generated\Schema\Autoload\APFieldsNodeAlert $alert = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoload\APFieldsNodeAlert|null Response field alert */
+    public ?\and_y87\php_client_avito\Generated\Schema\Autoload\APFieldsNodeAlert $alert = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoload\APIField> Массив полей категории */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoload\APIField> Массив полей категории */
     public array $fields;
 
-    /** @var \php_client_avito\Generated\Schema\Autoload\APIFieldsNode Response field node */
-    public \php_client_avito\Generated\Schema\Autoload\APIFieldsNode $node;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoload\APIFieldsNode Response field node */
+    public \and_y87\php_client_avito\Generated\Schema\Autoload\APIFieldsNode $node;
 }

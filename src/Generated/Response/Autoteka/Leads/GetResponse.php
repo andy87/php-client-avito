@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Autoteka\Leads;
+namespace and_y87\php_client_avito\Generated\Response\Autoteka\Leads;
 
-use php_client_avito\Generated\Response\GetLeadsResponse as BaseGetLeadsResponse;
+use and_y87\php_client_avito\Generated\Response\GetLeadsResponse as BaseGetLeadsResponse;
 
 /**
  * Ответ Avito API [POST] /autoteka/v1/get-leads/.

@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider;
+namespace and_y87\php_client_avito\Generated\Provider;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\CreateAutostrategyCampaignPrompt;
-use php_client_avito\Generated\Prompt\EditAutostrategyCampaignPrompt;
-use php_client_avito\Generated\Prompt\GetAutostrategyBudgetPrompt;
-use php_client_avito\Generated\Prompt\GetAutostrategyCampaignInfoPrompt;
-use php_client_avito\Generated\Prompt\GetAutostrategyCampaignsPrompt;
-use php_client_avito\Generated\Prompt\GetAutostrategyStatPrompt;
-use php_client_avito\Generated\Prompt\StopAutostrategyCampaignPrompt;
-use php_client_avito\Generated\Response\CreateAutostrategyCampaignResponse;
-use php_client_avito\Generated\Response\EditAutostrategyCampaignResponse;
-use php_client_avito\Generated\Response\GetAutostrategyBudgetResponse;
-use php_client_avito\Generated\Response\GetAutostrategyCampaignInfoResponse;
-use php_client_avito\Generated\Response\GetAutostrategyCampaignsResponse;
-use php_client_avito\Generated\Response\GetAutostrategyStatResponse;
-use php_client_avito\Generated\Response\StopAutostrategyCampaignResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\CreateAutostrategyCampaignPrompt;
+use and_y87\php_client_avito\Generated\Prompt\EditAutostrategyCampaignPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetAutostrategyBudgetPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetAutostrategyCampaignInfoPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetAutostrategyCampaignsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetAutostrategyStatPrompt;
+use and_y87\php_client_avito\Generated\Prompt\StopAutostrategyCampaignPrompt;
+use and_y87\php_client_avito\Generated\Response\CreateAutostrategyCampaignResponse;
+use and_y87\php_client_avito\Generated\Response\EditAutostrategyCampaignResponse;
+use and_y87\php_client_avito\Generated\Response\GetAutostrategyBudgetResponse;
+use and_y87\php_client_avito\Generated\Response\GetAutostrategyCampaignInfoResponse;
+use and_y87\php_client_avito\Generated\Response\GetAutostrategyCampaignsResponse;
+use and_y87\php_client_avito\Generated\Response\GetAutostrategyStatResponse;
+use and_y87\php_client_avito\Generated\Response\StopAutostrategyCampaignResponse;
 
 /**
  * Provider раздела Avito API "Автостратегия".

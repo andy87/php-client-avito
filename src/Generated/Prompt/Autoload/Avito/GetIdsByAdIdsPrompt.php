@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autoload\Avito;
+namespace and_y87\php_client_avito\Generated\Prompt\Autoload\Avito;
 
-use php_client_avito\Generated\Prompt\GetAvitoIdsByAdIdsPrompt as BaseGetAvitoIdsByAdIdsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetAvitoIdsByAdIdsPrompt as BaseGetAvitoIdsByAdIdsPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoload/v2/items/avito_ids.

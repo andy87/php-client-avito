@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const out = join(root, 'src', 'Generated');
 const apiListUrl = 'https://developers.avito.ru/web/1/openapi/list';
-const namespace = 'php_client_avito\\Generated';
+const namespace = 'and_y87\\php_client_avito\\Generated';
 const httpMethods = new Set(['get', 'post', 'put', 'patch', 'delete', 'head', 'options']);
 
 const reserved = new Set([
@@ -938,7 +938,7 @@ function buildSchemaModel(spec, slug, schemaName, schema) {
 
     return classFile({
         namespace: `${namespace}\\Schema\\${schemaNamespacePart(slug)}`,
-        use: ['php_client_avito\\Schema\\AbstractSchemaModel'],
+        use: ['and_y87\\php_client_avito\\Schema\\AbstractSchemaModel'],
         className: schemaClassName(slug, schemaName),
         extendsClass: 'AbstractSchemaModel',
         description: `OpenAPI schema модель Avito ${slug}/${schemaName}.`,
@@ -1013,7 +1013,7 @@ ${consts}${props ? `\n\n${props}` : ''}
 
 function providerFile(operations, group) {
     const imports = new Set([
-        'php_client_avito\\BaseAvitoProvider',
+        'and_y87\\php_client_avito\\BaseAvitoProvider',
     ]);
 
     for (const op of operations) {
@@ -1076,7 +1076,7 @@ ${methods}
 
 function operationGroupProviderFile(operations, group, operationGroup) {
     const imports = new Set([
-        'php_client_avito\\BaseAvitoProvider',
+        'and_y87\\php_client_avito\\BaseAvitoProvider',
     ]);
 
     for (const op of operations) {

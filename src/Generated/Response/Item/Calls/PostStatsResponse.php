@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Item\Calls;
+namespace and_y87\php_client_avito\Generated\Response\Item\Calls;
 
-use php_client_avito\Generated\Response\PostCallsStatsResponse as BasePostCallsStatsResponse;
+use and_y87\php_client_avito\Generated\Response\PostCallsStatsResponse as BasePostCallsStatsResponse;
 
 /**
  * Ответ Avito API [POST] /core/v1/accounts/{user_id}/calls/stats/.

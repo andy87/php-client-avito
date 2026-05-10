@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Job\Applications;
+namespace and_y87\php_client_avito\Generated\Response\Job\Applications;
 
-use php_client_avito\Generated\Response\ApplicationsWebhookPutResponse as BaseApplicationsWebhookPutResponse;
+use and_y87\php_client_avito\Generated\Response\ApplicationsWebhookPutResponse as BaseApplicationsWebhookPutResponse;
 
 /**
  * Ответ Avito API [PUT] /job/v1/applications/webhook.

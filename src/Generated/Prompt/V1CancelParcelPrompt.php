@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt;
+namespace and_y87\php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class V1CancelParcelPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['options' => \php_client_avito\Generated\Schema\DeliverySandbox\CancelSandboxParcelOptions::class];
+    protected const CASTS = ['options' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CancelSandboxParcelOptions::class];
 
     protected const PATH_FIELDS = [];
 
@@ -41,8 +41,8 @@ class V1CancelParcelPrompt extends AbstractPrompt
 
     protected const BODY_ROOT_FIELD = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CancelSandboxParcelOptions|null Body field options */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CancelSandboxParcelOptions $options = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CancelSandboxParcelOptions|null Body field options */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CancelSandboxParcelOptions $options = null;
 
     /** @var string Body field parcelID */
     public string $parcelID;

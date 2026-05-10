@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\OrderManagement\Orders;
+namespace and_y87\php_client_avito\Generated\Response\OrderManagement\Orders;
 
-use php_client_avito\Generated\Response\GetOrdersResponse as BaseGetOrdersResponse;
+use and_y87\php_client_avito\Generated\Response\GetOrdersResponse as BaseGetOrdersResponse;
 
 /**
  * Ответ Avito API [GET] /order-management/1/orders.
@@ -12,7 +12,7 @@ use php_client_avito\Generated\Response\GetOrdersResponse as BaseGetOrdersRespon
  * @documentation https://developers.avito.ru/api-catalog/order-management/documentation#operation/getOrders
  *
  * @property bool $hasMore Есть ли еще заказы
- * @property array<int, \php_client_avito\Generated\Schema\OrderManagement\Order> $orders Массив заказов
+ * @property array<int, \and_y87\php_client_avito\Generated\Schema\OrderManagement\Order> $orders Массив заказов
  */
 class GetResponse extends BaseGetOrdersResponse
 {

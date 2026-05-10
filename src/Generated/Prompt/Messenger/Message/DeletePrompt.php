@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Messenger\Message;
+namespace and_y87\php_client_avito\Generated\Prompt\Messenger\Message;
 
-use php_client_avito\Generated\Prompt\DeleteMessagePrompt as BaseDeleteMessagePrompt;
+use and_y87\php_client_avito\Generated\Prompt\DeleteMessagePrompt as BaseDeleteMessagePrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /messenger/v1/accounts/{user_id}/chats/{chat_id}/messages/{message_id}.

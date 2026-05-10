@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Item\Price;
+namespace and_y87\php_client_avito\Generated\Prompt\Item\Price;
 
-use php_client_avito\Generated\Prompt\UpdatePricePrompt as BaseUpdatePricePrompt;
+use and_y87\php_client_avito\Generated\Prompt\UpdatePricePrompt as BaseUpdatePricePrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /core/v1/items/{item_id}/update_price.

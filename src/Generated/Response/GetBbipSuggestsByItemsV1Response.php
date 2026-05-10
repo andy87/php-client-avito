@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,13 +19,13 @@ class GetBbipSuggestsByItemsV1Response extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['errors' => [\php_client_avito\Generated\Schema\Promotion\ErrorByItemV1::class], 'items' => [\php_client_avito\Generated\Schema\Promotion\BbipSuggestByItemV1::class]];
+    protected const CASTS = ['errors' => [\and_y87\php_client_avito\Generated\Schema\Promotion\ErrorByItemV1::class], 'items' => [\and_y87\php_client_avito\Generated\Schema\Promotion\BbipSuggestByItemV1::class]];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Promotion\GetBbipSuggestsV1Resp::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Promotion\GetBbipSuggestsV1Resp::class;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Promotion\ErrorByItemV1> Информация об ошибках получения варианта бюджета */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Promotion\ErrorByItemV1> Информация об ошибках получения варианта бюджета */
     public array $errors;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Promotion\BbipSuggestByItemV1> Предлагаемые варианты бюджетов по каждому объявлению */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Promotion\BbipSuggestByItemV1> Предлагаемые варианты бюджетов по каждому объявлению */
     public array $items;
 }

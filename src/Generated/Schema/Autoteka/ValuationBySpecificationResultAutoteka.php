@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Autoteka;
+namespace and_y87\php_client_avito\Generated\Schema\Autoteka;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/ValuationBySpecificationResultAutoteka.
@@ -17,7 +17,7 @@ class ValuationBySpecificationResultAutoteka extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['mileage', 'newCarValuations', 'vehicleId'];
 
-    protected const CASTS = ['newCarValuations' => [\php_client_avito\Generated\Schema\Autoteka\NewCarValuation::class], 'valuation' => \php_client_avito\Generated\Schema\Autoteka\AvitoPriceValuation::class];
+    protected const CASTS = ['newCarValuations' => [\and_y87\php_client_avito\Generated\Schema\Autoteka\NewCarValuation::class], 'valuation' => \and_y87\php_client_avito\Generated\Schema\Autoteka\AvitoPriceValuation::class];
 
     /** @var string Марка */
     public string $brand;
@@ -28,7 +28,7 @@ class ValuationBySpecificationResultAutoteka extends AbstractSchemaModel
     /** @var string Модель */
     public string $model;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\NewCarValuation>|null Массив оценок новых авто с аналогичной спецификацией.
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoteka\NewCarValuation>|null Массив оценок новых авто с аналогичной спецификацией.
 
 Чтобы подключить эту возможность, обратитесь к менеджеру Автотеки.
  */
@@ -40,8 +40,8 @@ class ValuationBySpecificationResultAutoteka extends AbstractSchemaModel
     /** @var string Статус `success`, `notFound` */
     public string $status;
 
-    /** @var \php_client_avito\Generated\Schema\Autoteka\AvitoPriceValuation Schema field valuation */
-    public \php_client_avito\Generated\Schema\Autoteka\AvitoPriceValuation $valuation;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoteka\AvitoPriceValuation Schema field valuation */
+    public \and_y87\php_client_avito\Generated\Schema\Autoteka\AvitoPriceValuation $valuation;
 
     /** @var string|null Идентификатор запрашиваемого авто (vin/frame) */
     public ?string $vehicleId;

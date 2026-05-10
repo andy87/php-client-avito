@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,12 +19,12 @@ class GetAutostrategyStatResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['stat' => \php_client_avito\Generated\Schema\Autostrategy\Stat::class];
+    protected const CASTS = ['stat' => \and_y87\php_client_avito\Generated\Schema\Autostrategy\Stat::class];
 
     protected const MODEL = null;
 
-    /** @var \php_client_avito\Generated\Schema\Autostrategy\Stat|null Response field stat */
-    public ?\php_client_avito\Generated\Schema\Autostrategy\Stat $stat = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autostrategy\Stat|null Response field stat */
+    public ?\and_y87\php_client_avito\Generated\Schema\Autostrategy\Stat $stat = null;
 
     /** @var array<string, mixed>|null Статистика, просумированная за все дни */
     public ?array $totals = null;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Cpxpromo;
+namespace and_y87\php_client_avito\Generated\Schema\Cpxpromo;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito cpxpromo/manual.
@@ -17,12 +17,12 @@ class Manual extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['bidPenny', 'limitPenny'];
 
-    protected const CASTS = ['bids' => [\php_client_avito\Generated\Schema\Cpxpromo\Bid::class]];
+    protected const CASTS = ['bids' => [\and_y87\php_client_avito\Generated\Schema\Cpxpromo\Bid::class]];
 
     /** @var int|null Текущая цена за целевое действие (в копейках) */
     public ?int $bidPenny = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Cpxpromo\Bid> Schema field bids */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Cpxpromo\Bid> Schema field bids */
     public array $bids;
 
     /** @var int|null Дневной лимит (в копейках) */

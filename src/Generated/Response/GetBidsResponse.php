@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,18 +19,18 @@ class GetBidsResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['auto' => \php_client_avito\Generated\Schema\Cpxpromo\Auto::class, 'manual' => \php_client_avito\Generated\Schema\Cpxpromo\Manual::class];
+    protected const CASTS = ['auto' => \and_y87\php_client_avito\Generated\Schema\Cpxpromo\Auto::class, 'manual' => \and_y87\php_client_avito\Generated\Schema\Cpxpromo\Manual::class];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Cpxpromo\GetBidsOut::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Cpxpromo\GetBidsOut::class;
 
     /** @var int Тип события (1 - звонок | 5 - пакет кликов | 7 - мессенджер, передача контакта в чате) */
     public int $actionTypeID;
 
-    /** @var \php_client_avito\Generated\Schema\Cpxpromo\Auto|null Response field auto */
-    public ?\php_client_avito\Generated\Schema\Cpxpromo\Auto $auto = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Cpxpromo\Auto|null Response field auto */
+    public ?\and_y87\php_client_avito\Generated\Schema\Cpxpromo\Auto $auto = null;
 
-    /** @var \php_client_avito\Generated\Schema\Cpxpromo\Manual|null Response field manual */
-    public ?\php_client_avito\Generated\Schema\Cpxpromo\Manual $manual = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Cpxpromo\Manual|null Response field manual */
+    public ?\and_y87\php_client_avito\Generated\Schema\Cpxpromo\Manual $manual = null;
 
     /** @var string Выбранный тип продвижения ("manual" - ручное продвижение | "auto" - автоматическое продвижение) */
     public string $selectedType;

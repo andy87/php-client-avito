@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt;
+namespace and_y87\php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class V1createAnnouncementPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['options' => \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementOptions::class, 'packages' => [\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementPackage::class], 'receiver' => \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant::class, 'sender' => \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant::class];
+    protected const CASTS = ['options' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementOptions::class, 'packages' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementPackage::class], 'receiver' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant::class, 'sender' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant::class];
 
     protected const PATH_FIELDS = [];
 
@@ -53,15 +53,15 @@ class V1createAnnouncementPrompt extends AbstractPrompt
     /** @var string Дата и время создания анонса (UTC). */
     public string $date;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementOptions Body field options */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementOptions $options;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementOptions Body field options */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementOptions $options;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementPackage> Список грузомест. */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementPackage> Список грузомест. */
     public array $packages;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant Body field receiver */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant $receiver;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant Body field receiver */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant $receiver;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant Body field sender */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant $sender;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant Body field sender */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\SandboxCreateAnnouncementParticipant $sender;
 }

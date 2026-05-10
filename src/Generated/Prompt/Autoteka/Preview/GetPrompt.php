@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autoteka\Preview;
+namespace and_y87\php_client_avito\Generated\Prompt\Autoteka\Preview;
 
-use php_client_avito\Generated\Prompt\GetPreviewPrompt as BaseGetPreviewPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetPreviewPrompt as BaseGetPreviewPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoteka/v1/previews/{previewId}.

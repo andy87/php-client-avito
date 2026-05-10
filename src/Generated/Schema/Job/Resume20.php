@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Job;
+namespace and_y87\php_client_avito\Generated\Schema\Job;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito job/Resume2.0.
@@ -17,10 +17,10 @@ class Resume20 extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['photos', 'salary'];
 
-    protected const CASTS = ['address_details' => \php_client_avito\Generated\Schema\Job\AddressDetails::class, 'photos' => [\php_client_avito\Generated\Schema\Job\Photo::class]];
+    protected const CASTS = ['address_details' => \and_y87\php_client_avito\Generated\Schema\Job\AddressDetails::class, 'photos' => [\and_y87\php_client_avito\Generated\Schema\Job\Photo::class]];
 
-    /** @var \php_client_avito\Generated\Schema\Job\AddressDetails|null Schema field address_details */
-    public ?\php_client_avito\Generated\Schema\Job\AddressDetails $address_details = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\AddressDetails|null Schema field address_details */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\AddressDetails $address_details = null;
 
     /** @var string|null Описание резюме */
     public ?string $description = null;
@@ -37,7 +37,7 @@ class Resume20 extends AbstractSchemaModel
     /** @var array<string, mixed>|null Блок с параметрами резюме. Все поля опциональны и выводятся при наличии */
     public ?array $params = null;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Job\Photo>|null Присутствует в ответе только если в запросе есть флаг photos=true */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Job\Photo>|null Присутствует в ответе только если в запросе есть флаг photos=true */
     public ?array $photos = null;
 
     /** @var int|null Зарплата. Поле может отсутствовать в ответе (выводится при наличии зарплаты) */

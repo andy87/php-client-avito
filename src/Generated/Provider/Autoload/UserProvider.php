@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Autoload;
+namespace and_y87\php_client_avito\Generated\Provider\Autoload;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\UserDocsNodeFieldsPrompt;
-use php_client_avito\Generated\Prompt\UserDocsTreePrompt;
-use php_client_avito\Generated\Response\Autoload\User\DocsNodeFieldsResponse;
-use php_client_avito\Generated\Response\Autoload\User\DocsTreeResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\UserDocsNodeFieldsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\UserDocsTreePrompt;
+use and_y87\php_client_avito\Generated\Response\Autoload\User\DocsNodeFieldsResponse;
+use and_y87\php_client_avito\Generated\Response\Autoload\User\DocsTreeResponse;
 
 /**
  * Группа методов "user" раздела Avito API "Автозагрузка".

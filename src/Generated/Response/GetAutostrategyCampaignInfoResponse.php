@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,15 +19,15 @@ class GetAutostrategyCampaignInfoResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['campaign' => \php_client_avito\Generated\Schema\Autostrategy\Campaign::class, 'forecast' => \php_client_avito\Generated\Schema\Autostrategy\GetCampaignInfoForecastResult::class];
+    protected const CASTS = ['campaign' => \and_y87\php_client_avito\Generated\Schema\Autostrategy\Campaign::class, 'forecast' => \and_y87\php_client_avito\Generated\Schema\Autostrategy\GetCampaignInfoForecastResult::class];
 
     protected const MODEL = null;
 
-    /** @var \php_client_avito\Generated\Schema\Autostrategy\Campaign|null Response field campaign */
-    public ?\php_client_avito\Generated\Schema\Autostrategy\Campaign $campaign = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autostrategy\Campaign|null Response field campaign */
+    public ?\and_y87\php_client_avito\Generated\Schema\Autostrategy\Campaign $campaign = null;
 
-    /** @var \php_client_avito\Generated\Schema\Autostrategy\GetCampaignInfoForecastResult|null Response field forecast */
-    public ?\php_client_avito\Generated\Schema\Autostrategy\GetCampaignInfoForecastResult $forecast = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autostrategy\GetCampaignInfoForecastResult|null Response field forecast */
+    public ?\and_y87\php_client_avito\Generated\Schema\Autostrategy\GetCampaignInfoForecastResult $forecast = null;
 
     /** @var array<int, array<string, mixed>>|null Список индентификаторов объявлений, которые продвигаются/продвигались в данной кампании */
     public ?array $items = null;

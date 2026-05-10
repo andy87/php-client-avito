@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Messenger\Webhook;
+namespace and_y87\php_client_avito\Generated\Response\Messenger\Webhook;
 
-use php_client_avito\Generated\Response\PostWebhookV3Response as BasePostWebhookV3Response;
+use and_y87\php_client_avito\Generated\Response\PostWebhookV3Response as BasePostWebhookV3Response;
 
 /**
  * Ответ Avito API [POST] /messenger/v3/webhook.

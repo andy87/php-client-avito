@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Item\Calls;
+namespace and_y87\php_client_avito\Generated\Prompt\Item\Calls;
 
-use php_client_avito\Generated\Prompt\PostCallsStatsPrompt as BasePostCallsStatsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostCallsStatsPrompt as BasePostCallsStatsPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /core/v1/accounts/{user_id}/calls/stats/.

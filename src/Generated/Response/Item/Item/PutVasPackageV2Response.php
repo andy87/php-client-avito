@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Item\Item;
+namespace and_y87\php_client_avito\Generated\Response\Item\Item;
 
-use php_client_avito\Generated\Response\PutItemVasPackageV2Response as BasePutItemVasPackageV2Response;
+use and_y87\php_client_avito\Generated\Response\PutItemVasPackageV2Response as BasePutItemVasPackageV2Response;
 
 /**
  * Ответ Avito API [PUT] /core/v2/accounts/{user_id}/items/{item_id}/vas_packages.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\DeliverySandbox\Parcel;
+namespace and_y87\php_client_avito\Generated\Response\DeliverySandbox\Parcel;
 
-use php_client_avito\Generated\Response\ChangeParcelResultResponse as BaseChangeParcelResultResponse;
+use and_y87\php_client_avito\Generated\Response\ChangeParcelResultResponse as BaseChangeParcelResultResponse;
 
 /**
  * Ответ Avito API [POST] /delivery/order/changeParcelResult.

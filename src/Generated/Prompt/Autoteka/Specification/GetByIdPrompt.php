@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autoteka\Specification;
+namespace and_y87\php_client_avito\Generated\Prompt\Autoteka\Specification;
 
-use php_client_avito\Generated\Prompt\SpecificationGetByIdPrompt as BaseSpecificationGetByIdPrompt;
+use and_y87\php_client_avito\Generated\Prompt\SpecificationGetByIdPrompt as BaseSpecificationGetByIdPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoteka/v1/specifications/specification/{specificationID}.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Autoload;
+namespace and_y87\php_client_avito\Generated\Schema\Autoload;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoload/UpsertProfileInV2.
@@ -17,7 +17,7 @@ class UpsertProfileInV2 extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['agreement'];
 
-    protected const CASTS = ['feeds_data' => \php_client_avito\Generated\Schema\Autoload\FeedsData::class, 'schedule' => \php_client_avito\Generated\Schema\Autoload\ExportSchedule::class];
+    protected const CASTS = ['feeds_data' => \and_y87\php_client_avito\Generated\Schema\Autoload\FeedsData::class, 'schedule' => \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule::class];
 
     /** @var bool|null Согласие с [правилами](https://support.avito.ru/articles/203867776) использования Авито Автозагрузки.
 
@@ -28,12 +28,12 @@ class UpsertProfileInV2 extends AbstractSchemaModel
     /** @var bool Статус автозагрузки (вкл/выкл) */
     public bool $autoload_enabled;
 
-    /** @var \php_client_avito\Generated\Schema\Autoload\FeedsData Schema field feeds_data */
-    public \php_client_avito\Generated\Schema\Autoload\FeedsData $feeds_data;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoload\FeedsData Schema field feeds_data */
+    public \and_y87\php_client_avito\Generated\Schema\Autoload\FeedsData $feeds_data;
 
     /** @var string Почта, на которую будут приходить отчеты о выгрузках */
     public string $report_email;
 
-    /** @var \php_client_avito\Generated\Schema\Autoload\ExportSchedule Schema field schedule */
-    public \php_client_avito\Generated\Schema\Autoload\ExportSchedule $schedule;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule Schema field schedule */
+    public \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule $schedule;
 }

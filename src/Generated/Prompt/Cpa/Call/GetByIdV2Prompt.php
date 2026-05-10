@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Cpa\Call;
+namespace and_y87\php_client_avito\Generated\Prompt\Cpa\Call;
 
-use php_client_avito\Generated\Prompt\GetCallByIdV2Prompt as BaseGetCallByIdV2Prompt;
+use and_y87\php_client_avito\Generated\Prompt\GetCallByIdV2Prompt as BaseGetCallByIdV2Prompt;
 
 /**
  * Класс данных запроса Avito API [POST] /cpa/v2/callById.

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,7 +19,7 @@ class GetProfileResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = ['report_email', 'upload_url'];
 
-    protected const CASTS = ['schedule' => \php_client_avito\Generated\Schema\Autoload\ExportSchedule::class];
+    protected const CASTS = ['schedule' => \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule::class];
 
     protected const MODEL = null;
 
@@ -29,8 +29,8 @@ class GetProfileResponse extends AbstractResponse
     /** @var string|null Почта, на которую будут приходить отчеты о выгрузках */
     public ?string $report_email;
 
-    /** @var \php_client_avito\Generated\Schema\Autoload\ExportSchedule Response field schedule */
-    public \php_client_avito\Generated\Schema\Autoload\ExportSchedule $schedule;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule Response field schedule */
+    public \and_y87\php_client_avito\Generated\Schema\Autoload\ExportSchedule $schedule;
 
     /** @var string|null URL-адрес фида, для которого настроены регулярные выгрузки. Должен начинаться с http или https. */
     public ?string $upload_url;

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider;
+namespace and_y87\php_client_avito\Generated\Provider;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\CreateReportForClassifiedPrompt;
-use php_client_avito\Generated\Prompt\MarketPriceCorrespondenceV1Prompt;
-use php_client_avito\Generated\Response\CreateReportForClassifiedResponse;
-use php_client_avito\Generated\Response\MarketPriceCorrespondenceV1Response;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\CreateReportForClassifiedPrompt;
+use and_y87\php_client_avito\Generated\Prompt\MarketPriceCorrespondenceV1Prompt;
+use and_y87\php_client_avito\Generated\Response\CreateReportForClassifiedResponse;
+use and_y87\php_client_avito\Generated\Response\MarketPriceCorrespondenceV1Response;
 
 /**
  * Provider раздела Avito API "Аналитика по недвижимости".

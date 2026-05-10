@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Job\Dicts;
+namespace and_y87\php_client_avito\Generated\Prompt\Job\Dicts;
 
-use php_client_avito\Generated\Prompt\GetDictsPrompt as BaseGetDictsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetDictsPrompt as BaseGetDictsPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /job/v2/vacancy/dict.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Auction\Item;
+namespace and_y87\php_client_avito\Generated\Response\Auction\Item;
 
-use php_client_avito\Generated\Response\SaveItemBidsResponse as BaseSaveItemBidsResponse;
+use and_y87\php_client_avito\Generated\Response\SaveItemBidsResponse as BaseSaveItemBidsResponse;
 
 /**
  * Ответ Avito API [POST] /auction/1/bids.

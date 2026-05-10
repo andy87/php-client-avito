@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt;
+namespace and_y87\php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class CancelAnnouncement3PLPrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['announcementID' => \php_client_avito\Generated\Schema\DeliverySandbox\UUID::class];
+    protected const CASTS = ['announcementID' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\UUID::class];
 
     protected const PATH_FIELDS = [];
 
@@ -41,8 +41,8 @@ class CancelAnnouncement3PLPrompt extends AbstractPrompt
 
     protected const BODY_ROOT_FIELD = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\UUID Body field announcementID */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\UUID $announcementID;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\UUID Body field announcementID */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\UUID $announcementID;
 
     /** @var string|null Причина омены анонса */
     public ?string $reason = null;

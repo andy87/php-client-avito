@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Messenger\Webhook;
+namespace and_y87\php_client_avito\Generated\Prompt\Messenger\Webhook;
 
-use php_client_avito\Generated\Prompt\PostWebhookV3Prompt as BasePostWebhookV3Prompt;
+use and_y87\php_client_avito\Generated\Prompt\PostWebhookV3Prompt as BasePostWebhookV3Prompt;
 
 /**
  * Класс данных запроса Avito API [POST] /messenger/v3/webhook.

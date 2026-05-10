@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Autoload\User;
+namespace and_y87\php_client_avito\Generated\Prompt\Autoload\User;
 
-use php_client_avito\Generated\Prompt\UserDocsNodeFieldsPrompt as BaseUserDocsNodeFieldsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\UserDocsNodeFieldsPrompt as BaseUserDocsNodeFieldsPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /autoload/v1/user-docs/node/{node_slug}/fields.

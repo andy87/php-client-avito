@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Ratings;
+namespace and_y87\php_client_avito\Generated\Schema\Ratings;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito ratings/Review.
@@ -17,10 +17,10 @@ class Review extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['answer' => \php_client_avito\Generated\Schema\Ratings\ReviewAnswer::class, 'images' => [\php_client_avito\Generated\Schema\Ratings\ReviewImage::class], 'item' => \php_client_avito\Generated\Schema\Ratings\ReviewItem::class, 'sender' => \php_client_avito\Generated\Schema\Ratings\ReviewSender::class];
+    protected const CASTS = ['answer' => \and_y87\php_client_avito\Generated\Schema\Ratings\ReviewAnswer::class, 'images' => [\and_y87\php_client_avito\Generated\Schema\Ratings\ReviewImage::class], 'item' => \and_y87\php_client_avito\Generated\Schema\Ratings\ReviewItem::class, 'sender' => \and_y87\php_client_avito\Generated\Schema\Ratings\ReviewSender::class];
 
-    /** @var \php_client_avito\Generated\Schema\Ratings\ReviewAnswer|null Schema field answer */
-    public ?\php_client_avito\Generated\Schema\Ratings\ReviewAnswer $answer = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Ratings\ReviewAnswer|null Schema field answer */
+    public ?\and_y87\php_client_avito\Generated\Schema\Ratings\ReviewAnswer $answer = null;
 
     /** @var bool Можно ли оставить ответ на отзыв */
     public bool $canAnswer;
@@ -34,17 +34,17 @@ class Review extends AbstractSchemaModel
     /** @var int ID отзыва */
     public int $id;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Ratings\ReviewImage>|null Schema field images */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Ratings\ReviewImage>|null Schema field images */
     public ?array $images = null;
 
-    /** @var \php_client_avito\Generated\Schema\Ratings\ReviewItem|null Schema field item */
-    public ?\php_client_avito\Generated\Schema\Ratings\ReviewItem $item = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Ratings\ReviewItem|null Schema field item */
+    public ?\and_y87\php_client_avito\Generated\Schema\Ratings\ReviewItem $item = null;
 
     /** @var int Оценка */
     public int $score;
 
-    /** @var \php_client_avito\Generated\Schema\Ratings\ReviewSender|null Schema field sender */
-    public ?\php_client_avito\Generated\Schema\Ratings\ReviewSender $sender = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Ratings\ReviewSender|null Schema field sender */
+    public ?\and_y87\php_client_avito\Generated\Schema\Ratings\ReviewSender $sender = null;
 
     /** @var string Стадия сделки:
   * `done` - Сделка состоялась

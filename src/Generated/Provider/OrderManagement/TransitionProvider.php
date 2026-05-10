@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\OrderManagement;
+namespace and_y87\php_client_avito\Generated\Provider\OrderManagement;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\ApplyTransitionPrompt;
-use php_client_avito\Generated\Response\OrderManagement\Transition\ApplyResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\ApplyTransitionPrompt;
+use and_y87\php_client_avito\Generated\Response\OrderManagement\Transition\ApplyResponse;
 
 /**
  * Группа методов "transition" раздела Avito API "Управление заказами".

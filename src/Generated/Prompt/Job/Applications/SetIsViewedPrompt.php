@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Job\Applications;
+namespace and_y87\php_client_avito\Generated\Prompt\Job\Applications;
 
-use php_client_avito\Generated\Prompt\ApplicationsSetIsViewedPrompt as BaseApplicationsSetIsViewedPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApplicationsSetIsViewedPrompt as BaseApplicationsSetIsViewedPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /job/v1/applications/set_is_viewed.

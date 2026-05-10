@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Auction\User;
+namespace and_y87\php_client_avito\Generated\Prompt\Auction\User;
 
-use php_client_avito\Generated\Prompt\GetUserBidsPrompt as BaseGetUserBidsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetUserBidsPrompt as BaseGetUserBidsPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /auction/1/bids.

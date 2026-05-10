@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt;
+namespace and_y87\php_client_avito\Generated\Prompt;
 
 use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
 
@@ -29,7 +29,7 @@ class CustomAreaSchedulePrompt extends AbstractPrompt
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['body' => \php_client_avito\Generated\Schema\DeliverySandbox\CustomAreaScheduleRequest::class];
+    protected const CASTS = ['body' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CustomAreaScheduleRequest::class];
 
     protected const PATH_FIELDS = [];
 
@@ -41,6 +41,6 @@ class CustomAreaSchedulePrompt extends AbstractPrompt
 
     protected const BODY_ROOT_FIELD = 'body';
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CustomAreaScheduleRequest Request body */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\CustomAreaScheduleRequest $body;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CustomAreaScheduleRequest Request body */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CustomAreaScheduleRequest $body;
 }

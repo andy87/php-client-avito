@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Messenger\Chat;
+namespace and_y87\php_client_avito\Generated\Response\Messenger\Chat;
 
-use php_client_avito\Generated\Response\ChatReadResponse as BaseChatReadResponse;
+use and_y87\php_client_avito\Generated\Response\ChatReadResponse as BaseChatReadResponse;
 
 /**
  * Ответ Avito API [POST] /messenger/v1/accounts/{user_id}/chats/{chat_id}/read.

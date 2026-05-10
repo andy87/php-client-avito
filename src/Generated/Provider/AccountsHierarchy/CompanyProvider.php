@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\AccountsHierarchy;
+namespace and_y87\php_client_avito\Generated\Provider\AccountsHierarchy;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\ListCompanyPhonesV1Prompt;
-use php_client_avito\Generated\Response\AccountsHierarchy\Company\ListPhonesV1Response;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\ListCompanyPhonesV1Prompt;
+use and_y87\php_client_avito\Generated\Response\AccountsHierarchy\Company\ListPhonesV1Response;
 
 /**
  * Группа методов "company" раздела Avito API "Иерархия Аккаунтов".

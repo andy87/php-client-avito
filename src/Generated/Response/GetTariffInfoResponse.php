@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response;
+namespace and_y87\php_client_avito\Generated\Response;
 
 use Andy87\PhpClientSdk\Response\AbstractResponse;
 
@@ -19,13 +19,13 @@ class GetTariffInfoResponse extends AbstractResponse
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['current' => \php_client_avito\Generated\Schema\Tariff\TariffContract::class, 'scheduled' => \php_client_avito\Generated\Schema\Tariff\TariffContract::class];
+    protected const CASTS = ['current' => \and_y87\php_client_avito\Generated\Schema\Tariff\TariffContract::class, 'scheduled' => \and_y87\php_client_avito\Generated\Schema\Tariff\TariffContract::class];
 
-    protected const MODEL = \php_client_avito\Generated\Schema\Tariff\TariffInfo::class;
+    protected const MODEL = \and_y87\php_client_avito\Generated\Schema\Tariff\TariffInfo::class;
 
-    /** @var \php_client_avito\Generated\Schema\Tariff\TariffContract|null Response field current */
-    public ?\php_client_avito\Generated\Schema\Tariff\TariffContract $current = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Tariff\TariffContract|null Response field current */
+    public ?\and_y87\php_client_avito\Generated\Schema\Tariff\TariffContract $current = null;
 
-    /** @var \php_client_avito\Generated\Schema\Tariff\TariffContract|null Response field scheduled */
-    public ?\php_client_avito\Generated\Schema\Tariff\TariffContract $scheduled = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Tariff\TariffContract|null Response field scheduled */
+    public ?\and_y87\php_client_avito\Generated\Schema\Tariff\TariffContract $scheduled = null;
 }

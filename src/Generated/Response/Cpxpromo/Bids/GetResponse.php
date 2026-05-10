@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Response\Cpxpromo\Bids;
+namespace and_y87\php_client_avito\Generated\Response\Cpxpromo\Bids;
 
-use php_client_avito\Generated\Response\GetBidsResponse as BaseGetBidsResponse;
+use and_y87\php_client_avito\Generated\Response\GetBidsResponse as BaseGetBidsResponse;
 
 /**
  * Ответ Avito API [GET] /cpxpromo/1/getBids/{itemId}.
@@ -12,8 +12,8 @@ use php_client_avito\Generated\Response\GetBidsResponse as BaseGetBidsResponse;
  * @documentation https://developers.avito.ru/api-catalog/cpxpromo/documentation#operation/getBids
  *
  * @property int $actionTypeID Тип события (1 - звонок | 5 - пакет кликов | 7 - мессенджер, передача контакта в чате)
- * @property \php_client_avito\Generated\Schema\Cpxpromo\Auto|null $auto Response field auto
- * @property \php_client_avito\Generated\Schema\Cpxpromo\Manual|null $manual Response field manual
+ * @property \and_y87\php_client_avito\Generated\Schema\Cpxpromo\Auto|null $auto Response field auto
+ * @property \and_y87\php_client_avito\Generated\Schema\Cpxpromo\Manual|null $manual Response field manual
  * @property string $selectedType Выбранный тип продвижения ("manual" - ручное продвижение | "auto" - автоматическое продвижение)
  */
 class GetResponse extends BaseGetBidsResponse

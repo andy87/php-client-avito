@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\Job\Resume;
+namespace and_y87\php_client_avito\Generated\Prompt\Job\Resume;
 
-use php_client_avito\Generated\Prompt\ResumeGetItemPrompt as BaseResumeGetItemPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ResumeGetItemPrompt as BaseResumeGetItemPrompt;
 
 /**
  * Класс данных запроса Avito API [GET] /job/v2/resumes/{resume_id}.

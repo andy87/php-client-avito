@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Job;
+namespace and_y87\php_client_avito\Generated\Schema\Job;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito job/SimplifiedResume.
@@ -17,10 +17,10 @@ class SimplifiedResume extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['address_details' => \php_client_avito\Generated\Schema\Job\AddressDetails::class, 'driver_licence' => \php_client_avito\Generated\Schema\Job\DriverLicence::class, 'driver_licence_category' => \php_client_avito\Generated\Schema\Job\DriverLicenceCategory::class, 'driving_experience' => \php_client_avito\Generated\Schema\Job\DrivingExperience::class, 'education_level' => \php_client_avito\Generated\Schema\Job\EducationLevel::class, 'gender' => \php_client_avito\Generated\Schema\Job\Gender::class, 'location' => \php_client_avito\Generated\Schema\Job\Location::class, 'medical_book' => \php_client_avito\Generated\Schema\Job\MedicalBook::class, 'nationality' => \php_client_avito\Generated\Schema\Job\Citizenship::class, 'own_transport' => \php_client_avito\Generated\Schema\Job\OwnTransport::class, 'specialization' => \php_client_avito\Generated\Schema\Job\Specialization::class];
+    protected const CASTS = ['address_details' => \and_y87\php_client_avito\Generated\Schema\Job\AddressDetails::class, 'driver_licence' => \and_y87\php_client_avito\Generated\Schema\Job\DriverLicence::class, 'driver_licence_category' => \and_y87\php_client_avito\Generated\Schema\Job\DriverLicenceCategory::class, 'driving_experience' => \and_y87\php_client_avito\Generated\Schema\Job\DrivingExperience::class, 'education_level' => \and_y87\php_client_avito\Generated\Schema\Job\EducationLevel::class, 'gender' => \and_y87\php_client_avito\Generated\Schema\Job\Gender::class, 'location' => \and_y87\php_client_avito\Generated\Schema\Job\Location::class, 'medical_book' => \and_y87\php_client_avito\Generated\Schema\Job\MedicalBook::class, 'nationality' => \and_y87\php_client_avito\Generated\Schema\Job\Citizenship::class, 'own_transport' => \and_y87\php_client_avito\Generated\Schema\Job\OwnTransport::class, 'specialization' => \and_y87\php_client_avito\Generated\Schema\Job\Specialization::class];
 
-    /** @var \php_client_avito\Generated\Schema\Job\AddressDetails|null Schema field address_details */
-    public ?\php_client_avito\Generated\Schema\Job\AddressDetails $address_details = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\AddressDetails|null Schema field address_details */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\AddressDetails $address_details = null;
 
     /** @var int|null Schema field age */
     public ?int $age = null;
@@ -28,20 +28,20 @@ class SimplifiedResume extends AbstractSchemaModel
     /** @var string|null Schema field created */
     public ?string $created = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\DriverLicence|null Schema field driver_licence */
-    public ?\php_client_avito\Generated\Schema\Job\DriverLicence $driver_licence = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\DriverLicence|null Schema field driver_licence */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\DriverLicence $driver_licence = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\DriverLicenceCategory|null Schema field driver_licence_category */
-    public ?\php_client_avito\Generated\Schema\Job\DriverLicenceCategory $driver_licence_category = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\DriverLicenceCategory|null Schema field driver_licence_category */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\DriverLicenceCategory $driver_licence_category = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\DrivingExperience|null Schema field driving_experience */
-    public ?\php_client_avito\Generated\Schema\Job\DrivingExperience $driving_experience = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\DrivingExperience|null Schema field driving_experience */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\DrivingExperience $driving_experience = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\EducationLevel|null Schema field education_level */
-    public ?\php_client_avito\Generated\Schema\Job\EducationLevel $education_level = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\EducationLevel|null Schema field education_level */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\EducationLevel $education_level = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\Gender|null Schema field gender */
-    public ?\php_client_avito\Generated\Schema\Job\Gender $gender = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\Gender|null Schema field gender */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\Gender $gender = null;
 
     /** @var int|null Schema field id */
     public ?int $id = null;
@@ -49,23 +49,23 @@ class SimplifiedResume extends AbstractSchemaModel
     /** @var bool|null Schema field is_purchased */
     public ?bool $is_purchased = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\Location|null Schema field location */
-    public ?\php_client_avito\Generated\Schema\Job\Location $location = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\Location|null Schema field location */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\Location $location = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\MedicalBook|null Schema field medical_book */
-    public ?\php_client_avito\Generated\Schema\Job\MedicalBook $medical_book = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\MedicalBook|null Schema field medical_book */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\MedicalBook $medical_book = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\Citizenship|null Schema field nationality */
-    public ?\php_client_avito\Generated\Schema\Job\Citizenship $nationality = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\Citizenship|null Schema field nationality */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\Citizenship $nationality = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\OwnTransport|null Schema field own_transport */
-    public ?\php_client_avito\Generated\Schema\Job\OwnTransport $own_transport = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\OwnTransport|null Schema field own_transport */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\OwnTransport $own_transport = null;
 
     /** @var float|null Schema field salary */
     public ?float $salary = null;
 
-    /** @var \php_client_avito\Generated\Schema\Job\Specialization|null Schema field specialization */
-    public ?\php_client_avito\Generated\Schema\Job\Specialization $specialization = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\Job\Specialization|null Schema field specialization */
+    public ?\and_y87\php_client_avito\Generated\Schema\Job\Specialization $specialization = null;
 
     /** @var string|null Schema field title */
     public ?string $title = null;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Schema\DeliverySandbox;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito delivery-sandbox/Area.
@@ -17,22 +17,22 @@ class Area extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = [];
 
-    protected const CASTS = ['deliverySchedule' => \php_client_avito\Generated\Schema\DeliverySandbox\CutoffAndSchedule::class, 'directionTag' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag::class, 'intakeSchedule' => \php_client_avito\Generated\Schema\DeliverySandbox\CutoffAndSchedule::class, 'providerAreaNumber' => \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryProviderAreaNumber::class, 'restrictions' => \php_client_avito\Generated\Schema\DeliverySandbox\Restriction::class, 'zipCodes' => [\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryZipCode::class]];
+    protected const CASTS = ['deliverySchedule' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CutoffAndSchedule::class, 'directionTag' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag::class, 'intakeSchedule' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CutoffAndSchedule::class, 'providerAreaNumber' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryProviderAreaNumber::class, 'restrictions' => \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\Restriction::class, 'zipCodes' => [\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryZipCode::class]];
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CutoffAndSchedule|null Schema field deliverySchedule */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CutoffAndSchedule $deliverySchedule = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CutoffAndSchedule|null Schema field deliverySchedule */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CutoffAndSchedule $deliverySchedule = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag Schema field directionTag */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag $directionTag;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag Schema field directionTag */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryDirectionTag $directionTag;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\CutoffAndSchedule|null Schema field intakeSchedule */
-    public ?\php_client_avito\Generated\Schema\DeliverySandbox\CutoffAndSchedule $intakeSchedule = null;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CutoffAndSchedule|null Schema field intakeSchedule */
+    public ?\and_y87\php_client_avito\Generated\Schema\DeliverySandbox\CutoffAndSchedule $intakeSchedule = null;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryProviderAreaNumber Schema field providerAreaNumber */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryProviderAreaNumber $providerAreaNumber;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryProviderAreaNumber Schema field providerAreaNumber */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryProviderAreaNumber $providerAreaNumber;
 
-    /** @var \php_client_avito\Generated\Schema\DeliverySandbox\Restriction Schema field restrictions */
-    public \php_client_avito\Generated\Schema\DeliverySandbox\Restriction $restrictions;
+    /** @var \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\Restriction Schema field restrictions */
+    public \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\Restriction $restrictions;
 
     /** @var array<int, string> Доступные в области услуги. Забор (intake), доставка (delivery) */
     public array $services;
@@ -40,6 +40,6 @@ class Area extends AbstractSchemaModel
     /** @var string UTC зона области досатвки */
     public string $utcTimezone;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\DeliverySandbox\DeliveryZipCode> список почтовых индексов входящих в данную зону доставки (область курьерской доставки/забора) */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\DeliverySandbox\DeliveryZipCode> список почтовых индексов входящих в данную зону доставки (область курьерской доставки/забора) */
     public array $zipCodes;
 }

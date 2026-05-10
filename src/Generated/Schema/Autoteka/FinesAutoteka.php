@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Schema\Autoteka;
+namespace and_y87\php_client_avito\Generated\Schema\Autoteka;
 
-use php_client_avito\Schema\AbstractSchemaModel;
+use and_y87\php_client_avito\Schema\AbstractSchemaModel;
 
 /**
  * OpenAPI schema модель Avito autoteka/FinesAutoteka.
@@ -17,12 +17,12 @@ class FinesAutoteka extends AbstractSchemaModel
 
     protected const NULLABLE_FIELDS = ['requestTime'];
 
-    protected const CASTS = ['events' => [\php_client_avito\Generated\Schema\Autoteka\FineEventAutoteka::class], 'recaps' => [\php_client_avito\Generated\Schema\Autoteka\RecapAutoteka::class]];
+    protected const CASTS = ['events' => [\and_y87\php_client_avito\Generated\Schema\Autoteka\FineEventAutoteka::class], 'recaps' => [\and_y87\php_client_avito\Generated\Schema\Autoteka\RecapAutoteka::class]];
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\FineEventAutoteka> Список штрафов */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoteka\FineEventAutoteka> Список штрафов */
     public array $events;
 
-    /** @var array<int, \php_client_avito\Generated\Schema\Autoteka\RecapAutoteka> Суммарная информация */
+    /** @var array<int, \and_y87\php_client_avito\Generated\Schema\Autoteka\RecapAutoteka> Суммарная информация */
     public array $recaps;
 
     /** @var int|null Дата запроса к источнику UnixTime */

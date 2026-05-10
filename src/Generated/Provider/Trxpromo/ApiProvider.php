@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Trxpromo;
+namespace and_y87\php_client_avito\Generated\Provider\Trxpromo;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiApplyPrompt;
-use php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiCancelPrompt;
-use php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiCommissionsPrompt;
-use php_client_avito\Generated\Response\Trxpromo\Api\TrxPromoOpenApiApplyResponse;
-use php_client_avito\Generated\Response\Trxpromo\Api\TrxPromoOpenApiCancelResponse;
-use php_client_avito\Generated\Response\Trxpromo\Api\TrxPromoOpenApiCommissionsResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiApplyPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiCancelPrompt;
+use and_y87\php_client_avito\Generated\Prompt\ApiTrxPromoOpenApiCommissionsPrompt;
+use and_y87\php_client_avito\Generated\Response\Trxpromo\Api\TrxPromoOpenApiApplyResponse;
+use and_y87\php_client_avito\Generated\Response\Trxpromo\Api\TrxPromoOpenApiCancelResponse;
+use and_y87\php_client_avito\Generated\Response\Trxpromo\Api\TrxPromoOpenApiCommissionsResponse;
 
 /**
  * Группа методов "api" раздела Avito API "TrxPromo".

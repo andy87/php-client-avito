@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\SbcGateway\Open;
+namespace and_y87\php_client_avito\Generated\Prompt\SbcGateway\Open;
 
-use php_client_avito\Generated\Prompt\OpenApiMultiCreatePrompt as BaseOpenApiMultiCreatePrompt;
+use and_y87\php_client_avito\Generated\Prompt\OpenApiMultiCreatePrompt as BaseOpenApiMultiCreatePrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /special-offers/v1/multiCreate.

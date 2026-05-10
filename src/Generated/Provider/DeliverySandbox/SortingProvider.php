@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\DeliverySandbox;
+namespace and_y87\php_client_avito\Generated\Provider\DeliverySandbox;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\AddSortingCenterPrompt;
-use php_client_avito\Generated\Prompt\GetSortingCenterPrompt;
-use php_client_avito\Generated\Response\DeliverySandbox\Sorting\AddCenterResponse;
-use php_client_avito\Generated\Response\DeliverySandbox\Sorting\GetCenterResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\AddSortingCenterPrompt;
+use and_y87\php_client_avito\Generated\Prompt\GetSortingCenterPrompt;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\Sorting\AddCenterResponse;
+use and_y87\php_client_avito\Generated\Response\DeliverySandbox\Sorting\GetCenterResponse;
 
 /**
  * Группа методов "sorting" раздела Avito API "Доставка".

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider\Messenger;
+namespace and_y87\php_client_avito\Generated\Provider\Messenger;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\PostWebhookUnsubscribePrompt;
-use php_client_avito\Generated\Prompt\PostWebhookV3Prompt;
-use php_client_avito\Generated\Response\Messenger\Webhook\PostUnsubscribeResponse;
-use php_client_avito\Generated\Response\Messenger\Webhook\PostV3Response;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\PostWebhookUnsubscribePrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostWebhookV3Prompt;
+use and_y87\php_client_avito\Generated\Response\Messenger\Webhook\PostUnsubscribeResponse;
+use and_y87\php_client_avito\Generated\Response\Messenger\Webhook\PostV3Response;
 
 /**
  * Группа методов "webhook" раздела Avito API "Мессенджер".

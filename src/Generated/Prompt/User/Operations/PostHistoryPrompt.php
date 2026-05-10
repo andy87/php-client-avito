@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Prompt\User\Operations;
+namespace and_y87\php_client_avito\Generated\Prompt\User\Operations;
 
-use php_client_avito\Generated\Prompt\PostOperationsHistoryPrompt as BasePostOperationsHistoryPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostOperationsHistoryPrompt as BasePostOperationsHistoryPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /core/v1/accounts/operations_history/.

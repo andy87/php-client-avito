@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace php_client_avito\Generated\Provider;
+namespace and_y87\php_client_avito\Generated\Provider;
 
-use php_client_avito\BaseAvitoProvider;
-use php_client_avito\Generated\Prompt\GetRealtyBookingsPrompt;
-use php_client_avito\Generated\Prompt\PostBaseParamsPrompt;
-use php_client_avito\Generated\Prompt\PostRealtyPricesPrompt;
-use php_client_avito\Generated\Prompt\PutBookingsInfoPrompt;
-use php_client_avito\Generated\Prompt\PutIntervalsPrompt;
-use php_client_avito\Generated\Response\GetRealtyBookingsResponse;
-use php_client_avito\Generated\Response\PostBaseParamsResponse;
-use php_client_avito\Generated\Response\PostRealtyPricesResponse;
-use php_client_avito\Generated\Response\PutBookingsInfoResponse;
-use php_client_avito\Generated\Response\PutIntervalsResponse;
+use and_y87\php_client_avito\BaseAvitoProvider;
+use and_y87\php_client_avito\Generated\Prompt\GetRealtyBookingsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostBaseParamsPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PostRealtyPricesPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PutBookingsInfoPrompt;
+use and_y87\php_client_avito\Generated\Prompt\PutIntervalsPrompt;
+use and_y87\php_client_avito\Generated\Response\GetRealtyBookingsResponse;
+use and_y87\php_client_avito\Generated\Response\PostBaseParamsResponse;
+use and_y87\php_client_avito\Generated\Response\PostRealtyPricesResponse;
+use and_y87\php_client_avito\Generated\Response\PutBookingsInfoResponse;
+use and_y87\php_client_avito\Generated\Response\PutIntervalsResponse;
 
 /**
  * Provider раздела Avito API "Краткосрочная аренда".
