@@ -47,7 +47,7 @@ class AccessProvider extends BaseAvitoProvider
      * Получения временного ключа для авторизации запроса от лица пользователя
      *
      * OperationId: getAccessTokenAuthorizationCode.
-     * HTTP: POST /token‎.
+     * HTTP: POST /token.
      *
      * @param GetAccessTokenAuthorizationCodePrompt $prompt DTO запроса.
      *
@@ -71,7 +71,7 @@ class AccessProvider extends BaseAvitoProvider
      * Обновление временного ключа для авторизации запроса от лица пользователя
      *
      * OperationId: refreshAccessTokenAuthorizationCode.
-     * HTTP: POST /token‎‎.
+     * HTTP: POST /token.
      *
      * @param RefreshAccessTokenAuthorizationCodePrompt $prompt DTO запроса.
      *

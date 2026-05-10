@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace and_y87\php_client_avito\Generated\Prompt;
 
-use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
+use and_y87\PhpClientSdk\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /realty/v1/report/create/{itemId}.

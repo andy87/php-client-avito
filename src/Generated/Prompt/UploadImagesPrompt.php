@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace and_y87\php_client_avito\Generated\Prompt;
 
-use Andy87\PhpClientSdk\Prompt\AbstractPrompt;
+use and_y87\PhpClientSdk\Prompt\AbstractPrompt;
 
 /**
  * Класс данных запроса Avito API [POST] /messenger/v1/accounts/{user_id}/uploadImages.
@@ -44,6 +44,6 @@ class UploadImagesPrompt extends AbstractPrompt
     /** @var int Идентификатор пользователя (клиента) */
     public int $user_id;
 
-    /** @var \Andy87\PhpClientSdk\Http\MultipartFile|string Body field uploadfile[] */
-    public \Andy87\PhpClientSdk\Http\MultipartFile|string $uploadfile__;
+    /** @var \and_y87\PhpClientSdk\Http\MultipartFile|string Body field uploadfile[] */
+    public \and_y87\PhpClientSdk\Http\MultipartFile|string $uploadfile__;
 }

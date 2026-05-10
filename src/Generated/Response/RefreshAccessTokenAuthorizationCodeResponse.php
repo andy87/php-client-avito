@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace and_y87\php_client_avito\Generated\Response;
 
-use Andy87\PhpClientSdk\Response\AbstractResponse;
+use and_y87\PhpClientSdk\Response\AbstractResponse;
 
 /**
- * Ответ Avito API [POST] /token‎‎.
+ * Ответ Avito API [POST] /token.
  *
  * @documentation https://developers.avito.ru/api-catalog/auth/documentation#operation/refreshAccessTokenAuthorizationCode
  */

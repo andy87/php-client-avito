@@ -7,7 +7,7 @@ namespace and_y87\php_client_avito\Generated\Response\Auth\Access;
 use and_y87\php_client_avito\Generated\Response\RefreshAccessTokenAuthorizationCodeResponse as BaseRefreshAccessTokenAuthorizationCodeResponse;
 
 /**
- * Ответ Avito API [POST] /token‎‎.
+ * Ответ Avito API [POST] /token.
  *
  * @documentation https://developers.avito.ru/api-catalog/auth/documentation#operation/refreshAccessTokenAuthorizationCode
  *
