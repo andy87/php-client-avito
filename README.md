@@ -213,9 +213,9 @@ If you use the default HTTP transport, pass runtime options as the second constr
 
 declare(strict_types=1);
 
-use and_y87\PhpClientSdk\Event\BeforeRequestEvent;
-use and_y87\PhpClientSdk\Event\AfterRequestEvent;
-use and_y87\PhpClientSdk\Event\RequestExceptionEvent;
+use and_y87\PhpClientSdk\Client\Event\BeforeRequestEvent;
+use and_y87\PhpClientSdk\Client\Event\AfterRequestEvent;
+use and_y87\PhpClientSdk\Client\Event\RequestExceptionEvent;
 use and_y87\php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito([
@@ -247,7 +247,7 @@ If you pass a custom transport as the second argument, pass runtime options as t
 declare(strict_types=1);
 
 use and_y87\php_client_avito\ApiClientAvito;
-use and_y87\PhpClientSdk\Contracts\HttpTransportInterface;
+use and_y87\PhpClientSdk\Contracts\Http\HttpTransportInterface;
 
 /** @var HttpTransportInterface $transport */
 $client = new ApiClientAvito(
@@ -272,7 +272,7 @@ You can also change headers and attach listeners after client creation:
 
 declare(strict_types=1);
 
-use and_y87\PhpClientSdk\Event\BeforeRequestEvent;
+use and_y87\PhpClientSdk\Client\Event\BeforeRequestEvent;
 use and_y87\php_client_avito\ApiClientAvito;
 
 /** @var ApiClientAvito $client */
@@ -300,7 +300,7 @@ Each event option accepts either one callable or a list of callables:
 
 declare(strict_types=1);
 
-use and_y87\PhpClientSdk\Event\BeforeRequestEvent;
+use and_y87\PhpClientSdk\Client\Event\BeforeRequestEvent;
 use and_y87\php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito($config, [
@@ -345,7 +345,7 @@ Pass an SDK `CacheInterface` through options when the default OAuth strategy mus
 <?php
 
 use and_y87\php_client_avito\ApiClientAvito;
-use and_y87\PhpClientSdk\Cache\ArrayCache;
+use and_y87\PhpClientSdk\Transport\Cache\ArrayCache;
 
 $client = new ApiClientAvito($config, [
     ApiClientAvito::TOKEN_CACHE => new ArrayCache(),
@@ -354,7 +354,7 @@ $client = new ApiClientAvito($config, [
 ]);
 ```
 
-For Redis, file cache, DB cache or framework cache, use any object implementing `and_y87\PhpClientSdk\Contracts\CacheInterface`, or the SDK adapter when the storage is PSR-16/simple-cache compatible.
+For Redis, file cache, DB cache or framework cache, use any object implementing `and_y87\PhpClientSdk\Contracts\Cache\CacheInterface`, or the SDK adapter when the storage is PSR-16/simple-cache compatible.
 
 Use `authorizationResolver` when a generated prompt needs a different auth strategy:
 
@@ -363,8 +363,8 @@ Use `authorizationResolver` when a generated prompt needs a different auth strat
 
 use and_y87\php_client_avito\ApiClientAvito;
 use and_y87\php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
-use and_y87\PhpClientSdk\Auth\ApiKeyAuthorizationStrategy;
-use and_y87\PhpClientSdk\Auth\PromptClassAuthorizationStrategyResolver;
+use and_y87\PhpClientSdk\Security\Authorization\Strategy\ApiKeyAuthorizationStrategy;
+use and_y87\PhpClientSdk\Security\Authorization\Resolver\PromptClassAuthorizationStrategyResolver;
 
 $client = new ApiClientAvito($config, [
     ApiClientAvito::AUTHORIZATION_RESOLVER => new PromptClassAuthorizationStrategyResolver([
@@ -400,9 +400,9 @@ declare(strict_types=1);
 
 use and_y87\php_client_avito\ApiClientAvito;
 use and_y87\php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
-use and_y87\PhpClientSdk\Auth\NullAuthorizationStrategy;
-use and_y87\PhpClientSdk\Mock\MockTransport;
-use and_y87\PhpClientSdk\Mock\PromptClassMockResponseResolver;
+use and_y87\PhpClientSdk\Security\Authorization\Strategy\NullAuthorizationStrategy;
+use and_y87\PhpClientSdk\Testing\Mock\MockTransport;
+use and_y87\PhpClientSdk\Testing\Mock\PromptClassMockResponseResolver;
 
 $resolver = (new PromptClassMockResponseResolver())
     ->addJson(GetUserInfoSelfPrompt::class, [

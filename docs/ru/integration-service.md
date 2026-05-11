@@ -151,7 +151,7 @@ $response = $client->user->getUserInfoSelf(new GetUserInfoSelfPrompt());
 
 use and_y87\php_client_avito\ApiClientAvito;
 use and_y87\php_client_avito\AvitoConfig;
-use and_y87\PhpClientSdk\Cache\ArrayCache;
+use and_y87\PhpClientSdk\Transport\Cache\ArrayCache;
 
 $client = new ApiClientAvito(AvitoConfig::fromEnv(), [
     ApiClientAvito::TOKEN_CACHE => new ArrayCache(),
@@ -160,7 +160,7 @@ $client = new ApiClientAvito(AvitoConfig::fromEnv(), [
 ]);
 ```
 
-`ArrayCache` подходит для демонстрации и тестов. Для общего cache между процессами используйте объект, реализующий `and_y87\PhpClientSdk\Contracts\CacheInterface`: Redis adapter, файловый cache, DB-cache, framework-cache или совместимый PSR-16/simple-cache adapter.
+`ArrayCache` подходит для демонстрации и тестов. Для общего cache между процессами используйте объект, реализующий `and_y87\PhpClientSdk\Contracts\Cache\CacheInterface`: Redis adapter, файловый cache, DB-cache, framework-cache или совместимый PSR-16/simple-cache adapter.
 
 ## Ручной вызов token endpoint
 

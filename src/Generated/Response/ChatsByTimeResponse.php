@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace and_y87\php_client_avito\Generated\Response;
 
-use and_y87\PhpClientSdk\Response\AbstractResponse;
+use and_y87\PhpClientSdk\Response\Model\AbstractResponse;
 
 /**
  * Ответ Avito API [POST] /cpa/v1/chatsByTime.

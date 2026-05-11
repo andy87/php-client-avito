@@ -213,9 +213,9 @@ echo $token->expires_in . PHP_EOL;
 
 declare(strict_types=1);
 
-use and_y87\PhpClientSdk\Event\BeforeRequestEvent;
-use and_y87\PhpClientSdk\Event\AfterRequestEvent;
-use and_y87\PhpClientSdk\Event\RequestExceptionEvent;
+use and_y87\PhpClientSdk\Client\Event\BeforeRequestEvent;
+use and_y87\PhpClientSdk\Client\Event\AfterRequestEvent;
+use and_y87\PhpClientSdk\Client\Event\RequestExceptionEvent;
 use and_y87\php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito([
@@ -247,7 +247,7 @@ $client = new ApiClientAvito([
 declare(strict_types=1);
 
 use and_y87\php_client_avito\ApiClientAvito;
-use and_y87\PhpClientSdk\Contracts\HttpTransportInterface;
+use and_y87\PhpClientSdk\Contracts\Http\HttpTransportInterface;
 
 /** @var HttpTransportInterface $transport */
 $client = new ApiClientAvito(
@@ -272,7 +272,7 @@ $client = new ApiClientAvito(
 
 declare(strict_types=1);
 
-use and_y87\PhpClientSdk\Event\BeforeRequestEvent;
+use and_y87\PhpClientSdk\Client\Event\BeforeRequestEvent;
 use and_y87\php_client_avito\ApiClientAvito;
 
 /** @var ApiClientAvito $client */
@@ -300,7 +300,7 @@ $client->setHeaders(['X-Account' => 'secondary']);
 
 declare(strict_types=1);
 
-use and_y87\PhpClientSdk\Event\BeforeRequestEvent;
+use and_y87\PhpClientSdk\Client\Event\BeforeRequestEvent;
 use and_y87\php_client_avito\ApiClientAvito;
 
 $client = new ApiClientAvito($config, [
@@ -345,7 +345,7 @@ $clientWithoutRefreshRetry = new ApiClientAvito($config, [
 <?php
 
 use and_y87\php_client_avito\ApiClientAvito;
-use and_y87\PhpClientSdk\Cache\ArrayCache;
+use and_y87\PhpClientSdk\Transport\Cache\ArrayCache;
 
 $client = new ApiClientAvito($config, [
     ApiClientAvito::TOKEN_CACHE => new ArrayCache(),
@@ -354,7 +354,7 @@ $client = new ApiClientAvito($config, [
 ]);
 ```
 
-Для Redis, файлового кеша, БД или framework-cache используйте любой объект, реализующий `and_y87\PhpClientSdk\Contracts\CacheInterface`, либо адаптер из SDK, если ваше хранилище совместимо с PSR-16/simple-cache.
+Для Redis, файлового кеша, БД или framework-cache используйте любой объект, реализующий `and_y87\PhpClientSdk\Contracts\Cache\CacheInterface`, либо адаптер из SDK, если ваше хранилище совместимо с PSR-16/simple-cache.
 
 Используйте `authorizationResolver`, когда generated prompt требует отдельную стратегию авторизации:
 
@@ -363,8 +363,8 @@ $client = new ApiClientAvito($config, [
 
 use and_y87\php_client_avito\ApiClientAvito;
 use and_y87\php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
-use and_y87\PhpClientSdk\Auth\ApiKeyAuthorizationStrategy;
-use and_y87\PhpClientSdk\Auth\PromptClassAuthorizationStrategyResolver;
+use and_y87\PhpClientSdk\Security\Authorization\Strategy\ApiKeyAuthorizationStrategy;
+use and_y87\PhpClientSdk\Security\Authorization\Resolver\PromptClassAuthorizationStrategyResolver;
 
 $client = new ApiClientAvito($config, [
     ApiClientAvito::AUTHORIZATION_RESOLVER => new PromptClassAuthorizationStrategyResolver([
@@ -400,9 +400,9 @@ declare(strict_types=1);
 
 use and_y87\php_client_avito\ApiClientAvito;
 use and_y87\php_client_avito\Generated\Prompt\GetUserInfoSelfPrompt;
-use and_y87\PhpClientSdk\Auth\NullAuthorizationStrategy;
-use and_y87\PhpClientSdk\Mock\MockTransport;
-use and_y87\PhpClientSdk\Mock\PromptClassMockResponseResolver;
+use and_y87\PhpClientSdk\Security\Authorization\Strategy\NullAuthorizationStrategy;
+use and_y87\PhpClientSdk\Testing\Mock\MockTransport;
+use and_y87\PhpClientSdk\Testing\Mock\PromptClassMockResponseResolver;
 
 $resolver = (new PromptClassMockResponseResolver())
     ->addJson(GetUserInfoSelfPrompt::class, [

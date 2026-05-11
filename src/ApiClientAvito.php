@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace and_y87\php_client_avito;
 
-use and_y87\PhpClientSdk\Auth\ClientCredentialsAuthorizationStrategy;
-use and_y87\PhpClientSdk\Config\ClientOptions;
-use and_y87\PhpClientSdk\Contracts\AuthorizationStrategyResolverInterface;
-use and_y87\PhpClientSdk\Contracts\AuthorizationStrategyInterface;
-use and_y87\PhpClientSdk\Contracts\CacheInterface;
-use and_y87\PhpClientSdk\Contracts\HttpTransportInterface;
-use and_y87\PhpClientSdk\Event\AfterInitEvent;
-use and_y87\PhpClientSdk\Event\ClientEvents;
-use and_y87\PhpClientSdk\Http\NativeHttpTransport;
-use and_y87\PhpClientSdk\Http\TraceableTransport;
-use and_y87\PhpClientSdk\Runtime\ClientRuntime;
+use and_y87\PhpClientSdk\Security\Authorization\Strategy\ClientCredentialsAuthorizationStrategy;
+use and_y87\PhpClientSdk\Client\Config\ClientOptions;
+use and_y87\PhpClientSdk\Contracts\Auth\AuthorizationStrategyResolverInterface;
+use and_y87\PhpClientSdk\Contracts\Auth\AuthorizationStrategyInterface;
+use and_y87\PhpClientSdk\Contracts\Cache\CacheInterface;
+use and_y87\PhpClientSdk\Contracts\Http\HttpTransportInterface;
+use and_y87\PhpClientSdk\Client\Event\AfterInitEvent;
+use and_y87\PhpClientSdk\Client\Event\ClientEvents;
+use and_y87\PhpClientSdk\Transport\Native\NativeHttpTransport;
+use and_y87\PhpClientSdk\Transport\Trace\TraceableTransport;
+use and_y87\PhpClientSdk\Client\Runtime\ClientRuntime;
 use and_y87\php_client_avito\Generated\ProviderRegistry;
 
 /**

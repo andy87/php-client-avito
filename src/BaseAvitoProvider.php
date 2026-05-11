@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace and_y87\php_client_avito;
 
-use and_y87\PhpClientSdk\Provider\AbstractProvider;
+use and_y87\PhpClientSdk\Client\Provider\AbstractProvider;
 
 /**
  * Базовый provider для Avito API с ленивым доступом к вложенным группам методов.

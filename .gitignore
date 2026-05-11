@@ -1,6 +1,9 @@
 composer.lock
 
+.idea/
 vendor/
 .phpunit.cache/
 tools/*
 !tools/generate-avito-openapi.mjs
+
+AGENTS.md
