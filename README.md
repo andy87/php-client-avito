@@ -17,14 +17,14 @@ The client is built on top of `andy87/php-client-sdk` and targets PHP 8.1 or new
 Install the package with Composer:
 
 ```bash
-composer require andy87/php-client-avito:^0.8.0
+composer require andy87/php-client-avito:^0.9.1
 ```
 
-Release `v0.8.0` is published on Packagist as `andy87/php-client-avito`.
+Release `v0.9.1` is published on Packagist as `andy87/php-client-avito`.
 
 ## Compatibility
 
-Version `v0.8.0` targets PHP 8.1 or newer and requires `andy87/php-client-sdk:^0.6.0`.
+Version `v0.9.1` targets PHP 8.1 or newer and requires `andy87/php-client-sdk:v0.7.0`.
 Composer resolves the SDK dependency automatically when the package is installed.
 
 ## Quick Start

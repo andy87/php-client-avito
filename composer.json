@@ -23,7 +23,6 @@
   },
   "scripts": {
     "analyse": "phpstan analyse src tests --level=5",
-    "generate": "node tools/generate-avito-openapi.mjs",
     "test": "phpunit"
   }
 }

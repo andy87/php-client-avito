@@ -17,14 +17,14 @@
 Установите пакет через Composer:
 
 ```bash
-composer require andy87/php-client-avito:^0.8.0
+composer require andy87/php-client-avito:^0.9.1
 ```
 
-Релиз `v0.8.0` опубликован на Packagist как `andy87/php-client-avito`.
+Релиз `v0.9.1` опубликован на Packagist как `andy87/php-client-avito`.
 
 ## Совместимость
 
-Версия `v0.8.0` рассчитана на PHP 8.1 или новее и требует `andy87/php-client-sdk:^0.6.0`.
+Версия `v0.9.1` рассчитана на PHP 8.1 или новее и требует `andy87/php-client-sdk:v0.7.0`.
 Composer устанавливает SDK-зависимость автоматически при установке пакета.
 
 ## Быстрый старт
